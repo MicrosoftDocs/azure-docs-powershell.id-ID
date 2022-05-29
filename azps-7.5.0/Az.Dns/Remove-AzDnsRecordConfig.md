@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dns/remove-azdns
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Dns/Dns/help/Remove-AzDnsRecordConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Dns/Dns/help/Remove-AzDnsRecordConfig.md
-ms.openlocfilehash: eacf2cc53e78cbcabd112aafb598a95ea59cd263
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 681860e049744914beebe5378afa73f3891b4bac
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144188795"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145740466"
 ---
 # Remove-AzDnsRecordConfig
 
 ## SYNOPSIS
 Menghapus catatan DNS dari objek kumpulan catatan lokal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dns/remove-azdnsrecordconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -126,7 +129,7 @@ Get-AzDnsRecordSet -Name "www" -RecordType CNAME -ResourceGroupName "MyResourceG
 ```
 
 Contoh ini menghapus data CNAME dari kumpulan catatan yang sudah ada.
-Karena kumpulan data CNAME bisa berisi paling banyak satu catatan, hasilnya adalah kumpulan catatan kosong.
+Karena kumpulan catatan CNAME bisa berisi paling banyak satu rekaman, hasilnya adalah kumpulan catatan kosong.
 
 ### Contoh 4: Menghapus catatan MX dari kumpulan catatan
 ```powershell
@@ -207,7 +210,7 @@ Untuk menghapus kumpulan catatan sepenuhnya, lihat Remove-AzDnsRecordSet.
 ## PARAMETERS
 
 ### -CaaFlags
-Bendera untuk catatan CAA untuk ditambahkan. Harus berupa angka antara 0 dan 255.
+Bendera untuk catatan CAA yang akan ditambahkan. Harus berupa angka antara 0 dan 255.
 
 ```yaml
 Type: System.Byte
@@ -222,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -CaaTag
-Bidang tag rekaman CAA untuk ditambahkan.
+Bidang tag rekaman CAA yang akan ditambahkan.
 
 ```yaml
 Type: System.String
@@ -252,7 +255,7 @@ Accept wildcard characters: False
 ```
 
 ### -Cname
-Menentukan nama domain untuk data nama kanonis (CNAME).
+Menentukan nama domain untuk catatan nama kanonis (CNAME).
 
 ```yaml
 Type: System.String
@@ -282,7 +285,7 @@ Accept wildcard characters: False
 ```
 
 ### -Exchange
-Menentukan nama server pertukaran surat untuk rekaman pertukaran surat (MX).
+Menentukan nama server pertukaran email untuk rekaman pertukaran email (MX).
 
 ```yaml
 Type: System.String
@@ -312,7 +315,7 @@ Accept wildcard characters: False
 ```
 
 ### -Ipv6Address
-Menentukan alamat IPv6 untuk rekaman AAAA.
+Menentukan alamat IPv6 untuk catatan AAAA.
 
 ```yaml
 Type: System.String
@@ -387,7 +390,7 @@ Accept wildcard characters: False
 ```
 
 ### -Ptrdname
-Menentukan nama domain target rekaman penunjuk (PTR).
+Menentukan nama domain target rekaman pointer (PTR).
 
 ```yaml
 Type: System.String
@@ -446,8 +449,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Bobot
-Menentukan bobot untuk rekaman SRV.
+### -Berat
+Menentukan bobot untuk catatan SRV.
 
 ```yaml
 Type: System.UInt16

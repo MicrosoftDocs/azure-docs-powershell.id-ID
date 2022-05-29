@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dnsresolver/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/Get-AzDnsResolverOutboundEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/Get-AzDnsResolverOutboundEndpoint.md
-ms.openlocfilehash: 0ba92ef7b19c3474a2ff6c6d512f9bc91e418fa9
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4e3f8b00c6fb36ff5b10e89e3dba54cfef9a2fe7
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144244338"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145740052"
 ---
 # Get-AzDnsResolverOutboundEndpoint
 
 ## SYNOPSIS
 Mendapatkan properti titik akhir keluar untuk pemecah masalah DNS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dnsresolver/get-azdnsresolveroutboundendpoint) untuk informasi terbaru.
 
 ## SYNTAX
 

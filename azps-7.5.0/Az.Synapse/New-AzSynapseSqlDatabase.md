@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/new-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseSqlDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseSqlDatabase.md
-ms.openlocfilehash: c89772b81c589f3ffd5083134d3d32c322e00c0a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: bcb7a0059eb0ce6ea6166bfdb04fa4ee305d2145
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144208634"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145707364"
 ---
 # New-AzSynapseSqlDatabase
 
 ## SYNOPSIS
 Fitur ini berada dalam pratinjau terbatas, awalnya hanya dapat diakses oleh langganan tertentu. Membuat database SQL Synapse Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/new-azsynapsesqldatabase) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -62,9 +65,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Kolabasi
+### -Kolapasi
 Kolase menentukan aturan yang mengurutkan dan membandingkan data, dan tidak dapat diubah setelah pembuatan kumpulan SQL.
-Kolatasi default adalah SQL_Latin1_General_CP1_CI_AS.
+Kolace default adalah SQL_Latin1_General_CP1_CI_AS.
 
 ```yaml
 Type: System.String

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackedge/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Get-AzStackEdgeBandwidthSchedule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Get-AzStackEdgeBandwidthSchedule.md
-ms.openlocfilehash: ebc45e4d0b90b2c4f0af619767bdf5016553fe64
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ab0534e1ebf8938be6a0826f1ae04d64f8b7dae2
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144220043"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145720684"
 ---
 # Get-AzStackEdgeBandwidthSchedule
 
 ## SYNOPSIS
 Mendapatkan informasi tentang jadwal Bandwidth
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.stackedge/get-azstackedgebandwidthschedule) untuk informasi terbaru.
 
 ## SYNTAX
 

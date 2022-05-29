@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Update-AzKeyVaultCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Update-AzKeyVaultCertificate.md
-ms.openlocfilehash: a119883785160e7967b50ae950ad78bd7709173c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2df92e3d002d7eed6c0b41b19546fa44677a60e2
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144197842"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145694404"
 ---
 # Update-AzKeyVaultCertificate
 
 ## SYNOPSIS
 Memodifikasi atribut sertifikat yang dapat diedit.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/update-azkeyvaultcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 

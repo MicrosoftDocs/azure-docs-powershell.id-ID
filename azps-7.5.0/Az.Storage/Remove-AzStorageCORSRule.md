@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzStorageCORSRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzStorageCORSRule.md
-ms.openlocfilehash: d89e24d175742d0a3712c0119e5d731842b111c9
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b1d2f6384816219e0ac27159a07b65ced3bd3916
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144241972"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145715140"
 ---
 # Remove-AzStorageCORSRule
 
 ## SYNOPSIS
 Menghapus CORS untuk layanan Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/remove-azstoragecorsrule) untuk informasi terbaru.
 
 ## SYNTAX
 

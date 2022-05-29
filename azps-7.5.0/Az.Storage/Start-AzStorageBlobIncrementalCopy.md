@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/start-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Start-AzStorageBlobIncrementalCopy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Start-AzStorageBlobIncrementalCopy.md
-ms.openlocfilehash: 8ed911181a82ba4164aa4c77c971fb28bb93cbe6
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5c11a287be7dde2a3ef7c9611cdfb1db97dd6352
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144112981"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145713717"
 ---
 # Start-AzStorageBlobIncrementalCopy
 
 ## SYNOPSIS
 Mulai operasi penyalinan inkremental dari rekam jepret blob Halaman ke blob Halaman tujuan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/start-azstorageblobincrementalcopy) untuk informasi terbaru.
 
 ## SYNTAX
 

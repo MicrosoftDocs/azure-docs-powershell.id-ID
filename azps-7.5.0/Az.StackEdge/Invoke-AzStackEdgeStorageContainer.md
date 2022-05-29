@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackedge/invoke
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Invoke-AzStackEdgeStorageContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Invoke-AzStackEdgeStorageContainer.md
-ms.openlocfilehash: 2a0b591637dbb6691c410b90697308c4711d5c14
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6c62ea8f86b99cd8e3e89dc7c2c93b9e4be2f899
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144226404"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145720234"
 ---
 # Invoke-AzStackEdgeStorageContainer
 
 ## SYNOPSIS
 Memanggil tindakan tertentu pada kontainer penyimpanan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.stackedge/invoke-azstackedgestoragecontainer) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/set-azda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzDataLakeGen2ItemAclObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzDataLakeGen2ItemAclObject.md
-ms.openlocfilehash: 9e0bd10918adfe46871bec4d9f59815cce136aa9
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c7a174ef4c14bec5f5d98df64ec831fe6b5c2462
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144185099"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145714456"
 ---
 # Set-AzDataLakeGen2ItemAclObject
 
 ## SYNOPSIS
 Membuat/Memperbarui objek ACL item DataLake gen2, yang dapat digunakan dalam cmdlet Update-AzDataLakeGen2Item.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/set-azdatalakegen2itemaclobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ Set-AzDataLakeGen2ItemAclObject [-EntityId <String>] [-DefaultScope] -Permission
 
 ## DESCRIPTION
 Cmdlet **Set-AzDataLakeGen2ItemAclObject** membuat/memperbarui objek ACL item DataLake gen2, yang dapat digunakan dalam cmdlet Update-AzDataLakeGen2Item.
-Jika entri ACL baru dengan AccessControlType/EntityId/DefaultScope yang sama tidak ada di ACL input, akan membuat entri ACL baru, atau memperbarui izin entri ACL yang ada.
+Jika entri ACL baru dengan AccessControlType/EntityId/DefaultScope yang sama tidak ada di input ACL, akan membuat entri ACL baru, atau memperbarui izin entri ACL yang ada.
 
 ## EXAMPLES
 
-### Contoh 1: Buat objek ACL dengan entri 3 ACL, dan perbarui ACL pada direktori
+### Contoh 1: Membuat objek ACL dengan entri 3 ACL, dan memperbarui ACL pada direktori
 ```
 PS C:\>$acl = Set-AzDataLakeGen2ItemAclObject -AccessControlType user -Permission rwx -DefaultScope
 PS C:\>$acl = Set-AzDataLakeGen2ItemAclObject -AccessControlType group -Permission rw- -InputObject $acl 
@@ -46,7 +49,7 @@ dir1/dir3            True                         2020-03-23 09:34:31Z rwxrw-rw-
 
 Perintah ini membuat objek ACL dengan 3 entri ACL (gunakan parameter -InputObject untuk menambahkan entri acl ke objek acl yang ada), dan memperbarui ACL pada direktori.
 
-### Contoh 2: Buat objek ACL dengan 4 entri ACL, dan perbarui izin entri ACL yang ada
+### Contoh 2: Membuat objek ACL dengan 4 entri ACL, dan memperbarui izin entri ACL yang ada
 ```
 PS C:\>$acl = Set-AzDataLakeGen2ItemAclObject -AccessControlType user -Permission rwx -DefaultScope
 PS C:\>$acl = Set-AzDataLakeGen2ItemAclObject -AccessControlType group -Permission rw- -InputObject $acl 
@@ -78,7 +81,7 @@ Kemudian izin entri ACL diperbarui, tetapi tidak ada entri ACL baru yang ditamba
 ## PARAMETERS
 
 ### -AccessControlType
-Ada empat jenis: "pengguna" memberikan hak kepada pemilik atau pengguna bernama, "grup" memberikan hak kepada grup pemilik atau grup bernama, "masker" membatasi hak yang diberikan kepada pengguna bernama dan anggota grup, dan hak pemberian "lainnya" kepada semua pengguna yang tidak ditemukan dalam entri lain.
+Ada empat jenis: "pengguna" memberikan hak kepada pemilik atau pengguna bernama, "grup" memberikan hak kepada grup pemilik atau grup bernama, "masker" membatasi hak yang diberikan kepada pengguna bernama dan anggota grup, dan "lainnya" memberikan hak kepada semua pengguna yang tidak ditemukan di entri lain.
 
 ```yaml
 Type: Azure.Storage.Files.DataLake.Models.AccessControlType
@@ -93,7 +96,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Cakupan Default
+### -DefaultScope
 Atur parameter ini untuk menunjukkan ACE milik ACL default untuk direktori; jika tidak, cakupan bersifat implisit dan ACE milik ACL akses.
 
 ```yaml

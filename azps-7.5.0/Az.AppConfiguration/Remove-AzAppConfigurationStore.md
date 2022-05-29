@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.appconfiguration
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AppConfiguration/help/Remove-AzAppConfigurationStore.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AppConfiguration/help/Remove-AzAppConfigurationStore.md
-ms.openlocfilehash: 9c9593a7685def9c393c2f0e41a008d3c116f5ac
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c190c1d53d8042477d3955b6bfa961f5d1966f78
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144211079"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145685614"
 ---
 # Remove-AzAppConfigurationStore
 
 ## SYNOPSIS
 Menghapus penyimpanan konfigurasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.appconfiguration/remove-azappconfigurationstore) untuk informasi terbaru.
 
 ## SYNTAX
 

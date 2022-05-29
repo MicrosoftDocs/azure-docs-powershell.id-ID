@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzStorageObjectReplicationPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzStorageObjectReplicationPolicy.md
-ms.openlocfilehash: 5eeb0256dfc7abac2e9ec9a525c09a14c032a315
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5e4a12c3404dd9907b3e040d952ace517bbe37ec
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144228224"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145714924"
 ---
 # Remove-AzStorageObjectReplicationPolicy
 
 ## SYNOPSIS
 Menghapus kebijakan replikasi objek yang ditentukan dari akun Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/remove-azstorageobjectreplicationpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Update-AzStorageEncryptionScope.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Update-AzStorageEncryptionScope.md
-ms.openlocfilehash: 1ec35efb2cfbc2a4a187dc9efadf82c6b8626c1d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9c416e024313e15cd03c3720bd7fd792ac7310e9
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144211691"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145713358"
 ---
 # Update-AzStorageEncryptionScope
 
 ## SYNOPSIS
 Ubah cakupan enkripsi untuk akun Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/update-azstorageencryptionscope) untuk informasi terbaru.
 
 ## SYNTAX
 

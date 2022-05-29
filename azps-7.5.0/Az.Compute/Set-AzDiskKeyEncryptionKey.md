@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azdi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzDiskKeyEncryptionKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzDiskKeyEncryptionKey.md
-ms.openlocfilehash: 8033f9e66cb56e5371f84a07c06567263be89a0c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 12a3b4e5918fd9282cb517f1651a3846bb17eb5c
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144222566"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145733158"
 ---
 # Set-AzDiskKeyEncryptionKey
 
 ## SYNOPSIS
 Mengatur properti kunci enkripsi kunci pada objek disk.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azdiskkeyencryptionkey) untuk informasi terbaru.
 
 ## SYNTAX
 

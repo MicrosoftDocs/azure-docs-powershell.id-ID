@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deviceprovisioni
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Remove-AzIoTDeviceProvisioningServiceAccessPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Remove-AzIoTDeviceProvisioningServiceAccessPolicy.md
-ms.openlocfilehash: 28401920b74fb05ed78df149494ab8e0a27f1423
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8549fcd00df69d5507e50b24e11bcd36ff3f444d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144232592"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145742014"
 ---
 # Remove-AzIoTDeviceProvisioningServiceAccessPolicy
 
 ## SYNOPSIS
 Menghapus kebijakan akses bersama di layanan provisi perangkat Azure IoT Hub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.deviceprovisioningservices/remove-aziotdeviceprovisioningserviceaccesspolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -53,14 +56,14 @@ Remove-AzIoTDeviceProvisioningServiceAccessPolicy -ResourceGroupName "myresource
 True
 ```
 
-Hapus kebijakan akses bersama "mypolicy" dalam layanan provisi perangkat Azure IoT Hub.
+Hapus kebijakan akses bersama "mypolicy" di layanan provisi perangkat Azure IoT Hub.
 
 ### Contoh 2
 ```powershell
 Get-AzIoTDeviceProvisioningServiceAccessPolicy -ResourceGroupName "myresourcegroup" -Name "myiotdps" -KeyName "mypolicy" | Remove-AzIoTDeviceProvisioningServiceAccessPolicy
 ```
 
-Hapus kebijakan akses bersama "mypolicy" dalam layanan provisi perangkat Azure IoT Hub menggunakan alur.
+Hapus kebijakan akses bersama "mypolicy" di layanan provisi perangkat Azure IoT Hub menggunakan alur.
 
 ## PARAMETERS
 

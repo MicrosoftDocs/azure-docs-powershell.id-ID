@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Update-AzKeyVaultManagedHsm.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Update-AzKeyVaultManagedHsm.md
-ms.openlocfilehash: b0cad31eb63eed647c6d14eb7c97ca98b2e122ed
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3bf2981871cb3b990d13636aa7bff5dfc35792cf
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144244825"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145694386"
 ---
 # Update-AzKeyVaultManagedHsm
 
 ## SYNOPSIS
 Memperbarui status HSM terkelola Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/update-azkeyvaultmanagedhsm) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Update-AzKeyVaultManagedHsm -ResourceId <String> [-EnablePurgeProtection] [-Publ
 ```
 
 ## DESCRIPTION
-Cmdlet ini memperbarui status HSM yang dikelola Azure.
+Cmdlet ini memperbarui status HSM terkelola Azure.
 
 ## EXAMPLES
 
@@ -78,9 +81,9 @@ Memperbarui tag untuk Hsm terkelola bernama `$hsmName` dalam grup `$resourceGrou
 Get-AzKeyVaultManagedHsm -Name $hsmName -ResourceGroupName $resourceGroupName | Update-AzKeyVaultManagedHsm -Tag @{testKey="testValue"}
 ```
 
-Memperbarui tag untuk Hsm terkelola menggunakan sintaks pipa.
+Memperbarui tag untuk Hsm terkelola menggunakan sintaks piping.
 
-### Contoh 3: Aktifkan perlindungan penghapusan menyeluruh untuk Hsm terkelola
+### Contoh 3: Mengaktifkan perlindungan penghapusan menyeluruh untuk Hsm terkelola
 ```powershell
 PS C:\> Update-AzKeyVaultManagedHsm -Name $hsmName -ResourceGroupName $resourceGroupName -EnablePurgeProtection | fl
 ```
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnablePurgeProtection
-menentukan apakah perlindungan terhadap penghapusan menyeluruh diaktifkan untuk kumpulan HSM terkelola ini. Pengaturan ini hanya efektif jika penghapusan sementara juga diaktifkan. Mengaktifkan fungsionalitas ini tidak dapat diubah.
+menentukan apakah perlindungan terhadap pembersihan diaktifkan untuk kumpulan HSM terkelola ini. Pengaturan ini hanya efektif jika penghapusan sementara juga diaktifkan. Mengaktifkan fungsionalitas ini tidak dapat diubah.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 ### -SubscriptionId
 ID langganan.
 Secara default, cmdlet dijalankan dalam langganan yang diatur dalam konteks saat ini. Jika pengguna menentukan langganan lain, cmdlet saat ini dijalankan dalam langganan yang ditentukan oleh pengguna.
-Mengambil alih langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
+Mengesampingkan langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
 
 ```yaml
 Type: System.String

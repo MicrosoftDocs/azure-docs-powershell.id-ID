@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/set-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageBlobContent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageBlobContent.md
-ms.openlocfilehash: 7ca5377201f033df67a37594dcb3e81c4085348b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b239f2701ac90ed12b0a140e6db6379b9f809508
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144243652"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145714312"
 ---
 # Set-AzStorageBlobContent
 
 ## SYNOPSIS
 Mengunggah file lokal ke blob Azure Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/set-azstorageblobcontent) untuk informasi terbaru.
 
 ## SYNTAX
 

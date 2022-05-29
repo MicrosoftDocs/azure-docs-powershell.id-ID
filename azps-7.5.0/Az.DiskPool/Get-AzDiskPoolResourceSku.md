@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.diskpool/get-azd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DiskPool/help/Get-AzDiskPoolResourceSku.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DiskPool/help/Get-AzDiskPoolResourceSku.md
-ms.openlocfilehash: a44f75034e0700e422246e26c5eae441b01aa8c9
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: dfc508c52a4cf9704331f229946c523303e0e61d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144199354"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145741096"
 ---
 # Get-AzDiskPoolResourceSku
 
 ## SYNOPSIS
 Mencantumkan sumber daya dan sku StoragePool yang tersedia di lokasi Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.diskpool/get-azdiskpoolresourcesku) untuk informasi terbaru.
 
 ## SYNTAX
 

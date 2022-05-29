@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.maps/get-azmapss
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/Get-AzMapsSubscriptionOperation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/Get-AzMapsSubscriptionOperation.md
-ms.openlocfilehash: 70288aa4d2c829254fd19af81782b766b17f2952
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0daed1c1230752a5761886ba801f254fb9f396e7
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144222242"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145691236"
 ---
 # Get-AzMapsSubscriptionOperation
 
 ## SYNOPSIS
 Mencantumkan operasi yang tersedia untuk Penyedia Sumber Daya Peta
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.maps/get-azmapssubscriptionoperation) untuk informasi terbaru.
 
 ## SYNTAX
 

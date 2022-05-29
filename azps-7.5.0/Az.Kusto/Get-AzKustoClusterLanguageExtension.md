@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.kusto/get-azkust
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Get-AzKustoClusterLanguageExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Get-AzKustoClusterLanguageExtension.md
-ms.openlocfilehash: 4e81fb52a7132ee91b6b8f8c255ab309c8e3a3c8
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5be51a3fe2e8aef163a2fcfd4bed545f4ab2ef17
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144216239"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145694080"
 ---
 # Get-AzKustoClusterLanguageExtension
 
 ## SYNOPSIS
-Mengembalikan daftar ekstensi bahasa yang dapat berjalan dalam kueri KQL.
+Mengembalikan daftar ekstensi bahasa yang bisa berjalan dalam kueri KQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.kusto/get-azkustoclusterlanguageextension) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzKustoClusterLanguageExtension -ClusterName <String> -ResourceGroupName <St
 ```
 
 ## DESCRIPTION
-Mengembalikan daftar ekstensi bahasa yang dapat berjalan dalam kueri KQL.
+Mengembalikan daftar ekstensi bahasa yang bisa berjalan dalam kueri KQL.
 
 ## EXAMPLES
 

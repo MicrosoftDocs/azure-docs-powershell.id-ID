@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.sql/Get-AzSqlIns
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstanceKeyVaultKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstanceKeyVaultKey.md
-ms.openlocfilehash: a8e41352f1ffd6f92d4f5b6940c8d7b511f61351
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7a02ea1b64ad96b40e0acb1f7514e4f92dc1eab6
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144216683"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145727794"
 ---
 # Get-AzSqlInstanceKeyVaultKey
 
 ## SYNOPSIS
 Mendapatkan kunci Key Vault instans terkelola SQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlinstancekeyvaultkey) untuk informasi terbaru.
 
 ## SYNTAX
 

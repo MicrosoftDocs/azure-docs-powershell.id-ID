@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMUsage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMUsage.md
-ms.openlocfilehash: e7d212e5ca9551186e1f716ac2d0ee2a604f0abf
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b60325c9c8a1c542ebe1d7ad55ae06a9bd74271d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144194958"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145735120"
 ---
 # Get-AzVMUsage
 
 ## SYNOPSIS
 Mendapatkan penggunaan jumlah inti komputer virtual untuk lokasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azvmusage) untuk informasi terbaru.
 
 ## SYNTAX
 

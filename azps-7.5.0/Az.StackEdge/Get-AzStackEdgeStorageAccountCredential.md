@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackedge/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Get-AzStackEdgeStorageAccountCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Get-AzStackEdgeStorageAccountCredential.md
-ms.openlocfilehash: 8ed04ba44a56ca285fc54afc754de170f8d387fc
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 97a6caaac89e01b57eab16e0af467131bf831485
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144226499"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145720504"
 ---
 # Get-AzStackEdgeStorageAccountCredential
 
 ## SYNOPSIS
 Mendapatkan kredensial akun penyimpanan yang sesuai dengan akun penyimpanan di perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.stackedge/get-azstackedgestorageaccountcredential) untuk informasi terbaru.
 
 ## SYNTAX
 

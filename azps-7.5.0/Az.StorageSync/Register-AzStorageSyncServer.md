@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.storagesync/regi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Register-AzStorageSyncServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Register-AzStorageSyncServer.md
-ms.openlocfilehash: 568a307f98a6fcc3a4f187d437616dedf22382df
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 055c6541dd38eb8417b0c23c5408a3039adf9891
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144222818"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145712818"
 ---
 # Register-AzStorageSyncServer
 
 ## SYNOPSIS
 Perintah ini mendaftarkan server ke layanan sinkronisasi penyimpanan yang membuat hubungan kepercayaan. PowerShell atau portal Azure kemudian dapat digunakan untuk mengonfigurasi sinkronisasi pada server ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storagesync/register-azstoragesyncserver) untuk informasi terbaru.
 
 ## SYNTAX
 

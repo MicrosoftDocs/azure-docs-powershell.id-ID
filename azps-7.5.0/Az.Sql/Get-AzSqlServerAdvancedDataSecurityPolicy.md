@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlser
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerAdvancedDataSecurityPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerAdvancedDataSecurityPolicy.md
-ms.openlocfilehash: ea215fee9b90deac29a59e9851e5f5b476371bba
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0419572f5d73710162d34e10a8fba2458b0931d2
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144245399"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145727434"
 ---
 # Get-AzSqlServerAdvancedDataSecurityPolicy
 
 ## SYNOPSIS
 Mendapatkan kebijakan Advanced Data Security dari server.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlserveradvanceddatasecuritypolicy) untuk informasi terbaru.
 
 ## SYNTAX
 

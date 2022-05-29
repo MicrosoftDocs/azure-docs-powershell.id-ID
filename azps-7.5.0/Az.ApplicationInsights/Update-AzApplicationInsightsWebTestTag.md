@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.applicationinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Update-AzApplicationInsightsWebTestTag.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Update-AzApplicationInsightsWebTestTag.md
-ms.openlocfilehash: dd4a7f49b9a97a52901c844f8e36202b91b9c189
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ef24aaf2c989c6a2ba05dbccbaf0e00a291a9dbd
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144200485"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145684858"
 ---
 # Update-AzApplicationInsightsWebTestTag
 
 ## SYNOPSIS
-Membuat atau memperbarui definisi pengujian web Insights Aplikasi.
+Membuat atau memperbarui definisi pengujian web Application Insights.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.applicationinsights/update-azapplicationinsightswebtesttag) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Update-AzApplicationInsightsWebTestTag -InputObject <IApplicationInsightsIdentit
 ```
 
 ## DESCRIPTION
-Membuat atau memperbarui definisi pengujian web Insights Aplikasi.
+Membuat atau memperbarui definisi pengujian web Application Insights.
 
 ## EXAMPLES
 
@@ -58,7 +61,7 @@ Location Name                       WebTestKind   ResourceGroupName     Enabled
 westus2  webtest01-lucasappinsights standard      azpwsh-rg-test        True
 ```
 
-Perintah ini memperbarui tautan Aplikasi Insights pengujian Web menurut alur.
+Perintah ini memperbarui tautan Application Insights pengujian Web menurut alur.
 
 ## PARAMETERS
 
@@ -78,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ApplicationInsights.Models.IApplicationInsightsIdentity
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Nama sumber daya WebTest Insights Aplikasi.
+Nama sumber daya Application Insights WebTest.
 
 ```yaml
 Type: System.String
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama tidak peka huruf besar/kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -207,7 +210,7 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 INPUTOBJECT <IApplicationInsightsIdentity>: Parameter Identitas
   - `[ComponentName <String>]`: Nama sumber daya komponen Insights Aplikasi.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
   - `[WebTestName <String>]`: Nama sumber daya WebTest Insights Aplikasi.
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deviceprovisioni
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Update-AzIoTDeviceProvisioningServiceLinkedHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Update-AzIoTDeviceProvisioningServiceLinkedHub.md
-ms.openlocfilehash: 44f4fb741b5764d3f52a19b8fad36b4f2d18a304
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2fd6c3d4e399c4993058ac0ddfe0e949366e5b01
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144184651"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145741672"
 ---
 # Update-AzIoTDeviceProvisioningServiceLinkedHub
 
 ## SYNOPSIS
 Memperbarui IoT Hub tertaut di layanan provisi perangkat Azure IoT Hub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.deviceprovisioningservices/update-aziotdeviceprovisioningservicelinkedhub) untuk informasi terbaru.
 
 ## SYNTAX
 

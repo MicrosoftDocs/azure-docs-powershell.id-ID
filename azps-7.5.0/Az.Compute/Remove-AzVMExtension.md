@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzVMExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzVMExtension.md
-ms.openlocfilehash: 977cea06fafe30644a4577a10adab2517474467c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3a2d15521ff9bae5172159f4bb62978f1400b215
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144190783"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145733698"
 ---
 # Remove-AzVMExtension
 
 ## SYNOPSIS
 Menghapus ekstensi dari komputer virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/remove-azvmextension) untuk informasi terbaru.
 
 ## SYNTAX
 

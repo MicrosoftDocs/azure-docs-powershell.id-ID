@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/new-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseKustoPoolPrincipalAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseKustoPoolPrincipalAssignment.md
-ms.openlocfilehash: 59fc0f8a2d296b36d0475c539f7363b4bed37d2e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c9e06a796ad81b9e114f7ba3109afb9412e4c657
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144226278"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145707688"
 ---
 # New-AzSynapseKustoPoolPrincipalAssignment
 
 ## SYNOPSIS
 Buat kumpulan Kusto principalAssignment.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/new-azsynapsekustopoolprincipalassignment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrincipalId
-ID utama yang ditetapkan ke prinsipal kluster.
+ID utama yang ditetapkan ke perwakilan kluster.
 Ini bisa berupa email pengguna, ID aplikasi, atau nama grup keamanan.
 
 ```yaml
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String

@@ -6,16 +6,19 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/get-azw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzWebAppBackupList.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzWebAppBackupList.md
-ms.openlocfilehash: 1857f8b31d521502f6241a232566cafd67a0088f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c29d2e4969bd448ab676cc0cebf8325afba3dd17
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144236456"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145700272"
 ---
 # Get-AzWebAppBackupList
 
 ## SYNOPSIS
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/get-azwebappbackuplist) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -WebApp
-Piped WebApp
+WebApp Yang Disalurkan
 
 ```yaml
 Type: Microsoft.Azure.Commands.WebApps.Models.PSSite

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzAvailabilitySet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzAvailabilitySet.md
-ms.openlocfilehash: 52382f9c5b9f1db72e394fe7c9fed8d5f7561cd6
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 71e14bf04f6ab73223ef1f3653d543cd7e3ff239
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144199746"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145734238"
 ---
 # Remove-AzAvailabilitySet
 
 ## SYNOPSIS
 Menghapus set ketersediaan dari Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/remove-azavailabilityset) untuk informasi terbaru.
 
 ## SYNTAX
 

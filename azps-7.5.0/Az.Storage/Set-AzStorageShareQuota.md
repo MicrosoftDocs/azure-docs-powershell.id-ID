@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/set-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageShareQuota.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageShareQuota.md
-ms.openlocfilehash: 29814b1be617731bc7ba5567547aa037ff43a638
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5bd5fe7c47d38e4719063c882a4fa16a94af11b1
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144195658"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145713880"
 ---
 # Set-AzStorageShareQuota
 
 ## SYNOPSIS
 Mengatur kapasitas penyimpanan untuk berbagi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/set-azstoragesharequota) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -49,7 +52,7 @@ Perintah ini menetapkan kapasitas penyimpanan untuk berbagi bernama ContosoShare
 ## PARAMETERS
 
 ### -ClientTimeoutPerRequest
-Menentukan interval waktu habis sisi klien, dalam detik, untuk satu permintaan layanan.
+Menentukan interval waktu habis sisi klien, dalam hitungan detik, untuk satu permintaan layanan.
 Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini mencoba kembali permintaan.
 Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini mengembalikan kesalahan.
 
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -ShareName
-Menentukan nama berbagi file untuk menetapkan kuota.
+Menentukan nama berbagi file untuk mengatur kuota.
 
 ```yaml
 Type: System.String

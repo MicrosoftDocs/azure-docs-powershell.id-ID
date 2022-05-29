@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dns/remove-azdns
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Dns/Dns/help/Remove-AzDnsRecordSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Dns/Dns/help/Remove-AzDnsRecordSet.md
-ms.openlocfilehash: bb52c0f872f89b8f156c9fdf0f1d54b05121a3c3
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9bca6a1d675b96567e0ceba4464dcb8156f566d2
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144188784"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145740358"
 ---
 # Remove-AzDnsRecordSet
 
 ## SYNOPSIS
 Menghapus kumpulan catatan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dns/remove-azdnsrecordset) untuk informasi terbaru.
 
 ## SYNTAX
 

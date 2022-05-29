@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzStorageQueueStoredAccessPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzStorageQueueStoredAccessPolicy.md
-ms.openlocfilehash: 9b628213fb9982bb6ea194b7aa0a83ef3e521bab
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9fe6b1410f75f44eed7fad4379fc36758717960e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144228196"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145714834"
 ---
 # Remove-AzStorageQueueStoredAccessPolicy
 
 ## SYNOPSIS
 Menghapus kebijakan akses tersimpan dari antrean penyimpanan Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/remove-azstoragequeuestoredaccesspolicy) untuk informasi terbaru.
 
 ## SYNTAX
 

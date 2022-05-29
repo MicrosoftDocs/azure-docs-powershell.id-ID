@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlser
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerVirtualNetworkRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerVirtualNetworkRule.md
-ms.openlocfilehash: a8e799d6cffa3f8ef96b50327fe9ab5cc9f1b358
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3fd0e422c908dce36932f5a56951873069711374
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144221678"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145726894"
 ---
 # Get-AzSqlServerVirtualNetworkRule
 
 ## SYNOPSIS
 Mendapatkan atau mencantumkan Aturan Virtual Network Server Azure SQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlservervirtualnetworkrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Perintah ini mendapatkan Aturan Virtual Network Server Azure SQL tertentu atau d
 $virtualNetworkRule = Get-AzSqlServerVirtualNetworkRule -ResourceGroupName rg -ServerName serverName -VirtualNetworkRuleName virtualNetworkRuleName
 ```
 
-Mendapatkan aturan jaringan virtual server Azure SQL tunggal
+Mendapatkan satu aturan jaringan virtual Azure SQL Server
 
 ### Contoh 2
 ```powershell
@@ -43,7 +46,7 @@ $virtualNetworkRules = Get-AzSqlServerVirtualNetworkRule -ResourceGroupName rg -
 
 Mendapatkan daftar aturan jaringan virtual Azure SQL Server di bawah server yang ditentukan
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $virtualNetworkRules = Get-AzSqlServerVirtualNetworkRule -ResourceGroupName rg -ServerName serverName -VirtualNetworkRuleName virtualNetworkRule*
 ```

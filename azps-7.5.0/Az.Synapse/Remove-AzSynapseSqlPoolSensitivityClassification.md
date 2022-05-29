@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseSqlPoolSensitivityClassification.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseSqlPoolSensitivityClassification.md
-ms.openlocfilehash: f2f367c98032f9f8c72c1a3a9f345b5d38139aa4
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 619e86b85cca5d08ec5cb12f774f82e87c40de44
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144222722"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145706266"
 ---
 # Remove-AzSynapseSqlPoolSensitivityClassification
 
 ## SYNOPSIS
 Menghapus jenis informasi dan label sensitivitas kolom di kumpulan SQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/remove-azsynapsesqlpoolsensitivityclassification) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -49,12 +52,12 @@ Cmdlet Remove-AzSynapseSqlPoolSensitivityClassification menghapus jenis informas
 Remove-AzSynapseSqlPoolSensitivityClassification -ResourceGroupName ContosoResourceGroup -WorkspaceName ContosoWorkspace -SqlPoolName ContosoSqlPool -SchemaName schema -TableName table -ColumnName column
 ```
 
-### Contoh 2: Hapus jenis informasi saat ini dan label sensitivitas kolom dalam kumpulan Azure Synapse SQL menggunakan Piping.
+### Contoh 2: Menghapus jenis informasi saat ini dan label sensitivitas kolom dalam kumpulan Azure Synapse SQL menggunakan Piping.
 ```powershell
 Get-AzSynapseSqlPoolSensitivityClassification -ResourceGroupName ContosoResourceGroup -WorkspaceName ContosoWorkspace -SqlPoolName ContosoSqlPool | Remove-AzSynapseSqlPoolSensitivityClassification
 ```
 
-### Contoh 3: Menghapus jenis informasi dan label sensitivitas kolom di kumpulan Azure Synapse SQL menggunakan Piping.
+### Contoh 3: Menghapus jenis informasi dan label sensitivitas kolom dalam kumpulan Azure Synapse SQL menggunakan Piping.
 ```powershell
 Get-AzSynapseSqlPool -ResourceGroupName ContosoResourceGroup -WorkspaceName ContosoWorkspace -Name ContosoSqlPool | Remove-AzSynapseSqlPoolSensitivityClassification -SchemaName schema -TableName table -ColumnName column
 ```

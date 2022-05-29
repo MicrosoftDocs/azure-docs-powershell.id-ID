@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.storagesync/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/New-AzStorageSyncGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/New-AzStorageSyncGroup.md
-ms.openlocfilehash: a9f88b028c117cd011a749556274a2b33acf61d1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: caa309d1ebfc959d8c9db5450bb8cf9243b8c934
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144222851"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145712943"
 ---
 # New-AzStorageSyncGroup
 
 ## SYNOPSIS
 Perintah ini membuat grup sinkronisasi baru dalam layanan sinkronisasi penyimpanan tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storagesync/new-azstoragesyncgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ New-AzStorageSyncGroup [-ParentResourceId] <String> -Name <String> [-DefaultProf
 ```
 
 ## DESCRIPTION
-Perintah ini membuat grup sinkronisasi baru dalam layanan sinkronisasi penyimpanan tertentu. Grup sinkronisasi digunakan untuk menggambarkan topologi lokasi, yang disebut sebagai titik akhir, yang akan menyinkronkan file apa pun yang disimpan dalam salah satu titik akhir. Grup sinkronisasi berisi titik akhir cloud, yang mereferensikan berbagi file Azure, dan juga berisi titik akhir server yang mereferensikan jalur lokal tertentu di server terdaftar.
+Perintah ini membuat grup sinkronisasi baru dalam layanan sinkronisasi penyimpanan tertentu. Grup sinkronisasi digunakan untuk menjelaskan topologi lokasi, yang disebut sebagai titik akhir, yang akan menyinkronkan file apa pun yang disimpan dalam salah satu titik akhir. Grup sinkronisasi berisi titik akhir cloud, yang mereferensikan berbagi file Azure, dan juga berisi titik akhir server yang mereferensikan jalur lokal tertentu di server terdaftar.
 
 ## EXAMPLES
 

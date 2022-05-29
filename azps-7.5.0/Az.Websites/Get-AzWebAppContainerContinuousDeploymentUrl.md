@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/get-azw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzWebAppContainerContinuousDeploymentUrl.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzWebAppContainerContinuousDeploymentUrl.md
-ms.openlocfilehash: aefa6b1aa61ec02ed0d8471dda3faee1fa1a2567
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d97eabc831fe0685b91e90a24a0e6ce80f4ca67e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144236425"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145700074"
 ---
 # Get-AzWebAppContainerContinuousDeploymentUrl
 
 ## SYNOPSIS
 Get-AzWebAppContainerContinuousDeploymentUrl akan mengembalikan url penyebaran berkelanjutan kontainer
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.websites/get-azwebappcontainercontinuousdeploymenturl) untuk informasi terbaru.
 
 ## SYNTAX
 

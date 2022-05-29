@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azim
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzImageConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzImageConfig.md
-ms.openlocfilehash: b06d67caa453b1aaa2eb7a66b4e9efdb26e04f4e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: dedb4bc029abba162d6d74f668c9e5f521dacb62
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144235994"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145734508"
 ---
 # New-AzImageConfig
 
 ## SYNOPSIS
 Membuat objek gambar yang dapat dikonfigurasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/new-azimageconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ New-AzImage -Image $imageConfig -ImageName 'ImageName01' -ResourceGroupName 'Res
 
 Perintah pertama membuat objek gambar, lalu menyimpannya dalam variabel $imageConfig.
 Tiga perintah berikutnya menetapkan jalur disk os dan dua disk data ke variabel $osDiskVhdUri, $dataDiskVhdUri 1, dan $dataDiskVhdUri 2. Pendekatan ini hanya untuk keterbacaan perintah berikut.
-Tiga perintah berikutnya masing-masing menambahkan disk os dan dua disk data ke gambar yang disimpan di $imageConfig.
+Tiga perintah berikutnya masing-masing menambahkan disk os dan dua disk data ke gambar yang disimpan dalam $imageConfig.
 URI setiap disk disimpan dalam $osDiskVhdUri, $dataDiskVhdUri 1, dan $dataDiskVhdUri 2.
 Perintah akhir membuat gambar bernama 'ImageName01' di grup sumber daya 'ResourceGroup01'.
 
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -ZoneResilient
-Aktifkan ketahanan zona
+Aktifkan zona tangguh
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

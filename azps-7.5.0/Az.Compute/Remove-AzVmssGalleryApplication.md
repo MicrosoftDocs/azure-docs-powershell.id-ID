@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzVmssGalleryApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzVmssGalleryApplication.md
-ms.openlocfilehash: dd928a05e0f675121bfb41148d055b7d169cace2
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2b1792787b2cc18b34f43ba428955cf731e2cbbe
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144209423"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145733410"
 ---
 # Remove-AzVmssGalleryApplication
 
 ## SYNOPSIS
 Hapus objek VMGalleryApplication dari objek PSVirtualMachineScaleSetVMProfile.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/remove-azvmssgalleryapplication) untuk informasi terbaru.
 
 ## SYNTAX
 

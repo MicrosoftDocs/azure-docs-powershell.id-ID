@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.ApplicationInsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/New-AzApplicationInsightsWebTestGeolocationObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/New-AzApplicationInsightsWebTestGeolocationObject.md
-ms.openlocfilehash: 402417d188976fc4eb557f61e601375c791fdda2
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: fd161ef529250d57e23e9638d2ebc71183c71695
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144221135"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145685290"
 ---
 # New-AzApplicationInsightsWebTestGeolocationObject
 
 ## SYNOPSIS
 Buat objek dalam memori untuk WebTestGeolocation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.applicationinsights/new-azapplicationinsightswebtestgeolocationobject) untuk informasi terbaru.
 
 ## SYNTAX
 

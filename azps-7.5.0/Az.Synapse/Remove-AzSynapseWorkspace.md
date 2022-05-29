@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseWorkspace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseWorkspace.md
-ms.openlocfilehash: 38ed0afdc2ebe3f09e01c3653a45b7c922821ac3
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 68e4a093680b0a4f9f9f9b2cca7192447f98dcba
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144199914"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145706158"
 ---
 # Remove-AzSynapseWorkspace
 
 ## SYNOPSIS
 Menghapus ruang kerja Synapse Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/remove-azsynapseworkspace) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -57,7 +60,7 @@ $ws | Remove-AzSynapseWorkspace
 
 Perintah ini menghapus ruang kerja Azure Synapse Analytics melalui alur.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Remove-AzSynapseWorkspace -ResourceId /subscriptions/21686af7-58ec-4f4d-9c68-f431f4db4edd/resourceGroups/ContosoResourceGroup/providers/Microsoft.Synapse/workspaces/ContosoWorkspace
 ```

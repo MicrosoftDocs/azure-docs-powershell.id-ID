@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Update-AzRmStorageContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Update-AzRmStorageContainer.md
-ms.openlocfilehash: 23942c6af22fd6e9dd5d5afe0d76ba067d42ebe9
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8510c05ee68dacdf6881f4f5d5f3078a3b83de27
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144211754"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145713448"
 ---
 # Update-AzRmStorageContainer
 
 ## SYNOPSIS
 Memodifikasi kontainer blob Storage
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/update-azrmstoragecontainer) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -49,7 +52,7 @@ Cmdlet **Update-AzRmStorageContainer** memodifikasi kontainer blob Storage
 PS C:\>Update-AzRmStorageContainer -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" -ContainerName "myContainer" -PublicAccess Container -Metadata @{tag0="value0";tag1="value1"}
 ```
 
-Perintah ini memodifikasi metadata kontainer blob dan akses publik Storage dengan nama akun dan nama kontainer Storage.
+Perintah ini memodifikasi metadata kontainer blob Storage dan akses publik dengan nama akun Storage dan nama kontainer.
 
 ### Contoh 2: Menonaktifkan akses publik pada kontainer blob Storage dengan objek akun Storage dan nama kontainer
 ```

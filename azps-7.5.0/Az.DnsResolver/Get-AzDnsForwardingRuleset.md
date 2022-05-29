@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dnsresolver/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/Get-AzDnsForwardingRuleset.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/Get-AzDnsForwardingRuleset.md
-ms.openlocfilehash: ce51ed8d5170d27831f0dbd4561e78183dade8b3
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2cc054a3fe865cc66d4eb2cedfb888eec28210af
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144188700"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145740250"
 ---
 # Get-AzDnsForwardingRuleset
 
 ## SYNOPSIS
-Mendapatkan properti aturan penerusan DNS.
+Mendapatkan properti set aturan penerusan DNS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dnsresolver/get-azdnsforwardingruleset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -51,7 +54,7 @@ Get-AzDnsForwardingRuleset -ResourceGroupName <String> -VirtualNetworkName <Stri
 ```
 
 ## DESCRIPTION
-Mendapatkan properti aturan penerusan DNS.
+Mendapatkan properti set aturan penerusan DNS.
 
 ## EXAMPLES
 
@@ -72,7 +75,7 @@ eastus2  dnsforwardingruleset-test-eastus2-main-syn-outbound-secondary-0 Microso
 
 Perintah ini mendapatkan semua aturan penerusan DNS di bawah langganan.
 
-### Contoh 2: Mendapatkan aturan penerusan DNS tunggal menurut nama
+### Contoh 2: Dapatkan aturan penerusan DNS tunggal menurut nama
 ```powershell
 Get-AzDnsForwardingRuleset -Name dnsForwardingRuleset -ResourceGroupName sampleRG
 ```
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DnsResolver.Models.IDnsResolverIdentity
@@ -159,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Nama kumpulan aturan penerusan DNS.
+Nama set aturan penerusan DNS.
 
 ```yaml
 Type: System.String
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama tidak peka huruf besar/kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -289,13 +292,13 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <IDnsResolverIdentity>: Parameter Identitas
-  - `[DnsForwardingRulesetName <String>]`: Nama kumpulan aturan penerusan DNS.
+  - `[DnsForwardingRulesetName <String>]`: Nama set aturan penerusan DNS.
   - `[DnsResolverName <String>]`: Nama pemecah masalah DNS.
   - `[ForwardingRuleName <String>]`: Nama aturan penerusan.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[InboundEndpointName <String>]`: Nama titik akhir masuk untuk pemecah masalah DNS.
   - `[OutboundEndpointName <String>]`: Nama titik akhir keluar untuk pemecah masalah DNS.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
   - `[VirtualNetworkLinkName <String>]`: Nama tautan jaringan virtual.
   - `[VirtualNetworkName <String>]`: Nama jaringan virtual.

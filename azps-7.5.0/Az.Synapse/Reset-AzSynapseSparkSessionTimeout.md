@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/reset-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Reset-AzSynapseSparkSessionTimeout.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Reset-AzSynapseSparkSessionTimeout.md
-ms.openlocfilehash: 70ac5c2565398066e43dda66506a56930ccad120
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 10a587eddbd955563a9675a128a0f49dd83242ff
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144191189"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145706032"
 ---
 # Reset-AzSynapseSparkSessionTimeout
 
 ## SYNOPSIS
 Mengatur ulang batas waktu sesi Synapse Analytics Spark.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/reset-azsynapsesparksessiontimeout) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -57,7 +60,7 @@ $pool | Reset-AzSynapseSparkSessionTimeout -LivyId 125
 
 Perintah ini mengatur ulang batas waktu sesi Synapse Analytics Spark dengan ID livy yang ditentukan melalui alur.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $session = Get-AzSynapseSparkSession -WorkspaceName ContosoWorkspace -SparkPoolName ContosoSparkPool -LivyId 125
 $session | Reset-AzSynapseSparkSessionTimeout

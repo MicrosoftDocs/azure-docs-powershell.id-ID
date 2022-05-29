@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlvir
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlVirtualCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlVirtualCluster.md
-ms.openlocfilehash: a9ccda71fcde13fae510dd3f2d66bd849b5c95a7
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 218ac24dd5fd925846cf7a3a91a5a05e848869fb
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144221594"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145726534"
 ---
 # Get-AzSqlVirtualCluster
 
 ## SYNOPSIS
 Mengembalikan informasi tentang Azure SQL Virtual Cluster.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlvirtualcluster) untuk informasi terbaru.
 
 ## SYNTAX
 

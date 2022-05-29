@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.maps/get-azmapsa
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/Get-AzMapsAccountKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/Get-AzMapsAccountKey.md
-ms.openlocfilehash: 1d5748ba972e2fe2f95f40732b63c02a0226396e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 57412e28f4290cfbeeeca3615c3042bfac7d217a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144212327"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145691261"
 ---
 # Get-AzMapsAccountKey
 
@@ -18,6 +18,9 @@ ms.locfileid: "144212327"
 Dapatkan kunci untuk digunakan dengan API Peta.
 Kunci digunakan untuk mengautentikasi dan mengotorisasi akses ke REST API Peta.
 Hanya satu kunci yang diperlukan pada satu waktu; dua diberikan untuk memberikan regenerasi kunci yang mulus.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.maps/get-azmapsaccountkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ PrimaryKey                                  PrimaryKeyLastUpdated        Seconda
 AZPcJC8OCNCpqRsnj1NB3Ngl-qQncBP5IT21jts_2b0 2021-05-20T05:59:16.2028276Z 3l_cups4uVp7LB90G861PB_ddEFJFOdt0beX1U8ROO4 2021-05-20T05:59:16.2028276Z
 ```
 
-Perintah ini mendapatkan kunci yang akan digunakan dengan API Peta.
+Perintah ini mendapatkan kunci untuk digunakan dengan API Peta.
 Kunci digunakan untuk mengautentikasi dan mengotorisasi akses ke REST API Peta.
 Hanya satu kunci yang diperlukan pada satu waktu; dua diberikan untuk memberikan regenerasi kunci yang mulus.
 
@@ -82,7 +85,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama tidak peka huruf besar/kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String

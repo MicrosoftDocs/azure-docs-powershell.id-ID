@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.sql/get-Azsqlela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlElasticJobAgent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlElasticJobAgent.md
-ms.openlocfilehash: 8f95890eaf90dd5d7c15a6a6a057d342b0453acc
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3398d0255d33ba1b89ceecaa493c9d4e01ba80a9
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144233404"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145728838"
 ---
 # Get-AzSqlElasticJobAgent
 
 ## SYNOPSIS
 Mendapatkan agen Pekerjaan Elastis Azure SQL
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlelasticjobagent) untuk informasi terbaru.
 
 ## SYNTAX
 

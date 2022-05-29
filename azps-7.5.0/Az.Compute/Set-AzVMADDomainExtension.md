@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMADDomainExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMADDomainExtension.md
-ms.openlocfilehash: 39b6a937b717d0a9ae1ebe6905e90301e496ce13
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7d21e705d267343f20f7a33df56a8954740e1690
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144193194"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145732996"
 ---
 # Set-AzVMADDomainExtension
 
 ## SYNOPSIS
 Menambahkan ekstensi domain AD ke komputer virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azvmaddomainextension) untuk informasi terbaru.
 
 ## SYNTAX
 

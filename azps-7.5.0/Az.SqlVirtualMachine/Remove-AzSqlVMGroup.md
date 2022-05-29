@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sqlvirtualmachin
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SqlVirtualMachine/SqlVirtualMachine/help/Remove-AzSqlVMGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SqlVirtualMachine/SqlVirtualMachine/help/Remove-AzSqlVMGroup.md
-ms.openlocfilehash: b0ea70ddf51a59df31cd35cd18c2945c59daad56
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3cead9de714bf4c9416223b1126620b682444125
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144208667"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145720900"
 ---
 # Remove-AzSqlVMGroup
 
 ## SYNOPSIS
 Menghapus grup komputer virtual sql.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sqlvirtualmachine/remove-azsqlvmgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -53,7 +56,7 @@ Cmdlet Remove-AzSqlVMGroup menghapus grup komputer virtual sql.
 Remove-AzSqlVMGroup -ResourceGroupName "ResourceGroup01" -Name "test-group"
 ```
 
-Menghapus grup komputer virtual Azure SQL "grup uji" di grup sumber daya ResourceGroup01.
+Menghapus grup komputer virtual Azure SQL "test-group" di grup sumber daya ResourceGroup01.
 
 ## PARAMETERS
 

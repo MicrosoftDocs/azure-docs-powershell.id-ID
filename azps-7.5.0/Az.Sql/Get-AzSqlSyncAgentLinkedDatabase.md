@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlsyn
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlSyncAgentLinkedDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlSyncAgentLinkedDatabase.md
-ms.openlocfilehash: 8cacc3f3d17877f5d7ad71ce53c2d09ebdc9c7a8
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e836f6b13a9577eb591a73b72be70d6a79c921f9
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144221639"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145726714"
 ---
 # Get-AzSqlSyncAgentLinkedDatabase
 
 ## SYNOPSIS
 Mengembalikan informasi tentang database SQL Server yang ditautkan oleh agen sinkronisasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlsyncagentlinkeddatabase) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ Cmdlet **Get-AzSqlSyncAgentLinkedDatabase** mengembalikan informasi tentang data
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan database SQL Server tertaut untuk agen sinkronisasi Azure SQL.
+### Contoh 1: Dapatkan database SQL Server yang ditautkan untuk agen sinkronisasi Azure SQL.
 
 Contoh berikut mengembalikan database SQL Server tertaut yang ditautkan oleh agen sinkronisasi Azure SQL.
 
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Nama server Azure SQL tempat agen sinkronisasi berada.
+Nama Azure SQL Server tempat agen sinkronisasi berada.
 
 ```yaml
 Type: System.String

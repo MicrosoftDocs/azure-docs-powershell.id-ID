@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.storagesync/invo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Invoke-AzStorageSyncChangeDetection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Invoke-AzStorageSyncChangeDetection.md
-ms.openlocfilehash: 71e41aa13e13d178a98fa6cc3e8c9101b1dd069b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8f4e0ada1a601fc7787b450e8bcd4cd26282e562
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144241888"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145713016"
 ---
 # Invoke-AzStorageSyncChangeDetection
 
 ## SYNOPSIS
-Perintah ini dapat digunakan untuk memulai deteksi perubahan namespace secara manual. Ini dapat ditargetkan ke seluruh berbagi, subfolder, atau set file. Saat menjalankan perintah dengan parameter -DirectoryPath atau -Path, maksimal 10.000 item dapat dideteksi. Jika cakupan perubahan diketahui oleh Anda, batasi eksekusi perintah ini ke bagian namespace layanan, sehingga deteksi perubahan dapat selesai dengan cepat dan dalam batas 10.000 item. Atau, Anda dapat menghindari batas item dengan menjalankan cmdlet tanpa parameter ini, memanggil deteksi perubahan tingkat berbagi. 
+Perintah ini dapat digunakan untuk memulai deteksi perubahan namespace secara manual. Ini dapat ditargetkan ke seluruh berbagi, subfolder, atau sekumpulan file. Saat menjalankan perintah dengan parameter -DirectoryPath atau -Path, maksimal 10.000 item dapat dideteksi. Jika cakupan perubahan diketahui oleh Anda, batasi eksekusi perintah ini ke bagian namespace layanan, sehingga deteksi perubahan dapat selesai dengan cepat dan dalam batas 10.000 item. Atau, Anda dapat menghindari batas item dengan menjalankan cmdlet tanpa parameter ini, memanggil deteksi perubahan tingkat berbagi. 
 
 > [!Note]  
 > Jika dijalankan dengan parameter -DirectoryPath atau -Path, perintah tidak akan mendeteksi perubahan berikut dalam berbagi file Azure:
@@ -24,6 +24,9 @@ Perintah ini dapat digunakan untuk memulai deteksi perubahan namespace secara ma
 > - File yang dihapus dan dibuat dengan nama yang sama.  
 > 
 >  Jika deteksi perubahan tingkat berbagi dipanggil, semua perubahan ini akan terdeteksi. Perubahan ini juga akan terdeteksi ketika [pekerjaan deteksi perubahan](https://docs.microsoft.com/azure/storage/files/storage-sync-files-troubleshoot?tabs=portal1%2Cazure-portal#afs-change-detection) terjadwal berjalan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storagesync/invoke-azstoragesyncchangedetection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -85,7 +88,7 @@ Invoke-AzStorageSyncChangeDetection [-InputObject] <PSCloudEndpoint> [-PassThru]
 ```
 
 ## DESCRIPTION
-Secara berkala, Azure File Sync memeriksa namespace di dalam berbagi file Azure yang disinkronkan untuk perubahan yang masuk ke berbagi file dengan cara lain selain sinkronisasi. Tujuannya adalah untuk mengidentifikasi perubahan ini dan pada akhirnya menyinkronkannya ke server yang terhubung. Perintah ini dapat digunakan untuk memulai deteksi perubahan namespace secara manual. Ini dapat ditargetkan ke seluruh berbagi, subfolder, atau set file. Jika cakupan perubahan diketahui oleh Anda, batasi eksekusi perintah ini ke bagian namespace layanan, sehingga deteksi perubahan item individual dapat selesai dengan cepat dan dalam batas 10.000 item. Jika tidak, jalankan perintah tanpa parameter -DirectoryPath atau -Path untuk memanggil deteksi perubahan tingkat berbagi penuh.
+Secara berkala, Azure File Sync memeriksa namespace di dalam berbagi file Azure yang disinkronkan untuk perubahan yang masuk ke berbagi file dengan cara lain selain sinkronisasi. Tujuannya adalah untuk mengidentifikasi perubahan ini dan pada akhirnya menyinkronkannya ke server yang terhubung. Perintah ini dapat digunakan untuk memulai deteksi perubahan namespace secara manual. Ini dapat ditargetkan ke seluruh berbagi, subfolder, atau sekumpulan file. Jika cakupan perubahan diketahui oleh Anda, batasi eksekusi perintah ini ke bagian namespace layanan, sehingga deteksi perubahan item individual dapat selesai dengan cepat dan dalam batas 10.000 item. Jika tidak, jalankan perintah tanpa parameter -DirectoryPath atau -Path untuk memanggil deteksi perubahan tingkat berbagi penuh.
 
 ## EXAMPLES
 
@@ -101,9 +104,9 @@ Dalam contoh ini, deteksi perubahan dijalankan di direktori "Data" dan "Reportin
 Invoke-AzStorageSyncChangeDetection -ResourceGroupName "myResourceGroup" -StorageSyncServiceName "myStorageSyncServiceName" -SyncGroupName "mySyncGroupName" -CloudEndpointName "b38fc242-8100-4807-89d0-399cef5863bf" -Path "Data\results.xslx","Reporting\Templates\generated.pptx"
 ```
 
-Dalam contoh ini, deteksi perubahan dijalankan untuk sekumpulan file yang diketahui oleh pemanggil perintah yang telah berubah. Tujuannya adalah agar sinkronisasi file Azure mendeteksi dan menyinkronkan perubahan ini juga.
+Dalam contoh ini, deteksi perubahan dijalankan untuk sekumpulan file yang diketahui oleh pemanggil perintah telah berubah. Tujuannya adalah agar sinkronisasi file Azure mendeteksi dan menyinkronkan perubahan ini juga.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Invoke-AzStorageSyncChangeDetection -ResourceGroupName "myResourceGroup" -StorageSyncServiceName "myStorageSyncServiceName" -SyncGroupName "mySyncGroupName" -CloudEndpointName "b38fc242-8100-4807-89d0-399cef5863bf" -DirectoryPath "Examples" -Recursive
 ```
@@ -115,7 +118,7 @@ Dalam contoh ini, deteksi perubahan dijalankan untuk direktori "Contoh" dan akan
 Invoke-AzStorageSyncChangeDetection -ResourceGroupName "myResourceGroup" -StorageSyncServiceName "myStorageSyncServiceName" -SyncGroupName "mySyncGroupName" -CloudEndpointName "b38fc242-8100-4807-89d0-399cef5863bf"
 ```
 
-Dalam contoh ini, baik -DirectoryPath maupun -Path tidak diteruskan ke perintah. Ini akan memanggil deteksi perubahan pada seluruh berbagi file.
+Dalam contoh ini, tidak ada -DirectoryPath atau -Path yang telah diteruskan ke perintah. Ini akan memanggil deteksi perubahan pada seluruh berbagi file.
 
 ## PARAMETERS
 
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Dalam eksekusi normal, cmdlet ini tidak mengembalikan nilai pada keberhasilan. Jika Anda memberikan parameter PassThru, maka cmdlet akan menulis nilai ke alur setelah eksekusi berhasil.
+Dalam eksekusi normal, cmdlet ini tidak mengembalikan nilai pada keberhasilan. Jika Anda memberikan parameter PassThru, cmdlet akan menulis nilai ke alur setelah eksekusi berhasil.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

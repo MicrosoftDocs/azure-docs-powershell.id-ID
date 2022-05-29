@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackedge/invoke
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Invoke-AzStackEdgeDevice.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Invoke-AzStackEdgeDevice.md
-ms.openlocfilehash: 1cc70cf8b979d2179d748d04317383497f43f7fe
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9191a8a95600dee06cfdd4fe1517f4c7f9b00b0d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144226429"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145720324"
 ---
 # Invoke-AzStackEdgeDevice
 
 ## SYNOPSIS
 Memanggil tindakan tertentu pada perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.stackedge/invoke-azstackedgedevice) untuk informasi terbaru.
 
 ## SYNTAX
 

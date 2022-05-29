@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqldel
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDeletedDatabaseBackup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDeletedDatabaseBackup.md
-ms.openlocfilehash: 507fa88fe0b328f30d1fea91b93db52446662157
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a5be32e549141cc5a48ed7cc4a2a75691bc7653e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144233432"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145729000"
 ---
 # Get-AzSqlDeletedDatabaseBackup
 
 ## SYNOPSIS
 Mendapatkan database terhapus yang bisa Anda pulihkan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqldeleteddatabasebackup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Get-AzSqlDeletedDatabaseBackup -ResourceGroupName "ContosoResourceGroup" -Server
 
 Perintah ini mendapatkan semua cadangan database yang dihapus di server.
 
-### Contoh 2: Mendapatkan cadangan database yang dihapus yang ditentukan
+### Contoh 2: Mendapatkan cadangan database yang dihapus tertentu
 ```powershell
 Get-AzSqlDeletedDatabaseBackup -ResourceGroupName "ContosoResourceGroup" -ServerName "ContosoServer" -DatabaseName "ContosoDatabase"
 ```
@@ -172,6 +175,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzSqlDatabase](./Get-AzSqlDatabase.md)
+[Dapatkan-AzSqlDatabase](./Get-AzSqlDatabase.md)
 
 [Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)

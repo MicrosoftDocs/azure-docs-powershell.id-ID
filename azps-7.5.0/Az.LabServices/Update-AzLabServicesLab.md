@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.labservices/upda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Update-AzLabServicesLab.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Update-AzLabServicesLab.md
-ms.openlocfilehash: 428121c2abdc8cbfccdbc353922293649610f22c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d20e486eb8f1e8bf26608839ed4cdcb02fc018f5
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144184553"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145692370"
 ---
 # Update-AzLabServicesLab
 
 ## SYNOPSIS
 Operasi untuk memperbarui sumber daya lab.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.labservices/update-azlabserviceslab) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -57,7 +60,7 @@ Location Name
 westus2  Lab Name
 ```
 
-Contoh ini memperbarui lab dan mengaktifkan opsi Matikan pada Putuskan Sambungan mengatur penundaan pada 25 menit.
+Contoh ini memperbarui lab dan mengaktifkan opsi Matikan saat Putuskan Sambungan mengatur penundaan pada 25 menit.
 
 ## PARAMETERS
 
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -AdminUserUsername
-Nama pengguna yang akan digunakan saat masuk ke VM lab.
+Nama pengguna yang digunakan saat masuk ke VM lab.
 
 ```yaml
 Type: System.String
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -AutoShutdownProfileIdleDelay
-Jumlah waktu VM akan diam sebelum dimatikan jika perilaku ini diaktifkan.
+Jumlah waktu VM akan menganggur sebelum dimatikan jika perilaku ini diaktifkan.
 
 ```yaml
 Type: System.TimeSpan
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -AutoShutdownProfileShutdownOnDisconnect
-Apakah matikan saat sambungan terputus diaktifkan
+Apakah matikan saat pemutusan sambungan diaktifkan
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.LabServices.Support.EnableState
@@ -198,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### -AutoShutdownProfileShutdownWhenNotConnected
-Apakah VM akan dimatikan ketika belum tersambung setelah jangka waktu tertentu.
+Apakah VM akan dimatikan saat belum tersambung setelah jangka waktu tertentu.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.LabServices.Support.EnableState
@@ -395,7 +398,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Nama lab yang secara unik mengidentifikasinya dalam akun lab.
+Nama lab yang secara unik mengidentifikasinya dalam berisi akun lab.
 Digunakan dalam URI sumber daya.
 
 ```yaml
@@ -427,7 +430,7 @@ Accept wildcard characters: False
 ```
 
 ### -NonAdminUserUsername
-Nama pengguna yang akan digunakan saat masuk ke VM lab.
+Nama pengguna yang digunakan saat masuk ke VM lab.
 
 ```yaml
 Type: System.String
@@ -458,7 +461,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama tidak peka huruf besar/kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -565,7 +568,7 @@ Accept wildcard characters: False
 
 ### -SkuCapacity
 Jika SKU mendukung peluasan skala/masuk, bilangan bulat kapasitas harus disertakan.
-Jika peluasan/penyempurnaan skala tidak dimungkinkan untuk sumber daya, ini dapat dihilangkan.
+Jika peluasan/masuk skala tidak dimungkinkan untuk sumber daya, ini dapat dihilangkan.
 
 ```yaml
 Type: System.Int32
@@ -596,7 +599,7 @@ Accept wildcard characters: False
 
 ### -SkuName
 Nama SKUnya.
-Mantan - P3.
+Ex - P3.
 Biasanya kode huruf+angka
 
 ```yaml

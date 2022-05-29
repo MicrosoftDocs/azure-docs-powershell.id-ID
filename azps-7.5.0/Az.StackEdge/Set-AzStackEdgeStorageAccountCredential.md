@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackedge/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Set-AzStackEdgeStorageAccountCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Set-AzStackEdgeStorageAccountCredential.md
-ms.openlocfilehash: 3d1e09235bf64bc3e5b5c4a06e9fd4c02fcee283
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f0476fe07de052803b9fbccc203835740c109f66
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144192102"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145719388"
 ---
 # Set-AzStackEdgeStorageAccountCredential
 
 ## SYNOPSIS
 Mengatur kredensial akun penyimpanan untuk perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.stackedge/set-azstackedgestorageaccountcredential) untuk informasi terbaru.
 
 ## SYNTAX
 

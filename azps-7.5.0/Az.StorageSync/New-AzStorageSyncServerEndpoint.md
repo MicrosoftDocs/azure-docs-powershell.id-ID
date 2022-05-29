@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.storagesync/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/New-AzStorageSyncServerEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/New-AzStorageSyncServerEndpoint.md
-ms.openlocfilehash: 31d17faed45d166f99c8e7cb125a14a684422cbb
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e2d67cb9ec29e6c0e0212fbcb8af60e574d98b92
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144222842"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145712926"
 ---
 # New-AzStorageSyncServerEndpoint
 
 ## SYNOPSIS
 Perintah ini membuat titik akhir server baru pada server terdaftar. Ini memungkinkan jalur yang ditentukan pada server untuk mulai menyinkronkan file dengan titik akhir lain dalam grup sinkronisasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storagesync/new-azstoragesyncserverendpoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,7 +48,7 @@ New-AzStorageSyncServerEndpoint [-ParentResourceId] <String> -Name <String> -Ser
 ```
 
 ## DESCRIPTION
-Perintah ini membuat titik akhir server baru pada server terdaftar. Ini memungkinkan jalur yang ditentukan pada server untuk mulai menyinkronkan file dengan titik akhir lain dalam grup sinkronisasi. Jika sudah ada file di titik akhir lain dalam grup sinkronisasi dan lokasi yang baru ditambahkan ini juga berisi file, proses rekonsiliasi akan mencoba menentukan apakah file sebenarnya sama di folder yang sama seperti pada titik akhir lainnya. Namespace akan bergabung dan rekonsiliasi membantu mencegah file konflik. Jika ada file di titik akhir server lain, seringkali lebih baik untuk memulai dengan lokasi kosong di server ini, sehingga file dari cloud turun ke server dalam proses otomatis yang disebut pemulihan bencana cepat. Metadata namespace akan disinkronkan terlebih dahulu, lalu aliran data setiap file diunduh. Jika file diminta oleh pengguna atau aplikasi di luar urutan pengunduhan, file tersebut akan dipanggil kembali dengan prioritas untuk memenuhi permintaan akses. Anda dapat secara opsional menggunakan penjenjangan cloud pada titik akhir server ini untuk menentukan apakah titik akhir ini seharusnya menjadi cache dari kumpulan file lengkap dari cloud. Jika penjenjangan cloud digunakan, unduhan konten file akan berhenti pada titik yang ditentukan oleh kebijakan penjenjangan cloud yang dapat Anda tetapkan.
+Perintah ini membuat titik akhir server baru pada server terdaftar. Ini memungkinkan jalur yang ditentukan pada server untuk mulai menyinkronkan file dengan titik akhir lain dalam grup sinkronisasi. Jika sudah ada file di titik akhir lain dalam grup sinkronisasi dan lokasi yang baru ditambahkan ini juga berisi file, proses rekonsiliasi akan mencoba menentukan apakah file sebenarnya sama di folder yang sama seperti pada titik akhir lainnya. Namespace akan menggabungkan dan rekonsiliasi membantu mencegah file konflik. Jika ada file di titik akhir server lain, sering kali lebih baik untuk memulai dengan lokasi kosong di server ini, sehingga file dari cloud turun ke server dalam proses otomatis yang disebut pemulihan bencana cepat. Metadata namespace akan disinkronkan terlebih dahulu, lalu aliran data setiap file diunduh. Jika file diminta oleh pengguna atau aplikasi di luar urutan unduhan, file tersebut akan dipanggil kembali dengan prioritas untuk memenuhi permintaan akses. Anda dapat secara opsional menggunakan penjenjangan cloud pada titik akhir server ini untuk menentukan apakah titik akhir ini seharusnya menjadi cache dari kumpulan file lengkap dari cloud. Jika tingkatan cloud digunakan, unduhan konten file akan berhenti pada titik yang ditentukan oleh kebijakan penjenjangan cloud yang dapat Anda tetapkan.
 
 ## EXAMPLES
 
@@ -55,7 +58,7 @@ $RegisteredServer = Get-AzStorageSyncServer -ResourceGroupName "myResourceGroup"
 New-AzStorageSyncServerEndpoint -ResourceGroupName "myResourceGroup" -StorageSyncServiceName "myStorageSyncServiceName" -SyncGroupName "mySyncGroupName" -Name "myServerEndpointName" -ServerResourceId $RegisteredServer.ResourceId -ServerLocalPath "myServerLocalPath" -CloudTiering -TierFilesOlderThanDays "myTierFilesOlderThanDays"
 ```
 
-Perintah ini membuat titik akhir server baru pada server terdaftar dan menyisipkannya ke dalam grup sinkronisasi. Cara ini merupakan bagian dari topologi titik akhir dan metadata file dan konten lainnya akan segera mulai disinkronkan di antara semua lokasi yang dirujuk sebagai titik akhir dalam grup sinkronisasi.
+Perintah ini membuat titik akhir server baru pada server terdaftar dan menyisipkannya ke dalam grup sinkronisasi. Cara itu adalah bagian dari topologi titik akhir lainnya dan metadata file dan konten akan segera mulai disinkronkan antara semua lokasi yang dirujuk sebagai titik akhir dalam grup sinkronisasi.
 
 ## PARAMETERS
 
@@ -273,7 +276,7 @@ Accept wildcard characters: False
 ```
 
 ### -TierFilesOlderThanDays
-File Tingkat Lebih Lama dari Hari Parameter
+File Tingkat yang Lebih Lama Dari Hari Parameter
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -288,7 +291,7 @@ Accept wildcard characters: False
 ```
 
 ### -VolumeFreeSpacePercent
-Parameter Persen Ruang Bebas Volume
+Parameter Persen Ruang Kosong Volume
 
 ```yaml
 Type: System.Nullable`1[System.Int32]

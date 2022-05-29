@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deviceprovisioni
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Update-AzIoTDeviceProvisioningService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Update-AzIoTDeviceProvisioningService.md
-ms.openlocfilehash: 8be38b7af2a80a5a32b7012d9889e3ecf3e68de8
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1c796562eab4e46974d3a857ff2c410cc81c2e95
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144210923"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145741636"
 ---
 # Update-AzIoTDeviceProvisioningService
 
 ## SYNOPSIS
 Memperbarui layanan provisi perangkat Azure IoT Hub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.deviceprovisioningservices/update-aziotdeviceprovisioningservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -106,7 +109,7 @@ Etag                        : AAAAAAAPoOk=
 
 Tambahkan tag ke layanan provisi perangkat Azure IoT Hub "myiotdps".
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $tag = @{}
 $tag.Add("key1","Value1")

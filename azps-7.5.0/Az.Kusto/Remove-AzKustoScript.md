@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.kusto/remove-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Remove-AzKustoScript.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Remove-AzKustoScript.md
-ms.openlocfilehash: 6075970e996b690800eeac2cb747fb0fd3655682
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3b79db7e0f68314f8604d55da270e3cb6b0c0f9a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144213671"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145693342"
 ---
 # Remove-AzKustoScript
 
 ## SYNOPSIS
 Menghapus Kusto principalAssignment.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.kusto/remove-azkustoscript) untuk informasi terbaru.
 
 ## SYNTAX
 

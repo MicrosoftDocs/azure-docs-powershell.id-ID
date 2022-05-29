@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzStorageFile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzStorageFile.md
-ms.openlocfilehash: cff3afc9bca584d6a928018eb5a8b65ef2a4cbaf
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8b1783090f396ebcd371db41e2598d37a412bfd7
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144241941"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145714960"
 ---
 # Remove-AzStorageFile
 
 ## SYNOPSIS
 Menghapus file.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/remove-azstoragefile) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -73,7 +76,7 @@ Perintah saat ini menghapus file yang bernama ContosoFile22 dari ContosoShare06.
 ## PARAMETERS
 
 ### -ClientTimeoutPerRequest
-Menentukan interval waktu habis sisi klien, dalam hitungan detik, untuk satu permintaan layanan.
+Menentukan interval waktu habis sisi klien, dalam detik, untuk satu permintaan layanan.
 Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini mencoba kembali permintaan.
 Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini mengembalikan kesalahan.
 
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 
 ### -Direktori
 Menentukan folder sebagai objek **CloudFileDirectory** .
-Cmdlet ini menghapus file dalam folder yang ditentukan parameter ini.
+Cmdlet ini menghapus file di folder yang ditentukan parameter ini.
 
 ```yaml
 Type: Microsoft.Azure.Storage.File.CloudFileDirectory

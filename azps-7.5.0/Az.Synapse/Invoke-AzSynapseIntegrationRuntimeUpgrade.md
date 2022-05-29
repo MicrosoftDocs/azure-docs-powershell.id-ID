@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/invoke-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Invoke-AzSynapseIntegrationRuntimeUpgrade.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Invoke-AzSynapseIntegrationRuntimeUpgrade.md
-ms.openlocfilehash: 1f805010d5c2c65f0e11db65eb360ac69f525492
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b0f5f7d81194c57a5b14cd117653798f9c0d538a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144243621"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145708060"
 ---
 # Invoke-AzSynapseIntegrationRuntimeUpgrade
 
 ## SYNOPSIS
 Meningkatkan runtime integrasi yang dihost sendiri.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/invoke-azsynapseintegrationruntimeupgrade) untuk informasi terbaru.
 
 ## SYNTAX
 

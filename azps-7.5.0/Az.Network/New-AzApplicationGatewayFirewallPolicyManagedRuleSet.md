@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayFirewallPolicyManagedRuleSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayFirewallPolicyManagedRuleSet.md
-ms.openlocfilehash: 5adcd3bc5471a03d10c2ba781692cb64878c4eac
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4bb8b552c25c899de7198ea29c927fb9f4ad7beb
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144224375"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145677748"
 ---
 # New-AzApplicationGatewayFirewallPolicyManagedRuleSet
 
 ## SYNOPSIS
 Membuat ManagedRuleSet untuk firewallPolicy
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewayfirewallpolicymanagedruleset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ $managedRuleSet = New-AzApplicationGatewayFirewallPolicyManagedRuleSet -RuleSetT
 -RuleSetVersion $ruleSetVersion -RuleGroupOverrides $ruleGroupOverride1, $ruleGroupOverride2
 ```
 
-Membuat ManagedRuleSet dengan ruleSetType sebagai $ruleSetType, ruleSetVersion sebagai $ruleSetVersion dan RuleGroupOverrides sebagai daftar dengan seluruhnya sebagai $ruleGroupOverride 1, $ruleGroupOverride 2 ManagedRuleSet baru ditetapkan ke $managedRuleSet
+Membuat ManagedRuleSet dengan ruleSetType sebagai $ruleSetType, ruleSetVersion sebagai $ruleSetVersion dan RuleGroupOverrides sebagai daftar dengan keseluruhan sebagai $ruleGroupOverride 1, $ruleGroupOverride 2 ManagedRuleSet baru ditetapkan ke $managedRuleSet
 
 ## PARAMETERS
 
@@ -56,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -RuleGroupOverride
-Penimpaan Grup Aturan.
+Grup Aturan Mengambil alih.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayFirewallPolicyManagedRuleGroupOverride[]

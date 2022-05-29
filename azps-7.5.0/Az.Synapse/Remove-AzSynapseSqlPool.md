@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseSqlPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseSqlPool.md
-ms.openlocfilehash: 51aad93e56d5f92569013d6e6ee5b0ae5363bf36
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c23b5789dc570293da1f96d3ca0a704a3087d56b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144197072"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145706338"
 ---
 # Remove-AzSynapseSqlPool
 
 ## SYNOPSIS
 Menghapus kumpulan SQL Synapse Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/remove-azsynapsesqlpool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -64,7 +67,7 @@ $ws | Remove-AzSynapseSqlPool -Name ContosoSqlPool
 
 Perintah ini menghapus kumpulan SQL Azure Synapse Analytics melalui alur.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $pool = Get-AzSynapseSqlPool -WorkspaceName ContosoWorkspace -Name ContosoSqlPool
 $pool | Remove-AzSynapseSqlPool
