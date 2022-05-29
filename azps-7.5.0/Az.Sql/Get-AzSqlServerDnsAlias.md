@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlser
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerDnsAlias.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerDnsAlias.md
-ms.openlocfilehash: 300db6e67128b0099d20d39c4659c1118a414978
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: fdd661c6170ca248a34fddc192225b1fac343011
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144206126"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145727272"
 ---
 # Get-AzSqlServerDnsAlias
 
 ## SYNOPSIS
 Mendapatkan atau mencantumkan Azure SQL Alias DNS Server.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlserverdnsalias) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -56,7 +59,7 @@ rgname             servername   dnsaliasname
 
 Mendapatkan Alias DNS Server yang ditentukan oleh nama server dan alias
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $serverDNSAliases = Get-AzSqlServerDnsAlias -ServerName servername -ResourceGroupName rgname -DnsAliasName "dnsaliasname*"
 ```

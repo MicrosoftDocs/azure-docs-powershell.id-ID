@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/set-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Set-AzNetAppFilesAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Set-AzNetAppFilesAccount.md
-ms.openlocfilehash: 456007408225890bccbb84eac7e238149c6c4686
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 677e38fb23d35ca650c86d187111d49ffa28753b
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144183954"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145779274"
 ---
 # Set-AzNetAppFilesAccount
 
 ## SYNOPSIS
 Memperbarui akun Azure NetApp Files (ANF) dengan himpunan data baru. Berguna untuk penghapusan direktori aktif terkait.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.netappfiles/set-aznetappfilesaccount) untuk informasi terbaru.
 
 ## SYNTAX
 

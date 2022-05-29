@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzVMSqlServerExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzVMSqlServerExtension.md
-ms.openlocfilehash: 73c8f3ea44656e902c30bea9977530cbe87e6528
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7c9d427626da6f21c0679caaf52935f4cbbfcc74
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144190744"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145733518"
 ---
 # Remove-AzVMSqlServerExtension
 
 ## SYNOPSIS
 Menghapus ekstensi SQL Server dari komputer virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/remove-azvmsqlserverextension) untuk informasi terbaru.
 
 ## SYNTAX
 

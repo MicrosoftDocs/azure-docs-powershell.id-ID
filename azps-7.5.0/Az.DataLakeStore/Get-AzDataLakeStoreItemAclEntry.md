@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Get-AzDataLakeStoreItemAclEntry.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Get-AzDataLakeStoreItemAclEntry.md
-ms.openlocfilehash: 64219b16403d2aa8ab79448df9f31865b41f5419
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d523c7ffe928c6c34bc8086a50da5908fe7f0761
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144202711"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145751464"
 ---
 # Get-AzDataLakeStoreItemAclEntry
 
 ## SYNOPSIS
 Mendapatkan entri di ACL file atau folder di Data Lake Store.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/get-azdatalakestoreitemaclentry) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -70,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -Jalur
-Menentukan jalur Data Lake Store dari item yang cmdlet ini mendapatkan ACE, dimulai dengan direktori akar (/).
+Menentukan jalur Data Lake Store dari item tempat cmdlet ini mendapatkan ACE, dimulai dengan direktori akar (/).
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataLakeStore.Models.DataLakeStorePathInstance

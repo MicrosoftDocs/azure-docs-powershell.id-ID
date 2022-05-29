@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/remove-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Remove-AzIotHubDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Remove-AzIotHubDeployment.md
-ms.openlocfilehash: 3167330c1c4b56ce60c4e2a7210ece6ffbe69622
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b68eb24578c999d945463ba2b27b1fc5b2cb470c
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144213947"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145772130"
 ---
 # Remove-AzIotHubDeployment
 
 ## SYNOPSIS
 Menghapus penyebaran IoT Edge.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/remove-aziothubdeployment) untuk informasi terbaru.
 
 ## SYNTAX
 

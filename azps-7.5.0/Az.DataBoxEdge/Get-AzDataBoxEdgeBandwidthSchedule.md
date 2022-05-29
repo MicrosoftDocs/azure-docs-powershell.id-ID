@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databoxedge/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Get-AzDataBoxEdgeBandwidthSchedule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Get-AzDataBoxEdgeBandwidthSchedule.md
-ms.openlocfilehash: b4b23b0c5c0f65e75d64cb06f6369b0b5e518038
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7c2947814be3a796d11a39cad9a6fd609ced0ed5
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144205010"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145785574"
 ---
 # Get-AzDataBoxEdgeBandwidthSchedule
 
 ## SYNOPSIS
 Mendapatkan informasi tentang jadwal Bandwidth
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.databoxedge/get-azdataboxedgebandwidthschedule) untuk informasi terbaru.
 
 ## SYNTAX
 

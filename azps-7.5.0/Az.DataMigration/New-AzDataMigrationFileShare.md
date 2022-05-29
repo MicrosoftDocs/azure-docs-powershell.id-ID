@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/Ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/New-AzDataMigrationFileShare.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/New-AzDataMigrationFileShare.md
-ms.openlocfilehash: 2238395d71f7d55ae1cf434153c128ac74161400
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a06e8ca4918415b7cec9db4b8c387c56a4395e22
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144202011"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145750420"
 ---
 # New-AzDataMigrationFileShare
 
 ## SYNOPSIS
 Membuat objek FileShare untuk Azure Database Migration Service, yang menentukan berbagi jaringan lokal untuk mengambil cadangan database sumber.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/new-azdatamigrationfileshare) untuk informasi terbaru.
 
 ## SYNTAX
 

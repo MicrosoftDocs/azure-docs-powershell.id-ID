@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Remove-AzNetAppFilesSnapshotPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Remove-AzNetAppFilesSnapshotPolicy.md
-ms.openlocfilehash: 36f4853cf0016445d5dfa56d9dfe038b76293639
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b07b9dcf5f006f872a95dcf96a1315cd33a69336
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144183982"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145779328"
 ---
 # Remove-AzNetAppFilesSnapshotPolicy
 
 ## SYNOPSIS
 Menghapus kebijakan rekam jepret Azure NetApp Files (ANF).
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.netappfiles/remove-aznetappfilessnapshotpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 

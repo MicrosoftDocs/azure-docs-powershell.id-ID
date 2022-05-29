@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/susp
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Suspend-AzNetAppFilesReplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Suspend-AzNetAppFilesReplication.md
-ms.openlocfilehash: e0188d9d8e51e61b4a090cefde6d36b393564929
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d590299e2417e71af65cd8b35e33e40ce7db2c19
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144183853"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145779004"
 ---
 # Suspend-AzNetAppFilesReplication
 
 ## SYNOPSIS
 Menangguhkan/memutuskan koneksi replikasi pada volume tujuan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.netappfiles/suspend-aznetappfilesreplication) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -ForceBreak
-Jika replikasi dalam status mentransfer dan Anda ingin menghentikan replikasi secara paksa, atur ke true
+Jika replikasi dalam status ditransfer dan Anda ingin menghentikan replikasi secara paksa, atur ke true
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek volume tujuan ANF dengan replikasi untuk diputus
+Objek volume tujuan ANF dengan replikasi untuk diputuskan
 
 ```yaml
 Type: Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesVolume
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan apakah pemutusan replikasi volume yang ditentukan dilakukan
+Mengembalikan apakah pemisahan replikasi volume yang ditentukan dilakukan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

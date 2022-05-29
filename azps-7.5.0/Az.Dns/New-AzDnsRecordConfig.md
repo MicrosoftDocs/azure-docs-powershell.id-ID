@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dns/new-azdnsrec
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Dns/Dns/help/New-AzDnsRecordConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Dns/Dns/help/New-AzDnsRecordConfig.md
-ms.openlocfilehash: 0abbfd1caa22ad1367986ad0bbe73150f8a8ec7f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3630aede31e82a5d9fe107cf199abba06bc669bf
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144188812"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145740502"
 ---
 # New-AzDnsRecordConfig
 
 ## SYNOPSIS
 Membuat objek lokal rekaman DNS baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dns/new-azdnsrecordconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -177,7 +180,7 @@ $Records += New-AzDnsRecordConfig -Value "This is a TXT Record"
 $RecordSet = New-AzDnsRecordSet -Name "text" -RecordType TXT -ResourceGroupName "MyResourceGroup" -TTL 3600 -ZoneName "myzone.com" -DnsRecords $Records
 ```
 
-Perintah ini membuat teks bernama **RecordSet** di zona myzone.com.
+Perintah ini membuat **teks bernama RecordSet** di zona myzone.com.
 Kumpulan catatan berjenis TXT dan memiliki TTL 1 jam (3600 detik).
 Ini berisi satu catatan DNS.
 Untuk membuat **RecordSet** hanya menggunakan satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa rekaman, lihat Contoh 1.
@@ -185,7 +188,7 @@ Untuk membuat **RecordSet** hanya menggunakan satu baris pn_PowerShell_short, at
 ## PARAMETERS
 
 ### -CaaFlags
-Bendera untuk catatan CAA untuk ditambahkan. Harus berupa angka antara 0 dan 255.
+Bendera untuk catatan CAA yang akan ditambahkan. Harus berupa angka antara 0 dan 255.
 
 ```yaml
 Type: System.Byte
@@ -200,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -CaaTag
-Bidang tag rekaman CAA untuk ditambahkan.
+Bidang tag rekaman CAA yang akan ditambahkan.
 
 ```yaml
 Type: System.String
@@ -230,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -Cname
-Menentukan nama domain untuk data nama kanonis (CNAME).
+Menentukan nama domain untuk catatan nama kanonis (CNAME).
 
 ```yaml
 Type: System.String
@@ -260,7 +263,7 @@ Accept wildcard characters: False
 ```
 
 ### -Exchange
-Menentukan nama server pertukaran surat untuk rekaman pertukaran surat (MX).
+Menentukan nama server pertukaran email untuk rekaman pertukaran email (MX).
 
 ```yaml
 Type: System.String
@@ -290,7 +293,7 @@ Accept wildcard characters: False
 ```
 
 ### -Ipv6Address
-Menentukan alamat IPv6 untuk rekaman AAAA.
+Menentukan alamat IPv6 untuk catatan AAAA.
 
 ```yaml
 Type: System.String
@@ -365,7 +368,7 @@ Accept wildcard characters: False
 ```
 
 ### -Ptrdname
-Menentukan nama domain target dari rekaman sumber daya penunjuk (PTR).
+Menentukan nama domain target rekaman sumber daya penunjuk (PTR).
 
 ```yaml
 Type: System.String
@@ -409,8 +412,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Bobot
-Menentukan bobot untuk rekaman SRV.
+### -Berat
+Menentukan bobot untuk catatan SRV.
 
 ```yaml
 Type: System.UInt16

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.marketplace/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Get-AzMarketplacePrivateStore.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Get-AzMarketplacePrivateStore.md
-ms.openlocfilehash: b4c98260b4c4f33f43336a765d42a8fe93a7eb6a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f87e07abe39a464a7c64ecc97ea8cba3fad232da
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144110173"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145792216"
 ---
 # Get-AzMarketplacePrivateStore
 
 ## SYNOPSIS
 Dapatkan daftar penyimpanan privat
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.marketplace/get-azmarketplaceprivatestore) untuk informasi terbaru.
 
 ## SYNTAX
 

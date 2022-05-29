@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.diskpool/stop-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DiskPool/help/Stop-AzDiskPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DiskPool/help/Stop-AzDiskPool.md
-ms.openlocfilehash: dce5de32816fd40c11a707886d7099fcd9b8986f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 990343aac170687dedf51b30428e4d4353e57f5e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144225603"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145740790"
 ---
 # Stop-AzDiskPool
 
@@ -19,6 +19,9 @@ Mematikan Kumpulan Disk dan melepaskan sumber daya komputasi.
 Anda tidak ditagih untuk sumber daya komputasi yang digunakan Kumpulan Disk ini.
 Operasi ini bisa memakan waktu 10 menit untuk menyelesaikannya.
 Ini adalah perilaku layanan yang diharapkan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.diskpool/stop-azdiskpool) untuk informasi terbaru.
 
 ## SYNTAX
 

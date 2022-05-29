@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/new-azfrontd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzFrontDoorCdnProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzFrontDoorCdnProfile.md
-ms.openlocfilehash: dc0870529c9b602a81ece18743239e8111403547
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0e41389fb9e8bb48ca0b8e0caa43bd0b47c89a31
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144214202"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145765380"
 ---
 # New-AzFrontDoorCdnProfile
 
 ## SYNOPSIS
 Membuat profil.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cdn/new-azfrontdoorcdnprofile) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMBackupExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMBackupExtension.md
-ms.openlocfilehash: 9a4932463a87e174810846d3aa623392ccaabc3e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ba04b491ec009f0f64204d82176ff062cdd6ef42
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144190660"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145765056"
 ---
 # Set-AzVMBackupExtension
 
 ## SYNOPSIS
 Mengatur properti ekstensi cadangan pada komputer virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azvmbackupextension) untuk informasi terbaru.
 
 ## SYNTAX
 

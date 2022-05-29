@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzGalleryApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzGalleryApplication.md
-ms.openlocfilehash: d8419cc9b741518e756607a49092a827f877ad3c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8e769a2ac456d591060e4654334279723b00c799
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144199690"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145772472"
 ---
 # Remove-AzGalleryApplication
 
 ## SYNOPSIS
 Menghapus Aplikasi galeri.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/remove-azgalleryapplication) untuk informasi terbaru.
 
 ## SYNTAX
 

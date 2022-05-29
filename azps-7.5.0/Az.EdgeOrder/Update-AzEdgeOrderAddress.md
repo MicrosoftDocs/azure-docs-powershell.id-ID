@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.edgeorder/update
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/Update-AzEdgeOrderAddress.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/Update-AzEdgeOrderAddress.md
-ms.openlocfilehash: 381b8e26bd4e5f1f410d096db953ebc40bd2f706
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 15d70fda7834dd8075b1f0f257bcc8f445e0092b
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144239858"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145764670"
 ---
 # Update-AzEdgeOrderAddress
 
 ## SYNOPSIS
 Memperbarui properti alamat yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.edgeorder/update-azedgeorderaddress) untuk informasi terbaru.
 
 ## SYNTAX
 

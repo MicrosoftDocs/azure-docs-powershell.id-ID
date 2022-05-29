@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.dnsresolver/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/Remove-AzDnsForwardingRulesetForwardingRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/Remove-AzDnsForwardingRulesetForwardingRule.md
-ms.openlocfilehash: 47b00b19a2405a74432d231fb0a6277dca9f840f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 23e1d54cd065d8f13ab566eadb80e4c2aa9f6bde
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144232494"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145739710"
 ---
 # Remove-AzDnsForwardingRulesetForwardingRule
 
 ## SYNOPSIS
 Menghapus aturan penerusan dalam kumpulan aturan penerusan DNS.
 PERINGATAN: Operasi ini tidak dapat dibatalkan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dnsresolver/remove-azdnsforwardingrulesetforwardingrule) untuk informasi terbaru.
 
 ## SYNTAX
 

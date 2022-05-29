@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/set-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Set-AzNetAppFilesVolumePool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Set-AzNetAppFilesVolumePool.md
-ms.openlocfilehash: 7399c4e5521a38c88b622ccad50c16838c085f7b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2d4d791c894e4eea4a447d2739590be57253c97b
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144183867"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145779094"
 ---
 # Set-AzNetAppFilesVolumePool
 
 ## SYNOPSIS
 Ubah kumpulan untuk volume Azure NetApp Files (ANF).
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.netappfiles/set-aznetappfilesvolumepool) untuk informasi terbaru.
 
 ## SYNTAX
 

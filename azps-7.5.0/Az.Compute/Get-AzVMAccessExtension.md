@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMAccessExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMAccessExtension.md
-ms.openlocfilehash: dd1a33afb9454147ebb52f7ccfe1ad4eb0dba7b4
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 63a67695119388b716b09b26696777fda617c5f0
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144212651"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145772490"
 ---
 # Get-AzVMAccessExtension
 
 ## SYNOPSIS
 Mendapatkan informasi tentang ekstensi VMAccess.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azvmaccessextension) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dns/new-azdnsrec
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Dns/Dns/help/New-AzDnsRecordSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Dns/Dns/help/New-AzDnsRecordSet.md
-ms.openlocfilehash: 164b96b061519dbf412c7a53cd81194b04c7310d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 047744082bd6e6e47a31ce9ae9a08ac56935e373
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144188809"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145740484"
 ---
 # New-AzDnsRecordSet
 
 ## SYNOPSIS
 Membuat kumpulan catatan DNS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dns/new-azdnsrecordset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -460,7 +463,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Dns.DnsRecordSet
 
 ## NOTES
-Anda dapat menggunakan parameter *Konfirmasi* untuk mengontrol apakah cmdlet ini meminta konfirmasi kepada Anda.
+Anda dapat menggunakan parameter *Konfirmasi* untuk mengontrol apakah cmdlet ini meminta konfirmasi.
 Secara default, cmdlet meminta konfirmasi kepada Anda jika variabel $ConfirmPreference Windows PowerShell memiliki nilai Sedang atau lebih rendah.
 Jika Anda menentukan *Konfirmasi* atau *Konfirmasi:$True*, cmdlet ini akan meminta konfirmasi sebelum dijalankan.
 Jika Anda menentukan *Confirm:$False*, cmdlet tidak meminta konfirmasi kepada Anda.

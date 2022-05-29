@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/Ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/New-AzDataMigrationSyncSelectedDBObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/New-AzDataMigrationSyncSelectedDBObject.md
-ms.openlocfilehash: fa43a19c9aed4d6b623e914ce27f7e967ed37f7f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e448b777c21aefd06dcf9817cb3c3695d9918355
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144201888"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145750168"
 ---
 # New-AzDataMigrationSyncSelectedDBObject
 
 ## SYNOPSIS
 Membuat objek info database khusus untuk skenario sinkronisasi yang akan digunakan untuk tugas migrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/new-azdatamigrationsyncselecteddbobject) untuk informasi terbaru.
 
 ## SYNTAX
 

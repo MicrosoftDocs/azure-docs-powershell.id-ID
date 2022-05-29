@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azre
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzRestorePointCollection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzRestorePointCollection.md
-ms.openlocfilehash: ae4d2ac0cf07bde74e6fbc12a081766c0f46a582
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b7d54a3efcfd950c4bc14bac1aa0b8c83011daa0
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144222611"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145772544"
 ---
 # Get-AzRestorePointCollection
 
 ## SYNOPSIS
 Mendapatkan Kumpulan Titik Pemulihan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azrestorepointcollection) untuk informasi terbaru.
 
 ## SYNTAX
 

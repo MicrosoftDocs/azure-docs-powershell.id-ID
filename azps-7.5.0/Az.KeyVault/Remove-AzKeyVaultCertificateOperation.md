@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Remove-AzKeyVaultCertificateOperation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Remove-AzKeyVaultCertificateOperation.md
-ms.openlocfilehash: aade18bde552c2876b75c41c587deb6e9685fd12
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 54b942c568d507af74cbe3bb2b7e1698cad73e51
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144223499"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145771770"
 ---
 # Remove-AzKeyVaultCertificateOperation
 
 ## SYNOPSIS
 Menghapus operasi sertifikat dari brankas kunci.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/remove-azkeyvaultcertificateoperation) untuk informasi terbaru.
 
 ## SYNTAX
 

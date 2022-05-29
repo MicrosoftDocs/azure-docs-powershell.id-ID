@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/get-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchTask.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchTask.md
-ms.openlocfilehash: 7fa9a941f8b2e95014a532cf5f8c0e90c1cde606
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0b9361bf31f5256c491795c13800e08cc9da89dc
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144195137"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145765434"
 ---
 # Get-AzBatchTask
 
 ## SYNOPSIS
 Mendapatkan tugas Batch untuk pekerjaan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/get-azbatchtask) untuk informasi terbaru.
 
 ## SYNTAX
 

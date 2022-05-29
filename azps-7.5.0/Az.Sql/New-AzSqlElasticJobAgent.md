@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.sql/new-Azsqlela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlElasticJobAgent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlElasticJobAgent.md
-ms.openlocfilehash: b3b89bd57c504336150e3198b11211b4a131553d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 637a6a506bdfb579fe53b61d655dc7e8de69e4ee
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144233317"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145726030"
 ---
 # New-AzSqlElasticJobAgent
 
 ## SYNOPSIS
 Membuat agen pekerjaan elastis baru
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/new-azsqlelasticjobagent) untuk informasi terbaru.
 
 ## SYNTAX
 

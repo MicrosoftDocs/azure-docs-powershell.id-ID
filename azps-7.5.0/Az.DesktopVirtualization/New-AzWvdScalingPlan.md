@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.desktopvirtualiz
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/New-AzWvdScalingPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/New-AzWvdScalingPlan.md
-ms.openlocfilehash: f65a4a8f6631e4e037788f60acc16a27325246e9
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ea7577d5db8e2a70d9b46ec161ceef11715b25cd
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144187507"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145743814"
 ---
 # New-AzWvdScalingPlan
 
 ## SYNOPSIS
 Membuat atau memperbarui paket penskalan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.desktopvirtualization/new-azwvdscalingplan) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -558,8 +561,8 @@ SCHEDULE <IScalingSchedule[]>: Daftar definisi ScalingSchedule.
   - `[RampDownStartTime <DateTime?>]`: Waktu mulai untuk periode penurunan.
   - `[RampDownStopHostsWhen <StopHostsWhen?>]`: Menentukan kapan harus menghentikan host selama periode penurunan.
   - `[RampDownWaitTimeMinute <Int32?>]`: Jumlah menit untuk menunggu menghentikan host selama periode penurunan.
-  - `[RampUpCapacityThresholdPct <Int32?>]`: Ambang batas kapasitas untuk periode peningkatan.
-  - `[RampUpLoadBalancingAlgorithm <SessionHostLoadBalancingAlgorithm?>]`: Algoritma penyeimbangan beban untuk periode peningkatan.
+  - `[RampUpCapacityThresholdPct <Int32?>]`: Ambang kapasitas untuk periode peningkatan.
+  - `[RampUpLoadBalancingAlgorithm <SessionHostLoadBalancingAlgorithm?>]`: Algoritma penyeimbangan beban untuk periode peningkatan ramp.
   - `[RampUpMinimumHostsPct <Int32?>]`: Persentase host minimum untuk periode peningkatan.
   - `[RampUpStartTime <DateTime?>]`: Waktu mulai untuk periode peningkatan.
 

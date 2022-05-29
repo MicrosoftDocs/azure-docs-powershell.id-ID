@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzVMChefExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzVMChefExtension.md
-ms.openlocfilehash: e4fd31092998604d5e141b8e6001501a5ca74b60
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1033afb59a1a7a36431f70feb2aed251b29e976b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144246214"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145733752"
 ---
 # Remove-AzVMChefExtension
 
 ## SYNOPSIS
 Menghapus ekstensi Chef dari komputer virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/remove-azvmchefextension) untuk informasi terbaru.
 
 ## SYNTAX
 

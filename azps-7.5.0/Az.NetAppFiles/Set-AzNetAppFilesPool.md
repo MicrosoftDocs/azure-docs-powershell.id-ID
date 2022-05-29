@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/set-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Set-AzNetAppFilesPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Set-AzNetAppFilesPool.md
-ms.openlocfilehash: 41b0884a9580c380ec5639cb183d4626957f5832
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d6a17a96de7db5ed0130e883180d25eb0702c853
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144183940"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145779184"
 ---
 # Set-AzNetAppFilesPool
 
 ## SYNOPSIS
 Memperbarui Kumpulan Kapasitas Azure NetApp Files (ANF) dengan himpunan data baru. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.netappfiles/set-aznetappfilespool) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dnsresolver/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/Get-AzDnsResolverInboundEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/Get-AzDnsResolverInboundEndpoint.md
-ms.openlocfilehash: 8959955537ccc7bedc7a099e2266fc4ffec21f98
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5bba43c9a3c0dadd2310b03e1ea981c5988f9cdb
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144244349"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145740124"
 ---
 # Get-AzDnsResolverInboundEndpoint
 
 ## SYNOPSIS
 Mendapatkan properti titik akhir masuk untuk pemecah masalah DNS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dnsresolver/get-azdnsresolverinboundendpoint) untuk informasi terbaru.
 
 ## SYNTAX
 

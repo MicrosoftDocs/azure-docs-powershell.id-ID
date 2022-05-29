@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dns/set-azdnszon
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Dns/Dns/help/Set-AzDnsZone.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Dns/Dns/help/Set-AzDnsZone.md
-ms.openlocfilehash: 4145d505d12a9529025c0ebd9f0ff5c8e021a8c9
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 75cba47fb16acf0daad34df9cdc2002cb9f04c82
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144188756"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145740286"
 ---
 # Set-AzDnsZone
 
 ## SYNOPSIS
 Memperbarui properti zona DNS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dns/set-azdnszone) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,7 +50,7 @@ Cmdlet **Set-AzDnsZone** memperbarui zona DNS yang ditentukan di layanan Azure D
 Cmdlet ini tidak memperbarui kumpulan catatan di zona tersebut.
 Anda dapat meneruskan objek **DnsZone** sebagai parameter atau dengan menggunakan operator alur, atau Anda dapat menentukan parameter *ZoneName* dan *ResourceGroupName* .
 Anda dapat menggunakan parameter *Konfirmasi* dan variabel $ConfirmPreference Windows PowerShell untuk mengontrol apakah cmdlet meminta konfirmasi.
-Saat melewati zona DNS sebagai objek (menggunakan objek Zona atau melalui alur), zona DNS tidak diperbarui jika telah diubah di Azure DNS sejak objek DnsZone lokal diambil. Ini memberikan perlindungan untuk perubahan bersamaan. Anda dapat menekan perilaku ini dengan parameter *Timpa* , yang memperbarui zona terlepas dari perubahan bersamaan.
+Saat melewati zona DNS sebagai objek (menggunakan objek Zona atau melalui alur), zona tersebut tidak diperbarui jika telah diubah di Azure DNS sejak objek DnsZone lokal diambil. Ini memberikan perlindungan untuk perubahan bersamaan. Anda dapat menekan perilaku ini dengan parameter *Timpa* , yang memperbarui zona terlepas dari perubahan bersamaan.
 
 ## EXAMPLES
 
@@ -60,7 +63,7 @@ Set-AzDnsZone -Zone $Zone
 
 Perintah pertama mendapatkan zona bernama myzone.com dari grup sumber daya yang ditentukan, lalu menyimpannya dalam variabel $Zone.
 Perintah kedua memperbarui tag untuk $Zone.
-Perintah akhir menerapkan perubahan.
+Perintah akhir melakukan perubahan.
 
 ### Contoh 2: Memperbarui tag untuk zona
 ```powershell
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -Timpa
-Saat melewati zona DNS sebagai objek (menggunakan objek Zona atau melalui alur), zona DNS tidak diperbarui jika telah diubah di Azure DNS sejak objek DnsZone lokal diambil. Ini memberikan perlindungan untuk perubahan bersamaan. Anda dapat menekan perilaku ini dengan parameter *Timpa* , yang memperbarui zona terlepas dari perubahan bersamaan.
+Saat melewati zona DNS sebagai objek (menggunakan objek Zona atau melalui alur), zona tersebut tidak diperbarui jika telah diubah di Azure DNS sejak objek DnsZone lokal diambil. Ini memberikan perlindungan untuk perubahan bersamaan. Anda dapat menekan perilaku ini dengan parameter *Timpa* , yang memperbarui zona terlepas dari perubahan bersamaan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResolutionVirtualNetwork
-Daftar jaringan virtual dapat mengatasi rekaman di zona DNS ini, hanya tersedia untuk zona privat.
+Daftar jaringan virtual dapat menyelesaikan rekaman di zona DNS ini, hanya tersedia untuk zona privat.
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Azure.Management.Internal.Network.Common.IResourceReference]
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResolutionVirtualNetworkId
-Daftar ID jaringan virtual dapat menyelesaikan rekaman di zona DNS ini, hanya tersedia untuk zona privat.
+Daftar ID jaringan virtual dapat mengatasi rekaman di zona DNS ini, hanya tersedia untuk zona privat.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -279,7 +282,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Collections.Hashtable
 
-### System.Collections.Generic.List'1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Collections.Generic.List'1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
 ### System.Collections.Generic.List'1[[Microsoft.Azure.Management.Internal.Network.Common.IResourceReference, Microsoft.Azure.PowerShell.Clients.Network, Version=1.0.0.0, Culture=netral, PublicKeyToken=31bf3856ad364e35]]
 
@@ -290,7 +293,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Dns.DnsZone
 
 ## NOTES
-Anda dapat menggunakan parameter *Konfirmasi* untuk mengontrol apakah cmdlet ini meminta konfirmasi.
+Anda dapat menggunakan parameter *Konfirmasi* untuk mengontrol apakah cmdlet ini meminta konfirmasi kepada Anda.
 Secara default, cmdlet meminta konfirmasi kepada Anda jika variabel $ConfirmPreference Windows PowerShell memiliki nilai Sedang atau lebih rendah.
 Jika Anda menentukan *Konfirmasi* atau *Konfirmasi:$True*, cmdlet ini akan meminta konfirmasi sebelum dijalankan.
 Jika Anda menentukan *Confirm:$False*, cmdlet tidak meminta konfirmasi kepada Anda.

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.kusto/get-azkust
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Get-AzKustoAttachedDatabaseConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Get-AzKustoAttachedDatabaseConfiguration.md
-ms.openlocfilehash: 522bc2350b8af5efa93ce8e4a7045489dfef90e2
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8af9eba1f0af3d287641a40b17319f7f6d89528d
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144216266"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145792360"
 ---
 # Get-AzKustoAttachedDatabaseConfiguration
 
 ## SYNOPSIS
 Mengembalikan konfigurasi database terlampir.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.kusto/get-azkustoattacheddatabaseconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 

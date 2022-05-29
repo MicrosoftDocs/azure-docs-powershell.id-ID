@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/restar
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Restart-AzHDInsightHost.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Restart-AzHDInsightHost.md
-ms.openlocfilehash: 78937170eed7b44445561491b9e4b90b9524cb78
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b0e6a7a11c75b26e0481e666df8b6826e55eef2a
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144225057"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145772274"
 ---
 # Restart-AzHDInsightHost
 
 ## SYNOPSIS
 Menghidupkan ulang host tertentu dari kluster HDInsight.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/restart-azhdinsighthost) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-{{ Fill PassThru Description }}
+{{ Isi Deskripsi PassThru }}
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/New-AzHDInsightPigJobDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/New-AzHDInsightPigJobDefinition.md
-ms.openlocfilehash: a7410fde0ce3b096de3a5f4988131954e802cca4
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8d46569142d95dd3a548e0e94c44d2ed4bacc383
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144217754"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145772346"
 ---
 # New-AzHDInsightPigJobDefinition
 
 ## SYNOPSIS
 Membuat objek pekerjaan Pig.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/new-azhdinsightpigjobdefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -99,7 +102,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -File
+### -Files
 Menentukan kumpulan file yang terkait dengan pekerjaan Apache Hive.
 
 ```yaml

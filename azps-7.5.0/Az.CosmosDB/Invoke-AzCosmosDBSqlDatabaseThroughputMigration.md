@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/invoke-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Invoke-AzCosmosDBSqlDatabaseThroughputMigration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Invoke-AzCosmosDBSqlDatabaseThroughputMigration.md
-ms.openlocfilehash: fb33bebcfda01c5e5223b945e32c7e8c32015fd1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 31b4dd36697a00b7bfa41e183a4c0b6e9353e2d2
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144207383"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145785646"
 ---
 # Invoke-AzCosmosDBSqlDatabaseThroughputMigration
 
 ## SYNOPSIS
 Gunakan ini untuk memigrasikan throughput skala otomatis ke throughput manual dan sebaliknya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/invoke-azcosmosdbsqldatabasethroughputmigration) untuk informasi terbaru.
 
 ## SYNTAX
 

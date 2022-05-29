@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Remove-AzDataLakeStoreItemAclEntry.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Remove-AzDataLakeStoreItemAclEntry.md
-ms.openlocfilehash: 5624fa20a9e37900aff55a1d5e422768186d166b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 87a61e4cf00c98b9d3706ffc85db4054febbbd3a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144202487"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145751284"
 ---
 # Remove-AzDataLakeStoreItemAclEntry
 
 ## SYNOPSIS
 Menghapus entri dari ACL file atau folder di Data Lake Store.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/remove-azdatalakestoreitemaclentry) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -203,7 +206,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Recurse
+### -Rekursi
 Menunjukkan ACL yang akan dihapus secara rekursif ke subdirektori dan file anak
 
 ```yaml
@@ -219,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### -ShowProgress
-Jika diteruskan maka status kemajuan ditampilkan. Hanya berlaku saat penghapusan Acl rekursif dilakukan.
+Jika lulus maka status kemajuan ditampilkan. Hanya berlaku saat penghapusan Acl rekursif dilakukan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.connectedmachine
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedMachine/help/Update-AzConnectedMachineExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedMachine/help/Update-AzConnectedMachineExtension.md
-ms.openlocfilehash: 775e8536c7624b4c6ba9383ee02a38a811cbfdd0
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6d6328b8a36f4e7132add278c11bde7cb4f87a75
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144184654"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145764840"
 ---
 # Update-AzConnectedMachineExtension
 
 ## SYNOPSIS
 Operasi untuk membuat atau memperbarui ekstensi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.connectedmachine/update-azconnectedmachineextension) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -132,7 +135,7 @@ customScript eastus   Succeeded
 
 Memperbarui ekstensi tertentu yang diteruskan melalui alur.
 Di sini kami menggunakan ekstensi yang diteruskan melalui alur untuk membantu kami mengidentifikasi ekstensi mana yang ingin kami operasikan.
-Selain itu, kita menggunakan parameter objek ekstensi untuk menentukan apa yang harus diperbarui.
+Selain itu, kami menggunakan parameter objek ekstensi untuk menentukan apa yang harus diperbarui.
 
 ## PARAMETERS
 
@@ -199,7 +202,7 @@ Accept wildcard characters: False
 
 ### -ExtensionParameter
 Menjelaskan Pembaruan Ekstensi Mesin.
-Untuk membuat, lihat bagian CATATAN untuk properti EXTENSIONPARAMETER dan buat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti EXTENSIONPARAMETER dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ConnectedMachine.Models.Api20210520.IMachineExtensionUpdate
@@ -214,7 +217,7 @@ Accept wildcard characters: False
 ```
 
 ### -ForceRerun
-Bagaimana handler ekstensi harus dipaksa untuk memperbarui meskipun konfigurasi ekstensi tidak berubah.
+Bagaimana handler ekstensi harus diperbarui meskipun konfigurasi ekstensi tidak berubah.
 
 ```yaml
 Type: System.String
@@ -229,7 +232,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ConnectedMachine.Models.IConnectedMachineIdentity
@@ -320,7 +323,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama tidak peka huruf besar/kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -467,12 +470,12 @@ EXTENSIONPARAMETER <IMachineExtensionUpdate>: Menjelaskan Pembaruan Ekstensi Mes
     - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
   - `[AutoUpgradeMinorVersion <Boolean?>]`: Menunjukkan apakah ekstensi harus menggunakan versi minor yang lebih baru jika tersedia pada waktu penyebaran. Setelah disebarkan, bagaimanapun, ekstensi tidak akan meningkatkan versi kecil kecuali dipekerjakan kembali, bahkan jika properti ini diatur ke true.
   - `[EnableAutomaticUpgrade <Boolean?>]`: Menunjukkan apakah ekstensi harus ditingkatkan secara otomatis oleh platform jika ada versi yang lebih baru yang tersedia.
-  - `[ForceUpdateTag <String>]`: Bagaimana handler ekstensi harus diperbarui meskipun konfigurasi ekstensi belum berubah.
+  - `[ForceUpdateTag <String>]`: Bagaimana handler ekstensi harus dipaksa untuk memperbarui meskipun konfigurasi ekstensi tidak berubah.
   - `[ProtectedSetting <IAny>]`: Ekstensi dapat berisi protectedSettings atau protectedSettingsFromKeyVault atau tidak ada pengaturan yang dilindungi sama sekali.
   - `[Publisher <String>]`: Nama penerbit handler ekstensi.
   - `[Setting <IAny>]`: Pengaturan publik berformat Json untuk ekstensi.
   - `[Type <String>]`: Menentukan jenis ekstensi; contohnya adalah "CustomScriptExtension".
-  - `[TypeHandlerVersion <String>]`: Menentukan versi handler skrip.
+  - `[TypeHandlerVersion <String>]`: Menentukan versi penangan skrip.
 
 INPUTOBJECT <IConnectedMachineIdentity>: Parameter Identitas
   - `[ExtensionName <String>]`: Nama ekstensi komputer.
@@ -482,7 +485,7 @@ INPUTOBJECT <IConnectedMachineIdentity>: Parameter Identitas
   - `[MachineName <String>]`: Nama komputer hibrid.
   - `[PrivateEndpointConnectionName <String>]`: Nama koneksi titik akhir privat.
   - `[PrivateLinkScopeId <String>]`: Id (Guid) sumber daya Azure Arc PrivateLinkScope.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
   - `[ScopeName <String>]`: Nama sumber daya Azure Arc PrivateLinkScope.
   - `[SubscriptionId <String>]`: ID langganan target.
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.marketplace/set-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Set-AzMarketplacePrivateStore.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Set-AzMarketplacePrivateStore.md
-ms.openlocfilehash: 43c785db84adb127d0dfe7fb8de06d2d351421c7
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1b17c00fc245bd2269ff80b14e4791af4251c57f
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144112354"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145792144"
 ---
 # Set-AzMarketplacePrivateStore
 
 ## SYNOPSIS
 Mengubah properti penyimpanan privat
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.marketplace/set-azmarketplaceprivatestore) untuk informasi terbaru.
 
 ## SYNTAX
 

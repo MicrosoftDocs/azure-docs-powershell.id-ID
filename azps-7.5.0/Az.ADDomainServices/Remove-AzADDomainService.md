@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.addomainservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ADDomainServices/help/Remove-AzADDomainService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ADDomainServices/help/Remove-AzADDomainService.md
-ms.openlocfilehash: 646b79627c8f782a41125ee906ed17dd50fc28a1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2e3454ca22b46d08f090e6f7d0337a9f0944cefb
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144205835"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145739422"
 ---
 # Remove-AzADDomainService
 
 ## SYNOPSIS
 Operasi Hapus Layanan Domain menghapus Layanan Domain yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.addomainservices/remove-azaddomainservice) untuk informasi terbaru.
 
 ## SYNTAX
 

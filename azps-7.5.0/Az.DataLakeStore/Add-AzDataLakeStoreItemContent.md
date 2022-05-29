@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/ad
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Add-AzDataLakeStoreItemContent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Add-AzDataLakeStoreItemContent.md
-ms.openlocfilehash: c8713260d178138366a5511f3a42074ba5bfa4ec
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: eadea61f9caf52f8d6ed7fcd2f5fda0b4e4278ea
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144202879"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145751698"
 ---
 # Add-AzDataLakeStoreItemContent
 
 ## SYNOPSIS
 Menambahkan konten ke item di Data Lake Store.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/add-azdatalakestoreitemcontent) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -73,7 +76,7 @@ Accept wildcard characters: False
 Menentukan pengodean untuk item yang akan dibuat.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Tidak dikenal
-- Untai (karakter)
+- String
 - Unicode
 - Byte
 - Kode BigEndianUnicode

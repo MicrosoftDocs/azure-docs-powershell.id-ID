@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databoxedge/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Get-AzDataBoxEdgeShare.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Get-AzDataBoxEdgeShare.md
-ms.openlocfilehash: 8999f93fa0b864867278fc023bf3bdc80f5941aa
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3783563a96f132a4a86d3a8af425c649f35445eb
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144204923"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145785521"
 ---
 # Get-AzDataBoxEdgeShare
 
 ## SYNOPSIS
 Mendapatkan berbagi yang tersedia untuk perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.databoxedge/get-azdataboxedgeshare) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,7 +46,7 @@ Get-AzDataBoxEdgeShare [[-Name] <String>] [-DefaultProfile <IAzureContextContain
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDataBoxEdgeShare** mendapatkan berbagi yang tersedia untuk perangkat Data Box Edge. Jika Nama disediakan, ini akan mendapatkan berbagi berdasarkan Nama.
+Cmdlet **Get-AzDataBoxEdgeShare** mendapatkan berbagi yang tersedia untuk perangkat Data Box Edge. Jika Nama disediakan, ini akan mendapatkan berbagi menurut Nama.
 
 ## EXAMPLES
 

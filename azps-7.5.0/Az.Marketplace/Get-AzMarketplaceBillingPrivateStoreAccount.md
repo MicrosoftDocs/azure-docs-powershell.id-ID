@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.marketplace/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Get-AzMarketplaceBillingPrivateStoreAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Get-AzMarketplaceBillingPrivateStoreAccount.md
-ms.openlocfilehash: a51e744e24193d820362865f8b85909524614f9b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 269fd0aa29bbe727d289706644f1cbcbaae234cb
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144110190"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145792234"
 ---
 # Get-AzMarketplaceBillingPrivateStoreAccount
 
 ## SYNOPSIS
 Nama akun penagihan penyewa
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.marketplace/get-azmarketplacebillingprivatestoreaccount) untuk informasi terbaru.
 
 ## SYNTAX
 

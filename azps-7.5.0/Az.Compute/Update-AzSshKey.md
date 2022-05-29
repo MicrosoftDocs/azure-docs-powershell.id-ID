@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Update-AzSshKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Update-AzSshKey.md
-ms.openlocfilehash: 84d67d32f6345baf792c3ab3fb0f94f64666b4e8
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 30ec46c7696d8d366f3be0e6710e3112e536a710
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144222494"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145765022"
 ---
 # Update-AzSshKey
 
 ## SYNOPSIS
 Memperbarui sumber daya Kunci Umum SSH.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/update-azsshkey) untuk informasi terbaru.
 
 ## SYNTAX
 

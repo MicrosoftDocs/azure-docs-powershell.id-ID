@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dnsresolver/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/Get-AzDnsForwardingRulesetVirtualNetworkLink.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/Get-AzDnsForwardingRulesetVirtualNetworkLink.md
-ms.openlocfilehash: 0c89a2d50e9f7ae657ce123d320129d613175954
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d83df76bc138ff262be588bb988fd4f09cea335a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144188669"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145740160"
 ---
 # Get-AzDnsForwardingRulesetVirtualNetworkLink
 
 ## SYNOPSIS
-Mendapatkan properti tautan jaringan virtual ke aturan penerusan DNS.
+Mendapatkan properti tautan jaringan virtual ke set aturan penerusan DNS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dnsresolver/get-azdnsforwardingrulesetvirtualnetworklink) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzDnsForwardingRulesetVirtualNetworkLink -InputObject <IDnsResolverIdentity>
 ```
 
 ## DESCRIPTION
-Mendapatkan properti tautan jaringan virtual ke aturan penerusan DNS.
+Mendapatkan properti tautan jaringan virtual ke set aturan penerusan DNS.
 
 ## EXAMPLES
 
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -DnsForwardingRulesetName
-Nama set aturan penerusan DNS.
+Nama kumpulan aturan penerusan DNS.
 
 ```yaml
 Type: System.String
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DnsResolver.Models.IDnsResolverIdentity
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -199,13 +202,13 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <IDnsResolverIdentity>: Parameter Identitas
-  - `[DnsForwardingRulesetName <String>]`: Nama set aturan penerusan DNS.
+  - `[DnsForwardingRulesetName <String>]`: Nama kumpulan aturan penerusan DNS.
   - `[DnsResolverName <String>]`: Nama pemecah masalah DNS.
   - `[ForwardingRuleName <String>]`: Nama aturan penerusan.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[InboundEndpointName <String>]`: Nama titik akhir masuk untuk pemecah masalah DNS.
   - `[OutboundEndpointName <String>]`: Nama titik akhir keluar untuk pemecah masalah DNS.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
   - `[VirtualNetworkLinkName <String>]`: Nama tautan jaringan virtual.
   - `[VirtualNetworkName <String>]`: Nama jaringan virtual.

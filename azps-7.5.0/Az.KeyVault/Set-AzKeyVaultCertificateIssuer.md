@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/set-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Set-AzKeyVaultCertificateIssuer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Set-AzKeyVaultCertificateIssuer.md
-ms.openlocfilehash: 1d7bbf0a52855a2d59ec1453aa571802837ab8f1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 67a24c61885d22be2d3d45fa8d15b19b5e25ffe2
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144201647"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145792378"
 ---
 # Set-AzKeyVaultCertificateIssuer
 
 ## SYNOPSIS
 Mengatur pengeluar sertifikat dalam brankas kunci.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/set-azkeyvaultcertificateissuer) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ Set-AzKeyVaultCertificateIssuer [-VaultName] <String> [-Name] <String> -IssuerPr
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Nilai ByValue
+### NilaiDasar
 ```
 Set-AzKeyVaultCertificateIssuer [-VaultName] <String> [-Name] <String>
  -InputObject <PSKeyVaultCertificateIssuerIdentityItem> [-PassThru] [-DefaultProfile <IAzureContextContainer>]
@@ -36,7 +39,7 @@ Set-AzKeyVaultCertificateIssuer [-VaultName] <String> [-Name] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet Set-AzKeyVaultCertificateIssuer menetapkan pengeluar sertifikat dalam brankas kunci.
+Cmdlet Set-AzKeyVaultCertificateIssuer menetapkan penerbit sertifikat dalam brankas kunci.
 
 ## EXAMPLES
 
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Menentukan penerbit sertifikat yang akan ditetapkan.
+Menentukan pengeluar sertifikat yang akan ditetapkan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.KeyVault.Models.PSKeyVaultCertificateIssuerIdentityItem
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -OrganizationDetails
-Detail organisasi yang akan digunakan dengan penerbit.
+Detail organisasi yang akan digunakan dengan pengeluar sertifikat.
 
 ```yaml
 Type: Microsoft.Azure.Commands.KeyVault.Models.PSKeyVaultCertificateOrganizationDetails
@@ -167,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item tempat Anda bekerja.
+Mengembalikan objek yang mewakili item yang sedang Anda kerjakan.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml

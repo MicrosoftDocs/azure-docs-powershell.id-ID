@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dnsresolver/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/New-AzDnsResolverTargetDnsServerObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/New-AzDnsResolverTargetDnsServerObject.md
-ms.openlocfilehash: 8d95cdcb50a5385c0dc66d20e7947ff6ee5499aa
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 90be4b9aa6efae1d919a73fe1315ead07b419818
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144232508"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145739746"
 ---
 # New-AzDnsResolverTargetDnsServerObject
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk server DNS Target
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dnsresolver/new-azdnsresolvertargetdnsserverobject) untuk informasi terbaru.
 
 ## SYNTAX
 

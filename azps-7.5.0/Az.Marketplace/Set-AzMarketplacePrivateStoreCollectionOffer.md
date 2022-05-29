@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.marketplace/set-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Set-AzMarketplacePrivateStoreCollectionOffer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Set-AzMarketplacePrivateStoreCollectionOffer.md
-ms.openlocfilehash: 49c45a77372cdf5a4e3e40a06d56004f77b212f6
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2764c32aec43dcce311d7a67ff0499aad66748ce
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144112312"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145792126"
 ---
 # Set-AzMarketplacePrivateStoreCollectionOffer
 
 ## SYNOPSIS
 Perbarui atau tambahkan penawaran ke koleksi penyimpanan privat tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.marketplace/set-azmarketplaceprivatestorecollectionoffer) untuk informasi terbaru.
 
 ## SYNTAX
 

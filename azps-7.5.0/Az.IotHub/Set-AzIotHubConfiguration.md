@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/set-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Set-AzIotHubConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Set-AzIotHubConfiguration.md
-ms.openlocfilehash: fbcfd469afcacade4e522f06093def4eafe71a47
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b0d680d8073b4c4dfc13da73617d5d35d1dccda5
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144239295"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145772094"
 ---
 # Set-AzIotHubConfiguration
 
 ## SYNOPSIS
-Perbarui bidang pendaftaran konfigurasi yang dapat diubah.
+Perbarui bidang yang dapat diubah dari pendaftaran konfigurasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/set-aziothubconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Set-AzIotHubConfiguration [-ResourceId] <String> [-Name] <String> [-Priority <In
 ```
 
 ## DESCRIPTION
-Memperbarui properti yang ditentukan dari konfigurasi manajemen perangkat otomatis IoT.
+Memperbarui properti tertentu dari konfigurasi manajemen perangkat otomatis IoT.
 Catatan: Konten konfigurasi tidak dapat diubah. Properti konfigurasi yang dapat diperbarui adalah 'label', 'metrik', 'prioritas' dan 'targetCondition'.
 Lihat https://docs.microsoft.com/azure/iot-hub/iot-hub-automatic-device-management untuk informasi lebih lanjut.
 

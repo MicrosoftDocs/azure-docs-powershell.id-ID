@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/impor
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Import-AzAutomationRunbook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Import-AzAutomationRunbook.md
-ms.openlocfilehash: 1b065af5ff80d959145846d4a5577511f576ba54
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 805b1efe2122f889a030e3f7b821ffa80d4de5e3
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144189089"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145765488"
 ---
 # Import-AzAutomationRunbook
 
 ## SYNOPSIS
 Mengimpor runbook Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/import-azautomationrunbook) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -228,7 +231,7 @@ Nilai yang valid adalah:
 - PowerShellWorkflow
 - GraphicalPowerShellWorkflow
 - Graph
-- Python2 Nilai Graph usang.
+- Python2 Nilai Graph sudah usang.
 Ini setara dengan GraphicalPowerShellWorkflow.
 
 ```yaml

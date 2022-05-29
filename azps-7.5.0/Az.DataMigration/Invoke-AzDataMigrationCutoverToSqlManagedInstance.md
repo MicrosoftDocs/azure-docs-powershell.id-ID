@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/in
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Invoke-AzDataMigrationCutoverToSqlManagedInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Invoke-AzDataMigrationCutoverToSqlManagedInstance.md
-ms.openlocfilehash: 8003e37a7b0cedb11a2fe0e67765ceb68f8fdd72
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 799cee55307ed6151a70154e6e00fc02eccb345b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144202053"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145750636"
 ---
 # Invoke-AzDataMigrationCutoverToSqlManagedInstance
 
 ## SYNOPSIS
 Mulai cutover untuk migrasi database online yang sedang berlangsung ke SQL Managed Instance.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/invoke-azdatamigrationcutovertosqlmanagedinstance) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Update-AzSnapshot.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Update-AzSnapshot.md
-ms.openlocfilehash: 3098b491a045f99670beacdf11cfe07caf145ad5
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ff85c440bd7f2f45f905a3c06f3c59e8227719d8
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144215327"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145765074"
 ---
 # Update-AzSnapshot
 
 ## SYNOPSIS
 Memperbarui rekam jepret.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/update-azsnapshot) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -59,7 +62,7 @@ New-AzSnapshotUpdateConfig -DiskSizeGB 10 | Update-AzSnapshot -ResourceGroupName
 
 Perintah ini memperbarui rekam jepret yang ada dengan nama 'Snapshot01' dalam grup sumber daya 'ResourceGroup01' hingga ukuran disk 10 GB.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $snapshot = Get-AzSnapshot -ResourceGroupName 'ResourceGroup01' -SnapshotName 'Snapshot01';
 $snapshot.DiskSizeGB = 10;

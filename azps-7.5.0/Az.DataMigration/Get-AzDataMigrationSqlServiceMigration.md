@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Get-AzDataMigrationSqlServiceMigration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Get-AzDataMigrationSqlServiceMigration.md
-ms.openlocfilehash: cf80630c3f0233e5f23039b18b8f4b2a1bc06321
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 79c7d4652f0aeb425ca2cc837b24160ccb46da24
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144202154"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145750780"
 ---
 # Get-AzDataMigrationSqlServiceMigration
 
 ## SYNOPSIS
 Ambil Daftar migrasi database yang dilampirkan ke layanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/get-azdatamigrationsqlservicemigration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ Ambil Daftar migrasi database yang dilampirkan ke layanan.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan daftar migrasi database yang dilampirkan ke Sql Migration Service tertentu
+### Contoh 1: Mendapatkan daftar migrasi database yang dilampirkan ke Sql Migration Service tertentu
 ```powershell
 Get-AzDataMigrationSqlServiceMigration -ResourceGroupName "MyResourceGroup" -SqlMigrationServiceName "MySqlMigrationService"
 ```
@@ -62,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

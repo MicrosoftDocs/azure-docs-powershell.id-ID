@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzVmss.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzVmss.md
-ms.openlocfilehash: f9fdd52d6b582b9bd3c14dd19ff184b7fd54e8b6
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a173ec2a2aca5811f112815ef4669ae9a9adf36c
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144190741"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145733482"
 ---
 # Remove-AzVmss
 
 ## SYNOPSIS
 Menghapus VMSS atau komputer virtual yang berada dalam VMSS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/remove-azvmss) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -95,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -ForceDeletion
-Parameter opsional untuk memaksa penghapusan VM.
+Parameter opsional untuk memaksa menghapus VM.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -207,7 +210,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Baru-AzVmss](./New-AzVmss.md)
 
-[Mulai ulang-AzVmss](./Restart-AzVmss.md)
+[Hidupkan ulang-AzVmss](./Restart-AzVmss.md)
 
 [Set-AzVmss](./Set-AzVmss.md)
 

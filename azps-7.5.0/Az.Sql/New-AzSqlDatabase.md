@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/new-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlDatabase.md
-ms.openlocfilehash: 0dd8a994eea96ad9661a80bd89c6defac4a92bad
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7461b65db9ac474580f2aabd642c098dccfd4b84
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144195784"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145726390"
 ---
 # New-AzSqlDatabase
 
 ## SYNOPSIS
 Buat database atau database elastis.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/new-azsqldatabase) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -655,11 +658,11 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzSqlDatabase](./Get-AzSqlDatabase.md)
+[Dapatkan-AzSqlDatabase](./Get-AzSqlDatabase.md)
 
 [Baru-AzSqlElasticPool](./New-AzSqlElasticPool.md)
 
-[Baru-AzSqlServer](./New-AzSqlServer.md)
+[Baru-AzResourceGroup](./New-AzSqlServer.md)
 
 [Hapus-AzSqlDatabase](./Remove-AzSqlDatabase.md)
 

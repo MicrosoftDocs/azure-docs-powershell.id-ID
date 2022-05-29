@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.marketplace/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Remove-AzMarketplacePrivateStoreOffer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Remove-AzMarketplacePrivateStoreOffer.md
-ms.openlocfilehash: 94a73c5c27e683e8826135997448182bb6f33f0f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4ebd54f8d770e0ee94208d496aa4d53cc074ce45
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144194804"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145792252"
 ---
 # Remove-AzMarketplacePrivateStoreOffer
 
 ## SYNOPSIS
 Menghapus penawaran dari penyimpanan privat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.marketplace/remove-azmarketplaceprivatestoreoffer) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -69,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-{{ Isi Deskripsi PassThru }}
+{{ Fill PassThru Description }}
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

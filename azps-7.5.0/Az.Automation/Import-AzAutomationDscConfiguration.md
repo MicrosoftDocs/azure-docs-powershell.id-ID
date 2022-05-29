@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/impor
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Import-AzAutomationDscConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Import-AzAutomationDscConfiguration.md
-ms.openlocfilehash: 8ffb4410d37f18aac7a101c65f80c6e84ba2cde8
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1dd26a39f2c5684495fc59127485fa3cdff592d9
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144112732"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145765578"
 ---
 # Import-AzAutomationDscConfiguration
 
 ## SYNOPSIS
 Mengimpor konfigurasi DSC ke Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/import-azautomationdscconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 

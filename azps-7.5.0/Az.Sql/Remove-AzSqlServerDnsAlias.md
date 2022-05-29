@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/remove-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlServerDnsAlias.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlServerDnsAlias.md
-ms.openlocfilehash: 9c61d3b63f70c9b4d231df6b2c4421f61897746d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3e1d79f989cd72844a1d58cac42391f65ec3ea60
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144109389"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145724212"
 ---
 # Remove-AzSqlServerDnsAlias
 
 ## SYNOPSIS
 Menghapus Alias DNS Server Azure SQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/remove-azsqlserverdnsalias) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.connectedkuberne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedKubernetes/help/Get-AzConnectedKubernetesUserCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedKubernetes/help/Get-AzConnectedKubernetesUserCredential.md
-ms.openlocfilehash: 3eb15404ce4d997031e29f3a3ef1d6d26f1050db
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8a60f29b3c99fd133b7967b733571e52dc469c71
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144232732"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145764948"
 ---
 # Get-AzConnectedKubernetesUserCredential
 
 ## SYNOPSIS
 Mendapatkan kredensial pengguna kluster yang terhubung dengan grup sumber daya dan nama tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.connectedkubernetes/get-azconnectedkubernetesusercredential) untuk informasi terbaru.
 
 ## SYNTAX
 

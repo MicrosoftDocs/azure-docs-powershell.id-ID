@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Get-AzDataLakeStoreVirtualNetworkRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Get-AzDataLakeStoreVirtualNetworkRule.md
-ms.openlocfilehash: 3ee265a57d617ef8fdd290a56f8c4d3332a1f1cb
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e0d4e0692d9237cbab506661fd6eb9b99742a0e0
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144202616"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145751446"
 ---
 # Get-AzDataLakeStoreVirtualNetworkRule
 
 ## SYNOPSIS
 Mendapatkan aturan jaringan virtual yang ditentukan di Data Lake Store yang ditentukan.
 Jika tidak ada aturan jaringan virtual yang ditentukan, maka daftarkan semua aturan jaringan virtual untuk akun tersebut.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/get-azdatalakestorevirtualnetworkrule) untuk informasi terbaru.
 
 ## SYNTAX
 

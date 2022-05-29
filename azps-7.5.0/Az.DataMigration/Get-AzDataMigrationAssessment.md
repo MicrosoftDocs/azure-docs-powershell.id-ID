@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Get-AzDataMigrationAssessment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Get-AzDataMigrationAssessment.md
-ms.openlocfilehash: 746317271a5787f3b14e240a08fa08632ffcaa46
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 431dcdebff18c13db5575343c1657555259bf252
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144202280"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145750996"
 ---
 # Get-AzDataMigrationAssessment
 
 ## SYNOPSIS
 Mulai penilaian pada instans SQL Server
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/get-azdatamigrationassessment) untuk informasi terbaru.
 
 ## SYNTAX
 

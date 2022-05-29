@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.kusto/remove-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Remove-AzKustoDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Remove-AzKustoDatabase.md
-ms.openlocfilehash: 96e0a16d4d2a1758b88cc48489c51cfe6e41e067
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8c2cbeb010458271b5ffb8c7968a44dc2d744559
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144228977"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145792306"
 ---
 # Remove-AzKustoDatabase
 
 ## SYNOPSIS
 Menghapus database dengan nama yang diberikan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.kusto/remove-azkustodatabase) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azga
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzGalleryApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzGalleryApplication.md
-ms.openlocfilehash: 450e8b62fe03753def07c833f4a80aa1f0fdc7d8
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3c9fb08c5e8170faaef92f13a232b04059a790e2
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144184735"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145772418"
 ---
 # New-AzGalleryApplication
 
 ## SYNOPSIS
 Membuat atau memperbarui Definisi Aplikasi galeri.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/new-azgalleryapplication) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Nama galeri Definisi Aplikasi yang akan dibuat atau diperbarui.
+Nama Galeri Definisi Aplikasi yang akan dibuat atau diperbarui.
 Karakter yang diizinkan adalah alfabet dan angka dengan titik, tanda hubung, dan titik yang diizinkan di tengah.
 Panjang maksimum adalah 80 karakter.
 
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+Info masuk langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -SupportedOSType
-Properti ini memungkinkan Anda menentukan jenis OS yang didukung yang dibangun aplikasinya.
+Properti ini memungkinkan Anda menentukan jenis OS yang didukung yang dibuat aplikasinya.
 
 
  Potensi nilai:

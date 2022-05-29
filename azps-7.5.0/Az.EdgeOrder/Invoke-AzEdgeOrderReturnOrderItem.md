@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.edgeorder/invoke
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/Invoke-AzEdgeOrderReturnOrderItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/Invoke-AzEdgeOrderReturnOrderItem.md
-ms.openlocfilehash: 4ddaeaec12c26c2e1e9da956d6e5cd0b4e043769
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 60f133e0546a58945a34a6ac767cc913fa1ee3ef
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144215279"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145764653"
 ---
 # Invoke-AzEdgeOrderReturnOrderItem
 
 ## SYNOPSIS
 Mengembalikan item pesanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.edgeorder/invoke-azedgeorderreturnorderitem) untuk informasi terbaru.
 
 ## SYNTAX
 

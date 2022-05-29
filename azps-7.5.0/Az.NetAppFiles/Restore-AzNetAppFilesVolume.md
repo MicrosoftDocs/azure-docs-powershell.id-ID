@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/rest
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Restore-AzNetAppFilesVolume.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Restore-AzNetAppFilesVolume.md
-ms.openlocfilehash: 5659b6553acba781bb386a9e0549ea81af452e11
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 598ef3272ae6337e0c5682ad81c344e6695b1aa9
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144183965"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145779220"
 ---
 # Restore-AzNetAppFilesVolume
 
 ## SYNOPSIS
 Memulihkan/Mengembalikan volume ke salah satu rekam jepretnya
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.netappfiles/restore-aznetappfilesvolume) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -194,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### -SnapshotId
-SnapshotId dari rekam jepret.
+SnapshotId rekam jepret.
 UUID v4 digunakan untuk mengidentifikasi Rekam Jepret
 
 ```yaml
