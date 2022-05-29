@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.containerinstanc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/Get-AzContainerInstanceContainerGroupOutboundNetworkDependencyEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/Get-AzContainerInstanceContainerGroupOutboundNetworkDependencyEndpoint.md
-ms.openlocfilehash: 22b02f0445e0ea3a0e134fed7c724999785721b7
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9ad8a25889a7612820cb269cabb58a1aca8eb842
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144219482"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145793296"
 ---
 # Get-AzContainerInstanceContainerGroupOutboundNetworkDependencyEndpoint
 
 ## SYNOPSIS
 Mendapatkan semua dependensi jaringan untuk grup kontainer ini untuk memungkinkan kontrol penuh pengaturan dan konfigurasi jaringan.
 Untuk grup kontainer, ini akan selalu menjadi daftar kosong.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.containerinstance/get-azcontainerinstancecontainergroupoutboundnetworkdependencyendpoint) untuk informasi terbaru.
 
 ## SYNTAX
 

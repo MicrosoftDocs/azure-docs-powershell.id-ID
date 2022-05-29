@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datadog/get-azda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/Get-AzDatadogMonitorMonitoredResource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/Get-AzDatadogMonitorMonitoredResource.md
-ms.openlocfilehash: 3350bf7996c3a7e2bb8a23d1b7d8ba0f9f5fcba5
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 24bc237f2bf60aad64964f8ff9db5ec6d08d740e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144218054"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145746640"
 ---
 # Get-AzDatadogMonitorMonitoredResource
 
 ## SYNOPSIS
 Cantumkan sumber daya yang saat ini sedang dipantau oleh sumber daya monitor Datadog.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datadog/get-azdatadogmonitormonitoredresource) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ Cantumkan sumber daya yang saat ini sedang dipantau oleh sumber daya monitor Dat
 
 ## EXAMPLES
 
-### Contoh 1: Mencantumkan sumber daya yang saat ini sedang dipantau oleh sumber daya monitor Datadog
+### Contoh 1: Mencantumkan sumber daya yang saat ini sedang dipantau oleh sumber daya pemantauan Datadog
 ```powershell
 Get-AzDatadogMonitorMonitoredResource -ResourceGroupName azure-rg-Datadog -Name Datadog
 ```
@@ -70,7 +73,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama tidak peka huruf besar/kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String

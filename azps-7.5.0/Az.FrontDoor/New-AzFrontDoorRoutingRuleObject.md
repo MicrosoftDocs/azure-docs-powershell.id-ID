@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.frontdoor/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorRoutingRuleObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorRoutingRuleObject.md
-ms.openlocfilehash: b74db096f724b8bc81e7282970e350eef65513d4
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4466a690741c2391d1c68d93318265a9f02d2c03
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144225421"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145780696"
 ---
 # New-AzFrontDoorRoutingRuleObject
 
 ## SYNOPSIS
 Membuat PSRoutingRuleObject untuk pembuatan Front Door
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoorroutingruleobject) untuk informasi terbaru.
 
 ## SYNTAX
 

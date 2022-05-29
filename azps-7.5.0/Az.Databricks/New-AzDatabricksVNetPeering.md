@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databricks/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Databricks/help/New-AzDatabricksVNetPeering.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Databricks/help/New-AzDatabricksVNetPeering.md
-ms.openlocfilehash: 1f283856449b28555393cce0ceacdb9407fcb1fb
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6344ce61a10f3af151fab41bdc46196af88381bd
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144218219"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145747036"
 ---
 # New-AzDatabricksVNetPeering
 
 ## SYNOPSIS
 Membuat vNet Peering untuk ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.databricks/new-azdatabricksvnetpeering) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,7 +51,7 @@ Perintah ini membuat peering vnet untuk databricks.
 ## PARAMETERS
 
 ### -AllowForwardedTraffic
-Apakah lalu lintas yang diteruskan dari VM di jaringan virtual lokal akan diizinkan/tidak diizinkan dalam jaringan virtual jarak jauh.
+Apakah lalu lintas yang diteruskan dari VM di jaringan virtual lokal akan diizinkan/tidak diizinkan di jaringan virtual jarak jauh.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabricksAddressSpacePrefix
-Daftar blok alamat yang dicadangkan untuk jaringan virtual ini dalam notasi CIDR.
+Daftar blok alamat yang disediakan untuk jaringan virtual ini dalam notasi CIDR.
 
 ```yaml
 Type: System.String[]
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -RemoteAddressSpacePrefix
-Daftar blok alamat yang dicadangkan untuk jaringan virtual ini dalam notasi CIDR.
+Daftar blok alamat yang disediakan untuk jaringan virtual ini dalam notasi CIDR.
 
 ```yaml
 Type: System.String[]
@@ -214,7 +217,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama tidak peka huruf besar/kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String

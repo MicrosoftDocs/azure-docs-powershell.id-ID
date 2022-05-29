@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databoxedge/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Remove-AzDataBoxEdgeTrigger.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Remove-AzDataBoxEdgeTrigger.md
-ms.openlocfilehash: b5121b70c32d410c31decac8565551bc5c110435
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4806f0a4f7285c7e309e63ef204f9a60e372c4c6
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144204632"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145753930"
 ---
 # Remove-AzDataBoxEdgeTrigger
 
 ## SYNOPSIS
 Menghapus pemicu yang ada pada perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.databoxedge/remove-azdataboxedgetrigger) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.Datadog/new-AzDa
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/New-AzDatadogFilteringTagObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/New-AzDatadogFilteringTagObject.md
-ms.openlocfilehash: 8090ba34b65879072cdf7c1d29946303a4c55c8d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: bedc497f8dfac0715694829b0ee6bf793aaea193
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144218015"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145746460"
 ---
 # New-AzDatadogFilteringTagObject
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk FilteringTag
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datadog/new-azdatadogfilteringtagobject) untuk informasi terbaru.
 
 ## SYNTAX
 

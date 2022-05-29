@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datadog/new-azda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/New-AzDatadogMonitor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/New-AzDatadogMonitor.md
-ms.openlocfilehash: a714d48b288ccddce4eef1e885b2ba0775cc4e1a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 11ec23746381dac8514e7b536c161fef9e7da036
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144218003"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145746424"
 ---
 # New-AzDatadogMonitor
 
 ## SYNOPSIS
 Membuat sumber daya monitor.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datadog/new-azdatadogmonitor) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -OrganizationLinkingClientId
-client_id dari yang ada dengan imbalan token autentikasi untuk menautkan organisasi.
+client_id dari yang sudah ada dengan imbalan token autentikasi untuk menautkan organisasi.
 
 ```yaml
 Type: System.String
@@ -246,7 +249,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -336,7 +339,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserInfoPhoneNumber
-Telepon jumlah pengguna yang digunakan oleh Datadog untuk menghubungi mereka jika diperlukan
+Nomor telepon pengguna yang digunakan oleh Datadog untuk menghubungi mereka jika diperlukan
 
 ```yaml
 Type: System.String

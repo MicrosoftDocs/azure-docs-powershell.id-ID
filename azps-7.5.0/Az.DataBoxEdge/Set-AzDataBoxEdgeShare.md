@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databoxedge/set-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Set-AzDataBoxEdgeShare.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Set-AzDataBoxEdgeShare.md
-ms.openlocfilehash: 52e4aa9e8fed2e4482f454fb8346d7cb60d55016
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: bafb469d99368ed2ea1341f33139db70a443c729
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144204534"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145753876"
 ---
 # Set-AzDataBoxEdgeShare
 
 ## SYNOPSIS
 Memperbarui berbagi untuk perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.databoxedge/set-azdataboxedgeshare) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClientAccessRight
-Akses Baca/Tulis untuk clientIds, Untuk ex:@(@{"ClientId"="192.168.10.10";" AccessRight"="NoAccess"}, @{"ClientId"="192.168.10.11";" AccessRight"="ReadOnly"})
+Akses Baca/Tulis untuk clientIds, Misalnya:@(@{"ClientId"="192.168.10.10";" AccessRight"="NoAccess"}, @{"ClientId"="192.168.10.11";" AccessRight"="ReadOnly"})
 
 ```yaml
 Type: System.Collections.Hashtable[]
@@ -213,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserAccessRight
-menyediakan akses yang tepat bersama dengan nama pengguna yang ada untuk mengakses jenis Berbagi SMB, Misalnya: @(@{"Nama pengguna"="nama pengguna-1";" AccessRight"="Read"}, @{"Username"="user-name-2";" AccessRight"="Read"}, @{"Username"="user-name-3";" AccessRight"="Kustom"})
+menyediakan akses langsung bersama dengan nama pengguna yang ada untuk mengakses jenis Berbagi SMB, Misalnya: @(@{"Nama Pengguna"="nama pengguna-1";" AccessRight"="Read"}, @{"Username"="user-name-2";" AccessRight"="Read"}, @{"Username"="user-name-3";" AccessRight"="Custom"})
 
 ```yaml
 Type: System.Collections.Hashtable[]

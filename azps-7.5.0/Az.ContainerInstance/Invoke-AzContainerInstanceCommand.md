@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.containerinstanc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/Invoke-AzContainerInstanceCommand.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/Invoke-AzContainerInstanceCommand.md
-ms.openlocfilehash: 688396c5b0ca65fbf7ec7dc229921c5fcb0297a8
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c489c97c8272d00f49610936e4223981e681b4aa
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144219455"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145793260"
 ---
 # Invoke-AzContainerInstanceCommand
 
 ## SYNOPSIS
 Menjalankan perintah untuk instans kontainer tertentu dalam grup sumber daya dan grup kontainer tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.containerinstance/invoke-azcontainerinstancecommand) untuk informasi terbaru.
 
 ## SYNTAX
 

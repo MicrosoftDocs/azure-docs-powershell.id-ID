@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databoxedge/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/New-AzDataBoxEdgeTrigger.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/New-AzDataBoxEdgeTrigger.md
-ms.openlocfilehash: a49807e1cf5a8b5625c3e47119c253cca007da80
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 78d594c987eea1d1f7ef708e021e06f2c9fe4b5c
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144204758"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145754164"
 ---
 # New-AzDataBoxEdgeTrigger
 
 ## SYNOPSIS
 Mengonfigurasi pemicu pada perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.databoxedge/new-azdataboxedgetrigger) untuk informasi terbaru.
 
 ## SYNTAX
 

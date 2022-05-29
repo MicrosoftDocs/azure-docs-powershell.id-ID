@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datashare/stop-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Stop-AzDataShareSubscriptionSynchronization.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Stop-AzDataShareSubscriptionSynchronization.md
-ms.openlocfilehash: a5d3a3897e4761ab7bee6ab4bd5fe408c9a1b75f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 10619916a151bfbd8805db8f63403724abc228e9
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144218267"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145747144"
 ---
 # Stop-AzDataShareSubscriptionSynchronization
 
 ## SYNOPSIS
-Menghentikan sinkronisasi yang sedang berlangsung untuk langganan berbagi. Langganan berbagi dapat ditentukan melalui id sumber daya atau namanya.
+Menghentikan sinkronisasi yang sedang berlangsung untuk langganan berbagi. Langganan berbagi dapat ditentukan melalui id sumber dayanya atau namanya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datashare/stop-azdatasharesubscriptionsynchronization) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -61,7 +64,7 @@ status            : Canceled
 synchronizationId : 20a4416b-b33b-4539-a908-71dc8ef698fb
 ```
 
-Menghentikan sinkronisasi yang sedang berlangsung yang diidentifikasi oleh id - 20a4416b-b33b-4539-a908-71dc8ef698fb
+Menghentikan sinkronisasi berkelanjutan yang diidentifikasi oleh id - 20a4416b-b33b-4539-a908-71dc8ef698fb
 
 ## PARAMETERS
 

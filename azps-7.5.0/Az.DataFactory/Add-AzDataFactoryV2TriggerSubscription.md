@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/add-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Add-AzDataFactoryV2TriggerSubscription.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Add-AzDataFactoryV2TriggerSubscription.md
-ms.openlocfilehash: 874107938a5fb14dfdbc89b1cde77b3a116faf71
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 880fdf0c75d190f4b0f595c4ba2f7797c6ccf490
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144204506"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145753840"
 ---
 # Add-AzDataFactoryV2TriggerSubscription
 
 ## SYNOPSIS
 Berlangganan pemicu peristiwa ke peristiwa layanan eksternal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/add-azdatafactoryv2triggersubscription) untuk informasi terbaru.
 
 ## SYNTAX
 

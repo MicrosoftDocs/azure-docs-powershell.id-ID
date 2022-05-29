@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.frontdoor/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorBackendObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorBackendObject.md
-ms.openlocfilehash: fa48c2bcc6040cb1df3e2da6b480e36dab6d0c6c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 54c6bd8b747855336a495044e875c80b98c2709f
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144208250"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145780750"
 ---
 # New-AzFrontDoorBackendObject
 
 ## SYNOPSIS
 Membuat objek PSBackend
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoorbackendobject) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databricks/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Databricks/help/New-AzDatabricksWorkspace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Databricks/help/New-AzDatabricksWorkspace.md
-ms.openlocfilehash: 5764f10efe2adb3513b5500e89082403f12275a1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 903c4674550fd3a10a42b94dca465252ab86fd3b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144218186"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145747018"
 ---
 # New-AzDatabricksWorkspace
 
 ## SYNOPSIS
 Membuat ruang kerja baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.databricks/new-azdatabricksworkspace) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -161,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -EncryptionKeySource
-KeySource enkripsi (penyedia).
+Sumber kunci enkripsi (penyedia).
 Nilai yang mungkin (tidak peka huruf besar/kecil): Default, Microsoft.Keyvault
 
 ```yaml
@@ -177,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -EncryptionKeyVaultUri
-The Uri of KeyVault.
+Uri Dari KeyVault.
 
 ```yaml
 Type: System.String
@@ -421,7 +424,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
