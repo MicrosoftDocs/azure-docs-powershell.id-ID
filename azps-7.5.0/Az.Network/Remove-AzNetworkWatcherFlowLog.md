@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzNetworkWatcherFlowLog.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzNetworkWatcherFlowLog.md
-ms.openlocfilehash: 07a6950acb8d6224f805b3472e4c531df2109760
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a329bb09e642eb952d63aa72c762b0c250e6725e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144221939"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145669666"
 ---
 # Remove-AzNetworkWatcherFlowLog
 
 ## SYNOPSIS
 Menghapus sumber daya log alur yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-aznetworkwatcherflowlog) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcher
-Sumber daya network watcher.
+Sumber daya pengamat jaringan.
 
 ```yaml
 Type: PSNetworkWatcher
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcherName
-Nama network watcher.
+Nama pengamat jaringan.
 
 ```yaml
 Type: String
@@ -167,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-{{ Fill PassThru Description }}
+{{ Isi Deskripsi PassThru }}
 
 ```yaml
 Type: SwitchParameter
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya network watcher.
+Nama grup sumber daya pengamat jaringan.
 
 ```yaml
 Type: String

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.trafficmanager/a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Add-AzTrafficManagerIpAddressRange.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Add-AzTrafficManagerIpAddressRange.md
-ms.openlocfilehash: d37f664602102d9087feb4df53255e86a225030b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0d5e6cdb07d0675ed074508d81dbc070d6aa0ba3
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144214535"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145702954"
 ---
 # Add-AzTrafficManagerIpAddressRange
 
 ## SYNOPSIS
 Menambahkan rentang alamat atau subnet ke objek titik akhir Traffic Manager lokal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.trafficmanager/add-aztrafficmanageripaddressrange) untuk informasi terbaru.
 
 ## SYNTAX
 

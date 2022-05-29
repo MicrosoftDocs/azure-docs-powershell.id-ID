@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzNetworkProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzNetworkProfile.md
-ms.openlocfilehash: 0577f780ed031189e0924bce7d8a720b317bb9b4
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: cb5618b4e9c94b4fb8981a1ade7ae7033bb77661
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144221999"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145669918"
 ---
 # Remove-AzNetworkProfile
 
 ## SYNOPSIS
 Menghapus profil jaringan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-aznetworkprofile) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Remove-AzNetworkProfile -InputObject <PSNetworkProfile> [-Force] [-AsJob] [-Pass
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzNetworkProfile** menghapus profil jaringan jika tidak ada antarmuka jaringan kontainer (sebagaimana kontras dengan **konfigurasi** antarmuka jaringan kontainer) yang telah dibuat.
+Cmdlet **Remove-AzNetworkProfile** menghapus profil jaringan jika tidak ada antarmuka jaringan kontainer (kontras dengan **konfigurasi** antarmuka jaringan kontainer) yang telah dibuat.
 
 ## EXAMPLES
 
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item tempat Anda bekerja.
+Mengembalikan objek yang mewakili item yang sedang Anda kerjakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya azure resource manager dari profil jaringan.
+ID sumber daya Azure resource manager dari profil jaringan.
 
 ```yaml
 Type: System.String

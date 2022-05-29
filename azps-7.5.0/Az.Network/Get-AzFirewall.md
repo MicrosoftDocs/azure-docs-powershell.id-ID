@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azfi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzFirewall.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzFirewall.md
-ms.openlocfilehash: 3ddcbb523bd76769504f8a3d3b920640b62f339e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: fa69638f5bb1a5abd26100a94cab47441f2d5454
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144245752"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145682374"
 ---
 # Get-AzFirewall
 
 ## SYNOPSIS
 Mendapatkan Azure Firewall.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azfirewall) untuk informasi terbaru.
 
 ## SYNTAX
 

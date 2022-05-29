@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/get-azcdnedg
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Get-AzCdnEdgeNode.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Get-AzCdnEdgeNode.md
-ms.openlocfilehash: 927095427e4c02f505a751008776db66348e9bee
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 736d0d06f757da43d2753a6bd5afacaf149d934b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144184906"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145689400"
 ---
 # Get-AzCdnEdgeNode
 
 ## SYNOPSIS
 Mendapatkan Azure CDN edgenode.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cdn/get-azcdnedgenode) untuk informasi terbaru.
 
 ## SYNTAX
 

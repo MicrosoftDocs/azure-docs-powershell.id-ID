@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.Purview/new-AzPu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAdlsGen2MsiScanObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAdlsGen2MsiScanObject.md
-ms.openlocfilehash: b1a31df2e895648160e0db09c1f70cc79b308095
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 69921911c7900f5ccbabc680067f856902aa6ab1
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144224246"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145656004"
 ---
 # New-AzPurviewAdlsGen2MsiScanObject
 
 ## SYNOPSIS
 Buat objek dalam memori untuk AdlsGen2MsiScan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.purview/new-azpurviewadlsgen2msiscanobject) untuk informasi terbaru.
 
 ## SYNTAX
 

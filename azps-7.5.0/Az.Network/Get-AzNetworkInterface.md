@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkInterface.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkInterface.md
-ms.openlocfilehash: 658b565f5057bf81058a6dd02f3c40e9e24f79d4
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 125bb39618a2f031c33c6a8c9df0ee8b6b0560f5
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144222203"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145681690"
 ---
 # Get-AzNetworkInterface
 
 ## SYNOPSIS
 Mendapatkan antarmuka jaringan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-aznetworkinterface) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Get-AzNetworkInterface [-Name <String>] [-ResourceGroupName <String>]
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### PerluasStandAloneNic
+### ExpandStandAloneNic
 ```
 Get-AzNetworkInterface -Name <String> -ResourceGroupName <String> -ExpandResource <String>
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
@@ -251,7 +254,7 @@ Primary                     : True
 MacAddress                  :
 ```
 
-Perintah ini mendapatkan semua antarmuka jaringan untuk langganan saat ini yang dimulai dengan "pengujian".
+Perintah ini mendapatkan semua antarmuka jaringan untuk langganan saat ini yang dimulai dengan "uji".
 
 ## PARAMETERS
 
@@ -338,7 +341,7 @@ Accept wildcard characters: True
 ```
 
 ### -ResourceId
-Id manajer sumber daya Azure dari antarmuka jaringan.
+Id Azure Resource Manager dari antarmuka jaringan.
 
 ```yaml
 Type: System.String

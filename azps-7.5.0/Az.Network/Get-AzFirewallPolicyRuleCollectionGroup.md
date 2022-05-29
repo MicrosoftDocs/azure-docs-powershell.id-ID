@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azfi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzFirewallPolicyRuleCollectionGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzFirewallPolicyRuleCollectionGroup.md
-ms.openlocfilehash: e478ab309c542801de7581a7f3e6a34b1e2d3bcb
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 245200e436e3da98082d944b2fed28962fe59b69
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144216014"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145682248"
 ---
 # Get-AzFirewallPolicyRuleCollectionGroup
 
 ## SYNOPSIS
 Mendapatkan Grup Kumpulan Aturan Kebijakan Azure Firewall
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azfirewallpolicyrulecollectiongroup) untuk informasi terbaru.
 
 ## SYNTAX
 

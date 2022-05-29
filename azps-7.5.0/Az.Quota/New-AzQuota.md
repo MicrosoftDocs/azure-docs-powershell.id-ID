@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.quota/new-azquot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Quota/help/New-AzQuota.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Quota/help/New-AzQuota.md
-ms.openlocfilehash: 76f48847e33cc2fdf8ff20025a6f4e41d40c6270
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: dd0c10deaa41d6b6b533904b9cee48d4b99445e5
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144242599"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145651270"
 ---
 # New-AzQuota
 
@@ -21,6 +21,9 @@ Gunakan operasi GET untuk kuota dan penggunaan untuk menentukan berapa banyak ku
 Langkah-langkah ini dirinci dalam example.\n2 [ini](https://techcommunity.microsoft.com/t5/azure-governance-and-management/using-the-new-quota-rest-api/ba-p/2183670).
 Gunakan operasi PUT ini untuk memperbarui batas kuota.
 Silakan periksa URI di header lokasi untuk status detail permintaan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.quota/new-azquota) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 
 ### -Cakupan
 Target URI sumber daya Azure.
-Contohnya,`/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/qms-test/providers/Microsoft.Batch/batchAccounts/testAccount/`.
+Contohnya:`/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/qms-test/providers/Microsoft.Batch/batchAccounts/testAccount/`
 Ini adalah URI sumber daya Azure target untuk operasi Daftar GET.
 `{resourceName}` Jika ditambahkan setelah `/quotas`, maka itu adalah URI sumber daya Azure target dalam operasi GET untuk sumber daya tertentu.
 

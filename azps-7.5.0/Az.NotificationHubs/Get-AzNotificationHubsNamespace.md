@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.notificationhubs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/Get-AzNotificationHubsNamespace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/Get-AzNotificationHubsNamespace.md
-ms.openlocfilehash: 92de3d2c45bd44acee64bda0fe3676c6a3a212c7
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b8b25cd5566fae475959a870f36a476c39a420c7
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144226992"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145663240"
 ---
 # Get-AzNotificationHubsNamespace
 
 ## SYNOPSIS
 Mendapatkan informasi tentang namespace hub pemberitahuan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.notificationhubs/get-aznotificationhubsnamespace) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,28 +33,28 @@ Get-AzNotificationHubsNamespace [[-ResourceGroup] <String>] [[-Namespace] <Strin
 Cmdlet ini memberi Anda opsi untuk mendapatkan informasi untuk semua namespace Anda, informasi tentang namespace yang ditetapkan ke grup sumber daya tertentu; atau untuk mengembalikan informasi tentang namespace tertentu.
 Namespace adalah kontainer logis yang membantu Anda mengatur dan mengelola hub pemberitahuan Anda.
 Anda harus memiliki setidaknya satu namespace hub pemberitahuan: semua hub pemberitahuan harus ditetapkan ke namespace layanan.
-Satu namespace dapat menampung beberapa hub yang berarti Anda mungkin hanya memerlukan satu namespace layanan di organisasi Anda.
+Satu namespace layanan dapat menampung beberapa hub yang berarti Anda mungkin hanya memerlukan satu namespace layanan di organisasi Anda.
 Namun, Anda juga dapat memiliki beberapa namespace untuk mengatur hub Anda dengan lebih baik, atau untuk memberikan izin individu tertentu untuk mengelola subset hub yang dipilih.
 Cmdlet **Get-AzNotificationHubsNamespace** mengembalikan informasi dasar tentang namespace itu sendiri.
 Untuk mendapatkan informasi tentang aturan otorisasi yang terkait dengan namespace, gunakan Get-AzNotificationHubsNamespaceAuthorizationRules.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan informasi untuk semua namespace hub pemberitahuan
+### Contoh 1: Mendapatkan informasi untuk semua namespace hub pemberitahuan
 ```powershell
 Get-AzNotificationHubsNamespace
 ```
 
 Perintah ini mengembalikan informasi untuk semua namespace hub pemberitahuan Anda.
 
-### Contoh 2: Mendapatkan informasi untuk satu namespace hub pemberitahuan
+### Contoh 2: Mendapatkan informasi untuk namespace hub pemberitahuan tunggal
 ```powershell
 Get-AzNotificationHubsNamespace -Namespace "ContosoNamespace"
 ```
 
-Perintah ini mendapatkan informasi untuk satu namespace hub pemberitahuan: ContosoNamespace.
+Perintah ini mendapatkan informasi untuk namespace hub pemberitahuan tunggal: ContosoNamespace.
 
-### Contoh 3: Dapatkan informasi untuk semua hub pemberitahuan yang ditetapkan ke namespace tertentu
+### Contoh 3: Mendapatkan informasi untuk semua hub pemberitahuan yang ditetapkan ke namespace tertentu
 ```powershell
 Get-AzNotificationHubsNamespace -ResourceGroup "ContosoNotificationsGroup"
 ```
@@ -76,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Menentukan nama unik untuk namespace.
+Menentukan nama unik untuk namespace layanan.
 Namespace menyediakan cara untuk mengelompokkan dan mengategorikan hub pemberitahuan.
 
 ```yaml
@@ -92,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroup
-Menentukan grup sumber daya tempat namespace layanan ditetapkan.
+Menentukan grup sumber daya tempat namespace ditetapkan.
 Grup sumber daya mengatur item seperti namespace, hub pemberitahuan, dan aturan otorisasi dengan cara yang membantu hanya manajemen inventarisasi dan administrasi Azure.
 
 ```yaml

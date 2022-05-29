@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/start
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Start-AzAutomationRunbook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Start-AzAutomationRunbook.md
-ms.openlocfilehash: 4a2e5750d56a24caa52e5e683822114e0fa9cb9e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1b4e5515c8fabac4a2b4c80b22909c1376e520aa
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144227913"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145683112"
 ---
 # Start-AzAutomationRunbook
 
 ## SYNOPSIS
 Memulai pekerjaan runbook.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/start-azautomationrunbook) untuk informasi terbaru.
 
 ## SYNTAX
 

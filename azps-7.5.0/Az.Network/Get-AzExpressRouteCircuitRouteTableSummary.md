@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azex
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzExpressRouteCircuitRouteTableSummary.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzExpressRouteCircuitRouteTableSummary.md
-ms.openlocfilehash: 86a8ba9b4980229c3556fa1a59b7759c04827b82
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c50b54f067d10907845764a5b20b19d697e1d57c
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144238637"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145689796"
 ---
 # Get-AzExpressRouteCircuitRouteTableSummary
 
 ## SYNOPSIS
 Mendapatkan ringkasan tabel rute sirkuit ExpressRoute.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azexpressroutecircuitroutetablesummary) untuk informasi terbaru.
 
 ## SYNTAX
 

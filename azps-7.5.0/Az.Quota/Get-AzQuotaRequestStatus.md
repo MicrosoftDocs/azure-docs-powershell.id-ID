@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.quota/get-azquot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Quota/help/Get-AzQuotaRequestStatus.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Quota/help/Get-AzQuotaRequestStatus.md
-ms.openlocfilehash: e1e5e47c32bf6ebf66b98dbf0ac3cd0aff4ce062
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2aec854472a7eac6d7eb3e4fa21be0a4cc50089e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144242613"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145651306"
 ---
 # Get-AzQuotaRequestStatus
 
 ## SYNOPSIS
 Dapatkan detail permintaan kuota dan status berdasarkan ID permintaan kuota untuk sumber daya penyedia sumber daya di lokasi tertentu.
 **ID** permintaan kuota dikembalikan sebagai respons operasi PUT.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.quota/get-azquotarequeststatus) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 
 ### -Cakupan
 Target URI sumber daya Azure.
-Contohnya,`/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/qms-test/providers/Microsoft.Batch/batchAccounts/testAccount/`.
+Contohnya:`/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/qms-test/providers/Microsoft.Batch/batchAccounts/testAccount/`
 Ini adalah URI sumber daya Azure target untuk operasi Daftar GET.
 `{resourceName}` Jika ditambahkan setelah `/quotas`, maka itu adalah URI sumber daya Azure target dalam operasi GET untuk sumber daya tertentu.
 

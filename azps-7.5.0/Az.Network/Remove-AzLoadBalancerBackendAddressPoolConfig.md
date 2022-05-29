@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzLoadBalancerBackendAddressPoolConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzLoadBalancerBackendAddressPoolConfig.md
-ms.openlocfilehash: 0d704acf3dc69c52420cf1d0711e824a77cc9d7e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8549e19feeecf4d81b9d7391ab04817c94dcd4a8
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144229680"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145670350"
 ---
 # Remove-AzLoadBalancerBackendAddressPoolConfig
 
 ## SYNOPSIS
 Menghapus konfigurasi kumpulan alamat backend dari load balancer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azloadbalancerbackendaddresspoolconfig) untuk informasi terbaru.
 
 ## SYNTAX
 

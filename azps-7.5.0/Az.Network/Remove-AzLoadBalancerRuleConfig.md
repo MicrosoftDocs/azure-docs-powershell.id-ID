@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzLoadBalancerRuleConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzLoadBalancerRuleConfig.md
-ms.openlocfilehash: ffb69d67cc0830937a21adc8a92ac035261c9b31
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 834c6505fd6c26dc138c9f0ff921bd0f5940c6f1
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144228767"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145670062"
 ---
 # Remove-AzLoadBalancerRuleConfig
 
 ## SYNOPSIS
 Menghapus konfigurasi aturan untuk load balancer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azloadbalancerruleconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Remove-AzLoadBalancerRuleConfig -LoadBalancer <PSLoadBalancer> [-Name <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzLoadBalancerRuleConfig** menghapus konfigurasi aturan untuk penyeimbang muatan Azure.
+Cmdlet **Remove-AzLoadBalancerRuleConfig** menghapus konfigurasi aturan untuk load balancer Azure.
 
 ## EXAMPLES
 

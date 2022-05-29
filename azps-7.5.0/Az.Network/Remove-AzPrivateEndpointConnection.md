@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzPrivateEndpointConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzPrivateEndpointConnection.md
-ms.openlocfilehash: f47f5c3b6767b22ea864d9a85a7b42866db08433
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 56ba14769c2142b14230c2ac3563a61ffa4a3de4
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144109893"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145669486"
 ---
 # Remove-AzPrivateEndpointConnection
 
 ## SYNOPSIS
 Menghapus koneksi titik akhir privat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azprivateendpointconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang sedang Anda kerjakan.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml

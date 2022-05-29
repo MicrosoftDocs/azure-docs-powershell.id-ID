@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.timeseriesinsigh
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/Update-AzTimeSeriesInsightsEnvironment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/Update-AzTimeSeriesInsightsEnvironment.md
-ms.openlocfilehash: 48ae7c61a2cb0dccc4b7d6f919199ea338489a4d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c0cd27de2abe629f2029110d49d0ba56a1e9b4a9
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144188042"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145703278"
 ---
 # Update-AzTimeSeriesInsightsEnvironment
 
 ## SYNOPSIS
 Memperbarui lingkungan dengan nama yang ditentukan dalam langganan dan grup sumber daya yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.timeseriesinsights/update-aztimeseriesinsightsenvironment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.TimeSeriesInsights.Models.ITimeSeriesInsightsIdentity

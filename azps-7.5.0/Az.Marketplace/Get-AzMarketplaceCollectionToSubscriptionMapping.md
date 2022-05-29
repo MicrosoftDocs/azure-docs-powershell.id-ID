@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.marketplace/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Get-AzMarketplaceCollectionToSubscriptionMapping.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Get-AzMarketplaceCollectionToSubscriptionMapping.md
-ms.openlocfilehash: 2f16c475faefc69249d518e9732684de2ffa416b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5d68198448aa2b52d2d7abb23cce445f6c24d60c
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144110176"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145690660"
 ---
 # Get-AzMarketplaceCollectionToSubscriptionMapping
 
 ## SYNOPSIS
 Untuk daftar langganan tertentu, API akan mengembalikan peta koleksi dan langganan terkait dari daftar yang disediakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.marketplace/get-azmarketplacecollectiontosubscriptionmapping) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -61,7 +64,7 @@ e58535dc-1be3-4d2c-904c-1f97984ebe5d
 fdb889a1-cf3e-49f0-95b8-2bb012fa01f1
 ```
 
-Perintah ini Untuk daftar langganan tertentu, akan mengembalikan peta koleksi dan langganan terkait dari daftar yang disediakan.
+Perintah Ini Untuk daftar langganan tertentu, akan mengembalikan peta koleksi dan langganan terkait dari daftar yang disediakan.
 
 ## PARAMETERS
 
@@ -81,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Marketplace.Models.IMarketplaceIdentity
@@ -96,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -Payload
-Daftar langganan untuk mendapatkan koleksi terkait Untuk dibangun, lihat bagian CATATAN untuk properti PAYLOAD dan membuat tabel hash.
+Daftar langganan untuk mendapatkan koleksi terkait Untuk membangun, lihat bagian CATATAN untuk properti PAYLOAD dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Marketplace.Models.Api20210601.ICollectionsToSubscriptionsMappingPayload
@@ -197,7 +200,7 @@ INPUTOBJECT <IMarketplaceIdentity>: Parameter Identitas
   - `[AdminRequestApprovalId <String>]`: ID persetujuan permintaan admin untuk membuat atau memperbarui
   - `[CollectionId <String>]`: ID koleksi
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[OfferId <String>]`: ID penawaran untuk memperbarui atau menghapus
+  - `[OfferId <String>]`: ID penawaran yang akan diperbarui atau dihapus
   - `[PrivateStoreId <String>]`: ID penyimpanan - harus menggunakan ID penyewa
   - `[RequestApprovalId <String>]`: ID persetujuan permintaan untuk membuat atau memperbarui
 

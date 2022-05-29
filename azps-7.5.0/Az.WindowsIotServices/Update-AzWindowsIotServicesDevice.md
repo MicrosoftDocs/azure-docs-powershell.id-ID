@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.windowsiotservic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/WindowsIotServices/help/Update-AzWindowsIotServicesDevice.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/WindowsIotServices/help/Update-AzWindowsIotServicesDevice.md
-ms.openlocfilehash: acd0d2826c36635945a77ff57afa3fca8f81ece6
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b197a55196cc23cd275cb036791a51fcc4afc9f0
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144198385"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145696978"
 ---
 # Update-AzWindowsIotServicesDevice
 
 ## SYNOPSIS
-Memperbarui metadata IoT Device Service Windows.
+Memperbarui metadata Windows IoT Device Service.
 Pola yang biasa untuk memodifikasi properti adalah mengambil metadata IoT Device Service dan metadata keamanan Windows, lalu menggabungkannya dengan nilai yang dimodifikasi dalam isi baru untuk memperbarui Windows IoT Device Service.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.windowsiotservices/update-azwindowsiotservicesdevice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ Update-AzWindowsIotServicesDevice -InputObject <IWindowsIotServicesIdentity> [-I
 ```
 
 ## DESCRIPTION
-Memperbarui metadata IoT Device Service Windows.
+Memperbarui metadata Windows IoT Device Service.
 Pola yang biasa untuk memodifikasi properti adalah mengambil metadata IoT Device Service dan metadata keamanan Windows, lalu menggabungkannya dengan nilai yang dimodifikasi dalam isi baru untuk memperbarui Windows IoT Device Service.
 
 ## EXAMPLES
@@ -64,12 +67,12 @@ Location Name    Type                                Etag
 West US  wsi-t01 Microsoft.WindowsIoT/DeviceServices "5d005f5f-0000-0700-0000-5faa46ae0000"
 ```
 
-Perintah ini memperbarui layanan IoT Windows menurut alur.
+Perintah ini memperbarui Windows layanan IoT berdasarkan alur.
 
 ## PARAMETERS
 
 ### -AdminDomainName
-Windows domain AAD IoT Device Service OEM
+Windows domain IoT Device Service OEM AAD
 
 ```yaml
 Type: System.String
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -BillingDomainName
-Windows domain AAD ODM IoT Device Service
+Windows domain IoT Device Service ODM AAD
 
 ```yaml
 Type: System.String
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 
 ### -Etag
 Bidang Etag *tidak* diperlukan.
-Jika disediakan dalam isi respons, itu juga harus disediakan sebagai header per konvensi ETag normal.
+Jika disediakan dalam isi respons, itu juga harus disediakan sebagai header sesuai konvensi ETag normal.
 
 ```yaml
 Type: System.String
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 
 ### -IfMatch
 ETag Windows IoT Device Service.
-Jangan tentukan untuk membuat IoT Device Service Windows baru.
+Jangan tentukan untuk membuat Windows IoT Device Service baru.
 Diperlukan untuk memperbarui Windows IoT Device Service yang ada.
 
 ```yaml
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.WindowsIotServices.Models.IWindowsIotServicesIdentity
@@ -318,7 +321,7 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <IWindowsIotServicesIdentity>: Parameter Identitas
-  - `[DeviceName <String>]`: Nama IoT Device Service Windows.
+  - `[DeviceName <String>]`: Nama Windows IoT Device Service.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi Windows IoT Device Service.
   - `[SubscriptionId <String>]`: Pengidentifikasi langganan.

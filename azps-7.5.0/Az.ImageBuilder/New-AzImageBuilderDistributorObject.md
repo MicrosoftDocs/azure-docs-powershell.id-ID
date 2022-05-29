@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.imagebuilder/new
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImageBuilder/help/New-AzImageBuilderDistributorObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImageBuilder/help/New-AzImageBuilderDistributorObject.md
-ms.openlocfilehash: ebc4917c95d846f8f6a1eafb216c4d1132728379
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4d7b977894a8c11411516a7d31bcf8e9c270b56f
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144224666"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145695826"
 ---
 # New-AzImageBuilderDistributorObject
 
 ## SYNOPSIS
 Objek distribusi generik
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.imagebuilder/new-azimagebuilderdistributorobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -ImageId
-Id Sumber Daya Gambar Disk Terkelola.
+Id Sumber Daya dari Gambar Disk Terkelola.
 
 ```yaml
 Type: System.String

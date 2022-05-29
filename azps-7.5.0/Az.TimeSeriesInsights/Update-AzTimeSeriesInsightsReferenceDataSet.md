@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.timeseriesinsigh
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/Update-AzTimeSeriesInsightsReferenceDataSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/Update-AzTimeSeriesInsightsReferenceDataSet.md
-ms.openlocfilehash: 62a8cf341bd54308d12d03f18b26b4ac874da39c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 33c36d2f18ac5593a58062e8c3708fe9011526a1
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144187983"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145703224"
 ---
 # Update-AzTimeSeriesInsightsReferenceDataSet
 
 ## SYNOPSIS
 Memperbarui himpunan data referensi dengan nama yang ditentukan di langganan, grup sumber daya, dan lingkungan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.timeseriesinsights/update-aztimeseriesinsightsreferencedataset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -110,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Nama himpunan data referensi Insights Time Series yang terkait dengan lingkungan yang ditentukan.
+Nama himpunan data referensi Time Series Insights yang terkait dengan lingkungan yang ditentukan.
 
 ```yaml
 Type: System.String

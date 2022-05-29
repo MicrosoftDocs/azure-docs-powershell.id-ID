@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzRouteConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzRouteConfig.md
-ms.openlocfilehash: b5504a46656bf5fe0b9af658a041efbd61b0f28d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 55b59222aeca829d676c082912551ec201f0c63c
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144200247"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145669324"
 ---
 # Remove-AzRouteConfig
 
 ## SYNOPSIS
 Menghapus rute dari tabel rute.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azrouteconfig) untuk informasi terbaru.
 
 ## SYNTAX
 

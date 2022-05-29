@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzNetworkWatcherConnectionMonitor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzNetworkWatcherConnectionMonitor.md
-ms.openlocfilehash: 17e6299d6af2180b420fc3d92f1748ed1611e480
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 588ec42615173ae221ff6f6fa9a128179483547e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144221942"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145669684"
 ---
 # Remove-AzNetworkWatcherConnectionMonitor
 
 ## SYNOPSIS
 Hapus pemantau koneksi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-aznetworkwatcherconnectionmonitor) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -60,7 +63,7 @@ Cmdlet remove-AzNetworkWatcherConnectionMonitor menghapus pemantau koneksi yang 
 Remove-AzNetworkWatcherConnectionMonitor -Location centraluseuap -Name cm
 ```
 
-Dalam contoh ini kami menghapus monitor koneksi yang ditentukan oleh lokasi dan nama.
+Dalam contoh ini, kami menghapus pemantau koneksi yang ditentukan oleh lokasi dan nama.
 
 ### Contoh 2
 
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcher
-Sumber daya pengamat jaringan.
+Sumber daya network watcher.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSNetworkWatcher
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcherName
-Nama pengamat jaringan.
+Nama network watcher.
 
 ```yaml
 Type: System.String
@@ -179,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item tempat Anda bekerja.
+Mengembalikan objek yang mewakili item yang sedang Anda kerjakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -194,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya pengamat jaringan.
+Nama grup sumber daya network watcher.
 
 ```yaml
 Type: System.String
@@ -270,7 +273,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### System.Boolean
 
 ## NOTES
-Kata kunci: azure, azurerm, arm, sumber daya, konektivitas, manajemen, manajer, jaringan, jaringan, pengamat jaringan, pemantau koneksi
+Kata kunci: azure, azurerm, lengan, sumber daya, konektivitas, manajemen, manajer, jaringan, jaringan, pengamat jaringan, pemantau koneksi
 
 ## RELATED LINKS
 

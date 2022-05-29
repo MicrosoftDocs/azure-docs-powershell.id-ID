@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azfi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewall.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewall.md
-ms.openlocfilehash: e764a2741430ff690815ef20b981005ddc5eeec7
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: bb74c9e42cc63c952b7411aabf16be2a96001782
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144186964"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145676218"
 ---
 # New-AzFirewall
 
 ## SYNOPSIS
 Membuat Firewall baru dalam grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azfirewall) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -65,7 +68,7 @@ Cmdlet **New-AzFirewall** membuat Azure Firewall.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat Firewall yang terpasang pada jaringan virtual
+### Contoh 1: Membuat Firewall yang dilampirkan ke jaringan virtual
 ```powershell
 $rgName = "resourceGroupName"
 $vnet = Get-AzVirtualNetwork -ResourceGroupName $rgName -Name "vnet"
@@ -77,7 +80,7 @@ Contoh ini membuat Firewall yang dilampirkan ke jaringan virtual "vnet" dalam gr
 Karena tidak ada aturan yang ditentukan, firewall akan memblokir semua lalu lintas (perilaku default).
 Intel Ancaman juga akan berjalan dalam mode default - Pemberitahuan - yang berarti lalu lintas berbahaya akan dicatat, tetapi tidak ditolak.
 
-### Contoh 2: Buat Firewall yang memungkinkan semua lalu lintas HTTPS
+### Contoh 2: Membuat Firewall yang memungkinkan semua lalu lintas HTTPS
 ```powershell
 $rgName = "resourceGroupName"
 $vnet = Get-AzVirtualNetwork -ResourceGroupName $rgName -Name "vnet"
@@ -91,14 +94,14 @@ New-AzFirewall -Name "azFw" -ResourceGroupName $rgName -Location centralus -Virt
 Contoh ini membuat Firewall yang memungkinkan semua lalu lintas HTTPS pada port 443.
 Intel Ancaman akan berjalan dalam mode default - Pemberitahuan - yang berarti lalu lintas berbahaya akan dicatat, tetapi tidak ditolak.
 
-### Contoh 3: DNAT - lalu lintas pengalihan yang ditujukan ke 10.1.2.3:80 ke 10.2.3.4:8080
+### Contoh 3: DNAT - mengalihkan lalu lintas yang ditujukan ke 10.1.2.3:80 ke 10.2.3.4:8080
 ```powershell
 $rule = New-AzFirewallNatRule -Name "natRule" -Protocol "TCP" -SourceAddress "*" -DestinationAddress "10.1.2.3" -DestinationPort "80" -TranslatedAddress "10.2.3.4" -TranslatedPort "8080"
 $ruleCollection = New-AzFirewallNatRuleCollection -Name "NatRuleCollection" -Priority 1000 -Rule $rule
 New-AzFirewall -Name "azFw" -ResourceGroupName "rg" -Location centralus -NatRuleCollection $ruleCollection -ThreatIntelMode Off
 ```
 
-Contoh ini membuat Firewall yang menerjemahkan IP tujuan dan port semua paket yang ditujukan ke 10.1.2.3:80 ke 10.2.3.4:8080 Intel Ancaman dimatikan dalam contoh ini.
+Contoh ini membuat Firewall yang menerjemahkan IP tujuan dan port semua paket yang ditujukan ke 10.1.2.3:80 ke 10.2.3.4:8080 Threat Intel dinonaktifkan dalam contoh ini.
 
 ### Contoh 4: Membuat Firewall tanpa aturan dan dengan Intel Ancaman dalam mode Pemberitahuan
 ```powershell
@@ -109,7 +112,7 @@ New-AzFirewall -Name "azFw" -ResourceGroupName $rgName -Location centralus -Virt
 ```
 
 Contoh ini membuat Firewall yang memblokir semua lalu lintas (perilaku default) dan memiliki Intel Ancaman yang berjalan dalam mode Pemberitahuan.
-Ini berarti log peringatan dipancarkan untuk lalu lintas berbahaya sebelum menerapkan aturan lain (dalam hal ini hanya aturan default - Tolak Semua)
+Ini berarti log peringatan dikeluarkan untuk lalu lintas berbahaya sebelum menerapkan aturan lain (dalam hal ini hanya aturan default - Tolak Semua)
 
 ### Contoh 5: Buat Firewall yang memungkinkan semua lalu lintas HTTP pada port 8080, tetapi memblokir domain berbahaya yang diidentifikasi oleh Intel Ancaman
 ```powershell
@@ -193,7 +196,7 @@ $pip = Get-AzPublicIpAddress -ResourceGroupName $rgName -Name "publicIpName"
 New-AzFirewall -Name "azFw" -ResourceGroupName $rgName -Location centralus -VirtualNetwork $vnet -PublicIpAddress $pip -PrivateRange @("99.99.99.0/24", "66.66.0.0/16")
 ```
 
-Contoh ini membuat Firewall yang memperlakukan "99.99.99.0/24" dan "66.66.0.0/16" sebagai rentang ip privat dan tidak akan menaikkan lalu lintas ke alamat tersebut
+Contoh ini membuat Firewall yang memperlakukan "99.99.99.0/24" dan "66.66.0.0/16" sebagai rentang ip privat dan tidak akan menyergap lalu lintas ke alamat tersebut
 
 ### Contoh 12: Membuat Firewall dengan subnet manajemen dan alamat IP Publik
 ```powershell
@@ -211,7 +214,7 @@ Intel Ancaman juga akan berjalan dalam mode default - Pemberitahuan - yang berar
 
 Untuk mendukung skenario "penerowongan paksa", firewall ini akan menggunakan subnet "AzureFirewallManagementSubnet" dan alamat IP publik manajemen untuk lalu lintas manajemennya
 
-### Contoh 13: Membuat Firewall dengan Kebijakan Firewall yang terpasang pada jaringan virtual
+### Contoh 13: Membuat Firewall dengan Kebijakan Firewall yang dilampirkan ke jaringan virtual
 ```powershell
 $rgName = "resourceGroupName"
 $vnet = Get-AzVirtualNetwork -ResourceGroupName $rgName -Name "vnet"
@@ -244,7 +247,7 @@ $hubIpAddresses = New-AzFirewallHubIpAddress -PublicIPs $fwpips
 $fw=New-AzFirewall -Name "azFw" -ResourceGroupName $rgName -Location westus -SkuName AZFW_Hub -HubIPAddresses $hubIpAddresses -VirtualHubId $vHubId
 ```
 
-Contoh ini membuat Firewall yang dilampirkan ke hub virtual "hub" dalam grup sumber daya yang sama dengan firewall.
+Contoh ini membuat Firewall yang dilampirkan ke "hub" hub virtual dalam grup sumber daya yang sama dengan firewall.
 Firewall akan diberi 2 IP publik yang dibuat secara implisit.
 
 ### Contoh 16: Buat Firewall dengan Izinkan FTP Aktif.
@@ -255,7 +258,7 @@ $pip = Get-AzPublicIpAddress -ResourceGroupName $rgName -Name "publicIpName"
 New-AzFirewall -Name "azFw" -ResourceGroupName $rgName -Location centralus -VirtualNetwork $vnet -PublicIpAddress $pip -AllowActiveFTP
 ```
 
-Contoh ini membuat Firewall dengan bendera FTP aktif yang diizinkan.
+Contoh ini membuat Firewall dengan bendera izinkan FTP aktif.
 
 ### Contoh 17: Membuat Firewall dengan subnet manajemen dan tidak ada alamat IP Publik data
 ```powershell
@@ -424,7 +427,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagementPublicIpAddress
-Satu atau beberapa Alamat IP Publik yang digunakan untuk lalu lintas manajemen. Alamat IP Publik harus menggunakan SKU Standar dan harus termasuk dalam grup sumber daya yang sama dengan Firewall.
+Satu atau beberapa Alamat IP Publik yang akan digunakan untuk lalu lintas manajemen. Alamat IP Publik harus menggunakan SKU Standar dan harus termasuk dalam grup sumber daya yang sama dengan Firewall.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSPublicIpAddress
@@ -484,7 +487,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateRange
-Rentang IP privat tempat lalu lintas tidak akan diberi SNAT
+Rentang IP privat tempat lalu lintas tidak akan di-SNAT
 
 ```yaml
 Type: System.String[]

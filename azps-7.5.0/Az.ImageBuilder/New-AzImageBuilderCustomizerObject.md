@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.imagebuilder/new
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImageBuilder/help/New-AzImageBuilderCustomizerObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImageBuilder/help/New-AzImageBuilderCustomizerObject.md
-ms.openlocfilehash: fdaf367194ac5071b4bb6b2c0234a1fea948ff41
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2de50f9f08da05736e8df2ebadbd6b969ba4cec5
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144217550"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145695862"
 ---
 # New-AzImageBuilderCustomizerObject
 
 ## SYNOPSIS
 Menjelaskan satuan kustomisasi gambar
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.imagebuilder/new-azimagebuildercustomizerobject) untuk informasi terbaru.
 
 ## SYNTAX
 

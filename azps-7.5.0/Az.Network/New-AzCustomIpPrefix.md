@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azcu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzCustomIpPrefix.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzCustomIpPrefix.md
-ms.openlocfilehash: f3b40a9be921239ebce3cb5d408fe623da7a2406
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a888c9037d030d2591c2b2754e41ff8d07f9e250
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144234031"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145676614"
 ---
 # New-AzCustomIpPrefix
 
 ## SYNOPSIS
 Membuat sumber daya CustomIpPrefix
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azcustomipprefix) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ Cmdlet **New-AzCustomIpPrefix** membuat sumber daya CustomIpPrefix.
 $myCustomIpPrefix = New-AzCustomIpPrefix -Name $prefixName -ResourceGroupName $rgName -Cidr "40.40.40.0/24" -Location westus2 -Zone 1,2,3 -AuthorizationMessage $authorizationMessage -SignedMessage $signedMessage
 ```
 
-Perintah ini memulai proses provisi untuk sumber daya Awalan IP Kustom IPv4 zona redundan baru dengan nama $prefixName dalam grup sumber daya $rgName dengan CIDR 40.40.40.0/24 di wilayah US Barat 2.  Perhatikan bahwa AuthorizationMessage adalah string yang dihubungi (berisi ID langganan, CIDR, dan tanggal kedaluwarsa Otorisasi Asal Rute) dan SignedMessage adalah string yang sama yang ditandatangani oleh sertifikat X509 secara offline. 
+Perintah ini memulai proses provisi untuk sumber daya Prefiks IP Kustom IPv4 zona redundan baru dengan nama $prefixName dalam grup sumber daya $rgName dengan CIDR 40.40.40.0/24 di wilayah US Barat 2.  Perhatikan bahwa AuthorizationMessage adalah string yang dihubungi (berisi ID langganan, CIDR, dan tanggal kedaluwarsa Otorisasi Asal Rute) dan SignedMessage adalah string yang sama yang ditandatangani oleh sertifikat X509 secara offline. 
 
 ## PARAMETERS
 
@@ -176,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -CustomIpPrefixParent
-CustomIpPrefix induk sumber daya.
+CustomIpPrefix sumber daya induk.
 
 ```yaml
 Type: CustomIpPrefix

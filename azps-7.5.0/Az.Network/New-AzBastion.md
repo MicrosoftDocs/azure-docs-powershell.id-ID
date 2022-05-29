@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azba
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzBastion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzBastion.md
-ms.openlocfilehash: f44df1896f9cef2903cef81168e2a5fc511ef746
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 856c8210f844dbfb617d5c6480a0cccf1dcff44b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144231189"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145676704"
 ---
 # New-AzBastion
 
 ## SYNOPSIS
 Membuat sumber daya bastion.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azbastion) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -133,7 +136,7 @@ Scale Units          : 2
 ```
 Contoh ini membuat bastion yang dilampirkan ke jaringan virtual "vnet" dalam grup sumber daya yang sama dengan bastion.
 Harus ada subnet dengan nama AzureBastionSubnet di vnet ini.
-Alamat IP harus dibuat dengan Standar Sku.
+Alamat Ip harus dibuat dengan Standar Sku.
 
 
 ### Contoh 2
@@ -219,7 +222,7 @@ Sku                  : {
                        }
 Scale Units          : 3
 ```
-Contoh ini membuat sumber daya BastionHost dengan Sku Standar dan Unit Skala 3.
+Contoh ini membuat sumber daya BastionHost dengan Sku Standar dan 3 Unit Skala.
 
 
 ## PARAMETERS
@@ -285,7 +288,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicIpAddressId
-Alamat IP publik Id sumber daya Azure untuk bastion.
+Id sumber daya Azure alamat IP publik untuk bastion.
 
 ```yaml
 Type: System.String
@@ -300,7 +303,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicIpAddressName
-Nama sumber daya alamat IP publik untuk bastion.
+Nama sumber daya alamat Ip publik untuk bastion.
 
 ```yaml
 Type: System.String

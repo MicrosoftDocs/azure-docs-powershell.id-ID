@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.vmware/new-azvmw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/New-AzVMwareAddon.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/New-AzVMwareAddon.md
-ms.openlocfilehash: 3646465deebac3c9b7c008adc38b8c3985fd188e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b8e8f142841ceef09d656ba5c1afbbc9a128c3ae
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144221414"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145702108"
 ---
 # New-AzVMwareAddon
 
 ## SYNOPSIS
 Membuat atau memperbarui addon di cloud privat
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.vmware/new-azvmwareaddon) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama tidak peka huruf besar/kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzPrivateLinkService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzPrivateLinkService.md
-ms.openlocfilehash: 774a93d2e0165a163bb3ece5789f91271588475e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e514a1967015d8559f10ba5393971ca887dea9a1
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144215183"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145669450"
 ---
 # Remove-AzPrivateLinkService
 
 ## SYNOPSIS
 Menghapus layanan tautan privat
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azprivatelinkservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang sedang Anda kerjakan.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya layanan tautan privat.
+Nama grup sumber daya dari layanan tautan privat.
 
 ```yaml
 Type: System.String

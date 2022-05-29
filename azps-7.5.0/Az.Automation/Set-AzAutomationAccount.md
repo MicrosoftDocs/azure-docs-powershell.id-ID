@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/set-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Set-AzAutomationAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Set-AzAutomationAccount.md
-ms.openlocfilehash: e29ac7bb7a2b01f4517c44f720eff08ffff26292
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d8fee083e7beef98293d9fba400cda2e2bf3d792
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144186443"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145683472"
 ---
 # Set-AzAutomationAccount
 
 ## SYNOPSIS
 Memodifikasi akun Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/set-azautomationaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
