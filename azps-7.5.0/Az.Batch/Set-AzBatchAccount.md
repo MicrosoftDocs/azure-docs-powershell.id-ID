@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/set-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Set-AzBatchAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Set-AzBatchAccount.md
-ms.openlocfilehash: dc3c6b2298ec513e7de05a1c7879ea676e7f628e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 233c4cf392728fa7af40ed702cec51a762958a73
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144209435"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145731196"
 ---
 # Set-AzBatchAccount
 
 ## SYNOPSIS
 Memperbarui akun Batch.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/set-azbatchaccount) untuk informasi terbaru.
 
 ## SYNTAX
 

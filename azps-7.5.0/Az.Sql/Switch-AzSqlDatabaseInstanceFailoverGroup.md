@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.sql/switch-Azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Switch-AzSqlDatabaseInstanceFailoverGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Switch-AzSqlDatabaseInstanceFailoverGroup.md
-ms.openlocfilehash: 1b9968589c2714d5e58f27af3c12d0720ff458c7
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f094ae27018aca99512a8e05e0d5c8fa614154ab
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144243708"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145721656"
 ---
 # Switch-AzSqlDatabaseInstanceFailoverGroup
 
 ## SYNOPSIS
 Menjalankan failover Grup Failover Instans.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/switch-azsqldatabaseinstancefailovergroup) untuk informasi terbaru.
 
 ## SYNTAX
 

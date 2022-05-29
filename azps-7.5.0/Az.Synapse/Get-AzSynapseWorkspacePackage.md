@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseWorkspacePackage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseWorkspacePackage.md
-ms.openlocfilehash: d01a6fd03a649ce77c08be1289828d019ea5fb1a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 313e68b2e933eb7f17dff613972cd9f3aa3fcd07
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144109151"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145708264"
 ---
 # Get-AzSynapseWorkspacePackage
 
 ## SYNOPSIS
 Mendapatkan paket ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapseworkspacepackage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,7 +53,7 @@ Get-AzSynapseWorkspacePackage -WorkspaceName ContosoWorkspace -Name ContosoWorks
 
 Perintah ini mendapatkan informasi tentang paket ruang kerja bernama ContosoWorkspacePackage di ruang kerja bernama ContosoWorkspace.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 $ws | Get-AzSynapseWorkspacePackage -Name ContosoWorkspacePackage

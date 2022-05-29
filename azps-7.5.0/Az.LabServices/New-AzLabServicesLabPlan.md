@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.labservices/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/New-AzLabServicesLabPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/New-AzLabServicesLabPlan.md
-ms.openlocfilehash: f4298ebd898d78e1469295f479805bc1f8d7bcac
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 05d421ecc02ee8138daa6ddcf1578c3922867b2c
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144184612"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145692784"
 ---
 # New-AzLabServicesLabPlan
 
 ## SYNOPSIS
 Operasi untuk membuat atau memperbarui sumber daya Rencana Lab.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.labservices/new-azlabserviceslabplan) untuk informasi terbaru.
 
 ## SYNTAX
 

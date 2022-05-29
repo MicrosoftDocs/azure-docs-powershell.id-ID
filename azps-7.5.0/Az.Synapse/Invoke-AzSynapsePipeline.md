@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/invoke-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Invoke-AzSynapsePipeline.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Invoke-AzSynapsePipeline.md
-ms.openlocfilehash: 04b1f804f41e1e83e8bb2fda5cc752aaa68a30e9
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0c16eda2e4695c2d1cdf3731e9989730f245cf0e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144226292"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145708044"
 ---
 # Invoke-AzSynapsePipeline
 
 ## SYNOPSIS
-Memanggil alur untuk memulai eksekusi untuk alur tersebut.
+Memanggil alur untuk memulai eksekusi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/invoke-azsynapsepipeline) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Invoke-AzSynapsePipeline -WorkspaceObject <PSSynapseWorkspace> -PipelineName <St
 ```
 
 ## DESCRIPTION
-Perintah **Invoke-AzSynapsePipeline** memulai eksekusi pada alur yang ditentukan dan mengembalikan ID untuk eksekusi tersebut. GUID ini dapat diteruskan ke **Get-AzSynapsePipelineRun** atau **Get-AzSynapseActivityRun** untuk mendapatkan detail lebih lanjut tentang proses ini.
+Perintah **Invoke-AzSynapsePipeline** memulai eksekusi pada alur yang ditentukan dan mengembalikan ID untuk eksekusi tersebut. GUID ini dapat diteruskan ke **Get-AzSynapsePipelineRun** atau **Get-AzSynapseActivityRun** untuk mendapatkan detail lebih lanjut tentang eksekusi ini.
 
 ## EXAMPLES
 
@@ -60,7 +63,7 @@ $ws | Invoke-AzSynapsePipeline -PipelineName ContosoPipeline
 
 Perintah ini memulai eksekusi untuk alur yang disebut ContosoPipeline di ruang kerja ContosoWorkspace melalui alur.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $pipeline = Get-AzSynapsePipeline -WorkspaceName ContosoWorkspace -Name ContosoPipeline
 $pipeline | Invoke-AzSynapsePipeline

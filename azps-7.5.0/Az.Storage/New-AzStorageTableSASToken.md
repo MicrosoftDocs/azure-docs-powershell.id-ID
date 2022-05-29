@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/new-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageTableSASToken.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageTableSASToken.md
-ms.openlocfilehash: 593721716a9d9185e61289f2b6f92e25debe7ac0
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9087b8bcbfdd38fd8d116e5a684a3dfd378e3c81
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144242056"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145715572"
 ---
 # New-AzStorageTableSASToken
 
 ## SYNOPSIS
 Menghasilkan token SAS untuk tabel Azure Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/new-azstoragetablesastoken) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Cmdlet **New-AzStorageTableSASToken** menghasilkan token Tanda Tangan Akses Bers
 
 ## EXAMPLES
 
-### Contoh 1: Menghasilkan token SAS yang memiliki izin penuh untuk tabel
+### Contoh 1: Membuat token SAS yang memiliki izin penuh untuk tabel
 ```
 C:\PS>New-AzStorageTableSASToken -Name "ContosoResources" -Permission "raud"
 ```
@@ -55,9 +58,9 @@ C:\PS>New-AzStorageTableSASToken -Name "ContosoResources" -Permission "raud" -St
 ```
 
 Perintah ini menghasilkan dan token SAS dengan izin penuh untuk tabel bernama ContosoResources.
-Perintah membatasi token ke rentang yang ditentukan oleh parameter *StartPartitionKey* dan *EndPartitionKey* .
+Perintah membatasi token ke rentang yang ditentukan parameter *StartPartitionKey* dan *EndPartitionKey* .
 
-### Contoh 3: Menghasilkan token SAS yang memiliki kebijakan akses tersimpan untuk tabel
+### Contoh 3: Membuat token SAS yang memiliki kebijakan akses tersimpan untuk tabel
 ```
 C:\PS>New-AzStorageTableSASToken -Name "ContosoResources" -Policy "ClientPolicy01"
 ```
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndPartitionKey
-Menentukan kunci partisi akhir rentang untuk token yang dibuat cmdlet ini.
+Menentukan kunci partisi dari akhir rentang untuk token yang dibuat cmdlet ini.
 
 ```yaml
 Type: System.String

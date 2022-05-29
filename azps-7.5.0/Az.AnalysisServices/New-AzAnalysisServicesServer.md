@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.analysisservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AnalysisServices/AnalysisServices/help/New-AzAnalysisServicesServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AnalysisServices/AnalysisServices/help/New-AzAnalysisServicesServer.md
-ms.openlocfilehash: c17913e10b6dc6638781300bb6ef4255541680bb
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: cd05f7321b92accfac5a5d5b2a52ecb3c160dab1
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144110852"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145729954"
 ---
 # New-AzAnalysisServicesServer
 
 ## SYNOPSIS
 Membuat server Analysis Services baru
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.analysisservices/new-azanalysisservicesserver) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ Cmdlet New-AzAnalysisServicesServer membuat server Analysis Services baru
 New-AzAnalysisServicesServer -ResourceGroupName "testresourcegroup" -Name "testserver" -Location "West-US" -Sku "S1"
 ```
 
-Membuat server bernama testserver di wilayah Azure West-US dan dalam grup sumber daya testresourcegroup. Tingkat sku untuk server akan menjadi S1.
+Membuat server bernama testserver di wilayah Azure Barat-AS dan dalam grup sumber daya testresourcegroup. Tingkat sku untuk server akan menjadi S1.
 
 ### Contoh 2
 
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReadonlyReplicaCount
-Jumlah replika baca saja dari server layanan Analisis
+Hanya membaca jumlah replika server layanan Analisis
 
 ```yaml
 Type: System.Int32

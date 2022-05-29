@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.devtestlabs/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DevTestLabs/DevTestLabs/help/Get-AzDtlAutoShutdownPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DevTestLabs/DevTestLabs/help/Get-AzDtlAutoShutdownPolicy.md
-ms.openlocfilehash: 5bd416b5ab70f10eb535781ea7ec6d57e3690309
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d3654bb33cd68ebbcd560365f5b6e7eaa0fb1d5b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144198105"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145742806"
 ---
 # Get-AzDtlAutoShutdownPolicy
 
 ## SYNOPSIS
 Mendapatkan kebijakan matikan otomatis lab di DevTest Labs.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.devtestlabs/get-azdtlautoshutdownpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Get-AzDtlAutoShutdownPolicy [-LabName] <String> [-ResourceGroupName] <String>
 
 ## DESCRIPTION
 Cmdlet **Get-AzDtlAutoShutdownPolicy** mendapatkan kebijakan matikan otomatis lab, yang memungkinkan Anda mematikan semua komputer virtual secara otomatis di lab pada waktu yang ditentukan dalam sehari.
-Cmdlet mengembalikan apakah status kebijakan diaktifkan, dan waktu yang telah Anda atur untuk mematikan komputer virtual lab secara otomatis.
+Cmdlet mengembalikan apakah status kebijakan diaktifkan, dan waktu hari yang telah Anda atur untuk mematikan komputer virtual lab secara otomatis.
 
 ## EXAMPLES
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/new-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/New-AzEventHubNamespace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/New-AzEventHubNamespace.md
-ms.openlocfilehash: edf464886b1fc5aeb2100502a02dd801eff4618e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b8761d8d670a7283219ab537419650c082611621
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144227325"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145769340"
 ---
 # New-AzEventHubNamespace
 
 ## SYNOPSIS
 Membuat namespace layanan Azure Event Hubs.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventhub/new-azeventhubnamespace) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -107,9 +110,9 @@ Encryption.KeySource          :
 Encryption.KeyVaultProperties :
 ```
 
-Membuat namespace \`layanan Azure Event Hubs MyNamespaceName\` di lokasi \`geografis yang ditentukan MyLocation\`, dalam grup \`sumber daya MyResourceGroupName\` dan AutoInflate diaktifkan dengan MaximumThroughputUnits 10.
+Membuat namespace \`Layanan Azure Event Hubs MyNamespaceName\` di lokasi \`geografis yang ditentukan MyLocation\`, dalam grup \`sumber daya MyResourceGroupName\` dan AutoInflate diaktifkan dengan MaximumThroughputUnits 10.
 
-### Contoh 3: Namespace yang diaktifkan Kafka
+### Contoh 3: Namespace layanan yang diaktifkan Kafka
 ```powershell
 New-AzEventHubNamespace -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -Location MyLocation -EnableAutoInflate -EnableKafka
 ```
@@ -140,7 +143,7 @@ Encryption.KeySource          :
 Encryption.KeyVaultProperties :
 ```
 
-Membuat namespace \`layanan Azure Event Hubs MyNamespaceName\` di lokasi \`geografis yang ditentukan MyLocation\`, dalam grup \`sumber daya MyResourceGroupName\` dengan Kafka dan AutoInflate diaktifkan.
+Membuat namespace \`Layanan Pusat Aktivitas MyNamespaceName\` di lokasi \`geografis yang ditentukan MyLocation\`, dalam grup \`sumber daya MyResourceGroupName\` dengan Kafka dan AutoInflate diaktifkan.
 
 ### Contoh 4: Namespace yang diaktifkan ZoneRedundant
 ```powershell
@@ -173,7 +176,7 @@ Encryption.KeySource          :
 Encryption.KeyVaultProperties :
 ```
 
-Membuat namespace \`layanan Azure Event Hubs MyNamespaceName\` di lokasi \`geografis yang ditentukan MyLocation\`, dalam grup \`sumber daya MyResourceGroupName\` dengan Kafka dan AutoInflate diaktifkan.
+Membuat namespace \`Layanan Pusat Aktivitas MyNamespaceName\` di lokasi \`geografis yang ditentukan MyLocation\`, dalam grup \`sumber daya MyResourceGroupName\` dengan Kafka dan AutoInflate diaktifkan.
 
 ### Contoh 5: Membuat Namespace dengan Kelola Identitas dalam kluster 
 ```powershell
@@ -404,7 +407,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi Namespace Layanan EventHub.
+Lokasi Namespace EventHub.
 
 ```yaml
 Type: System.String
@@ -419,7 +422,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaximumThroughputUnits
-Batas atas unit throughput saat AutoInflate diaktifkan, nilai harus dalam 0 hingga 20 unit throughput.
+Batas atas unit throughput saat AutoInflate diaktifkan, nilai harus berada dalam 0 hingga 20 unit throughput.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -434,7 +437,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Nama Namespace Layanan EventHub.
+Nama Namespace EventHub.
 
 ```yaml
 Type: System.String

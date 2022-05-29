@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.devtestlabs/set-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DevTestLabs/DevTestLabs/help/Set-AzDtlAutoStartPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DevTestLabs/DevTestLabs/help/Set-AzDtlAutoStartPolicy.md
-ms.openlocfilehash: 2408d79f72fab300995492ee5e5518639edc4e34
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 77aaed89dc09cd003883943534beeb531b370af0
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144197996"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145742716"
 ---
 # Set-AzDtlAutoStartPolicy
 
 ## SYNOPSIS
 Menetapkan kebijakan mulai otomatis lab di DevTest Labs.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.devtestlabs/set-azdtlautostartpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 

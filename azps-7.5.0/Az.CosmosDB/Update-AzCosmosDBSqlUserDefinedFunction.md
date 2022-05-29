@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBSqlUserDefinedFunction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBSqlUserDefinedFunction.md
-ms.openlocfilehash: 33125624567fbdd153dcc44bd61955c96846ab1e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1bb39f6fb7466cc6c83e6939d987529969e0ec62
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144219194"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145755244"
 ---
 # Update-AzCosmosDBSqlUserDefinedFunction
 
 ## SYNOPSIS
 Memperbarui CosmosDB Sql UserDefinedFunction. Melakukan operasi patch sisi klien dengan membaca UserDefinedFunction yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/update-azcosmosdbsqluserdefinedfunction) untuk informasi terbaru.
 
 ## SYNTAX
 

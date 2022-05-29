@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/Start-AzBa
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Start-AzBatchComputeNodeServiceLogUpload.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Start-AzBatchComputeNodeServiceLogUpload.md
-ms.openlocfilehash: dbc0441b9e0ea1b52a0ee2584a048a8be02e30d3
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: fb85b891837967b0e21ef99538c3bebd1400f52e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144211046"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145731106"
 ---
 # Start-AzBatchComputeNodeServiceLogUpload
 
 ## SYNOPSIS
 Upload file log layanan simpul komputasi ke kontainer Azure Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/start-azbatchcomputenodeservicelogupload) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -79,7 +82,7 @@ NumberOfFilesUploaded VirtualDirectoryName
 
 Upload log layanan simpul komputasi yang ditulis pada atau setelah 1 Januari 2018 tengah malam dan sebelum 10 Januari 2018 tengah malam, yang diperoleh dari simpul komputasi, diberikan id kumpulan kumpulan tempat simpul komputasi berada, dan id simpul komputasi.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $storageContext = New-AzStorageContext -StorageAccountName "contosogeneral" -StorageAccountKey "<Storage Key for ContosoGeneral ends with ==>"
 $sasToken = New-AzStorageContainerSASToken -Name "contosocontainer" -Context $storageContext

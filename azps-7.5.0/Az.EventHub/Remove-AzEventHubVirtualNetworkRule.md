@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Remove-AzEventHubVirtualNetworkRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Remove-AzEventHubVirtualNetworkRule.md
-ms.openlocfilehash: cbdf66f64918c6835b1b82b6a92965f9f3acf522
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 43b30b28d7db3509182084f4e38372701ba507e6
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144235868"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145769448"
 ---
 # Remove-AzEventHubVirtualNetworkRule
 
 ## SYNOPSIS
 Menghapus VirtualNetworkRule yang diberikan tunggal untuk NetworkRuleSet dari Namespace
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventhub/remove-azeventhubvirtualnetworkrule) untuk informasi terbaru.
 
 ## SYNTAX
 

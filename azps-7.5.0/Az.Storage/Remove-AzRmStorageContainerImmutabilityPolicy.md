@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzRmStorageContainerImmutabilityPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzRmStorageContainerImmutabilityPolicy.md
-ms.openlocfilehash: 7daa3da604f39938e6d5c6169e7a4bd4052504d3
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 50ff5a435b21fdc4bbe92043f92a700a411bffb4
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144191259"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145715482"
 ---
 # Remove-AzRmStorageContainerImmutabilityPolicy
 
 ## SYNOPSIS
 Menghapus ImmutabilityPolicy dari kontainer blob Storage dengan kebijakan yang tidak terkunci
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/remove-azrmstoragecontainerimmutabilitypolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -49,13 +52,13 @@ Cmdlet **Remove-AzRmStorageContainerImmutabilityPolicy** menghapus ImmutabilityP
 
 ## EXAMPLES
 
-### Contoh 1: Hapus ImmutabilityPolicy yang tidak terkunci dari kontainer blob Storage dengan nama akun Storage dan nama kontainer
+### Contoh 1: Hapus ImmutabilityPolicy yang tidak terkunci dari kontainer blob Storage dengan nama akun dan nama kontainer Storage
 ```
 PS C:\>$policy = Get-AzRmStorageContainerImmutabilityPolicy -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" -ContainerName "myContainer"
 PS C:\>Remove-AzRmStorageContainerImmutabilityPolicy -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" -ContainerName "myContainer" -Etag $policy.Etag
 ```
 
-Perintah ini menghapus ImmutabilityPolicy yang tidak terkunci dari kontainer blob Storage dengan nama akun Storage dan nama kontainer.
+Perintah ini menghapus ImmutabilityPolicy yang tidak terkunci dari kontainer blob Storage dengan nama akun dan nama kontainer Storage.
 
 ### Contoh 2: Hapus ImmutabilityPolicy yang tidak terkunci dari kontainer blob Storage, dengan objek akun Storage
 ```

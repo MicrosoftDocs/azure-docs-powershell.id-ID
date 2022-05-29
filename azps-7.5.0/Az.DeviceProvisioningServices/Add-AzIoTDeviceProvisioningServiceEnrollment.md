@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deviceprovisioni
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Add-AzIoTDeviceProvisioningServiceEnrollment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Add-AzIoTDeviceProvisioningServiceEnrollment.md
-ms.openlocfilehash: 1f77fac0d6e213684443c3f657f76c28bea76e45
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1ffffa406a0222b47b0b080f13d2d7747cf04b12
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144193124"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145742428"
 ---
 # Add-AzIoTDeviceProvisioningServiceEnrollment
 
 ## SYNOPSIS
 Membuat catatan pendaftaran perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.deviceprovisioningservices/add-aziotdeviceprovisioningserviceenrollment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -74,7 +77,7 @@ Add-AzIoTDeviceProvisioningServiceEnrollment -ResourceGroupName "myresourcegroup
 
 Buat pendaftaran dengan pengesahan TPM.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Add-AzIoTDeviceProvisioningServiceEnrollment -ResourceGroupName "myresourcegroup" -DpsName "mydps" -RegistrationId "enroll1" -AttestationType X509 -PrimaryCertificate "D:/primary.cer"
 ```

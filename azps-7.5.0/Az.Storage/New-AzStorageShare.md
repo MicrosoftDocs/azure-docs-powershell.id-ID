@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/new-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageShare.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageShare.md
-ms.openlocfilehash: a23e9916d63dc094f78c8c39fa5236fc8b1bac93
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2da3f78209eea079d421f0df5a23b6c01e8124e7
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144228361"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145715752"
 ---
 # New-AzStorageShare
 
 ## SYNOPSIS
 Membuat berbagi file.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/new-azstorageshare) untuk informasi terbaru.
 
 ## SYNTAX
 

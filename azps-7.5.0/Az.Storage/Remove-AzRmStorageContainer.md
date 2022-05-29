@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzRmStorageContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzRmStorageContainer.md
-ms.openlocfilehash: dad7f1b5ef26c98ba50e9dff84aae2bfd3e41c26
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e451ff636f40438529f304fe825a69db7c16e82d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144228347"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145715500"
 ---
 # Remove-AzRmStorageContainer
 
 ## SYNOPSIS
 Menghapus kontainer blob Storage
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/remove-azrmstoragecontainer) untuk informasi terbaru.
 
 ## SYNTAX
 

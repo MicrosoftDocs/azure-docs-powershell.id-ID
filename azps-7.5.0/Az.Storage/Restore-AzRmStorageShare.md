@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/restore-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Restore-AzRmStorageShare.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Restore-AzRmStorageShare.md
-ms.openlocfilehash: 7dcb3ba22db31a00d11404334feba09501014118
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 80cbbb656739269d7abaf87566a214082797958a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144241913"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145714690"
 ---
 # Restore-AzRmStorageShare
 
 ## SYNOPSIS
 Memulihkan berbagi file yang dihapus.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/restore-azrmstorageshare) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -65,7 +68,7 @@ Name     QuotaGiB EnabledProtocol AccessTier Deleted Version ShareUsageBytes
 share1   100
 ```
 
-Perintah ini pertama-tama menghapus berbagi file, lalu mencantumkan berbagi dan melihat versi berbagi yang dihapus, akhirnya memulihkannya kembali ke berbagi normal. Perlu mengaktifkan penghapusan sementara berbagi dengan Update-AzStorageFileServiceProperty, sebelum menghapus berbagi.
+Perintah ini terlebih dahulu menghapus berbagi file, lalu mencantumkan berbagi dan melihat versi berbagi yang dihapus, akhirnya memulihkannya kembali ke berbagi normal. Perlu mengaktifkan penghapusan sementara berbagi dengan Update-AzStorageFileServiceProperty, sebelum menghapus berbagi.
 
 ## PARAMETERS
 
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Berbagi yang Dihapus
+Objek Berbagi Dihapus
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSShare

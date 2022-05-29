@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.kusto/get-azkust
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Get-AzKustoPrivateLinkResource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Get-AzKustoPrivateLinkResource.md
-ms.openlocfilehash: f470643088997bbe2fe2b03a1eeb40fba0d65550
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a0d68d172d71d0b7cc3a67bb390d1ea97a8d7eb5
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144216110"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145693846"
 ---
 # Get-AzKustoPrivateLinkResource
 
 ## SYNOPSIS
 Mendapatkan sumber daya tautan privat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.kusto/get-azkustoprivatelinkresource) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -52,7 +55,7 @@ Name                                                       Type
 mycluster/cluster                                          Microsoft.Kusto/Clusters/PrivateLinkResources
 ```
 
-Perintah di atas mengembalikan semua PrivateLinkResource dalam kluster "mycluster" yang ditemukan di grup sumber daya "testrg".
+Perintah di atas mengembalikan semua PrivateLinkResource di kluster "mycluster" yang ditemukan di grup sumber daya "testrg".
 
 ### Contoh 2: Mendapatkan PrivateLinkResource tertentu berdasarkan nama
 ```powershell
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Kusto.Models.IKustoIdentity
@@ -188,7 +191,7 @@ INPUTOBJECT <IKustoIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Nama lokasi (wilayah) Azure.
   - `[ManagedPrivateEndpointName <String>]`: Nama titik akhir privat terkelola.
-  - `[OperationId <String>]`: Panduan ID operasi
+  - `[OperationId <String>]`: Guid ID operasi
   - `[PrincipalAssignmentName <String>]`: Nama Kusto principalAssignment.
   - `[PrivateEndpointConnectionName <String>]`: Nama koneksi titik akhir privat.
   - `[PrivateLinkResourceName <String>]`: Nama sumber daya tautan privat.

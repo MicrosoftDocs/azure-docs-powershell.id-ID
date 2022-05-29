@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzStorageQueue.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzStorageQueue.md
-ms.openlocfilehash: 809fd1fb90e5e50c3412917e720da8b5454ca6b8
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d52346c6ad58b508b41c31926e08835c1841d256
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144241930"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145714870"
 ---
 # Remove-AzStorageQueue
 
 ## SYNOPSIS
 Menghapus antrean penyimpanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/remove-azstoragequeue) untuk informasi terbaru.
 
 ## SYNTAX
 

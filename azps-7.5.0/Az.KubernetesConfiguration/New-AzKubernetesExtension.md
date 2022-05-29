@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.kubernetesconfig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KubernetesConfiguration/help/New-AzKubernetesExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KubernetesConfiguration/help/New-AzKubernetesExtension.md
-ms.openlocfilehash: c3d1aaed2387b8c9a21db529a24deae60e2537e7
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: eaa6920c96f3ede4b10104e3f465e7b4dfd7f534
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144186026"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145694134"
 ---
 # New-AzKubernetesExtension
 
 ## SYNOPSIS
 Buat Ekstensi Kluster Kubernetes baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.kubernetesconfiguration/new-azkubernetesextension) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -80,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -AutoUpgradeMinorVersion
-Beri bendera untuk dicatat apakah ekstensi ini berpartisipasi dalam peningkatan otomatis versi minor, atau tidak.
+Bendera untuk dicatat apakah ekstensi ini berpartisipasi dalam peningkatan otomatis versi minor, atau tidak.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -110,8 +113,8 @@ Accept wildcard characters: False
 ```
 
 ### -ClusterReleaseNamespace
-Namespace tempat Rilis ekstensi harus ditempatkan, untuk ekstensi cakupan Kluster.
-Jika namespace layanan ini tidak ada, namespace ini akan dibuat
+Namespace tempat Rilis ekstensi harus ditempatkan, untuk ekstensi lingkup Kluster.
+Jika namespace ini tidak ada, namespace ini akan dibuat
 
 ```yaml
 Type: System.String
@@ -232,8 +235,8 @@ Accept wildcard characters: False
 ```
 
 ### -NamespaceTargetNamespace
-Namespace tempat ekstensi akan dibuat untuk ekstensi cakupan Namespace.
-Jika namespace layanan ini tidak ada, namespace ini akan dibuat
+Namespace tempat ekstensi akan dibuat untuk ekstensi lingkup Namespace.
+Jika namespace ini tidak ada, namespace ini akan dibuat
 
 ```yaml
 Type: System.String
@@ -279,7 +282,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -295,7 +298,7 @@ Accept wildcard characters: False
 
 ### -SubscriptionId
 Atur ID Langganan Azure.
-Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-00000000000)
+Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000)
 
 ```yaml
 Type: System.String

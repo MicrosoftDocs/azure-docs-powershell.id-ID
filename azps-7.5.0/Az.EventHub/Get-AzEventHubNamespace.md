@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/get-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Get-AzEventHubNamespace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Get-AzEventHubNamespace.md
-ms.openlocfilehash: 2c413d8a5b5916cab425b54910813739b80a4e1c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 837681b28a6af54a34659a667dda40c0f5516d5c
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144231332"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145769377"
 ---
 # Get-AzEventHubNamespace
 
 ## SYNOPSIS
 Mendapatkan detail namespace layanan Azure Event Hubs, atau mendapatkan daftar semua namespace Layanan Pusat Aktivitas di langganan Azure saat ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventhub/get-azeventhubnamespace) untuk informasi terbaru.
 
 ## SYNTAX
 

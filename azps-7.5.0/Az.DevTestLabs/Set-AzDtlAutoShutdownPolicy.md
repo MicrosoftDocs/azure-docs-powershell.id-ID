@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.devtestlabs/set-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DevTestLabs/DevTestLabs/help/Set-AzDtlAutoShutdownPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DevTestLabs/DevTestLabs/help/Set-AzDtlAutoShutdownPolicy.md
-ms.openlocfilehash: 875c645005238e6967696222c94be4e7f49d246f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e38b7fca8716356230c0f31d8b39e9801d623dc8
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144198021"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145742698"
 ---
 # Set-AzDtlAutoShutdownPolicy
 
 ## SYNOPSIS
 Mengatur kebijakan matikan otomatis lab DevTest Labs.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.devtestlabs/set-azdtlautoshutdownpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 

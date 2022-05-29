@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.advisor/get-azad
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Advisor/Advisor/help/Get-AzAdvisorConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Advisor/Advisor/help/Get-AzAdvisorConfiguration.md
-ms.openlocfilehash: 16b9c62960479dd249cef077c9627b808535ba00
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 19b601b894586bfe6e7d571929352870600fd409
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144196974"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145730152"
 ---
 # Get-AzAdvisorConfiguration
 
 ## SYNOPSIS
 Dapatkan konfigurasi Azure Advisor untuk langganan atau grup sumber daya yang diberikan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.advisor/get-azadvisorconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -49,7 +52,7 @@ Name       : {user_subscription}-{resourceGroupName}
 Properties : Microsoft.Azure.Commands.Advisor.Cmdlets.Models.PsAzureAdvisorConfigurationProperties
 Type       : Microsoft.Advisor/Configurations
 ```
-Mengambil daftar Konfigurasi Azure Advisor.
+Mengambil daftar Konfigurasi Advisor Azure.
 
 ## PARAMETERS
 
@@ -93,7 +96,7 @@ Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.Advisor.Cmdlets.Models.PsAzureAdvisorConfigurationData
+### Microsoft.Azure.Commands. Advisor. Cmdlets.Models.PsAzureAdvisorConfigurationData
 
 ## NOTES
 

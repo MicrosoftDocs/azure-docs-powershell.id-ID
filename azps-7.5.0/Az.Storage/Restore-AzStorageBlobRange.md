@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/restore-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Restore-AzStorageBlobRange.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Restore-AzStorageBlobRange.md
-ms.openlocfilehash: 0de6c661077356f9bf7bce2f77b8cb5ff493723c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ed914d79f90b1c51491055815fda32e45451e73f
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144216623"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145714618"
 ---
 # Restore-AzStorageBlobRange
 
 ## SYNOPSIS
 Memulihkan akun Storage untuk rentang blob tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/restore-azstorageblobrange) untuk informasi terbaru.
 
 ## SYNTAX
 

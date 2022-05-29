@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBGremlinGraphThroughput.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBGremlinGraphThroughput.md
-ms.openlocfilehash: 7bcc60e037757c62b5b54e56ea0f965d860d7dcb
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5db3299de42a1a1c8baa6d03cf6fe541eb8b06bc
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144206495"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145755676"
 ---
 # Update-AzCosmosDBGremlinGraphThroughput
 
 ## SYNOPSIS
 Memperbarui nilai throughput Graph CosmosDB Gremlin.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/update-azcosmosdbgremlingraphthroughput) untuk informasi terbaru.
 
 ## SYNTAX
 

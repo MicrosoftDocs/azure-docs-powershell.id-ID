@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/new-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseKustoPoolDatabasePrincipalAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseKustoPoolDatabasePrincipalAssignment.md
-ms.openlocfilehash: 52f305e3e9ee6ed03f06f959d0b86b75f81e05ca
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 80866197f08623015ca195cb628d6d4f06b0e251
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144237506"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145707670"
 ---
 # New-AzSynapseKustoPoolDatabasePrincipalAssignment
 
 ## SYNOPSIS
-Membuat kumpulan Kusto database principalAssignment.
+Membuat database kumpulan Kusto principalAssignment.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/new-azsynapsekustopooldatabaseprincipalassignment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ New-AzSynapseKustoPoolDatabasePrincipalAssignment -DatabaseName <String> -KustoP
 ```
 
 ## DESCRIPTION
-Membuat kumpulan Kusto database principalAssignment.
+Membuat database kumpulan Kusto principalAssignment.
 
 ## EXAMPLES
 
@@ -43,7 +46,7 @@ Name                                             Type
 testws/testkustopool/testdatabase/kustoprincipal Microsoft.Synapse/workspaces/kustoPools/Databases/PrincipalAssignments
 ```
 
-Perintah di atas membuat Kusto kumpulan database principalAssignment
+Perintah di atas membuat database kumpulan Kusto principalAssignment
 
 ## PARAMETERS
 
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String

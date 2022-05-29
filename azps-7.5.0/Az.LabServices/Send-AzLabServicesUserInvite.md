@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.labservices/send
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Send-AzLabServicesUserInvite.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Send-AzLabServicesUserInvite.md
-ms.openlocfilehash: a43d6d1eb212fa65535d885303899de084aa428c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3822c97f066de6cb77d5b11edd7c190700350331
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144227213"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145692650"
 ---
 # Send-AzLabServicesUserInvite
 
 ## SYNOPSIS
 Operasi untuk mengundang pengguna ke lab.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.labservices/send-azlabservicesuserinvite) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,12 +46,12 @@ Operasi untuk mengundang pengguna ke lab.
 
 ## EXAMPLES
 
-### Contoh 1: Kirim undangan lab ke pengguna.
+### Contoh 1: Kirim undangan lab kepada pengguna.
 ```powershell
 Send-AzLabServicesUserInvite -ResourceGroupName "Group Name" -LabName "Lab Name" -Name "User Name" -Text "Welcome to the lab."
 ```
 
-Ini mengirimkan undangan email kepada pengguna dengan teks kustom "Selamat Datang di lab" dalam isi email.
+Ini mengirimkan undangan email kepada pengguna dengan teks kustom "Selamat datang di lab" di isi email.
 
 ## PARAMETERS
 
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -LabName
-Nama lab yang secara unik mengidentifikasinya dalam berisi akun lab.
+Nama lab yang secara unik mengidentifikasinya dalam akun lab.
 Digunakan dalam URI sumber daya.
 
 ```yaml
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -User
-Untuk membuat, lihat bagian CATATAN untuk properti USER dan buat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti USER dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.LabServices.Models.Api20211001Preview.User
@@ -205,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserName
-Nama pengguna yang secara unik mengidentifikasinya di dalam lab yang berisi.
+Nama pengguna yang secara unik mengidentifikasinya di dalam lab.
 Digunakan dalam URI sumber daya.
 
 ```yaml
@@ -280,7 +283,7 @@ USER <User>:
   - `[SystemDataCreatedBy <String>]`: Identitas yang membuat sumber daya.
   - `[SystemDataCreatedByType <CreatedByType?>]`: Jenis identitas yang membuat sumber daya.
   - `[SystemDataLastModifiedAt <DateTime?>]`: Tanda waktu modifikasi terakhir sumber daya (UTC)
-  - `[SystemDataLastModifiedBy <String>]`: Identitas yang terakhir mengubah sumber daya.
+  - `[SystemDataLastModifiedBy <String>]`: Identitas yang terakhir memodifikasi sumber daya.
   - `[SystemDataLastModifiedByType <CreatedByType?>]`: Jenis identitas yang terakhir memodifikasi sumber daya.
 
 ## RELATED LINKS

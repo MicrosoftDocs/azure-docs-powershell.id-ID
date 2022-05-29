@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.billing/get-azco
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-AzConsumptionReservationSummary.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-AzConsumptionReservationSummary.md
-ms.openlocfilehash: da8a357f1a3ed7134e14a8b4e035dcb6a11e0e88
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5bc0271cd50d8dd85c6fbae1ec296f5ad7b8b44b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144227804"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145730682"
 ---
 # Get-AzConsumptionReservationSummary
 
 ## SYNOPSIS
 Dapatkan ringkasan reservasi untuk butir harian atau bulanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.billing/get-azconsumptionreservationsummary) untuk informasi terbaru.
 
 ## SYNTAX
 

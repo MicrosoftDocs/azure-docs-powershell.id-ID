@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBSqlRoleDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBSqlRoleDefinition.md
-ms.openlocfilehash: d4f293230378bb2e3167352721118cd218b0e596
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c1f9e76114048724a8528cd57d5392b6b23cc80e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144219227"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145755334"
 ---
 # Update-AzCosmosDBSqlRoleDefinition
 
 ## SYNOPSIS
 Memperbarui Definisi Peran CosmosDB Sql yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/update-azcosmosdbsqlroledefinition) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.labservices/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Get-AzLabServicesLab.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Get-AzLabServicesLab.md
-ms.openlocfilehash: cc428c2d29f9bf497f8f34f5bee5e6f240801275
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 82e5dc84d630b669658a9693b76394781e4663e6
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144223463"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145693018"
 ---
 # Get-AzLabServicesLab
 
 ## SYNOPSIS
 API untuk mendapatkan lab.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.labservices/get-azlabserviceslab) untuk informasi terbaru.
 
 ## SYNTAX
 

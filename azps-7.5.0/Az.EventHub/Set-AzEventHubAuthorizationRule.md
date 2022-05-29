@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/set-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Set-AzEventHubAuthorizationRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Set-AzEventHubAuthorizationRule.md
-ms.openlocfilehash: 7500a67b522e0dc7318967177cbe053bc27e1e61
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e4ad0e8064385b047436465a5954d938aebce1c6
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144217799"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145769423"
 ---
 # Set-AzEventHubAuthorizationRule
 
 ## SYNOPSIS
 Memperbarui aturan otorisasi yang ditentukan pada Pusat Aktivitas.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventhub/set-azeventhubauthorizationrule) untuk informasi terbaru.
 
 ## SYNTAX
 

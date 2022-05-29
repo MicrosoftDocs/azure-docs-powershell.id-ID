@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.devtestlabs/set-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DevTestLabs/DevTestLabs/help/Set-AzDtlVMsPerLabPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DevTestLabs/DevTestLabs/help/Set-AzDtlVMsPerLabPolicy.md
-ms.openlocfilehash: 0f2f8ab2d410b6024c185b1c32fee6ced446ca3e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7cf87d628013189af9a28a80d846e1d7853ded3b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144197993"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145742662"
 ---
 # Set-AzDtlVMsPerLabPolicy
 
 ## SYNOPSIS
 Mengatur komputer virtual per kebijakan lab lab di DevTest Labs.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.devtestlabs/set-azdtlvmsperlabpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 

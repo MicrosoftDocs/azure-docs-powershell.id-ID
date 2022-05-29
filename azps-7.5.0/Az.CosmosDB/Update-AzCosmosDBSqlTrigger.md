@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBSqlTrigger.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBSqlTrigger.md
-ms.openlocfilehash: c45ecfb50f1d174018b01f852583057c3f569274
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 28b728ea969790f989bf7b070fe78ee4710fdde3
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144219203"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145755280"
 ---
 # Update-AzCosmosDBSqlTrigger
 
 ## SYNOPSIS
 Memperbarui Pemicu CosmosDB Sql. Melakukan operasi patch sisi klien dengan membaca Pemicu yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/update-azcosmosdbsqltrigger) untuk informasi terbaru.
 
 ## SYNTAX
 

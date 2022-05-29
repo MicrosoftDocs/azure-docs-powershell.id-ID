@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.kusto/new-azkust
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/New-AzKustoDataConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/New-AzKustoDataConnection.md
-ms.openlocfilehash: b63431c80143bfa4bfe5787aa08dec58c5dfe75a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: aa2bed19a6c9647359c356bbb8677d03d7d084cd
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144206426"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145693684"
 ---
 # New-AzKustoDataConnection
 
 ## SYNOPSIS
 Membuat atau memperbarui koneksi data.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.kusto/new-azkustodataconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -157,7 +160,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Kompresi
+### -Pemadatan
 Jenis kompresi pesan pusat aktivitas.
 
 ```yaml
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 
 ### -DataFormat
 Format data pesan.
-Secara opsional, format data dapat ditambahkan ke setiap pesan.
+Secara opsional format data dapat ditambahkan ke setiap pesan.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Kusto.Support.EventGridDataFormat
@@ -249,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### -EventSystemProperty
-Properti sistem dari hub peristiwa/iot.
+Properti sistem dari event/iot hub.
 
 ```yaml
 Type: System.String[]
@@ -264,7 +267,7 @@ Accept wildcard characters: False
 ```
 
 ### -IgnoreFirstRecord
-Jika diatur ke true, menunjukkan bahwa penyerapan harus mengabaikan catatan pertama setiap file.
+Jika diatur ke true, menunjukkan bahwa penyerapan harus mengabaikan rekaman pertama dari setiap file.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -293,7 +296,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Jenis
+### -Kind
 Jenis titik akhir untuk koneksi data
 
 ```yaml
@@ -325,7 +328,7 @@ Accept wildcard characters: False
 
 ### -MappingRuleName
 Aturan pemetaan yang akan digunakan untuk menyerap data.
-Secara opsional, informasi pemetaan dapat ditambahkan ke setiap pesan.
+Secara opsional informasi pemetaan dapat ditambahkan ke setiap pesan.
 
 ```yaml
 Type: System.String

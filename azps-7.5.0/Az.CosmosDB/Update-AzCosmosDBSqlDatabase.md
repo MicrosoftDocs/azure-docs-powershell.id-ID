@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBSqlDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBSqlDatabase.md
-ms.openlocfilehash: cdff9eb244086a0dcfe97526da06ff83f2e04a81
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7f597268e682dd925766d1202e1c6f84bed28d08
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144219242"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145755388"
 ---
 # Update-AzCosmosDBSqlDatabase
 
 ## SYNOPSIS
 Memperbarui CosmosDB Sql Database. Melakukan operasi patch sisi klien dengan membaca Database yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/update-azcosmosdbsqldatabase) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -Throughput
-Throughput database SQL (RU/s).
+Throughput database SQL (RU/dtk).
 Nilai defaultnya adalah 400.
 
 ```yaml

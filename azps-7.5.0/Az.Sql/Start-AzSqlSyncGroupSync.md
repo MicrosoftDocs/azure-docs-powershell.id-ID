@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/start-azsqls
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Start-AzSqlSyncGroupSync.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Start-AzSqlSyncGroupSync.md
-ms.openlocfilehash: d8e9a80d2e6da9e5aa4ee5e781972be6d6993655
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f09d8773fcf2b1d3ea5402d6db6d555fd6152950
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144242070"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145721962"
 ---
 # Start-AzSqlSyncGroupSync
 
 ## SYNOPSIS
 Memulai sinkronisasi grup sinkronisasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/start-azsqlsyncgroupsync) untuk informasi terbaru.
 
 ## SYNTAX
 

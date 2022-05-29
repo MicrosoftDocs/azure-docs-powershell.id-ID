@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.devtestlabs/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DevTestLabs/DevTestLabs/help/Get-AzDtlVMsPerLabPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DevTestLabs/DevTestLabs/help/Get-AzDtlVMsPerLabPolicy.md
-ms.openlocfilehash: 7c975e20650cf5fb3c89ecaf508921051724b0b9
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2cd434ba1c9c087cbbd54ccc5800b4a88b32ced0
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144198077"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145742734"
 ---
 # Get-AzDtlVMsPerLabPolicy
 
 ## SYNOPSIS
 Mendapatkan komputer virtual per kebijakan lab lab di DevTest Labs.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.devtestlabs/get-azdtlvmsperlabpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 

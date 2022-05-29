@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/remove-azb
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Remove-AzBatchComputeNode.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Remove-AzBatchComputeNode.md
-ms.openlocfilehash: 5be6f646f57ebd68398834c92e5a9b5f10b0aa8c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 257444421cbffbb1cd8295698907188b92e3ffd5
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144244926"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145731340"
 ---
 # Remove-AzBatchComputeNode
 
 ## SYNOPSIS
 Menghapus simpul komputasi dari kumpulan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/remove-azbatchcomputenode) untuk informasi terbaru.
 
 ## SYNTAX
 

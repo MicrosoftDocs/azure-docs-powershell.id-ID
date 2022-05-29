@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/New-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageObjectReplicationPolicyRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageObjectReplicationPolicyRule.md
-ms.openlocfilehash: 5fef0f5f35d40ecb2e80a6636c33ba870a3bb3f0
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 389a562358c8d89d3c64a03845846c6d623f17b1
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144228375"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145715896"
 ---
 # New-AzStorageObjectReplicationPolicyRule
 
 ## SYNOPSIS
 Membuat aturan kebijakan replikasi objek.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/new-azstorageobjectreplicationpolicyrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -54,7 +57,7 @@ RuleId SourceContainer DestinationContainer Filters.PrefixMatch Filters.MinCreat
        src             dest                 {a, abc, dd}        2019-01-01T16:00:00Z
 ```
 
-Perintah ini merupakan aturan kebijakan replikasi objek dengan semua properti, dan menampilkan propertinya.
+Perintah ini adalah aturan kebijakan replikasi objek dengan semua properti, dan menampilkan propertinya.
 
 ## PARAMETERS
 

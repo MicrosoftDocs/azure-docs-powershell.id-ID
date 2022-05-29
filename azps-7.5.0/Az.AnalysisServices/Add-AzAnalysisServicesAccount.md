@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.analysisservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AnalysisServices/AnalysisServices/help/Add-AzAnalysisServicesAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AnalysisServices/AnalysisServices/help/Add-AzAnalysisServicesAccount.md
-ms.openlocfilehash: 49898af474bfa9fbab9655c9c8359f7593ec2b59
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e37c32294630795929e2e2c2350a299fd52fed3a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144209627"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145730121"
 ---
 # Add-AzAnalysisServicesAccount
 
 ## SYNOPSIS
 Menambahkan akun terautentikasi yang akan digunakan untuk permintaan cmdlet server Azure Analysis Services.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.analysisservices/add-azanalysisservicesaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -63,7 +66,7 @@ Add-AzAnalysisServicesAccount -RolloutEnvironment 'westcentralus.asazure.windows
 Perintah pertama mendapatkan kredensial perwakilan layanan aplikasi, lalu menyimpannya dalam variabel $ApplicationCredential.
 Perintah kedua menambahkan akun perwakilan layanan aplikasi yang ditentukan oleh variabel $ApplicationCredential dan TenantId ke lingkungan westcentralus.asazure.windows.net Analysis Services.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Add-AzAnalysisServicesAccount -RolloutEnvironment 'westcentralus.asazure.windows.net' -ServicePrincipal -ApplicationId "yyyy-yyyy-yyyy-yyyy" -CertificateThumbprint 'zzzzzzzzzzzzzzzz' -TenantId "xxxx-xxxx-xxxx-xxxx"
 ```
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -Credential
-Info masuk masuk
+Kredensial masuk
 
 ```yaml
 Type: System.Management.Automation.PSCredential

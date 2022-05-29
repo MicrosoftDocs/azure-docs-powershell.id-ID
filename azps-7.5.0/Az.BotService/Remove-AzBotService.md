@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.botservice/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/BotService/help/Remove-AzBotService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/BotService/help/Remove-AzBotService.md
-ms.openlocfilehash: 3a9368bd31a7db61dad772b6493c397d34cad9ef
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 90033af2d5bdcb18f61bcab33b363b2c79befa9e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144194972"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145730296"
 ---
 # Remove-AzBotService
 
 ## SYNOPSIS
 Menghapus Bot Service dari grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.botservice/remove-azbotservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,9 +45,9 @@ Remove-AzBotService -Name youri-bot -ResourceGroupName youriBotTest
 
 ```
 
-Menghapus BotService Menurut Nama dan ResourceGroupName
+Menghapus BotService Berdasarkan Nama dan ResourceGroupName
 
-### Contoh 2: Menghapus BotService Dengan InputObject
+### Contoh 2: Hapus BotService Dengan InputObject
 ```powershell
 $getservice = Get-AzBotService -Name youriechobottest -ResourceGroupName youriBotTest
 Remove-AzBotService -InputObject $getservice
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.BotService.Models.IBotServiceIdentity
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

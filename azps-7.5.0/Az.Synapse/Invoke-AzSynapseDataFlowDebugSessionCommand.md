@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/invoke-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Invoke-AzSynapseDataFlowDebugSessionCommand.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Invoke-AzSynapseDataFlowDebugSessionCommand.md
-ms.openlocfilehash: 62d5b14115490f13a679efede0bb2bab757e8f1a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a6128d90cc28b3e4d278cf7ec55b24f159147218
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144247415"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145708246"
 ---
 # Invoke-AzSynapseDataFlowDebugSessionCommand
 
 ## SYNOPSIS
 Panggil tindakan debug dalam sesi debug aliran data.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/invoke-azsynapsedataflowdebugsessioncommand) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ Invoke-AzSynapseDataFlowDebugSessionCommand -WorkspaceObject <PSSynapseWorkspace
 ```
 
 ## DESCRIPTION
-Perintah ini menjalankan pratinjau data/pratinjau statistik/pratinjau ekspresi untuk aliran data yang berbeda dalam sesi debug. Urutan perintah PowerShell untuk alur kerja debug aliran data harus:
+Perintah ini menjalankan pratinjau data/pratinjau statistik/pratinjau ekspresi untuk aliran aliran data yang berbeda dalam sesi debug. Urutan perintah PowerShell untuk alur kerja debug aliran data harus:
 
 Start-AzSynapseDataFlowDebugSession  
 Add-AzSynapseDataFlowDebugSessionPackage  
@@ -107,7 +110,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Perintah
+### -Command
 Perintah debug aliran data.
 Opsional adalah executePreviewQuery, executeStatisticsQuery, dan executeExpressionQuery.
 

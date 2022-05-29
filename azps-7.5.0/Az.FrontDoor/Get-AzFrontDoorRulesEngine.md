@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.frontdoor/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/Get-AzFrontDoorRulesEngine.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/Get-AzFrontDoorRulesEngine.md
-ms.openlocfilehash: ad8147f8480378ee3efc2698fd0be82dc91c9335
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0ba9392f5b7b9813911bb2944db5d9eec179a2b1
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144225550"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145769124"
 ---
 # Get-AzFrontDoorRulesEngine
 
 ## SYNOPSIS
 Mendapatkan konfigurasi Mesin Aturan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/get-azfrontdoorrulesengine) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -58,7 +61,7 @@ rulesEngine3 {rules1}
 
 Dapatkan semua konfigurasi mesin aturan di pintu depan.
 
-### Contoh 3
+### Contoh: 3
 
 ```powershell
 Get-AzFrontDoorRulesEngine -ResourceGroupName $resourceGroupName -FrontDoorName $frontDoorName -Name nonexistent

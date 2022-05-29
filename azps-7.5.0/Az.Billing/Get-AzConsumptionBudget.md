@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.billing/get-azco
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-AzConsumptionBudget.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-AzConsumptionBudget.md
-ms.openlocfilehash: 04bae231794fbe018014b346dcf21aa564403ddd
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: aea6e881fbfb9937e2c9caf4dd45ed8b887af822
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144241633"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145730836"
 ---
 # Get-AzConsumptionBudget
 
 ## SYNOPSIS
-Dapatkan daftar anggaran dalam langganan atau grup sumber daya.
+Dapatkan daftar anggaran baik dalam langganan atau grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.billing/get-azconsumptionbudget) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -63,7 +66,7 @@ TimePeriod:  EndDate:  11/1/2018 12:00:00 AM
 Type:  Microsoft.Consumption/budgets
 ```
 
-### Contoh 3: Mendapatkan anggaran dengan nama anggaran di tingkat langganan
+### Contoh 3: Dapatkan anggaran dengan nama anggaran di tingkat langganan
 ```powershell
 Get-AzConsumptionBudget -Name PSBudget
 ```
@@ -157,6 +160,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## NOTES
 - Saat ini, PowerShell SDK untuk Konsumsi hanya tersedia untuk Perjanjian Enterprise pelanggan.
-- PowerShell SDK for Consumption menggunakan versi API Anggaran yang lebih lama dan beberapa item yang tidak kompatibel ke belakang seperti mencantumkan Anggaran dengan filter tidak akan berfungsi seperti yang diharapkan.
+- PowerShell SDK untuk Konsumsi menggunakan versi API Anggaran yang lebih lama dan beberapa item yang tidak kompatibel ke belakang seperti mencantumkan Anggaran dengan filter tidak akan berfungsi seperti yang diharapkan.
 
 ## RELATED LINKS

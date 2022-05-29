@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Remove-AzAutomationSchedule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Remove-AzAutomationSchedule.md
-ms.openlocfilehash: 49c25f71821f9cbc1da811c78a0fffb242d8b11c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c4d0ede86b2222b50d28b82c3d1dddea71db2ffb
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144186544"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145730206"
 ---
 # Remove-AzAutomationSchedule
 
 ## SYNOPSIS
 Menghapus jadwal Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/remove-azautomationschedule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ Cmdlet **Remove-AzAutomationSchedule** menghapus jadwal dari Azure Automation.
 PS C:\>Remove-AzAutomationSchedule -AutomationAccountName "Contoso17" -Name "Schedule01" -ResourceGroupName "ResourceGroup01"
 ```
 
-Perintah ini menghapus jadwal bernama Schedule01 di akun automation Contoso17 dalam grup sumber daya ResourceGroup01.
+Perintah ini menghapus jadwal bernama Schedule01 di akun automasi Contoso17 dalam grup sumber daya ResourceGroup01.
 
 ## PARAMETERS
 

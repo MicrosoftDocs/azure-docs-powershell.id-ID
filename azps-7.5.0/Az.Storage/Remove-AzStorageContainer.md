@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzStorageContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzStorageContainer.md
-ms.openlocfilehash: 7809c0b9c20cee78d22cece5256c0287e977906b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: bef38148300a40a4a2ce46c3a087d078dccaf904
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144228238"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145715086"
 ---
 # Hapus-AzStorageContainer
 
 ## SYNOPSIS
 Menghapus kontainer penyimpanan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/remove-azstoragecontainer) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ Contoh ini menghapus kontainer bernama MyTestContainer.
 ## PARAMETERS
 
 ### -ClientTimeoutPerRequest
-Menentukan interval waktu habis sisi klien, dalam hitungan detik, untuk satu permintaan layanan.
+Menentukan interval waktu habis sisi klien, dalam detik, untuk satu permintaan layanan.
 Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini mencoba kembali permintaan.
 Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini mengembalikan kesalahan.
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/New-AzHDInsightMapReduceJobDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/New-AzHDInsightMapReduceJobDefinition.md
-ms.openlocfilehash: c07066dd476e3440d8e7a8e1c316dea6d5c99a91
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: cffaf39ab4708c68fdc07dd8a869967f3cb84e83
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144217763"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145768908"
 ---
 # New-AzHDInsightMapReduceJobDefinition
 
 ## SYNOPSIS
 Membuat objek pekerjaan MapReduce.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/new-azhdinsightmapreducejobdefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -95,7 +98,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Mendefinisikan
+### -Definisi
 Menentukan nilai konfigurasi Hadoop yang akan diatur saat pekerjaan berjalan.
 
 ```yaml
@@ -110,7 +113,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Files
+### -File
 Menentukan kumpulan file yang terkait dengan pekerjaan Apache Hive.
 
 ```yaml

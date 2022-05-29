@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.frontdoor/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorRulesEngine.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorRulesEngine.md
-ms.openlocfilehash: 0a23c97a50cba51cf213c9e8a44afa90aa3a4aa9
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6ed626493495c5d7862fee09c20248d3bd4e2dfb
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144225407"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145769034"
 ---
 # New-AzFrontDoorRulesEngine
 
 ## SYNOPSIS
 Buat konfigurasi mesin aturan baru untuk pintu depan tertentu. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoorrulesengine) untuk informasi terbaru.
 
 ## SYNTAX
 

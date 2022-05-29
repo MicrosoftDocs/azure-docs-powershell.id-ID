@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.addomainservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ADDomainServices/help/New-AzADDomainService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ADDomainServices/help/New-AzADDomainService.md
-ms.openlocfilehash: 564e703b0317dd973e7f347c803348167f97b3d0
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8915899a0d2bdf70d0a42c49b9e4344e4535e6b3
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144205898"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145730224"
 ---
 # New-AzADDomainService
 
 ## SYNOPSIS
 Operasi Buat Layanan Domain membuat layanan domain baru dengan parameter yang ditentukan.
-Jika layanan tertentu sudah ada, maka properti yang dapat di-patch akan diperbarui dan properti yang tidak dapat diubah akan tetap tidak berubah.
+Jika layanan tertentu sudah ada, properti apa pun yang dapat di-patch akan diperbarui dan properti yang tidak dapat diubah akan tetap tidak berubah.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.addomainservices/new-azaddomainservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ New-AzADDomainService -Name <String> -ResourceGroupName <String> -DomainName <St
 
 ## DESCRIPTION
 Operasi Buat Layanan Domain membuat layanan domain baru dengan parameter yang ditentukan.
-Jika layanan tertentu sudah ada, maka properti yang dapat di-patch akan diperbarui dan properti yang tidak dapat diubah akan tetap tidak berubah.
+Jika layanan tertentu sudah ada, properti apa pun yang dapat di-patch akan diperbarui dan properti yang tidak dapat diubah akan tetap tidak berubah.
 
 ## EXAMPLES
 
@@ -206,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### -ForestTrust
-Daftar pengaturan untuk Resource Forest To construct, lihat bagian NOTES untuk properti FORESTTRUST dan buat tabel hash.
+Daftar pengaturan untuk Pembuatan Forest Sumber Daya, lihat bagian CATATAN untuk properti FORESTTRUST dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ADDomainServices.Models.Api202001.IForestTrust[]
@@ -251,7 +254,7 @@ Accept wildcard characters: False
 ```
 
 ### -LdapSettingPfxCertificate
-Sertifikat yang diperlukan untuk mengonfigurasi LDAP Aman.
+Sertifikat yang diperlukan untuk mengonfigurasi Secure LDAP.
 Parameter yang diteruskan di sini harus menjadi representasi base64encoded dari file pfx sertifikat.
 
 ```yaml
@@ -357,7 +360,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReplicaSet
-Daftar ReplicaSets To construct, lihat bagian NOTES untuk properti REPLICASET dan membuat tabel hash.
+Daftar ReplicaSets To construct, lihat bagian NOTES untuk properti REPLICASET dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ADDomainServices.Models.Api202001.IReplicaSet[]
@@ -372,7 +375,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceForest
-Forest Sumber Daya
+Hutan Sumber Daya
 
 ```yaml
 Type: System.String
@@ -388,7 +391,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya dalam langganan pengguna.
-Nama tidak peka huruf besar/kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String

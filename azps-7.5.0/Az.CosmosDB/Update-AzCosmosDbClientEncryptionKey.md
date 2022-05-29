@@ -5,17 +5,20 @@ online version: ''
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDbClientEncryptionKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDbClientEncryptionKey.md
-ms.openlocfilehash: 67717d199a47f9f2d99ec7da0878e941435be900
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c2f5cc2b80c43ce3c3900221a05e0364813f3d2b
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144219134"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145755118"
 ---
 # Update-AzCosmosDbClientEncryptionKey
 
 ## SYNOPSIS
 Memperbarui Kunci Enkripsi Klien CosmosDB. Melakukan operasi patch sisi klien dengan membaca Kunci Enkripsi Klien yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/update-azcosmosdbclientencryptionkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -75,7 +78,7 @@ Perintah pertama membuat objek KeyWrapMetadata dengan nama myKekV2 jenis AZURE_K
 Perintah kedua membuat objek Azure Key Vault KeyResolver menggunakan kredensial Azure Default.
 Dalam perintah ketiga kunci dengan nama seperti yang diatur dalam variabel myClientEncryptionKeyName diperbarui dengan KeyWrapMetadata diatur ke nilai yang dikembalikan oleh perintah pertama dan nilai KeyEncryptionKeyResolver diatur ke objek KeyResolver yang diperoleh melalui perintah kedua.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 PS C:\> $updatedKeyWrapMetadataObject = [Microsoft.Azure.Commands.CosmosDB.Models.PSSqlKeyWrapMetadata]::new([Microsoft.Azure.Management.CosmosDB.Models.KeyWrapMetadata]::new("myKekV2","AZURE_KEY_VAULT", "https://contoso.vault.azure.net/keys/myKekV2/78deebed173b48e48f55abf87ed4cf71", "RSA-OAEP"))
 PS C:\> $keyToUpdate = Get-AzCosmosDbClientEncryptionKey -AccountName myAccountName -DatabaseName myDatabaseName -ResourceGroupName myRgName -ClientEncryptionKeyName myClientEncryptionKeyName

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.kusto/invoke-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Invoke-AzKustoDataConnectionValidation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Invoke-AzKustoDataConnectionValidation.md
-ms.openlocfilehash: fec98db2a6adc17f3620dd35e1676cde1e99415e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e6522be34d16e5742b51c6adea4c6b8d3b9c585f
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144186023"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145693774"
 ---
 # Invoke-AzKustoDataConnectionValidation
 
 ## SYNOPSIS
 Memeriksa apakah parameter koneksi data valid.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.kusto/invoke-azkustodataconnectionvalidation) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.labservices/add-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Add-AzLabServicesUserQuota.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Add-AzLabServicesUserQuota.md
-ms.openlocfilehash: e865804562403a6e38f0b50af62aa54659e6fd40
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c3704b7cfdae28f75395974fa7bd6dc160b026f5
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144227230"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145693072"
 ---
 # Add-AzLabServicesUserQuota
 
 ## SYNOPSIS
 API untuk menambahkan kuota pengguna tambahan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.labservices/add-azlabservicesuserquota) untuk informasi terbaru.
 
 ## SYNTAX
 

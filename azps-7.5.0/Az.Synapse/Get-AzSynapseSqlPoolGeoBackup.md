@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSqlPoolGeoBackup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSqlPoolGeoBackup.md
-ms.openlocfilehash: 1d89796ff1a2c25ebdd7f052bce9d42706b7b432
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4249f91c89ba78fb4a6454f1be9f1707294ae492
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144209927"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145708732"
 ---
 # Get-AzSynapseSqlPoolGeoBackup
 
 ## SYNOPSIS
 Mendapatkan cadangan geo-redundan dari Kumpulan Sql.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapsesqlpoolgeobackup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Get-AzSynapseSqlPoolGeoBackup [-ResourceId <String>] [-DefaultProfile <IAzureCon
 
 ## DESCRIPTION
 Cmdlet **Get-AzSynapseSqlPoolGeoBackup** mendapatkan cadangan geo-redundan tertentu dari Kumpulan SQL atau semua cadangan geo-redundan yang tersedia pada ruang kerja tertentu.
-Cadangan geo-redundan adalah sumber daya yang dapat di memulihkan menggunakan file data dari lokasi geografis terpisah.
+Cadangan geo-redundan adalah sumber daya yang dapat dipugar menggunakan file data dari lokasi geografis terpisah.
 Anda dapat menggunakan Geo-Restore untuk memulihkan cadangan geo-redundan jika terjadi pemadaman regional untuk memulihkan Kumpulan Sql Anda ke wilayah baru.
 
 ## EXAMPLES

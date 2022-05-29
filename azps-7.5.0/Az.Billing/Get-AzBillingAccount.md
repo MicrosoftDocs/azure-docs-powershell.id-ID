@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.billing/get-azbi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-AzBillingAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-AzBillingAccount.md
-ms.openlocfilehash: 51bb020fb0d0cccc0ded8ce37175b9a1751ef49a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: cdc59c3712d5a7ad4900ee392a477e5051a434b3
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144241636"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145730890"
 ---
 # Get-AzBillingAccount
 
 ## SYNOPSIS
 Mendapatkan akun penagihan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.billing/get-azbillingaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,7 +53,7 @@ Get-AzBillingAccount -Name 00000000-0000-0000-0000-000000000000
 
 Dapatkan akun penagihan dengan nama yang ditentukan.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzBillingAccount -IncludeAddress
 ```
