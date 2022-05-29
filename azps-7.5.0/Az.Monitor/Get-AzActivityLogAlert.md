@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/get-azac
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzActivityLogAlert.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzActivityLogAlert.md
-ms.openlocfilehash: a298c791efe69de240027d3a6a60c344c5014690
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f4b67b40c9ad8154b9f6032e525a229e408c5469
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144196565"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145767864"
 ---
 # Get-AzActivityLogAlert
 
 ## SYNOPSIS
 Mendapatkan satu atau beberapa sumber daya pemberitahuan log aktivitas.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/get-azactivitylogalert) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -49,7 +52,7 @@ Perintah ini mencantumkan semua pemberitahuan log aktivitas untuk langganan saat
 Get-AzActivityLogAlert -ResourceGroupName "Default-activityLogAlerts"
 ```
 
-Perintah ini mencantumkan pemberitahuan log aktivitas untuk grup sumber daya yang diberikan.
+Perintah ini mencantumkan pemberitahuan log aktivitas untuk grup sumber daya tertentu.
 
 ### Contoh 3: Dapatkan pemberitahuan log aktivitas.
 ```powershell

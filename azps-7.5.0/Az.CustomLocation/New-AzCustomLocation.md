@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.customlocation/n
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CustomLocation/help/New-AzCustomLocation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CustomLocation/help/New-AzCustomLocation.md
-ms.openlocfilehash: d7afbdcb84ae343e286b07d07944cc5bfc4c41c6
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 517ea42bb18887248d4c2fae91a2dc2ad5bd7663
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144205343"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145789138"
 ---
 # New-AzCustomLocation
 
 ## SYNOPSIS
 Membuat atau memperbarui Lokasi Kustom di Langganan dan Grup Sumber Daya yang ditentukan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.customlocation/new-azcustomlocation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 
 ### -HostResourceId
 Kluster yang Terhubung atau Kluster AKS.
-RP Lokasi Kustom akan melakukan API checkAccess untuk izin listAdminCredentials.
+RP Lokasi Kustom akan melakukan CHECKAccess API untuk izin listAdminCredentials.
 
 ```yaml
 Type: System.String
@@ -199,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Namespace layanan Kubernetes yang akan dibuat pada kluster yang ditentukan.
+Namespace layanan Kube yang akan dibuat pada kluster yang ditentukan.
 
 ```yaml
 Type: System.String
@@ -230,7 +233,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama tidak peka huruf besar/kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String

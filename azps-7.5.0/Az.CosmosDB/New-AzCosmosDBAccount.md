@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/new-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBAccount.md
-ms.openlocfilehash: 06b6c49a865f730ac210521ecf856e82245ae653
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 421ea12c26dab83e96460c5de8577995525b1e52
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144207362"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145807494"
 ---
 # New-AzCosmosDBAccount
 
 ## SYNOPSIS
 Buat Akun CosmosDB baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/new-azcosmosdbaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -111,7 +114,7 @@ CreateMode                         : Restore
 
 Akun baru dengan nama restoredDatabaseAccountName dibuat dengan memulihkan akun database yang dapat dipulihkan dari Id yang diberikan ke tanda waktu yang diberikan.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 New-AzCosmosDBAccount -ResourceGroupName resourceGroupName -Name restored-account-name -Location "West US" -FromPointInTimeBackup -SourceDatabaseAccountName source-database-account-name -RestoreTimesampInUtc 2020-07-20T17:19:25+0000
 ```

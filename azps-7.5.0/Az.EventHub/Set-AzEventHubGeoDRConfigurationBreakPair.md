@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/set-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Set-AzEventHubGeoDRConfigurationBreakPair.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Set-AzEventHubGeoDRConfigurationBreakPair.md
-ms.openlocfilehash: 8efb9872d4cfa380cf38890f0fcadc856b6f3ed3
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a1f4e9427504d388d48d13acd81f6ae703bfe15a
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144201692"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145812564"
 ---
 # Set-AzEventHubGeoDRConfigurationBreakPair
 
 ## SYNOPSIS
 Operasi ini menonaktifkan Pemulihan Bencana dan berhenti mereplikasi perubahan dari namespace primer ke sekunder
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventhub/set-azeventhubgeodrconfigurationbreakpair) untuk informasi terbaru.
 
 ## SYNTAX
 

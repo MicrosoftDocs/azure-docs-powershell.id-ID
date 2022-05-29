@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/get-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Get-AzEventHubConsumerGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Get-AzEventHubConsumerGroup.md
-ms.openlocfilehash: f882310cadef979e26f1b7a24f966591dc80ee73
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b96d45fce3cd4ce4278c941101cd427305bec32a
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144231360"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145812654"
 ---
 # Get-AzEventHubConsumerGroup
 
 ## SYNOPSIS
 Mendapatkan detail grup konsumen Azure Event Hubs tertentu, atau mendapatkan daftar grup konsumen di Pusat Aktivitas.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventhub/get-azeventhubconsumergroup) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.ConnectedNetwork
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/New-AzConnectedNetworkInterfaceObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/New-AzConnectedNetworkInterfaceObject.md
-ms.openlocfilehash: ce6e995411b141737c4d21368565444d8df631b2
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 128d15bc7fee06044e436d9aa151d62743f97d40
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144219722"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145814094"
 ---
 # New-AzConnectedNetworkInterfaceObject
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk NetworkInterface
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.connectednetwork/new-azconnectednetworkinterfaceobject) untuk informasi terbaru.
 
 ## SYNTAX
 

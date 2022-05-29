@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.ConnectedNetwork
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/New-AzConnectedNetworkFunctionUserConfigurationObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/New-AzConnectedNetworkFunctionUserConfigurationObject.md
-ms.openlocfilehash: aab2241ecdaa4914c56d1bda6cf950c3ccce115d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: db123714e41393c8b42998dc0ce353e833ab616c
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144219767"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145814040"
 ---
 # New-AzConnectedNetworkFunctionUserConfigurationObject
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk NetworkFunctionUserConfiguration
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.connectednetwork/new-azconnectednetworkfunctionuserconfigurationobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,7 +50,7 @@ Kemudian menggunakannya untuk membuat objek konfigurasi pengguna dengan nama per
 
 ### -NetworkInterface
 Konfigurasi antarmuka jaringan.
-Untuk membuat, lihat bagian CATATAN untuk properti NETWORKINTERFACE dan buat tabel hash.
+Untuk membuat, lihat bagian NOTES untuk properti NETWORKINTERFACE dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ConnectedNetwork.Models.Api20210501.INetworkInterface[]
@@ -67,13 +70,13 @@ String yang dikodekan base-64 didekodekan ke array biner yang disimpan sebagai f
 Panjang maksimum array biner adalah 65535 byte.
 
 
- **Catatan: Jangan berikan rahasia atau kata sandi apa pun di properti customData** 
+ **Catatan: Jangan meneruskan rahasia atau kata sandi apa pun di properti customData** 
 
  Properti ini tidak dapat diperbarui setelah VM dibuat.
 
 
  customData diteruskan ke VM untuk disimpan sebagai file.
-Untuk informasi selengkapnya, lihat [Data Kustom di Azure VM](https://azure.microsoft.com/en-us/blog/custom-data-and-cloud-init-on-windows-azure/) 
+Untuk informasi selengkapnya lihat [Data Kustom di Azure VM](https://azure.microsoft.com/en-us/blog/custom-data-and-cloud-init-on-windows-azure/) 
 
  Untuk menggunakan cloud-init untuk VM Linux Anda, lihat [Menggunakan cloud-init untuk menyesuaikan VM Linux selama pembuatan](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-using-cloud-init?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json).
 

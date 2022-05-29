@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/get-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBLocation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBLocation.md
-ms.openlocfilehash: a9098031e5e8eb698b4e7acf3dbf5e90b2ed68aa
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6ffaffecf83129e45c8acfcfa2fa2a0de97797c7
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144227370"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145789462"
 ---
 # Get-AzCosmosDBLocation
 
 ## SYNOPSIS
 Mencantumkan lokasi Azure Cosmos DB dan propertinya.
 Dapatkan properti lokasi Azure Cosmos DB untuk lokasi tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdblocation) untuk informasi terbaru.
 
 ## SYNTAX
 

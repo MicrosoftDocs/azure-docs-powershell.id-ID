@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/invoke-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Invoke-AzCosmosDBSqlContainerThroughputMigration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Invoke-AzCosmosDBSqlContainerThroughputMigration.md
-ms.openlocfilehash: 7b90d5cdff4a03c38010b83b75b454b776093ef7
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f459b5eb93687cf2ab30ffd869c8770d37f2a7f1
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144207386"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145807512"
 ---
 # Invoke-AzCosmosDBSqlContainerThroughputMigration
 
 ## SYNOPSIS
 Gunakan ini untuk memigrasikan throughput skala otomatis ke throughput manual dan sebaliknya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/invoke-azcosmosdbsqlcontainerthroughputmigration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 
 ### -ThroughputType
 Jenis throughput untuk dimigrasikan.
-Nilai yang mungkin adalah: Autoscale, Manual.
+Nilai yang mungkin adalah: Skala otomatis, Manual.
 
 ```yaml
 Type: System.String

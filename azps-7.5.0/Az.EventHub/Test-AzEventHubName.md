@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/test-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Test-AzEventHubName.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Test-AzEventHubName.md
-ms.openlocfilehash: d22dfe7844bad5c82051b95a2c25b73c68391185
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: bbea634e0f6e8f35367ad6f59a574159810d0cea
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144238763"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145764408"
 ---
 # Test-AzEventHubName
 
 ## SYNOPSIS
 Memeriksa Ketersediaan Nama NameSpace atau Alias yang diberikan (Nama Konfigurasi DR)
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventhub/test-azeventhubname) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,16 +43,16 @@ Cmdlet **Test-AzEventhubName** Memeriksa Ketersediaan Nama NameSpace atau Alias 
 Test-AzEventhubName -Namespace MyNameSapceName
 ```
 
-Mengembalikan status pada ketersediaan nama namespace 'MyNameSapceName' sebagai True jika tersedia
+Mengembalikan status ketersediaan nama namespace 'MyNameSapceName' sebagai True jika tersedia
 
 ### Contoh 2
 ```powershell
 Test-AzEventhubName -Namespace MyNameSapceName
 ```
 
-Mengembalikan status pada ketersediaan nama namespace 'MyNameSapceName' sebagai False dengan Alasan
+Mengembalikan status ketersediaan nama namespace 'MyNameSapceName' sebagai False dengan Alasan
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Test-AzEventhubName -ResourceGroupName MyResourceGroup -Namespace Test123 -AliasName myAliasName
 ```

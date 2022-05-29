@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.connectednetwork
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/New-AzConnectedNetworkVendorSkuPreview.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/New-AzConnectedNetworkVendorSkuPreview.md
-ms.openlocfilehash: c6bf13dc599332e98424badbc6595b7573966ecf
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1abbdd9a6fa389a92e4db7a9c152ee8c8b9e7719
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144219683"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145813986"
 ---
 # New-AzConnectedNetworkVendorSkuPreview
 
 ## SYNOPSIS
 Membuat atau memperbarui informasi pratinjau sku vendor.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.connectednetwork/new-azconnectednetworkvendorskupreview) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -PreviewSubscription
-PRATINJAU ID langganan.
+ID langganan pratinjau.
 
 ```yaml
 Type: System.String

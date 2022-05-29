@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cognitiveservice
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/Get-AzCognitiveServicesAccountType.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/Get-AzCognitiveServicesAccountType.md
-ms.openlocfilehash: 0fc09742980ee24ecd5da7d755d9da752f4c5040
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f37a85d8e3b504248f8990b9f3a9624f25a4cb32
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144207722"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145778537"
 ---
 # Get-AzCognitiveServicesAccountType
 
 ## SYNOPSIS
 Mendapatkan Jenis Akun Cognitive Services yang tersedia.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cognitiveservices/get-azcognitiveservicesaccounttype) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,7 +53,7 @@ Get-AzCognitiveServicesAccountType -Location westus
 
 Dapatkan daftar Jenis yang tersedia di westus.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzCognitiveServicesAccountType -TypeName Face
 ```
@@ -59,7 +62,7 @@ Get-AzCognitiveServicesAccountType -TypeName Face
 Face
 ```
 
-Periksa apakah `Face` nama Tipe valid, nama akan ditampilkan jika nama tersebut valid.
+Periksa apakah `Face` nama Tipe valid, nama akan dikembalikan jika nama tersebut valid.
 
 ## PARAMETERS
 

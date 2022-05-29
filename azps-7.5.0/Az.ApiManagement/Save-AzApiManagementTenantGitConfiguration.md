@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/sa
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Save-AzApiManagementTenantGitConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Save-AzApiManagementTenantGitConfiguration.md
-ms.openlocfilehash: a12673c6318206f3c51fa87295412bd4ad842314
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e568cc3de4838bbe45c1286204ae4ce6acdd4385
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144186611"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145770456"
 ---
 # Save-AzApiManagementTenantGitConfiguration
 
 ## SYNOPSIS
 Menyimpan perubahan dengan membuat penerapan untuk konfigurasi saat ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/save-azapimanagementtenantgitconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 

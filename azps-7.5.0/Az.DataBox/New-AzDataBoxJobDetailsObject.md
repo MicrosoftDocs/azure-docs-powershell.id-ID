@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.DataBox/new-AzDa
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/New-AzDataBoxJobDetailsObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/New-AzDataBoxJobDetailsObject.md
-ms.openlocfilehash: 6a8cb44854f83e5720f8b197dcc5d56e2bf2c22b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9a51dc646b03c912c55d75b59a06013a1e098351
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144205130"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145806792"
 ---
 # New-AzDataBoxJobDetailsObject
 
 ## SYNOPSIS
 Buat objek dalam memori untuk DataBoxJobDetails.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.databox/new-azdataboxjobdetailsobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -272,7 +275,7 @@ KEYENCRYPTIONKEY <IKeyEncryptionKey>: Detail tentang jenis enkripsi kunci mana y
   - `[KekVaultResourceId <String>]`: Id sumber daya kek vault. Ini diperlukan dalam kasus KekType yang dikelola Pelanggan.
 
 PREFERENSI <IPreferences>: Preferensi untuk pesanan.
-  - `[EncryptionPreferenceDoubleEncryption <DoubleEncryption?>]`: Mendefinisikan lapisan sekunder pengaktifan enkripsi berbasis perangkat lunak.
+  - `[EncryptionPreferenceDoubleEncryption <DoubleEncryption?>]`: Menentukan lapisan sekunder pengaktifan enkripsi berbasis perangkat lunak.
   - `[PreferredDataCenterRegion <String[]>]`: Wilayah pusat data pilihan.
   - `[TransportPreferencePreferredShipmentType <TransportShipmentTypes?>]`: Menunjukkan jenis Logistik Pengiriman yang disukai pelanggan.
 

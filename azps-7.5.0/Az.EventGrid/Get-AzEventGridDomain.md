@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventgrid/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Get-AzEventGridDomain.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Get-AzEventGridDomain.md
-ms.openlocfilehash: 84629045971619bdf5da05cb37062b88612eb40b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e310aeeebea1d19646b465f03678877a6db0be70
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144237114"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145812708"
 ---
 # Get-AzEventGridDomain
 
 ## SYNOPSIS
 Mendapatkan detail domain Event Grid, atau mendapatkan daftar semua domain Event Grid di langganan Azure saat ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventgrid/get-azeventgriddomain) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -89,7 +92,7 @@ ProvisioningState : Succeeded
 Tags              : {[Tag1, Value1], [Tag2, Value2]}
 ```
 
-### Contoh 3
+### Contoh: 3
 
 Mencantumkan semua domain Event Grid dalam grup \`sumber daya MyResourceGroupName\` tanpa penomoran halaman (semua domain dikembalikan dalam satu bidikan)
 

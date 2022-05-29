@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakeanalytic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Remove-AzDataLakeAnalyticsComputePolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Remove-AzDataLakeAnalyticsComputePolicy.md
-ms.openlocfilehash: 4405ea45525566ea4b50fc079d202ee4614d419c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c66e5f7ab59eca723e8489590c38fdc488cb520a
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144203117"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145813032"
 ---
 # Remove-AzDataLakeAnalyticsComputePolicy
 
 ## SYNOPSIS
 Menghapus kebijakan komputasi Azure Data Lake Analytics tertentu
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakeanalytics/remove-azdatalakeanalyticscomputepolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya tempat Akun Anda berada.
-Opsional dan akan mencoba untuk menemukan jika tidak disediakan.
+Opsional dan akan mencoba menemukan jika tidak disediakan.
 
 ```yaml
 Type: System.String

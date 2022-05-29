@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azim
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzImage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzImage.md
-ms.openlocfilehash: 28e212f15082801e53ebba3c93d118ffadd7f88c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5f8b363d10cf6e4d6bec620145f3fd793630c981
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144248073"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145781812"
 ---
 # New-AzImage
 
 ## SYNOPSIS
 Membuat gambar.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/new-azimage) untuk informasi terbaru.
 
 ## SYNTAX
 

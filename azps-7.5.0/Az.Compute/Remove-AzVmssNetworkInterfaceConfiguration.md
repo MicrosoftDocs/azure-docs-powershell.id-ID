@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzVmssNetworkInterfaceConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzVmssNetworkInterfaceConfiguration.md
-ms.openlocfilehash: 639b76ba01159a6395caa2941709ff6994fc9f33
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a6c86931d26b4c5af3a9233dd96c350e1fd5498d
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144248062"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145808104"
 ---
 # Remove-AzVmssNetworkInterfaceConfiguration
 
 ## SYNOPSIS
 Menghapus konfigurasi antarmuka jaringan dari VMSS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/remove-azvmssnetworkinterfaceconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.elastic/get-azel
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Elastic/help/Get-AzElasticDeploymentInfo.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Elastic/help/Get-AzElasticDeploymentInfo.md
-ms.openlocfilehash: 3b7a81e2e6bff7bce35d657802a6a14404030349
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2268becde7dbc7f8022d9b2cff088943b4788f2b
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144247950"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145764588"
 ---
 # Get-AzElasticDeploymentInfo
 
 ## SYNOPSIS
 Ambil informasi mengenai penyebaran cloud Elastic yang sesuai dengan sumber daya monitor Elastic.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.elastic/get-azelasticdeploymentinfo) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.addomainservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ADDomainServices/help/Update-AzADDomainService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ADDomainServices/help/Update-AzADDomainService.md
-ms.openlocfilehash: c0e0d61dd0da60743535842b5a011890fed0724e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 72750ba57a2052f45a0479628534371f91a01fc2
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144205814"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145818965"
 ---
 # Update-AzADDomainService
 
 ## SYNOPSIS
 Operasi Perbarui Layanan Domain dapat digunakan untuk memperbarui penyebaran yang ada.
 Panggilan pembaruan hanya mendukung properti yang tercantum dalam isi PATCH.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.addomainservices/update-azaddomainservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -53,7 +56,7 @@ Panggilan pembaruan hanya mendukung properti yang tercantum dalam isi PATCH.
 
 ## EXAMPLES
 
-### Contoh 1: Perbarui AzADDomainService Menurut ResourceGroupName dan Nama
+### Contoh 1: Memperbarui AzADDomainService Menurut ResourceGroupName dan Nama
 ```powershell
 Update-AzADDomainService -Name youriADdomain -ResourceGroupName youriADdomain -DomainSecuritySettingTlsV1 Disabled
 ```
@@ -64,7 +67,7 @@ Name          Domain Name       Location Sku
 youriADdomain youriAddomain.com westus   Enterprise
 ```
 
-Perbarui AzADDomainService Berdasarkan ResourceGroupName dan Nama
+Memperbarui AzADDomainService Menurut ResourceGroupName dan Nama
 
 ### Contoh 2: Memperbarui AzADDomainService Dengan InputObject
 ```powershell
@@ -218,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### -ForestTrust
-Daftar pengaturan untuk Resource Forest To construct, lihat bagian NOTES untuk properti FORESTTRUST dan buat tabel hash.
+Daftar pengaturan untuk Pembuatan Forest Sumber Daya, lihat bagian CATATAN untuk properti FORESTTRUST dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ADDomainServices.Models.Api202001.IForestTrust[]
@@ -233,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ADDomainServices.Models.IAdDomainServicesIdentity
@@ -278,7 +281,7 @@ Accept wildcard characters: False
 ```
 
 ### -LdapSettingPfxCertificate
-Sertifikat yang diperlukan untuk mengonfigurasi LDAP Aman.
+Sertifikat yang diperlukan untuk mengonfigurasi Secure LDAP.
 Parameter yang diteruskan di sini harus menjadi representasi base64encoded dari file pfx sertifikat.
 
 ```yaml
@@ -384,7 +387,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReplicaSet
-Daftar ReplicaSets To construct, lihat bagian NOTES untuk properti REPLICASET dan membuat tabel hash.
+Daftar ReplicaSets To construct, lihat bagian NOTES untuk properti REPLICASET dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ADDomainServices.Models.Api202001.IReplicaSet[]
@@ -399,7 +402,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceForest
-Forest Sumber Daya
+Hutan Sumber Daya
 
 ```yaml
 Type: System.String
@@ -415,7 +418,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya dalam langganan pengguna.
-Nama tidak peka huruf besar/kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -536,7 +539,7 @@ FORESTTRUST <IForestTrust[]>: Daftar pengaturan untuk Resource Forest
 INPUTOBJECT <IAdDomainServicesIdentity>: Parameter Identitas
   - `[DomainServiceName <String>]`: Nama layanan domain.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya dalam langganan pengguna. Nama tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya dalam langganan pengguna. Nama ini tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: Mendapatkan kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 REPLICASET <IReplicaSet[]>: Daftar ReplicaSets

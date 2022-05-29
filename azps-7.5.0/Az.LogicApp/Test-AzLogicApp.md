@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/test-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Test-AzLogicApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Test-AzLogicApp.md
-ms.openlocfilehash: 385c35a1fea922238366cf0a97afd8e3b4c5fb5b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f20fc67258e92709e45af8d3a1a90420b34a8f5a
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144213530"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145768654"
 ---
 # Test-AzLogicApp
 
 ## SYNOPSIS
 Memvalidasi definisi aplikasi logika.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/test-azlogicapp) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -60,7 +63,7 @@ Test-AzLogicApp -ResourceGroupName "ResourceGroup11" -Name "LogicApp01" -Locatio
 Perintah ini memvalidasi aplikasi logika bernama LogicApp01 dalam grup sumber daya yang ditentukan.
 Perintah menentukan definisi dan objek parameter.
 
-### Contoh 3
+### Contoh: 3
 
 Memvalidasi definisi aplikasi logika. (dibuat otomatis)
 

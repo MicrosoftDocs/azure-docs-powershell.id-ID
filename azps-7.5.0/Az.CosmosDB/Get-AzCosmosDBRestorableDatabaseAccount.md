@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/get-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBRestorableDatabaseAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBRestorableDatabaseAccount.md
-ms.openlocfilehash: 9b97359a63489d01a0cf4cdae44187a5695ed792
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 87d26be47193bfec29ae6f3325612ef3dfb0efb3
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144234118"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145807782"
 ---
 # Get-AzCosmosDBRestorableDatabaseAccount
 
 ## SYNOPSIS
 Mendapatkan objek akun database yang dapat di memulihkan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbrestorabledatabaseaccount) untuk informasi terbaru.
 
 ## SYNTAX
 

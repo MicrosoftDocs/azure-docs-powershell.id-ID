@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.machinelearning/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MachineLearning/MachineLearning/help/Export-AzMlWebService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MachineLearning/MachineLearning/help/Export-AzMlWebService.md
-ms.openlocfilehash: ff5d856dea81bd1626ce2fa9ff806e2c2aff0ce2
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6836927e205dc3f09b059bf11d7f9378378d0c18
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144192914"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145768512"
 ---
 # Export-AzMlWebService
 
 ## SYNOPSIS
 Mengekspor objek definisi layanan web sebagai string berformat JSON.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.machinelearning/export-azmlwebservice) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMPlan.md
-ms.openlocfilehash: 15ef2e289e3d4ecf031ef8f43e9db9948b171742
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: dba9e4f49084f181d9c4ec6efda07fe0780d982d
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144246183"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145778196"
 ---
 # Set-AzVMPlan
 
 ## SYNOPSIS
 Mengatur informasi paket Marketplace pada komputer virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azvmplan) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.DataBox/new-AzDa
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/New-AzDataBoxStorageAccountDetailsObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/New-AzDataBoxStorageAccountDetailsObject.md
-ms.openlocfilehash: 203058b2785e2d6c36d9f310caebfd5123a6585d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1ff7844444701ef9b2d9355fbebdb7393ce8aa51
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144205055"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145806684"
 ---
 # New-AzDataBoxStorageAccountDetailsObject
 
 ## SYNOPSIS
 Buat objek dalam memori untuk StorageAccountDetails.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.databox/new-azdataboxstorageaccountdetailsobject) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/get-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchPoolNodeCount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchPoolNodeCount.md
-ms.openlocfilehash: b9b04027c0bd11fc35c395867ef75cde78dbd12c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 141ffe25711052c160bc3f853c52e8318eeaf225
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144195252"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145770492"
 ---
 # Get-AzBatchPoolNodeCount
 
 ## SYNOPSIS
 Mendapatkan jumlah simpul Batch per status simpul yang dikelompokkan menurut id kumpulan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/get-azbatchpoolnodecount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Get-AzBatchPoolNodeCount [-MaxCount <Int32>] -BatchContext <BatchAccountContext>
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzBatchPoolNodeCount memungkinkan pelanggan untuk mendapatkan kembali jumlah simpul per status simpul yang dikelompokkan menurut kumpulan. Kemungkinan status node adalah membuat, menganggur, meninggalkanPool, offline, preempted, rebooting, reimaging, running, start, startTaskFailed, unknown, unusable, dan waitingForStartTask. Cmdlet mengambil parameter PoolId atau Pool untuk memfilter hanya kumpulan dengan id kumpulan yang ditentukan. 
+Cmdlet Get-AzBatchPoolNodeCount memungkinkan pelanggan untuk mendapatkan kembali jumlah simpul per status simpul yang dikelompokkan menurut kumpulan. Status simpul yang mungkin adalah membuat, menganggur, meninggalkanPool, offline, didahului, memulai ulang, mencitrakan ulang, menjalankan, memulai, startTaskFailed, tidak diketahui, tidak dapat digunakan, dan menungguForStartTask. Cmdlet mengambil parameter PoolId atau Pool untuk memfilter hanya kumpulan dengan id kumpulan yang ditentukan. 
 
 ## EXAMPLES
 
@@ -104,7 +107,7 @@ Tampilkan jumlah simpul per status simpul untuk kumpulan id kumpulan yang diberi
 ### -BatchContext
 Instans BatchAccountContext untuk digunakan saat berinteraksi dengan layanan Batch.
 Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext Anda, maka autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch.
-Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan kunci aksesnya yang diisi.
+Untuk menggunakan autentikasi kunci bersama sebagai gantinya, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan kunci aksesnya yang diisi.
 Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default.
 Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 

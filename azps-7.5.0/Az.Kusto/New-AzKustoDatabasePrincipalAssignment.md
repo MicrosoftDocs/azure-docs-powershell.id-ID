@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.kusto/new-azkust
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/New-AzKustoDatabasePrincipalAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/New-AzKustoDatabasePrincipalAssignment.md
-ms.openlocfilehash: 653ec0291bdf51bf44c7e4050f440f658c532aae
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 028df04344885c5da85c5783a4e38d8f68455293
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144238679"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145768818"
 ---
 # New-AzKustoDatabasePrincipalAssignment
 
 ## SYNOPSIS
 Membuat database kluster Kusto principalAssignment.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.kusto/new-azkustodatabaseprincipalassignment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ Name                                                Type
 testnewkustocluster/mykustodatabase/kustoprincipal1 Microsoft.Kusto/Clusters/Databases/PrincipalAssignments
 ```
 
-Perintah di atas membuat Kusto cluster database principalAssignment
+Perintah di atas membuat database kluster Kusto principalAssignment
 
 ## PARAMETERS
 

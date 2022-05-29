@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/start-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Start-AzMigrateTestMigrationCleanup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Start-AzMigrateTestMigrationCleanup.md
-ms.openlocfilehash: d0b56d9d89b14e76efe2cae4268d8d68d07c2268
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e0bcb3c000d5d093d046a7c9410ed30c1a9dae64
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144111696"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145768332"
 ---
 # Start-AzMigrateTestMigrationCleanup
 
 ## SYNOPSIS
 Membersihkan migrasi pengujian untuk server replikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.migrate/start-azmigratetestmigrationcleanup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -67,7 +70,7 @@ Type                             : Microsoft.RecoveryServices/vaults/replication
 
 Berdasarkan id komputer.
 
-### Contoh 2: Menurut objek input
+### Contoh 2: Berdasarkan objek input
 ```powershell
 $obj = Get-AzMigrateServerReplication -TargetObjectID $env.srsMachineId -SubscriptionId $env.srsSubscriptionId
 Start-AzMigrateTestMigrationCleanup -InputObject $ob
@@ -99,7 +102,7 @@ Type                             : Microsoft.RecoveryServices/vaults/replication
 
 ```
 
-Berdasarkan objek input.
+Dengan objek input.
 
 ## PARAMETERS
 
@@ -183,7 +186,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMigrationItem>: Menentukan server replikasi yang pembersihan migrasi pengujiannya perlu dimulai. Objek server dapat diambil menggunakan cmdlet Get-AzMigrateServerReplication
+INPUTOBJECT <IMigrationItem>: Menentukan server replikasi tempat pembersihan migrasi pengujian perlu dimulai. Objek server dapat diambil menggunakan cmdlet Get-AzMigrateServerReplication
   - `[Location <String>]`: Lokasi Sumber Daya
   - `[ProviderSpecificDetail <IMigrationProviderSpecificSettings>]`: Pengaturan kustom penyedia migrasi.
 

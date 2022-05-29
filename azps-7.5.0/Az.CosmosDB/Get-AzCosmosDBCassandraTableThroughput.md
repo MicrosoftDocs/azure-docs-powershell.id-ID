@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/get-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBCassandraTableThroughput.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBCassandraTableThroughput.md
-ms.openlocfilehash: 7d7ae5de7dd3de4e6fc2a5fa677771fd6812c8f6
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f8d646d1b5a54b3ab6f66e26debad421cc580752
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144243173"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145797074"
 ---
 # Get-AzCosmosDBCassandraTableThroughput
 
 ## SYNOPSIS
 Mendapatkan nilai throughput dari Tabel Cassandra.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbcassandratablethroughput) untuk informasi terbaru.
 
 ## SYNTAX
 

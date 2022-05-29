@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/publish-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Publish-AzVMDscConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Publish-AzVMDscConfiguration.md
-ms.openlocfilehash: 75b3bb363473721c9bbbaebce24929377a207b8e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c25710f7783222afd39161dedddd27e0460e1836
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144199757"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145808268"
 ---
 # Publish-AzVMDscConfiguration
 
 ## SYNOPSIS
 Mengunggah skrip DSC ke penyimpanan blob Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/publish-azvmdscconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -78,7 +81,7 @@ Perintah ini menambahkan konfigurasi bernama Sample.ps1, data konfigurasi Sample
 ## PARAMETERS
 
 ### -AdditionalPath
-Menentukan jalur file atau direktori yang akan disertakan dalam arsip konfigurasi.
+Menentukan jalur file atau direktori untuk disertakan dalam arsip konfigurasi.
 Ini akan diunduh ke komputer virtual bersama dengan konfigurasi.
 
 ```yaml
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 
 ### -ConfigurationPath
 Menentukan jalur file yang berisi satu atau beberapa konfigurasi.
-File dapat menjadi file skrip Windows PowerShell (.ps1) atau file modul Windows PowerShell (.psm1).
+File dapat berupa file skrip Windows PowerShell (.ps1) atau file modul Windows PowerShell (.psm1).
 
 ```yaml
 Type: System.String

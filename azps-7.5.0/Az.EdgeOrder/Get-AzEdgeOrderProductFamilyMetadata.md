@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.edgeorder/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/Get-AzEdgeOrderProductFamilyMetadata.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/Get-AzEdgeOrderProductFamilyMetadata.md
-ms.openlocfilehash: 1f5dec849ee02157c406b902c28bf699ee93748c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d9beedb89001e7743adeddc2cf137ebd3a28a0e3
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144232242"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145812978"
 ---
 # Get-AzEdgeOrderProductFamilyMetadata
 
 ## SYNOPSIS
 Metode ini menyediakan daftar metadata keluarga produk untuk langganan tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.edgeorder/get-azedgeorderproductfamilymetadata) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,11 +45,11 @@ ConfigurationName ProductFamilyName ProductLineName ProductName
                   azurestackhub
 ```
 
-Perintah ini mendapatkan keluarga produk yang tersedia pada langganan yang diakui.
+Perintah ini membuat keluarga produk tersedia untuk mendapatkan langganan.
 
 Pastikan registerProvider di Microsoft.EdgeOrder dilakukan sebelum menjalankan perintah ini.
 
-Untuk mendapatkan detail penggunaan keluarga Get-AzEdgeOrderProductFamily perintah
+Untuk mendapatkan detail penggunaan keluarga apa pun Get-AzEdgeOrderProductFamily perintah
 
 ## PARAMETERS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.elastic/get-azel
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Elastic/help/Get-AzElasticMonitoredResource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Elastic/help/Get-AzElasticMonitoredResource.md
-ms.openlocfilehash: 2cd8545c37c20a41cfb558e45b8725b3f38d0faa
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0c36e28845ad23acea45324c89c048797c86ab01
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144235893"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145812906"
 ---
 # Get-AzElasticMonitoredResource
 
 ## SYNOPSIS
 Cantumkan sumber daya yang saat ini sedang dipantau oleh sumber daya monitor Elastic.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.elastic/get-azelasticmonitoredresource) untuk informasi terbaru.
 
 ## SYNTAX
 

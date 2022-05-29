@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVmssStorageProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVmssStorageProfile.md
-ms.openlocfilehash: 38edacdda76318f192bcae76d4f011c288ee6893
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1a5f2abcd2f5ffa1d49c4cc27ec3ee7dd7c4b6d4
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144196677"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145777889"
 ---
 # Set-AzVmssStorageProfile
 
 ## SYNOPSIS
 Mengatur properti profil penyimpanan untuk VMSS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azvmssstorageprofile) untuk informasi terbaru.
 
 ## SYNTAX
 

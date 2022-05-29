@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mysql/get-azmysq
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Get-AzMySqlFlexibleServerConnectionString.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Get-AzMySqlFlexibleServerConnectionString.md
-ms.openlocfilehash: 6e645c0ff16ff5f03bf747a45f58fdab4258e1e9
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d53a06723b9274bf992646c4a5fed1349e5beeb0
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144201188"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145767820"
 ---
 # Get-AzMySqlFlexibleServerConnectionString
 
 ## SYNOPSIS
 Dapatkan string koneksi sesuai dengan penyedia koneksi klien.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.mysql/get-azmysqlflexibleserverconnectionstring) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ Dapatkan string koneksi sesuai dengan penyedia koneksi klien.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan string koneksi menurut nama
+### Contoh 1: Mendapatkan string koneksi berdasarkan nama
 ```powershell
 Get-AzMySqlFlexibleServerConnectionString -Client Python -ResourceGroupName PowershellMySqlTest -Name mysql-test
 ```
@@ -47,7 +50,7 @@ cnx = mysql.connector.connect(user=mysql_user, password="{your_password}", host=
 
 Cmdlet ini menunjukkan string koneksi klien menurut nama server.
 
-### Contoh 2: Mendapatkan string koneksi server MySql berdasarkan identitas
+### Contoh 2: Dapatkan string koneksi server MySql berdasarkan identitas
 ```powershell
 Get-AzMySqlFlexibleServer -ResourceGroupName PowershellMySqlTest -ServerName mysql-test | Get-AzMySqlFlexibleServerConnectionString -Client PHP
 ```
@@ -178,7 +181,7 @@ INPUTOBJECT <IMySqlIdentity>: Server untuk string koneksi.
   - `[FirewallRuleName <String>]`: Nama aturan firewall server.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[LocationName <String>]`: Nama lokasi.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
   - `[SecurityAlertPolicyName <SecurityAlertPolicyName?>]`: Nama kebijakan pemberitahuan keamanan.
   - `[ServerName <String>]`: Nama server.
   - `[SubscriptionId <String>]`: ID langganan target.

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.frontdoor/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorLoadBalancingSettingObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorLoadBalancingSettingObject.md
-ms.openlocfilehash: 2ff0adf68f06aeac47582d5ddc94d2d4664e786b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: fd9a39f8a16000018e4cf5eebabb84649af60f8a
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144225424"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145764426"
 ---
 # New-AzFrontDoorLoadBalancingSettingObject
 
 ## SYNOPSIS
 Membuat objek PSLoadBalancingSetting untuk pembuatan Front Door
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoorloadbalancingsettingobject) untuk informasi terbaru.
 
 ## SYNTAX
 

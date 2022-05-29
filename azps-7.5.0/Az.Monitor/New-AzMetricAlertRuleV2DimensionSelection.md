@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/new-azme
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzMetricAlertRuleV2DimensionSelection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzMetricAlertRuleV2DimensionSelection.md
-ms.openlocfilehash: a2ca4b71fe0bc297f69102040519626d777fa0da
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3c9448f2af5c83a1f2a51ab657b188f21946ab25
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144197772"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145767844"
 ---
 # New-AzMetricAlertRuleV2DimensionSelection
 
 ## SYNOPSIS
 Membuat objek pemilihan dimensi lokal yang dapat digunakan untuk membuat kriteria pemberitahuan metrik.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/new-azmetricalertrulev2dimensionselection) untuk informasi terbaru.
 
 ## SYNTAX
 

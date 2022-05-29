@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/get-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBMongoDBCollectionBackupInformation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBMongoDBCollectionBackupInformation.md
-ms.openlocfilehash: ad2215f7344fe32c6be62a44ecb2518831f7c08f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 278a26fbefcf8e8aee0ccc85a7e9f85fae52099e
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144234188"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145789444"
 ---
 # Get-AzCosmosDBMongoDBCollectionBackupInformation
 
 ## SYNOPSIS
 Mengambil tanda waktu terbaru yang dapat dipulihkan untuk koleksi mongodb.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbmongodbcollectionbackupinformation) untuk informasi terbaru.
 
 ## SYNTAX
 

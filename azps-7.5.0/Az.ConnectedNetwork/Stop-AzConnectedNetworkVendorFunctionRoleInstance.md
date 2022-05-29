@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.connectednetwork
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/Stop-AzConnectedNetworkVendorFunctionRoleInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/Stop-AzConnectedNetworkVendorFunctionRoleInstance.md
-ms.openlocfilehash: 8305681072f05f3786de3320a4d42543030442d2
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 62aa8c341fe02ffbdec90a5ff097a2c55f783ff9
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144219590"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145797344"
 ---
 # Stop-AzConnectedNetworkVendorFunctionRoleInstance
 
 ## SYNOPSIS
 Mematikan (menghentikan) instans peran fungsi jaringan vendor.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.connectednetwork/stop-azconnectednetworkvendorfunctionroleinstance) untuk informasi terbaru.
 
 ## SYNTAX
 

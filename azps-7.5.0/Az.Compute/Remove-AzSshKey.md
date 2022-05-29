@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzSshKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzSshKey.md
-ms.openlocfilehash: f6195c5308ca5c2184504960deaaed9ef07acbc6
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5cd10c395b61b82c6259f5e545a2ea8c4ddf479d
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144229078"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145781614"
 ---
 # Remove-AzSshKey
 
 ## SYNOPSIS
 Menghapus sumber daya Kunci Umum SSH.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/remove-azsshkey) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azsn
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzSnapshotUpdateKeyEncryptionKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzSnapshotUpdateKeyEncryptionKey.md
-ms.openlocfilehash: 70fb51eee741d3d2f144440bf2ad81815830b71c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4c2096940e221489bc48e23072c3f85581c53375
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144235980"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145797812"
 ---
 # Set-AzSnapshotUpdateKeyEncryptionKey
 
 ## SYNOPSIS
 Mengatur properti kunci enkripsi kunci pada objek pembaruan rekam jepret.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azsnapshotupdatekeyencryptionkey) untuk informasi terbaru.
 
 ## SYNTAX
 

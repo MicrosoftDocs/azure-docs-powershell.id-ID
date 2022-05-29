@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/get-azl
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzLogicAppUpgradedDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzLogicAppUpgradedDefinition.md
-ms.openlocfilehash: d2e9633bc3b2bdf08f0f8a2d31fdc5304ddbd5bc
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 306300e2bcc866319aad258d623413dac7d261c1
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144217430"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145768739"
 ---
 # Get-AzLogicAppUpgradedDefinition
 
 ## SYNOPSIS
 Mendapatkan definisi yang ditingkatkan untuk aplikasi logika.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/get-azlogicappupgradeddefinition) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.containerinstanc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/Remove-AzContainerGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/Remove-AzContainerGroup.md
-ms.openlocfilehash: edb833543b04e791d24b3f2613567863ddb5e944
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a2a8cbf6e8dd29398f8e100654443b3bf8fec71b
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144198273"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145813896"
 ---
 # Remove-AzContainerGroup
 
 ## SYNOPSIS
 Hapus grup kontainer yang ditentukan dalam langganan dan grup sumber daya yang ditentukan.
 Operasi ini tidak menghapus sumber daya lain yang disediakan oleh pengguna, seperti volume.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.containerinstance/remove-azcontainergroup) untuk informasi terbaru.
 
 ## SYNTAX
 

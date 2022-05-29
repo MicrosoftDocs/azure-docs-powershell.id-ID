@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.ConnectedNetwork
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/New-AzConnectedNetworkAzureStackEdgeObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/New-AzConnectedNetworkAzureStackEdgeObject.md
-ms.openlocfilehash: 627a5c4a93ca039ca673f4b11bbe2a808a4985b5
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6c3ef173e53bc026213b4414f22f575513940ca5
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144223550"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145789750"
 ---
 # New-AzConnectedNetworkAzureStackEdgeObject
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk AzureStackEdgeFormat
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.connectednetwork/new-azconnectednetworkazurestackedgeobject) untuk informasi terbaru.
 
 ## SYNTAX
 

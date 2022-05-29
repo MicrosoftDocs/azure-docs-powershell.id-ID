@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/get-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Get-AzEventHubGeoDRConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Get-AzEventHubGeoDRConfiguration.md
-ms.openlocfilehash: dfce170e55c1cba4a5e71eb8c666e552d9144ac6
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 13329a8e39f87f6b3bcd2979ba9135483519f10f
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144231357"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145812636"
 ---
 # Get-AzEventHubGeoDRConfiguration
 
 ## SYNOPSIS
 Mengambil Alias (konfigurasi Pemulihan Bencana) untuk namespace primer atau sekunder
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventhub/get-azeventhubgeodrconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.frontdoor/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/Get-AzFrontDoorFrontendEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/Get-AzFrontDoorFrontendEndpoint.md
-ms.openlocfilehash: ead64ef21d95956d1cece2093df696c80969bbe6
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f9f2988c57df59706b81cc02ce5e5ee531f28cdf
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144208259"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145812474"
 ---
 # Get-AzFrontDoorFrontendEndpoint
 
 ## SYNOPSIS
 Dapatkan titik akhir frontend front door.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/get-azfrontdoorfrontendendpoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzFrontDoorFrontendEndpoint -ResourceId <String> [-DefaultProfile <IAzureCon
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzFrontDoorFrontendEndpoint** mendapatkan semua titik akhir frontend yang ada di sumber daya Front Door saat ini yang cocok dengan informasi yang diberikan.
+Cmdlet **Get-AzFrontDoorFrontendEndpoint** mendapatkan semua titik akhir frontend yang ada di sumber daya Front Door saat ini yang cocok dengan informasi yang disediakan.
 
 ## EXAMPLES
 

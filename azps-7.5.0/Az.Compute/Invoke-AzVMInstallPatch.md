@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/invoke-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Invoke-AzVMInstallPatch.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Invoke-AzVMInstallPatch.md
-ms.openlocfilehash: b526411e0b58a4c1f2f5341d3e8b1c29d74bded1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b1222ba2a375db8a5da2a739bf84acfd122c7b23
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144187801"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145778519"
 ---
 # Invoke-AzVMInstallPatch
 
 ## SYNOPSIS
 Menginstal patch pada VM
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/invoke-azvminstallpatch) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -87,7 +90,7 @@ Invoke-AzVmInstallPatch -VM $myVM -MaximumDuration "PT90M" -RebootSetting "Alway
 
 Contoh ini meneruskan objek PSVirtualMachine ke parameter '-VM'. Ini juga menginstal patch keamanan sambil menyertakan dan mengecualikan KB tertentu dengan menggunakan '-KBNumberToExclude' dan '-KBNumberToInclude'. Ini juga mengecualikan KB yang memerlukan reboot dengan menggunakan '-ExcludeKBsRequiringReboot'.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $myLinuxVM = Get-AzVM -ResourceGroupName 'MyRG' -Name 'MyLinuxVM'
 Invoke-AzVMInstallPatch -ResourceId $myLinuxVM.id -MaximumDuration "PT90M" -RebootSetting "Always" -Linux -ClassificationToIncludeForLinux "Security" -PackageNameMaskToInclude ["package123"] -PackageNameMaskToExclude ["package567"]

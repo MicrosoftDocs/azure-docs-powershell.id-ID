@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVmssOsProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVmssOsProfile.md
-ms.openlocfilehash: 9ceb914dbf637672a8c2790bb96cc360e9b81bf1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ca8ae64ccb6ad0c22637a3c4d137b53149f7b16f
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144215387"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145778124"
 ---
 # Set-AzVmssOsProfile
 
 ## SYNOPSIS
 Mengatur properti profil sistem operasi VMSS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azvmssosprofile) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -199,7 +202,7 @@ $vmss = New-AzVmss `
 ## PARAMETERS
 
 ### -AdditionalUnattendContent
-Menentukan objek isi tak terjaga.
+Menentukan objek isi yang tidak dijaga.
 Anda dapat menggunakan Add-AzVMAdditionalUnattendContent untuk membuat objek.
 
 ```yaml
@@ -232,7 +235,7 @@ Accept wildcard characters: False
 ### -AdminUsername
 Menentukan nama akun administrator yang akan digunakan untuk semua instans komputer virtual di VMSS. <br>
 **pembatasan Windows-saja:** Tidak dapat berakhiran \".\" <br>
-**Nilai yang tidak diizinkan:** \" administrator\", \"admin\", \"pengguna\", \"user1\", \"menguji\", \"user2\", \"test1\", \"user3\", \"admin1\", \"1\", \"123\", \"a\", \"actuser\", adm\", \"\"admin2\", \"aspnet\", \"cadangan\", \"konsol\", \"david\", \"tamu\", \"john\", \"pemilik\", \"root\", \"server\", \"sql\", \"dukungan \", \"support_388945a0\", \"sys\", \"test2\", \"test3\", \"user4\", \"user5\". <br>
+**Nilai yang tidak diizinkan:** \" administrator\", \"admin\", \"pengguna\", \"user1\", \"uji\", \"user2\", \"test1\", \"user3\", \"admin1\", \"1\", \"123\", \"a\", \"actuser\", \"adm\", \"admin2\", \"aspnet\", \"cadangan\", konsol\", \"\"david\", \"tamu\", \"john\", \"pemilik\", \"root\", \"server\", \"sql\", \"dukungan \", \"support_388945a0\", \"sys\", \"test2\", \"test3\", \"user4\", \"user5\". <br>
 **Panjang minimum (Linux):** 1 karakter <br>
 **Panjang maksimum (Linux):** 64 karakter <br>
 **Panjang maksimum (Windows):** 20 karakter  <br>
@@ -300,7 +303,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableHotpatching
-Memungkinkan pelanggan untuk menambal Azure Vm mereka tanpa memerlukan boot ulang. Untuk enableHotpatching, 'provisionVMAgent' harus diatur ke true dan 'patchMode' harus diatur ke 'AutomaticByPlatform'.
+Memungkinkan pelanggan untuk menambal Azure Vmss mereka tanpa memerlukan boot ulang. Untuk enableHotpatching, 'provisionVMAgent' harus diatur ke true dan 'patchMode' harus diatur ke 'AutomaticByPlatform'.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -330,7 +333,7 @@ Accept wildcard characters: False
 ```
 
 ### -LinuxConfigurationPatchMode
-Menentukan mode Patching Tamu VM ke komputer virtual IaaS atau komputer virtual yang terkait dengan set skala komputer virtual dengan OrchestrationMode sebagai Flexible.<br /><br /> Potensi nilai:<br /><br /> **ImageDefault** - Konfigurasi patching default komputer virtual digunakan. <br /><br /> **AutomaticByPlatform** - Komputer virtual akan diperbarui secara otomatis oleh platform. Properti provisionVMAgent harus benar
+Menentukan mode Patching Tamu VM ke komputer virtual IaaS atau komputer virtual yang terkait dengan set skala komputer virtual dengan OrchestrationMode sebagai Fleksibel.<br /><br /> Potensi nilai:<br /><br /> **ImageDefault** - Konfigurasi patching default komputer virtual digunakan. <br /><br /> **AutomaticByPlatform** - Komputer virtual akan diperbarui secara otomatis oleh platform. Properti provisionVMAgent harus benar
 
 ```yaml
 Type: System.String
@@ -377,7 +380,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicKey
-Menentukan objek kunci umum Secure Shell (SSH).
+Menentukan objek kunci publik Secure Shell (SSH).
 Anda dapat menggunakan cmdlet Add-AzVMSshPublicKey untuk membuat objek.
 
 ```yaml
@@ -456,7 +459,7 @@ Accept wildcard characters: False
 ```
 
 ### -WindowsConfigurationPatchMode
-Menentukan mode Patching Tamu VM ke komputer virtual IaaS atau komputer virtual yang terkait dengan set skala komputer virtual dengan OrchestrationMode sebagai Flexible.<br /><br /> Potensi nilai:<br /><br /> **Manual** - Anda mengontrol aplikasi patch ke komputer virtual. Anda melakukan ini dengan menerapkan patch secara manual di dalam VM. Dalam mode ini, pembaruan otomatis dinonaktifkan; properti WindowsConfiguration.enableAutomaticUpdates harus false<br /><br /> **AutomaticByOS** - Komputer virtual akan diperbarui secara otomatis oleh OS. Properti WindowsConfiguration.enableAutomaticUpdates harus benar. <br /><br /> **AutomaticByPlatform** - komputer virtual akan diperbarui secara otomatis oleh platform. Properti provisionVMAgent dan WindowsConfiguration.enableAutomaticUpdates harus benar
+Menentukan mode Patching Tamu VM ke komputer virtual IaaS atau komputer virtual yang terkait dengan set skala komputer virtual dengan OrchestrationMode sebagai Fleksibel.<br /><br /> Potensi nilai:<br /><br /> **Manual** - Anda mengontrol aplikasi patch ke komputer virtual. Anda melakukan ini dengan menerapkan patch secara manual di dalam VM. Dalam mode ini, pembaruan otomatis dinonaktifkan; properti WindowsConfiguration.enableAutomaticUpdates harus false<br /><br /> **AutomaticByOS** - Komputer virtual akan diperbarui secara otomatis oleh OS. Properti WindowsConfiguration.enableAutomaticUpdates harus benar. <br /><br /> **AutomaticByPlatform** - komputer virtual akan diperbarui secara otomatis oleh platform. Properti provisionVMAgent dan WindowsConfiguration.enableAutomaticUpdates harus benar
 
 
 ```yaml

@@ -5,17 +5,20 @@ online version: ''
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/New-AzEventHubEncryptionConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/New-AzEventHubEncryptionConfig.md
-ms.openlocfilehash: ce4780b5e9ad5c5e06e67a6b22f8a645b506e260
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 411238fe4f098c37a5f870a9c2e616832bd353e8
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144223526"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145812582"
 ---
 # New-AzEventHubEncryptionConfig
 
 ## SYNOPSIS
-Membuat instans objek dalam memori PSEncryptionConfigAttributes yang kemudian dapat diberikan sebagai input ke New-AzEventHubNamespace dan Set-AzEventHubNamespace untuk mengaktifkan enkripsi 
+Membuat instans objek memori PSEncryptionConfigAttributes yang kemudian dapat diberikan sebagai input ke New-AzEventHubNamespace dan Set-AzEventHubNamespace untuk mengaktifkan enkripsi 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventhub/new-azeventhubencryptionconfig) untuk informasi terbaru.
 
 ## SYNTAX
 

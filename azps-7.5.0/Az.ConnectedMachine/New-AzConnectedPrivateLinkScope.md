@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.connectedmachine
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedMachine/help/New-AzConnectedPrivateLinkScope.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedMachine/help/New-AzConnectedPrivateLinkScope.md
-ms.openlocfilehash: 0de8889b4f26203a472d0c0b636e79bc5f11bad0
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: fad2585e99588e40ca58c2a9591de3b07e0a965f
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144220871"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145808196"
 ---
 # New-AzConnectedPrivateLinkScope
 
 ## SYNOPSIS
 Membuat (atau memperbarui) Azure Arc PrivateLinkScope.
 Catatan: Anda tidak dapat menentukan nilai yang berbeda untuk InstrumentationKey atau AppId dalam operasi Put.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.connectedmachine/new-azconnectedprivatelinkscope) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementRegion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementRegion.md
-ms.openlocfilehash: 9c8f7d0ff0ff92a6efb31484a90104fc7c8347c7
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9338affea3d81b6fc6ece5fac2428aa4258d5475
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144211103"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145818746"
 ---
 # Remove-AzApiManagementRegion
 
 ## SYNOPSIS
 Menghapus wilayah penyebaran yang ada dari instans PsApiManagement.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/remove-azapimanagementregion) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,9 +29,9 @@ Remove-AzApiManagementRegion -ApiManagement <PsApiManagement> -Location <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzApiManagementRegion** menghapus instans jenis **Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagementRegion** dari kumpulan **AdditionalRegions yang disediakan instans** jenis **Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagement**.
+Cmdlet **Remove-AzApiManagementRegion** menghapus instans jenis **Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagementRegion** dari kumpulan **AdditionalRegions** asalkan instans jenis **Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagement**.
 Cmdlet ini tidak memodifikasi penyebaran dengan sendirinya tetapi memperbarui **instans PsApiManagement** dalam memori.
-Untuk memperbarui penyebaran API Management, teruskan **PsApiManagementInstance** yang dimodifikasi ke **Set-AzApiManagement**.
+Untuk memperbarui penyebaran API Management, lewati **PsApiManagementInstance** yang dimodifikasi ke **Set-AzApiManagement**.
 
 ## EXAMPLES
 

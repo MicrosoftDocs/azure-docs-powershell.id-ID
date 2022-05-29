@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.containerregistr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Get-AzContainerRegistryWebhook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Get-AzContainerRegistryWebhook.md
-ms.openlocfilehash: cd2cc8b7a65274dd539a7abc1fce80af50250ace
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 081c52118e91c65ca9b4c2b78411d9a9790b6ceb
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144227661"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145807800"
 ---
 # Get-AzContainerRegistryWebhook
 
 ## SYNOPSIS
 Mendapatkan webhook registri kontainer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.containerregistry/get-azcontainerregistrywebhook) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,13 +34,13 @@ Get-AzContainerRegistryWebhook [-Name] <String> [-ResourceGroupName] <String> [-
  [-IncludeConfiguration] [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### TampilkanWebhookByRegistryObjectParameterSet
+### ShowWebhookByRegistryObjectParameterSet
 ```
 Get-AzContainerRegistryWebhook [-Name] <String> -Registry <PSContainerRegistry> [-IncludeConfiguration]
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### DaftarWebhookByRegistryObjectParameterSet
+### ListWebhookByRegistryObjectParameterSet
 ```
 Get-AzContainerRegistryWebhook -Registry <PSContainerRegistry> [-IncludeConfiguration]
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]

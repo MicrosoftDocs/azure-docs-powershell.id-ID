@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementNamedValueSecretValue.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementNamedValueSecretValue.md
-ms.openlocfilehash: de8cd50a914aa48be599fbe173c57d9b067f3304
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 02e754f97ed0eef5e465176e2ca45c10d2228815
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144211178"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145767486"
 ---
 # Get-AzApiManagementNamedValueSecretValue
 
 ## SYNOPSIS
 Mendapatkan nilai rahasia dari Nilai Bernama tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementnamedvaluesecretvalue) untuk informasi terbaru.
 
 ## SYNTAX
 

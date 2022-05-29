@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.containerregistr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Update-AzContainerRegistryCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Update-AzContainerRegistryCredential.md
-ms.openlocfilehash: dd33d1a90b9ce43ec30099ee749a9ef61d0c53f5
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8966951edd4625761500f7cfbbb6880b287dfc1f
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144243243"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145789534"
 ---
 # Update-AzContainerRegistryCredential
 
 ## SYNOPSIS
 Meregenerasi info masuk login untuk registri kontainer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.containerregistry/update-azcontainerregistrycredential) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -55,7 +58,7 @@ MyRegistry ++q/=K9+RH/+hwg2+3A=N+/w=J/12Ph9 //JRPkgxx+r+z/ztU=R//E==vum=pRKL
 ```
 
 Perintah ini meregenerasi info masuk untuk registri kontainer yang ditentukan.
-Pengguna admin harus diaktifkan untuk registri \`kontainer MyRegistry\` untuk meregenerasi kredensial masuk.
+Admin pengguna harus diaktifkan untuk registri \` kontainer MyRegistry\` untuk meregenerasi kredensial masuk.
 
 ## PARAMETERS
 

@@ -5,17 +5,20 @@ online version: ''
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDbClientEncryptionKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDbClientEncryptionKey.md
-ms.openlocfilehash: 0fce465b7cf548a2a66d93dba44677a22aeffaed
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: fe542755b2046c1ecd7d44db193a4d2ba620e1e3
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144206879"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145806709"
 ---
 # New-AzCosmosDbClientEncryptionKey
 
 ## SYNOPSIS
 Membuat Kunci Enkripsi Klien CosmosDB baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/new-azcosmosdbclientencryptionkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -51,7 +54,7 @@ Resource : Microsoft.Azure.Commands.CosmosDB.Models.PSSqlClientEncryptionKeyGetP
 ```
 
 Contoh ini menunjukkan bagaimana kunci baru dibuat. Jika KeyEncryptionKeyResolver tidak diteruskan Azure Key Vault KeyResolver digunakan secara default.
-Perintah pertama membuat objek KeyWrapMetadata dengan nama myKekV1 jenis AZURE_KEY_VAULT dengan nilai yang diatur ke id https://contoso.vault.azure.net/keys/myKekV1/78deebed173b48e48f55abf87ed4cf71 kunci dan jenis algoritma "RSA-OAEP" yang digunakan untuk mengenkripsi kunci.
+Perintah pertama membuat objek KeyWrapMetadata dengan nama myKekV1 jenis AZURE_KEY_VAULT dengan nilai diatur ke id https://contoso.vault.azure.net/keys/myKekV1/78deebed173b48e48f55abf87ed4cf71 kunci dan jenis algoritma "RSA-OAEP" yang digunakan untuk mengenkripsi kunci.
 Pada perintah kedua, kunci baru dibuat dengan nama sebagaimana diatur dalam variabel myClientEncryptionKeyName dan dengan KeyWrapMetadata diatur ke nilai yang dikembalikan oleh perintah pertama.
 
 ### Contoh 2
@@ -66,9 +69,9 @@ Resource : Microsoft.Azure.Commands.CosmosDB.Models.PSSqlClientEncryptionKeyGetP
 ```
 
 Contoh ini menunjukkan bagaimana kunci baru dibuat dan bagaimana KeyEncryptionKeyResolver dapat diteruskan sebagai parameter.
-Perintah pertama membuat objek KeyWrapMetadata dengan nama myKekV1 jenis AZURE_KEY_VAULT dengan nilai yang diatur ke id https://contoso.vault.azure.net/keys/myKekV1/78deebed173b48e48f55abf87ed4cf71 kunci dan jenis algoritma "RSA-OAEP" yang digunakan untuk mengenkripsi kunci.
+Perintah pertama membuat objek KeyWrapMetadata dengan nama myKekV1 jenis AZURE_KEY_VAULT dengan nilai diatur ke id https://contoso.vault.azure.net/keys/myKekV1/78deebed173b48e48f55abf87ed4cf71 kunci dan jenis algoritma "RSA-OAEP" yang digunakan untuk mengenkripsi kunci.
 Perintah kedua membuat objek Azure Key Vault KeyResolver menggunakan kredensial Azure Default.
-Dalam perintah ketiga kunci baru dibuat dengan nama seperti yang diatur dalam variabel myClientEncryptionKeyName, KeyWrapMetadata diatur ke nilai yang dikembalikan oleh perintah pertama dan nilai KeyEncryptionKeyResolver diatur ke objek KeyResolver yang diperoleh melalui perintah kedua.
+Dalam perintah ketiga, kunci baru dibuat dengan nama sebagaimana diatur dalam variabel myClientEncryptionKeyName, KeyWrapMetadata diatur ke nilai yang dikembalikan oleh perintah pertama dan nilai KeyEncryptionKeyResolver diatur ke objek KeyResolver yang diperoleh melalui perintah kedua.
 
 ## PARAMETERS
 

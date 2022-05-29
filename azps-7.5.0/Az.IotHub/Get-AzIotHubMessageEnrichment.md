@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/get-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubMessageEnrichment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubMessageEnrichment.md
-ms.openlocfilehash: 4e0898fa79a74fe054c423bc86213ce9fe160369
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: fc31d8625cd1bde698a99b9a70b80a92718ba7d7
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144222443"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145805711"
 ---
 # Get-AzIotHubMessageEnrichment
 
 ## SYNOPSIS
 Mencantumkan semua pengayaan pesan atau pengayaan pesan tertentu untuk IoT Hub Anda.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/get-aziothubmessageenrichment) untuk informasi terbaru.
 
 ## SYNTAX
 

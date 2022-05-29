@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/get-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBSqlContainerBackupInformation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBSqlContainerBackupInformation.md
-ms.openlocfilehash: b82740d9dcee712c61d96bcf39d776e7cc59a1a5
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c46d28493385cfa11d960933ab19e7e6dace42d9
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144234090"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145807764"
 ---
 # Get-AzCosmosDBSqlContainerBackupInformation
 
 ## SYNOPSIS
-Mengambil tanda waktu terbaru yang dapat di-restorable untuk kontainer sql.
+Mengambil tanda waktu terbaru yang dapat di memulihkan untuk kontainer sql.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbsqlcontainerbackupinformation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Get-AzCosmosDBSqlContainerBackupInformation -ResourceGroupName <String> -Account
 ```
 
 ## DESCRIPTION
-Mengambil tanda waktu terbaru yang dapat di-restorable untuk kontainer sql. Ini adalah upto tanda waktu terbaru yang berhasil dipulihkan oleh pengguna kontainer ini.
+Mengambil tanda waktu terbaru yang dapat di memulihkan untuk kontainer sql. Ini adalah upto tanda waktu terbaru yang berhasil dipulihkan oleh pengguna kontainer ini.
 
 ## EXAMPLES
 
@@ -41,7 +44,7 @@ LatestRestorableTimestamp
 1623042210
 ```
 
-Mengambil tanda waktu terbaru yang dapat di-restorable untuk kontainer sql. Ini adalah upto tanda waktu terbaru yang berhasil dipulihkan oleh pengguna kontainer ini.
+Mengambil tanda waktu terbaru yang dapat di memulihkan untuk kontainer sql. Ini adalah upto tanda waktu terbaru yang berhasil dipulihkan oleh pengguna kontainer ini.
 
 ## PARAMETERS
 
