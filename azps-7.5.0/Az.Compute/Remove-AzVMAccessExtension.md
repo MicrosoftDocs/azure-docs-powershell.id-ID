@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzVMAccessExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzVMAccessExtension.md
-ms.openlocfilehash: 8e3348ffa59181bbe99f21a777f9842e8db0d8e7
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9475e6063678859f9ada7a4bb9ecfd5db2be4eb1
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144246267"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145733734"
 ---
 # Remove-AzVMAccessExtension
 
 ## SYNOPSIS
 Menghapus ekstensi VMAccess dari komputer virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/remove-azvmaccessextension) untuk informasi terbaru.
 
 ## SYNTAX
 

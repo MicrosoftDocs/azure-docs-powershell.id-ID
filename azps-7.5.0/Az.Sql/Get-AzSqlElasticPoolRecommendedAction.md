@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlElasticPoolRecommendedAction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlElasticPoolRecommendedAction.md
-ms.openlocfilehash: ab06be3c586ef01fe0d26c9b81057bffcf424bb0
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b5c99ed62f0ab48243bb82c8e063b9164d11b809
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144210122"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145728406"
 ---
 # Get-AzSqlElasticPoolRecommendedAction
 
 ## SYNOPSIS
-Mendapatkan satu atau beberapa tindakan yang direkomendasikan untuk Azure SQL Elastic Pool Advisor.
+Mendapatkan satu atau beberapa tindakan yang direkomendasikan untuk Advisor Kumpulan Elastis Azure SQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlelasticpoolrecommendedaction) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Get-AzSqlElasticPoolRecommendedAction [-RecommendedActionName <String>] -ServerN
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlElasticPoolRecommendedAction** mendapatkan satu atau beberapa tindakan yang direkomendasikan untuk Azure SQL Elastic Pool Advisor.
+Cmdlet **Get-AzSqlElasticPoolRecommendedAction** mendapatkan satu atau beberapa tindakan yang direkomendasikan untuk Advisor Kumpulan Elastis Azure SQL.
 
 ## EXAMPLES
 
@@ -130,7 +133,7 @@ ValidSince                 : 4/21/2016 3:24:47 PM
 
 Perintah ini mendapatkan daftar semua tindakan yang direkomendasikan dari Advisor bernama CreateIndex yang tersedia untuk kumpulan elastis bernama WIRunnerPool.
 
-### Contoh 2: Mendapatkan satu tindakan yang direkomendasikan untuk Advisor
+### Contoh 2: Dapatkan satu tindakan yang direkomendasikan untuk Advisor
 ```powershell
 Get-AzSqlElasticPoolRecommendedAction -ResourceGroupName "WIRunnersProd" -ServerName "wi-runner-australia-east" -ElasticPoolName "WIRunnerPool" -AdvisorName "CreateIndex" -RecommendedActionName "IR_[test_schema]_[test_table_0.0361551]_6C7AE8CC9C87E7FD5893"
 ```

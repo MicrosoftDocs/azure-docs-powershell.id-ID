@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/start-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Start-AzStorageBlobCopy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Start-AzStorageBlobCopy.md
-ms.openlocfilehash: 28d8aeaf092c487a27bc7ccef93856d016d1a934
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 50f20a9e30e6dbfc2a8a504cc0acccbc22bcfbc0
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144112998"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145713736"
 ---
 # Start-AzStorageBlobCopy
 
 ## SYNOPSIS
 Mulai menyalin blob.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/start-azstorageblobcopy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -141,7 +144,7 @@ C:\PS>Get-AzStorageContainer -Name "ContosoUploads" | Start-AzStorageBlobCopy -S
 ```
 
 Perintah ini mendapatkan kontainer bernama ContosoUploads, dengan menggunakan cmdlet **Get-AzStorageContainer** , lalu meneruskan kontainer ke cmdlet saat ini dengan menggunakan operator alur.
-Cmdlet itu memulai operasi salin blob bernama ContosoPlanning2015.
+Cmdlet itu memulai operasi salinan blob bernama ContosoPlanning2015.
 Cmdlet sebelumnya menyediakan kontainer sumber.
 Parameter *DestContainer* menentukan ContosoArchives sebagai kontainer tujuan.
 
@@ -151,7 +154,7 @@ C:\PS>Get-AzStorageBlob -Container "ContosoUploads" | Start-AzStorageBlobCopy -D
 ```
 
 Perintah ini mendapatkan blob dalam kontainer bernama ContosoUploads, dengan menggunakan cmdlet **Get-AzStorageBlob** , lalu meneruskan hasilnya ke cmdlet saat ini dengan menggunakan operator alur.
-Cmdlet itu memulai operasi salin blob ke kontainer bernama ContosoArchives.
+Cmdlet itu memulai operasi penyalinan blob ke kontainer bernama ContosoArchives.
 
 ### Contoh 4: Menyalin blob yang ditentukan sebagai objek
 ```
@@ -183,7 +186,7 @@ Tidak ada konteks penyimpanan sumber, sehingga Uri sumber harus memiliki akses k
 C:\PS>Start-AzStorageBlobCopy -SrcContainer "ContosoUploads" -SrcBlob "BlockBlobName" -DestContainer "ContosoArchives" -DestBlob "NewBlockBlobName" -StandardBlobTier Hot -RehydratePriority High
 ```
 
-Perintah ini memulai operasi salin blob blok ke kontainer tujuan dengan nama blob baru, dan mengatur blob tujuan StandardBlobTier sebagai Hot, RehydratePriority sebagai Tinggi
+Perintah ini memulai operasi salin blob blok ke kontainer tujuan dengan nama blob baru, dan mengatur blob tujuan StandardBlobTier sebagai Panas, RehydratePriority sebagai Tinggi
 
 ## PARAMETERS
 
@@ -218,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClientTimeoutPerRequest
-Menentukan interval waktu habis sisi klien, dalam hitungan detik, untuk satu permintaan layanan.
+Menentukan interval waktu habis sisi klien, dalam detik, untuk satu permintaan layanan.
 Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini mencoba kembali permintaan.
 Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini mengembalikan kesalahan.
 
@@ -251,7 +254,7 @@ Accept wildcard characters: False
 ```
 
 ### -CloudBlobContainer
-Menentukan objek **CloudBlobContainer** dari pustaka Klien Azure Storage.
+Menentukan objek **CloudBlobContainer** dari pustaka klien Azure Storage.
 Cmdlet ini menyalin blob dari kontainer yang ditentukan parameter ini.
 Untuk mendapatkan objek **CloudBlobContainer** , gunakan cmdlet Get-AzStorageContainer.
 
@@ -428,7 +431,7 @@ Accept wildcard characters: False
 
 ### -DestTagCondition
 Pernyataan ekspresi Tag opsional untuk memeriksa kondisi kecocokan pada Blob tujuan. Permintaan blob akan gagal ketika tag blob tujuan tidak cocok dengan ekspresi yang diberikan.
-Lihat detail di https://docs.microsoft.com/en-us/rest/api/storageservices/specifying-conditional-headers-for-blob-service-operations#tags-conditional-operations.
+Lihat detailnya di https://docs.microsoft.com/en-us/rest/api/storageservices/specifying-conditional-headers-for-blob-service-operations#tags-conditional-operations.
 
 ```yaml
 Type: System.String
@@ -458,7 +461,7 @@ Accept wildcard characters: False
 ```
 
 ### -PremiumPageBlobTier
-Tingkat Blob Halaman Premium
+Premium Tingkat Blob Halaman
 
 ```yaml
 Type: Microsoft.Azure.Storage.Blob.PremiumPageBlobTier

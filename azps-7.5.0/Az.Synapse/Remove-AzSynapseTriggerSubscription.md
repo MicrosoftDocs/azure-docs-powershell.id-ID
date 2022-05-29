@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseTriggerSubscription.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseTriggerSubscription.md
-ms.openlocfilehash: 24ae53b722d7a6e7b24d8d3954768f7c2b6bd1cc
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8a8afd9e95aa39ad9900679a536a4addafa5ec76
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144200600"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145706238"
 ---
 # Remove-AzSynapseTriggerSubscription
 
 ## SYNOPSIS
 Berhenti berlangganan pemicu peristiwa ke peristiwa layanan eksternal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/remove-azsynapsetriggersubscription) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -57,7 +60,7 @@ $ws | Remove-AzSynapseTriggerSubscription -Name ContosoTrigger
 
 Perintah ini akan berhenti berlangganan pemicu yang disebut ContosoTrigger ke peristiwa yang ditentukan dari penentuan pemicu melalui alur.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $trigger = Get-AzSynapseTrigger -WorkspaceName ContosoWorkspace -Name ContosoTrigger
 $trigger | Remove-AzSynapseTriggerSubscription

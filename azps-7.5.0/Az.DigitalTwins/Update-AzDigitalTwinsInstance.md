@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.digitaltwins/upd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DigitalTwins/help/Update-AzDigitalTwinsInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DigitalTwins/help/Update-AzDigitalTwinsInstance.md
-ms.openlocfilehash: 8c617d566f25daab83b7c18f170f636fdf6cc8a1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ae5889d2c4b53038fa8a3b3807dcd8077a08d4bf
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144199421"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145741258"
 ---
 # Update-AzDigitalTwinsInstance
 
 ## SYNOPSIS
 Perbarui metadata DigitalTwinsInstance.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.digitaltwins/update-azdigitaltwinsinstance) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -63,7 +66,7 @@ eastus   youriDigitalTwinsTest Microsoft.DigitalTwins/digitalTwinsInstances
 
 Memperbarui DigitalTwinsInstance yang ditentukan oleh ResourceGroupName
 
-### Contoh 2: Memperbarui AzDigitalTwinsInstance oleh AzDigitalTwinsInstance lain
+### Contoh 2: Perbarui AzDigitalTwinsInstance oleh AzDigitalTwinsInstance lain
 ```powershell
 $updateDigitalTwinInstance1 = Update-AzDigitalTwinsInstance -ResourcegroupName youritemp -ResourceName youriDigitalTwin1 -Tag @{"dtt"="002"}
 Update-AzDigitalTwinsInstance -ResourceGroupName youritemp -ResourceName youriDigitalTwinsTest -DigitalTwinsPatchDescription $updateDigitalTwinInstance1
@@ -75,7 +78,7 @@ Location Name                  Type
 eastus   youriDigitalTwinsTest Microsoft.DigitalTwins/digitalTwinsInstances
 ```
 
-Perbarui AzDigitalTwinsInstance oleh AzDigitalTwinsInstance lain
+Memperbarui AzDigitalTwinsInstance oleh AzDigitalTwinsInstance lain
 
 ## PARAMETERS
 
@@ -95,8 +98,8 @@ Accept wildcard characters: False
 ```
 
 ### -DigitalTwinsPatchDescription
-Penjabaran dari layanan DigitalTwins.
-Untuk membuat, lihat bagian CATATAN untuk properti DIGITALTWINSPATCHDESCRIPTION dan buat tabel hash.
+Deskripsi layanan DigitalTwins.
+Untuk membuat, lihat bagian CATATAN untuk properti DIGITALTWINSPATCHDESCRIPTION dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DigitalTwins.Models.Api20201031.IDigitalTwinsPatchDescription
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DigitalTwins.Models.IDigitalTwinsIdentity

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlins
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstancePool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstancePool.md
-ms.openlocfilehash: d738bc498858051f16b49a2e1b7da0958e29fd81
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b9e778af25f64cf5524067bc1ed5cb3cdd7457a4
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144195812"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145727758"
 ---
 # Get-AzSqlInstancePool
 
 ## SYNOPSIS
 Mengembalikan informasi tentang kumpulan Instans Azure SQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlinstancepool) untuk informasi terbaru.
 
 ## SYNTAX
 

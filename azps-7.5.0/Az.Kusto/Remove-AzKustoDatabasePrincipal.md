@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.kusto/remove-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Remove-AzKustoDatabasePrincipal.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Remove-AzKustoDatabasePrincipal.md
-ms.openlocfilehash: 7dc461c5a1be58c7ce496919c8814a67af37a145
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c939bb41e396a15a5a5b076023337ae6a4386c37
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144209318"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145693396"
 ---
 # Remove-AzKustoDatabasePrincipal
 
 ## SYNOPSIS
 Menghapus izin Prinsipal database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.kusto/remove-azkustodatabaseprincipal) untuk informasi terbaru.
 
 ## SYNTAX
 

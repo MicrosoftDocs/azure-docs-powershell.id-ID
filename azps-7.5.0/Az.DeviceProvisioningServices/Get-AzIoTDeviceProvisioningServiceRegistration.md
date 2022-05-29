@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deviceprovisioni
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Get-AzIoTDeviceProvisioningServiceRegistration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Get-AzIoTDeviceProvisioningServiceRegistration.md
-ms.openlocfilehash: a734fe3aacc734c63f4122233fd7d71131d55b5d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d1d80fc9ceb7f05388fa30481d488b3c58bbe01d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144229008"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145742140"
 ---
 # Get-AzIoTDeviceProvisioningServiceRegistration
 
 ## SYNOPSIS
 Mendapatkan status pendaftaran perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.deviceprovisioningservices/get-aziotdeviceprovisioningserviceregistration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -56,7 +59,7 @@ Dapatkan detail status pendaftaran perangkat di Azure IoT Hub Device Provisionin
 Get-AzIoTDeviceProvisioningServiceRegistration -ResourceGroupName "myresourcegroup" -DpsName "mydps" -EnrollmentId "grp-enroll1"
 ```
 
-Cantumkan semua status pendaftaran perangkat dalam enrollmentGroup ini.
+Cantumkan semua status pendaftaran perangkat dalam pendaftaranGroup ini.
 
 ## PARAMETERS
 

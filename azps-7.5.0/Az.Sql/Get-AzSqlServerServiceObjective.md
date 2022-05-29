@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlser
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerServiceObjective.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerServiceObjective.md
-ms.openlocfilehash: 994b24322e9f11ecb943dca7340a06fca40f4f34
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6d570e2135cfd9a274f8515fde5ffd0ec336b814
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144221726"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145726966"
 ---
 # Get-AzSqlServerServiceObjective
 
 ## SYNOPSIS
 Mendapatkan tujuan layanan untuk server Azure SQL Database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlserverserviceobjective) untuk informasi terbaru.
 
 ## SYNTAX
 

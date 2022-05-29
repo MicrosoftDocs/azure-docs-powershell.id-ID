@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/new-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseKustoPoolAttachedDatabaseConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseKustoPoolAttachedDatabaseConfiguration.md
-ms.openlocfilehash: 5105759b2a7ab8380efde0749de7810a1541ba90
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 453f46184a7445bf18a3360cae1ad63a40a5c459
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144231906"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145707796"
 ---
 # New-AzSynapseKustoPoolAttachedDatabaseConfiguration
 
 ## SYNOPSIS
 Membuat atau memperbarui konfigurasi database terlampir.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/new-azsynapsekustopoolattacheddatabaseconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/set-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageBlobLegalHold.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageBlobLegalHold.md
-ms.openlocfilehash: 95757222b5a7c958a8b9664a8933fff9bd9f8de1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e6b7980af5cdab62c102e10a907dbfa9e3cac7ec
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144219995"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145714168"
 ---
 # Set-AzStorageBlobLegalHold
 
 ## SYNOPSIS
 Mengaktifkan atau menonaktifkan penahanan legal pada blob Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/set-azstoragebloblegalhold) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -52,7 +55,7 @@ Set-AzStorageBlobLegalHold [-Blob] <String> [-Container] <String> [-DisableLegal
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzStorageBlobLegalHold** memungkinkan atau menonaktifkan penahanan legal pada blob Storage.
+**Cmdlet Set-AzStorageBlobLegalHold** memungkinkan atau menonaktifkan penahanan legal pada blob Storage.
 Cmdlet hanya berfungsi ketika kontainer blob telah mengaktifkan Storage yang tidak dapat diubah dengan penerapan versi.
 
 ## EXAMPLES
@@ -73,7 +76,7 @@ PS C:\> $blob.BlobProperties.HasLegalHold
 True
 ```
 
-Perintah ini memungkinkan penahanan legal pada blob Storage, lalu menunjukkan hasilnya.
+Perintah ini memungkinkan penahanan legal pada blob Storage, lalu menampilkan hasilnya.
 Perintah hanya berfungsi ketika kontainer blob telah mengaktifkan Storage yang tidak dapat diubah dengan penerapan versi.
 
 ### Contoh 2: Nonaktifkan penahanan legal pada blob Storage dengan alur.
@@ -249,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### -TagCondition
-Pernyataan ekspresi Tag opsional untuk memeriksa kondisi kecocokan. Permintaan blob akan gagal ketika tag blob tidak cocok dengan ekspresi yang diberikan. Lihat detail di https://docs.microsoft.com/en-us/rest/api/storageservices/specifying-conditional-headers-for-blob-service-operations#tags-conditional-operations.
+Pernyataan ekspresi Tag opsional untuk memeriksa kondisi kecocokan. Permintaan blob akan gagal ketika tag blob tidak cocok dengan ekspresi yang diberikan. Lihat detailnya di https://docs.microsoft.com/en-us/rest/api/storageservices/specifying-conditional-headers-for-blob-service-operations#tags-conditional-operations.
 
 ```yaml
 Type: System.String

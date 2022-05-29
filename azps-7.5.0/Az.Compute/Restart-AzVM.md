@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/restart-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Restart-AzVM.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Restart-AzVM.md
-ms.openlocfilehash: 9fcb209dd2a520a0e61438cd1954a139b729996c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8531f643004677956f28d54ad759d6290d110746
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144222587"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145733338"
 ---
 # Restart-AzVM
 
 ## SYNOPSIS
 Menghidupkan ulang komputer virtual Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/restart-azvm) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseWorkspacePackage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseWorkspacePackage.md
-ms.openlocfilehash: e2a3192051d4956f5fe7943dadd70e61e75af620
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a684d9961e9119189a9673cba9e3bcd30884db67
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144191203"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145706086"
 ---
 # Remove-AzSynapseWorkspacePackage
 
 ## SYNOPSIS
 Menghapus paket ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/remove-azsynapseworkspacepackage) untuk informasi terbaru.
 
 ## SYNTAX
 

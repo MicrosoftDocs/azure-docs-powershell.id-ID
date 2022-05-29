@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/new-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseWorkspace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseWorkspace.md
-ms.openlocfilehash: dc917dce69298c26f5aca423d8c62aef31e400b0
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c07c3718d2d2d6147b6f7e2b981dd447ac2946cc
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144197324"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145707292"
 ---
 # New-AzSynapseWorkspace
 
 ## SYNOPSIS
 Membuat ruang kerja Synapse Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/new-azsynapseworkspace) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -52,7 +55,7 @@ New-AzSynapseWorkspace -ResourceGroupName ContosoResourceGroup -Name ContosoWork
 
 Perintah pertama membuat konfigurasi jaringan virtual terkelola. Kemudian metode lainnya menggunakan konfigurasi untuk membuat ruang kerja Synapse baru.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $password = ConvertTo-SecureString "Password123!" -AsPlainText -Force
 $creds = New-Object System.Management.Automation.PSCredential ("ContosoUser", $password)
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -GitRepository
-Repositori Git Pengaturan. Koneksi ruang kerja ke repositori untuk kontrol sumber dan kolaborasi untuk bekerja pada alur ruang kerja Anda
+Pengaturan Repositori Git. Koneksi ruang kerja ke repositori untuk kontrol sumber dan kolaborasi untuk bekerja pada alur ruang kerja Anda
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSWorkspaceRepositoryConfiguration

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.kusto/test-azkus
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Test-AzKustoDataConnectionNameAvailability.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Test-AzKustoDataConnectionNameAvailability.md
-ms.openlocfilehash: 529ce2ed2144642bdab101e95806a94a7d3b1415
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9ec4088182067b54fe8d0dfbb75e5d5a184f213c
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144190492"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145693180"
 ---
 # Test-AzKustoDataConnectionNameAvailability
 
 ## SYNOPSIS
 Memeriksa apakah nama koneksi data valid dan belum digunakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.kusto/test-azkustodataconnectionnameavailability) untuk informasi terbaru.
 
 ## SYNTAX
 

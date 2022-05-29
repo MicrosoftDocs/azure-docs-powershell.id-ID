@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.digitaltwins/new
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DigitalTwins/help/New-AzDigitalTwinsEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DigitalTwins/help/New-AzDigitalTwinsEndpoint.md
-ms.openlocfilehash: 67abac08f1f6bb65400035536f563de0a7544a14
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7330ed47b8d7763d9becb60bb4bbd7aa221ad25a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144225718"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145741456"
 ---
 # New-AzDigitalTwinsEndpoint
 
 ## SYNOPSIS
 Membuat atau memperbarui titik akhir DigitalTwinsInstance.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.digitaltwins/new-azdigitaltwinsendpoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -60,7 +63,7 @@ Name                  Type
 youriEventHubEndPoint Microsoft.DigitalTwins/digitalTwinsInstances/endpoints
 ```
 
-Membuat AzDigitalTwinsEndpoint for Eventhub dengan connectionStringPrimaryKey
+Membuat AzDigitalTwinsEndpoint untuk Eventhub dengan connectionStringPrimaryKey
 
 ### Contoh 2: Membuat AzDigitalTwinsEndpoint untuk EventGrid
 ```powershell
@@ -73,7 +76,7 @@ Name                  Type
 youriEventGridPoint Microsoft.DigitalTwins/digitalTwinsInstances/endpoints
 ```
 
-Membuat AzDigitalTwinsEndpoint for Eventhub by TopicEndpoint dan accessKey1
+Membuat AzDigitalTwinsEndpoint untuk Eventhub oleh TopicEndpoint dan accessKey1
 
 ### Contoh 3: Membuat AzDigitalTwinsEndpoint untuk ServiceBus
 ```powershell
@@ -150,9 +153,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DeadLetterSecret
+### -DeadLettersecret
 Rahasia penyimpanan surat mati.
-Akan dikaburkan selama pembacaan.
+Akan dikaburkan selama membaca.
 
 ```yaml
 Type: System.String
@@ -370,7 +373,7 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 ENDPOINTDESCRIPTION <IDigitalTwinsEndpointResource>: Sumber daya titik akhir DigitalTwinsInstance.
   - `EndpointType <EndpointType>`: Jenis titik akhir Digital Twins
-  - `[DeadLetterSecret <String>]`: Rahasia penyimpanan surat mati. Akan dikaburkan selama pembacaan.
+  - `[DeadLetterSecret <String>]`: Rahasia penyimpanan surat mati. Akan dikaburkan selama membaca.
 
 ## RELATED LINKS
 

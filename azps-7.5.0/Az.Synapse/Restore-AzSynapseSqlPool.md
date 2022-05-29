@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/restore-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Restore-AzSynapseSqlPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Restore-AzSynapseSqlPool.md
-ms.openlocfilehash: 2ad4a3464a9adcae341a3b8374b4eb7a136cce3e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ce183b55af0eb5ce8632d322d390c18b93363d73
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144239001"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145705834"
 ---
 # Restore-AzSynapseSqlPool
 
 ## SYNOPSIS
 Memulihkan kumpulan SQL Synapse Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/restore-azsynapsesqlpool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -64,7 +67,7 @@ Restore-AzSynapseSqlPool [-FromDroppedSqlPool] -WorkspaceObject <PSSynapseWorksp
 ```
 
 ## DESCRIPTION
-Cmdlet **Restore-AzSynapseSqlPool** memulihkan kumpulan Azure Synapse Analytics SQL dari cadangan geo-redundan, cadangan kumpulan SQL yang dihapus atau titik pemulihan kumpulan SQL apa pun.
+Cmdlet **Restore-AzSynapseSqlPool** memulihkan kumpulan SQL Azure Synapse Analytics dari cadangan geo-redundan, cadangan kumpulan SQL yang dihapus atau titik pemulihan kumpulan SQL apa pun.
 Kumpulan SQL yang dipulihkan dibuat sebagai kumpulan SQL baru.
 
 ## EXAMPLES
@@ -101,7 +104,7 @@ $restoredPool = Restore-AzSynapseSqlPool -FromBackup -TargetSqlPoolName ContosoR
 
 Perintah ini membuat kumpulan SQL Azure Synapse Analytics yang dipulihkan dari cadangan kumpulan SQL.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 # Transform Synapse dropped SQL pool resource ID to SQL pool resource ID
 $pool = Get-AzSynapseDroppedSqlPool -ResourceGroupName ContosoResourceGroup -WorkspaceName ContosoWorkspace -Name ContosoSqlPool
@@ -112,7 +115,7 @@ $poolId = $poolId -replace "restorableDroppedSqlPools", "sqlPools"
 $restoredPool = Restore-AzSynapseSqlPool -FromDroppedSqlPool -DeletionDate $pool.DeletionDate -TargetSqlPoolName ContosoRestoredSqlPool -ResourceGroupName $pool.ResourceGroupName -WorkspaceName $pool.WorkspaceName -ResourceId $poolId
 ```
 
-Perintah ini membuat kumpulan SQL Azure Synapse Analytics yang dipulihkan dari cadangan kumpulan SQL yang dihapus.
+Perintah ini membuat kumpulan SQL Analitik Azure Synapse yang dipulihkan dari cadangan kumpulan SQL yang dihapus.
 
 ### Contoh 4
 ```powershell
@@ -286,7 +289,7 @@ Accept wildcard characters: False
 ```
 
 ### -RestorePoint
-Waktu rekam jepret untuk dipulihkan.
+Waktu rekam jepret untuk memulihkan.
 
 ```yaml
 Type: System.DateTime

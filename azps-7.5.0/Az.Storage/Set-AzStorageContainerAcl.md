@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/set-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageContainerAcl.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageContainerAcl.md
-ms.openlocfilehash: b5ee44cb9ff810e9f6bfb3207598902abe1cc05a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 023e3132bc4203e4a6fa51eadef24951a2c6410d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144221474"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145714096"
 ---
 # Set-AzStorageContainerAcl
 
 ## SYNOPSIS
 Mengatur izin akses publik ke kontainer penyimpanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/set-azstoragecontaineracl) untuk informasi terbaru.
 
 ## SYNTAX
 

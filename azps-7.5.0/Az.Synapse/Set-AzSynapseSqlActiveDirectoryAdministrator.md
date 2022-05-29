@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/set-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseSqlActiveDirectoryAdministrator.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseSqlActiveDirectoryAdministrator.md
-ms.openlocfilehash: ba8b12c4e434fd3afb298312330f1b0e1d4cc7f5
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 76c486a4483648fe8a94b75da5aaa99616b24760
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144208571"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145705438"
 ---
 # Set-AzSynapseSqlActiveDirectoryAdministrator
 
 ## SYNOPSIS
 Menyediakan administrator Azure AD untuk kumpulan SQL Synapse Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/set-azsynapsesqlactivedirectoryadministrator) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -57,12 +60,12 @@ Set-AzSynapseSqlActiveDirectoryAdministrator -ResourceId <String> -ObjectId <Gui
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzSynapseSqlActiveDirectoryAdministrator** menyediakan administrator Azure Active Directory (Azure AD) untuk Azure Synapse Analytics Workspace dalam langganan saat ini.
+Cmdlet **Set-AzSynapseSqlActiveDirectoryAdministrator** menyediakan administrator Azure Active Directory (Azure AD) untuk ruang kerja Azure Synapse Analytics dalam langganan saat ini.
 Anda hanya dapat menyediakan satu administrator pada satu waktu.
 Anggota Azure AD berikut dapat disediakan sebagai administrator Ruang Kerja Synapse Analytics:
 - Anggota asli Azure AD 
 - Anggota gabungan Azure AD 
-- Anggota yang diimpor dari Azure AD lain yang merupakan anggota asli atau federasi 
+- Anggota yang diimpor dari AZURE AD lain yang merupakan anggota asli atau federasi 
 - Azure AD grup yang dibuat sebagai grup keamanan akun Microsoft, seperti yang ada di domain Outlook.com, Hotmail.com, atau Live.com, tidak didukung sebagai administrator.
 Akun tamu lain, seperti yang ada di domain Gmail.com atau Yahoo.com, tidak didukung sebagai administrator.
 Kami menyarankan agar Anda menyediakan grup Azure AD khusus sebagai administrator.

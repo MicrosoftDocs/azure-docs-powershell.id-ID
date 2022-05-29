@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.diskpool/start-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DiskPool/help/Start-AzDiskPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DiskPool/help/Start-AzDiskPool.md
-ms.openlocfilehash: 5e3b121114d8f5c160b6cfe6f5b6166f9e30e2aa
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2dc8d8bf05a1ba76746901aed909442f1193a724
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144225634"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145740808"
 ---
 # Start-AzDiskPool
 
@@ -18,6 +18,9 @@ ms.locfileid: "144225634"
 Operasi untuk memulai Kumpulan Disk.
 Operasi mulai ini dapat memakan waktu 10 menit untuk diselesaikan.
 Ini adalah perilaku layanan yang diharapkan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.diskpool/start-azdiskpool) untuk informasi terbaru.
 
 ## SYNTAX
 

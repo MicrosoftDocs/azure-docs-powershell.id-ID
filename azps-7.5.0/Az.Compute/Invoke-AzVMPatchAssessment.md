@@ -4,17 +4,20 @@ Module Name: Az.Compute
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Invoke-AzVMPatchAssessment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Invoke-AzVMPatchAssessment.md
-ms.openlocfilehash: d0dd55e3bf8a8721611b540319cba5273d84b49c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 84aae7553324cb803e5009873a93b0f7d8b733da
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144187748"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145734940"
 ---
 # Invoke-AzVMPatchAssessment
 
 ## SYNOPSIS
 Menilai status patch komputer virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/invoke-azvmpatchassessment) untuk informasi terbaru.
 
 ## SYNTAX
 

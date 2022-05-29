@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azav
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzAvailabilitySet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzAvailabilitySet.md
-ms.openlocfilehash: b7eee9369147418a8363b432b2bf2edc6b5b7f5d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a4623f9cc687203b4c1531bd61f3a3a496411811
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144187706"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145734868"
 ---
 # New-AzAvailabilitySet
 
 ## SYNOPSIS
 Membuat set ketersediaan Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/new-azavailabilityset) untuk informasi terbaru.
 
 ## SYNTAX
 

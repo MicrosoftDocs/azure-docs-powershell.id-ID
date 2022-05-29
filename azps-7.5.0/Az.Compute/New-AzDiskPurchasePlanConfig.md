@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azdi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzDiskPurchasePlanConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzDiskPurchasePlanConfig.md
-ms.openlocfilehash: 370c00a7b21fe20384f78f941b9862a3a7c539ca
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2b4f20491e33d34b8e38073fa4b86c500415a0de
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144184766"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145734760"
 ---
 # New-AzDiskPurchasePlanConfig
 
 ## SYNOPSIS
 Membuat Objek PurchasePlan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/new-azdiskpurchaseplanconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ New-AzDisk -ResourceGroupName 'ResourceGroup02' -DiskName 'Disk02' -Disk $diskCo
 $disk = Get-AzDisk -ResourceGroupName 'ResourceGroup02' -DiskName 'Disk02'
 ```
 
-Pelanggan dapat mengatur PurchasePlan di Disk Terkelola.
+Pelanggan dapat mengatur PurchasePlan pada Disk Terkelola.
 
 ## PARAMETERS
 

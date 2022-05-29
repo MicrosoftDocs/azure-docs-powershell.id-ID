@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/stop-azs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Stop-AzStorageAccountHierarchicalNamespaceUpgrade.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Stop-AzStorageAccountHierarchicalNamespaceUpgrade.md
-ms.openlocfilehash: b6a4a8c70bbf0e2d17e51f430310631ff307a540
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3b7ffba57ca73afbc7c222874aaee951e9971fb5
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144247474"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145713628"
 ---
 # Stop-AzStorageAccountHierarchicalNamespaceUpgrade
 
 ## SYNOPSIS
 Membatalkan tugas peningkatan HierarchicalNamespace yang sedang berlangsung di akun penyimpanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/stop-azstorageaccounthierarchicalnamespaceupgrade) untuk informasi terbaru.
 
 ## SYNTAX
 

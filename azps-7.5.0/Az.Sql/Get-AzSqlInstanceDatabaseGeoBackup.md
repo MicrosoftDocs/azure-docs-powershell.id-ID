@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlins
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstanceDatabaseGeoBackup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstanceDatabaseGeoBackup.md
-ms.openlocfilehash: 50ddf643d6309c05c678087feff12a83b6a10d07
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: eddadb5b704009c881ae1d38a46cca38b03f3296
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144210083"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145728118"
 ---
 # Get-AzSqlInstanceDatabaseGeoBackup
 
 ## SYNOPSIS
 Mengembalikan informasi tentang pencadangan redundan database Azure SQL Managed Instance.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlinstancedatabasegeobackup) untuk informasi terbaru.
 
 ## SYNTAX
 

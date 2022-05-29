@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sqlvirtualmachin
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SqlVirtualMachine/SqlVirtualMachine/help/Get-AzSqlVMGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SqlVirtualMachine/SqlVirtualMachine/help/Get-AzSqlVMGroup.md
-ms.openlocfilehash: 06d97df37510399b1fa66348041d1c7adb16d85e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5b37c4108573b4dec796653021fad8de60acaba9
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144234675"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145721242"
 ---
 # Get-AzSqlVMGroup
 
 ## SYNOPSIS
 Mendapatkan satu atau beberapa grup komputer virtual sql.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sqlvirtualmachine/get-azsqlvmgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -53,7 +56,7 @@ test-group ResourceGroup01    Developer SQL2017-WS2016
 group1     ResourceGroup02    Developer SQL2017-WS2016
 ```
 
-Perintah ini mendapatkan informasi tentang semua grup komputer virtual Azure SQL dalam langganan saat ini.
+Perintah ini mendapatkan informasi tentang semua Azure SQL grup komputer virtual dalam langganan saat ini.
 
 ### Contoh 2
 ```powershell
@@ -68,7 +71,7 @@ test-group ResourceGroup01    Developer SQL2017-WS2016
 
 Perintah ini mendapatkan informasi tentang semua Azure SQL grup komputer virtual dalam langganan saat ini yang ditetapkan ke grup sumber daya ResourceGroup01.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzSqlVMGroup -ResourceGroupName "ResourceGroup01" -Name "test-group"
 ```

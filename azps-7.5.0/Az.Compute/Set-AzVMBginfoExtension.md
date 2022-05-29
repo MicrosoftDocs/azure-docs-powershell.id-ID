@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMBginfoExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMBginfoExtension.md
-ms.openlocfilehash: 6c0a4653989c202c51b417f632b9bee21e610081
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a9598170940c30a6893f3bdb5a530a10fbe32571
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144190657"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145732942"
 ---
 # Set-AzVMBginfoExtension
 
 ## SYNOPSIS
 Menambahkan ekstensi BGInfo ke komputer virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azvmbginfoextension) untuk informasi terbaru.
 
 ## SYNTAX
 

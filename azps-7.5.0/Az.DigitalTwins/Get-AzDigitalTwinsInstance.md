@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.digitaltwins/get
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DigitalTwins/help/Get-AzDigitalTwinsInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DigitalTwins/help/Get-AzDigitalTwinsInstance.md
-ms.openlocfilehash: da76af4ed6b4e0d9c548bc6b313513b1f406b32e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2dcfe5833ff50f613d8fb044e326a2857f52555d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144208271"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145741564"
 ---
 # Get-AzDigitalTwinsInstance
 
 ## SYNOPSIS
 Dapatkan sumber daya DigitalTwinsInstances.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.digitaltwins/get-azdigitaltwinsinstance) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -59,7 +62,7 @@ eastus   youriDigitalTwinsTest   Microsoft.DigitalTwins/digitalTwinsInstances
 eastus   youriDigitalTwin        Microsoft.DigitalTwins/digitalTwinsInstances
 ```
 
-Mendapatkan semua DigitalTwinsInstance secara default
+Dapatkan semua DigitalTwinsInstance secara default
 
 ### Contoh 2: Dapatkan
 ```powershell
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DigitalTwins.Models.IDigitalTwinsIdentity

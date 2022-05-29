@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deviceprovisioni
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Get-AzIoTDeviceProvisioningService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Get-AzIoTDeviceProvisioningService.md
-ms.openlocfilehash: 25489fa5b2c8799bb6e0895586c0330d2f7729b4
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 59a258bc47bd104a4dd0c2fad3759615738beb73
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144193054"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145742410"
 ---
 # Get-AzIoTDeviceProvisioningService
 
 ## SYNOPSIS
 Cantumkan semua atau tampilkan detail layanan provisi perangkat Azure IoT Hub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.deviceprovisioningservices/get-aziotdeviceprovisioningservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -65,7 +68,7 @@ myresourcegroup     myiotdps2   westus      myiotdps2.azure-devices-provisioning
 
 Cantumkan semua Azure IoT Hub layanan provisi perangkat di grup sumber daya 'myresourcegroup'.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzIoTDeviceProvisioningService -ResourceGroupName "myresourcegroup" -Name "myiotdps"
 ```

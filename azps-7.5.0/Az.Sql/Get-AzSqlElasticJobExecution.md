@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.sql/get-Azsqlela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlElasticJobExecution.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlElasticJobExecution.md
-ms.openlocfilehash: 63413fde3f4d8ecb3ada24266aa00337d2ec105f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: dbe02059cabf6fc76dd26e19d11414cf8e19b865
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144233345"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145728784"
 ---
 # Get-AzSqlElasticJobExecution
 
 ## SYNOPSIS
 Mendapatkan satu atau beberapa eksekusi pekerjaan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlelasticjobexecution) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -92,7 +95,7 @@ job2    433f798e-f35c-41de-a23c-f2b43801d7b4 Succeeded 6/1/2018 10:11:36 PM 6/1/
 
 Mendapatkan satu atau beberapa eksekusi pekerjaan
 
-### Contoh 3
+### Contoh: 3
 
 Mendapatkan satu atau beberapa eksekusi pekerjaan. (dibuat otomatis)
 
@@ -104,7 +107,7 @@ Get-AzSqlElasticJobExecution -JobExecutionId 00000000-0000-0000-0000-00000000000
 ## PARAMETERS
 
 ### -Aktif
-Filter menurut waktu pembuatan min
+Memfilter menurut waktu pembuatan min
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -CreateTimeMax
-Filter menurut waktu pembuatan min
+Memfilter menurut waktu pembuatan min
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -CreateTimeMin
-Filter menurut waktu pembuatan min
+Memfilter menurut waktu pembuatan min
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -194,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndTimeMax
-Filter menurut waktu pembuatan min
+Memfilter menurut waktu pembuatan min
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -209,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndTimeMin
-Filter menurut waktu pembuatan min
+Memfilter menurut waktu pembuatan min
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]

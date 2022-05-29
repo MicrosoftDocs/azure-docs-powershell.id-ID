@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVMDataDisk.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVMDataDisk.md
-ms.openlocfilehash: c3bf1904904878adc6ab18cd93d91eabb74645cb
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 34635ba83066ee6aeba972d6a50d7b5e68f05cc7
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144241507"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145734418"
 ---
 # New-AzVMDataDisk
 
 ## SYNOPSIS
 Membuat objek disk data lokal untuk komputer virtual atau VM Vmss.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/new-azvmdatadisk) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Cmdlet **New-AzVMDataDisk** membuat objek disk data lokal untuk komputer virtual
 
 ## EXAMPLES
 
-### Contoh 1: Tambahkan disk data terkelola ke VM Vmss.
+### Contoh 1: Tambahkan disk data terkelola ke VM VM.
 ```powershell
 $disk = Get-AzDisk -ResourceGroupName $rgname -DiskName $diskname0
 $datadisk = New-AzVMDataDisk -Caching 'ReadOnly' -Lun 2 -CreateOption Attach -StorageAccountType Standard_LRS -ManagedDiskId $disk.Id
@@ -50,7 +53,7 @@ Update-AzVmssVM -ResourceGroupName "myrg" -VMScaleSetName "myvmss" -InstanceId 0
 Perintah pertama mendapatkan disk terkelola yang ada.
 Perintah berikutnya membuat objek disk data dengan disk terkelola.
 Perintah berikutnya mendapatkan VM Vmss yang ada yang diberikan oleh nama grup sumber daya, nama vmss, dan ID instans.
-Perintah akhir memperbarui VM Vmss dengan menambahkan disk data baru.
+Perintah akhir memperbarui VM VM dengan menambahkan disk data baru.
 
 ### Contoh 2
 
@@ -199,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountType
-Jenis akun disk yang dikelola komputer virtual.
+Jenis akun disk terkelola komputer virtual.
 
 ```yaml
 Type: System.String
@@ -254,7 +257,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.Compute.Models.CachingTypes
 
-### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
 
 ## OUTPUTS
 

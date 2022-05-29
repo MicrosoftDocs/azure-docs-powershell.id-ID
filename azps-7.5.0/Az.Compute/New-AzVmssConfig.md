@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVmssConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVmssConfig.md
-ms.openlocfilehash: d65978fe7c18c34211c2b139db936fe67bd2fad6
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7423027e8ea5d118344e1176d092f13fdfc1c045
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144199771"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145734220"
 ---
 # New-AzVmssConfig
 
 ## SYNOPSIS
 Membuat objek konfigurasi VMSS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/new-azvmssconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -92,7 +95,7 @@ Membuat objek konfigurasi VMSS. (dibuat otomatis)
 New-AzVmssConfig -Location <String> -Overprovision $false -SkuCapacity 2 -SkuName 'Standard_A0' -Tag @{key0="value0";key1=$null;key2="value2"} -UpgradePolicyMode Automatic;
 ```
 
-### Contoh 3
+### Contoh: 3
 
 Membuat objek konfigurasi VMSS. (dibuat otomatis)
 
@@ -106,7 +109,7 @@ New-AzVmssConfig -Location <String> -SkuCapacity 2 -SkuName 'Standard_A0' -Upgra
 ## PARAMETERS
 
 ### -AutomaticRepairAction
-Jenis tindakan perbaikan (ganti, hidupkan ulang, reimage) yang akan digunakan untuk memperbaiki komputer virtual yang tidak sehat dalam set skala. Nilai default adalah ganti.
+Jenis tindakan perbaikan (ganti, hidupkan ulang, reimage) yang akan digunakan untuk memperbaiki komputer virtual yang tidak sehat dalam set skala. Nilai defaultnya adalah ganti.
 
 ```yaml
 Type: System.String
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -AutomaticRepairGracePeriod
-Jumlah waktu di mana perbaikan otomatis ditangguhkan karena perubahan status pada VM. Waktu tenggang dimulai setelah perubahan status selesai. Ini membantu menghindari perbaikan prematur atau tidak disengaja. Durasi waktu harus ditentukan dalam format ISO 8601. Masa tenggang minimum yang diizinkan adalah 30 menit (PT30M), yang juga merupakan nilai default. Masa tenggang maksimum yang diizinkan adalah 90 menit (PT90M).
+Jumlah waktu di mana perbaikan otomatis ditangguhkan karena perubahan status pada VM. Waktu tenggang dimulai setelah perubahan status selesai. Ini membantu menghindari perbaikan dini atau tidak disengaja. Durasi waktu harus ditentukan dalam format ISO 8601. Masa tenggang minimum yang diizinkan adalah 30 menit (PT30M), yang juga merupakan nilai default. Masa tenggang maksimum yang diizinkan adalah 90 menit (PT90M).
 
 ```yaml
 Type: System.String
@@ -241,7 +244,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableSpotRestore
-Mengaktifkan fitur Spot-Try-Restore di mana instans SPOT VMSS yang dikeluarkan akan mencoba dipulihkan secara oportunistik berdasarkan ketersediaan kapasitas dan batasan harga
+Mengaktifkan fitur Spot-Try-Restore di mana instans SPOT VMSS yang dikeluarkan akan dicoba untuk dipulihkan secara oportunistik berdasarkan ketersediaan kapasitas dan batasan harga
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -255,7 +258,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -EnableUltrassD
+### -EnableUltrassd
 Memungkinkan kemampuan untuk memiliki satu atau beberapa disk data terkelola dengan jenis akun penyimpanan UltraSSD_LRS pada set skala komputer virtual.
 Disk terkelola dengan jenis akun penyimpanan UltraSSD_LRS dapat ditambahkan ke VMSS hanya jika properti ini diaktifkan.
 
@@ -372,7 +375,7 @@ Accept wildcard characters: False
 ```
 
 ### -LicenseType
-Tentukan jenis lisensi, yang untuk membawa skenario lisensi Anda sendiri.
+Tentukan jenis lisensi, yaitu untuk membawa skenario lisensi Anda sendiri.
 
 ```yaml
 Type: System.String
@@ -402,7 +405,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxPrice
-Menentukan harga maksimum yang ingin Anda bayar untuk Spot VM/VMSS. Harga ini dalam Dolar AS. Harga ini akan dibandingkan dengan harga Spot saat ini untuk ukuran VM. Selain itu, harga dibandingkan pada saat membuat/memperbarui Spot VM/VMSS dan operasi hanya akan berhasil jika maxPrice lebih besar dari harga Spot saat ini. maxPrice juga akan digunakan untuk mengusir Spot VM/VMSS jika harga Spot saat ini melampaui maxPrice setelah pembuatan VM/VMSS. Nilai yang mungkin adalah: nilai desimal apa pun yang lebih besar dari nol. Contoh: 0,01538.  -1 menunjukkan bahwa Spot VM/VMSS tidak boleh dikeluarkan karena alasan harga. Selain itu, harga maksimum default adalah -1 jika tidak disediakan oleh Anda.
+Menentukan harga maksimum yang bersedia Anda bayar untuk Spot VM/VMSS. Harga ini dalam Dolar AS. Harga ini akan dibandingkan dengan harga Spot saat ini untuk ukuran VM. Selain itu, harga dibandingkan pada saat membuat/memperbarui Spot VM/VMSS dan operasi hanya akan berhasil jika maxPrice lebih besar dari harga Spot saat ini. MaxPrice juga akan digunakan untuk mengusir Spot VM/VMSS jika harga Spot saat ini melampaui maxPrice setelah pembuatan VM/VMSS. Nilai yang mungkin adalah: nilai desimal apa pun yang lebih besar dari nol. Contoh: 0,01538.  -1 menunjukkan bahwa Spot VM/VMSS tidak boleh dikeluarkan karena alasan harga. Selain itu, harga maksimum default adalah -1 jika tidak disediakan oleh Anda.
 
 ```yaml
 Type: System.Double
@@ -602,7 +605,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScaleInPolicy
-Aturan yang harus diikuti saat menskalakan-dalam set skala komputer virtual.  Nilai yang mungkin adalah: 'Default', 'OldestVM' dan 'NewestVM'.  'Default' ketika set skala komputer virtual diskalakan, set skala pertama-tama akan seimbang di seluruh zona jika itu adalah set skala zona.  Kemudian, ini akan diseimbangkan di seluruh Domain Kesalahan sejauh mungkin.  Dalam setiap Domain Kesalahan, komputer virtual yang dipilih untuk dihapus akan menjadi yang terbaru yang tidak dilindungi dari penyempurnaan skala.  'OldestVM' ketika set skala komputer virtual sedang diskalakan, komputer virtual terlama yang tidak terlindungi dari penyempurnaan skala akan dipilih untuk dihapus.  Untuk set skala komputer virtual zonal, set skala pertama-tama akan diseimbangkan di seluruh zona.  Dalam setiap zona, komputer virtual tertua yang tidak dilindungi akan dipilih untuk dihapus.  'NewestVM' ketika set skala komputer virtual sedang diskalakan, komputer virtual terbaru yang tidak dilindungi dari penyempurnaan skala akan dipilih untuk dihapus.  Untuk set skala komputer virtual zonal, set skala pertama-tama akan diseimbangkan di seluruh zona.  Dalam setiap zona, komputer virtual terbaru yang tidak dilindungi akan dipilih untuk dihapus.
+Aturan yang harus diikuti saat menskalakan-dalam set skala komputer virtual.  Nilai yang mungkin adalah: 'Default', 'OldestVM' dan 'NewestVM'.  'Default' ketika set skala komputer virtual diskalakan, set skala akan terlebih dahulu diseimbangkan di seluruh zona jika merupakan set skala zona.  Kemudian, itu akan seimbang di seluruh Domain Kesalahan sejauh mungkin.  Dalam setiap Domain Kesalahan, komputer virtual yang dipilih untuk dihapus akan menjadi yang terbaru yang tidak dilindungi dari penyempurnaan skala.  'OldestVM' ketika set skala komputer virtual sedang diskalakan, komputer virtual terlama yang tidak terlindungi dari penyempurnaan skala akan dipilih untuk dihapus.  Untuk set skala komputer virtual zonal, set skala pertama-tama akan seimbang di seluruh zona.  Dalam setiap zona, komputer virtual terlama yang tidak dilindungi akan dipilih untuk dihapus.  'NewestVM' ketika set skala komputer virtual sedang diskalakan, komputer virtual terbaru yang tidak terlindungi dari penyempurnaan skala akan dipilih untuk dihapus.  Untuk set skala komputer virtual zonal, set skala pertama-tama akan seimbang di seluruh zona.  Dalam setiap zona, komputer virtual terbaru yang tidak dilindungi akan dipilih untuk dihapus.
 
 ```yaml
 Type: System.String[]
@@ -632,7 +635,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkipExtensionsOnOverprovisionedVMs
-Menentukan bahwa ekstensi tidak berjalan pada VM ekstra yang kelebihan provisi.
+Menentukan bahwa ekstensi tidak berjalan pada VM ekstra yang terlalu provisi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -694,7 +697,7 @@ Accept wildcard characters: False
 ```
 
 ### -SpotRestoreTimeout
-Menentukan nilai batas waktu yang dinyatakan sebagai durasi waktu ISO 8601 setelah itu platform tidak akan mencoba memulihkan instans SPOT VMSS
+Menentukan nilai batas waktu yang dinyatakan sebagai durasi waktu ISO 8601 setelah itu platform tidak akan mencoba memulihkan instans VMSS SPOT
 
 ```yaml
 Type: System.String
@@ -740,7 +743,7 @@ Accept wildcard characters: False
 ```
 
 ### -TerminateScheduledEventNotBeforeTimeoutInMinutes
-Durasi waktu yang dapat dikonfigurasi (dalam menit) Komputer Virtual yang dihapus harus berpotensi menyetujui Acara Terjadwal Penghentian sebelum peristiwa disetujui secara otomatis (waktu habis).
+Durasi waktu yang dapat dikonfigurasi (dalam menit) Komputer Virtual yang dihapus harus berpotensi menyetujui Peristiwa Terjadwal Penghentian sebelum peristiwa disetujui secara otomatis (waktu habis).
 
 ```yaml
 Type: System.Int32
@@ -819,7 +822,7 @@ Accept wildcard characters: False
 ```
 
 ### -ZoneBalance
-Apakah akan memaksa distribusi Virtual Machine secara ketat melintasi x-zona jika terjadi pemadaman zona.
+Apakah akan memaksa distribusi Komputer Virtual secara ketat melintasi x-zona jika terjadi pemadaman zona.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

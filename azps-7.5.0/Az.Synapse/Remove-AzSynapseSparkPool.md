@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseSparkPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseSparkPool.md
-ms.openlocfilehash: e0f5d1edb5a8f69e997c8905906be6e8f21bc4a7
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e361a8ea0fb52230f9cd798b5498d1a0226ceef2
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144197100"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145706482"
 ---
 # Remove-AzSynapseSparkPool
 
 ## SYNOPSIS
 Menghapus kumpulan Apache Spark di Azure Synapse Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/remove-azsynapsesparkpool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -63,7 +66,7 @@ $pool | Remove-AzSynapseSparkPool
 
 Perintah ini menghapus kumpulan Apache Spark di Azure Synapse Analytics melalui alur.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 $ws | Remove-AzSynapseSparkPool -Name ContosoSparkPool

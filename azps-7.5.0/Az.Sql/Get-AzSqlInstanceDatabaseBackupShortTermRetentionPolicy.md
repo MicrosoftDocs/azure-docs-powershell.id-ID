@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlins
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstanceDatabaseBackupShortTermRetentionPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstanceDatabaseBackupShortTermRetentionPolicy.md
-ms.openlocfilehash: 81c59c84a3b1ae977db00a3613f6378adae4db29
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: dd5dee03938993a4ba389d0d2170f4189a24f9f1
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144194216"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145728136"
 ---
 # Get-AzSqlInstanceDatabaseBackupShortTermRetentionPolicy
 
 ## SYNOPSIS
 Mendapatkan kebijakan penyimpanan jangka pendek cadangan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlinstancedatabasebackupshorttermretentionpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -74,7 +77,7 @@ RetentionDays     : 7
 
 Perintah ini mendapatkan kebijakan penyimpanan jangka pendek untuk database01 melalui pipa dalam objek database.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzSqlDeletedInstanceDatabaseBackup -ResourceGroupName "ContosoResourceGroup" -InstanceName "ContosoServer" -DatabaseName "DB1" | Get-AzSqlInstanceDatabaseBackupShortTermRetentionPolicy
 ```

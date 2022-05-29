@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sqlvirtualmachin
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SqlVirtualMachine/SqlVirtualMachine/help/New-AzSqlVMGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SqlVirtualMachine/SqlVirtualMachine/help/New-AzSqlVMGroup.md
-ms.openlocfilehash: 34a8ef13add41cd3cccd19382acb51236243ece7
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1df98b02d84f828d12cfa850194794adfd39838c
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144188084"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145721008"
 ---
 # New-AzSqlVMGroup
 
 ## SYNOPSIS
 Membuat grup komputer virtual sql baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sqlvirtualmachine/new-azsqlvmgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -218,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-SQL jenis edisi grup komputer virtual.
+SQL jenis grup komputer virtual.
 
 ```yaml
 Type: System.String

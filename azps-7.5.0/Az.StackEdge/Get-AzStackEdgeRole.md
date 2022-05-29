@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackedge/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Get-AzStackEdgeRole.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Get-AzStackEdgeRole.md
-ms.openlocfilehash: fb3f17e79f9989f49da190e1e40ac9a910c738da
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9aef5f7ef90d7b6c9ffe9bd7b0d553666488ddf4
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144226541"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145720576"
 ---
 # Get-AzStackEdgeRole
 
 ## SYNOPSIS
 Mengambil peran yang tersedia untuk perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.stackedge/get-azstackedgerole) untuk informasi terbaru.
 
 ## SYNTAX
 

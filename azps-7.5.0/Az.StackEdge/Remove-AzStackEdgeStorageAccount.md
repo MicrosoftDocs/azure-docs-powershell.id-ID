@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackedge/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Remove-AzStackEdgeStorageAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Remove-AzStackEdgeStorageAccount.md
-ms.openlocfilehash: e67c9ea3b8f909f6a88b1116354375a333a7c06b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6b40133e7a455059030ef3a36233380cc476a492
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144192144"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145719766"
 ---
 # Remove-AzStackEdgeStorageAccount
 
 ## SYNOPSIS
 Menghapus akun Azure Stack Edge Storage untuk perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.stackedge/remove-azstackedgestorageaccount) untuk informasi terbaru.
 
 ## SYNTAX
 

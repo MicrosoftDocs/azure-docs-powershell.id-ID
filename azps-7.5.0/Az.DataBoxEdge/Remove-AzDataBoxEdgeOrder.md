@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databoxedge/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Remove-AzDataBoxEdgeOrder.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Remove-AzDataBoxEdgeOrder.md
-ms.openlocfilehash: 17ee5824bcf7fc2123ab74198234db2bd32f4465
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 14cd25d117ad1530138d43be2ad899769917536c
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144204674"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145754002"
 ---
 # Remove-AzDataBoxEdgeOrder
 
 ## SYNOPSIS
 Menghapus pesanan untuk perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.databoxedge/remove-azdataboxedgeorder) untuk informasi terbaru.
 
 ## SYNTAX
 

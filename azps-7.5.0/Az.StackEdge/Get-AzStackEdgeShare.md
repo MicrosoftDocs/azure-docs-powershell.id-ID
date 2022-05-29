@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackedge/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Get-AzStackEdgeShare.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Get-AzStackEdgeShare.md
-ms.openlocfilehash: 41647bbfa82ea1e61a87fc0d902928d7cc6ead74
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e8b8bb6ebe088475e55632e341ba31b9b8253ca1
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144226527"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145720522"
 ---
 # Get-AzStackEdgeShare
 
 ## SYNOPSIS
 Mendapatkan berbagi yang tersedia untuk perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.stackedge/get-azstackedgeshare) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,7 +46,7 @@ Get-AzStackEdgeShare [[-Name] <String>] [-DefaultProfile <IAzureContextContainer
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzStackEdgeShare** mendapatkan berbagi yang tersedia untuk perangkat Stack Edge. Jika Nama disediakan, ini akan mendapatkan berbagi menurut Nama.
+Cmdlet **Get-AzStackEdgeShare** mendapatkan berbagi yang tersedia untuk perangkat Stack Edge. Jika Nama disediakan, ini akan mendapatkan berbagi berdasarkan Nama.
 
 ## EXAMPLES
 

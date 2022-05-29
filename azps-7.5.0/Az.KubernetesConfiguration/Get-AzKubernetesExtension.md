@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.kubernetesconfig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KubernetesConfiguration/help/Get-AzKubernetesExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KubernetesConfiguration/help/Get-AzKubernetesExtension.md
-ms.openlocfilehash: b1557d05d18234948b6a47af1afa5f43b586aa6c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7ccc688b81c97de319bb203620d7ee47bb5a86ca
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144247810"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145694152"
 ---
 # Get-AzKubernetesExtension
 
 ## SYNOPSIS
 Mendapatkan Ekstensi Kluster Kubernetes.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.kubernetesconfiguration/get-azkubernetesextension) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -66,7 +69,7 @@ Name                ExtensionType             Version      ProvisioningState Aut
 azps_test_extension microsoft.arcdataservices 1.0.16701001 Succeeded         True                    Stable       azps_test_group
 ```
 
-Mencantumkan Ekstensi Kluster Kubernetes.
+Cantumkan Ekstensi Kluster Kubernetes.
 
 ## PARAMETERS
 
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.KubernetesConfiguration.Models.IKubernetesConfigurationIdentity
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama tidak peka huruf besar/kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 
 ### -SubscriptionId
 Atur ID Langganan Azure.
-Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000)
+Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-00000000000)
 
 ```yaml
 Type: System.String[]
@@ -208,7 +211,7 @@ INPUTOBJECT <IKubernetesConfigurationIdentity>: Parameter Identitas
   - `[OperationId <String>]`: Id operasi
   - `[ResourceGroupName <String>]`: Nama grup sumber daya.
   - `[SourceControlConfigurationName <String>]`: Nama Konfigurasi Kontrol Sumber.
-  - `[SubscriptionId <String>]`: ID langganan Azure. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000)
+  - `[SubscriptionId <String>]`: ID langganan Azure. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-00000000000)
 
 ## RELATED LINKS
 

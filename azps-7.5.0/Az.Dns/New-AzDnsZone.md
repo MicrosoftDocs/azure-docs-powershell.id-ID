@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dns/new-azdnszon
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Dns/Dns/help/New-AzDnsZone.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Dns/Dns/help/New-AzDnsZone.md
-ms.openlocfilehash: 5c647e2c1f3372919803214f190add2c1f79e39c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 15a0d8ec88fe411789ef165aafe0d2525b9a428f
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144188798"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145740448"
 ---
 # New-AzDnsZone
 
 ## SYNOPSIS
 Membuat zona DNS baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dns/new-azdnszone) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -95,7 +98,7 @@ $Zone = New-AzDnsZone -Name "mychild.zone.com" -ResourceGroupName "MyResourceGro
 ```
 
 Perintah ini membuat zona DNS anak baru bernama mychild.zone.com dalam grup sumber daya yang ditentukan dan disimpan dalam variabel $Zone.
-Ini juga menambahkan delegasi di zona DNS induk bernama zone.com seperti yang diteruskan dalam objek ParentZone
+Ini juga menambahkan delegasi di zona DNS induk bernama zone.com seperti yang diteruskan di objek ParentZone
 
 ## PARAMETERS
 
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentZone
-Nama lengkap zona induk untuk menambahkan delegasi (tanpa titik yang mengakhiri).
+Nama lengkap zona induk untuk menambahkan delegasi (tanpa titik penghentian).
 
 ```yaml
 Type: Microsoft.Azure.Commands.Dns.DnsZone
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentZoneName
-Nama lengkap zona induk untuk menambahkan delegasi (tanpa titik yang mengakhiri).
+Nama lengkap zona induk untuk menambahkan delegasi (tanpa titik penghentian).
 
 ```yaml
 Type: System.String
@@ -205,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResolutionVirtualNetwork
-Daftar jaringan virtual dapat menyelesaikan rekaman di zona DNS ini, hanya tersedia untuk zona privat.
+Daftar jaringan virtual dapat mengatasi rekaman di zona DNS ini, hanya tersedia untuk zona privat.
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Azure.Management.Internal.Network.Common.IResourceReference]
@@ -220,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResolutionVirtualNetworkId
-Daftar ID jaringan virtual dapat mengatasi rekaman di zona DNS ini, hanya tersedia untuk zona privat.
+Daftar ID jaringan virtual dapat menyelesaikan rekaman di zona DNS ini, hanya tersedia untuk zona privat.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -321,7 +324,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Collections.Hashtable
 
-### System.Collections.Generic.List'1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Collections.Generic.List'1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
 
 ### System.Collections.Generic.List'1[[Microsoft.Azure.Management.Internal.Network.Common.IResourceReference, Microsoft.Azure.PowerShell.Clients.Network, Version=1.0.0.0, Culture=netral, PublicKeyToken=31bf3856ad364e35]]
 
@@ -330,7 +333,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Dns.DnsZone
 
 ## NOTES
-Anda dapat menggunakan parameter *Konfirmasi* untuk mengontrol apakah cmdlet ini meminta konfirmasi kepada Anda.
+Anda dapat menggunakan parameter *Konfirmasi* untuk mengontrol apakah cmdlet ini meminta konfirmasi.
 Secara default, cmdlet meminta konfirmasi kepada Anda jika variabel $ConfirmPreference Windows PowerShell memiliki nilai Sedang atau lebih rendah.
 Jika Anda menentukan *Konfirmasi* atau *Konfirmasi:$True*, cmdlet ini akan meminta konfirmasi sebelum dijalankan.
 Jika Anda menentukan *Confirm:$False*, cmdlet tidak meminta konfirmasi kepada Anda.

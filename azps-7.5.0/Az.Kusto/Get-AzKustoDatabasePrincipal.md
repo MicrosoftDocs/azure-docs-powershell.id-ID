@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.kusto/get-azkust
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Get-AzKustoDatabasePrincipal.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Get-AzKustoDatabasePrincipal.md
-ms.openlocfilehash: 3e69e7f463fb72b34a26fb608b4a0a8677a23ca0
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f5b6ebc30a2aa3698fa42d48d762fd8d850e3fd1
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144190531"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145693810"
 ---
 # Get-AzKustoDatabasePrincipal
 
 ## SYNOPSIS
 Mengembalikan daftar prinsipal database dari kluster dan database Kusto yang diberikan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.kusto/get-azkustodatabaseprincipal) untuk informasi terbaru.
 
 ## SYNTAX
 

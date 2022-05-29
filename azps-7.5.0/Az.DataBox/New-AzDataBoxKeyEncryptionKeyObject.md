@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.DataBox/new-AzDa
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/New-AzDataBoxKeyEncryptionKeyObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/New-AzDataBoxKeyEncryptionKeyObject.md
-ms.openlocfilehash: 3a5a70b32af2f1e0d73fb71bc4730e96ed9a0432
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ab3bebb3232677ab5cb02784ff8fe3dd1df9c009
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144205118"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145754632"
 ---
 # New-AzDataBoxKeyEncryptionKeyObject
 
 ## SYNOPSIS
 Buat objek dalam memori untuk KeyEncryptionKey.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.databox/new-azdataboxkeyencryptionkeyobject) untuk informasi terbaru.
 
 ## SYNTAX
 

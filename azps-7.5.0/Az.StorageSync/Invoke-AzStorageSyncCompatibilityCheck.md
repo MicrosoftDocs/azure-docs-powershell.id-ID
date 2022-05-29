@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storagesync/invo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Invoke-AzStorageSyncCompatibilityCheck.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Invoke-AzStorageSyncCompatibilityCheck.md
-ms.openlocfilehash: 2dc8bf92326aa7c28505a68442922a2a081cd3cc
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: bf44788414a5cdf005ac7c0435d79a77b757ba13
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144243663"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145712962"
 ---
 # Invoke-AzStorageSyncCompatibilityCheck
 
 ## SYNOPSIS
 Memeriksa potensi masalah kompatibilitas antara sistem Anda dan Azure File Sync.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storagesync/invoke-azstoragesynccompatibilitycheck) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -58,7 +61,7 @@ Invoke-AzStorageSyncCompatibilityCheck C:\DATA -SkipSystemChecks
 
 Perintah ini memeriksa kompatibilitas file dan folder di C:\DATA, tetapi tidak melakukan pemeriksaan kompatibilitas sistem.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $validation = Invoke-AzStorageSyncCompatibilityCheck C:\DATA
 $validation.Results | Select-Object -Property Type, Path, Level, Description, Result | Export-Csv -Path C:\results.csv -Encoding utf8
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -Jalur
-Jalur UNC dari berbagi yang Anda validasi.
+Jalur UNC berbagi yang Anda validasi.
 
 ```yaml
 Type: System.String

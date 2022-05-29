@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/start-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Start-AzStorageFileCopy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Start-AzStorageFileCopy.md
-ms.openlocfilehash: 2fa7c68031a7fdd8bc39b1cc4287d3b4b7516fd6
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: dd8ef26cc612f02626eaa949e83ef46679678285
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144112984"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145713700"
 ---
 # Start-AzStorageFileCopy
 
 ## SYNOPSIS
 Mulai menyalin file sumber.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/start-azstoragefilecopy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -101,11 +104,11 @@ Start-AzStorageFileCopy -AbsoluteUri <String> -DestFile <CloudFile> [-Force] [-S
 
 ## DESCRIPTION
 Cmdlet **Start-AzStorageFileCopy** mulai menyalin file sumber ke file tujuan.
-Cmdlet ini akan memicu salinan blob asinkron, proses salin ditangani oleh server. Jika ini adalah salinan blob lintas akun, tidak ada SLA untuk salinan blob.
+Cmdlet ini akan memicu salinan blob asinkron, proses penyalinan ditangani oleh server. Jika ini adalah salinan blob lintas akun, tidak ada SLA untuk salinan blob.
 
 ## EXAMPLES
 
-### Contoh 1: Mulai operasi salin dari file ke file dengan menggunakan nama berbagi dan nama file
+### Contoh 1: Mulai salin operasi dari file ke file dengan menggunakan nama berbagi dan nama file
 ```
 PS C:\>Start-AzStorageFileCopy -SrcShareName "ContosoShare01" -SrcFilePath "FilePath01" -DestShareName "ContosoShare02" -DestFilePath "FilePath02"
 ```
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClientTimeoutPerRequest
-Menentukan interval waktu habis sisi klien, dalam hitungan detik, untuk satu permintaan layanan.
+Menentukan interval waktu habis sisi klien, dalam detik, untuk satu permintaan layanan.
 Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini mencoba kembali permintaan.
 Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini mengembalikan kesalahan.
 
@@ -377,7 +380,7 @@ Accept wildcard characters: False
 ```
 
 ### -SrcFilePath
-Menentukan jalur file sumber relatif terhadap direktori sumber atau berbagi sumber.
+Menentukan jalur file sumber yang relatif terhadap direktori sumber atau berbagi sumber.
 
 ```yaml
 Type: System.String

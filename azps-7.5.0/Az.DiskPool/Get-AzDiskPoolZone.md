@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.diskpool/get-azd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DiskPool/help/Get-AzDiskPoolZone.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DiskPool/help/Get-AzDiskPoolZone.md
-ms.openlocfilehash: 49772287b6e02d800b1c15a094f34fcbf8001217
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 24bb2fbf79451b3b87b43843cd48a2693e6ad5d9
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144199340"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145741132"
 ---
 # Get-AzDiskPoolZone
 
 ## SYNOPSIS
 Mencantumkan Sku Kumpulan Disk yang tersedia di lokasi Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.diskpool/get-azdiskpoolzone) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlins
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstanceActiveDirectoryOnlyAuthentication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstanceActiveDirectoryOnlyAuthentication.md
-ms.openlocfilehash: 78d2f32df312da54ed822f6dafbd09fceb877e7b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c0f614b8e225f868538331a89d5ca07e86b021fa
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144194258"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145728352"
 ---
 # Get-AzSqlInstanceActiveDirectoryOnlyAuthentication
 
 ## SYNOPSIS
 Mendapatkan autentikasi Azure AD hanya untuk SQL Managed Instance tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlinstanceactivedirectoryonlyauthentication) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzSqlInstanceActiveDirectoryOnlyAuthentication [-ResourceId] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlInstanceActiveDirectoryOnlyAuthentication mendapatkan persyaratan autentikasi** hanya Azure Active Directory (Azure AD) untuk AzureSQL Managed Instance dalam langganan saat ini.
+Cmdlet **Get-AzSqlInstanceActiveDirectoryOnlyAuthentication mendapatkan persyaratan autentikasi** Azure Active Directory (Azure AD) hanya untuk AzureSQL Managed Instance dalam langganan saat ini.
 
 ## EXAMPLES
 
@@ -82,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceName
-Nama Azure SQL Managed Instance autentikasi Azure Active Directory saja yang masuk.
+Nama Azure SQL Managed Instance autentikasi Azure Active Directory saja yang ada.
 
 ```yaml
 Type: System.String

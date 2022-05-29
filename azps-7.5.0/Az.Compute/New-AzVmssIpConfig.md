@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVmssIpConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVmssIpConfig.md
-ms.openlocfilehash: a4ec0ea984ad7264cf2242fb6c0250b82791046c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 06d9859d75f06c4e866ebd3864e1e80eec55a06c
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144220982"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145734184"
 ---
 # New-AzVmssIpConfig
 
 ## SYNOPSIS
 Membuat konfigurasi IP untuk antarmuka jaringan VMSS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/new-azvmssipconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -59,7 +62,7 @@ Perintah menentukan nilai untuk parameter *LoadBalancerInboundNatPoolsId* dan *L
 
 ### -ApplicationGatewayBackendAddressPoolsId
 Menentukan array referensi ke kumpulan alamat backend load balancer.
-Set skala dapat mereferensikan kumpulan alamat backend dari satu penyeimbang muatan publik dan satu internal.
+Set skala dapat mereferensikan kumpulan alamat backend dari satu penyeimbang beban publik dan satu internal.
 Beberapa set skala tidak dapat menggunakan load balancer yang sama.
 
 ```yaml
@@ -91,7 +94,7 @@ Accept wildcard characters: False
 
 ### -DnsSetting
 Pengaturan dns yang akan diterapkan pada alamat publicIP.
-Label nama domain dari pengaturan Dns yang akan diterapkan pada alamat publicIP.
+Label nama domain pengaturan Dns yang akan diterapkan pada alamat publicIP.
 Perangkaian label nama domain dan indeks vm akan menjadi label nama domain dari sumber daya Alamat IP Publik yang akan dibuat.
 
 ```yaml
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 
 ### -LoadBalancerBackendAddressPoolsId
 Menentukan array referensi ke kumpulan terjemahan alamat jaringan (NAT) masuk dari load balancer.
-Set skala dapat mereferensikan kumpulan NAT masuk dari satu publik dan satu penyeimbang beban internal.
+Set skala dapat mereferensikan kumpulan NAT masuk dari satu penyeimbang beban publik dan satu internal.
 Beberapa set skala tidak dapat menggunakan load balancer yang sama.
 
 ```yaml
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 
 ### -LoadBalancerInboundNatPoolsId
 Menentukan array referensi ke kumpulan NAT masuk dari load balancer.
-Set skala dapat mereferensikan kumpulan NAT masuk dari satu publik dan satu penyeimbang beban internal.
+Set skala dapat mereferensikan kumpulan NAT masuk dari satu penyeimbang beban publik dan satu internal.
 Beberapa set skala tidak dapat menggunakan load balancer yang sama.
 
 ```yaml

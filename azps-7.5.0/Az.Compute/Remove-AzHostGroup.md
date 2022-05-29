@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzHostGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzHostGroup.md
-ms.openlocfilehash: 3ee5af048a3c1bdc0b6c33734e5b35c546cc7577
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2d682a8ab559a14a30701e4b6ef083ab00148bbf
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144196680"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145733932"
 ---
 # Remove-AzHostGroup
 
 ## SYNOPSIS
 Menghapus grup host.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/remove-azhostgroup) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dns/get-azdnszon
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Dns/Dns/help/Get-AzDnsZone.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Dns/Dns/help/Get-AzDnsZone.md
-ms.openlocfilehash: ce4345bf091ab83b6007496b63abde662673f47f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2f3ec8a8218951cdd5fb14e42386958fb9ffd28e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144188851"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145740556"
 ---
 # Get-AzDnsZone
 
 ## SYNOPSIS
 Mendapatkan zona DNS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dns/get-azdnszone) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Get-AzDnsZone [-Name <String>] -ResourceGroupName <String> [-DefaultProfile <IAz
 ## DESCRIPTION
 Cmdlet **Get-AzDnsZone** mendapatkan zona Sistem Nama Domain (DNS) dari grup sumber daya yang ditentukan.
 Jika Anda menentukan parameter *Nama* , satu objek **DnsZone** dikembalikan.
-Jika Anda tidak menentukan parameter *Nama* , array yang berisi semua zona dalam grup sumber daya yang ditentukan akan dikembalikan.
+Jika Anda tidak menentukan parameter *Nama* , array yang berisi semua zona dalam grup sumber daya yang ditentukan dikembalikan.
 Anda bisa menggunakan objek **DnsZone** untuk memperbarui zona, misalnya Anda bisa menambahkan objek **RecordSet** ke dalamnya.
 
 ## EXAMPLES

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.managedserviceid
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServiceIdentity/help/Update-AzUserAssignedIdentity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServiceIdentity/help/Update-AzUserAssignedIdentity.md
-ms.openlocfilehash: f03e8950b7b83c045cf47f2d71c68fa25b172767
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a76dfbf8724a218cf791dfe5cb0264b2067216e4
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144112382"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145691686"
 ---
 # Update-AzUserAssignedIdentity
 
 ## SYNOPSIS
-Perbarui identitas dalam langganan dan grup sumber daya yang ditentukan.
+Perbarui identitas dalam grup langganan dan sumber daya yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.managedserviceidentity/update-azuserassignedidentity) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Update-AzUserAssignedIdentity -InputObject <IManagedServiceIdentity> [-Location 
 ```
 
 ## DESCRIPTION
-Perbarui identitas dalam langganan dan grup sumber daya yang ditentukan.
+Perbarui identitas dalam grup langganan dan sumber daya yang ditentukan.
 
 ## EXAMPLES
 
@@ -77,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ManagedServiceIdentity.Models.IManagedServiceIdentity

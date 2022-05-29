@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseSqlPoolRestorePoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseSqlPoolRestorePoint.md
-ms.openlocfilehash: 8736feb60645de38efff123b2300db8dfbe2ef4e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7b3fe8bacff2ef5a193e2b9858d9bf1f787c5ee7
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144109168"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145706410"
 ---
 # Remove-AzSynapseSqlPoolRestorePoint
 
 ## SYNOPSIS
 Menghapus titik pemulihan kumpulan SQL Synapse Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/remove-azsynapsesqlpoolrestorepoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -65,7 +68,7 @@ $pool | Remove-AzSynapseSqlPoolRestorePoint -Name ContosoSqlPoolRestorePointCrea
 
 Perintah ini menghapus Azure Synapse Analytics SQL titik pemulihan kumpulan melalui alur.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $points = Get-AzSynapseSqlPoolRestorePoint -WorkspaceName ContosoWorkspace -Name ContosoSqlPool
 $points[index] | Remove-AzSynapseSqlPoolRestorePoint

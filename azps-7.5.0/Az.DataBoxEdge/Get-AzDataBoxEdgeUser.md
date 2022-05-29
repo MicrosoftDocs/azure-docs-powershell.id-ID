@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databoxedge/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Get-AzDataBoxEdgeUser.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Get-AzDataBoxEdgeUser.md
-ms.openlocfilehash: 6c4a902b66a9aeb71a450d39d98e8f41e4d5b2ee
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 653a95c36b2d5925118d1f2ee51cf01905152ef3
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144204890"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145754326"
 ---
 # Get-AzDataBoxEdgeUser
 
 ## SYNOPSIS
 Mendapatkan pengguna yang dikonfigurasi untuk perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.databoxedge/get-azdataboxedgeuser) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Nama pengguna
+Nama Pengguna
 
 ```yaml
 Type: System.String

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlser
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerRecommendedAction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerRecommendedAction.md
-ms.openlocfilehash: e859fbdbdfb2a777b73e3bded177b7bbb4e61138
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 813cfe545b32f99000623c6d544e1db13a4cc6b5
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144221738"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145727002"
 ---
 # Get-AzSqlServerRecommendedAction
 
 ## SYNOPSIS
-Mendapatkan satu atau beberapa tindakan yang direkomendasikan untuk Azure SQL Server Advisor.
+Mendapatkan satu atau beberapa tindakan yang direkomendasikan untuk Advisor Server Azure SQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlserverrecommendedaction) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Get-AzSqlServerRecommendedAction [-RecommendedActionName <String>] -ServerName <
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlServerRecommendedAction** mendapatkan satu atau beberapa tindakan yang direkomendasikan untuk Azure SQL Server Advisor.
+Cmdlet **Get-AzSqlServerRecommendedAction** mendapatkan satu atau beberapa tindakan yang direkomendasikan untuk Advisor Server Azure SQL.
 
 ## EXAMPLES
 
@@ -126,7 +129,7 @@ ValidSince                 : 4/21/2016 3:24:47 PM
 
 Perintah ini mendapatkan daftar semua tindakan yang direkomendasikan untuk SQL Server Advisor bernama CreateIndex yang tersedia untuk server bernama wi-runner-australia-east.
 
-### Contoh 2: Mendapatkan satu tindakan yang direkomendasikan untuk Advisor
+### Contoh 2: Dapatkan satu tindakan yang direkomendasikan untuk Advisor
 ```powershell
 Get-AzSqlServerRecommendedAction -ResourceGroupName "WIRunnersProd" -ServerName "wi-runner-australia-east" -AdvisorName "CreateIndex" -RecommendedActionName 
 IR_[test_schema]_[test_table_0.0361551]_6C7AE8CC9C87E7FD5893
@@ -168,7 +171,7 @@ Perintah ini mendapatkan tindakan yang direkomendasikan bernama IR_\[test_schema
 ## PARAMETERS
 
 ### -AdvisorName
-Menentukan nama advisor yang cmdlet ini meminta tindakan.
+Menentukan nama penasihat yang cmdlet ini meminta tindakan.
 
 ```yaml
 Type: System.String
@@ -254,7 +257,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Sql.RecommendedAction.Model.AzureSqlServerRecommendedActionModel
 
 ## NOTES
-* Kata kunci: azure, azurerm, arm, sumber daya, manajemen, manajer, sql, server, mssql, advisor, recommendedaction
+* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sql, server, mssql, advisor, recommendedaction
 
 ## RELATED LINKS
 

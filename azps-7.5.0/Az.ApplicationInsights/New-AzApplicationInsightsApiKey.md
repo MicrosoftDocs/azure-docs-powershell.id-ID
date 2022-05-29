@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.applicationinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/New-AzApplicationInsightsApiKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/New-AzApplicationInsightsApiKey.md
-ms.openlocfilehash: c742e783cf747f344ed593e07bb960eb2b40ec09
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b2a006b2c4ee18aeea063b7147beebe1100b967d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144231626"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145685344"
 ---
 # New-AzApplicationInsightsApiKey
 
 ## SYNOPSIS
-Membuat kunci api application insights untuk sumber daya application insights
+Membuat kunci api wawasan aplikasi untuk sumber daya application insights
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.applicationinsights/new-azapplicationinsightsapikey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ New-AzApplicationInsightsApiKey [-ResourceId] <String> [-Permissions] <String[]>
 ```
 
 ## DESCRIPTION
-Membuat kunci api application insights untuk sumber daya application insights
+Membuat kunci api wawasan aplikasi untuk sumber daya wawasan aplikasi
 
 ## EXAMPLES
 
@@ -57,7 +60,7 @@ Permissions : {ReadTelemetry, WriteAnnotations}
 Description : testapiKey
 ```
 
-Buat deskripsi kunci api application insights sebagai "testapiKey" dengan izin "ReadTelemetry", "WriteAnnotations" untuk sumber daya "pengujian" di grup sumber daya "testGroup".
+Buat deskripsi kunci api application insights sebagai "testapiKey" dengan izin "ReadTelemetry", "WriteAnnotations" untuk "pengujian" sumber daya dalam grup sumber daya "testGroup".
 
 ## PARAMETERS
 
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -Izin
-Izin yang memungkinkan kunci API untuk melakukan aplikasi.
+Izin yang memungkinkan kunci API untuk dilakukan aplikasi.
 
 ```yaml
 Type: System.String[]
