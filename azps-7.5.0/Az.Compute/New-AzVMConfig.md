@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVMConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVMConfig.md
-ms.openlocfilehash: bab6fad772a9e948685f9a0423b844435b3b835a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4a259f962e623cb6327a561dc918670aed1a1483
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144241510"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145798118"
 ---
 # New-AzVMConfig
 
 ## SYNOPSIS
 Membuat objek komputer virtual yang dapat dikonfigurasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/new-azvmconfig) untuk informasi terbaru.
 
 ## SYNTAX
 

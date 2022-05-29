@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.functions/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Get-AzFunctionAppSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Get-AzFunctionAppSetting.md
-ms.openlocfilehash: c08f65b50f72755265f57266d1adf4eace0fb307
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 397ba406f1554887925dbf6d9f230f6d5c8eec67
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144238738"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145788022"
 ---
 # Get-AzFunctionAppSetting
 
 ## SYNOPSIS
 Mendapatkan pengaturan aplikasi untuk aplikasi fungsi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.functions/get-azfunctionappsetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ Mendapatkan pengaturan aplikasi untuk aplikasi fungsi.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan pengaturan aplikasi dari aplikasi fungsi.
+### Contoh 1: Mendapatkan pengaturan aplikasi aplikasi fungsi.
 ```powershell
 Get-AzFunctionAppSetting -Name MyAppName -ResourceGroupName MyResourceGroupName
 ```
@@ -177,9 +180,9 @@ INPUTOBJECT <ISite>:
   - `[Tag <IResourceTags>]`: Tag sumber daya.
     - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
   - `[ClientAffinityEnabled <Boolean?>]`: <code>true</code> untuk mengaktifkan afinitas klien; <code>false</code> untuk berhenti mengirim cookie afinitas sesi, yang merutekan permintaan klien dalam sesi yang sama ke instans yang sama. Defaultnya adalah <code>true</code>.
-  - `[ClientCertEnabled <Boolean?>]`: <code>true</code> untuk mengaktifkan autentikasi sertifikat klien (autentikasi timbal balik TLS); jika tidak, <code>false</code>. Defaultnya adalah <code>false</code>.
+  - `[ClientCertEnabled <Boolean?>]`: <code>true</code> untuk mengaktifkan autentikasi sertifikat klien (autentikasi bersama TLS); jika tidak, <code>false</code>. Defaultnya adalah <code>false</code>.
   - `[ClientCertExclusionPath <String>]`: jalur pengecualian yang dipisahkan koma autentikasi sertifikat klien
-  - `[CloningInfoAppSettingsOverride <ICloningInfoAppSettingsOverrides>]`: Penimpaan pengaturan aplikasi untuk aplikasi kloning. Jika ditentukan, pengaturan ini mengambil alih pengaturan yang dikloning dari aplikasi sumber. Jika tidak, pengaturan aplikasi dari aplikasi sumber dipertahankan.
+  - `[CloningInfoAppSettingsOverride <ICloningInfoAppSettingsOverrides>]`: Penimpaan pengaturan aplikasi untuk aplikasi kloning. Jika ditentukan, pengaturan ini akan mengambil alih pengaturan yang dikloning dari aplikasi sumber. Jika tidak, pengaturan aplikasi dari aplikasi sumber dipertahankan.
     - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
   - `[CloningInfoCloneCustomHostName <Boolean?>]`: <code>true</code> untuk mengkloning nama host kustom dari aplikasi sumber; jika tidak, <code>false</code>.
   - `[CloningInfoCloneSourceControl <Boolean?>]`: <code>true</code> untuk mengkloning kontrol sumber dari aplikasi sumber; jika tidak, <code>false</code>.
@@ -189,8 +192,8 @@ INPUTOBJECT <ISite>:
   - `[CloningInfoOverwrite <Boolean?>]`: <code>true</code> untuk menimpa aplikasi tujuan; jika tidak, <code>false</code>.
   - `[CloningInfoSourceWebAppId <String>]`: ID sumber daya ARM dari aplikasi sumber. ID sumber daya aplikasi adalah formulir /subscriptions/{subId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Web/sites/{siteName} untuk slot produksi dan /subscriptions/{subId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Web/sites/{siteName}/slots/{slotName} untuk slot lain.
   - `[CloningInfoSourceWebAppLocation <String>]`: Lokasi aplikasi sumber misalnya: US Barat atau Eropa Utara
-  - `[CloningInfoTrafficManagerProfileId <String>]`: ID sumber daya ARM dari profil Traffic Manager yang akan digunakan, jika ada. Traffic Manager ID sumber daya adalah formulir /subscriptions/{subId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/trafficManagerProfiles/{profileName}.
-  - `[CloningInfoTrafficManagerProfileName <String>]`: Nama profil Traffic Manager yang akan dibuat. Ini hanya diperlukan jika profil Traffic Manager belum ada.
+  - `[CloningInfoTrafficManagerProfileId <String>]`: ID sumber daya ARM dari profil Traffic Manager untuk digunakan, jika ada. Traffic Manager ID sumber daya adalah formulir /subscriptions/{subId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/trafficManagerProfiles/{profileName}.
+  - `[CloningInfoTrafficManagerProfileName <String>]`: Nama profil Traffic Manager untuk dibuat. Ini hanya diperlukan jika profil Traffic Manager belum ada.
   - `[Config <ISiteConfig>]`: Konfigurasi aplikasi.
     - `[ActionMinProcessExecutionTime <String>]`: Waktu minimum proses harus dijalankan sebelum mengambil tindakan
     - `[ActionType <AutoHealActionType?>]`: Tindakan yang telah ditentukan sebelumnya yang akan diambil.
@@ -207,24 +210,24 @@ INPUTOBJECT <ISite>:
       - `[ConnectionString <String>]`: Nilai string koneksi.
       - `[Name <String>]`: Nama string koneksi.
       - `[Type <ConnectionStringType?>]`: Jenis database.
-    - `[CorAllowedOrigin <String[]>]`: Mendapatkan atau mengatur daftar asal yang harus diizinkan untuk melakukan panggilan lintas asal (misalnya: http://example.com:12345). Gunakan "*" untuk mengizinkan semua.
-    - `[CorSupportCredentials <Boolean?>]`: Mendapatkan atau menetapkan apakah permintaan CORS dengan kredensial diizinkan. Lihat         https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS#Requests_with_credentials         untuk detail selengkapnya.
+    - `[CorAllowedOrigin <String[]>]`: Mendapatkan atau menetapkan daftar asal yang harus diizinkan untuk melakukan panggilan lintas asal (misalnya: http://example.com:12345). Gunakan "*" untuk mengizinkan semua.
+    - `[CorSupportCredentials <Boolean?>]`: Mendapatkan atau mengatur apakah permintaan CORS dengan kredensial diizinkan. Lihat         https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS#Requests_with_credentials         untuk detail selengkapnya.
     - `[CustomActionExe <String>]`: Dapat dieksekusi untuk dijalankan.
     - `[CustomActionParameter <String>]`: Parameter untuk executable.
     - `[DefaultDocument <String[]>]`: Dokumen default.
     - `[DetailedErrorLoggingEnabled <Boolean?>]`: <code>true</code> jika pencatatan kesalahan terperinci diaktifkan; jika tidak, <code>false</code>.
     - `[DocumentRoot <String>]`: Akar dokumen.
-    - `[DynamicTagsJson <String>]`: Mendapatkan atau menetapkan string JSON yang berisi daftar tag dinamis yang akan dievaluasi dari klaim pengguna di titik akhir pendaftaran push.
+    - `[DynamicTagsJson <String>]`: Mendapatkan atau menetapkan string JSON yang berisi daftar tag dinamis yang akan dievaluasi dari klaim pengguna di titik akhir pendaftaran pendorongan.
     - `[ExperimentRampUpRule <IRampUpRule[]>]`: Daftar aturan ramp-up.
       - `[ActionHostName <String>]`: Nama host slot tempat lalu lintas akan dialihkan jika diputuskan. Mis. myapp-stage.azurewebsites.net.
       - `[ChangeDecisionCallbackUrl <String>]`: Algoritma keputusan kustom dapat disediakan di ekstensi situs TiPCallback url mana yang dapat ditentukan. Lihat Ekstensi situs TiPCallback untuk perancah dan kontrak.         https://www.siteextensions.net/packages/TiPCallback/
       - `[ChangeIntervalInMinute <Int32?>]`: Menentukan interval dalam menit untuk mengevaluasi ulang ReroutePercentage.
-      - `[ChangeStep <Double?>]`: Dalam skenario peningkatan otomatis, ini adalah langkah untuk menambahkan/menghapus dari <code>ReroutePercentage</code> sampai mencapai \n<code>MinReroutePercentage</code> atau         <code>MaxReroutePercentage</code>. Metrik situs diperiksa setiap N menit yang ditentukan dalam <code>ChangeIntervalInMinutes</code>algoritma keputusan kustom .\ndapat disediakan di ekstensi situs TiPCallback url mana yang dapat ditentukan di <code>ChangeDecisionCallbackUrl</code>.
-      - `[MaxReroutePercentage <Double?>]`: Menentukan batas atas di bawah tempat ReroutePercentage akan tetap ada.
-      - `[MinReroutePercentage <Double?>]`: Menentukan batas bawah di atas mana ReroutePercentage akan tetap ada.
+      - `[ChangeStep <Double?>]`: Dalam skenario peningkatan otomatis, ini adalah langkah untuk menambahkan/menghapus dari <code>ReroutePercentage</code> sampai mencapai \n<code>MinReroutePercentage</code> atau         <code>MaxReroutePercentage</code>. Metrik situs diperiksa setiap N menit yang ditentukan dalam <code>ChangeIntervalInMinutes</code>algoritma keputusan .\nKustom dapat disediakan di ekstensi situs TiPCallback yang URLnya dapat ditentukan di <code>ChangeDecisionCallbackUrl</code>.
+      - `[MaxReroutePercentage <Double?>]`: Menentukan batas atas di bawah reroutePercentage yang akan tetap ada.
+      - `[MinReroutePercentage <Double?>]`: Menentukan batas bawah di atas reroutePercentage mana yang akan tetap ada.
       - `[Name <String>]`: Nama aturan perutean. Nama yang direkomendasikan adalah menunjuk ke slot yang akan menerima lalu lintas dalam eksperimen.
       - `[ReroutePercentage <Double?>]`: Persentase lalu lintas yang akan dialihkan ke <code>ActionHostName</code>.
-    - `[FtpsState <FtpsState?>]`: Status layanan FTP/FTPS
+    - `[FtpsState <FtpsState?>]`: Status layanan FTP / FTPS
     - `[HandlerMapping <IHandlerMapping[]>]`: Pemetaan handler.
       - `[Argument <String>]`: Argumen baris perintah yang akan diteruskan ke prosesor skrip.
       - `[Extension <String>]`: Permintaan dengan ekstensi ini akan ditangani menggunakan aplikasi FastCGI yang ditentukan.

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.frontdoor/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorRulesEngineMatchConditionObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorRulesEngineMatchConditionObject.md
-ms.openlocfilehash: 1720e47e2581fafde0e5441a776d1d68ebe0c0be
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 060be6157483211d9f310399d33b179d899eb1e6
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144208247"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145788122"
 ---
 # New-AzFrontDoorRulesEngineMatchConditionObject
 
 ## SYNOPSIS
 Buat objek PSRulesEngineMatchCondition untuk membuat aturan mesin aturan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoorrulesenginematchconditionobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ NegateCondition          : False
 Transform                : {Lowercase, Uppercase}
 ```
 
-Hebatkan objek PSRulesEngineMatchCondition baru.
+Agungkan objek PSRulesEngineMatchCondition baru.
 
 ## PARAMETERS
 
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -NegateCondition
-Menjelaskan apakah ini adalah kondisi negasi atau tidak
+Menjelaskan apakah ini meniadakan kondisi atau tidak
 
 ```yaml
 Type: System.Boolean
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -Operator
-Menjelaskan operator untuk diterapkan pada kondisi pencocokan.
+Menjelaskan operator untuk diterapkan pada kondisi kecocokan.
 Nilai yang mungkin adalah Any, IPMatch, GeoMatch, Equal, Contains, LessThan, GreaterThan, LessThanOrEqual, GreaterThanOrEqual, BeginsWith, EndsWith.
 
 ```yaml
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -Transformasi
-Daftar transformasi apa yang diterapkan sebelum pencocokan. Nilai transformasi individual yang mungkin adalah Huruf kecil, Huruf Besar, Pangkas, UrlDecode, UrlEncode, RemoveNulls.
+Daftar transformasi apa yang diterapkan sebelum pencocokan. Nilai transformasi individual yang mungkin adalah Huruf Kecil, Huruf Besar, Pangkas, UrlDecode, UrlEncode, RemoveNulls.
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSTransform[]

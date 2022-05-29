@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayAvailableWafRuleSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayAvailableWafRuleSet.md
-ms.openlocfilehash: 67890f89e4858f106b2aacb201da4664f2e37b2f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c8ea6e4cb9cdea9d34a1ea2f3ef8efaf8f01352f
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144188529"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145809828"
 ---
 # Get-AzApplicationGatewayAvailableWafRuleSet
 
 ## SYNOPSIS
 Mendapatkan semua seperangkat aturan firewall aplikasi web yang tersedia.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azapplicationgatewayavailablewafruleset) untuk informasi terbaru.
 
 ## SYNTAX
 

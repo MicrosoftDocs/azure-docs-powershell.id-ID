@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/enable
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Enable-AzHDInsightAzureMonitor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Enable-AzHDInsightAzureMonitor.md
-ms.openlocfilehash: 1c28ca32a7cdb36e212190ef9381e5b47eb37ef1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9407d4087fb72c59dbbea4880f0aaaa3e67a41f8
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144212522"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145795688"
 ---
 # Enable-AzHDInsightAzureMonitor
 
 ## SYNOPSIS
 Mengaktifkan Azure Monitor dalam kluster HDInsight tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/enable-azhdinsightazuremonitor) untuk informasi terbaru.
 
 ## SYNTAX
 

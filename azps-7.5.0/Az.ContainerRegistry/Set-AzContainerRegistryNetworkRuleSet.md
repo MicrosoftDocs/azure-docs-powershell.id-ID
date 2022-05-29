@@ -5,21 +5,24 @@ online version: https://docs.microsoft.com/powershell/module/az.containerregistr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Set-AzContainerRegistryNetworkRuleSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Set-AzContainerRegistryNetworkRuleSet.md
-ms.openlocfilehash: eccb01d127cc7423256c2fb617acb0f539e5fbfd
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 18976f691639db3e9059985ab596010549f2b0b3
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144243274"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145816632"
 ---
 # Set-AzContainerRegistryNetworkRuleSet
 
 ## SYNOPSIS
 Membuat atau memperbarui seperangkat aturan jaringan. Seperangkat aturan hanya dapat diterapkan ke registri "Premium".
 
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.containerregistry/set-azcontainerregistrynetworkruleset) untuk informasi terbaru.
+
 ## SYNTAX
 
-### AddAddNetworkRuleWithoutInputObject (Default)
+### TambahkanAddNetworkRuleWithoutInputObject (Default)
 ```
 Set-AzContainerRegistryNetworkRuleSet -DefaultAction <String> [-NetworkRule <IPSNetworkRule[]>]
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]

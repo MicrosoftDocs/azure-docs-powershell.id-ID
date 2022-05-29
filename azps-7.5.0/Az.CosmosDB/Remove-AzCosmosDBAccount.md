@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Remove-AzCosmosDBAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Remove-AzCosmosDBAccount.md
-ms.openlocfilehash: b9dead288d48fffc63cc2cd7da25d3d4e2712adf
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 64e91af1f1748b4408a0417f0b32a0160d0f6472
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144206843"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145796012"
 ---
 # Remove-AzCosmosDBAccount
 
 ## SYNOPSIS
 Menghapus Akun CosmosDB.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/remove-azcosmosdbaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Remove-AzCosmosDBAccount -InputObject <PSDatabaseAccountGetResults> [-AsJob] [-P
 ```
 
 ## DESCRIPTION
-Hapus Akun CosmosDB dengan Nama tertentu di ResourceGroup tertentu.
+Hapus Akun CosmosDB dengan Nama tertentu di ResourceGroup yang diberikan.
 
 ## EXAMPLES
 

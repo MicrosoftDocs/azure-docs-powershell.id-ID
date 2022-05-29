@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Remove-AzKeyVaultAccessPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Remove-AzKeyVaultAccessPolicy.md
-ms.openlocfilehash: e4b38c8900dc29c28bb77be50964bd8e41fb4fc8
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 33fdd51476087074221d4b26fa38f5ca70daf7f5
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144190576"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145811970"
 ---
 # Remove-AzKeyVaultAccessPolicy
 
 ## SYNOPSIS
 Menghapus semua izin untuk pengguna atau aplikasi dari brankas kunci.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/remove-azkeyvaultaccesspolicy) untuk informasi terbaru.
 
 ## SYNTAX
 

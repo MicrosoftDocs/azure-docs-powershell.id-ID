@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.maps/get-azmapsc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/Get-AzMapsCreator.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/Get-AzMapsCreator.md
-ms.openlocfilehash: 5c6ccf4b1d6195497b44c889d54859bc4d1b5e41
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a02137acba3f5596513ce1c5d83579204092d81d
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144212318"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145811304"
 ---
 # Get-AzMapsCreator
 
 ## SYNOPSIS
 Dapatkan sumber daya Peta Creator.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.maps/get-azmapscreator) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -65,9 +68,9 @@ Location Name       Type
 eastus2  creator-01 Microsoft.Maps/accounts/creators
 ```
 
-Perintah ini mendapatkan sumber daya Peta Creator.
+Perintah ini mendapatkan sumber daya Pembuat Peta.
 
-### Contoh 3: Mendapatkan sumber daya Peta Creator berdasarkan alur
+### Contoh 3: Mendapatkan sumber daya pembuat Peta menurut alur
 ```powershell
 New-AzMapsCreator -ResourceGroupName azure-rg-test -AccountName pwsh-mapsAccount02 -Name creator-01 -Location eastus2 -StorageUnit 3 | Get-AzMapsCreator
 ```
@@ -78,7 +81,7 @@ Location Name       Type
 eastus2  creator-01 Microsoft.Maps/accounts/creators
 ```
 
-Perintah ini mendapatkan sumber daya Peta Creator berdasarkan alur.
+Perintah ini mendapatkan sumber daya pembuat Peta menurut alur.
 
 ## PARAMETERS
 
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Maps.Models.IMapsIdentity
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -197,7 +200,7 @@ INPUTOBJECT <IMapsIdentity>: Parameter Identitas
   - `[AccountName <String>]`: Nama Akun Peta.
   - `[CreatorName <String>]`: Nama instans Peta Creator.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
 
 ## RELATED LINKS

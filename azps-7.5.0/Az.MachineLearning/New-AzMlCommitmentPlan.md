@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.machinelearning/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MachineLearning/MachineLearning/help/New-AzMlCommitmentPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MachineLearning/MachineLearning/help/New-AzMlCommitmentPlan.md
-ms.openlocfilehash: c516a3c219473ba288b016974689d04760a60519
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 87d0d2df66f618d025af73472b4cc20cfbae61c6
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144224546"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145804902"
 ---
 # New-AzMlCommitmentPlan
 
 ## SYNOPSIS
 Membuat rencana komitmen baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.machinelearning/new-azmlcommitmentplan) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.maps/update-azma
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/Update-AzMapsCreator.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/Update-AzMapsCreator.md
-ms.openlocfilehash: 614cae9c7e1bae56def0f111d0a1ab5f30dce5a0
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 29fbada47c810cae8789a97aa1e26e5cc59c7a3f
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144236971"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145794547"
 ---
 # Update-AzMapsCreator
 
 ## SYNOPSIS
 Memperbarui sumber daya Peta Creator.
 Hanya subset parameter yang dapat diperbarui setelah pembuatan, seperti Tag.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.maps/update-azmapscreator) untuk informasi terbaru.
 
 ## SYNTAX
 

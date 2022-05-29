@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.Logz/new-AzLogzV
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/New-AzLogzVMResourcesObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/New-AzLogzVMResourcesObject.md
-ms.openlocfilehash: 8e74505d12d1bd2c8fc4b7945fce83efb326acba
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e9ec15fc0ef607cc4bfac43b763c54c50b90f5b8
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144192981"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145811520"
 ---
 # New-AzLogzVMResourcesObject
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk VMResources
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logz/new-azlogzvmresourcesobject) untuk informasi terbaru.
 
 ## SYNTAX
 

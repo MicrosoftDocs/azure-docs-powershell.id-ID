@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.mysql/update-azm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Update-AzMySqlServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Update-AzMySqlServer.md
-ms.openlocfilehash: 7d8f21ccb73424fa61a2bc04b09aacd056a2df35
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8e8719476c3a566272179cbbf4922421ccb89be1
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144184472"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145803966"
 ---
 # Update-AzMySqlServer
 
@@ -18,6 +18,9 @@ ms.locfileid: "144184472"
 Memperbarui server yang ada.
 Isi permintaan dapat berisi satu hingga banyak properti yang ada dalam definisi server normal.
 Gunakan Update-AzMySqlConfiguration sebagai gantinya jika Anda ingin memperbarui parameter server seperti wait_timeout atau net_retry_count.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.mysql/update-azmysqlserver) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -305,7 +308,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAutogrow
-Aktifkan Storage Tumbuh Otomatis.
+Aktifkan Storage Pertumbuhan Otomatis.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.MySql.Support.StorageAutogrow
@@ -320,7 +323,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageInMb
-Penyimpanan maks yang diizinkan untuk server.
+Penyimpanan maksimum yang diizinkan untuk server.
 
 ```yaml
 Type: System.Int32
@@ -422,7 +425,7 @@ INPUTOBJECT <IMySqlIdentity>: Parameter Identitas.
   - `[FirewallRuleName <String>]`: Nama aturan firewall server.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[LocationName <String>]`: Nama lokasi.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SecurityAlertPolicyName <SecurityAlertPolicyName?>]`: Nama kebijakan pemberitahuan keamanan.
   - `[ServerName <String>]`: Nama server.
   - `[SubscriptionId <String>]`: ID langganan target.

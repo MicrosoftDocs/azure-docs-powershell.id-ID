@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/update-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Update-AzIotHubDeviceTwin.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Update-AzIotHubDeviceTwin.md
-ms.openlocfilehash: 08ebf3d7e8e43b8c057df7f8499a6a6feac71c57
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5f1ac140bcf09b4d1a2e9d9bd548445e7ac1679b
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144239186"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145815642"
 ---
 # Update-AzIotHubDeviceTwin
 
 ## SYNOPSIS
 Memperbarui tag dan properti yang diinginkan dari perangkat kembar.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/update-aziothubdevicetwin) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -58,7 +61,7 @@ Update-AzIotHubDeviceTwin -ResourceGroupName "myresourcegroup" -IotHubName "myio
 
 Mengembalikan objek kembar perangkat dengan properti yang diinginkan yang diperbarui.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Update-AzIotHubDeviceTwin -ResourceGroupName "myresourcegroup" -IotHubName "myiothub" -DeviceId "myDevice1" -Tag $updatedTag -Partial
 ```

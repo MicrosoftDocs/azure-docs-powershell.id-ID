@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementApiRevision.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementApiRevision.md
-ms.openlocfilehash: a706618d298cec821f736debcfc39605256e21fd
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4eaf763bdf8be327b9706b4eb193df0f4ca30169
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144211295"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145809150"
 ---
 # Remove-AzApiManagementApiRevision
 
 ## SYNOPSIS
 Menghapus Revisi API tertentu
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/remove-azapimanagementapirevision) untuk informasi terbaru.
 
 ## SYNTAX
 

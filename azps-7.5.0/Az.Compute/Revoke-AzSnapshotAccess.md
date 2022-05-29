@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/revoke-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Revoke-AzSnapshotAccess.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Revoke-AzSnapshotAccess.md
-ms.openlocfilehash: 5636a9ccd17bc22adee51b8b47d14cc50a37a0bf
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: af651f6978bd9af7400049c95ef08043a4edd6b6
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144193208"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145801844"
 ---
 # Revoke-AzSnapshotAccess
 
 ## SYNOPSIS
 Mencabut akses ke rekam jepret.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/revoke-azsnapshotaccess) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Cmdlet **Revoke-AzSnapshotAccess** mencabut akses ke rekam jepret.
 Revoke-AzSnapshotAccess -ResourceGroupName 'ResourceGroup01' -SnapshotName 'Snapshot01'
 ```
 
-Cabut akses ke rekam jepret bernama 'Snapshot01' di grup sumber daya bernama 'ResourceGroup01'
+Mencabut akses ke rekam jepret bernama 'Snapshot01' di grup sumber daya bernama 'ResourceGroup01'
 
 ## PARAMETERS
 

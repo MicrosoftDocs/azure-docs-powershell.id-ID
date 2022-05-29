@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.alertsmanagement
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AlertsManagement/AlertsManagement/help/Get-AzSmartGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AlertsManagement/AlertsManagement/help/Get-AzSmartGroup.md
-ms.openlocfilehash: aa5525604ff42964ec859b74c6cfad02d5d72288
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f864a01765cf286c0a8e1ba5285f8f2228ef2684
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144229453"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145782460"
 ---
 # Get-AzSmartGroup
 
 ## SYNOPSIS
 Mendapatkan informasi Grup Cerdas
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.alertsmanagement/get-azsmartgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,7 +50,7 @@ Cantumkan semua grup cerdas yang dibentuk dalam 1 jam terakhir. Gunakan Format-L
 Get-AzSmartGroup -SmartGroupId "afbf1b3a-0a6c-4f19-9c9b-644ccd7b1529" | Format-List
 ```
 
-Dapatkan detail Smart Group menurut Id (GUID) atau Id Sumber Daya (Id ARM Lengkap)
+Mendapatkan detail Grup Pintar menurut Id (GUID) atau Id Sumber Daya (Id ARM Lengkap)
 
 ## PARAMETERS
 
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -SortOrder
-Urutan Sortir
+Urutkan Urutan
 
 ```yaml
 Type: System.String

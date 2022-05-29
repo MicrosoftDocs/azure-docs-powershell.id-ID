@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Get-AzNetAppFilesPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Get-AzNetAppFilesPool.md
-ms.openlocfilehash: 6d8594eef669bab7d7f5aec152ac42341e6219c0
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d4f6a095410531408be3a47376d5afd0c4e2e7dc
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144184357"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145803654"
 ---
 # Get-AzNetAppFilesPool
 
 ## SYNOPSIS
 Mendapatkan detail kumpulan Azure NetApp Files (ANF).
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.netappfiles/get-aznetappfilespool) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementLogger.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementLogger.md
-ms.openlocfilehash: 0a7b1030e7d2400b4f17f064a816163835750792
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0ecc058b215378fb4fe951f9c9f6d034a1acc86b
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144229215"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145817388"
 ---
 # New-AzApiManagementLogger
 
 ## SYNOPSIS
 Membuat pencatat API Management.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementlogger) untuk informasi terbaru.
 
 ## SYNTAX
 

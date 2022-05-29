@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/New-AzNetAppFilesSnapshotPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/New-AzNetAppFilesSnapshotPolicy.md
-ms.openlocfilehash: ac6dc5af3e5b4fd5fe18e3eae5c52815d2ad563b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e595d22ecf4ee36ebe6a97c70fa7c3e8b6507cc7
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144184119"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145803390"
 ---
 # New-AzNetAppFilesSnapshotPolicy
 
 ## SYNOPSIS
 Membuat kebijakan rekam jepret Azure NetApp Files (ANF) baru untuk akun ANF.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.netappfiles/new-aznetappfilessnapshotpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 

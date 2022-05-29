@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logz/get-azlogzs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Get-AzLogzSubAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Get-AzLogzSubAccount.md
-ms.openlocfilehash: bb56a928dd99b624a7344f61ff59d67570bbf7c7
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2d7f09cd1cce8cfd8c96a47f1aa0b677047c6daa
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144193012"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145811538"
 ---
 # Get-AzLogzSubAccount
 
 ## SYNOPSIS
 Dapatkan sub akun di bawah sumber daya monitor tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logz/get-azlogzsubaccount) untuk informasi terbaru.
 
 ## SYNTAX
 

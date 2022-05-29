@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/set-azmi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Set-AzMigrateServerReplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Set-AzMigrateServerReplication.md
-ms.openlocfilehash: 4c7e397edaf9aa97b929503924e84c5872c4fd40
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: dc17f24bcbaf42b6e344bdaf0a9de9d3a830d345
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144241367"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145811214"
 ---
 # Set-AzMigrateServerReplication
 
 ## SYNOPSIS
 Memperbarui properti target untuk server replikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.migrate/set-azmigrateserverreplication) untuk informasi terbaru.
 
 ## SYNTAX
 

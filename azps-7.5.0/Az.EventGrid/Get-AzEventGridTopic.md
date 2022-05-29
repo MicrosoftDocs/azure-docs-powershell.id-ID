@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventgrid/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Get-AzEventGridTopic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Get-AzEventGridTopic.md
-ms.openlocfilehash: 49950de95206388f2baa9778de4f40630c98b178
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: de8df50784f358d3491e77a41e7c62204a073805
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144186180"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145788652"
 ---
 # Get-AzEventGridTopic
 
 ## SYNOPSIS
 Mendapatkan detail topik Event Grid, atau mendapatkan daftar semua topik Event Grid di langganan Azure saat ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventgrid/get-azeventgridtopic) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -65,7 +68,7 @@ Get-AzEventGridTopic -ResourceId "/subscriptions/$subscriptionId/resourceGroups/
 
 Mendapatkan detail topik \`Event Grid Topic1\` dalam grup \`sumber daya MyResourceGroupName\`.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzEventGridTopic -ResourceGroup MyResourceGroupName
 ```

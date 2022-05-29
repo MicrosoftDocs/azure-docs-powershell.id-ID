@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.applicationinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/New-AzApplicationInsightsWebTest.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/New-AzApplicationInsightsWebTest.md
-ms.openlocfilehash: 91bdce4b2c38ae7c2b2ef6afa344c7e42edda5ee
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 66bf85ff7d0e3a1b98419eede6fd74da18cb52b8
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144221147"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145808696"
 ---
 # New-AzApplicationInsightsWebTest
 
 ## SYNOPSIS
 Membuat atau memperbarui definisi pengujian web Application Insights.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.applicationinsights/new-azapplicationinsightswebtest) untuk informasi terbaru.
 
 ## SYNTAX
 

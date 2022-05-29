@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Remove-AzDataFactoryLinkedService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Remove-AzDataFactoryLinkedService.md
-ms.openlocfilehash: 566685cc2fb3e93dfb0c4191de4555c3fc54a838
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 879e15ea9f1527a3be47c179577a107bfa871d0e
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144203845"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145788850"
 ---
 # Remove-AzDataFactoryLinkedService
 
 ## SYNOPSIS
 Menghapus layanan tertaut dari Azure Data Factory.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/remove-azdatafactorylinkedservice) untuk informasi terbaru.
 
 ## SYNTAX
 

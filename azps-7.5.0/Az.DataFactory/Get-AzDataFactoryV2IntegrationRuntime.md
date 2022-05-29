@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryV2IntegrationRuntime.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryV2IntegrationRuntime.md
-ms.openlocfilehash: eb32a8d63a934278981c121839f578167b05ac86
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: bb05fd708687aad99504d24005178875bf3a8369
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144204251"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145816002"
 ---
 # Get-AzDataFactoryV2IntegrationRuntime
 
 ## SYNOPSIS
 Mendapatkan informasi tentang sumber daya runtime integrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/get-azdatafactoryv2integrationruntime) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -119,7 +122,7 @@ Get-AzDataFactoryV2IntegrationRuntime -ResourceGroupName rg-test-dfv2 -DataFacto
 
 Perintah ini menampilkan informasi tentang runtime integrasi bernama 'test-dedicated-ir' dalam langganan untuk grup sumber daya bernama 'rg-test-dfv2' dan pabrik data bernama 'test-df-eu2'.
 
-### Contoh 4: Mendapatkan runtime integrasi yang dihost sendiri
+### Contoh 4: Dapatkan runtime integrasi yang dihost sendiri
 ```powershell
 Get-AzDataFactoryV2IntegrationRuntime -ResourceGroupName rg-test-dfv2 -DataFactoryName test-df-eu2 -Name test-selfhost-ir
 ```

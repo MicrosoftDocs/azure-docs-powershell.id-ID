@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.machinelearning/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MachineLearning/MachineLearning/help/Remove-AzMlWebService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MachineLearning/MachineLearning/help/Remove-AzMlWebService.md
-ms.openlocfilehash: 7d8f72f493142f5035eafed1ffbff0c4ced5c58f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b0bb69cc292be4d76639815b5d2361f10fd8679a
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144224531"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145804812"
 ---
 # Remove-AzMlWebService
 
 ## SYNOPSIS
 Menghapus layanan web.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.machinelearning/remove-azmlwebservice) untuk informasi terbaru.
 
 ## SYNTAX
 

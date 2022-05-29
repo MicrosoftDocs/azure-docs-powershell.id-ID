@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.managedservices/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServices/help/Remove-AzManagedServicesAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServices/help/Remove-AzManagedServicesAssignment.md
-ms.openlocfilehash: d52d167681b09446388fff22d636457a3bf29c44
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 43d543c20ba46e8d64852d44b100fe10e8378357
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144194874"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145804686"
 ---
 # Remove-AzManagedServicesAssignment
 
 ## SYNOPSIS
 Menghapus penetapan pendaftaran yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.managedservices/remove-azmanagedservicesassignment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Menghapus penetapan pendaftaran yang ditentukan.
 Remove-AzManagedServicesAssignment -Name "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" -Scope "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
 ```
 
-Menghapus penetapan pendaftaran Azure Lighthouse pada cakupan langganan.
+Menghapus penetapan pendaftaran Azure Lighthouse di cakupan langganan.
 
 ### Contoh 2: Menghapus penetapan pendaftaran Azure Lighthouse di cakupan grup sumber daya
 ```powershell
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ManagedServices.Models.IManagedServicesIdentity
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-GUID penugasan pendaftaran.
+GUID penetapan pendaftaran.
 
 ```yaml
 Type: System.String
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -211,7 +214,7 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 INPUTOBJECT <IManagedServicesIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[MarketplaceIdentifier <String>]`: Pengidentifikasi Marketplace Azure. Format yang diharapkan: {publisher}. {product[-preview]}. {planName}. {version} atau {publisher}. {product[-preview]}. {planName} atau {publisher}. {product[-preview]} atau {publisher}).
-  - `[RegistrationAssignmentId <String>]`: GUID penugasan pendaftaran.
+  - `[RegistrationAssignmentId <String>]`: GUID penetapan pendaftaran.
   - `[RegistrationDefinitionId <String>]`: GUID definisi pendaftaran.
   - `[Scope <String>]`: Cakupan sumber daya.
 

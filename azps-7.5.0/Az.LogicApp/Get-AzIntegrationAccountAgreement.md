@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/get-azi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzIntegrationAccountAgreement.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzIntegrationAccountAgreement.md
-ms.openlocfilehash: 023f32cc3e609fad17c14f35046733d25ccdaf86
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: bb2491ee49de9b817d75f480302ac36e2a2195b4
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144185925"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145771338"
 ---
 # Get-AzIntegrationAccountAgreement
 
 ## SYNOPSIS
 Mendapatkan perjanjian akun integrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/get-azintegrationaccountagreement) untuk informasi terbaru.
 
 ## SYNTAX
 

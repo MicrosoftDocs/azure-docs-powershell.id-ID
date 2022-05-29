@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/add-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Add-AzHDInsightScriptAction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Add-AzHDInsightScriptAction.md
-ms.openlocfilehash: 7e4f78990e944d29b8903c0d1789b1e7bb22fc8c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 44a8787eff848368e2ee096650823abac51281f6
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144237111"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145795922"
 ---
 # Add-AzHDInsightScriptAction
 
 ## SYNOPSIS
 Menambahkan tindakan skrip ke objek konfigurasi kluster.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/add-azhdinsightscriptaction) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ Add-AzHDInsightScriptAction [-Config] <AzureHDInsightConfig> [-NodeType] <Cluste
 ## DESCRIPTION
 Cmdlet **Add-AzHDInsightScriptAction** menambahkan tindakan skrip ke objek konfigurasi HDInsight yang dibuat oleh cmdlet New-AzHDInsightClusterConfig.
 Tindakan skrip menyediakan fungsionalitas yang digunakan untuk menginstal perangkat lunak tambahan atau untuk mengubah konfigurasi aplikasi yang berjalan pada kluster Hadoop dengan menggunakan skrip Windows PowerShell atau Bash (untuk kluster Windows atau Linux).
-Tindakan skrip berjalan pada node kluster saat kluster HDInsight disebarkan, dan dijalankan setelah node di kluster menyelesaikan konfigurasi HDInsight.
+Tindakan skrip berjalan pada node kluster ketika kluster HDInsight disebarkan, dan dijalankan setelah node di kluster menyelesaikan konfigurasi HDInsight.
 Tindakan skrip berjalan di bawah hak istimewa akun administrator sistem dan memberikan hak akses penuh ke node kluster.
 Anda dapat menyediakan setiap kluster dengan daftar tindakan skrip untuk dijalankan dalam urutan tertentu.
 
@@ -84,11 +87,11 @@ New-AzHDInsightClusterConfig  `
                 -StorageContainer $storageContainer
 ```
 
-Perintah ini menambahkan tindakan skrip untuk simpul Head dan Worker dari kluster your-hadoop-001, untuk dijalankan di akhir pembuatan kluster.
+Perintah ini menambahkan tindakan skrip untuk simpul Kepala dan Pekerja dari kluster your-hadoop-001, untuk dijalankan di akhir pembuatan kluster.
 
 ## PARAMETERS
 
-### -Konfigurasi
+### -Config
 Menentukan objek konfigurasi kluster HDInsight yang dimodifikasi cmdlet ini.
 Objek ini dibuat oleh cmdlet **New-AzHDInsightClusterConfig** .
 

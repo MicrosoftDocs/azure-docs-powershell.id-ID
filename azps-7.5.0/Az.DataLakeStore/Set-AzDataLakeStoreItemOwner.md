@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Set-AzDataLakeStoreItemOwner.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Set-AzDataLakeStoreItemOwner.md
-ms.openlocfilehash: 3acf031ed93c34d5212cbc6d374773c30ecd80b3
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6157253ded28bfcfafff3f78af03f91f76bf43e7
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144202347"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145784548"
 ---
 # Set-AzDataLakeStoreItemOwner
 
 ## SYNOPSIS
 Memodifikasi pemilik file atau folder di Data Lake Store.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/set-azdatalakestoreitemowner) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -Jalur
-Menentukan jalur Data Lake Store dari item yang akan diubah, dimulai dengan direktori akar (/).
+Menentukan jalur Data Lake Store dari item yang akan dimodifikasi, dimulai dengan direktori akar (/).
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataLakeStore.Models.DataLakeStorePathInstance
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -Type
-Menentukan jenis pemilik yang akan ditetapkan.
+Menentukan tipe pemilik yang akan ditetapkan.
 Nilai yang dapat diterima untuk parameter ini adalah: Pengguna dan Grup.
 
 ```yaml

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mysql/restart-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Restart-AzMySqlServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Restart-AzMySqlServer.md
-ms.openlocfilehash: 9d061d02b2af0d71549253c4ad00d39de5edc3e7
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 43a7bc5644b1f3b74837585d84c78713f34e8d1c
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144246953"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145804263"
 ---
 # Restart-AzMySqlServer
 
 ## SYNOPSIS
 Menghidupkan ulang server.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.mysql/restart-azmysqlserver) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ Menghidupkan ulang server.
 
 ## EXAMPLES
 
-### Contoh 1: Menghidupkan ulang server MySql menurut grup sumber daya dan nama server
+### Contoh 1: Hidupkan ulang server MySql menurut grup sumber daya dan nama server
 ```powershell
 Restart-AzMySqlServer -ResourceGroupName PowershellMySqlTest -Name mysql-test
 ```
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.MySql.Models.IMySqlIdentity
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama tidak peka huruf besar/kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -232,7 +235,7 @@ INPUTOBJECT <IMySqlIdentity>: Parameter Identitas
   - `[FirewallRuleName <String>]`: Nama aturan firewall server.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[LocationName <String>]`: Nama lokasi.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
   - `[SecurityAlertPolicyName <SecurityAlertPolicyName?>]`: Nama kebijakan pemberitahuan keamanan.
   - `[ServerName <String>]`: Nama server.
   - `[SubscriptionId <String>]`: ID langganan target.

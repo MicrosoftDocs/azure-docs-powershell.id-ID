@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Get-AzDataMigrationSqlServiceIntegrationRuntimeMetric.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Get-AzDataMigrationSqlServiceIntegrationRuntimeMetric.md
-ms.openlocfilehash: d90b33ca60d829bf3c7530f3bfc502462039d87c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6bc81483cc04e7c5b770fe4f4b19f4ccaaa80c5a
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144202168"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145788742"
 ---
 # Get-AzDataMigrationSqlServiceIntegrationRuntimeMetric
 
 ## SYNOPSIS
 Mengambil simpul Integration Runtime terdaftar dan data pemantauannya untuk Database Migration Service tertentu
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/get-azdatamigrationsqlserviceintegrationruntimemetric) untuk informasi terbaru.
 
 ## SYNTAX
 

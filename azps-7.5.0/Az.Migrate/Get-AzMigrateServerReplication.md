@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/get-azmi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateServerReplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateServerReplication.md
-ms.openlocfilehash: f383d230f94359a4273834771c38c7878c6de64c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 74801472e36524e0795b07e265639e89895b1cdb
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144111934"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145804560"
 ---
 # Get-AzMigrateServerReplication
 
 ## SYNOPSIS
 Mengambil detail server replikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.migrate/get-azmigrateserverreplication) untuk informasi terbaru.
 
 ## SYNTAX
 

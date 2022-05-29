@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/get-azme
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzMetricDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzMetricDefinition.md
-ms.openlocfilehash: 99a3051d383d2ef740aaf19e7eee619865b07468
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: face79613109358b1e2c16996f1e338b5b46b895
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144194776"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145811169"
 ---
 # Get-AzMetricDefinition
 
 ## SYNOPSIS
 Mendapatkan definisi metrik.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/get-azmetricdefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -58,7 +61,7 @@ Unit                   : Count
 
 Perintah ini mendapatkan definisi metrik untuk sumber daya yang ditentukan.
 
-### Contoh 2: Mendapatkan definisi metrik dengan output terperinci
+### Contoh 2: Dapatkan definisi metrik dengan output terperinci
 ```powershell
 Get-AzMetricDefinition -ResourceId "/subscriptions/d33fb0c7-69d3-40be-e35b-4f0deba70fff/resourceGroups/Default-Web-EastUS/providers/microsoft.web/sites/website2" -DetailedOutput
 ```
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 
 ### -DetailedOutput
 Menunjukkan bahwa operasi ini menyertakan output terperinci.
-Jika Anda tidak menentukan parameter ini, output akan dirangkum.
+Jika Anda tidak menentukan parameter ini, output akan diringkas.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

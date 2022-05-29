@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Get-AzNetAppFilesQuotaLimit.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Get-AzNetAppFilesQuotaLimit.md
-ms.openlocfilehash: d6616fd457f345f4a42b0cabeeecc5ca1a8cf14a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2c3fd42b8052ca6f892bac9cbde7c3330ac92a46
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144184346"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145803606"
 ---
 # Get-AzNetAppFilesQuotaLimit
 
 ## SYNOPSIS
-Mendapatkan batas kuota
+Dapatkan batas kuota
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.netappfiles/get-aznetappfilesquotalimit) untuk informasi terbaru.
 
 ## SYNTAX
 

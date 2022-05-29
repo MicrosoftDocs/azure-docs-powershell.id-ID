@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/ex
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Export-AzDataLakeStoreChildItemProperty.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Export-AzDataLakeStoreChildItemProperty.md
-ms.openlocfilehash: 74c979efb7a1e46e795b08758c41ceebfb536e1b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 54e7cc39cf346e993ae590a5628d2d61bb658bb7
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144202823"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145785106"
 ---
 # Export-AzDataLakeStoreChildItemProperty
 
 ## SYNOPSIS
 Mengekspor properti (Penggunaan disk dan Acl) untuk seluruh pohon dari jalur yang ditentukan ke jalur output
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/export-azdatalakestorechilditemproperty) untuk informasi terbaru.
 
 ## SYNTAX
 

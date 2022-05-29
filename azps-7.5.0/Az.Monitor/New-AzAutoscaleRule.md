@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/new-azau
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzAutoscaleRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzAutoscaleRule.md
-ms.openlocfilehash: bc79541861e545ff085ba6eff46fa7db818d0ed1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 907db0be7dfbb9beadaf0a763c2d245f16c6cc47
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144227174"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145811194"
 ---
 # New-AzAutoscaleRule
 
 ## SYNOPSIS
 Membuat aturan Autoscale.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/new-azautoscalerule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -63,7 +66,7 @@ Microsoft.Azure.Management.Insights.Models.MetricTrigger    Microsoft.Azure.Mana
 Perintah pertama membuat aturan untuk metrik Permintaan, lalu menyimpannya dalam variabel $Rule 1.
 Perintah kedua membuat aturan kedua untuk metrik Permintaan, lalu menyimpannya dalam variabel $Rule 2.
 
-### Contoh 3
+### Contoh: 3
 
 Membuat aturan Autoscale. (dibuat otomatis)
 
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 Menentukan statistik metrik.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Rata-rata
-- Min
+- Minimum
 - Maksimum
 - Jumlah
 
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ### -Operator
 Menentukan operator.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Sama
+- Setara
 - NotEquals
 - GreaterThan
 - GreaterThanOrEqual
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScaleActionCooldown
-Menentukan waktu pendinginan tindakan Skala otomatis.
+Menentukan waktu pendinginan tindakan Autoscale.
 
 ```yaml
 Type: System.TimeSpan

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azex
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzExpressRouteCrossConnectionPeering.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzExpressRouteCrossConnectionPeering.md
-ms.openlocfilehash: 742b5d3d0d76d271e08e00bf99156baf4c7e9ab2
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 17a6992f22299f82e5480a9e211bb3cdb10df3d7
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144209222"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145810206"
 ---
 # Add-AzExpressRouteCrossConnectionPeering
 
 ## SYNOPSIS
 Menambahkan konfigurasi peering ke koneksi silang ExpressRoute.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/add-azexpressroutecrossconnectionpeering) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/new-azsc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzScheduledQueryRuleSchedule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzScheduledQueryRuleSchedule.md
-ms.openlocfilehash: 631472734dd896d1845a0f229302d7c2ed525afb
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0d43bf66500c8e8c794d6f12bb1b3439200c65b8
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144197688"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145804452"
 ---
 # New-AzScheduledQueryRuleSchedule
 
 ## SYNOPSIS
 Membuat objek jenis Jadwal
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/new-azscheduledqueryruleschedule) untuk informasi terbaru.
 
 ## SYNTAX
 

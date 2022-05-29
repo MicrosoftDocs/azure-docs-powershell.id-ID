@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/invoke-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Invoke-AzIotHubDeploymentMetricsQuery.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Invoke-AzIotHubDeploymentMetricsQuery.md
-ms.openlocfilehash: 9f745b8922e25dc4b5b7c96650dd3914c83cd57f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 33ae144226c234afc4ad7c5d4d79ef237a8b12a5
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144239438"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145805388"
 ---
 # Invoke-AzIotHubDeploymentMetricsQuery
 
 ## SYNOPSIS
 Panggil kueri metrik penyebaran IoT Edge.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/invoke-aziothubdeploymentmetricsquery) untuk informasi terbaru.
 
 ## SYNTAX
 

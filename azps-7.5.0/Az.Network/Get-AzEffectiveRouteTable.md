@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azef
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzEffectiveRouteTable.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzEffectiveRouteTable.md
-ms.openlocfilehash: 13f623de06caab86b507e8059a36d796f21a957a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 840dd523d6e33c69d0a2322934b8689e8c11dd37
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144192774"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145790902"
 ---
 # Get-AzEffectiveRouteTable
 
 ## SYNOPSIS
-Mendapatkan tabel rute yang efektif dari antarmuka jaringan.
+Mendapatkan tabel rute antarmuka jaringan yang efektif.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azeffectiveroutetable) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Cmdlet **Get-AzEffectiveRouteTable** mengembalikan tabel rute efektif yang diter
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan tabel rute efektif pada antarmuka jaringan
+### Contoh 1: Mendapatkan tabel rute yang efektif pada antarmuka jaringan
 ```powershell
 Get-AzEffectiveRouteTable -NetworkInterfaceName "MyNetworkInterface" -ResourceGroupName "MyResourceGroup"
 ```

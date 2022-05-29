@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseGeoBackup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseGeoBackup.md
-ms.openlocfilehash: 128737a1b35a372d7cc074966303fc67e2d31bea
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8e2de707a6606368164105ad2e0ba1f0b7085e88
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144234874"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145809522"
 ---
 # Get-AzSqlDatabaseGeoBackup
 
 ## SYNOPSIS
 Mendapatkan cadangan geo-redundan dari database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqldatabasegeobackup) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Get-AzNetAppFilesVault.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Get-AzNetAppFilesVault.md
-ms.openlocfilehash: cb8553e5a48e7641de41879afb1c8b41d3ad1f9a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6268528f5b62bf32f5502aef3d934975df7fcb25
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144184262"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145803462"
 ---
 # Get-AzNetAppFilesVault
 
 ## SYNOPSIS
 Mendapatkan daftar vault cadangan Akun Azure NetApp Files (ANF).
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.netappfiles/get-aznetappfilesvault) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Set-AzDataLakeStoreFirewallRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Set-AzDataLakeStoreFirewallRule.md
-ms.openlocfilehash: ab4bd516bc9d99b719ce1c4c7d70951b4d6ccf7f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c1937a8e857a8c406841976e5e968684ac413e9f
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144202431"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145784656"
 ---
 # Set-AzDataLakeStoreFirewallRule
 
 ## SYNOPSIS
 Memodifikasi aturan firewall yang ditentukan di Data Lake Store yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/set-azdatalakestorefirewallrule) untuk informasi terbaru.
 
 ## SYNTAX
 

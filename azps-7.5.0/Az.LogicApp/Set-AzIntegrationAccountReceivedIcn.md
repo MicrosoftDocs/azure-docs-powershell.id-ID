@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/set-azi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Set-AzIntegrationAccountReceivedIcn.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Set-AzIntegrationAccountReceivedIcn.md
-ms.openlocfilehash: 9dcfcc1d9be03b4d4eb0abf5cb41764e5b2c95fc
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1f09731105328ecf6f6c5e0ef4e34423711086ec
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144213539"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145776827"
 ---
 # Set-AzIntegrationAccountReceivedIcn
 
 ## SYNOPSIS
 Memperbarui akun integrasi yang menerima nomor kontrol pertukaran (ICN) di grup sumber daya Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/set-azintegrationaccountreceivedicn) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ Set-AzIntegrationAccountReceivedIcn -ResourceGroupName <String> -Name <String> -
 ## DESCRIPTION
 Cmdlet Set-AzIntegrationAccountGeneratedIcn memperbarui akun integrasi yang ada yang menerima nomor kontrol pertukaran (ICN) dan mengembalikan objek yang mewakili akun integrasi yang menerima nomor kontrol pertukaran.
 Gunakan cmdlet ini untuk memperbarui akun integrasi yang menerima status pemrosesan pesan nomor kontrol pertukaran.
-Anda dapat memperbarui akun integrasi yang menerima nomor kontrol pertukaran dengan menentukan nama akun integrasi, nama grup sumber daya, nama perjanjian, nilai nomor kontrol, dan status pemrosesan pesan.
+Anda dapat memperbarui nomor kontrol pertukaran yang diterima akun integrasi dengan menentukan nama akun integrasi, nama grup sumber daya, nama perjanjian, nilai nomor kontrol, dan status pemrosesan pesan.
 Anda tidak dapat membuat akun integrasi baru yang menerima nomor kontrol pertukaran dengan perintah ini.
 Untuk menggunakan parameter dinamis, cukup ketikkan dalam perintah, atau ketik tanda hubung (-) untuk menunjukkan nama parameter lalu tekan tombol TAB berulang kali untuk menelusuri parameter yang tersedia.
 Jika Anda melewatkan parameter templat yang diperlukan, cmdlet akan meminta nilainya.

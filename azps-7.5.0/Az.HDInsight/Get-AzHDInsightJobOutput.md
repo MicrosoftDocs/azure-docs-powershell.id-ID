@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Get-AzHDInsightJobOutput.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Get-AzHDInsightJobOutput.md
-ms.openlocfilehash: 7d466f91105f07fd78787ca430802781ed776bc5
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8a6324761ace4477aa2d808b0b2dd0ecd48103e6
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144216362"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145795670"
 ---
 # Get-AzHDInsightJobOutput
 
 ## SYNOPSIS
 Mendapatkan output log untuk pekerjaan dari akun penyimpanan yang terkait dengan kluster tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/get-azhdinsightjoboutput) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -JobId
-Menentukan ID pekerjaan pekerjaan yang outputnya akan diambil.
+Menentukan ID pekerjaan dari pekerjaan yang outputnya akan diambil.
 
 ```yaml
 Type: System.String

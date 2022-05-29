@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/get-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVaultManagedStorageAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVaultManagedStorageAccount.md
-ms.openlocfilehash: ca858d2caee5c447fd65a63be4110f97fe6020fa
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f80e985a4974e869aa86cf1251fd894849c1e88f
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144237072"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145777494"
 ---
 # Get-AzKeyVaultManagedStorageAccount
 
 ## SYNOPSIS
 Mendapatkan Akun Azure Storage terkelola Key Vault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/get-azkeyvaultmanagedstorageaccount) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/expor
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Export-AzAutomationDscConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Export-AzAutomationDscConfiguration.md
-ms.openlocfilehash: c3b45df2dd30c2a644c88773c92cc9f34a90c9d9
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4bf3e73ac34a52f835facc2c8c5d91855b981943
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144193387"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145808484"
 ---
 # Export-AzAutomationDscConfiguration
 
 ## SYNOPSIS
 Mengekspor konfigurasi DSC dari Automation ke file lokal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/export-azautomationdscconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 Menentukan versi konfigurasi DSC mana yang diekspor cmdlet ini.
 Nilai yang valid adalah: 
 - Draf
-- Diterbitkan Nilai default diterbitkan.
+- Diterbitkan Nilai defaultnya Diterbitkan.
 
 ```yaml
 Type: System.String

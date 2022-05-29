@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMADDomainExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMADDomainExtension.md
-ms.openlocfilehash: 3206edc573f1dfbcd7f77d44a8fa66fbaa1030ef
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 131d172ebd770957df0524b38a04dfc8382dfbb0
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144232855"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145798442"
 ---
 # Get-AzVMADDomainExtension
 
 ## SYNOPSIS
 Mendapatkan informasi tentang ekstensi domain AD.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azvmaddomainextension) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logz/update-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Update-AzLogzMonitorVMHost.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Update-AzLogzMonitorVMHost.md
-ms.openlocfilehash: 21e714502867784cc2087c5b8802ed7405ef0a0e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: df083b17de1c3c2a3550eafbb8469f18d664dcca
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144220559"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145776684"
 ---
 # Update-AzLogzMonitorVMHost
 
 ## SYNOPSIS
 Mengirim permintaan untuk memperbarui koleksi ketika agen Logz.io telah diinstal pada VM untuk monitor tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logz/update-azlogzmonitorvmhost) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -78,7 +81,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama tidak peka huruf besar/kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String

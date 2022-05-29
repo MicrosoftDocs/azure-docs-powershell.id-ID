@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/new-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/New-AzIotHubImportDevice.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/New-AzIotHubImportDevice.md
-ms.openlocfilehash: 0a1eac2d445774e6b5a8d3bb18398e7aa25d7f02
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 701dc6cb13dfd48af4575bc447e8250097ca1564
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144239407"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145805118"
 ---
 # New-AzIotHubImportDevice
 
 ## SYNOPSIS
 Membuat pekerjaan perangkat impor baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/new-aziothubimportdevice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ New-AzIotHubImportDevice [-ResourceGroupName] <String> [-Name] <String> [-InputB
 
 ## DESCRIPTION
 Membuat pekerjaan perangkat impor baru untuk IotHub.
-Ini akan mengimpor semua perangkat ke IotHub dari kontainer yang ditentukan. Lihat artikel berikut tentang cara menghasilkan SAS URI.
+Ini akan mengimpor semua perangkat ke IotHub dari kontainer yang ditentukan. Lihat artikel berikut tentang cara membuat URI SAS.
 https://docs.microsoft.com/azure/iot-hub/iot-hub-bulk-identity-mgmt#get-the-container-sas-uri .
 
 ## EXAMPLES

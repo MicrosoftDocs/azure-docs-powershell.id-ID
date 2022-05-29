@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Remove-AzAlertRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Remove-AzAlertRule.md
-ms.openlocfilehash: 774f9563593f7b15675d7e2179fbde5bdfb68650
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 77c06ddaa33a0853ce888437aa985d8c5e56d9ce
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144245864"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145810962"
 ---
 # Remove-AzAlertRule
 
 ## SYNOPSIS
 Menghapus aturan pemberitahuan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/remove-azalertrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Remove-AzAlertRule -ResourceGroupName <String> -Name <String> [-DefaultProfile <
 
 ## DESCRIPTION
 Cmdlet **Remove-AzAlertRule** menghapus aturan pemberitahuan.
-Anda harus menentukan nama aturan pemberitahuan dan grup sumber daya yang ditetapkan.
+Anda harus menentukan nama aturan pemberitahuan dan grup sumber daya tempat aturan tersebut ditetapkan.
 Cmdlet ini mengimplementasikan pola ShouldProcess, yaitu mungkin meminta konfirmasi dari pengguna sebelum benar-benar membuat, memodifikasi, atau menghapus sumber daya.
 
 ## EXAMPLES

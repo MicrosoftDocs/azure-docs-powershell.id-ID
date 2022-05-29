@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mariadb/new-azma
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/New-AzMariaDbVirtualNetworkRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/New-AzMariaDbVirtualNetworkRule.md
-ms.openlocfilehash: 0af0b16d22518ccec329d2e59fad1291ae16d99f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9b5e2edb6dcbd7b9884dd395030ebbedc9d50a35
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144190296"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145804632"
 ---
 # New-AzMariaDbVirtualNetworkRule
 
 ## SYNOPSIS
 Membuat atau memperbarui aturan jaringan virtual yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.mariadb/new-azmariadbvirtualnetworkrule) untuk informasi terbaru.
 
 ## SYNTAX
 

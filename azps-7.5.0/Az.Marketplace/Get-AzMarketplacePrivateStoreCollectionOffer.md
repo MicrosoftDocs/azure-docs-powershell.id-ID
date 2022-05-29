@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.marketplace/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Get-AzMarketplacePrivateStoreCollectionOffer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Get-AzMarketplacePrivateStoreCollectionOffer.md
-ms.openlocfilehash: 0df716818f213865e7b95d66e3f40fc6af000bd0
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 064dab21968e4290a710c548b222b745912045cc
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144110145"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145815193"
 ---
 # Get-AzMarketplacePrivateStoreCollectionOffer
 
 ## SYNOPSIS
 Mendapatkan informasi tentang penawaran tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.marketplace/get-azmarketplaceprivatestorecollectionoffer) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -55,7 +58,7 @@ viacode_consulting-1089577.viacodems
 RedHat.RHEL_7
 ```
 
-Perintah ini mendapatkan penawaran kolae
+Perintah ini mendapatkan penawaran kolaesi
 
 ## PARAMETERS
 
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Marketplace.Models.IMarketplaceIdentity
@@ -158,7 +161,7 @@ INPUTOBJECT <IMarketplaceIdentity>: Parameter Identitas
   - `[AdminRequestApprovalId <String>]`: ID persetujuan permintaan admin untuk membuat atau memperbarui
   - `[CollectionId <String>]`: ID koleksi
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[OfferId <String>]`: ID penawaran untuk memperbarui atau menghapus
+  - `[OfferId <String>]`: ID penawaran yang akan diperbarui atau dihapus
   - `[PrivateStoreId <String>]`: ID penyimpanan - harus menggunakan ID penyewa
   - `[RequestApprovalId <String>]`: ID persetujuan permintaan untuk membuat atau memperbarui
 

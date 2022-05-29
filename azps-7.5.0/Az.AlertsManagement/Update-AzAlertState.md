@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.alertsmanagement
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AlertsManagement/AlertsManagement/help/Update-AzAlertState.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AlertsManagement/AlertsManagement/help/Update-AzAlertState.md
-ms.openlocfilehash: bcd5e0072b6706a537be7edaddce7bf0a67fbba2
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: fc604d28bc56fde1c9bf6632b3483285605d6f2c
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144209639"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145775352"
 ---
 # Update-AzAlertState
 
 ## SYNOPSIS
 Memperbarui status pemberitahuan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.alertsmanagement/update-azalertstate) untuk informasi terbaru.
 
 ## SYNTAX
 

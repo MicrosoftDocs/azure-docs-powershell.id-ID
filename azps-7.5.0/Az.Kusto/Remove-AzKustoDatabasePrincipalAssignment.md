@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.kusto/remove-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Remove-AzKustoDatabasePrincipalAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Remove-AzKustoDatabasePrincipalAssignment.md
-ms.openlocfilehash: 951bf3c2a201a729ff6b776409812118975d72f8
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1de153d8557706f8257913210a150aa39c536fdf
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144206414"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145787806"
 ---
 # Remove-AzKustoDatabasePrincipalAssignment
 
 ## SYNOPSIS
 Menghapus Kusto principalAssignment.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.kusto/remove-azkustodatabaseprincipalassignment) untuk informasi terbaru.
 
 ## SYNTAX
 

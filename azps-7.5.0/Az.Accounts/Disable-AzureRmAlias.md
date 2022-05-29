@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/disable
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Disable-AzureRmAlias.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Disable-AzureRmAlias.md
-ms.openlocfilehash: c6b3beaa661a1b3f41b88f9662a719b8a1e9852f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: eaa01a23fb1f7bf171a4f6808d59747f46700ad6
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144209702"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145798791"
 ---
 # Disable-AzureRmAlias
 
 ## SYNOPSIS
 Menonaktifkan alias awalan AzureRm untuk modul Az.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.accounts/disable-azurermalias) untuk informasi terbaru.
 
 ## SYNTAX
 

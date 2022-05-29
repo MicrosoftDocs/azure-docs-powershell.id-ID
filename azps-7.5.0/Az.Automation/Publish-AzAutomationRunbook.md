@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/publi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Publish-AzAutomationRunbook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Publish-AzAutomationRunbook.md
-ms.openlocfilehash: c2520ee1dee8297c5e7a2604f6c5aa461dc60cc3
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e5aa6be749d4252ff455924fb6bd4e2dc8b79ed7
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144196817"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145798514"
 ---
 # Publish-AzAutomationRunbook
 
 ## SYNOPSIS
 Menerbitkan runbook.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/publish-azautomationrunbook) untuk informasi terbaru.
 
 ## SYNTAX
 

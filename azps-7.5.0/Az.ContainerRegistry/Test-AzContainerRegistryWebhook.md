@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.containerregistr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Test-AzContainerRegistryWebhook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Test-AzContainerRegistryWebhook.md
-ms.openlocfilehash: d9c811cb2cebf9d9f32a41f1c9e3a3bc9854dd29
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 50b764624e51f0d13b1f43fabad9d1e6b19604e2
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144243271"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145816650"
 ---
 # Test-AzContainerRegistryWebhook
 
 ## SYNOPSIS
 Memicu kejadian ping webhook.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.containerregistry/test-azcontainerregistrywebhook) untuk informasi terbaru.
 
 ## SYNTAX
 

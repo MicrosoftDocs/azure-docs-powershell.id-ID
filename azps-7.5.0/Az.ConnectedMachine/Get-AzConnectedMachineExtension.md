@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.connectedmachine
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedMachine/help/Get-AzConnectedMachineExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedMachine/help/Get-AzConnectedMachineExtension.md
-ms.openlocfilehash: 2cbea1b2b238e3fb1fddb785e062d62a3b737bc9
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 10ef1f8d6c71e955f1bcd0e4e6b38ab7e82a27e3
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144220895"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145817010"
 ---
 # Get-AzConnectedMachineExtension
 
 ## SYNOPSIS
 Operasi untuk mendapatkan ekstensi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.connectedmachine/get-azconnectedmachineextension) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama tidak peka huruf besar/kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String

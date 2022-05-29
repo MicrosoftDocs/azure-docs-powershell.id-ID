@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakeanalytic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Update-AzDataLakeAnalyticsComputePolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Update-AzDataLakeAnalyticsComputePolicy.md
-ms.openlocfilehash: e57e4e6d32c71cd78385ae00aac65d9328b01585
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: fe59418c64727638142733a3fb94639220a43bda
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144202907"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145785125"
 ---
 # Update-AzDataLakeAnalyticsComputePolicy
 
 ## SYNOPSIS
 Memperbarui aturan kebijakan komputasi Data Lake Analytics untuk entitas AAD tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datalakeanalytics/update-azdatalakeanalyticscomputepolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ Update-AzDataLakeAnalyticsComputePolicy -Account "contosoadla" -Name "myPolicy" 
 
 Perintah ini memperbarui kebijakan yang disebut "myPolicy" di akun "contosoadla" untuk memastikan pengguna tidak dapat mengirimkan pekerjaan apa pun dengan lebih dari 5 unit analitik.
 
-### Contoh 2: Membuat kebijakan komputasi dengan pembaruan kedua aturan
+### Contoh 2: Membuat kebijakan komputasi dengan kedua pembaruan aturan
 ```powershell
 Update-AzDataLakeAnalyticsComputePolicy -Account "contosoadla" -Name "myPolicy" -MaxAnalyticsUnitsPerJob 5 -MinPriorityPerJob 100
 ```
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya tempat Akun Anda berada.
-Opsional dan akan mencoba untuk menemukan jika tidak disediakan.
+Opsional dan akan mencoba menemukan jika tidak disediakan.
 
 ```yaml
 Type: System.String
@@ -174,7 +177,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
 ## OUTPUTS
 
