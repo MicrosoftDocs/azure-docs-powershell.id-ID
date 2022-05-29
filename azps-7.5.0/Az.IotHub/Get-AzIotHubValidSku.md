@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/get-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubValidSku.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubValidSku.md
-ms.openlocfilehash: 4818add69f688026c06c39ff05852e4c66f38511
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d453c25cc602ce7b99e6b4708238057fe480bdd9
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144239449"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145805568"
 ---
 # Get-AzIotHubValidSku
 
 ## SYNOPSIS
 Mendapatkan semua sku yang valid yang dapat ditransisikan oleh IotHub ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/get-aziothubvalidsku) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Get-AzIotHubValidSku [-ResourceGroupName] <String> [-Name] <String> [-DefaultPro
 
 ## DESCRIPTION
 Mendapatkan semua sku yang valid yang dapat ditransisikan oleh IotHub ini.
-IotHub tidak dapat beralih antara sku gratis dan berbayar dan sebaliknya. Anda harus menghapus dan membuat ulang iothub jika Ingin mencapai hal ini.
+IotHub tidak dapat beralih antara sku gratis dan berbayar dan sebaliknya. Anda harus menghapus dan membuat ulang iothub jika Anda ingin mencapainya.
 
 ## EXAMPLES
 

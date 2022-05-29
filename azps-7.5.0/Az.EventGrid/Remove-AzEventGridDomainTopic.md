@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventgrid/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Remove-AzEventGridDomainTopic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Remove-AzEventGridDomainTopic.md
-ms.openlocfilehash: 90a75f1e7689265c215457165a3704f73aaaff6a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 73e1ea3f79e43dfd85e9d6d8c1f6f8bd4c38324a
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144231514"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145788508"
 ---
 # Remove-AzEventGridDomainTopic
 
 ## SYNOPSIS
 Menghapus Topik Domain Azure Event Grid.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventgrid/remove-azeventgriddomaintopic) untuk informasi terbaru.
 
 ## SYNTAX
 

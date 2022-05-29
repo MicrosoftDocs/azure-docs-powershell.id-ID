@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/backup-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Backup-AzKeyVaultKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Backup-AzKeyVaultKey.md
-ms.openlocfilehash: e0a22ce99438388cfaccbb4f0cc38f8f6e284920
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 74278320b699d16007bdf1573ca4053108109e65
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144200334"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145818054"
 ---
 # Cadangan-KunciAzKeyVault
 
 ## SYNOPSIS
 Mencadangkan kunci dalam brankas kunci.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/backup-azkeyvaultkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,10 +44,10 @@ Backup-AzKeyVaultKey [-InputObject] <PSKeyVaultKeyIdentityItem> [[-OutputFile] <
 ## DESCRIPTION
 Cmdlet **Backup-AzKeyVaultKey** mencadangkan kunci tertentu dalam brankas kunci dengan mengunduhnya dan menyimpannya dalam file.
 Jika ada beberapa versi kunci, semua versi disertakan dalam cadangan.
-Karena konten yang diunduh dienkripsi, konten tersebut tidak dapat digunakan di luar Azure Key Vault.
+Karena konten yang diunduh dienkripsi, konten tidak dapat digunakan di luar Azure Key Vault.
 Anda dapat memulihkan kunci yang dicadangkan ke brankas kunci apa pun dalam langganan tempat kunci tersebut dicadangkan.
 Alasan umum untuk menggunakan cmdlet ini adalah: 
-- Anda ingin mengekstrak salinan kunci Anda, sehingga Anda memiliki salinan offline jika Anda secara tidak sengaja menghapus kunci Anda di brankas kunci Anda.
+- Anda ingin mengeskrow salinan kunci Anda, sehingga Anda memiliki salinan offline jika Anda secara tidak sengaja menghapus kunci Anda di brankas kunci Anda.
  
 - Anda membuat kunci menggunakan Key Vault dan sekarang ingin mengkloning kunci ke wilayah Azure yang berbeda, sehingga Anda dapat menggunakannya dari semua instans aplikasi terdistribusi Anda.
 Gunakan cmdlet **Backup-AzKeyVaultKey** untuk mengambil kunci dalam format terenkripsi lalu gunakan cmdlet Restore-AzKeyVaultKey dan tentukan brankas kunci di wilayah kedua.
@@ -83,7 +86,7 @@ Backup-AzKeyVaultKey -Key $key -OutputFile 'C:\Backup.blob' -Force
 C:\Backup.blob
 ```
 
-Perintah ini membuat cadangan kunci bernama $key. Nama dalam vault bernama $key. VaultName ke file bernama Backup.blob, secara diam-diam menimpa file jika sudah ada.
+Perintah ini membuat cadangan kunci bernama $key. Nama di brankas bernama $key. VaultName ke file bernama Backup.blob, diam-diam menimpa file jika sudah ada.
 
 ## PARAMETERS
 

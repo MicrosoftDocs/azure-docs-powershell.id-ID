@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/invoke-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Invoke-AzIotHubModuleMethod.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Invoke-AzIotHubModuleMethod.md
-ms.openlocfilehash: cb1bd6d6487dc2812b8ade2466edd3a6290f1e34
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b4dbffaef526df82d0dbca3cc46a1417c760e0b9
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144222359"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145805298"
 ---
 # Invoke-AzIotHubModuleMethod
 
 ## SYNOPSIS
-Panggil metode modul Edge.
+Panggil metode modul Azure Stack Edge.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/invoke-aziothubmodulemethod) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ Invoke-AzIotHubModuleMethod [-ResourceId] <String> [-DeviceId] <String> [-Module
 ```
 
 ## DESCRIPTION
-Panggil metode modul Edge. Lihat https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-direct-methods untuk informasi lebih lanjut.
+Panggil metode modul Azure Stack Edge. Lihat https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-direct-methods untuk informasi lebih lanjut.
 
 ## EXAMPLES
 
@@ -51,7 +54,7 @@ Panggil metode modul Edge. Lihat https://docs.microsoft.com/azure/iot-hub/iot-hu
 Invoke-AzIotHubModuleMethod -ResourceGroupName "myresourcegroup" -IotHubName "myiothub" -DeviceId "myDevice1" -ModuleId "myModule1" -Name "methodName" -Payload "method-input" -ResponseTimeOut 20 -ConnectionTimeOut 15
 ```
 
-Panggil metode modul Edge.
+Panggil metode modul Azure Stack Edge.
 
 ## PARAMETERS
 

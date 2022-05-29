@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationDscCompilationJobOutput.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationDscCompilationJobOutput.md
-ms.openlocfilehash: faab816fa905bcb80f0d617c05b7f01394d438b4
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 335226a5c86d9bdb605563e817d9a058c9faf730
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144233026"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145798676"
 ---
 # Get-AzAutomationDscCompilationJobOutput
 
 ## SYNOPSIS
 Mendapatkan aliran pengelogan dari pekerjaan kompilasi Automation DSC.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/get-azautomationdsccompilationjoboutput) untuk informasi terbaru.
 
 ## SYNTAX
 

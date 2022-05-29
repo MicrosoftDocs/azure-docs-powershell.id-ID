@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mariadb/get-azma
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/Get-AzMariaDbConnectionString.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/Get-AzMariaDbConnectionString.md
-ms.openlocfilehash: 213661f01ff52e004fdc5bc1d9bfd3394a2a07ca
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f0c9abf1678e4672d7b69513595a74ffaa74e4ca
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144190391"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145811250"
 ---
 # Get-AzMariaDbConnectionString
 
 ## SYNOPSIS
 Dapatkan string koneksi MariaDB di bawah kerangka kerja tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.mariadb/get-azmariadbconnectionstring) untuk informasi terbaru.
 
 ## SYNTAX
 

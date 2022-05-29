@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databoxedge/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Get-AzDataBoxEdgeStorageAccountCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Get-AzDataBoxEdgeStorageAccountCredential.md
-ms.openlocfilehash: f66cf08b5b0d76e56315ecb84c8ada22fc29d2ea
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8539f71a840ffec2bae24d32e0011c124a12b077
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144204911"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145785502"
 ---
 # Get-AzDataBoxEdgeStorageAccountCredential
 
 ## SYNOPSIS
 Mendapatkan kredensial akun penyimpanan yang sesuai dengan akun penyimpanan di perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.databoxedge/get-azdataboxedgestorageaccountcredential) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Get-AzDataBoxEdgeStorageAccountCredential [[-Name] <String>] [-DefaultProfile <I
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDataBoxEdgeStorageAccountCredential** mendapatkan kredensial akun penyimpanan untuk akun penyimpanan yang sesuai pada perangkat Azure Data Box Edge. Anda dapat menentukan parameter Nama, Nama Grup Sumber Daya, dan Nama Perangkat untuk mendapatkan informasi tentang kredensial akun penyimpanan tertentu.
+Cmdlet **Get-AzDataBoxEdgeStorageAccountCredential** mendapatkan kredensial akun penyimpanan untuk akun penyimpanan yang sesuai pada perangkat Data Box Edge. Anda dapat menentukan parameter Nama, Nama Grup Sumber Daya, dan Nama Perangkat untuk mendapatkan informasi tentang kredensial akun penyimpanan tertentu.
 
 ## EXAMPLES
 

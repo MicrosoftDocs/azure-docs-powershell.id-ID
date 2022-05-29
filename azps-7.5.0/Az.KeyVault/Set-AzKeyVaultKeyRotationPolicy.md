@@ -5,17 +5,20 @@ online version: ''
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Set-AzKeyVaultKeyRotationPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Set-AzKeyVaultKeyRotationPolicy.md
-ms.openlocfilehash: 6298b29959ac59ff482c29bbd3d5933dbc4793d7
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9ecdf2a3915a5cf2c985c99ee158b39265908211
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144237027"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145804866"
 ---
 # Set-AzKeyVaultKeyRotationPolicy
 
 ## SYNOPSIS
 Mengatur kebijakan rotasi kunci untuk kunci yang ditentukan dalam Key Vault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/set-azkeyvaultkeyrotationpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -60,7 +63,7 @@ CreatedOn       : 12/10/2021 3:21:51 AM +00:00
 UpdatedOn       : 12/10/2021 3:22:14 AM +00:00
 ```
 
-Cmdlet ini menetapkan waktu kedaluwarsa kebijakan rotasi kunci uji sebagai 50 hari.
+Cmdlet ini menetapkan waktu kedaluwarsa kebijakan rotasi kunci kunci uji sebagai 50 hari.
 
 ### Contoh 2: Mengatur kebijakan rotasi kunci oleh InputObject
 ```powershell
@@ -82,7 +85,7 @@ CreatedOn       : 12/10/2021 3:21:51 AM +00:00
 UpdatedOn       : 12/14/2021 5:26:28 AM +00:00
 ```
 
-Cmdlet ini menetapkan waktu kedaluwarsa kebijakan rotasi kunci uji sebagai 50 hari.
+Cmdlet ini menetapkan waktu kedaluwarsa kebijakan rotasi kunci kunci uji sebagai 50 hari.
 
 ### Contoh 3: Mengatur kebijakan rotasi kunci oleh objek PSKeyRotationPolicy
 ```powershell
@@ -100,7 +103,7 @@ CreatedOn       : 12/10/2021 3:21:51 AM +00:00
 UpdatedOn       : 12/14/2021 5:34:00 AM +00:00
 ```
 
-Cmdlet ini menetapkan waktu kedaluwarsa kebijakan rotasi kunci uji sebagai 50 hari.
+Cmdlet ini menetapkan waktu kedaluwarsa kebijakan rotasi kunci kunci uji sebagai 50 hari.
 
 ## PARAMETERS
 
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpiresIn
-Rentang waktu ketika kebijakan rotasi kunci akan kedaluwarsa.
+Rentang waktu saat kebijakan rotasi kunci akan kedaluwarsa.
 Harus setidaknya 28 hari.
 
 ```yaml

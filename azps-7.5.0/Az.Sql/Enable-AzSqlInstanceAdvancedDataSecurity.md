@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/enable-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Enable-AzSqlInstanceAdvancedDataSecurity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Enable-AzSqlInstanceAdvancedDataSecurity.md
-ms.openlocfilehash: c3b26222429f17901da08a930fefec2c2b137ad9
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2ddca1b0756291ccde9c6fff7556ba74041a8a5f
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144216722"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145809684"
 ---
 # Enable-AzSqlInstanceAdvancedDataSecurity
 
 ## SYNOPSIS
 Mengaktifkan Advanced Data Security pada instans terkelola.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/enable-azsqlinstanceadvanceddatasecurity) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -58,7 +61,7 @@ ManagedInstanceName          : ManagedInstance01
 IsEnabled                    : True
 ```
 
-### Contoh 3
+### Contoh: 3
 
 Mengaktifkan Advanced Data Security pada instans terkelola. (dibuat otomatis)
 

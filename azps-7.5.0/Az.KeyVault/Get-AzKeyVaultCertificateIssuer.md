@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/get-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVaultCertificateIssuer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVaultCertificateIssuer.md
-ms.openlocfilehash: 2b9c88c2cbd9f6b58d050d99f54ea7321b3aa381
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5fa90f398cea2f44911f86d72b105cde4913604e
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144190601"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145812240"
 ---
 # Get-AzKeyVaultCertificateIssuer
 
 ## SYNOPSIS
-Mendapatkan penerbit sertifikat untuk brankas kunci.
+Mendapatkan pengeluar sertifikat untuk brankas kunci.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/get-azkeyvaultcertificateissuer) untuk informasi terbaru.
 
 ## SYNTAX
 

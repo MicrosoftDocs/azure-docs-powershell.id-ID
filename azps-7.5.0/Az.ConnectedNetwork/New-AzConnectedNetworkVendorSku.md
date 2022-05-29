@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.connectednetwork
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/New-AzConnectedNetworkVendorSku.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/New-AzConnectedNetworkVendorSku.md
-ms.openlocfilehash: 52447797e4a17f01ec3e2ad68f52cfc767fd4fc8
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f7ddbcb0aeca64fb626a8a880b0ad145af55f88f
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144219698"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145816767"
 ---
 # New-AzConnectedNetworkVendorSku
 
@@ -18,6 +18,9 @@ ms.locfileid: "144219698"
 Membuat atau memperbarui sku.
 Operasi ini dapat memakan waktu hingga 2 jam untuk diselesaikan.
 Ini adalah perilaku layanan yang diharapkan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.connectednetwork/new-azconnectednetworkvendorsku) untuk informasi terbaru.
 
 ## SYNTAX
 

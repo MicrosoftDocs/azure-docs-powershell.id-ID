@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/update-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Update-AzIotHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Update-AzIotHub.md
-ms.openlocfilehash: 36c11eb2c986b1f8deeab840748b575db648db3d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: eb658487b3fb66915f3c5ef2a9de95a0df8eca81
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144213818"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145805028"
 ---
 # Update-AzIotHub
 
 ## SYNOPSIS
 Memperbarui Azure IoT Hub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/update-aziothub) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Update-AzIotHub -ResourceGroupName <String> -Name <String> -Tag <Hashtable> [-Re
 ```
 
 ## DESCRIPTION
-Anda dapat memperbarui properti tag IotHub.
+Anda dapat memperbarui properti tag dari IotHub.
 
 ## EXAMPLES
 

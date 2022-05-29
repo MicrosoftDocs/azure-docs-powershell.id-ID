@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewayFrontendPort.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewayFrontendPort.md
-ms.openlocfilehash: c03d0524e1f07ada0671f3fa54d8a34bfeb9186d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 81ec8cc1434fe3fd789c0e3b1efe2cc0a695be37
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144183688"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145803156"
 ---
 # Add-AzApplicationGatewayFrontendPort
 
 ## SYNOPSIS
 Menambahkan port front-end ke gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/add-azapplicationgatewayfrontendport) untuk informasi terbaru.
 
 ## SYNTAX
 

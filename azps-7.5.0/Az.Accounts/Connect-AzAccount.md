@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/connect
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Connect-AzAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Connect-AzAccount.md
-ms.openlocfilehash: e7b43639eaa07f1e6534fadb750b83750f506ba1
-ms.sourcegitcommit: b30367cf7752ecec16cdb98aa94322a69487bdf6
+ms.openlocfilehash: 116ea8f6529bbd80d178764e08acf01abeed0ee5
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "144795625"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145809345"
 ---
 # Connect-AzAccount
 
 ## SYNOPSIS
 Koneksi ke Azure dengan akun terautentikasi untuk digunakan dengan cmdlet dari modul Az PowerShell.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.accounts/connect-azaccount) untuk informasi terbaru.
 
 ## SYNTAX
 

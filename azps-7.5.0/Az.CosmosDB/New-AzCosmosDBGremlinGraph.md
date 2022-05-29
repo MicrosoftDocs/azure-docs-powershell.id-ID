@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/new-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBGremlinGraph.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBGremlinGraph.md
-ms.openlocfilehash: 3d01d5a8c64d25f199ccb5a348f0368cdeb1aa51
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c19d63da8ef5c7449ffa3d5179b9b21397c8bd38
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144207215"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145796678"
 ---
 # Baru-AzCosmosDBGremlinGraph
 
 ## SYNOPSIS
 Membuat Graph CosmosDB Gremlin baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/new-azcosmosdbgremlingraph) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -92,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConflictResolutionPolicy
-Objek ConflictResolutionPolicy jenis PSConflictResolutionPolicy, ketika disediakan ini ditetapkan sebagai ConflictResolutionPolicy kontainer.
+Objek ConflictResolutionPolicy jenis PSConflictResolutionPolicy, ketika disediakan ini ditetapkan sebagai ConflictResolutionPolicy dari kontainer.
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSConflictResolutionPolicy
@@ -305,7 +308,7 @@ Accept wildcard characters: False
 
 ### -TtlInSeconds
 Ttl default dalam hitungan detik.
-Jika nilai hilang atau diatur ke - 1, item tidak kedaluwarsa.
+Jika nilai hilang atau diatur ke - 1, item tidak akan kedaluwarsa.
 Jika nilai diatur ke n, item akan kedaluwarsa n detik setelah waktu terakhir diubah.
 
 ```yaml

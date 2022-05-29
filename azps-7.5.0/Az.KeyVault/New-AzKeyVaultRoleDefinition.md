@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/new-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/New-AzKeyVaultRoleDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/New-AzKeyVaultRoleDefinition.md
-ms.openlocfilehash: 9edb8d250d1bd2c48790127638da2795ae77ebd8
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 70b484affbcf22a8be2ed6a48f4ffd2971359d9e
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144112547"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145815552"
 ---
 # New-AzKeyVaultRoleDefinition
 
 ## SYNOPSIS
 Membuat definisi peran kustom pada HSM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/new-azkeyvaultroledefinition) untuk informasi terbaru.
 
 ## SYNTAX
 

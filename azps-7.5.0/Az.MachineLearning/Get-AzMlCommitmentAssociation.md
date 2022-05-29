@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.machinelearning/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MachineLearning/MachineLearning/help/Get-AzMlCommitmentAssociation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MachineLearning/MachineLearning/help/Get-AzMlCommitmentAssociation.md
-ms.openlocfilehash: f97797a400dc18770b93a3b008d363ddfe647089
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 15c5702ac9f247eae5c4b8d8300a887393edcc40
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144224642"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145811502"
 ---
 # Get-AzMlCommitmentAssociation
 
 ## SYNOPSIS
 Mengambil informasi ringkasan untuk satu atau beberapa asosiasi komitmen.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.machinelearning/get-azmlcommitmentassociation) untuk informasi terbaru.
 
 ## SYNTAX
 

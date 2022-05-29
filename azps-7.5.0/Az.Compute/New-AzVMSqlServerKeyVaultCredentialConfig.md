@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVMSqlServerKeyVaultCredentialConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVMSqlServerKeyVaultCredentialConfig.md
-ms.openlocfilehash: cd8a2360894b7a888cec3c2b49dd971935cc33aa
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 99b14e803c3b114612d74451ae48d21f43d2cbca
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144223574"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145801862"
 ---
 # New-AzVMSqlServerKeyVaultCredentialConfig
 
 ## SYNOPSIS
 Membuat objek konfigurasi untuk kredensial brankas kunci server SQL pada komputer virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/new-azvmsqlserverkeyvaultcredentialconfig) untuk informasi terbaru.
 
 ## SYNTAX
 

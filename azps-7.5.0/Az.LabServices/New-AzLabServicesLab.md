@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.labservices/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/New-AzLabServicesLab.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/New-AzLabServicesLab.md
-ms.openlocfilehash: 0f5e04ab5b9ab633fe1e4777b806add167b9b12f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b1cbf37fbccd24544aa3aaacc6556cf129a86742
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144184623"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145777134"
 ---
 # New-AzLabServicesLab
 
 ## SYNOPSIS
 Operasi untuk membuat sumber daya lab.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.labservices/new-azlabserviceslab) untuk informasi terbaru.
 
 ## SYNTAX
 

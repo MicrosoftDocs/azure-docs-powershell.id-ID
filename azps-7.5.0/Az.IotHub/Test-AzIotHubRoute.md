@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/test-azio
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Test-AzIotHubRoute.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Test-AzIotHubRoute.md
-ms.openlocfilehash: fb179d2cb1a047a05b32292c2aff7fbb801804c6
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d99bbbffb32b707426e44882cd8430b7dc2a28b2
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144239228"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145818108"
 ---
 # Test-AzIotHubRoute
 
 ## SYNOPSIS
 Menguji rute di IoT Hub
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/test-aziothubroute) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -95,7 +98,7 @@ Result : true
 
 Uji rute tertentu.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Test-AzIotHubRoute -ResourceGroupName "myresourcegroup" -Name "myiothub" -RouteName R1 -ShowError
 ```

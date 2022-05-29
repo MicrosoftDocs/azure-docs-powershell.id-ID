@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.kusto/new-azkust
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/New-AzKustoAttachedDatabaseConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/New-AzKustoAttachedDatabaseConfiguration.md
-ms.openlocfilehash: e2e7bc32a4ad14c3d83e1e4e6992d053c77132c8
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8001c05f330928848c2f5d377d162568a8ceee4f
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144194944"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145795310"
 ---
 # New-AzKustoAttachedDatabaseConfiguration
 
 ## SYNOPSIS
 Membuat atau memperbarui konfigurasi database terlampir.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.kusto/new-azkustoattacheddatabaseconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 

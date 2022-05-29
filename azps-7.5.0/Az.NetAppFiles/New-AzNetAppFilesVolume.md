@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/New-AzNetAppFilesVolume.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/New-AzNetAppFilesVolume.md
-ms.openlocfilehash: 8a92d7f3b8e3dd250fe026156058ca00e76f6463
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4fc5a85a44fa65e3b7aa67a4218fef8ddabeb329
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144184108"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145810386"
 ---
 # New-AzNetAppFilesVolume
 
 ## SYNOPSIS
 Membuat volume Azure NetApp Files (ANF) baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.netappfiles/new-aznetappfilesvolume) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -109,7 +112,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Backup
+### -Pencadangan
 Array hashtable yang mewakili objek cadangan
 
 ```yaml
@@ -530,7 +533,7 @@ Accept wildcard characters: False
 ```
 
 ### -SnapshotDirectoryVisible
-Jika diaktifkan (benar) volume akan berisi direktori .snapshot baca-saja yang menyediakan akses ke setiap rekam jepret volume (default ke true)
+Jika diaktifkan (true) volume akan berisi direktori .snapshot baca-saja yang menyediakan akses ke setiap rekam jepret volume (default ke true)
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -620,7 +623,7 @@ Accept wildcard characters: False
 ```
 
 ### -UnixPermissions
-UNIX izin untuk volume NFS yang diterima dalam format oktal 4 digit. Digit pertama memilih atribut SET USER ID(4), set group ID (2) dan sticky (1). Digit kedua memilih izin untuk pemilik file: baca (4), tulis (2) dan jalankan (1). Ketiga memilih izin untuk pengguna lain dalam grup yang sama. yang keempat untuk pengguna lain yang tidak ada dalam grup. 0755 - memberikan izin baca/tulis/jalankan kepada pemilik dan baca/jalankan ke grup dan pengguna lain.
+UNIX izin untuk volume NFS yang diterima dalam format oktal 4 digit. Digit pertama memilih atribut SET USER ID(4), set group ID (2) dan sticky (1). Digit kedua memilih izin untuk pemilik file: baca (4), tulis (2) dan jalankan (1). Ketiga memilih izin untuk pengguna lain dalam grup yang sama. yang keempat untuk pengguna lain yang tidak ada dalam grup. 0755 - memberikan izin baca/tulis/eksekusi kepada pemilik dan baca/jalankan ke grup dan pengguna lain.
 
 ```yaml
 Type: System.String
@@ -650,7 +653,7 @@ Accept wildcard characters: False
 ```
 
 ### -VolumeSpecName
-Nama spesifikasi volume adalah penunjukan atau pengidentifikasi spesifik aplikasi untuk volume tertentu dalam grup volume misalnya data, log.
+Nama spesifikasi volume adalah penetapan atau pengidentifikasi khusus aplikasi untuk volume tertentu dalam grup volume misalnya data, log.
 
 ```yaml
 Type: System.String

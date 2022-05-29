@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.ContainerInstanc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/New-AzContainerInstanceEnvironmentVariableObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/New-AzContainerInstanceEnvironmentVariableObject.md
-ms.openlocfilehash: fa78b0ebc9d409dc76a630b0c8f6379a05abe82d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 89531c79c8547f8061f82b90449b8ad3f1d65eb2
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144219398"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145816740"
 ---
 # New-AzContainerInstanceEnvironmentVariableObject
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk EnvironmentVariable
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.containerinstance/new-azcontainerinstanceenvironmentvariableobject) untuk informasi terbaru.
 
 ## SYNTAX
 

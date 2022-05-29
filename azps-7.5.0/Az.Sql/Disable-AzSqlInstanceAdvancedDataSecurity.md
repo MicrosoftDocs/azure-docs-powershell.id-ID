@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/disable-azsq
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Disable-AzSqlInstanceAdvancedDataSecurity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Disable-AzSqlInstanceAdvancedDataSecurity.md
-ms.openlocfilehash: 1cf60cc1d4d2076fc10318b275a992602379eaf7
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c6ab63e0672f39337ffdcacc2de2d341df3bec9f
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144216803"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145802742"
 ---
 # Disable-AzSqlInstanceAdvancedDataSecurity
 
 ## SYNOPSIS
 Menonaktifkan Advanced Data Security pada instans terkelola.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/disable-azsqlinstanceadvanceddatasecurity) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,7 +46,7 @@ ManagedInstanceName          : ManagedInstance01
 IsEnabled                    : False
 ```
 
-### Contoh 2 - Nonaktifkan Advanced Data Security server dari sumber daya instans terkelola
+### Contoh 2 - Menonaktifkan Server Advanced Data Security dari sumber daya instans terkelola
 ```powershell
 Get-AzSqlInstance `
            -ResourceGroupName "ResourceGroup01" `

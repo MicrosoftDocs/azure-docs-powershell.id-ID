@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzManagedCassandraCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzManagedCassandraCluster.md
-ms.openlocfilehash: 2ebbceff47c428dfa65218f9856682a538245730
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7e54582b0f64ff12e3f71e54edaf89728d894a33
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144205514"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145816290"
 ---
 # Update-AzManagedCassandraCluster
 
 ## SYNOPSIS
 Perbarui kluster Azure Managed Instances for Apache Cassandra yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/update-azmanagedcassandracluster) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -81,7 +84,7 @@ $clusterResource | Update-AzManagedCassandraCluster `
 ## PARAMETERS
 
 ### -AuthenticationMethod
-Cara mengautentikasi klien, salah satu dari `Cassandra` (untuk autentikasi kata sandi), `Ldap` (untuk autentikasi LDAP/AD), atau `None` (tanpa autentikasi yang diperlukan).
+Cara mengautentikasi klien, salah satu dari `Cassandra` (untuk autentikasi kata sandi), `Ldap` (untuk autentikasi LDAP/AD), atau `None` (tanpa memerlukan autentikasi).
 
 ```yaml
 Type: System.String
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClientCertificate
-Daftar sertifikat TLS yang digunakan untuk mengautentikasi klien. Jika ini dihilangkan, semua koneksi klien masih terhubung dengan TLS, tetapi tidak diperlukan untuk memberikan sertifikat klien yang valid. Jika ini disediakan, klien sebagian besar menyediakan sertifikat klien TLS yang valid untuk terhubung ke kluster.
+Daftar sertifikat TLS yang akan digunakan untuk mengautentikasi klien. Jika ini dihilangkan, semua koneksi klien masih terhubung dengan TLS, tetapi tidak diperlukan untuk memberikan sertifikat klien yang valid. Jika ini disediakan, klien paling banyak menyediakan sertifikat klien TLS yang valid untuk terhubung ke kluster.
 
 ```yaml
 Type: System.String[]
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExternalSeedNode
-Daftar alamat IP node benih eksternal untuk menjemahkan kluster ini.
+Daftar alamat IP node benih eksternal untuk menjemput kluster ini.
 
 ```yaml
 Type: System.String[]

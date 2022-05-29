@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/im
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Import-AzApiManagementApi.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Import-AzApiManagementApi.md
-ms.openlocfilehash: e427558e10c109b431b34d9531a128b25537e902
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 70a0f610dd918898909ec9a8b0ed411b04d25b53
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144112813"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145802455"
 ---
 # Import-AzApiManagementApi
 
 ## SYNOPSIS
 Mengimpor API dari file atau URL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/import-azapimanagementapi) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Import-AzApiManagementApi -Context <PsApiManagementContext> [-ApiId <String>] [-
 ```
 
 ## DESCRIPTION
-Cmdlet **Import-AzApiManagementApi** mengimpor AZURE API Management API dari file atau URL dalam Bahasa Deskripsi Aplikasi Web (WADL), Bahasa Deskripsi Layanan Web (WSDL), atau format Swagger.
+Cmdlet **Import-AzApiManagementApi** mengimpor AZURE API Management API dari file atau URL dalam Bahasa Deskripsi Aplikasi Web (WADL), Web Services Description Language (WSDL), atau format Swagger.
 
 ## EXAMPLES
 
@@ -102,7 +105,7 @@ ServiceName                   : contoso
 
 Perintah ini mengimpor API dari tautan spesifikasi Open 3.0 yang ditentukan.
 
-### Contoh 5: Mengimpor API dari Open Api Link ke Dalam Set ApiVersion
+### Contoh 5: Mengimpor API dari Open Api Link ke dalam Set ApiVersion
 
 ```powershell
 $context = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
@@ -144,8 +147,8 @@ Perintah ini mengimpor API dari dokumen spesifikasi Open 3.0 yang ditentukan dan
 ## PARAMETERS
 
 ### -ApiId
-Menentukan ID untuk API yang akan diimpor.
-Jika Anda tidak menentukan parameter ini, ID dibuat untuk Anda.
+Menentukan ID untuk api yang akan diimpor.
+Jika Anda tidak menentukan parameter ini, ID akan dibuat untuk Anda.
 
 ```yaml
 Type: System.String
@@ -285,7 +288,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceUrl
-URL layanan web yang mengekspos API. URL ini hanya akan digunakan oleh Azure API Management, dan tidak akan di publikasikan. Parameter ini bersifat opsional. Jika disediakan, itu akan mengambil alih ServiceUrl yang ditentukan dalam dokumen Spesifikasi.
+URL layanan web yang mengekspos API. URL ini hanya akan digunakan oleh Azure API Management, dan tidak akan dibuat publik. Parameter ini bersifat opsional. Jika disediakan, itu akan mengambil alih ServiceUrl yang ditentukan dalam dokumen Spesifikasi.
 
 ```yaml
 Type: System.String

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBTableThroughput.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBTableThroughput.md
-ms.openlocfilehash: 4aa4661ceed5fce08e37b7738760b193ae62f49a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 291481fd42252780af846e4fbc70a2dab4c28593
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144219155"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145816360"
 ---
 # Update-AzCosmosDBTableThroughput
 
 ## SYNOPSIS
 Memperbarui nilai throughput Tabel CosmosDB.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/update-azcosmosdbtablethroughput) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzNetworkInterfaceIpConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzNetworkInterfaceIpConfig.md
-ms.openlocfilehash: d1867dc5157e7bc359847bf185bd50e07d549e2d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 56517fe10eef8d76dae1f27a243c76f15eb51b38
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144209159"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145810026"
 ---
 # Add-AzNetworkInterfaceIpConfig
 
 ## SYNOPSIS
 Menambahkan konfigurasi IP antarmuka jaringan ke antarmuka jaringan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/add-aznetworkinterfaceipconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -59,7 +62,7 @@ $nic | Set-AzNetworkInterfaceIpConfig -Name $nic.IpConfigurations[0].Name -Subne
 $nic | Add-AzNetworkInterfaceIpConfig -Name MyNewIpConfig -Subnet $vnet.Subnets[0] -ApplicationSecurityGroup $asg | Set-AzNetworkInterface
 ```
 
-Dalam contoh ini, kami membuat antarmuka jaringan baru MyNetworkInterface milik subnet di jaringan virtual baru MyVNET. Kami juga membuat grup keamanan aplikasi kosong MyASG untuk mengaitkan dengan konfigurasi IP di antarmuka jaringan. Setelah kedua objek dibuat, kami menautkan konfigurasi IP default ke objek MyASG. Akhirnya, kami membuat konfigurasi IP baru di antarmuka jaringan yang juga ditautkan ke objek kelompok keamanan aplikasi.
+Dalam contoh ini, kami membuat antarmuka jaringan baru MyNetworkInterface milik subnet di jaringan virtual baru MyVNET. Kami juga membuat grup keamanan aplikasi kosong MyASG untuk dikaitkan dengan konfigurasi IP di antarmuka jaringan. Setelah kedua objek dibuat, kami menautkan konfigurasi IP default ke objek MyASG. Akhirnya, kami membuat konfigurasi IP baru di antarmuka jaringan yang juga ditautkan ke objek kelompok keamanan aplikasi.
 
 ## PARAMETERS
 
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancerInboundNatRule
-Menentukan kumpulan referensi aturan terjemahan alamat jaringan masuk (NAT) penyeimbang muatan tempat konfigurasi IP antarmuka jaringan ini berada.
+Menentukan kumpulan referensi aturan terjemahan alamat jaringan masuk (NAT) penyeimbang beban tempat konfigurasi IP antarmuka jaringan ini berada.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSInboundNatRule[]

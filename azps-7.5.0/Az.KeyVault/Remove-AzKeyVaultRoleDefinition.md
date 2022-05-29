@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Remove-AzKeyVaultRoleDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Remove-AzKeyVaultRoleDefinition.md
-ms.openlocfilehash: ff21ddcfec7bbef0be4314f308fee6c00eab2a3a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: dd48bf401328b08bc5e5b620717920c9ae3c403b
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144244139"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145817856"
 ---
 # Remove-AzKeyVaultRoleDefinition
 
 ## SYNOPSIS
 Menghapus definisi peran kustom dari HSM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/remove-azkeyvaultroledefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -54,7 +57,7 @@ $role = Get-AzKeyVaultRoleDefinition -HsmName myHsm -RoleName "my role"
 $role | Remove-AzKeyVaultRoleDefinition -HsmName myHsm -Force
 ```
 
-Contoh ini menghapus peran kustom bernama "peran saya" dengan mempipa objek peran. Ini juga menekan prompt dengan `-Force`.
+Contoh ini menghapus peran kustom bernama "peran saya" dengan memilah objek peran. Ini juga menekan prompt dengan `-Force`.
 
 ## PARAMETERS
 

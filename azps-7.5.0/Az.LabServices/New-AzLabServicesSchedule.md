@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.labservices/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/New-AzLabServicesSchedule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/New-AzLabServicesSchedule.md
-ms.openlocfilehash: c01f1e6678516cae3883c3fa3e8cf335e5a8603f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: caa2d53dc90a950ef512323f055cd3f66958e8cf
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144184598"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145795211"
 ---
 # New-AzLabServicesSchedule
 
 ## SYNOPSIS
 Operasi untuk membuat atau memperbarui jadwal lab.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.labservices/new-azlabservicesschedule) untuk informasi terbaru.
 
 ## SYNTAX
 

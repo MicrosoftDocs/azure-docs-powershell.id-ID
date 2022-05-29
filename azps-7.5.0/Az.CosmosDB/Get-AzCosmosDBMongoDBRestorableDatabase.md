@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/get-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBMongoDBRestorableDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBMongoDBRestorableDatabase.md
-ms.openlocfilehash: e3630f40fc4b2e43d375d1f8efa81caf9fa625f7
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 96aa5d35015a49d1cb6e3a1d8b0b2ef4013b1a95
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144234132"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145816333"
 ---
 # Get-AzCosmosDBMongoDBRestorableDatabase
 
 ## SYNOPSIS
 Mendapatkan daftar semua database Azure Cosmos DB MongoDB yang dapat dipulihkan yang tersedia di bawah akun yang dapat dipulihkan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbmongodbrestorabledatabase) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Get-AzCosmosDBMongoDBRestorableDatabase -InputObject <PSRestorableDatabaseAccoun
 ## DESCRIPTION
 Mendapatkan daftar semua peristiwa database Azure Cosmos DB MongoDB yang dapat dipulihkan yang tersedia di bawah akun yang dapat dipulihkan.
 Daftar ini akan memiliki entri yang sesuai untuk membuat, mengganti, dan menghapus peristiwa semua database langsung dan dihapus.
-Daftar ini berguna untuk mengidentifikasi tanda waktu pemulihan berdasarkan perubahan dalam database. Misalnya, jika pengguna ingin memulihkan akun database ke tanda waktu saat database bernama foo dihapus, pengguna dapat menemukan peristiwa penghapusan database yang sesuai dari daftar ini, dan memilih tanda waktu sebelum peristiwa penghapusan untuk dipulihkan.
+Daftar ini berguna untuk mengidentifikasi tanda waktu pemulihan berdasarkan perubahan dalam database. Misalnya, jika pengguna ingin memulihkan akun database ke tanda waktu saat database bernama foo dihapus, pengguna dapat menemukan peristiwa penghapusan database yang sesuai dari daftar ini, dan memilih tanda waktu sebelum peristiwa penghapusan untuk pemulihan.
 
 ## EXAMPLES
 
@@ -91,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Akun Database CosmosDB yang Dapat Di-restorable
+Objek Akun Database yang Dapat Di memulihkan CosmosDB
 
 ```yaml
 Type: Microsoft.Azure.Management.CosmosDB.Models.PSRestorableDatabaseAccountGetResult

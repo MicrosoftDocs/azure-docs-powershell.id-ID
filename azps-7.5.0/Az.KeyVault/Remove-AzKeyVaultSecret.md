@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Remove-AzKeyVaultSecret.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Remove-AzKeyVaultSecret.md
-ms.openlocfilehash: 4888e0353f4d4f8597f9ff41b5a4c43ea6ccdab1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e628c416ff8784b255e35485d08529e849902d76
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144212414"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145817820"
 ---
 # Remove-AzKeyVaultSecret
 
 ## SYNOPSIS
-Menghapus rahasia di brankas kunci.
+Menghapus rahasia dalam brankas kunci.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/remove-azkeyvaultsecret) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -90,8 +93,8 @@ Perintah menentukan parameter *Paksa* dan *Konfirmasi* , dan, oleh karena itu, c
 Remove-AzKeyVaultSecret -VaultName 'Contoso' -Name 'FinanceSecret' -InRemovedState
 ```
 
-Perintah ini mengawali rahasia bernama FinanceSecret dari brankas kunci bernama Contoso secara permanen.
-Menjalankan cmdlet ini memerlukan izin 'hapus menyeluruh', yang harus telah diberikan sebelumnya dan secara eksplisit kepada pengguna untuk brankas kunci ini.
+Perintah ini mengabaikan rahasia bernama FinanceSecret dari brankas kunci bernama Contoso secara permanen.
+Menjalankan cmdlet ini memerlukan izin 'hapus menyeluruh', yang harus diberikan sebelumnya dan secara eksplisit kepada pengguna untuk brankas kunci ini.
 
 ## PARAMETERS
 

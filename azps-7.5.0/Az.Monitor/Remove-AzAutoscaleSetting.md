@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Remove-AzAutoscaleSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Remove-AzAutoscaleSetting.md
-ms.openlocfilehash: 13db5fe54fecb1de1c35eb824883553e0a9627e8
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ddb26f5a53ecf14dd542cc725a5be0feec960b36
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144245850"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145810854"
 ---
 # Remove-AzAutoscaleSetting
 
 ## SYNOPSIS
 Menghapus pengaturan Skala Otomatis.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/remove-azautoscalesetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Remove-AzAutoscaleSetting -ResourceGroupName <String> -Name <String> [-DefaultPr
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzAutoscaleSetting** menghapus pengaturan Skala Otomatis.
+Cmdlet **Remove-AzAutoscaleSetting** menghapus pengaturan Autoscale.
 Anda harus menentukan nama pengaturan dan nama grup sumber daya yang ditetapkan.
 Cmdlet ini mengimplementasikan pola ShouldProcess, yaitu mungkin meminta konfirmasi dari pengguna sebelum benar-benar membuat, memodifikasi, atau menghapus sumber daya.
 

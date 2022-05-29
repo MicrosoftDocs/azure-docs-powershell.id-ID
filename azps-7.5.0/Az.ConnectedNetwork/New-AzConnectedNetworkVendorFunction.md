@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.connectednetwork
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/New-AzConnectedNetworkVendorFunction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/New-AzConnectedNetworkVendorFunction.md
-ms.openlocfilehash: 222fce29efb5050e4a9d1a14ae134ecf44f455b1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2b7f5037e290bcd8ff8fe4e6a8689f0f86a3cbfd
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144219710"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145816848"
 ---
 # New-AzConnectedNetworkVendorFunction
 
@@ -18,6 +18,9 @@ ms.locfileid: "144219710"
 Membuat atau memperbarui fungsi jaringan vendor.
 Operasi ini dapat memakan waktu hingga 6 jam untuk diselesaikan.
 Ini adalah perilaku layanan yang diharapkan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.connectednetwork/new-azconnectednetworkvendorfunction) untuk informasi terbaru.
 
 ## SYNTAX
 

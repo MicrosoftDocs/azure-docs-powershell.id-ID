@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/add-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Add-AzHDInsightSecurityProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Add-AzHDInsightSecurityProfile.md
-ms.openlocfilehash: 449244e3985d08d98c0314d2cb8cc7779875cc59
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: cd621b69b19e303167eaaa3d28732e074b530d89
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144225197"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145795724"
 ---
 # Add-AzHDInsightSecurityProfile
 
 ## SYNOPSIS
 Menambahkan profil keamanan ke objek konfigurasi kluster.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/add-azhdinsightsecurityprofile) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ Add-AzHDInsightSecurityProfile [-Config] <AzureHDInsightConfig> -DomainResourceI
 ```
 
 ## DESCRIPTION
-Profil keamanan digunakan untuk membuat kluster aman dengan kerberisasinya.
+Profil keamanan digunakan untuk membuat kluster aman dengan melakukan kerberisasi.
 Profil keamanan berisi konfigurasi terkait bergabung dengan kluster ke Domain Direktori Aktif.
 
 ## EXAMPLES
@@ -87,7 +90,7 @@ Perintah ini menambahkan nilai profil keamanan ke kluster bernama your-hadoop-00
 ## PARAMETERS
 
 ### -ClusterUsersGroupDN
-Nama terhormat grup Direktori Aktif yang akan tersedia di Ambari dan Ranger
+Nama yang dibedakan dari grup Direktori Aktif yang akan tersedia di Ambari dan Ranger
 
 ```yaml
 Type: System.String[]
@@ -101,7 +104,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Config
+### -Konfigurasi
 Menentukan objek konfigurasi kluster HDInsight yang dimodifikasi cmdlet ini.
 Objek ini dibuat oleh cmdlet New-AzHDInsightClusterConfig.
 

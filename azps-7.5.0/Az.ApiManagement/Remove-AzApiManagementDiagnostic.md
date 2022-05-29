@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementDiagnostic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementDiagnostic.md
-ms.openlocfilehash: 45149ef9e2c3ad950182b3c06eb4cffcfbfbda83
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 07262f560c9207112fbcc4ae4a64cb1d870fcd1b
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144209447"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145808790"
 ---
 # Remove-AzApiManagementDiagnostic
 
 ## SYNOPSIS
 Hapus entitas Diagnostik dari cakupan tingkat Global atau API.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/remove-azapimanagementdiagnostic) untuk informasi terbaru.
 
 ## SYNTAX
 

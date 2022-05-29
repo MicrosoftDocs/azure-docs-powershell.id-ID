@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/new-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBSqlCompositePath.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBSqlCompositePath.md
-ms.openlocfilehash: 32310a7e776a8c94cd7ed2a858926521239569e2
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f55e4498f76a59ecd2c059927870490ea5d6a855
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144207074"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145796354"
 ---
 # Baru-AzCosmosDBSqlCompositePath
 
 ## SYNOPSIS
 Membuat objek baru jenis PSCompositePath. Ini dapat diteruskan sebagai nilai parameter untuk Set-AzCosmosDBSqlContainer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/new-azcosmosdbsqlcompositepath) untuk informasi terbaru.
 
 ## SYNTAX
 

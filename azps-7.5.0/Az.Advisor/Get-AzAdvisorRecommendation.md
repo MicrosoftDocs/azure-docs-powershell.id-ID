@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.advisor/get-azad
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Advisor/Advisor/help/Get-AzAdvisorRecommendation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Advisor/Advisor/help/Get-AzAdvisorRecommendation.md
-ms.openlocfilehash: b0f6d53c150a86c605d9b54ebf2462b5a9834b32
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 17587c23372ed29196cfa765303c940e2fc8822d
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144196971"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145790596"
 ---
 # Get-AzAdvisorRecommendation
 
 ## SYNOPSIS
 Mendapatkan daftar rekomendasi Azure Advisor.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.advisor/get-azadvisorrecommendation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -157,7 +160,7 @@ Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.Advisor.Cmdlets.Models.PsAzureAdvisorResourceRecommendationBase
+### Microsoft.Azure.Commands. Advisor. Cmdlets.Models.PsAzureAdvisorResourceRecommendationBase
 
 ## NOTES
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/get-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchSubtask.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchSubtask.md
-ms.openlocfilehash: 5d9762471659f83b99608d1cd06e8dfbdc5e1635
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 876b6b4f88ce9e5df18ca098dccdac348b08dac5
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144195193"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145818432"
 ---
 # Get-AzBatchSubtask
 
 ## SYNOPSIS
 Mendapatkan informasi subtugas dari tugas yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/get-azbatchsubtask) untuk informasi terbaru.
 
 ## SYNTAX
 

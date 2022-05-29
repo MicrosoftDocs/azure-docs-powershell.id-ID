@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.kubernetesconfig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KubernetesConfiguration/help/Remove-AzKubernetesConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KubernetesConfiguration/help/Remove-AzKubernetesConfiguration.md
-ms.openlocfilehash: 53fa1a6afdb9f26e9d786a1662b430c05500ca68
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3c977909bb7dd8cdad3b709046c1363e9412ee71
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144235840"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145811952"
 ---
 # Remove-AzKubernetesConfiguration
 
 ## SYNOPSIS
 Ini akan menghapus file YAML yang digunakan untuk menyiapkan konfigurasi kontrol Sumber, sehingga menghentikan sinkronisasi di masa mendatang dari repositori sumber.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.kubernetesconfiguration/remove-azkubernetesconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 

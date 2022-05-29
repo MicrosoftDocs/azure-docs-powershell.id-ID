@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementOperation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementOperation.md
-ms.openlocfilehash: 636467427e7c41acf864d38cf8700ecee645b2c3
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0894cc9d88d4a9b65d467f80e33479a091aae9d1
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144243425"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145775298"
 ---
 # Get-AzApiManagementOperation
 
 ## SYNOPSIS
 Mendapatkan daftar atau Operasi API tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementoperation) untuk informasi terbaru.
 
 ## SYNTAX
 

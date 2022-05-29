@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.maintenance/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maintenance/Maintenance/help/New-AzMaintenanceConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maintenance/Maintenance/help/New-AzMaintenanceConfiguration.md
-ms.openlocfilehash: c0fc86e02f2536b4c6f8cfaee94c2b9c9ba68373
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 93439e6ad3f8b6294f3a3bee5f14709573c3062e
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144112505"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145811322"
 ---
 # New-AzMaintenanceConfiguration
 
 ## SYNOPSIS
 Membuat atau Memperbarui rekaman konfigurasi
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.maintenance/new-azmaintenanceconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -91,7 +94,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Durasi
+### -Duration
 Durasi
 
 
@@ -303,7 +306,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartDateTime
-StartDateTime jadwal dalam format YYYY-MM-DD hh:mm
+StartDateTime dari jadwal dalam format YYYY-MM-DD hh:mm
 
 ```yaml
 Type: System.String
@@ -332,7 +335,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Zona waktu
+### -Zona Waktu
 Zona waktu
 
 ```yaml
