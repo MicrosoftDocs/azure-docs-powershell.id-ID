@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayBackendHttpSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayBackendHttpSetting.md
-ms.openlocfilehash: 2bb255085339f058abd6861f2ecf86b6c7eca1aa
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7e92af4586674540a818394db9ab40b2d7daa61c
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144242949"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145775838"
 ---
 # Get-AzApplicationGatewayBackendHttpSetting
 
 ## SYNOPSIS
 Mendapatkan pengaturan HTTP back-end gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azapplicationgatewaybackendhttpsetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,11 +28,11 @@ Get-AzApplicationGatewayBackendHttpSetting [-Name <String>] -ApplicationGateway 
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzApplicationGatewayBackendHttpSetting mendapatkan pengaturan HTTP back-end dari gateway aplikasi.
+Cmdlet Get-AzApplicationGatewayBackendHttpSetting mendapatkan pengaturan HTTP back-end gateway aplikasi.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan pengaturan HTTP back-end berdasarkan nama
+### Contoh 1: Mendapatkan pengaturan HTTP back-end berdasarkan nama
 ```powershell
 $AppGw = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
 $Settings  = Get-AzApplicationGatewayBackendHttpSetting -Name "Settings01" -ApplicationGateway $AppGw

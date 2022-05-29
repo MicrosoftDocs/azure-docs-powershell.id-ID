@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mysql/new-azmysq
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/New-AzMySqlVirtualNetworkRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/New-AzMySqlVirtualNetworkRule.md
-ms.openlocfilehash: d82033121dd0cbe29a40018f1fd9b994ff33a4e1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4aabb029c7a7bc3c59203d05a5bc0ae8f11b451f
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144210806"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145794248"
 ---
 # New-AzMySqlVirtualNetworkRule
 
 ## SYNOPSIS
 Membuat atau memperbarui aturan jaringan virtual yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.mysql/new-azmysqlvirtualnetworkrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Membuat atau memperbarui aturan jaringan virtual yang ada.
 
 ## EXAMPLES
 
-### Contoh 1: Buat Aturan Virtual Network server MySql baru
+### Contoh 1: Membuat Aturan Virtual Network server MySql baru
 ```powershell
 $ID = "/subscriptions/<SubscriptionId>/resourceGroups/PowershellMySqlTest/providers/Microsoft.Network/virtualNetworks/MySqlVNet/subnets/MysqlSubnet1"
 New-AzMySqlVirtualNetworkRule -Name vnet -ResourceGroupName PowershellMySqlTest -ServerName mysql-test -SubnetId $ID
@@ -42,7 +45,7 @@ Name Type
 vnet Microsoft.DBforMySQL/servers/virtualNetworkRules
 ```
 
-Cmdlet ini membuat aturan Virtual Network server MySql.
+Cmdlet ini membuat server MySql Virtual Network Rule.
 
 ## PARAMETERS
 
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama tidak peka huruf besar/kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String

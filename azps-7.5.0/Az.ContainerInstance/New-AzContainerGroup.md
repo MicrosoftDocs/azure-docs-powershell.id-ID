@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.containerinstanc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/New-AzContainerGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/New-AzContainerGroup.md
-ms.openlocfilehash: 8b67418b46e0e3c617a827fadc9e14af89f1dd02
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2574c3b79855161414ae695de344898c62dfde2c
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144219446"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145789804"
 ---
 # New-AzContainerGroup
 
 ## SYNOPSIS
 Membuat atau memperbarui grup kontainer dengan konfigurasi tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.containerinstance/new-azcontainergroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -56,7 +59,7 @@ eastus   test-cg      test-rg
 
 Perintah ini membuat grup kontainer dengan instans kontainer, yang gambarnya adalah nginx terbaru, dan meminta alamat IP publik dengan membuka port 8000 dan 8001.
 
-### Contoh 2: Buat grup kontainer dan jalankan skrip kustom di dalam kontainer.
+### Contoh 2: Membuat grup kontainer dan menjalankan skrip kustom di dalam kontainer.
 ```powershell
 $env1 = New-AzContainerInstanceEnvironmentVariableObject -Name "env1" -Value "value1"
 $env2 = New-AzContainerInstanceEnvironmentVariableObject -Name "env2" -SecureValue (ConvertTo-SecureString -String "value2" -AsPlainText -Force)
@@ -86,7 +89,7 @@ eastus   test-cg      test-rg
 
 Perintah ini membuat grup kontainer yang mencetak 'halo' dan berhenti.
 
-### Contoh 4: Membuat grup kontainer dengan instans kontainer menggunakan nginx gambar di Azure Container Registry
+### Contoh 4: Membuat grup kontainer dengan instans kontainer menggunakan image nginx di Azure Container Registry
 ```powershell
 $container = New-AzContainerInstanceObject -Name test-container -Image myacr.azurecr.io/nginx:latest
 $imageRegistryCredential = New-AzContainerGroupImageRegistryCredentialObject -Server "myacr.azurecr.io" -Username "username" -Password (ConvertTo-SecureString "PlainTextPassword" -AsPlainText -Force) 
@@ -101,7 +104,7 @@ eastus   test-cg      test-rg
 
 Perintah ini membuat grup kontainer dengan instans kontainer, yang gambarnya nginx dalam Azure Container Registry.
 
-### Contoh 5: Membuat grup kontainer dengan instans kontainer menggunakan nginx gambar dalam registri gambar kontainer kustom
+### Contoh 5: Membuat grup kontainer dengan instans kontainer menggunakan image nginx di registri gambar kontainer kustom
 ```powershell
 $container = New-AzContainerInstanceObject -Name test-container -Image myserver.com/nginx:latest
 $imageRegistryCredential = New-AzContainerGroupImageRegistryCredentialObject -Server "myserver.com" -Username "username" -Password (ConvertTo-SecureString "PlainTextPassword" -AsPlainText -Force) 
@@ -116,7 +119,7 @@ eastus   test-cg      test-rg
 
 Perintah ini membuat grup kontainer dengan instans kontainer, yang gambarnya adalah gambar kustom dari registri gambar kontainer kustom.
 
-### Contoh 6: Membuat grup kontainer yang memasang volume Azure File
+### Contoh 6: Membuat grup kontainer yang memasang volume File Azure
 ```powershell
 $volume = New-AzContainerGroupVolumeObject -Name "myvolume" -AzureFileShareName "myshare" -AzureFileStorageAccountName "username" -AzureFileStorageAccountKey (ConvertTo-SecureString "PlainTextPassword" -AsPlainText -Force)
 $container = New-AzContainerInstanceObject -Name test-container -Image alpine
@@ -380,7 +383,7 @@ Accept wildcard characters: False
 
 ### -IPAddressPort
 Daftar port yang terekspos di grup kontainer.
-Untuk membuat, lihat bagian CATATAN untuk properti IPADDRESSPORT dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti IPADDRESSPORT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ContainerInstance.Models.Api20210901.IPort[]
@@ -561,7 +564,7 @@ Accept wildcard characters: False
 
 ### -RestartPolicy
 Kebijakan hidupkan ulang untuk semua kontainer dalam grup kontainer.
-- `Always` Selalu hidupkan ulang- `OnFailure` Hidupkan ulang saat gagal- `Never` Jangan pernah memulai ulang
+- `Always` Selalu hidupkan ulang- `OnFailure` Hidupkan ulang pada kegagalan- `Never` Jangan pernah memulai ulang
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ContainerInstance.Support.ContainerGroupRestartPolicy
@@ -592,7 +595,7 @@ Accept wildcard characters: False
 
 ### -SubnetId
 ID sumber daya subnet untuk grup kontainer.
-Untuk membuat, lihat bagian CATATAN untuk properti SUBNETID dan membuat tabel hash.
+Untuk membuat, lihat bagian NOTES untuk properti SUBNETID dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ContainerInstance.Models.Api20210901.IContainerGroupSubnetId[]
@@ -607,7 +610,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+Info masuk langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml

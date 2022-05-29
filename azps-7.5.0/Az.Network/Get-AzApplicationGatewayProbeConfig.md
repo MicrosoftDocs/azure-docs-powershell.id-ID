@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayProbeConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayProbeConfig.md
-ms.openlocfilehash: 8856d4527d7fc766645978cb5e3332e3b45d6963
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 144c62bbb123e57ed7bcd4ee8f372f1fac89fbc1
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144216083"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145794068"
 ---
 # Get-AzApplicationGatewayProbeConfig
 
 ## SYNOPSIS
 Mendapatkan konfigurasi pemeriksaan kesehatan yang ada dari Application Gateway.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azapplicationgatewayprobeconfig) untuk informasi terbaru.
 
 ## SYNTAX
 

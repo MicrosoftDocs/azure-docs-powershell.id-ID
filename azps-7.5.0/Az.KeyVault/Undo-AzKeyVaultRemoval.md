@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/undo-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Undo-AzKeyVaultRemoval.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Undo-AzKeyVaultRemoval.md
-ms.openlocfilehash: 6b693bb80b54445a93c3c9f2a0ed196d3cb806e0
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1757ee253cad18a6a8a499ad2b98c1be388103d5
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144197884"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145815264"
 ---
 # Undo-AzKeyVaultRemoval
 
 ## SYNOPSIS
 Memulihkan brankas kunci yang dihapus ke status aktif.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/undo-azkeyvaultremoval) untuk informasi terbaru.
 
 ## SYNTAX
 

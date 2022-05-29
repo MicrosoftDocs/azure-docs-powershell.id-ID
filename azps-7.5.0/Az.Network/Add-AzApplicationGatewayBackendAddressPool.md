@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewayBackendAddressPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewayBackendAddressPool.md
-ms.openlocfilehash: f317ac952fcfb74f7af3248b1bedf08bbfc556c9
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 62ae224724b37a920ad0008ba5612c7f6e9c2a29
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144183727"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145771086"
 ---
 # Add-AzApplicationGatewayBackendAddressPool
 
 ## SYNOPSIS
 Menambahkan kumpulan alamat back-end ke gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/add-azapplicationgatewaybackendaddresspool) untuk informasi terbaru.
 
 ## SYNTAX
 

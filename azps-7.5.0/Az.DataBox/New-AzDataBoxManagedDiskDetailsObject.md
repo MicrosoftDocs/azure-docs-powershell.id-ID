@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.DataBox/new-AzDa
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/New-AzDataBoxManagedDiskDetailsObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/New-AzDataBoxManagedDiskDetailsObject.md
-ms.openlocfilehash: 0ab81664c59e51d4490cf8389246844074da600c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0a1bb7501e441b5faf61ab9f85ab6b5abb4ebb86
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144205106"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145806757"
 ---
 # New-AzDataBoxManagedDiskDetailsObject
 
 ## SYNOPSIS
 Buat objek dalam memori untuk ManagedDiskDetails.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.databox/new-azdataboxmanageddiskdetailsobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -75,7 +78,7 @@ Jika ini tidak diteruskan, layanan akan menghasilkan kata sandi itu sendiri.
 Ini tidak akan dikembalikan di Dapatkan Panggilan.
 Persyaratan Kata Sandi : Kata sandi harus minimal 12 dan maksimum 64 karakter.
 Kata sandi harus memiliki setidaknya satu alfabet huruf besar, satu angka dan satu karakter khusus.
-Kata sandi tidak boleh memiliki karakter berikut : Kata Sandi IilLoO0 hanya boleh memiliki alfabet, angka dan karakter ini : @#\-$%^!+=;:_()]+.
+Kata sandi tidak boleh memiliki karakter berikut: Kata Sandi IilLoO0 hanya boleh memiliki alfabet, angka, dan karakter ini : @#\-$%^!+=;:_()]+.
 
 ```yaml
 Type: System.String
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -StagingStorageAccountId
-Id Sumber Daya dari akun penyimpanan yang dapat digunakan untuk menyalin vhd untuk penahapan.
+Id sumber daya akun penyimpanan yang dapat digunakan untuk menyalin vhd untuk penahapan.
 
 ```yaml
 Type: System.String

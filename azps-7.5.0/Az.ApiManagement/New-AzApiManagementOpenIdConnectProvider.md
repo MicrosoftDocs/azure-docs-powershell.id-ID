@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementOpenIdConnectProvider.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementOpenIdConnectProvider.md
-ms.openlocfilehash: 55c6e4956a85b5443fb3c93861d2a275b312d80e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: bc24be88c799af86eec7b8c30d2d1b5a97f01033
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144229176"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145798730"
 ---
 # New-AzApiManagementOpenIdConnectProvider
 
 ## SYNOPSIS
 Membuat penyedia Koneksi OpenID.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementopenidconnectprovider) untuk informasi terbaru.
 
 ## SYNTAX
 

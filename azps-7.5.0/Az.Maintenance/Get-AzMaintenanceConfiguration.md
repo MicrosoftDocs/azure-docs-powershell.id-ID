@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.maintenance/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maintenance/Maintenance/help/Get-AzMaintenanceConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maintenance/Maintenance/help/Get-AzMaintenanceConfiguration.md
-ms.openlocfilehash: 15df41a4db01b4f0f03244b082924880571924fe
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1d367cfef5b14e5f3e77227d49509e715ab86aca
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144224450"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145768440"
 ---
 # Get-AzMaintenanceConfiguration
 
 ## SYNOPSIS
 Mendapatkan rekaman konfigurasi Pemeliharaan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.maintenance/get-azmaintenanceconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 

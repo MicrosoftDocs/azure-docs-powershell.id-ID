@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mysql/new-azmysq
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/New-AzMySqlFlexibleServerFirewallRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/New-AzMySqlFlexibleServerFirewallRule.md
-ms.openlocfilehash: 58d16d1009f303f2324468572f57900af56c5f5d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 258982d4e35eadf535f05913fad5c18ad3a08f21
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144210830"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145782910"
 ---
 # New-AzMySqlFlexibleServerFirewallRule
 
 ## SYNOPSIS
 Membuat aturan firewall baru untuk server fleksibel MySQL
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.mysql/new-azmysqlflexibleserverfirewallrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClientIPAddress
-KLIEN menentukan IP tunggal dari aturan firewall server.
+Klien menentukan IP tunggal dari aturan firewall server.
 Harus format IPv4.
 
 ```yaml
@@ -197,7 +200,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String

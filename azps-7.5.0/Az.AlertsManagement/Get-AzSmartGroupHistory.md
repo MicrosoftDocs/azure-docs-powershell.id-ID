@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.alertsmanagement
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AlertsManagement/AlertsManagement/help/Get-AzSmartGroupHistory.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AlertsManagement/AlertsManagement/help/Get-AzSmartGroupHistory.md
-ms.openlocfilehash: 36363b969e3495a0e56fb06dbbf5d118e1af875a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d0833bb0b217f4f2d15fe016cb0c57d2f7d8878b
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144227927"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145782478"
 ---
 # Get-AzSmartGroupHistory
 
 ## SYNOPSIS
 Mendapatkan riwayat grup pintar
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.alertsmanagement/get-azsmartgrouphistory) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,7 +34,7 @@ Get-AzSmartGroupHistory -InputObject <PSSmartGroup> [-DefaultProfile <IAzureCont
 ```
 
 ## DESCRIPTION
-**Cmdlet Get-AzSmartGroupHistory** mendapatkan riwayat grup pintar.
+**Cmdlet Get-AzSmartGroupHistory** mendapatkan riwayat grup cerdas.
 
 ## EXAMPLES
 
@@ -75,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -SmartGroupId
-Pengidentifikasi unik SmartGroup / ResourceId pemberitahuan.
+Pengidentifikasi Unik SmartGroup / ResourceId pemberitahuan.
 
 ```yaml
 Type: System.String

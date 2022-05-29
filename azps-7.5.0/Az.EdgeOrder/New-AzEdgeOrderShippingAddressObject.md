@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.EdgeOrder/new-Az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/New-AzEdgeOrderShippingAddressObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/New-AzEdgeOrderShippingAddressObject.md
-ms.openlocfilehash: 0168b1fc9b2235d0dca70b37f18db0709e0a7c6c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ebfdac7b454cf2ecac0c902f7de8be4a6bd52129
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144239872"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145812924"
 ---
 # New-AzEdgeOrderShippingAddressObject
 
 ## SYNOPSIS
 Buat objek dalam memori untuk ShippingAddress.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.edgeorder/new-azedgeordershippingaddressobject) untuk informasi terbaru.
 
 ## SYNTAX
 

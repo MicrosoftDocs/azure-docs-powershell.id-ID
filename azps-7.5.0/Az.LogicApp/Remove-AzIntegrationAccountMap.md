@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Remove-AzIntegrationAccountMap.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Remove-AzIntegrationAccountMap.md
-ms.openlocfilehash: f7766dff2bd92304bfb73d88ae1dd43e80118f3d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0f084ffb9e5e55e0d0122280f241b8082bd484c7
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144213626"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145795112"
 ---
 # Remove-AzIntegrationAccountMap
 
 ## SYNOPSIS
 Menghapus peta akun integrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/remove-azintegrationaccountmap) untuk informasi terbaru.
 
 ## SYNTAX
 

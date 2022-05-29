@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationSourceControl.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationSourceControl.md
-ms.openlocfilehash: 4e1ec8fd03bec5f562d4132ac9aa028008cebbfd
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c018bee831581a6761d034fa553cb626bb83f540
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144198329"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145782169"
 ---
 # New-AzAutomationSourceControl
 
 ## SYNOPSIS
 Membuat kontrol sumber Azure Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/new-azautomationsourcecontrol) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -52,7 +55,7 @@ VSTSNative  VsoTfvc            /Runbooks True     True           https://dev.azu
 ```
 
 ### Contoh 2
-Buat konfigurasi kontrol sumber untuk menautkan akun Azure Automation dengan proyek VSTS Git.
+Buat konfigurasi kontrol sumber untuk menautkan akun Azure Automation dengan proyek VsTS Git.
 
 
 ```powershell
@@ -73,7 +76,7 @@ Name    SourceType Branch      FolderPath AutoSync PublishRunbook RepoUrl
 VSTSGit VsoGit     Development /          True     True           https://dev.azure.com/<accountname>/<adopro...
 ```
 
-### Contoh 3
+### Contoh: 3
 Buat konfigurasi kontrol sumber untuk menautkan akun Azure Automation dengan proyek GitHub.
 
 
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -AutomationAccountName
-Nama akun automasi.
+Nama akun otomatisasi.
 
 ```yaml
 Type: System.String

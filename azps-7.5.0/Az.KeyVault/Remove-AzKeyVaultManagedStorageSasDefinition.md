@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Remove-AzKeyVaultManagedStorageSasDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Remove-AzKeyVaultManagedStorageSasDefinition.md
-ms.openlocfilehash: 67dfb891952a3ab206490caa3af342f4693ecd00
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a0c7e9802c2b2015a5de10716fb744308876fbcd
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144223466"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145815318"
 ---
 # Remove-AzKeyVaultManagedStorageSasDefinition
 
 ## SYNOPSIS
 Menghapus definisi SAS Azure Storage terkelola Key Vault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/remove-azkeyvaultmanagedstoragesasdefinition) untuk informasi terbaru.
 
 ## SYNTAX
 

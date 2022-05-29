@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementApiRevision.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementApiRevision.md
-ms.openlocfilehash: 27fcd32f2c444b8dfddc5c29c903ccf39661e2fc
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 564e32cd62333e4a55294ccc1ddadbf48db9d68b
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144209759"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145775208"
 ---
 # New-AzApiManagementApiRevision
 
 ## SYNOPSIS
 Membuat Revisi baru API yang Ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementapirevision) untuk informasi terbaru.
 
 ## SYNTAX
 

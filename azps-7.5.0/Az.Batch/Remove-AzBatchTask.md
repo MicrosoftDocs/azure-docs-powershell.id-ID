@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/remove-azb
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Remove-AzBatchTask.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Remove-AzBatchTask.md
-ms.openlocfilehash: ff927254aa4841a4c55187291300e6fce20c716f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 11c5e74a6f7d92ab3241570e45b74560c820697e
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144238861"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145814436"
 ---
 # Remove-AzBatchTask
 
 ## SYNOPSIS
 Menghapus tugas Batch.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.batch/remove-azbatchtask) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,12 +41,12 @@ Cmdlet ini meminta konfirmasi kepada Anda, kecuali Anda menentukan parameter *Pa
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus tugas Batch berdasarkan ID
+### Contoh 1: Menghapus tugas Batch menurut ID
 ```powershell
 Remove-AzBatchTask -JobId "Job-000001" -Id "Task23" -BatchContext $Context
 ```
 
-Perintah ini menghapus tugas yang memiliki TUGAS ID23 di bawah pekerjaan yang memiliki ID Job-000001.
+Perintah ini menghapus tugas yang memiliki ID Task23 di bawah pekerjaan yang memiliki ID Job-000001.
 Perintah meminta konfirmasi kepada Anda.
 Gunakan cmdlet **Get-AzBatchAccountKey** untuk menetapkan konteks ke variabel $Context.
 
@@ -52,17 +55,17 @@ Gunakan cmdlet **Get-AzBatchAccountKey** untuk menetapkan konteks ke variabel $C
 Get-AzBatchTask -JobId "Job-000001" -Id "Task26" -BatchContext $Context | Remove-AzBatchTask -Force -BatchContext $Context
 ```
 
-Perintah ini mendapatkan tugas Batch yang memiliki TUGAS ID26 dalam pekerjaan yang memiliki ID Job-000001 dengan menggunakan cmdlet **Get-AzBatchTask** .
+Perintah ini mendapatkan tugas Batch yang memiliki ID Task26 dalam pekerjaan yang memiliki ID Job-000001 dengan menggunakan cmdlet **Get-AzBatchTask** .
 Perintah meneruskan tugas tersebut ke cmdlet saat ini dengan menggunakan operator alur.
 Perintah menghapus tugas tersebut.
-Perintah ini menentukan parameter *Force* .
+Perintah ini menentukan parameter *Paksa* .
 Oleh karena itu, perintah tidak meminta Anda untuk konfirmasi.
 
 ## PARAMETERS
 
 ### -BatchContext
 Menentukan instans **BatchAccountContext** yang digunakan cmdlet ini untuk berinteraksi dengan layanan Batch.
-Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext Anda, maka autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama sebagai gantinya, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan kunci aksesnya yang diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
+Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext Anda, maka autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan kunci aksesnya yang diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.BatchAccountContext

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mysql/new-azmysq
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/New-AzMySqlFirewallRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/New-AzMySqlFirewallRule.md
-ms.openlocfilehash: d74319efb1190b71c841ece172b2fd70eb5baced
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e927c41129fde0159844061b0be1c914a0bf25a8
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144201073"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145767774"
 ---
 # New-AzMySqlFirewallRule
 
 ## SYNOPSIS
 Membuat aturan firewall baru atau memperbarui aturan firewall yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.mysql/new-azmysqlfirewallrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClientIPAddress
-Klien menentukan IP tunggal dari aturan firewall server.
+KLIEN menentukan IP tunggal dari aturan firewall server.
 Harus format IPv4.
 
 ```yaml
@@ -197,7 +200,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama tidak peka huruf besar/kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String

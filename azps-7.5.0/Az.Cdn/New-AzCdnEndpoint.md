@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/new-azcdnend
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzCdnEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzCdnEndpoint.md
-ms.openlocfilehash: 9739e39f54528fb7aaf291426b91fedf95be881b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9b5b052e146b62c4e3c25697c244dcef42b87ccf
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144110705"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145814328"
 ---
 # New-AzCdnEndpoint
 
 ## SYNOPSIS
 Membuat titik akhir CDN.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cdn/new-azcdnendpoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -589,7 +592,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Berat
+### -Bobot
 Azure CDN berat asal.
 
 ```yaml

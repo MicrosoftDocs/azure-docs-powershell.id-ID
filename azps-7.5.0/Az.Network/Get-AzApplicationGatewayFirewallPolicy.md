@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayFirewallPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayFirewallPolicy.md
-ms.openlocfilehash: c88303573d4b1587f22194fd88fbc122f4590b87
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 93df63423b047295c791aa8b38ef48ee98400665
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144213494"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145775640"
 ---
 # Get-AzApplicationGatewayFirewallPolicy
 
 ## SYNOPSIS
 Mendapatkan kebijakan firewall gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azapplicationgatewayfirewallpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 

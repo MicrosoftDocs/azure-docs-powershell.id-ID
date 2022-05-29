@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.functions/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Get-AzFunctionApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Get-AzFunctionApp.md
-ms.openlocfilehash: 3484b2b887666b1a96d90b83da71704350208c8a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6fbc2aae453b844a023daa8c9c2dbad7986c34cd
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144225256"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145812330"
 ---
 # Get-AzFunctionApp
 
 ## SYNOPSIS
 Mendapatkan aplikasi fungsi dalam langganan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.functions/get-azfunctionapp) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -74,7 +77,7 @@ Functions1-Windows-DoNet Running Windows DotNet  Central US CentralUSPlan  Funct
 
 
 
-### Contoh 3: Dapatkan aplikasi fungsi berdasarkan nama grup sumber daya.
+### Contoh 3: Dapatkan aplikasi fungsi menurut nama grup sumber daya.
 ```powershell
 Get-AzFunctionApp -ResourceGroupName Functions-West-Europe-Win
 ```

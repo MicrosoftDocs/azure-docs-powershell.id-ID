@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.DataBox/new-AzDa
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/New-AzDataBoxContactDetailsObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/New-AzDataBoxContactDetailsObject.md
-ms.openlocfilehash: e325f283e69d5052f6ffce165377e00de287dcf5
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 50298acdc6912861bf1a51a05847e24a5bf686c3
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144205154"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145806712"
 ---
 # New-AzDataBoxContactDetailsObject
 
 ## SYNOPSIS
 Buat objek dalam memori untuk ContactDetails.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.databox/new-azdataboxcontactdetailsobject) untuk informasi terbaru.
 
 ## SYNTAX
 

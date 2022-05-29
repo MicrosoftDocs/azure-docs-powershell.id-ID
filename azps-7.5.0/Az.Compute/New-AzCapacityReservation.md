@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azca
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzCapacityReservation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzCapacityReservation.md
-ms.openlocfilehash: a92e809a83886451220a460ff434d1cb6ad67802
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0cef7b5eb386ad4140b33ac1ea0409ad4bc2a50f
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144187703"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145790020"
 ---
 # New-AzCapacityReservation
 
 ## SYNOPSIS
 Membuat sumber daya Reservasi Kapasitas dalam Grup Reservasi Kapasitas
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/new-azcapacityreservation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ Cmdlet **New-AzCapacityReservation** membuat sumber daya Reservasi Kapasitas dal
 New-AzCapacityReservation -ResourceGroupName "myRG" -Location "eastus" -ReservationGroupName "myCapacityReservationGroup" -Name "myCapacityReservation" -Sku "Standard_DS1_v2" -CapacityToReserve 4
 ```
 
-Perintah ini akan membuat sumber daya Reservasi Kapasitas dengan sku dan kapasitas yang disediakan dalam Grup Reservasi Kapasitas bernama "myCapacityReservationGroup".
+Perintah ini akan membuat sumber daya Reservasi Kapasitas dengan sku dan kapasitas yang disediakan di Grup Reservasi Kapasitas bernama "myCapacityReservationGroup".
 
 ## PARAMETERS
 
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Menentukan bahwa sumber daya dan grup sumber daya dapat ditandai dengan sekumpulan pasangan nama-nilai. Menambahkan tag ke sumber daya memungkinkan Anda mengelompokkan sumber daya bersama di seluruh grup sumber daya dan membuat tampilan Anda sendiri. Setiap sumber daya atau grup sumber daya dapat memiliki maksimal 15 tag.
+Menentukan bahwa sumber daya dan grup sumber daya dapat ditandai dengan sekumpulan pasangan nama-nilai. Menambahkan tag ke sumber daya memungkinkan Anda mengelompokkan sumber daya bersama-sama di seluruh grup sumber daya dan membuat tampilan Anda sendiri. Setiap sumber daya atau grup sumber daya dapat memiliki maksimal 15 tag.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -Zona
-Zona Ketersediaan yang akan digunakan untuk reservasi kapasitas ini.
+Zona Ketersediaan yang digunakan untuk reservasi kapasitas ini.
 
 ```yaml
 Type: System.String[]

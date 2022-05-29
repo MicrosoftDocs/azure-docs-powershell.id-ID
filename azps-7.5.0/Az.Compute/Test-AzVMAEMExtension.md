@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/test-azv
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Test-AzVMAEMExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Test-AzVMAEMExtension.md
-ms.openlocfilehash: 2bd10f3bea4f20e5ddeabd054a9b174a3175a396
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6ec46ee88114af98f80b8d61c9af1b903cedf99e
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144193163"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145797776"
 ---
 # Test-AzVMAEMExtension
 
 ## SYNOPSIS
 Memeriksa konfigurasi ekstensi AEM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/test-azvmaemextension) untuk informasi terbaru.
 
 ## SYNTAX
 

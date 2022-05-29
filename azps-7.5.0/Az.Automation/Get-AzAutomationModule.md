@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationModule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationModule.md
-ms.openlocfilehash: f40bd4226e757f073395f91888cb69a2869f33a3
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4cc54849e1fabcf18525671610e0cc9851402e2a
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144193348"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145798712"
 ---
 # Get-AzAutomationModule
 
 ## SYNOPSIS
 Mendapatkan metadata untuk modul dari Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/get-azautomationmodule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ Cmdlet **Get-AzAutomationModule** mendapatkan metadata untuk modul dari Azure Au
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua modul
+### Contoh 1: Mendapatkan semua modul
 ```
 PS C:\>Get-AzAutomationModule -AutomationAccountName "Contoso17" -ResourceGroupName "ResourceGroup01"
 ```

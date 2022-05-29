@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.labservices/star
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Start-AzLabServicesVM.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Start-AzLabServicesVM.md
-ms.openlocfilehash: d47f674c02f4f72b0e13d21281674309de91b206
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 65111f6fd2ebcb47bab35962eeaa3a7adcf671b8
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144244125"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145795238"
 ---
 # Start-AzLabServicesVM
 
 ## SYNOPSIS
 Tindakan untuk memulai komputer virtual lab.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.labservices/start-azlabservicesvm) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -82,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -LabName
-Nama lab yang secara unik mengidentifikasinya dalam akun lab.
+Nama lab yang secara unik mengidentifikasinya dalam berisi akun lab.
 Digunakan dalam URI sumber daya.
 
 ```yaml
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-ID komputer virtual yang secara unik mengidentifikasinya dalam lab yang berisi.
+ID komputer virtual yang secara unik mengidentifikasinya di dalam lab yang berisi.
 Digunakan dalam URI sumber daya.
 
 ```yaml
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama tidak peka huruf besar/kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -262,7 +265,7 @@ VM <VirtualMachine>:
   - `[SystemDataCreatedBy <String>]`: Identitas yang membuat sumber daya.
   - `[SystemDataCreatedByType <CreatedByType?>]`: Jenis identitas yang membuat sumber daya.
   - `[SystemDataLastModifiedAt <DateTime?>]`: Tanda waktu modifikasi terakhir sumber daya (UTC)
-  - `[SystemDataLastModifiedBy <String>]`: Identitas yang terakhir memodifikasi sumber daya.
+  - `[SystemDataLastModifiedBy <String>]`: Identitas yang terakhir mengubah sumber daya.
   - `[SystemDataLastModifiedByType <CreatedByType?>]`: Jenis identitas yang terakhir memodifikasi sumber daya.
 
 ## RELATED LINKS

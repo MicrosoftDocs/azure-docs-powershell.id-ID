@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.connectedkuberne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedKubernetes/help/Remove-AzConnectedKubernetes.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedKubernetes/help/Remove-AzConnectedKubernetes.md
-ms.openlocfilehash: 2e644397ef4b6b775d8b320eafae2be4ca311a7f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7ea3b73f96e41994fd3a720bf16d3f2df5d2c513
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144232718"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145808070"
 ---
 # Remove-AzConnectedKubernetes
 
 ## SYNOPSIS
 Menghapus kluster yang terhubung, menghapus sumber daya yang dilacak di Azure Resource Manager (ARM).
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.connectedkubernetes/remove-azconnectedkubernetes) untuk informasi terbaru.
 
 ## SYNTAX
 

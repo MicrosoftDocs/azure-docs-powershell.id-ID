@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mixedreality/get
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MixedReality/MixedReality/help/Get-AzRemoteRenderingAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MixedReality/MixedReality/help/Get-AzRemoteRenderingAccount.md
-ms.openlocfilehash: e35f1a1d2d40f79151b26bde1eac07f637312045
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 558357b890f89ebf935e717be3727cab8ac14148
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144111693"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145768242"
 ---
 # Get-AzRemoteRenderingAccount
 
 ## SYNOPSIS
 Dapatkan Akun Remote Rendering
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.mixedreality/get-azremoterenderingaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzRemoteRenderingAccount -ResourceId <String>
 ```
 
 ## DESCRIPTION
-Dapatkan atau cantumkan Akun Remote Rendering di Langganan dan Grup Sumber Daya tertentu.
+Mendapatkan atau mencantumkan Akun Remote Rendering di Langganan dan Grup Sumber Daya tertentu.
 
 ## EXAMPLES
 
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya Akun Remote Rendering.
+ID Sumber Daya Akun Remote Rendering.
 
 ```yaml
 Type: String

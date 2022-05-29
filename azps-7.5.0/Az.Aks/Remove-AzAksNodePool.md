@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.aks/remove-azaks
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Remove-AzAksNodePool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Remove-AzAksNodePool.md
-ms.openlocfilehash: e94538e4ad8709b1f59e897c43af5028d4f4440b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6289e081976d3a88c09ac13543b218a48c54b537
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144205874"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145775514"
 ---
 # Remove-AzAksNodePool
 
 ## SYNOPSIS
 Hapus kumpulan simpul dari kluster terkelola.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.aks/remove-azaksnodepool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -179,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-{{ Isi Deskripsi PassThru }}
+{{ Fill PassThru Description }}
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -211,7 +214,7 @@ Accept wildcard characters: False
 ### -SubscriptionId
 ID langganan.
 Secara default, cmdlet dijalankan dalam langganan yang diatur dalam konteks saat ini. Jika pengguna menentukan langganan lain, cmdlet saat ini dijalankan dalam langganan yang ditentukan oleh pengguna.
-Mengesampingkan langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
+Mengambil alih langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
 
 ```yaml
 Type: System.String

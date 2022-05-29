@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.customlocation/u
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CustomLocation/help/Update-AzCustomLocation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CustomLocation/help/Update-AzCustomLocation.md
-ms.openlocfilehash: 23cf5439e5759c4ab80bda42a645b714a1a816fd
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: de5cfb09ff024346251155768d1655663fb4952a
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144205295"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145789084"
 ---
 # Update-AzCustomLocation
 
 ## SYNOPSIS
 Memperbarui Lokasi Kustom dengan Nama Sumber Daya yang ditentukan dalam Grup Sumber Daya dan Langganan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.customlocation/update-azcustomlocation) untuk informasi terbaru.
 
 ## SYNTAX
 

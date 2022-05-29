@@ -5,19 +5,22 @@ online version: https://docs.microsoft.com/powershell/module/az.maps/new-azmapsc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/New-AzMapsCreator.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/New-AzMapsCreator.md
-ms.openlocfilehash: 97523efdeb52c1a281610723de048e1b49d4bb8e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2e9c249c60e3cab1ee77f494f512b4f46a0ca7a4
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144190464"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145776648"
 ---
 # New-AzMapsCreator
 
 ## SYNOPSIS
-Membuat atau memperbarui sumber daya pembuat Peta.
+Membuat atau memperbarui sumber daya Pembuat Peta.
 Sumber daya pembuat akan mengelola sumber daya Azure yang diperlukan untuk mengisi sekumpulan data pemetaan kustom.
 Ini mengharuskan akun ada sebelum dapat dibuat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.maps/new-azmapscreator) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ New-AzMapsCreator -AccountName <String> -Name <String> -ResourceGroupName <Strin
 ```
 
 ## DESCRIPTION
-Membuat atau memperbarui sumber daya pembuat Peta.
+Membuat atau memperbarui sumber daya Pembuat Peta.
 Sumber daya pembuat akan mengelola sumber daya Azure yang diperlukan untuk mengisi sekumpulan data pemetaan kustom.
 Ini mengharuskan akun ada sebelum dapat dibuat.
 
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementGateway.md
-ms.openlocfilehash: 8d856460727cfa85c396cbde633a2d1179709688
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c5e4a88a33535a986c2cbcbabaf723e15fa8291d
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144211250"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145782334"
 ---
 # Get-AzApiManagementGateway
 
 ## SYNOPSIS
 Mendapatkan semua atau gateway manajemen API tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementgateway) untuk informasi terbaru.
 
 ## SYNTAX
 

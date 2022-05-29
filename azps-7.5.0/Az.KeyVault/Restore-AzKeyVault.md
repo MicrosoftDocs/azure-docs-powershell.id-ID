@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/restore
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Restore-AzKeyVault.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Restore-AzKeyVault.md
-ms.openlocfilehash: a25222499c631ce17825ef58eb7fb337b0dc1eac
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: fe3818d5541fc689f33b95c57b45baab0f12e380
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144232211"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145771698"
 ---
 # Restore-AzKeyVault
 
 ## SYNOPSIS
 Sepenuhnya memulihkan HSM terkelola dari cadangan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/restore-azkeyvault) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,7 +51,7 @@ Restore-AzKeyVault -BackupFolder <String> [-KeyName <String>] [-PassThru] -Stora
 ```
 
 ## DESCRIPTION
-Memulihkan HSM terkelola sepenuhnya dari cadangan yang disimpan di akun penyimpanan.
+Sepenuhnya memulihkan HSM terkelola dari cadangan yang disimpan di akun penyimpanan.
 Gunakan `Backup-AzKeyVault` untuk mencadangkan.
 
 ## EXAMPLES
@@ -64,7 +67,7 @@ Contoh memulihkan cadangan yang disimpan dalam folder bernama "mhsm-myHsm-202010
 ## PARAMETERS
 
 ### -BackupFolder
-Nama folder cadangan, misalnya 'mhsm-*-2020101309020403'. Ini juga dapat disarangkan seperti 'backups/mhsm-*-2020101309020403'.
+Nama folder cadangan, misalnya 'mhsm-*-2020101309020403'. Ini juga dapat disarangkan seperti 'backups/mhsm--* 2020101309020403'.
 
 ```yaml
 Type: System.String

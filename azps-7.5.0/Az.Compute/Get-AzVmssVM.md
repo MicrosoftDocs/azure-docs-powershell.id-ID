@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVmssVM.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVmssVM.md
-ms.openlocfilehash: 857775cc971c3cab4ba9bb5fdd4ba43df2c34227
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 29bb6e8a935f598d82b94dc6e38d2cca8d287227
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144216482"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145798171"
 ---
 # Get-AzVmssVM
 
 ## SYNOPSIS
 Mendapatkan properti komputer virtual VMSS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azvmssvm) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -56,7 +59,7 @@ Get-AzVmssVM -ResourceGroupName "Group002" -VMScaleSetName "VMSS004" -InstanceId
 Perintah ini mendapatkan properti komputer virtual VMSS bernama VMSS004 yang termasuk dalam grup sumber daya bernama Group002.
 Perintah mendapatkan ID instans yang disimpan dalam variabel $ID untuk mendapatkan tampilan model.
 
-### Contoh 3: Mendapatkan properti tampilan instans komputer virtual VMSS
+### Contoh 3: Mendapatkan properti tampilan instans dari komputer virtual VMSS
 ```powershell
 Get-AzVmssVM -InstanceView  -ResourceGroupName $rgname  -VMScaleSetName $vmssName -InstanceId $ID
 ```

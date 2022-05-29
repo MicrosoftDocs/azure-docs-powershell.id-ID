@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementIdentityProvider.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementIdentityProvider.md
-ms.openlocfilehash: 120b1d558319a1b5fb795e4af2f72c6633750b90
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 577fe7d094828bde7b1fc6973aeb2df7813c711b
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144229243"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145775226"
 ---
 # New-AzApiManagementIdentityProvider
 
 ## SYNOPSIS
 Membuat konfigurasi Penyedia Identitas baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementidentityprovider) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -206,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### -SigninTenant
-Penyewa Masuk untuk mengambil alih AAD B2C alih-alih `common` Penyewa
+Penyewa Masuk untuk mengambil alih di AAD B2C alih-alih `common` Penyewa
 
 ```yaml
 Type: System.String

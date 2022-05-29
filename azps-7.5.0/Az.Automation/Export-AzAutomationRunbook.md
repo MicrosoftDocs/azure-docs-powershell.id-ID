@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/expor
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Export-AzAutomationRunbook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Export-AzAutomationRunbook.md
-ms.openlocfilehash: 260273b47113e2020ff69f9abbff86342a9335e2
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 91bed1a7cc8ed5afad58da8a22b97438e1974bcc
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144233068"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145818612"
 ---
 # Export-AzAutomationRunbook
 
 ## SYNOPSIS
 Mengekspor runbook Automation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.automation/export-azautomationrunbook) untuk informasi terbaru.
 
 ## SYNTAX
 

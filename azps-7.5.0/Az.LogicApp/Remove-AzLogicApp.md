@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Remove-AzLogicApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Remove-AzLogicApp.md
-ms.openlocfilehash: 41c63568feb501dd81cf5418b414bf262e4b90b5
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3f7f6f2f2a1fa1f525797d4706ee9ac4aa9154ab
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144247779"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145768637"
 ---
 # Remove-AzLogicApp
 
 ## SYNOPSIS
 Menghapus aplikasi logika dari grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/remove-azlogicapp) untuk informasi terbaru.
 
 ## SYNTAX
 

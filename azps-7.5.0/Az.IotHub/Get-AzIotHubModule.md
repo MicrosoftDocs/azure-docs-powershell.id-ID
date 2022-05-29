@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/get-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubModule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubModule.md
-ms.openlocfilehash: 4e290075aaee19b15f893725952f5b1b1ae79482
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ccbd2be2abe3b595c4105b9fea433f5bed05bf20
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144239505"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145805695"
 ---
 # Get-AzIotHubModule
 
 ## SYNOPSIS
 Dapatkan detail modul perangkat IoT atau modul daftar yang terletak di perangkat IoT dalam IoT Hub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.iothub/get-aziothubmodule) untuk informasi terbaru.
 
 ## SYNTAX
 

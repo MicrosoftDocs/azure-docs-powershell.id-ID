@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azho
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzHost.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzHost.md
-ms.openlocfilehash: 9241a0346726ff36e234665e8d71d8233802fa2e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e8a4223e9daba389caeb752cfdc0d121bf39bd5a
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144207695"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145781848"
 ---
 # New-AzHost
 
 ## SYNOPSIS
 Membuat host.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/new-azhost) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -AutoReplaceOnFailure
-Menentukan apakah host harus diganti secara otomatis jika terjadi kegagalan. Nilai defaultnya adalah 'true' ketika tidak disediakan.
+Menentukan apakah host harus diganti secara otomatis jika terjadi kegagalan. Nilai default ke 'true' ketika tidak disediakan.
 
 ```yaml
 Type: System.Boolean

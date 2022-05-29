@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azav
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzAvailablePrivateEndpointType.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzAvailablePrivateEndpointType.md
-ms.openlocfilehash: e868f7a8f8e5480f20880c28e8d4915df3d68d85
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 216cc9fe9c4643d294cddfad7e74fda75add0f1c
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144194605"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145770798"
 ---
 # Get-AzAvailablePrivateEndpointType
 
 ## SYNOPSIS
 Mengembalikan jenis titik akhir privat yang tersedia di lokasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azavailableprivateendpointtype) untuk informasi terbaru.
 
 ## SYNTAX
 

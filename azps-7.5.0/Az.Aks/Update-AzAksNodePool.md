@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.aks/update-azaks
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Update-AzAksNodePool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Update-AzAksNodePool.md
-ms.openlocfilehash: d3267d391d62edf4b2901ad99a617abc662b8ca9
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f4ca151b887d118fff536e7d27f4a65ab244b166
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144243470"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145782604"
 ---
 # Update-AzAksNodePool
 
 ## SYNOPSIS
 Memperbarui kumpulan simpul dalam kluster terkelola.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.aks/update-azaksnodepool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -55,7 +58,7 @@ Memperbarui kumpulan simpul dalam kluster terkelola.
 
 ## EXAMPLES
 
-### Ubah jumlah minimun menjadi 5 untuk kumpulan simpul yang ditentukan
+### Ubah jumlah minimun menjadi 5 untuk kumpulan simpul tertentu
 ```powershell
 Update-AzAksNodePool -ResourceGroupName myResourceGroup -ClusterName myCluster -Name linuxpool -MinCount 5
 ```
@@ -275,7 +278,7 @@ Accept wildcard characters: False
 ### -SubscriptionId
 ID langganan.
 Secara default, cmdlet dijalankan dalam langganan yang diatur dalam konteks saat ini. Jika pengguna menentukan langganan lain, cmdlet saat ini dijalankan dalam langganan yang ditentukan oleh pengguna.
-Mengesampingkan langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
+Mengambil alih langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
 
 ```yaml
 Type: System.String

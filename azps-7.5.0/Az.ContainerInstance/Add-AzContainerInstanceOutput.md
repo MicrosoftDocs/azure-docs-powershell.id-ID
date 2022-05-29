@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.containerinstanc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/Add-AzContainerInstanceOutput.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/Add-AzContainerInstanceOutput.md
-ms.openlocfilehash: fa344742be38cdab63d7cfbbcd5e361aa7bd75af
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 513030ce228775ad71582a6bf1f189358da39b5f
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144219554"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145808172"
 ---
 # Add-AzContainerInstanceOutput
 
 ## SYNOPSIS
 Lampirkan ke aliran output instans kontainer tertentu dalam grup sumber daya dan grup kontainer tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.containerinstance/add-azcontainerinstanceoutput) untuk informasi terbaru.
 
 ## SYNTAX
 
