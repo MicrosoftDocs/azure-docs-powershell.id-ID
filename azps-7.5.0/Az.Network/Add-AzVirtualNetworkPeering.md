@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzVirtualNetworkPeering.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzVirtualNetworkPeering.md
-ms.openlocfilehash: 8c488e8899ae41ec65b95398d04566c2c2b86f36
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d7e9f06e5db7588a51fcf5dc77c7173790d962e4
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144192785"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145776018"
 ---
 # Add-AzVirtualNetworkPeering
 
 ## SYNOPSIS
 Membuat peering antara dua jaringan virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/add-azvirtualnetworkpeering) untuk informasi terbaru.
 
 ## SYNTAX
 

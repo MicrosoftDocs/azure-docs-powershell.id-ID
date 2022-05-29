@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/get-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Get-AzEventHubNetworkRuleSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Get-AzEventHubNetworkRuleSet.md
-ms.openlocfilehash: d81e5710b52e33ee5821e90dd2f92b187f30d11c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: fc9702b7d97552bbfe9cb05e7548807e01996b5d
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144231329"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145769520"
 ---
 # Get-AzEventHubNetworkRuleSet
 
 ## SYNOPSIS
 Mendapatkan detail Azure Event Hubs NetworkruleSet dari namespace layanan di langganan Azure saat ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventhub/get-azeventhubnetworkruleset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -56,7 +59,7 @@ Get-AzEventHubNetworkRuleSet -Namespace Eventhub-Namespace1-2389
 
 Dapatkan detail Event Hubs NetworkruleSet namespace menggunakan Namespace layanan yang ada di langganan saat ini.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzEventHubNetworkRuleSet -ResourceId /SubscriptionId/resourcegroups/ResourceGroup/providers/Microsoft.EventHub/namespaces/Eventhub-Namespace1-2389
 ```

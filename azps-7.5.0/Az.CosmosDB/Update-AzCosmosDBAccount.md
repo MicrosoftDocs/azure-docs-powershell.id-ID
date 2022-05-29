@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBAccount.md
-ms.openlocfilehash: a05bcbe8d9aa73b15e485c5ac2dd8bec9fdf0abd
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 15dee36f7c933d1d42ec59d609c118c0845f3e48
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144206615"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145756026"
 ---
 # Update-AzCosmosDBAccount
 
 ## SYNOPSIS
 Memperbarui atribut akun CosmosDB.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/update-azcosmosdbaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -95,7 +98,7 @@ NetworkAclBypass              : None
 NetworkAclBypassResourceIds   : {}
 ```
 
-DefaultConsistencyLevel yang Diperbarui ke "Strong", Enabled AutomaticFailover, Enabled MultipleWriteLocations, dan Enabled VirtualNetwork for CosmosDB Account dengan nama accountName. 
+Memperbarui DefaultConsistencyLevel ke "Strong", Enabled AutomaticFailover, Enabled MultipleWriteLocations, dan Enabled VirtualNetwork for CosmosDB Account dengan nama accountName. 
 
 ## PARAMETERS
 
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackupIntervalInMinutes
-Interval(dalam menit) yang cadangannya diambil (hanya untuk akun dengan cadangan mode berkala)
+Interval(dalam menit) dengan cadangan mana yang diambil (hanya untuk akun dengan cadangan mode berkala)
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -251,7 +254,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableAutomaticFailover
-Mengaktifkan failover otomatis wilayah tulis jika wilayah tersebut tidak tersedia karena pemadaman.
+Memungkinkan failover otomatis wilayah tulis dalam peristiwa langka bahwa wilayah tersebut tidak tersedia karena pemadaman.
 Failover otomatis akan menghasilkan wilayah tulis baru untuk akun dan dipilih berdasarkan prioritas failover yang dikonfigurasi untuk akun tersebut.
 Nilai yang diterima: false, true
 
@@ -315,7 +318,7 @@ Accept wildcard characters: False
 ```
 
 ### -IpRule
-Dukungan firewall. Menentukan sekumpulan alamat IP atau rentang alamat IP dalam formulir CIDR untuk disertakan sebagai daftar IP klien yang diizinkan untuk akun database tertentu.
+Dukungan firewall. Menentukan kumpulan alamat IP atau rentang alamat IP dalam formulir CIDR yang akan disertakan sebagai daftar IP klien yang diizinkan untuk akun database tertentu.
 
 ```yaml
 Type: System.String[]
@@ -330,7 +333,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyVaultKeyUri
-URI of the KeyVault
+URI dari KeyVault
 
 ```yaml
 Type: System.String
@@ -345,7 +348,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxStalenessIntervalInSeconds
-Ketika digunakan dengan konsistensi Keusangan Terikat, nilai ini menunjukkan jumlah waktu kedaluarsa (dalam jangka waktu) yang ditoleransi.
+Ketika digunakan dengan konsistensi Bounded Staleness, nilai ini menunjukkan jumlah waktu kedaluarsa (dalam jangka waktu) yang ditoleransi.
 Rentang yang diterima untuk nilai ini adalah 5-86400.
 
 ```yaml
@@ -361,7 +364,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxStalenessPrefix
-Saat digunakan dengan konsistensi Keusangan Terikat, nilai ini menunjukkan jumlah permintaan kedaluarsa yang ditoleransi.
+Saat digunakan dengan konsistensi Bounded Staleness, nilai ini menunjukkan jumlah permintaan kedaluarsa yang ditoleransi.
 Rentang yang diterima untuk nilai ini adalah 1 - 2.147.483.647.
 
 ```yaml
@@ -422,7 +425,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicNetworkAccess
-Apakah akses titik akhir publik diizinkan atau tidak untuk server ini. Nilai yang mungkin termasuk: 'Diaktifkan', 'Dinonaktifkan'
+Apakah akses titik akhir publik diperbolehkan untuk server ini atau tidak. Nilai yang mungkin termasuk: 'Diaktifkan', 'Dinonaktifkan'
 
 ```yaml
 Type: System.String

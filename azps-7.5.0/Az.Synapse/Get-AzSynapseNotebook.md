@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseNotebook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseNotebook.md
-ms.openlocfilehash: 0330ce3b4c07ca9cde891b18470cb9747b447560
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ba3eba5d5365c7ecee9fbb5911ec8bc5c21010c3
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144214562"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145709488"
 ---
 # Get-AzSynapseNotebook
 
 ## SYNOPSIS
 Mendapatkan informasi tentang buku catatan di ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapsenotebook) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -57,7 +60,7 @@ Get-AzSynapseNotebook -WorkspaceName ContosoWorkspace -Name ContosoNotebook
 
 Mendapatkan satu buku catatan yang disebut ContosoNotebook di ruang kerja ContosoWorkspace.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 $ws | Get-AzSynapseNotebook -Name ContosoNotebook

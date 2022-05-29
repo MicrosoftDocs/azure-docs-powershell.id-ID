@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabaseTransparentDataEncryption.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabaseTransparentDataEncryption.md
-ms.openlocfilehash: f46f8026d70b494e0e030b93635cd3b9ce9422d4
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7ba41c7089ddc2f1d9792cab2df9ff1325c70993
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144245259"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145723258"
 ---
 # Set-AzSqlDatabaseTransparentDataEncryption
 
 ## SYNOPSIS
 Memodifikasi properti TDE untuk database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/set-azsqldatabasetransparentdataencryption) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/add-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzVMAdditionalUnattendContent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzVMAdditionalUnattendContent.md
-ms.openlocfilehash: 8192371a4f8f14ec15de8f4ffe2ebc545b17501a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6e8be3d178c51c1185ba6f31db57b4f1a8db97bc
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144234311"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145770258"
 ---
 # Add-AzVMAdditionalUnattendContent
 
 ## SYNOPSIS
 Menambahkan informasi ke file jawaban Penyetelan Windows yang tidak dijaga.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/add-azvmadditionalunattendcontent) untuk informasi terbaru.
 
 ## SYNTAX
 

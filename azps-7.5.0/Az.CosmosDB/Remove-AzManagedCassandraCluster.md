@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Remove-AzManagedCassandraCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Remove-AzManagedCassandraCluster.md
-ms.openlocfilehash: cf5be8eac6961c6228f85e90f9cc400b9766ad07
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4b33944071c32f8cddb2dc3b2401ef851b24e4d9
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144206654"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145756144"
 ---
 # Remove-AzManagedCassandraCluster
 
 ## SYNOPSIS
 Menghapus kluster Azure Managed Instances for Apache Cassandra.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/remove-azmanagedcassandracluster) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya kluster Cassandra terkelola.
+Id sumber daya dari kluster Cassandra terkelola.
 
 ```yaml
 Type: System.String

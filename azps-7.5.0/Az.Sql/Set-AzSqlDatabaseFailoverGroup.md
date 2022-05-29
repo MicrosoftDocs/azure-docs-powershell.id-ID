@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabaseFailoverGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabaseFailoverGroup.md
-ms.openlocfilehash: aa9c63fb4a490593d744e054e16996438b39cc14
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e3f1ea596db8fd57309fcbe90d3d19cb5441e5e7
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144245346"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145723438"
 ---
 # Set-AzSqlDatabaseFailoverGroup
 
 ## SYNOPSIS
 Memodifikasi konfigurasi Grup Failover Azure SQL Database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/set-azsqldatabasefailovergroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -46,7 +49,7 @@ Mengatur kebijakan failover Grup Failover ke 'Otomatis.'
 $failoverGroup = Get-AzSqlDatabaseFailoverGroup -ResourceGroupName rg -ServerName primaryserver -FailoverGroupName fg | Set-AzSqlDatabaseFailoverGroup -FailoverPolicy Manual
 ```
 
-Mengatur kebijakan failover Grup Failover ke 'Manual' dengan menyalurkan di Grup Failover.
+Mengatur kebijakan failover Grup Failover ke 'Manual' dengan melakukan piping di Grup Failover.
 
 ## PARAMETERS
 
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -GracePeriodWithDataLossHours
-Interval sebelum failover otomatis dimulai jika pemadaman terjadi di server utama. Ini menunjukkan bahwa Azure SQL Database tidak akan memulai failover otomatis sebelum masa tenggang berakhir. Harap dicatat bahwa operasi failover dengan opsi AllowDataLoss dapat menyebabkan kehilangan data karena sifat sinkronisasi asinkron.
+Interval sebelum failover otomatis dimulai jika pemadaman terjadi di server utama. Ini menunjukkan bahwa Azure SQL Database tidak akan memulai failover otomatis sebelum masa tenggang berakhir. Harap dicatat bahwa operasi failover dengan opsi AllowDataLoss dapat menyebabkan hilangnya data karena sifat sinkronisasi asinkron.
 
 ```yaml
 Type: System.Int32
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Nama server Azure SQL Database utama Grup Failover.
+Nama Server Azure SQL Database utama Grup Failover.
 
 ```yaml
 Type: System.String

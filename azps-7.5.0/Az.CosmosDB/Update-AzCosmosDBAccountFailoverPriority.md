@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBAccountFailoverPriority.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBAccountFailoverPriority.md
-ms.openlocfilehash: 27b2f083393c7cc6976811296e40c0abc2f7acbd
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a467fcad9fa49574502fd97b58381984e5344117
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144206606"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145756027"
 ---
 # Pembaruan-AzCosmosDBAccountFailoverPriority
 
 ## SYNOPSIS
 Memperbarui Prioritas Wilayah Failover dari Akun CosmosDB.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/update-azcosmosdbaccountfailoverpriority) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -70,7 +73,7 @@ ProvisioningState             : Succeeded
 Kind                          : GlobalDocumentDB
 ```
 
-FailoverPolicies diperbarui dengan wilayah1 sebagai FailoverPriority 1, wilayah2 sebagai FailoverPriority 2 dan wilayah3 sebagai FailoverPriority 3.
+FailoverPolicies diperbarui dengan wilayah1 sebagai FailoverPriority 1, region2 sebagai FailoverPriority 2 dan region3 sebagai FailoverPriority 3.
 
 ## PARAMETERS
 

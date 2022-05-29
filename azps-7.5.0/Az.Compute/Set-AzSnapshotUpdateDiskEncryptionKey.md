@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azsn
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzSnapshotUpdateDiskEncryptionKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzSnapshotUpdateDiskEncryptionKey.md
-ms.openlocfilehash: 317b4f6de255d883f5c50741c2abd53e8b1dd174
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ce8f7cb05ca441854eb61c8e6087403fb912c474
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144190688"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145733032"
 ---
 # Set-AzSnapshotUpdateDiskEncryptionKey
 
 ## SYNOPSIS
 Mengatur properti kunci enkripsi disk pada objek pembaruan rekam jepret.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azsnapshotupdatediskencryptionkey) untuk informasi terbaru.
 
 ## SYNTAX
 

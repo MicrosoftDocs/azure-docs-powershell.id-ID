@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Remove-AzDataMigrationToSqlDb.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Remove-AzDataMigrationToSqlDb.md
-ms.openlocfilehash: 160406bf987d60e5c677d467e40bf649ceae91e8
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f6af15ef33b7b588df2dac25b2c1e26a2f179534
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144201734"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145749826"
 ---
 # Remove-AzDataMigrationToSqlDb
 
 ## SYNOPSIS
 Hapus migrasi database yang ditentukan untuk SQL Db tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/remove-azdatamigrationtosqldb) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Remove-AzDataMigrationToSqlDb -ResourceGroupName tsum38RG -SqlDbInstanceName dms
 
 Hapus sumber daya SQL DB Database Migration.
 
-### Contoh 2: Menghapus sumber daya SQL DB Database Migration meskipun sedang berlangsung
+### Contoh 2: Menghapus sumber daya Migrasi Database SQL DB meskipun sedang berlangsung
 ```powershell
 Remove-AzDataMigrationToSqlDb -ResourceGroupName tsum38RG -SqlDbInstanceName dmstestsqldb -TargetDbName at_sqldbtrgtps1 -Force
 ```
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -Force
-Hapus paksa opsional boolean.
+Hapus boolean paksa opsional.
 Jika ini disediakan sebagai true, migrasi akan dihapus meskipun aktif.
 
 ```yaml
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataMigration.Models.IDataMigrationIdentity
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

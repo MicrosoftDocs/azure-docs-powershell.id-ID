@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cloudservice/get
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Get-AzCloudServiceRoleInstanceRemoteDesktopFile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Get-AzCloudServiceRoleInstanceRemoteDesktopFile.md
-ms.openlocfilehash: 009bd0539edae1cf7a3fdb556a910719d9d85a3a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7e022e8cdb8d78eebe60ce0f5b07e946b957f077
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144184850"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145738252"
 ---
 # Get-AzCloudServiceRoleInstanceRemoteDesktopFile
 
 ## SYNOPSIS
 Mendapatkan file desktop jarak jauh untuk instans peran di layanan cloud.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cloudservice/get-azcloudserviceroleinstanceremotedesktopfile) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ Mendapatkan file desktop jarak jauh untuk instans peran di layanan cloud.
 Get-AzCloudServiceRoleInstanceRemoteDesktopFile -ResourceGroupName "ContosOrg" -CloudServiceName "ContosoCS" -RoleInstanceName "ContosoFrontEnd_IN_0" -OutFile "C:\temp\ContosoFrontEnd_IN_0.rdp"
 ```
 
-Perintah ini mendapatkan file RDP untuk instans peran bernama ContosoFrontEndIN0\_\_ dari Layanan cloud bernama ContosoCS yang termasuk dalam grup sumber daya bernama ContosOrg.
+Perintah ini mendapatkan file RDP untuk instans peran bernama ContosoFrontEnd\_IN\_0 dari Layanan cloud bernama ContosoCS yang termasuk dalam grup sumber daya bernama ContosOrg.
 
 ## PARAMETERS
 

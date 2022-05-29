@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/save-azv
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Save-AzVMImage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Save-AzVMImage.md
-ms.openlocfilehash: 869802d384c6f692b078b32ee700e994c64bc9b2
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1c625fa633281b257b0dc2590b5697b89296c6c3
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144199592"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145733284"
 ---
 # Save-AzVMImage
 
 ## SYNOPSIS
 Menyimpan komputer virtual sebagai VMImage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/save-azvmimage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -97,7 +100,7 @@ Menentukan nama kontainer di dalam kontainer "sistem" yang ingin Anda pegang gam
 Jika kontainer tidak ada, kontainer dibuat untuk Anda.
 Hard disk virtual (VHD) yang merupakan VMImage berada di kontainer yang ditentukan parameter ini.
 Jika VHD tersebar di beberapa akun penyimpanan, cmdlet ini membuat satu kontainer yang memiliki nama ini di setiap akun penyimpanan.
-URL gambar yang disimpan mirip dengan: https://\<storageAccountName\>.blob.core.windows.net/system/Microsoft.Compute/Images/\<imagesContainer\>/\<vhdPrefix-osDisk\>.xxxxxxxxx-xxxx-xxxx-xxxx-xxxxxx.vhd.
+URL gambar yang disimpan mirip dengan: https://\<storageAccountName\>.blob.core.windows.net/system/Microsoft.Compute/Images/\<imagesContainer\>/\<vhdPrefix-osDisk\>.xxxxxxxxx-xxxx-xxxx-xxxx-xxx.vhd.
 
 ```yaml
 Type: System.String

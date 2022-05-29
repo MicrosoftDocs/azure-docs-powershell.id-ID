@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.devspaces/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DevSpaces/DevSpaces/help/Remove-AzDevSpacesController.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DevSpaces/DevSpaces/help/Remove-AzDevSpacesController.md
-ms.openlocfilehash: c49e05b15e26317ad45b721272dad245753ec64f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 37bb24d9e4ca0a34d8a0f980acd84c7eb2749d8f
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144198147"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145743022"
 ---
 # Remove-AzDevSpacesController
 
 ## SYNOPSIS
 Menghapus pengontrol DevSpaces.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.devspaces/remove-azdevspacescontroller) untuk informasi terbaru.
 
 ## SYNTAX
 

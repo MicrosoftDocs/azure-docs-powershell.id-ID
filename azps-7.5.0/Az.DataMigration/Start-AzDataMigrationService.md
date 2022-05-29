@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/St
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Start-AzDataMigrationService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Start-AzDataMigrationService.md
-ms.openlocfilehash: aba4afdcf5b223c9ef430da4bb6b9b70c69310a3
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: aa4fe78521da31795d95de2f5685bcc34e0b060f
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144201731"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145749700"
 ---
 # Start-AzDataMigrationService
 
 ## SYNOPSIS
 Memulai instans Azure Database Migration Service dalam status berhenti. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/start-azdatamigrationservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Start-AzDataMigrationService [-ResourceId] <String> [-PassThru] [-DefaultProfile
 ```
 
 ## DESCRIPTION
-Cmdlet Start-AzDataMigrationService memulai instans Azure Database Migration Service dalam keadaan berhenti. 
+Cmdlet Start-AzDataMigrationService memulai instans Azure Database Migration Service dalam status berhenti. 
 
 ## EXAMPLES
 
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Nama Database Migration Service.
+nama Database Migration Service.
 
 ```yaml
 Type: System.String

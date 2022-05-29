@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventgrid/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/New-AzEventGridTopic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/New-AzEventGridTopic.md
-ms.openlocfilehash: 9ca019368767e6def9d8537ef70a1040dab090c8
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c245e348e02f6ba53da1d95b613bd5e6217ef1bf
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144231542"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145769610"
 ---
 # New-AzEventGridTopic
 
 ## SYNOPSIS
 Membuat Topik Azure Event Grid baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventgrid/new-azeventgridtopic) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -63,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -InboundIpRule
-Hashtable yang mewakili daftar aturan IP masuk. Setiap aturan menentukan Alamat IP dalam notasi CIDR misalnya, 10.0.0.0/8 bersama dengan Tindakan yang sesuai untuk dilakukan berdasarkan kecocokan atau tidak ada kecocokan IpMask. Kemungkinan nilai Tindakan termasuk Izinkan saja
+Hashtable yang mewakili daftar aturan IP masuk. Setiap aturan menentukan Alamat IP dalam notasi CIDR misalnya, 10.0.0.0/8 bersama dengan Tindakan yang sesuai yang akan dilakukan berdasarkan kecocokan atau tidak ada kecocokan IpMask. Kemungkinan nilai Tindakan termasuk Izinkan saja
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -78,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputMappingDefaultValue
-Hashtable yang mewakili bidang pemetaan input dengan nilai default dalam kunci yang dipisahkan spasi = format nilai. Nama kunci yang diizinkan adalah: subjek, jenis peristiwa, dan dataversion. Ini digunakan ketika InputSchemaHelp hanya customeventschema.
+Hashtable yang mewakili bidang pemetaan input dengan nilai default dalam kunci yang dipisahkan spasi = format nilai. Nama kunci yang diizinkan adalah: subjek, jenis peristiwa, dan dataversi. Ini digunakan ketika InputSchemaHelp hanya customeventschema.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicNetworkAccess
-Ini menentukan apakah lalu lintas diizinkan melalui jaringan publik. Secara default diaktifkan. Anda selanjutnya dapat membatasi IP tertentu dengan mengonfigurasi parameter InboundIpRule. Nilai yang diizinkan dinonaktifkan dan diaktifkan.
+Ini menentukan apakah lalu lintas diizinkan melalui jaringan publik. Secara default diaktifkan. Anda dapat membatasi lebih lanjut ke IP tertentu dengan mengonfigurasi parameter InboundIpRule. Nilai yang diizinkan dinonaktifkan dan diaktifkan.
 
 ```yaml
 Type: System.String

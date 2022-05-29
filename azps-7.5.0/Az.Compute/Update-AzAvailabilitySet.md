@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Update-AzAvailabilitySet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Update-AzAvailabilitySet.md
-ms.openlocfilehash: 01e31a191ab0bcd2a90f0c9c537fa3781e2c2959
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 1efc1ce3de545c5a2e255a28b4fcf6a1c0d4f7bb
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144241493"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145732366"
 ---
 # Update-AzAvailabilitySet
 
 ## SYNOPSIS
 Memperbarui set ketersediaan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/update-azavailabilityset) untuk informasi terbaru.
 
 ## SYNTAX
 

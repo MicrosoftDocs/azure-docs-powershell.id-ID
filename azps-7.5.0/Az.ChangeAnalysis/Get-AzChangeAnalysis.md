@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.changeanalysis/g
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ChangeAnalysis/help/Get-AzChangeAnalysis.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ChangeAnalysis/help/Get-AzChangeAnalysis.md
-ms.openlocfilehash: 0d274952fe38fb00288706020a2e26c780f7317c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 624a718e925af594dc5fc23786d8611de2d8fe6a
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144110456"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145738558"
 ---
 # Get-AzChangeAnalysis
 
 ## SYNOPSIS
 Data pelanggan selalu diselubungi jika kueri di tingkat langganan atau grup sumber daya.
-Untuk kueri pada satu sumber daya, data pelanggan ditutupi jika pengguna tidak memiliki akses.
+Untuk kueri pada satu sumber daya, data pelanggan diselubungi jika pengguna tidak memiliki akses.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.changeanalysis/get-azchangeanalysis) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ Get-AzChangeAnalysis -ResourceGroupName <String> -EndTime <DateTime> -StartTime 
 
 ## DESCRIPTION
 Data pelanggan selalu diselubungi jika kueri di tingkat langganan atau grup sumber daya.
-Untuk kueri pada satu sumber daya, data pelanggan ditutupi jika pengguna tidak memiliki akses.
+Untuk kueri pada satu sumber daya, data pelanggan diselubungi jika pengguna tidak memiliki akses.
 
 ## EXAMPLES
 
@@ -87,7 +90,7 @@ ARG_bd65a427-a683-4c89-bdd2-957596912e47_693e5c36-e7f4-44b0-9806-52d471a818f8_13
 ```
 
 Perintah ini mencantumkan perubahan langganan dalam rentang waktu yang ditentukan.
-`StartTime` dan `EndTime` merupakan format tanggal UTC.
+`StartTime` dan `EndTime` adalah format tanggal UTC.
 
 ### Contoh 2: Mencantumkan perubahan grup sumber daya dalam rentang waktu yang ditentukan
 ```powershell
@@ -103,7 +106,7 @@ ARG_3dd199c6-cfec-421a-bcd3-797c08de63bc_0ee1aacb-523b-40bd-96a0-00fed2f47380_13
 ```
 
 Perintah ini mencantumkan perubahan grup sumber daya dalam rentang waktu yang ditentukan.
-`StartTime` dan `EndTime` merupakan format tanggal UTC.
+`StartTime` dan `EndTime` adalah format tanggal UTC.
 
 ### Contoh 3: Mencantumkan perubahan sumber daya dalam rentang waktu yang ditentukan
 ```powershell
@@ -119,7 +122,7 @@ ARG_3dd199c6-cfec-421a-bcd3-797c08de63bc_0ee1aacb-523b-40bd-96a0-00fed2f47380_13
 ```
 
 Perintah ini mencantumkan perubahan sumber daya dalam rentang waktu yang ditentukan.
-`StartTime` dan `EndTime` merupakan format tanggal UTC.
+`StartTime` dan `EndTime` adalah format tanggal UTC.
 
 ## PARAMETERS
 
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama tidak peka huruf besar/kecil.
+Nama ini tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String

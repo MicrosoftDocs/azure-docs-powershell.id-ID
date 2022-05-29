@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Remove-AzManagedCassandraDataCenter.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Remove-AzManagedCassandraDataCenter.md
-ms.openlocfilehash: 18c6550e0f0b4294db79e6691551488a680fa947
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8ed10dc04a81e0b1028e81a8e02b260d3768907d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144206651"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145756108"
 ---
 # Remove-AzManagedCassandraDatacenter
 
 ## SYNOPSIS
 Menghapus pusat data Azure Managed Instances for Apache Cassandra.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/remove-azmanagedcassandradatacenter) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek pusat data Cassandra terkelola
+Objek pusat data Cassandra Terkelola
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSDataCenterResource

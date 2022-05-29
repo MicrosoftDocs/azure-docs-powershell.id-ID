@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.sql/Set-AzSqlIns
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlInstanceTransparentDataEncryptionProtector.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlInstanceTransparentDataEncryptionProtector.md
-ms.openlocfilehash: b8d609e3ee0cb3c12d4d6d0a4b91b2143100f325
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 013ab0d8868f77af92f2c5c3b3bcedb313e6db38
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144240782"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145722610"
 ---
 # Set-AzSqlInstanceTransparentDataEncryptionProtector
 
 ## SYNOPSIS
 Mengatur pelindung Enkripsi Data Transparan (TDE) untuk instans terkelola SQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/set-azsqlinstancetransparentdataencryptionprotector) untuk informasi terbaru.
 
 ## SYNTAX
 

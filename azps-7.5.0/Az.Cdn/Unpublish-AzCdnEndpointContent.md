@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/unpublish-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Unpublish-AzCdnEndpointContent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Unpublish-AzCdnEndpointContent.md
-ms.openlocfilehash: 1ab5f6022a125ed3ad812a5dbedb9e85ae79c136
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c2fd29f841dd96be79ce80621a8fc9c31ab15b8e
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144110468"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145738630"
 ---
 # Unpublish-AzCdnEndpointContent
 
 ## SYNOPSIS
 Menghapus menyeluruh titik akhir CDN.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cdn/unpublish-azcdnendpointcontent) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,7 +46,7 @@ Unpublish-AzCdnEndpointContent -CdnEndpoint <PSEndpoint> -PurgeContent <String[]
 Unpublish-AzCdnEndpointContent -ResourceGroupName myresourcegroup -ProfileName mycdnprofile -EndpointName myendpoint -PurgeContent "/images/kitten.png","/video/rickroll.mp4"
 ```
 
-### Contoh 2: Hapus menyeluruh semuanya dalam /images/ di semua titik akhir
+### Contoh 2: Hapus menyeluruh semua yang ada di /images/ di semua titik akhir
 ```powershell
 Get-AzCdnProfile | Get-AzCdnEndpoint | Unpublish-AzCdnEndpointContent -PurgeContent "/images/*"
 ```
@@ -96,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang sedang Anda kerjakan.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml

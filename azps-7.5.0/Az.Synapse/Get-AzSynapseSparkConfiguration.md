@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSparkConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSparkConfiguration.md
-ms.openlocfilehash: 4f2649a04bc83de31e2988e7dfe88eff989689a9
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 415a166f80f0ad00b3357f877174c95e90c59e00
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144240628"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145709344"
 ---
 # Get-AzSynapseSparkConfiguration
 
 ## SYNOPSIS
 Mendapatkan informasi tentang konfigurasi spark di ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapsesparkconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,7 +53,7 @@ Get-AzSynapseSparkConfiguration -WorkspaceName ContosoWorkspace -Name ContosoSpa
 
 Mendapatkan konfigurasi spark tunggal yang disebut ContosoSparkConfiguration di ruang kerja ContosoWorkspace.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 $ws | Get-AzSynapseSparkConfiguration -Name ContosoSparkConfiguration

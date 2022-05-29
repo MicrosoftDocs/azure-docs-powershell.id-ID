@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabaseBackupLongTermRetentionPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabaseBackupLongTermRetentionPolicy.md
-ms.openlocfilehash: 02d4332e3b71df01ae18dcd179527e6e11f12cb2
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8d6615ca52a965cc515ff67dfa011b2419b609b9
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144212807"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145723528"
 ---
 # Set-AzSqlDatabaseBackupLongTermRetentionPolicy
 
 ## SYNOPSIS
 Menetapkan kebijakan penyimpanan jangka panjang server.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/set-azsqldatabasebackuplongtermretentionpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -88,9 +91,9 @@ WeekOfYear                             : 0
 Location                               :
 ```
 
-Ini menetapkan kebijakan penyimpanan jangka panjang database01 untuk menyimpan cadangan penuh pertama setiap bulan selama 5 tahun
+Ini menetapkan kebijakan penyimpanan jangka panjang database01 untuk menyimpan pencadangan penuh pertama setiap bulan selama 5 tahun
 
-### Contoh 3: Mengatur retensi tahunan untuk versi kebijakan penyimpanan jangka panjang saat ini
+### Contoh 3: Atur retensi tahunan untuk versi kebijakan penyimpanan jangka panjang saat ini
 ```powershell
 Set-AzSqlDatabaseBackupLongTermRetentionPolicy -ResourceGroupName resourcegroup01 -ServerName server01 -DatabaseName database01 -YearlyRetention P10Y -WeekOfYear 26
 ```
@@ -106,9 +109,9 @@ WeekOfYear                             : 26
 Location                               :
 ```
 
-Ini menetapkan kebijakan penyimpanan jangka panjang database01 untuk menyimpan cadangan penuh yang diambil pada minggu ke-26 tahun selama 10 tahun
+Ini menetapkan kebijakan penyimpanan jangka panjang database01 untuk menyimpan cadangan penuh yang diambil pada minggu ke-26 dalam setahun selama 10 tahun
 
-### Contoh 4: Mengatur setiap retensi untuk versi kebijakan penyimpanan jangka panjang saat ini
+### Contoh 4: Atur setiap retensi untuk versi kebijakan penyimpanan jangka panjang saat ini
 ```powershell
 Set-AzSqlDatabaseBackupLongTermRetentionPolicy -ResourceGroupName resourcegroup01 -ServerName server01 -DatabaseName database01 -WeeklyRetention 14 -MonthlyRetention P24W -YearlyRetention P10Y -WeekOfYear 26
 ```
@@ -199,7 +202,7 @@ Accept wildcard characters: False
 ### -MonthlyRetention
 Retensi Bulanan.
 Jika hanya angka yang diteruskan alih-alih string ISO 8601, hari akan diasumsikan sebagai unit.
-Minimal ada 7 hari dan maksimal 10 tahun.
+Minimal 7 hari dan maksimal 10 tahun.
 
 ```yaml
 Type: System.String
@@ -273,7 +276,7 @@ Accept wildcard characters: False
 ### -WeeklyRetention
 Retensi Mingguan.
 Jika hanya angka yang diteruskan alih-alih string ISO 8601, hari akan diasumsikan sebagai unit.
-Minimal ada 7 hari dan maksimal 10 tahun.
+Minimal 7 hari dan maksimal 10 tahun.
 
 ```yaml
 Type: System.String
@@ -317,7 +320,7 @@ Accept wildcard characters: False
 ### -YearlyRetention
 Retensi Tahunan.
 Jika hanya angka yang diteruskan alih-alih string ISO 8601, hari akan diasumsikan sebagai unit.
-Minimal ada 7 hari dan maksimal 10 tahun.
+Minimal 7 hari dan maksimal 10 tahun.
 
 ```yaml
 Type: System.String

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqlela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlElasticPoolRecommendedActionState.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlElasticPoolRecommendedActionState.md
-ms.openlocfilehash: fbd5bbc26a34d187b2f71d639b09fad6a583aa96
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 820c02078514fb1164314a684bcb97c212c4c1a3
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144245133"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145722916"
 ---
 # Set-AzSqlElasticPoolRecommendedActionState
 
 ## SYNOPSIS
 Memperbarui status tindakan yang direkomendasikan Azure SQL Elastic Pool.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/set-azsqlelasticpoolrecommendedactionstate) untuk informasi terbaru.
 
 ## SYNTAX
 

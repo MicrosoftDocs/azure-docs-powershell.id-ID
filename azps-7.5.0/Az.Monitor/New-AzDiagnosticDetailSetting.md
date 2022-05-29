@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/new-azdi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzDiagnosticDetailSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzDiagnosticDetailSetting.md
-ms.openlocfilehash: 4f8bf368264fde13441001cc7c9cdce070580155
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 106431db086879c172eb067364e5be28261e0f7c
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144217238"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145776306"
 ---
 # New-AzDiagnosticDetailSetting
 
 ## SYNOPSIS
 Membuat Objek PSDiagnosticDetailSetting, jenisnya bisa berupa metrik atau log
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/new-azdiagnosticdetailsetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -52,7 +55,7 @@ RetentionPolicy :
 CategoryType    : Metrics
 ```
 
-Buat objek PSMetricSettings.
+Membuat objek PSMetricSettings.
 
 ### Contoh 2
 ```powershell
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -RetentionEnabled
-Aktifkan kebijakan Retensi
+Mengaktifkan kebijakan Retensi
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

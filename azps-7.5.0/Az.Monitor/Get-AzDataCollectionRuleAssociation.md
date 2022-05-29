@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/get-azda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzDataCollectionRuleAssociation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzDataCollectionRuleAssociation.md
-ms.openlocfilehash: ce4de6db2876362db44ae4c51a2baee0d95c0d65
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: e3f9d24d7f92778aa833355619eac4d7eeaed968
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144197786"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145776325"
 ---
 # Get-AzDataCollectionRuleAssociation
 
 ## SYNOPSIS
 Mendapatkan asosiasi aturan pengumpulan data.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.monitor/get-azdatacollectionruleassociation) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/st
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Stop-AzDataMigrationToSqlDb.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Stop-AzDataMigrationToSqlDb.md
-ms.openlocfilehash: 759868a182b4abdd2c9d2578dac16bcb2aaec292
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b4f455a35f63544e14bfb434bf8c1750754a3f02
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144219110"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145749592"
 ---
 # Stop-AzDataMigrationToSqlDb
 
 ## SYNOPSIS
 Hentikan migrasi database yang sedang berlangsung ke SQL Db.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/stop-azdatamigrationtosqldb) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Name               Type                                       Kind  Provisioning
 mydb1         Microsoft.DataMigration/databaseMigrations SqlDb Canceling         Canceling
 ```
 
-Perintah ini menghentikan migrasi yang sedang berlangsung ke SQL Managed Instance.
+Perintah ini menghentikan migrasi yang sedang berlangsung untuk SQL Managed Instance.
 
 ## PARAMETERS
 
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

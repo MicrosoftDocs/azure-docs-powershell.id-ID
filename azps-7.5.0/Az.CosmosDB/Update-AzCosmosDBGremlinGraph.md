@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBGremlinGraph.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBGremlinGraph.md
-ms.openlocfilehash: 8f5e41dbc70a58e05ba137e25cc73360c005bbe1
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: cb559706b7bc157efd334d9872b2b0d63b505368
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144206510"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145755694"
 ---
 # Update-AzCosmosDBGremlinGraph
 
 ## SYNOPSIS
 Memperbarui Graph CosmosDB Gremlin. Melakukan operasi patch sisi klien dengan membaca Graph yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/update-azcosmosdbgremlingraph) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/restore
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Restore-AzCosmosDBAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Restore-AzCosmosDBAccount.md
-ms.openlocfilehash: 6c923fa09238db947dab7feb55ba510ce55bb092
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f7dacbac59b2f836eb132dc7e630b998627f723c
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144206627"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145756054"
 ---
 # Restore-AzCosmosDBAccount
 
 ## SYNOPSIS
 Memulihkan akun CosmosDB yang ada (langsung atau dihapus) ke tanda waktu tertentu ke akun baru
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/restore-azcosmosdbaccount) untuk informasi terbaru.
 
 ## SYNTAX
 

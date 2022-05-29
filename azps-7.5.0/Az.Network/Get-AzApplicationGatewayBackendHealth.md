@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayBackendHealth.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayBackendHealth.md
-ms.openlocfilehash: 3859092c8d10ee1ab8e9cdccd8b6a6ce74e8e127
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 29de0102b4709c158c80ebd3f1e0f78995e0802c
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144223346"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145775981"
 ---
 # Get-AzApplicationGatewayBackendHealth
 
 ## SYNOPSIS
 Mendapatkan kesehatan backend gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azapplicationgatewaybackendhealth) untuk informasi terbaru.
 
 ## SYNTAX
 

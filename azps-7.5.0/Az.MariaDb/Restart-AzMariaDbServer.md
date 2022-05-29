@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mariadb/restart-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/Restart-AzMariaDbServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/Restart-AzMariaDbServer.md
-ms.openlocfilehash: 295146701067b8a06be25a5532d48aceae240a9c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f052f6b7a7154bce99e6798c91291ff9dcf63177
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144190209"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145776432"
 ---
 # Restart-AzMariaDbServer
 
 ## SYNOPSIS
 Menghidupkan ulang server.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.mariadb/restart-azmariadbserver) untuk informasi terbaru.
 
 ## SYNTAX
 

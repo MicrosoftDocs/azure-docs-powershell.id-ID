@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBCassandraKeyspaceThroughput.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBCassandraKeyspaceThroughput.md
-ms.openlocfilehash: 271aa0dddebf9f997f2448f824ce8dd343f6893a
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: d50238ae9c792c1ceb325a4e6109e563c6963ac1
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144206570"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145755892"
 ---
 # Update-AzCosmosDBCassandraKeyspaceThroughput
 
 ## SYNOPSIS
 Memperbarui nilai throughput Dari CosmosDB Cassandra Keyspace.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/update-azcosmosdbcassandrakeyspacethroughput) untuk informasi terbaru.
 
 ## SYNTAX
 

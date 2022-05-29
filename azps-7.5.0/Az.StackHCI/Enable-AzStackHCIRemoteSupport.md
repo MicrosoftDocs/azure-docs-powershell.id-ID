@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackhci/enable-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Enable-AzStackHCIRemoteSupport.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Enable-AzStackHCIRemoteSupport.md
-ms.openlocfilehash: 781b019c79e8eb6d8b0b16485b0b500452abc597
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: cdc9ab12925a6e1a52703139f022d00cc1bf33f5
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144192029"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145719216"
 ---
 # Enable-AzStackHCIRemoteSupport
 
 ## SYNOPSIS
 Mengaktifkan Dukungan Jarak Jauh.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.stackhci/enable-azstackhciremotesupport) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ Enable-AzStackHCIRemoteSupport -AccessLevel DiagnosticsRepair -ExpireInMinutes 1
 ## PARAMETERS
 
 ### -AccessLevel
-Mengontrol operasi jarak jauh yang dapat dilakukan. Ini bisa berupa Diagnostik atau DiagnostikAndRepair.
+Mengontrol operasi jarak jauh yang dapat dilakukan. Ini bisa berupa Diagnostik atau DiagnosticsAndRepair.
 
 ```yaml
 Type: System.String
@@ -72,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpireInMinutes
-Menentukan kedaluwarsa dukungan jarak jauh dalam beberapa hari. Default ke 480 menit (8 jam).
+Menentukan kedaluwarsa dukungan jarak jauh dalam hari. Default ke 480 menit (8 jam).
 
 ```yaml
 Type: System.Int32

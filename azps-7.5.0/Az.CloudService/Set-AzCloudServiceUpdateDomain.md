@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cloudservice/set
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Set-AzCloudServiceUpdateDomain.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Set-AzCloudServiceUpdateDomain.md
-ms.openlocfilehash: ab3deeb5aef0df0241a059801df2a35507136e40
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 509bc7a9454d029274fe8a6885771251cad5eba6
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144196750"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145737586"
 ---
 # Set-AzCloudServiceUpdateDomain
 
 ## SYNOPSIS
 Memperbarui instans peran di domain pembaruan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cloudservice/set-azcloudserviceupdatedomain) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ Memperbarui instans peran di domain pembaruan yang ditentukan.
 Set-AzCloudServiceUpdateDomain -CloudServiceName "ContosoCS" -ResourceGroupName "ContosOrg" -UpdateDomain 0
 ```
 
-Perintah ini memperbarui instans peran di memperbarui domain 0 layanan cloud bernama ContosoCS yang termasuk dalam grup sumber daya bernama ContosOrg.
+Perintah ini memperbarui instans peran dalam memperbarui domain 0 dari layanan cloud bernama ContosoCS yang termasuk dalam grup sumber daya bernama ContosOrg.
 
 ## PARAMETERS
 
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+Info masuk langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml

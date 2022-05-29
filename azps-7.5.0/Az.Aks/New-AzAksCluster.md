@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.aks/new-azaksclu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/New-AzAksCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/New-AzAksCluster.md
-ms.openlocfilehash: 7f4371c916047bb2293d6fe0257a5a8d3eac0e08
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4e04e65ad92106e5bb160a7740354f0855191b85
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144196859"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145732222"
 ---
 # New-AzAksCluster
 
@@ -20,6 +20,9 @@ Buat kluster Kubernetes terkelola baru.
 Cmdlet dapat memanggil di bawah Microsoft Graph API sesuai dengan parameter input:
 
 - POST /servicePrincipals
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.aks/new-azakscluster) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -716,7 +719,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodeVnetSubnetID
-SubnetID VNet menentukan pengidentifikasi subnet VNet.
+VNet SubnetID menentukan pengidentifikasi subnet VNet.
 
 ```yaml
 Type: System.String
@@ -731,7 +734,7 @@ Accept wildcard characters: False
 ```
 
 ### -PodCidr
-Cidr pod yang digunakan untuk membangun jaringan Kubernetes.
+Pod cidr yang digunakan untuk membangun jaringan Kubernetes.
 
 ```yaml
 Type: System.String
@@ -776,7 +779,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServicePrincipalIdAndSecret
-Id klien dan rahasia klien yang terkait dengan aplikasi/perwakilan layanan AAD.
+Id klien dan rahasia klien yang terkait dengan aplikasi AAD/perwakilan layanan.
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -824,7 +827,7 @@ Accept wildcard characters: False
 ### -SubscriptionId
 ID langganan.
 Secara default, cmdlet dijalankan dalam langganan yang diatur dalam konteks saat ini. Jika pengguna menentukan langganan lain, cmdlet saat ini dijalankan dalam langganan yang ditentukan oleh pengguna.
-Mengesampingkan langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
+Mengambil alih langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
 
 ```yaml
 Type: System.String
@@ -869,7 +872,7 @@ Accept wildcard characters: False
 ```
 
 ### -WindowsProfileAdminUserPassword
-Kata sandi administrator yang digunakan untuk VM Windows, panjangnya harus setidaknya 12, berisi setidaknya satu karakter huruf kecil, yaitu `[a-z]`, satu `[A-Z]` dan satu karakter `[!@#$%^&*()]`khusus .
+Kata sandi administrator yang digunakan untuk Windows VM, panjangnya harus setidaknya 12, berisi setidaknya satu karakter huruf kecil, yaitu `[a-z]`, satu `[A-Z]` dan satu karakter `[!@#$%^&*()]`khusus .
 
 ```yaml
 Type: System.Security.SecureString

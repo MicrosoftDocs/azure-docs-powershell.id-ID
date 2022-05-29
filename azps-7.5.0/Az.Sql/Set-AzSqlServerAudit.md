@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/Set-AzSqlSer
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlServerAudit.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlServerAudit.md
-ms.openlocfilehash: c5847441c2cadcc8ceaf1182936e74de662f2127
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: a122aa5eaab9063c3fef33b86a031273f38f17b8
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144240723"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145722520"
 ---
 # Set-AzSqlServerAudit
 
 ## SYNOPSIS
 Mengubah pengaturan audit server Azure SQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/set-azsqlserveraudit) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,13 +44,13 @@ Set-AzSqlServerAudit [-AuditActionGroup <AuditActionGroups[]>] [-PredicateExpres
 ```
 
 ## DESCRIPTION
-**Cmdlet Set-AzSqlServerAudit** mengubah pengaturan audit server Azure SQL.
-Untuk menggunakan cmdlet , gunakan parameter *ResourceGroupName* dan *ServerName* untuk mengidentifikasi server.
+Cmdlet **Set-AzSqlServerAudit** mengubah pengaturan audit server Azure SQL.
+Untuk menggunakan cmdlet, gunakan parameter *ResourceGroupName* dan *ServerName* untuk mengidentifikasi server.
 Saat penyimpanan blob adalah tujuan untuk log audit, tentukan parameter *StorageAccountResourceId* untuk menentukan akun penyimpanan untuk log audit dan parameter *StorageKeyType* untuk menentukan kunci penyimpanan. Anda juga dapat menentukan retensi untuk log audit dengan mengatur nilai parameter *RetentionInDays* untuk menentukan periode untuk log audit.
 
 ## EXAMPLES
 
-### Contoh 1: Aktifkan kebijakan audit penyimpanan blob server Azure SQL
+### Contoh 1: Mengaktifkan kebijakan audit penyimpanan blob server Azure SQL
 ```powershell
 Set-AzSqlServerAudit -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -BlobStorageTargetState Enabled -StorageAccountResourceId "/subscriptions/7fe3301d-31d3-4668-af5e-211a890ba6e3/resourceGroups/resourcegroup01/providers/Microsoft.Storage/storageAccounts/mystorage"
 ```
@@ -67,7 +70,7 @@ Set-AzSqlServerAudit -ResourceGroupName "ResourceGroup01" -ServerName "Server01"
 Set-AzSqlServerAudit -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -PredicateExpression ""
 ```
 
-### Contoh 5: Mengaktifkan kebijakan audit hub peristiwa dari server Azure SQL
+### Contoh 5: Mengaktifkan kebijakan audit pusat aktivitas server Azure SQL
 ```powershell
 Set-AzSqlServerAudit -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -EventHubTargetState Enabled -EventHubName "EventHubName" -EventHubAuthorizationRuleResourceId "EventHubAuthorizationRuleResourceId"
 ```
@@ -87,7 +90,7 @@ Set-AzSqlServerAudit -ResourceGroupName "ResourceGroup01" -ServerName "Server01"
 Set-AzSqlServerAudit -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -LogAnalyticsTargetState Disabled
 ```
 
-### Contoh 9: Nonaktifkan, melalui alur, kebijakan audit analitik log dari server Azure SQL
+### Contoh 9: Menonaktifkan, melalui alur, kebijakan audit analitik log dari server Azure SQL
 ```powershell
 Get-AzSqlServer -ResourceGroupName "ResourceGroup01" -ServerName "Server01" | Set-AzSqlServerAudit -LogAnalyticsTargetState Disabled
 ```
@@ -125,7 +128,7 @@ Kumpulan grup tindakan yang direkomendasikan untuk digunakan adalah kombinasi be
 "BATCH_COMPLETED_GROUP",  
 "SUCCESSFUL_DATABASE_AUTHENTICATION_GROUP",  
 "FAILED_DATABASE_AUTHENTICATION_GROUP"  
-Kombinasi di atas ini juga merupakan set yang dikonfigurasi secara default. Grup-grup ini mencakup semua pernyataan SQL dan prosedur tersimpan yang dijalankan terhadap database, dan tidak boleh digunakan dalam kombinasi dengan grup lain karena ini akan menghasilkan log audit duplikat.
+Kombinasi di atas ini juga merupakan set yang dikonfigurasi secara default. Grup ini mencakup semua pernyataan SQL dan prosedur tersimpan yang dijalankan terhadap database, dan tidak boleh digunakan dalam kombinasi dengan grup lain karena ini akan menghasilkan log audit duplikat.
 Untuk informasi selengkapnya, lihat https://docs.microsoft.com/sql/relational-databases/security/auditing/sql-server-audit-action-groups-and-actions#database-level-audit-action-groups.
 
 ```yaml
@@ -413,7 +416,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Guid
 
-### System.Nullable'1[[System.UInt32, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.UInt32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
 
 ### Microsoft.Azure.Commands.Sql.Auditing.Model.ServerAuditModel
 

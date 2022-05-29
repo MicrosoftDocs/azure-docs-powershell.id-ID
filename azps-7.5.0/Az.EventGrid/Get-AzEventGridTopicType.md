@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventgrid/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Get-AzEventGridTopicType.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Get-AzEventGridTopicType.md
-ms.openlocfilehash: afc5865cae562d1088bbec467bad82ae69926abf
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6bb09ba3ae6f0483f3881df42c873e53e077f8fc
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144186166"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145769736"
 ---
 # Get-AzEventGridTopicType
 
 ## SYNOPSIS
 Mendapatkan detail tentang jenis topik yang didukung oleh Azure Event Grid.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventgrid/get-azeventgridtopictype) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -46,7 +49,7 @@ Get-AzEventGridTopicType -Name "Microsoft.Storage.StorageAccounts"
 
 Mendapatkan informasi tentang jenis topik StorageAccounts.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzEventGridTopicType -Name "Microsoft.Storage.StorageAccounts" -IncludeEventTypeData
 ```

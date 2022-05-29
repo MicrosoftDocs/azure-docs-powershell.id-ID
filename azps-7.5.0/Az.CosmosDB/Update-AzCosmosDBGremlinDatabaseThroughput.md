@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBGremlinDatabaseThroughput.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBGremlinDatabaseThroughput.md
-ms.openlocfilehash: d0b921ccb947f918b1804b56a78e1005c253fa76
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c9e6de0bfda3d6708431fe414862a0a761f6d8dd
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144206522"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145755730"
 ---
 # Update-AzCosmosDBGremlinDatabaseThroughput
 
 ## SYNOPSIS
 Memperbarui nilai throughput Database Gremlin CosmosDB.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/update-azcosmosdbgremlindatabasethroughput) untuk informasi terbaru.
 
 ## SYNTAX
 

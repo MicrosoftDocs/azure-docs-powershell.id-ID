@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.analysisservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AnalysisServices/AnalysisServices/help/Suspend-AzAnalysisServicesServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AnalysisServices/AnalysisServices/help/Suspend-AzAnalysisServicesServer.md
-ms.openlocfilehash: 4932ff86c069fb74780840e1e437137f65f6e51b
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 3e5881259145fbd53dee73b24a4819815d2a6584
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144110816"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145731916"
 ---
 # Suspend-AzAnalysisServicesServer
 
 ## SYNOPSIS
 Menangguhkan instans server Analysis Services
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.analysisservices/suspend-azanalysisservicesserver) untuk informasi terbaru.
 
 ## SYNTAX
 

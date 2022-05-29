@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventgrid/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Remove-AzEventGridSubscription.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Remove-AzEventGridSubscription.md
-ms.openlocfilehash: 7d4f4b4b7830d6723b679f4a39ac40f38a4bf6cd
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 47c104ee698892200ce1052f4264243db69c4cb8
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144231511"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145769592"
 ---
 # Remove-AzEventGridSubscription
 
 ## SYNOPSIS
 Menghapus langganan peristiwa Azure Event Grid.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventgrid/remove-azeventgridsubscription) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -94,7 +97,7 @@ Remove-AzEventGridSubscription -ResourceGroupName MyResourceGroupName -EventSubs
 
 Menghapus langganan \`peristiwa EventSubscription1\` ke grup \`sumber daya MyResourceGroupName\`.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Remove-AzEventGridSubscription -EventSubscriptionName EventSubscription1
 ```
@@ -106,7 +109,7 @@ Menghapus langganan \`peristiwa EventSubscription1\` ke langganan Azure default.
 Get-AzResource -ResourceId "/subscriptions/$subscriptionId/resourceGroups/$resourceGroupName/providers/Microsoft.EventHub/namespaces/$namespaceName" | Remove-AzEventGridSubscription -EventSubscriptionName EventSubscription1
 ```
 
-Menghapus langganan \`peristiwa EventSubscription1\` ke namespace pusat aktivitas.
+Menghapus langganan \`peristiwa EventSubscription1\` ke namespace Layanan Pusat Aktivitas.
 
 ### Contoh 5
 ```powershell

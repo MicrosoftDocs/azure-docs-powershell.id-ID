@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/add-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzVMSshPublicKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzVMSshPublicKey.md
-ms.openlocfilehash: e28064d4e5a7ff273279c8c6cde7724c27f3a56c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 600c91bbd22ad17cade3f175fb5f952c2fe3d693
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144222635"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145770186"
 ---
 # Add-AzVMSshPublicKey
 
 ## SYNOPSIS
 Menambahkan kunci publik untuk SSH untuk komputer virtual, saat hanya membuat VM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/add-azvmsshpublickey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -74,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -Jalur
-Menentukan jalur lengkap file, pada komputer virtual, tempat cmdlet ini menyimpan kunci umum SSH.
+Menentukan jalur lengkap file, pada komputer virtual, tempat cmdlet ini menyimpan kunci publik SSH.
 Jika file sudah ada, cmdlet ini menambahkan kunci ke file.
 
 ```yaml

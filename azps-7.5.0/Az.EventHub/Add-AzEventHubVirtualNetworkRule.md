@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/add-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Add-AzEventHubVirtualNetworkRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Add-AzEventHubVirtualNetworkRule.md
-ms.openlocfilehash: e1f7ac6ce2fd4b4bb9f026e148d5a9746ba5f647
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 242841f280dc667cc2232dec5a385a5a5b9a1cf4
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144231469"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145769556"
 ---
 # Add-AzEventHubVirtualNetworkRule
 
 ## SYNOPSIS
 Menambahkan satu VirtualNetworkRule ke NetworkRuleSet untuk Namespace yang diberikan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventhub/add-azeventhubvirtualnetworkrule) untuk informasi terbaru.
 
 ## SYNTAX
 

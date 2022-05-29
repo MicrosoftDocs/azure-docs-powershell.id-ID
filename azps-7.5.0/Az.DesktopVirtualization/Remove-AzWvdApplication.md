@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.desktopvirtualiz
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Remove-AzWvdApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Remove-AzWvdApplication.md
-ms.openlocfilehash: f4abad1fe3382f274a3c78de86bc8e9abceed881
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7d4a3a44289e7cb8c7cabd1b3c3cf8220f35a588
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144187465"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145743778"
 ---
 # Remove-AzWvdApplication
 
 ## SYNOPSIS
 Menghapus aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.desktopvirtualization/remove-azwvdapplication) untuk informasi terbaru.
 
 ## SYNTAX
 

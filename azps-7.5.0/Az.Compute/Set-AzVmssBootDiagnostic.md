@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVmssBootDiagnostic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVmssBootDiagnostic.md
-ms.openlocfilehash: d625fe98f4ae18378466db8d7960b306ca1ea8e3
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4644cf4f4cfcd5e5617951436cc720272a98a2d7
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144208307"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145732654"
 ---
 # Set-AzVmssBootDiagnostic
 
 ## SYNOPSIS
 Mengatur profil diagnostik boot set skala komputer virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azvmssbootdiagnostic) untuk informasi terbaru.
 
 ## SYNTAX
 

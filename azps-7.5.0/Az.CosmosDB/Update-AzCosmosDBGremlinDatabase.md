@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBGremlinDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBGremlinDatabase.md
-ms.openlocfilehash: 75a609c8dc81965da96386647cb76af956713702
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8718d4fe6894e075f7f415efce5a1afdaaa7d994
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144206534"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145755766"
 ---
 # Update-AzCosmosDBGremlinDatabase
 
 ## SYNOPSIS
 Memperbarui Database Gremlin CosmosDB. Melakukan operasi patch sisi klien dengan membaca Database yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/update-azcosmosdbgremlindatabase) untuk informasi terbaru.
 
 ## SYNTAX
 

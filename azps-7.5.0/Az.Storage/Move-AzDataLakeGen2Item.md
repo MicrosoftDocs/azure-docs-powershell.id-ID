@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/move-azd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Move-AzDataLakeGen2Item.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Move-AzDataLakeGen2Item.md
-ms.openlocfilehash: 9bf01e93a6f0d253091ca3bbd18dc6872fd1b0c2
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 9edd2cc59980490963b59ab8af5e73c56c93d524
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144191511"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145716598"
 ---
 # Move-AzDataLakeGen2Item
 
 ## SYNOPSIS
 Pindahkan file atau direktori ke file atau direktori lain di akun Storage yang sama.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/move-azdatalakegen2item) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/St
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Stop-AzDataMigrationTask.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Stop-AzDataMigrationTask.md
-ms.openlocfilehash: 5085bae6ecbc200f70c093384f383772c0e7b605
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: efb05e1f0d0cbb108503ea715aa20db2a369c150
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144219119"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145749672"
 ---
 # Stop-AzDataMigrationTask
 
 ## SYNOPSIS
 Menghentikan tugas Azure Database Migration Service yang dalam keadaan berjalan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/stop-azdatamigrationtask) untuk informasi terbaru.
 
 ## SYNTAX
 

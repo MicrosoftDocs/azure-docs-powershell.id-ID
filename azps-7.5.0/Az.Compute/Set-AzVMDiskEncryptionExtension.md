@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMDiskEncryptionExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMDiskEncryptionExtension.md
-ms.openlocfilehash: 8ca264cb31cc3c166c7e4591772ad0e77b080340
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: de2f213db28017ff003b535146877f0127aa32e5
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144199505"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145732816"
 ---
 # Set-AzVMDiskEncryptionExtension
 
 ## SYNOPSIS
 Mengaktifkan enkripsi pada komputer virtual IaaS yang sedang berjalan di Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azvmdiskencryptionextension) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -88,7 +91,7 @@ $VolumeType = "All"
 Set-AzVMDiskEncryptionExtension -ResourceGroupName $RGName -VMName $VMName -DiskEncryptionKeyVaultUrl $DiskEncryptionKeyVaultUrl -DiskEncryptionKeyVaultId $KeyVaultResourceId -VolumeType $VolumeType
 ```
 
-Contoh ini mengaktifkan enkripsi pada VM tanpa menentukan kredensial AD.
+Contoh ini memungkinkan enkripsi pada VM tanpa menentukan kredensial AD.
 
 ### Contoh 2: Mengaktifkan enkripsi dengan input yang disalurkan
 ```powershell
@@ -107,7 +110,7 @@ $params | Set-AzVmDiskEncryptionExtension
 
 Contoh ini mengirim parameter menggunakan input yang disalurkan untuk mengaktifkan enkripsi pada VM, tanpa menentukan kredensial AD.
 
-### Contoh 3: Mengaktifkan enkripsi menggunakan ID Klien Azure AD dan Rahasia Klien
+### Contoh 3: Mengaktifkan enkripsi menggunakan Azure AD ID Klien dan Rahasia Klien
 ```powershell
 $RGName = "MyResourceGroup"
 $VMName = "MyTestVM"
@@ -121,7 +124,7 @@ $VolumeType = "All"
 Set-AzVMDiskEncryptionExtension -ResourceGroupName $RGName -VMName $VMName -AadClientID $AADClientID -AadClientSecret $AADClientSecret -DiskEncryptionKeyVaultUrl $DiskEncryptionKeyVaultUrl -DiskEncryptionKeyVaultId $KeyVaultResourceId -VolumeType $VolumeType
 ```
 
-Contoh ini menggunakan ID klien Azure AD dan rahasia klien untuk mengaktifkan enkripsi pada VM.
+Contoh ini menggunakan Azure AD ID klien dan rahasia klien untuk mengaktifkan enkripsi pada VM.
 
 ### Contoh 4: Mengaktifkan enkripsi menggunakan ID klien Azure AD dan thumbprint sertifikasi klien
 ```powershell
@@ -176,7 +179,7 @@ Set-AzVMDiskEncryptionExtension -ResourceGroupName $RGName -VMName $VMName -AadC
 
 Contoh ini menggunakan Azure AD ID klien dan thumbprint sertifikasi klien untuk mengaktifkan enkripsi pada VM.
 
-### Contoh 5: Aktifkan enkripsi menggunakan ID klien Azure AD, rahasia klien, dan kunci enkripsi disk bungkus dengan menggunakan kunci enkripsi kunci
+### Contoh 5: Mengaktifkan enkripsi menggunakan Azure AD ID klien, rahasia klien, dan membungkus kunci enkripsi disk dengan menggunakan kunci enkripsi kunci
 ```powershell
 $RGName = "MyResourceGroup"
 $VMName = "MyTestVM"
@@ -276,7 +279,7 @@ Accept wildcard characters: False
 ```
 
 ### -AadClientID
-Menentukan ID klien aplikasi Azure AD yang memiliki izin untuk menulis rahasia ke **KeyVault**.
+Menentukan ID klien dari aplikasi Azure AD yang memiliki izin untuk menulis rahasia ke **KeyVault**.
 
 ```yaml
 Type: System.String
@@ -441,7 +444,7 @@ Accept wildcard characters: False
 ```
 
 ### -MigrationRecovery
-Memulai pemulihan migrasi untuk kegagalan selama migrasi versi ekstensi ADE dengan AAD ke versi ekstensi ADE tanpa AAD.
+Memulai pemulihan migrasi untuk kegagalan selama migrasi versi ekstensi ADE dengan versi ekstensi AAD ke ADE tanpa AAD.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

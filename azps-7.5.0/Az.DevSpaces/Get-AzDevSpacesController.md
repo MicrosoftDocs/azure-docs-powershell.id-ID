@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.devspaces/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DevSpaces/DevSpaces/help/Get-AzDevSpacesController.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DevSpaces/DevSpaces/help/Get-AzDevSpacesController.md
-ms.openlocfilehash: d405fb861362181af6c80eb9b8caab5acb3f0625
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4cf49570ccb7adbc4cf7b785480a9d1b983491a3
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144198164"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145743076"
 ---
 # Get-AzDevSpacesController
 
 ## SYNOPSIS
 Mendapatkan atau mencantumkan pengontrol Azure DevSpaces.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.devspaces/get-azdevspacescontroller) untuk informasi terbaru.
 
 ## SYNTAX
 

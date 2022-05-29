@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageObjectReplicationPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageObjectReplicationPolicy.md
-ms.openlocfilehash: 292fc184d4179b3ab6a508098a095192bd1d29b7
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 6d4a115d792d282fca17ddebc6100b82cadf1d4f
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144191640"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145717088"
 ---
 # Get-AzStorageObjectReplicationPolicy
 
 ## SYNOPSIS
 Mendapatkan atau mencantumkan kebijakan replikasi objek dari akun Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azstorageobjectreplicationpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 

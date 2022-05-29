@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/new-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageAccount.md
-ms.openlocfilehash: 71e2e38360a9fff7781b5a0bafb8099fc3dfd17f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 65c8f85adde247e29a8d6c0fe269e63910257858
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144242067"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145716490"
 ---
 # New-AzStorageAccount
 
 ## SYNOPSIS
 Membuat Akun penyimpanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.storage/new-azstorageaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -104,12 +107,12 @@ PS C:\>New-AzStorageAccount -ResourceGroupName "MyResourceGroup" -AccountName "m
 
 Perintah ini membuat akun Storage dengan Namespace Hierarki diaktifkan.
 
-### Contoh 6: Buat akun Storage dengan Autentikasi Azure Files AAD DS, dan aktifkan berbagi file besar.
+### Contoh 6: Buat akun Storage dengan Azure Files Autentikasi AAD DS, dan aktifkan berbagi file besar.
 ```powershell
 PS C:\>New-AzStorageAccount -ResourceGroupName "MyResourceGroup" -AccountName "mystorageaccount" -Location "eastus2euap" -SkuName "Standard_LRS" -Kind StorageV2  -EnableAzureActiveDirectoryDomainServicesForFile $true -EnableLargeFileShare
 ```
 
-Perintah ini membuat akun Storage dengan Autentikasi Azure Files AAD DS, dan mengaktifkan berbagi file besar.
+Perintah ini membuat akun Storage dengan Azure Files Autentikasi AAD DS, dan mengaktifkan berbagi file besar.
 
 ### Contoh 7: Buat akun Storage dengan mengaktifkan Autentikasi Layanan Domain Direktori Aktif File dan DefaultSharePermission.
 ```
@@ -450,7 +453,7 @@ Accept wildcard characters: False
 ```
 
 ### -AllowCrossTenantReplication
-Mendapatkan atau mengatur mengizinkan atau melarang replikasi objek penyewa lintas AAD. Interpretasi default adalah true untuk properti ini.
+Mendapatkan atau mengatur mengizinkan atau melarang replikasi objek penyewa AAD silang. Interpretasi default adalah true untuk properti ini.
 
 ```yaml
 Type: System.Boolean
@@ -602,7 +605,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableAzureActiveDirectoryDomainServicesForFile
-Aktifkan Azure Files Azure Active Directory Autentikasi Layanan Domain untuk akun penyimpanan.
+Aktifkan Autentikasi Layanan Domain Azure Files Azure Active Directory untuk akun penyimpanan.
 
 ```yaml
 Type: System.Boolean
@@ -836,7 +839,7 @@ Accept wildcard characters: False
 ### -Jenis
 Menentukan jenis akun Storage yang dibuat cmdlet ini.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Penyimpanan. Tujuan umum Storage akun yang mendukung penyimpanan Blob, Tabel, Antrean, File, dan Disk.
+- Penyimpanan Tujuan umum Storage akun yang mendukung penyimpanan Blob, Tabel, Antrean, File, dan Disk.
 - StorageV2. Akun Storage Tujuan Umum Versi 2 (GPv2) yang mendukung Blob, Tabel, Antrean, File, dan Disk, dengan fitur canggih seperti tingkatan data.
 - BlobStorage. Akun blob Storage yang hanya mendukung penyimpanan Blob.
 - BlockBlobStorage. Blokir akun blob Storage yang hanya mendukung penyimpanan Blob Blok.

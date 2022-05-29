@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseRoleDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseRoleDefinition.md
-ms.openlocfilehash: 300be4c3d36c7d53b73111d79d9cfe791bc2c6f2
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 2423a54a31cc6e2faada2264d2216be9b3bc7589
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144240667"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145709362"
 ---
 # Get-AzSynapseRoleDefinition
 
 ## SYNOPSIS
 Mendapatkan definisi peran Synapse Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapseroledefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -63,7 +66,7 @@ Get-AzSynapseRoleDefinition -WorkspaceName ContosoWorkspace -Name ContosoRole
 
 Perintah ini mendapatkan definisi peran di bawah ruang kerja ContosoWorkspace dengan nama ContosoRole.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 $ws | Get-AzSynapseRoleDefinition

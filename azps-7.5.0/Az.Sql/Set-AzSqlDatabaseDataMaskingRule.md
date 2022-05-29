@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabaseDataMaskingRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabaseDataMaskingRule.md
-ms.openlocfilehash: 01ad51523cd6a407a49b3b6770c9afe6234523a2
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 5ad4d18daf336085d7c4a997e070d023bd37cace
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144245357"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145723456"
 ---
 # Get-AzSqlDatabaseMaskingRule
 
 ## SYNOPSIS
 Mengatur properti aturan masking data untuk database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/set-azsqldatabasedatamaskingrule) untuk informasi terbaru.
 
 ## SYNTAX
 

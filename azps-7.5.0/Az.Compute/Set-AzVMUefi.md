@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMUefi.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMUefi.md
-ms.openlocfilehash: ef97e6c0daa4a49fd6219194c16a52b4da893e04
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 781d1f1d49628750bc64bbbaff5ed7ff6e8ff738
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144234272"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145732582"
 ---
 # Set-AzVMUefi
 
 ## SYNOPSIS
 Memodifikasi properti UEFI dari komputer virtual gen 2
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azvmuefi) untuk informasi terbaru.
 
 ## SYNTAX
 

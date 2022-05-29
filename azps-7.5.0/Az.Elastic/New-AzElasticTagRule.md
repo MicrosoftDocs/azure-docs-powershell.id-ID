@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.elastic/new-azel
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Elastic/help/New-AzElasticTagRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Elastic/help/New-AzElasticTagRule.md
-ms.openlocfilehash: 50d6ecf947606141071c8434fc7c69e7eaa5283f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8862f72214da41759e15fadba1173672a0b1b356
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144239869"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145769826"
 ---
 # New-AzElasticTagRule
 
 ## SYNOPSIS
 Membuat atau memperbarui seperangkat aturan tag untuk sumber daya monitor tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.elastic/new-azelastictagrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 
 ### -SubscriptionId
 Atur ID Langganan Azure.
-Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-00000000000)
+Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000)
 
 ```yaml
 Type: System.String

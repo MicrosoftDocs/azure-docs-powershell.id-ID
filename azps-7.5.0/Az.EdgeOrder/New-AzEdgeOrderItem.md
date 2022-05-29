@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.edgeorder/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/New-AzEdgeOrderItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/New-AzEdgeOrderItem.md
-ms.openlocfilehash: d1bd6bd71936d963e7409d558ed56da053e74f3c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f9eaae5aa651d0432ebc1b1bd1f970618c409da9
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144228994"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145770060"
 ---
 # New-AzEdgeOrderItem
 
 ## SYNOPSIS
 Membuat item pesanan.
 Item pesanan yang ada tidak dapat diperbarui dengan api ini dan sebaliknya harus diperbarui dengan API Perbarui item pesanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.edgeorder/new-azedgeorderitem) untuk informasi terbaru.
 
 ## SYNTAX
 

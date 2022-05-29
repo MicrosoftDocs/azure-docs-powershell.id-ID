@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.communication/up
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Communication/help/Update-AzCommunicationService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Communication/help/Update-AzCommunicationService.md
-ms.openlocfilehash: c3c6703382e050eb1a5bd873531da5307a5bc541
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 90afdef3b9726612e7ab91a961be51cee9bfc697
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144234314"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145770240"
 ---
 # Update-AzCommunicationService
 
 ## SYNOPSIS
 Operasi untuk memperbarui CommunicationService yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.communication/update-azcommunicationservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -54,7 +57,7 @@ Melampirkan tag yang diberikan ke sumber daya ACS yang ditentukan.
 ## PARAMETERS
 
 ### -DataLocation
-Lokasi tempat layanan komunikasi menyimpan data tidak aktifnya.
+Lokasi tempat layanan komunikasi menyimpan datanya saat tidak aktif.
 
 ```yaml
 Type: System.String
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Communication.Models.ICommunicationIdentity
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -228,7 +231,7 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 INPUTOBJECT <ICommunicationIdentity>: Parameter Identitas
   - `[CommunicationServiceName <String>]`: Nama sumber daya CommunicationService.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
 
 ## RELATED LINKS

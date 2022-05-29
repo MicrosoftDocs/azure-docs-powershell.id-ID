@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseManagedIdentitySqlControlSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseManagedIdentitySqlControlSetting.md
-ms.openlocfilehash: 2634c1c030704625c4d0fffc17942398ba4419cf
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: aa0c863c5781da37cb422c50390e8ba5ed5e4c60
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144223667"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145709442"
 ---
 # Get-AzSynapseManagedIdentitySqlControlSetting
 
 ## SYNOPSIS
 Mendapatkan Pengaturan Kontrol Sql Identitas Terkelola.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapsemanagedidentitysqlcontrolsetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -57,12 +60,12 @@ $ws | Get-AzSynapseManagedIdentitySqlControlSetting
 
 Perintah ini mendapatkan pengaturan kontrol SQL identitas terkelola untuk ruang kerja melalui alur.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzSynapseManagedIdentitySqlControlSetting -ResourceId '/subscriptions/21686af7-58ec-4f4d-9c68-f431f4db4edd3/resourcegroups/ContosoResourceGroup/providers/Microsoft.Synapse/workspaces/ContosoWorkspace'
 ```
 
-Perintah ini mendapatkan pengaturan kontrol SQL identitas terkelola untuk ruang kerja melalui ID sumber daya ruang kerja.
+Perintah ini mendapatkan identitas terkelola SQL pengaturan kontrol untuk ruang kerja melalui ID sumber daya ruang kerja.
 
 ## PARAMETERS
 

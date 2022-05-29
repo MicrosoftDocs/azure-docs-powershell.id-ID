@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.desktopvirtualiz
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Register-AzWvdApplicationGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Register-AzWvdApplicationGroup.md
-ms.openlocfilehash: 3f8974142aec6a7eb4cfb1a5dc2fc1f6fe953f05
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ccede9c6fe7161ccd02873be6190b88fa6935e14
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144187468"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145743760"
 ---
 # Register-AzWvdApplicationGroup
 
 ## SYNOPSIS
 Daftarkan grup aplikasi desktop virtual Windows.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.desktopvirtualization/register-azwvdapplicationgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,7 +46,7 @@ Location   Name                 Type
 eastus     WorkspaceName Microsoft.DesktopVirtualization/workspaces
 ```
 
-Perintah ini mendaftarkan Grup Aplikasi Windows Virtual Desktop ke Ruang Kerja.
+Perintah ini mendaftarkan Windows Grup Aplikasi Virtual Desktop ke Ruang Kerja.
 
 ## PARAMETERS
 

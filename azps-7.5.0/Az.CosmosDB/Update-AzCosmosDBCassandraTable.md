@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBCassandraTable.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBCassandraTable.md
-ms.openlocfilehash: b362471fb7e19c27f3086d9435874077a35e116f
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 4b6e75c3e52d13013601c382e3f8372b6a1d240d
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144206567"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145755856"
 ---
 # Update-AzCosmosDBCassandraTable
 
 ## SYNOPSIS
 Memperbarui Tabel CosmosDB Cassandra. Melakukan operasi patch sisi klien dengan membaca Tabel yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/update-azcosmosdbcassandratable) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -80,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -AnalyticalStorageTtl
-TTL Storage analitis.
+Analytical Storage TTL.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -233,7 +236,7 @@ Accept wildcard characters: False
 
 ### -TtlInSeconds
 Ttl default dalam hitungan detik.
-Jika nilai hilang atau diatur ke - 1, item tidak kedaluwarsa.
+Jika nilai hilang atau diatur ke - 1, item tidak akan kedaluwarsa.
 Jika nilai diatur ke n, item akan kedaluwarsa n detik setelah waktu terakhir diubah.
 
 ```yaml

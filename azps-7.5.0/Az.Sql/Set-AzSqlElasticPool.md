@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqlela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlElasticPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlElasticPool.md
-ms.openlocfilehash: 0a699347762110b52120b1a241b058616491412d
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7266e1732a3a6f913befbf5f2ec3479daf0eb315
+ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144245178"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "145722970"
 ---
 # Set-AzSqlElasticPool
 
 ## SYNOPSIS
 Memodifikasi properti kumpulan database elastis di Azure SQL Database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.sql/set-azsqlelasticpool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -88,9 +91,9 @@ StorageMB         : 2097152
 Tags              :
 ```
 
-Perintah ini memodifikasi properti untuk kumpulan elastis bernama elasticpool01. Perintah mengatur penyimpanan maksimum untuk kumpulan elastis menjadi 2 TB.
+Perintah ini memodifikasi properti untuk kumpulan elastis bernama elasticpool01. Perintah mengatur penyimpanan maks untuk kumpulan elastis menjadi 2 TB.
 
-### Contoh 3
+### Contoh: 3
 
 Memodifikasi properti kumpulan database elastis di Azure SQL Database. (dibuat otomatis)
 
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseDtuMax
-Menentukan jumlah maksimum DTU yang dapat digunakan database tunggal dalam kumpulan.
+Menentukan jumlah maksimum DTU yang dapat digunakan oleh database tunggal dalam kumpulan.
 Untuk detail tentang nilai mana yang valid, lihat tabel untuk kumpulan ukuran spesifik Anda di [kumpulan elastis](https://docs.microsoft.com/azure/sql-database/sql-database-elastic-pool).
 Nilai default untuk edisi yang berbeda adalah sebagai berikut:
 - Dasar.  5 DTU
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseDtuMin
-Menentukan jumlah minimum DTU yang dijamin kumpulan elastis untuk semua database di kumpulan.
+Menentukan jumlah minimum DTU yang dijamin kumpulan elastis ke semua database dalam kumpulan.
 Untuk detail tentang nilai mana yang valid, lihat tabel untuk kumpulan ukuran spesifik Anda di [kumpulan elastis](https://docs.microsoft.com/azure/sql-database/sql-database-elastic-pool).
 Nilai defaultnya adalah nol (0).
 
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseVCoreMax
-Nomor VCore maksimum yang dapat dikonsumsi SqlAzure Database apa pun di kumpulan.
+Nomor VCore maksimum yang dapat digunakan SqlAzure Database di kumpulan.
 
 ```yaml
 Type: System.Double
@@ -184,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseVCoreMin
-Nomor VCore minimum yang dapat dikonsumsi SqlAzure Database apa pun di kumpulan.
+Nomor VCore minimum yang dapat digunakan SqlAzure Database di kumpulan.
 
 ```yaml
 Type: System.Double

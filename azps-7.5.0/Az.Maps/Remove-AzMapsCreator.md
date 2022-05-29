@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.maps/remove-azma
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/Remove-AzMapsCreator.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/Remove-AzMapsCreator.md
-ms.openlocfilehash: 88657ae5ad8f99636577a80e8b718ee8f4c158b9
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 13b1615474c6612e2a75d3c49c94680475ef4d26
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144190447"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145776576"
 ---
 # Remove-AzMapsCreator
 
 ## SYNOPSIS
 Menghapus sumber daya Peta Creator.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.maps/remove-azmapscreator) untuk informasi terbaru.
 
 ## SYNTAX
 
