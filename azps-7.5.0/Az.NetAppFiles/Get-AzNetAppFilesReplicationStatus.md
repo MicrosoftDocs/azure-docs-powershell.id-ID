@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Get-AzNetAppFilesReplicationStatus.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Get-AzNetAppFilesReplicationStatus.md
-ms.openlocfilehash: d5f7536511107e6bc079a528a8c7bd3378caa6bc
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: c045edc9c10b0b5ad3255e4d76285d01d65c53c6
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144184315"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145803588"
 ---
 # Get-AzNetAppFilesReplicationStatus
 
 ## SYNOPSIS
 Mendapatkan status replikasi
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.netappfiles/get-aznetappfilesreplicationstatus) untuk informasi terbaru.
 
 ## SYNTAX
 

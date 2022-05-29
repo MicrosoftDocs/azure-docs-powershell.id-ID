@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/add-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Add-AzEventHubIPRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Add-AzEventHubIPRule.md
-ms.openlocfilehash: 083297498c487b4114ff06d2794c47fc3d0f1241
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 08c7c48699bb8261fcab232625b35ead75a63d1e
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144231486"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145788436"
 ---
 # Add-AzEventHubIPRule
 
 ## SYNOPSIS
 Menambahkan satu aturan IP ke NetworkRuleSet dari Namespace yang diberikan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.eventhub/add-azeventhubiprule) untuk informasi terbaru.
 
 ## SYNTAX
 

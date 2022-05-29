@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Update-AzVmssInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Update-AzVmssInstance.md
-ms.openlocfilehash: 34485a86df387e195f9ab95404863ee845fb0131
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: b8fa53ca18f1c47839f2ee3472534e854c3f30ac
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144210947"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145801718"
 ---
 # Update-AzVmssInstance
 
 ## SYNOPSIS
 Memulai peningkatan manual instans VMSS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/update-azvmssinstance) untuk informasi terbaru.
 
 ## SYNTAX
 

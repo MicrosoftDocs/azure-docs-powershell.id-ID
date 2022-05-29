@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewaySslPredefinedPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewaySslPredefinedPolicy.md
-ms.openlocfilehash: 32dbcc656562248678404124c395abb384568729
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: f46398cfe1f3b6ebf6667826b424766fb7df2dce
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144183450"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145814796"
 ---
 # Get-AzApplicationGatewaySslPredefinedPolicy
 
 ## SYNOPSIS
 Mendapatkan Kebijakan SSL yang Telah Ditentukan sebelumnya yang disediakan oleh Application Gateway.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azapplicationgatewaysslpredefinedpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -141,7 +144,7 @@ CipherSuites:
 
 Perintah ini mengembalikan kebijakan yang telah ditentukan sebelumnya dengan nama AppGwSslPolicy20170401.
 
-### Contoh 3
+### Contoh: 3
 ```powershell
 Get-AzApplicationGatewaySslPredefinedPolicy -Name AppGwSslPolicy2017*
 ```

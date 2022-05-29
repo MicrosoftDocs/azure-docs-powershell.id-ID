@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementSubscription.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementSubscription.md
-ms.openlocfilehash: 653c8a65a912c61ada6a6ff35cc381f33eb575e8
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 0ee5efcb46749d8ad9e9414859e647cde76386f4
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144211346"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145775172"
 ---
 # New-AzApiManagementSubscription
 
 ## SYNOPSIS
 Membuat langganan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementsubscription) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrimaryKey
-Menentukan kunci primer langganan.
+Menentukan kunci utama langganan.
 Jika parameter ini tidak ditentukan, kunci dihasilkan secara otomatis.
 Panjang parameter ini harus 1 hingga 300 karakter.
 
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -Cakupan
-Cakupan Langganan, baik itu Cakupan Api /apis/{apiId} atau Cakupan Produk /products/{productId} atau Cakupan API Global /apis atau Cakupan Global /. Parameter ini diperlukan.
+Cakupan Langganan, apakah itu Cakupan Api /apis/{apiId} atau Cakupan Produk /products/{productId} atau Cakupan API Global /apis atau Cakupan Global /. Parameter ini diperlukan.
 
 ```yaml
 Type: System.String

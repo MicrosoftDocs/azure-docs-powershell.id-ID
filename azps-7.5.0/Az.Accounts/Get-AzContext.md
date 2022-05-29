@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/get-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Get-AzContext.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Get-AzContext.md
-ms.openlocfilehash: cfcd543de49bce5a75e5bcd124b29d1b75eea4be
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 7e5d887e061d2f839f8edc40af713bd812d062d7
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144193457"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145782784"
 ---
 # Get-AzContext
 
 ## SYNOPSIS
 Mendapatkan metadata yang digunakan untuk mengautentikasi permintaan Azure Resource Manager.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.accounts/get-azcontext) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -49,7 +52,7 @@ Name                                     Account             SubscriptionName   
 Subscription1 (xxxxxxxx-xxxx-xxxx-xxx... test@outlook.com    Subscription1       AzureCloud          xxxxxxxx-x...
 ```
 
-Dalam contoh ini kami masuk ke akun kami dengan langganan Azure menggunakan Koneksi-AzAccount, lalu kami mendapatkan konteks sesi saat ini dengan memanggil Get-AzContext.
+Dalam contoh ini kita masuk ke akun kita dengan langganan Azure menggunakan Koneksi-AzAccount, dan kemudian kita mendapatkan konteks sesi saat ini dengan memanggil Get-AzContext.
 
 ### Contoh 2: Mencantumkan semua konteks yang tersedia
 ```powershell

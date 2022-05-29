@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.alertsmanagement
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AlertsManagement/AlertsManagement/help/Remove-AzAlertProcessingRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AlertsManagement/AlertsManagement/help/Remove-AzAlertProcessingRule.md
-ms.openlocfilehash: 5e2137820e8d50b26c4983775f44906921a11805
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: ca7eb92a5fb30fda701f40bcbe58d974aa99a346
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144198360"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145782370"
 ---
 # Remove-AzAlertProcessingRule
 
 ## SYNOPSIS
 Menghapus aturan pemrosesan pemberitahuan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.alertsmanagement/remove-azalertprocessingrule) untuk informasi terbaru.
 
 ## SYNTAX
 

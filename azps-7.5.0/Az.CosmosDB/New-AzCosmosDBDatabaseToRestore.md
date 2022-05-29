@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/new-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBDatabaseToRestore.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBDatabaseToRestore.md
-ms.openlocfilehash: 5021e40e2d35949f5d13f41bc6e51a718ead817c
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 280e86b0ba5028afd9d60e73f3af1c8de74ca336
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144207266"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145796714"
 ---
 # New-AzCosmosDBDatabaseToRestore
 
 ## SYNOPSIS
 Membuat Database CosmosDB baru untuk memulihkan objek (PSDatabaseToRestore)
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/new-azcosmosdbdatabasetorestore) untuk informasi terbaru.
 
 ## SYNTAX
 

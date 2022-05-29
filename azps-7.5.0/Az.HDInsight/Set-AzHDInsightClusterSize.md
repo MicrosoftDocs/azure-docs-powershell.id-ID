@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Set-AzHDInsightClusterSize.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Set-AzHDInsightClusterSize.md
-ms.openlocfilehash: b2c9dfb3e0041eb3256f8c4d5186bb3cb53db836
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: eb1fa712cc208175bfa44c93e319f0813e4158b5
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144217691"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145795616"
 ---
 # Set-AzHDInsightClusterSize
 
 ## SYNOPSIS
 Mengatur jumlah simpul Pekerja dalam kluster tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/set-azhdinsightclustersize) untuk informasi terbaru.
 
 ## SYNTAX
 

@@ -4,17 +4,20 @@ Module Name: Az.Compute
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzDiskEncryptionSetAssociatedResource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzDiskEncryptionSetAssociatedResource.md
-ms.openlocfilehash: a938ea03ff65048716e168c6ab930e06f200d37e
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 20e419908c8c5ff628b3efded2119b49f1a30e51
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144190884"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145798478"
 ---
 # Get-AzDiskEncryptionSetAssociatedResource
 
 ## SYNOPSIS
 Mendapatkan daftar sumber daya yang terkait dengan kumpulan enkripsi disk yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azdiskencryptionsetassociatedresource) untuk informasi terbaru.
 
 ## SYNTAX
 

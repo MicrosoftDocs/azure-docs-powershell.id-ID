@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/backup-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Backup-AzKeyVaultManagedStorageAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Backup-AzKeyVaultManagedStorageAccount.md
-ms.openlocfilehash: dd0a27bc4b2e0cdbb265c00a20b839d7eac064e8
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 606f53ac4172db10a8a499f84b61cb17c4a09e16
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144213719"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145777548"
 ---
 # Cadangan-AkunPenyimpananDikelolaAzKeyVault
 
 ## SYNOPSIS
 Mencadangkan akun penyimpanan yang dikelola KeyVault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/backup-azkeyvaultmanagedstorageaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Backup-AzKeyVaultManagedStorageAccount [-InputObject] <PSKeyVaultManagedStorageA
 
 ## DESCRIPTION
 Cmdlet **Backup-AzKeyVaultManagedStorageAccount** mencadangkan akun penyimpanan terkelola tertentu dalam brankas kunci dengan mengunduhnya dan menyimpannya dalam file.
-Karena konten yang diunduh dienkripsi, konten tersebut tidak dapat digunakan di luar Azure Key Vault.
+Karena konten yang diunduh dienkripsi, konten tidak dapat digunakan di luar Azure Key Vault.
 Anda dapat memulihkan akun penyimpanan yang dicadangkan ke brankas kunci apa pun dalam langganan tempat penyimpanan dicadangkan, selama vault berada dalam geografi Azure yang sama.
 Alasan umum untuk menggunakan cmdlet ini adalah: 
 - Anda ingin menyimpan salinan offline akun penyimpanan jika Anda secara tidak sengaja menghapus yang asli dari vault.
@@ -44,7 +47,7 @@ Gunakan cmdlet **Backup-AzKeyVaultManagedStorageAccount** untuk mengambil akun p
 
 ## EXAMPLES
 
-### Contoh 1: Mencadangkan akun penyimpanan terkelola dengan nama file yang dibuat secara otomatis
+### Contoh 1: Mencadangkan akun penyimpanan terkelola dengan nama file yang dihasilkan secara otomatis
 ```powershell
 Backup-AzKeyVaultManagedStorageAccount -VaultName 'MyKeyVault' -Name 'MyMSAK'
 ```
@@ -76,7 +79,7 @@ Backup-AzKeyVaultManagedStorageAccount -StorageAccount $msak -OutputFile 'C:\Bac
 C:\Backup.blob
 ```
 
-Perintah ini membuat cadangan akun penyimpanan terkelola bernama $msak. Nama dalam vault bernama $msak. VaultName ke file bernama Backup.blob, secara diam-diam menimpa file jika sudah ada.
+Perintah ini membuat cadangan akun penyimpanan terkelola bernama $msak. Nama di vault bernama $msak. VaultName ke file bernama Backup.blob, diam-diam menimpa file jika sudah ada.
 
 ## PARAMETERS
 
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 
 ### -Name
 Nama rahasia.
-Cmdlet membangun FQDN rahasia dari nama vault, lingkungan dan nama rahasia yang saat ini dipilih.
+Cmdlet membangun FQDN rahasia dari nama brankas, lingkungan dan nama rahasia yang saat ini dipilih.
 
 ```yaml
 Type: System.String
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ### -OutputFile
 File output.
 File output untuk menyimpan cadangan akun penyimpanan.
-Jika tidak ditentukan, nama file default akan dihasilkan.
+Jika tidak ditentukan, nama file default akan dibuat.
 
 ```yaml
 Type: System.String

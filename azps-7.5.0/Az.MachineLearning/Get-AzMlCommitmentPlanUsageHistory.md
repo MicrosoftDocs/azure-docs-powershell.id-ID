@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.machinelearning/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MachineLearning/MachineLearning/help/Get-AzMlCommitmentPlanUsageHistory.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MachineLearning/MachineLearning/help/Get-AzMlCommitmentPlanUsageHistory.md
-ms.openlocfilehash: 05a7914f6759a9943bfdd5850051e2ef081f3be3
-ms.sourcegitcommit: 2a912c720caf0db4501ccea98b71ccecb84af036
+ms.openlocfilehash: 8e7db73a668ccc32bb3d35e405b61b3cb02863c2
+ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "144224618"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145794896"
 ---
 # Get-AzMlCommitmentPlanUsageHistory
 
 ## SYNOPSIS
 Mengambil informasi riwayat penggunaan untuk paket komitmen tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.machinelearning/get-azmlcommitmentplanusagehistory) untuk informasi terbaru.
 
 ## SYNTAX
 
