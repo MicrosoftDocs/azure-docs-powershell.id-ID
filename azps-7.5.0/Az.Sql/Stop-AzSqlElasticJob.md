@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/Az.sql/stop-Azsqlel
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Stop-AzSqlElasticJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Stop-AzSqlElasticJob.md
-ms.openlocfilehash: 4debb2176d5023cfb5d839502285899f26ede70c
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: f678d2c82e7a3baccc69d1505324299974c29a06
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145721908"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145972921"
 ---
 # Stop-AzSqlElasticJob
 
@@ -63,8 +63,8 @@ Menghentikan eksekusi pekerjaan yang sedang berjalan dan mengembalikan statusnya
 
 ### Contoh 2
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Stop-AzSqlElasticJob -AgentName agent -JobExecutionId 00000000-0000-0000-0000-000000000000 -JobName job1 -ResourceGroupName MyResourceGroup -ServerName s1
 ```
 

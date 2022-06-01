@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/set-azw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Set-AzWebAppSlotConfigName.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Set-AzWebAppSlotConfigName.md
-ms.openlocfilehash: f6f0d28923d2f0c8c4f1cc49d3116050cd94ea21
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 8575fe7ee4d0675d5902cd5051f77e7e999023e4
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145511347"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145972615"
 ---
 # Set-AzWebAppSlotConfigName
 
@@ -50,8 +50,8 @@ Perintah ini menghapus semua pengaturan aplikasi dan string koneksi untuk Aplika
 
 Atur nama Konfigurasi Slot Aplikasi Web. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Set-AzWebAppSlotConfigName -AppSettingNames <String[]> -Name 'ContosoWebApp' -ResourceGroupName 'Default-Web-WestUS'
 ```
 

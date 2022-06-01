@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementOpenIdConnectProvider.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementOpenIdConnectProvider.md
-ms.openlocfilehash: 55c6e4956a85b5443fb3c93861d2a275b312d80e
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: d62ab616ab1458772c74f051411aa6f98b8905fe
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145547398"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145980751"
 ---
 # New-AzApiManagementOpenIdConnectProvider
 
@@ -43,8 +43,8 @@ Perintah ini membuat **Penyedia** Koneksi OpenID bernama Penyedia Koneksi OpenID
 
 Membuat penyedia Koneksi OpenID. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 New-AzApiManagementOpenIdConnectProvider -ClientId '12432143' -ClientSecret '000000000000000000000000000000000000000000' -Context <PsApiManagementContext> -Description 'OpenID Connect provider description' -MetadataEndpointUri 'https://openid.provider/configuration' -Name 'Contoso OpenID Connect Provider' -OpenIdConnectProviderId 'OICProvider01'
 ```
 

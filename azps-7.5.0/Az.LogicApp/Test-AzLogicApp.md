@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/test-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Test-AzLogicApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Test-AzLogicApp.md
-ms.openlocfilehash: f20fc67258e92709e45af8d3a1a90420b34a8f5a
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: 352c504a72c393ec1e742c0667cc43098065b003
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145768654"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145979455"
 ---
 # Test-AzLogicApp
 
@@ -52,7 +52,7 @@ Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta n
 Test-AzLogicApp -ResourceGroupName "ResourceGroup11" -Name "LogicApp01" -Location "westus" -State "Enabled" -DefinitionFilePath "d:\workflows\Definition.json" -ParameterFilePath "d:\workflows\Parameters.json"
 ```
 
-Perintah ini memvalidasi aplikasi logika bernama LogicApp01 dalam grup sumber daya yang ditentukan.
+Perintah ini memvalidasi aplikasi logika bernama LogicApp01 di grup sumber daya yang ditentukan.
 Perintah menentukan definisi dan jalur file parameter.
 
 ### Contoh 2: Memvalidasi aplikasi logika dengan menggunakan objek
@@ -60,14 +60,15 @@ Perintah menentukan definisi dan jalur file parameter.
 Test-AzLogicApp -ResourceGroupName "ResourceGroup11" -Name "LogicApp01" -Location "westus" -State "Enabled" -Definition [IO.File]::ReadAllText("d:\Workflows\Definition.json") -Parameters @{name1="value1";name2="value2"}
 ```
 
-Perintah ini memvalidasi aplikasi logika bernama LogicApp01 dalam grup sumber daya yang ditentukan.
+Perintah ini memvalidasi aplikasi logika bernama LogicApp01 di grup sumber daya yang ditentukan.
 Perintah menentukan definisi dan objek parameter.
 
 ### Contoh: 3
 
 Memvalidasi definisi aplikasi logika. (dibuat otomatis)
 
-```powershell <!-- Aladdin Generated Example --> 
+<!-- Aladdin Generated Example -->
+```powershell
 Test-AzLogicApp -DefinitionFilePath 'd:\workflows\Definition.json' -IntegrationAccountId <String> -Location 'westus' -Name 'LogicApp01' -ParameterFilePath 'd:\workflows\Parameters.json' -ResourceGroupName 'ResourceGroup11'
 ```
 

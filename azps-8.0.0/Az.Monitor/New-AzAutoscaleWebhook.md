@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/new-azau
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzAutoscaleWebhook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzAutoscaleWebhook.md
-ms.openlocfilehash: 6f84cc96f99442b1ab0a7e3aa8bf702804d156f0
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 5a11fc5685fb9a37064cd3cd67bd894b30a66229
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145502064"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145979761"
 ---
 # New-AzAutoscaleWebhook
 
@@ -34,7 +34,8 @@ Cmdlet **New-AzAutoscaleWebhook** membuat webhook Autoscale.
 
 Membuat webhook Skala Otomatis. (dibuat otomatis)
 
-```powershell <!-- Aladdin Generated Example --> 
+<!-- Aladdin Generated Example -->
+```powershell
 New-AzAutoscaleWebhook -ServiceUri 'https://contoso.com'
 ```
 

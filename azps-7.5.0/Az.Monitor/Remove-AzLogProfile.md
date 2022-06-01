@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Remove-AzLogProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Remove-AzLogProfile.md
-ms.openlocfilehash: 0e7d3ffc2ce8aaa1f6b9f580b66dadd41c61d453
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: 36fe6810554a0eb41ad11e8c7b958e49d3fc0590
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145783145"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145980571"
 ---
 # Remove-AzLogProfile
 
@@ -38,7 +38,8 @@ Cmdlet ini mengimplementasikan pola ShouldProcess, yaitu mungkin meminta konfirm
 
 Menghapus profil log. (dibuat otomatis)
 
-```powershell <!-- Aladdin Generated Example --> 
+<!-- Aladdin Generated Example -->
+```powershell
 Remove-AzLogProfile -Name 'LogAlertRule1'
 ```
 

@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/invo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Invoke-AzDataFactoryV2Pipeline.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Invoke-AzDataFactoryV2Pipeline.md
-ms.openlocfilehash: d87a9c3bfccafef9f8a01e1a7710d50beef6ad92
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 63d7dde9c17efbdb7b23b31341cf6edb0c8b238c
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145753246"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145974316"
 ---
 # Invoke-AzDataFactoryV2Pipeline
 
 ## SYNOPSIS
-  Memanggil alur untuk memulai eksekusi.
+  Memanggil alur untuk memulai eksekusi untuk alur tersebut.
 
 > [!NOTE]
 >Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/invoke-azdatafactoryv2pipeline) untuk informasi terbaru.
@@ -70,10 +70,10 @@ Perintah ini memulai eksekusi untuk alur "DPWikisample" di pabrik "WikiADF".
 
 ### Contoh 2
 
-Memanggil alur untuk memulai eksekusi. (dibuat otomatis)
+Memanggil alur untuk memulai eksekusi untuk alur tersebut. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Invoke-AzDataFactoryV2Pipeline -DataFactoryName 'WikiADF' -Parameter <Hashtable> -PipelineName 'DPWikisample' -ResourceGroupName 'ADF'
 ```
 

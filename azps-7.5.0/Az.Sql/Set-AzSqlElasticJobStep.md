@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/Az.sql/set-Azsqlela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlElasticJobStep.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlElasticJobStep.md
-ms.openlocfilehash: b308f1272e29b38462c63ed674751f6f37b413f1
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: cce0373e9fb9a52a95164cd0458afbf660221624
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145722988"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145972993"
 ---
 # Set-AzSqlElasticJobStep
 
@@ -145,8 +145,8 @@ Memperbarui langkah pekerjaan dari pekerjaan
 
 ### Contoh: 3
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Set-AzSqlElasticJobStep -AgentName agent -CommandText 'SELECT 2' -JobName job1 -Name step1 -ResourceGroupName MyResourceGroup -ServerName s1
 ```
 

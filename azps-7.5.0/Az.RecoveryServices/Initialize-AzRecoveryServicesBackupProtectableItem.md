@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Initialize-AzRecoveryServicesBackupProtectableItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Initialize-AzRecoveryServicesBackupProtectableItem.md
-ms.openlocfilehash: 1aebeb192aaaea6c8f4dafb21c94520a5640d564
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 53b6a71380a35d80211f8aaa7121d2720840d61e
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145649380"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145979419"
 ---
 # Initialize-AzRecoveryServicesBackupProtectableItem
 
 ## SYNOPSIS
-Perintah ini memicu penemuan item yang tidak terlindungi dari jenis beban kerja yang diberikan dalam kontainer tertentu. Jika aplikasi DB tidak dilindungi secara otomatis, gunakan perintah ini untuk menemukan DB baru setiap kali ditambahkan dan lanjutkan untuk melindunginya.
+Perintah ini memicu penemuan item yang tidak terlindungi dari jenis beban kerja yang diberikan dalam kontainer yang diberikan. Jika aplikasi DB tidak dilindungi secara otomatis, gunakan perintah ini untuk menemukan DB baru setiap kali ditambahkan dan melanjutkan untuk melindunginya.
 
 > [!NOTE]
 >Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/initialize-azrecoveryservicesbackupprotectableitem) untuk informasi terbaru.
@@ -42,9 +42,10 @@ Cmdlet menjalankan operasi penemuan untuk item baru yang dapat dilindungi.
 
 ### Contoh 2
 
-Perintah ini memicu penemuan item yang tidak terlindungi dari jenis beban kerja yang diberikan dalam kontainer tertentu. (dibuat otomatis)
+Perintah ini memicu penemuan item yang tidak terlindungi dari jenis beban kerja yang diberikan dalam kontainer yang diberikan. (dibuat otomatis)
 
-```powershell <!-- Aladdin Generated Example --> 
+<!-- Aladdin Generated Example -->
+```powershell
 Initialize-AzRecoveryServicesBackupProtectableItem -Container $Cont[0] -VaultId $vault.ID -WorkloadType AzureVM
 ```
 
@@ -81,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan kontainer tempat penemuan dipicu.
+Mengembalikan kontainer tempat penemuan sedang dipicu.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -142,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Menunjukkan yang akan terjadi jika cmdlet dijalankan. 
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

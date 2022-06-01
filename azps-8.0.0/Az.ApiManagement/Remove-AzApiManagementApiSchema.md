@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementApiSchema.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementApiSchema.md
-ms.openlocfilehash: 08f4e337833773456f22366cf3f6094fabcc180c
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 3b7ab08459cfd3d33f41fb82b69b8053f094a8b2
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145512187"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145979113"
 ---
 # Remove-AzApiManagementApiSchema
 
@@ -54,8 +54,8 @@ Skrip menghapus Skema `2` dari Api `echo-api` jika tidak dirujuk.
 
 Skrip menghapus Skema 2 dari Api echo-api jika tidak dirujuk. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Remove-AzApiManagementApiSchema -ApiId '0001' -Context <PsApiManagementContext> -SchemaId 5cc9cf67e6ed3b1154e638bd
 ```
 

@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementLogger.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementLogger.md
-ms.openlocfilehash: cce2b366fe7b068906db9c63d9ba0a8e258c0938
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 55695da38b8c96af596d1416688a745729b5abce
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145561773"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145979078"
 ---
 # Set-AzApiManagementLogger
 
@@ -51,8 +51,8 @@ Perintah ini memodifikasi pencatat yang memiliki ID Logger123.
 
 Memodifikasi pencatat API Management. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Set-AzApiManagementLogger -Confirm -Context <PsApiManagementContext> -InstrumentationKey <String> -LoggerId 'Logger123'
 ```
 

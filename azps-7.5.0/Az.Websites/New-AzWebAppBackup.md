@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/new-azw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzWebAppBackup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzWebAppBackup.md
-ms.openlocfilehash: 39cdd2a48e0a545a0c9e46670fddb5d2bc887144
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 0fa54af4a7ee59f58f4c9ef94a7ac72765de7087
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145699102"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145979689"
 ---
 # New-AzWebAppBackup
 
@@ -51,8 +51,8 @@ Membuat cadangan aplikasi yang ditentukan ContosoWebApp yang berada dalam grup s
 
 Cmdlet New-AzWebAppBackup membuat Azure Web App Backup. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 New-AzWebAppBackup -BackupName <String> -Name 'ContosoWebApp' -ResourceGroupName 'Default-Web-WestUS' -StorageAccountUrl 'https://storageaccount.file.core.windows.net'
 ```
 

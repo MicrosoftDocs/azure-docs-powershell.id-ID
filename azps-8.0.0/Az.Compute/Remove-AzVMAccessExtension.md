@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzVMAccessExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzVMAccessExtension.md
-ms.openlocfilehash: 8e3348ffa59181bbe99f21a777f9842e8db0d8e7
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 4d85b787463465f064fdfbb532d2d66fb1903c79
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145620547"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145979743"
 ---
 # Remove-AzVMAccessExtension
 
@@ -34,7 +34,8 @@ Cmdlet **Remove-AzVMAccessExtension** menghapus Ekstensi Komputer Virtual Akses 
 
 Menghapus ekstensi VMAccess dari komputer virtual. (dibuat otomatis)
 
-```powershell <!-- Aladdin Generated Example --> 
+<!-- Aladdin Generated Example -->
+```powershell
 Remove-AzVMAccessExtension -Name 'AgentPool01' -ResourceGroupName myresourcegroup -VMName 'VM01'
 ```
 

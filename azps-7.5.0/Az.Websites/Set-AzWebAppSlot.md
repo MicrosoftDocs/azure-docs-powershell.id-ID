@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/set-azw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Set-AzWebAppSlot.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Set-AzWebAppSlot.md
-ms.openlocfilehash: aa304a84b9b6ec4d88f3b27e55b4ffa3847d80fe
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: a0f8b73f1d560f919c91c64864b81481bf27411b
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145697734"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145980481"
 ---
 # Set-AzWebAppSlot
 
@@ -75,8 +75,8 @@ Perintah ini mengatur HttpLoggingEnabled ke true untuk Slot Slot001 yang berkait
 
 Memodifikasi slot Azure Web App. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Set-AzWebAppSlot -AppSettings <Hashtable> -Name 'ContosoWebApp' -ResourceGroupName 'Default-Web-WestUS' -Slot 'Slot001'
 ```
 

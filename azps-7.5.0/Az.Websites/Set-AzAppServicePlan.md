@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/set-aza
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Set-AzAppServicePlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Set-AzAppServicePlan.md
-ms.openlocfilehash: 2ce1b4a2557220551864529ecdfceadba3469651
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 109f2114a20acee69c75bdd7b83f53b147239949
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145697896"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145972867"
 ---
 # Set-AzAppServicePlan
 
@@ -52,8 +52,8 @@ Perintah ini mengatur opsi PerSiteScaling ke true pada paket App Service bernama
 
 Mengatur paket Azure App Service. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Set-AzAppServicePlan -Name 'ContosoASP' -ResourceGroupName 'Default-Web-WestUS' -Tier Free -WorkerSize Small
 ```
 

@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/new-azsc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzScheduledQueryRuleSource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzScheduledQueryRuleSource.md
-ms.openlocfilehash: 710b6d9e9ba97bd2e7f5f6b5d9b7cee2bc67c0f9
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 392bcdfb5a8a554fb361fcd9e6ebff9c0ecf3458
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145558063"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145980607"
 ---
 # New-AzScheduledQueryRuleSource
 
@@ -41,7 +41,8 @@ $source = New-AzScheduledQueryRuleSource -Query "Heartbeat | summarize Aggregate
 
 Membuat objek berjenis Sumber. (dibuat otomatis)
 
-```powershell <!-- Aladdin Generated Example --> 
+<!-- Aladdin Generated Example -->
+```powershell
 New-AzScheduledQueryRuleSource -DataSourceId <String> -Query 'Heartbeat | summarize AggregatedValue = count() by bin(TimeGenerated, 5m)'
 ```
 

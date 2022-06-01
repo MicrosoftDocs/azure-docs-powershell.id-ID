@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/New-AzDataFactoryV2LinkedServiceEncryptedCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/New-AzDataFactoryV2LinkedServiceEncryptedCredential.md
-ms.openlocfilehash: 6c884357f054dc5d68ac51dbbbdb312f240481be
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: c836214f7dd39a3d14f67cdc1c12c879a2bf994a
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145499569"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145980193"
 ---
 # New-AzDataFactoryV2LinkedServiceEncryptedCredential
 
 ## SYNOPSIS
-Enkripsi kredensial dalam layanan tertaut dengan runtime integrasi tertentu.
+Enkripsi kredensial dalam layanan tertaut dengan runtime integrasi yang ditentukan.
 
 ## SYNTAX
 
@@ -38,7 +38,7 @@ cmdlet New-AzDataFactoryV2LinkedServiceEncryptedCredential mengenkripsi kredensi
 
 Pastikan prasyarat berikut terpenuhi:
 * Opsi **akses jarak jauh** diaktifkan pada runtime integrasi yang dihost sendiri.
-* Powershell 7.0 atau yang lebih tinggi digunakan untuk menjalankan cmdlet .
+* Powershell 7.0 atau yang lebih tinggi digunakan untuk menjalankan cmdlet.
 
 ## EXAMPLES
 
@@ -46,7 +46,8 @@ Pastikan prasyarat berikut terpenuhi:
 
 Perintah ini mengenkripsi kredensial dalam file C:\samples\WikiSample\TaxiDemo1.json dengan runtime integrasi bernama test-selfhost-ir.
 
-```powershell <!-- Aladdin Generated Example --> 
+<!-- Aladdin Generated Example -->
+```powershell
 New-AzDataFactoryV2LinkedServiceEncryptedCredential -DataFactoryName WikiADF -DefinitionFile 'C:\samples\WikiSample\TaxiDemo1.json' -IntegrationRuntimeName 'test-selfhost-ir' -ResourceGroupName MyResourceGroup
 ```
 

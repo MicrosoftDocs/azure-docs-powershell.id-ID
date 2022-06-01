@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/select-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Select-AzContext.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Select-AzContext.md
-ms.openlocfilehash: 9bcb1698f987270e357ce960cedefd795a123767
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: ad7e37c335cb52a83a0d7d65885532b66b0e2724
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145537402"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145980787"
 ---
 # Select-AzContext
 
@@ -53,7 +53,8 @@ Targetkan cmdlet Azure PowerShell di masa mendatang di akun, penyewa, dan langga
 
 Pilih langganan dan akun yang akan ditargetkan dalam cmdlet Azure PowerShell dalam sesi powershell ini. (dibuat otomatis)
 
-```powershell <!-- Aladdin Generated Example --> 
+<!-- Aladdin Generated Example -->
+```powershell
 Select-AzContext -Name TestEnvironment -Scope Process
 ```
 

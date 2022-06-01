@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementGroup.md
-ms.openlocfilehash: d31d838deea4b337e3e8a3840972b3094dd9afd8
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: fe9a371828c5a4484cf78f9f0a1eb1d8c35aadc5
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145543996"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145979941"
 ---
 # New-AzApiManagementGroup
 
@@ -43,8 +43,8 @@ Perintah ini membuat grup manajemen.
 
 Membuat grup manajemen API. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 New-AzApiManagementGroup -Context <PsApiManagementContext> -Description 'Create Echo Api V4' -GroupId '0001' -Name 'Group0001' -Type Custom
 ```
 

@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/enable-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Enable-AzSqlServerAdvancedDataSecurity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Enable-AzSqlServerAdvancedDataSecurity.md
-ms.openlocfilehash: 62d49ac95d1672a12b4e3a57e9880f6c515f16bf
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: ce8621a58d2831cc04c98af475bcc432b0abb99d
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145520146"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145980553"
 ---
 # Enable-AzSqlServerAdvancedDataSecurity
 
@@ -62,8 +62,8 @@ IsEnabled                    : True
 
 Mengaktifkan Advanced Data Security di server. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Enable-AzSqlServerAdvancedDataSecurity -DoNotConfigureVulnerabilityAssessment -ResourceGroupName MyResourceGroup -ServerName s1
 ```
 

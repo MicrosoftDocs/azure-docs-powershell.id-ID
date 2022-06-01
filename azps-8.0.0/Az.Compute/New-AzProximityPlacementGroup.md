@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azpr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzProximityPlacementGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzProximityPlacementGroup.md
-ms.openlocfilehash: 04d9647ba996693569aa381afc2ee1e11fa8279c
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 27b350b9fc683fe77181c82c487bfb13195ea341
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145513810"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145980229"
 ---
 # New-AzProximityPlacementGroup
 
@@ -51,7 +51,8 @@ Perintah ini membuat grup tempat kedekatan di lokasi tertentu.
 
 Buat sumber daya Grup Penempatan Kedekatan. (dibuat otomatis)
 
-```powershell <!-- Aladdin Generated Example --> 
+<!-- Aladdin Generated Example -->
+```powershell
 New-AzProximityPlacementGroup -Location westus -Name 'AgentPool01' -ProximityPlacementGroupType <String> -ResourceGroupName myresourcegroup
 ```
 

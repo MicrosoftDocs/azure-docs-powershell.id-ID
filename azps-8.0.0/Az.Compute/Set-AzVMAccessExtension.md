@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMAccessExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMAccessExtension.md
-ms.openlocfilehash: 0ee098b77be706775ec09bd3c494a49b65d98a0f
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: e8ebc09f32926b00a33cc2b6953c1b0fd41d490c
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145557436"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145979023"
 ---
 # Set-AzVMAccessExtension
 
@@ -44,8 +44,8 @@ Perintah menentukan nama dan versi handler jenis untuk VMAccess.
 
 Menambahkan ekstensi VMAccess ke komputer virtual. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Set-AzVMAccessExtension -Credential <PSCredential> -Location 'Central US' -Name 'ContosoTest' -ResourceGroupName 'ResourceGroup11' -TypeHandlerVersion '2.4' -VMName 'VirtualMachine07'
 ```
 

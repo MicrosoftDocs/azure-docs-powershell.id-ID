@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/up
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Update-AzApiManagementRegion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Update-AzApiManagementRegion.md
-ms.openlocfilehash: cd9b252ad5d0ad6dca2ce6a575ad5e0645e3a15f
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: a5d14d17cf210a3bcac2b165586d6230cab2ad7a
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145498928"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145980319"
 ---
 # Update-AzApiManagementRegion
 
@@ -47,8 +47,8 @@ Perintah ini mendapatkan layanan SKU API Management Premium, memiliki wilayah di
 
 Memperbarui wilayah penyebaran yang ada di instans PsApiManagement. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Update-AzApiManagementRegion -ApiManagement <PsApiManagement> -Capacity 2 -Location 'North Central US' -Sku Developer -VirtualNetwork <PsApiManagementVirtualNetwork>
 ```
 

@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMAccessExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMAccessExtension.md
-ms.openlocfilehash: 0930f75a49131b5b1ccd882d9d1e0454e624aa45
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: f1e3591f18414c55ff432d13614bbd47e0d65609
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145733014"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145974343"
 ---
 # Set-AzVMAccessExtension
 
@@ -47,8 +47,8 @@ Perintah menentukan nama dan versi handler jenis untuk VMAccess.
 
 Menambahkan ekstensi VMAccess ke komputer virtual. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Set-AzVMAccessExtension -Credential <PSCredential> -Location 'Central US' -Name 'ContosoTest' -ResourceGroupName 'ResourceGroup11' -TypeHandlerVersion '2.4' -VMName 'VirtualMachine07'
 ```
 
@@ -101,9 +101,9 @@ Accept wildcard characters: False
 ```
 
 ### -ForceRerun
-Menunjukkan bahwa cmdlet ini memaksa pengoperasian ulang konfigurasi ekstensi yang sama pada komputer virtual tanpa menghapus instalan dan menginstal ulang ekstensi.
-Nilainya bisa berupa string apa pun yang berbeda dari nilai saat ini.
-Jika forceUpdateTag tidak diubah, pembaruan untuk pengaturan publik atau terproteksi masih diterapkan oleh handler.
+Menunjukkan bahwa cmdlet ini memaksa pengoperasian ulang konfigurasi ekstensi yang sama pada komputer virtual tanpa menghapus instalasi dan menginstal ulang ekstensi.
+Nilai dapat berupa string apa pun yang berbeda dari nilai saat ini.
+Jika forceUpdateTag tidak diubah, pembaruan pada pengaturan publik atau terproteksi masih diterapkan oleh handler.
 
 ```yaml
 Type: System.String

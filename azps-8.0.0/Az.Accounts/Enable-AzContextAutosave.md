@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/enable-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Enable-AzContextAutosave.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Enable-AzContextAutosave.md
-ms.openlocfilehash: d42707f94f4c18ea4fa2b7008aeeee560212a5ed
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 92c43aff7a0c2dbc104c1579a23b26471675219b
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145508578"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145980805"
 ---
 # Enable-AzContextAutosave
 
@@ -44,7 +44,8 @@ Enable-AzContextAutosave
 
 Izinkan informasi masuk, akun, dan langganan Azure, disimpan dan dimuat secara otomatis saat Anda membuka jendela PowerShell di sesi PowerShell ini. (dibuat otomatis)
 
-```powershell <!-- Aladdin Generated Example -->
+<!-- Aladdin Generated Example -->
+```powershell
 Enable-AzContextAutosave -Scope Process
 ```
 

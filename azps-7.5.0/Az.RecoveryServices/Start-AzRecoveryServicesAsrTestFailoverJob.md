@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Start-AzRecoveryServicesAsrTestFailoverJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Start-AzRecoveryServicesAsrTestFailoverJob.md
-ms.openlocfilehash: cc47e6e6ac333f3b8f1609bbf63e79ca77cbc8b0
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: b20835d5b16c506c4acc80dcd598226e36bc14c4
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145647544"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145979311"
 ---
 # Start-AzRecoveryServicesAsrTestFailoverJob
 
@@ -87,8 +87,8 @@ Memulai operasi failover pengujian untuk rencana pemulihan dengan parameter yang
 
 Memulai operasi failover pengujian. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Start-AzRecoveryServicesAsrTestFailoverJob -AzureVMNetworkId <String> -Direction PrimaryToRecovery -RecoveryPlan $RP
 ```
 

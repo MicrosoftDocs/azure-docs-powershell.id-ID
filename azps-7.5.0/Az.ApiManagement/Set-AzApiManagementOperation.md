@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementOperation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementOperation.md
-ms.openlocfilehash: 865c8f00f6204a1c3308a6947ec4fd05fcc3f24c
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 6481d31c39bfb9d854e982b18b4aac429c14de1d
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145686316"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145974757"
 ---
 # Set-AzApiManagementOperation
 
@@ -48,8 +48,8 @@ Perintah ini menetapkan detail operasi untuk manajemen API.
 
 Mengatur detail operasi API. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Set-AzApiManagementOperation -ApiId '0001' -Context <PsApiManagementContext> -Method 'GET' -Name 'ContosoApi' -OperationId 'Operation003' -UrlTemplate '/newresource'
 ```
 
@@ -130,8 +130,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Metode
-Menentukan metode HTTP operasi baru.
+### -Method
+Menentukan metode HTTP dari operasi baru.
 
 ```yaml
 Type: System.String

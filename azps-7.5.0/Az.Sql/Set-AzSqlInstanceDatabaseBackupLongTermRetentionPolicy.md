@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqlins
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlInstanceDatabaseBackupLongTermRetentionPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlInstanceDatabaseBackupLongTermRetentionPolicy.md
-ms.openlocfilehash: f3d3dbb6cd2262eba28547f3e27f539bc848f96b
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: a3411667155046304cbfdee6b098708fdabec129
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145722826"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145972939"
 ---
 # Set-AzSqlInstanceDatabaseBackupLongTermRetentionPolicy
 
@@ -96,8 +96,8 @@ Perintah ini menghapus kebijakan penyimpanan jangka panjang dari database.
 
 Cmdlet Set-AzSqlInstanceDatabaseLongTermRetentionBackup menetapkan kebijakan penyimpanan jangka panjang database terkelola. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Set-AzSqlInstanceDatabaseBackupLongTermRetentionPolicy -DatabaseName target1 -InstanceName testInstance -MonthlyRetention P24W -ResourceGroupName testResourceGroup -WeekOfYear 26 -WeeklyRetention 'P1W' -YearlyRetention P10Y
 ```
 

@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesAsrvCenter.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesAsrvCenter.md
-ms.openlocfilehash: eb507c05a788e58bb0f33e6a32f4a5b7f5e4f7d8
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: a110fbb0b669b5b475264551996e7e6699ef13b3
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145648768"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145979383"
 ---
 # New-AzRecoveryServicesAsrvCenter
 
@@ -47,7 +47,8 @@ Menambahkan server vCenter untuk menemukan item yang dapat dilindungi.
 
 Menambahkan server vCenter untuk menemukan item yang dapat dilindungi. (dibuat otomatis)
 
-```powershell <!-- Aladdin Generated Example --> 
+<!-- Aladdin Generated Example -->
+```powershell
 New-AzRecoveryServicesAsrvCenter -Account $fabric.FabricSpecificDetails.RunAsAccounts[0] -Fabric $Fabric -IpOrHostName <String> -Name 'V2VM' -Port <Int32>
 ```
 

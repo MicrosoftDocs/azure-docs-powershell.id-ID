@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzProximityPlacementGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzProximityPlacementGroup.md
-ms.openlocfilehash: 3767e92616ca01327775a481a4675eaea2bd20e2
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 09290e791396d29f3bf0e8f4c030dc30d362f0a2
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145541616"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145979816"
 ---
 # Remove-AzProximityPlacementGroup
 
@@ -53,7 +53,8 @@ Perintah ini menghapus grup penempatan kedekatan yang diberikan.
 
 Perintah ini menghapus grup penempatan kedekatan yang diberikan. (dibuat otomatis)
 
-```powershell <!-- Aladdin Generated Example --> 
+<!-- Aladdin Generated Example -->
+```powershell
 Remove-AzProximityPlacementGroup -Name 'AgentPool01' -ResourceGroupName myresourcegroup
 ```
 

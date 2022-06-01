@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesBackupProtectionPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesBackupProtectionPolicy.md
-ms.openlocfilehash: 3ed1b2bc598dc8433516eb9d2e4a0e42c707509e
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 3690c4d46a9df47aa2d8791e8b87d71e8cce7c0e
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145648786"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145979365"
 ---
 # Baru-AzRecoveryServicesBackupProtectionPolicy
 
@@ -43,11 +43,11 @@ Atur konteks vault dengan menggunakan cmdlet Set-AzRecoveryServicesVaultContext 
 
 ### Contoh 1: Membuat kebijakan perlindungan Pencadangan
 ```powershell
-$SchPol = Get-AzRecoveryServicesBackupSchedulePolicyObject -WorkloadType "AzureVM" 
+$SchPol = Get-AzRecoveryServicesBackupSchedulePolicyObject -WorkloadType "AzureVM"
 $SchPol.ScheduleRunTimes.Clear()
 $Dt = Get-Date
 $SchPol.ScheduleRunTimes.Add($Dt.ToUniversalTime())
-$RetPol = Get-AzRecoveryServicesBackupRetentionPolicyObject -WorkloadType "AzureVM" 
+$RetPol = Get-AzRecoveryServicesBackupRetentionPolicyObject -WorkloadType "AzureVM"
 $RetPol.DailySchedule.DurationCountInDays = 365
 New-AzRecoveryServicesBackupProtectionPolicy -Name "NewPolicy" -WorkloadType AzureVM -RetentionPolicy $RetPol -SchedulePolicy $SchPol
 ```
@@ -58,7 +58,7 @@ Perintah ketiga menggunakan cmdlet Get-Date untuk mendapatkan tanggal dan waktu 
 Perintah keempat menambahkan tanggal dan waktu saat ini dalam $Dt sebagai durasi terjadwal ke kebijakan jadwal.
 Perintah kelima mendapatkan objek **RetentionPolicy** dasar, lalu menyimpannya dalam variabel $RetPol.
 Perintah keenam menetapkan kebijakan durasi retensi menjadi 365 hari.
-Perintah akhir membuat objek **BackupProtectionPolicy** berdasarkan kebijakan jadwal dan retensi yang dibuat oleh perintah sebelumnya.
+Perintah akhir membuat objek **BackupProtectionPolicy** berdasarkan jadwal dan kebijakan retensi yang dibuat oleh perintah sebelumnya.
 
 ### Contoh 2: Membuat kebijakan fileshare untuk beberapa cadangan per hari
 ```powershell
@@ -75,17 +75,19 @@ New-AzRecoveryServicesBackupProtectionPolicy -Name "NewPolicy" -WorkloadType Azu
 ```
 
 Perintah pertama mendapatkan **SchedulePolicyObject** dasar per jam, lalu menyimpannya dalam variabel $schedulePolicy.
-Perintah kedua dan ketiga mengambil zona waktu dan memperbarui zona waktu di $schedulePolicy.
-Perintah keempat dan kelima menginisialisasi waktu mulai jendela jadwal dan memperbarui $schedulePolicy. Harap dicatat bahwa waktu mulai harus dalam UTC meskipun zona waktu bukan UTC. Perintah keenam dan ketujuh memperbarui interval (dalam jam) setelah itu cadangan akan diambil pada hari yang sama, durasi (dalam jam) yang jadwalnya akan berjalan.
-Perintah kedelapan mendapatkan objek **RetentionPolicy** per jam dasar, lalu menyimpannya dalam variabel $retentionPolicy.
+Perintah kedua dan ketiga mengambil zona waktu dan memperbarui zona waktu dalam $schedulePolicy.
+Perintah keempat dan kelima menginisialisasi waktu mulai jendela jadwal dan memperbarui $schedulePolicy. Harap dicatat bahwa waktu mulai harus dalam UTC meskipun zona waktu bukan UTC.
+Perintah keenam dan ketujuh memperbarui interval (dalam jam) setelah itu cadangan akan diambil pada hari yang sama, durasi (dalam jam) yang jadwalnya akan berjalan.
+Perintah kedelapan mendapatkan objek **RetentionPolicy** dasar per jam, lalu menyimpannya dalam variabel $retentionPolicy.
 Perintah kesembilan menetapkan kebijakan durasi retensi menjadi 10 hari.
-Perintah akhir membuat objek **BackupProtectionPolicy** berdasarkan kebijakan jadwal dan retensi yang dibuat oleh perintah sebelumnya.
+Perintah akhir membuat objek **BackupProtectionPolicy** berdasarkan jadwal dan kebijakan retensi yang dibuat oleh perintah sebelumnya.
 
 ### Contoh: 3
 
 Membuat kebijakan perlindungan Pencadangan. (dibuat otomatis)
 
-```powershell <!-- Aladdin Generated Example --> 
+<!-- Aladdin Generated Example -->
+```powershell
 New-AzRecoveryServicesBackupProtectionPolicy -Name 'NewPolicy' -RetentionPolicy $RetPol -SchedulePolicy $SchPol -VaultId $vault.ID -WorkloadType AzureVM
 ```
 
@@ -93,7 +95,7 @@ New-AzRecoveryServicesBackupProtectionPolicy -Name 'NewPolicy' -RetentionPolicy 
 
 ### -BackupManagementType
 Kelas sumber daya yang dilindungi. Nilai yang dapat diterima untuk parameter ini adalah:
-- AzureVM 
+- AzureVM
 - AzureStorage
 - AzureWorkload
 
@@ -189,7 +191,7 @@ Accept wildcard characters: False
 
 ### -WorkloadType
 Jenis beban kerja sumber daya. Nilai yang dapat diterima untuk parameter ini adalah:
-- AzureVM 
+- AzureVM
 - AzureFiles
 - MSSQL
 

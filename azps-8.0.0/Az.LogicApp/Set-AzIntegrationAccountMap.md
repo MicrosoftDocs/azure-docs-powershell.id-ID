@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/set-azi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Set-AzIntegrationAccountMap.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Set-AzIntegrationAccountMap.md
-ms.openlocfilehash: 0f16cf1f0de11cdc715ee7301cf20aaf13ffedd4
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 55e3de821e74eb402ce556bc4313bb7d1eed2ab2
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145528618"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145980103"
 ---
 # Set-AzIntegrationAccountMap
 
@@ -38,7 +38,7 @@ Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta n
 
 ## EXAMPLES
 
-### Contoh 1: Memodifikasi peta akun integrasi
+### Contoh 1: Mengubah peta akun integrasi
 ```powershell
 Set-AzIntegrationAccountMap -ResourceGroupName "ResourceGroup11" -Name "IntegrationAccount31" -MapName "IntegrationAccountMap47" -MapDefinition $MapContent
 ```
@@ -63,7 +63,8 @@ Perintah menentukan definisi peta yang disimpan dalam variabel $MapContent oleh 
 
 Memodifikasi peta akun integrasi. (dibuat otomatis)
 
-```powershell <!-- Aladdin Generated Example --> 
+<!-- Aladdin Generated Example -->
+```powershell
 Set-AzIntegrationAccountMap -MapFilePath <String> -MapName 'IntegrationAccountMap47' -MapType Xslt -Name 'IntegrationAccount31' -ResourceGroupName 'ResourceGroup11'
 ```
 

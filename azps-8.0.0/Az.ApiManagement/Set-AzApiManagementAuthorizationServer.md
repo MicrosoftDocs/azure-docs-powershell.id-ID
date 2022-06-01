@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementAuthorizationServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementAuthorizationServer.md
-ms.openlocfilehash: b54537c94b40b40ff11cc5f3b59202c998d4535f
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 522d50bf7461e69802a12a2969e4522bcdc1354b
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145618215"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145980499"
 ---
 # Set-AzApiManagementAuthorizationServer
 
@@ -49,8 +49,8 @@ Perintah ini memodifikasi server otorisasi API Management yang ditentukan.
 
 Memodifikasi server otorisasi. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Set-AzApiManagementAuthorizationServer -AccessTokenSendingMethods AuthorizationHeader -AuthorizationEndpointUrl 'https://contoso/authv2' -AuthorizationRequestMethods Get -ClientAuthenticationMethods Basic -ClientId 'clientid' -ClientRegistrationPageUrl 'https://contoso/signupv2' -ClientSecret '0000000000000000000000000000000000000' -Context <PsApiManagementContext> -DefaultScope <String> -GrantTypes AuthorizationCode -Name 'Contoso OAuth2 server' -ServerId 0123456789 -TokenEndpointUrl 'https://contoso/tokenv2'
 ```
 
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 
 ### -ClientAuthenticationMethods
 Menentukan array metode autentikasi klien.
-psdx_paramvalues Dasar dan Isi.
+psdx_paramvalues Dasar dan Tubuh.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementClientAuthenticationMethod[]
@@ -198,7 +198,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Cakupan Default
+### -DefaultScope
 Menentukan cakupan default untuk server otorisasi.
 
 ```yaml
@@ -232,8 +232,8 @@ Accept wildcard characters: False
 Menentukan array jenis hibah.
 psdx_paramvalues
 - AuthorizationCode
-- ClientCredentials 
-- Implisit 
+- ClientCredentials
+- Implisit
 - ResourceOwnerPassword
 
 ```yaml
@@ -357,7 +357,7 @@ Accept wildcard characters: False
 ```
 
 ### -TokenEndpointUrl
-Menentukan titik akhir token bagi klien untuk mendapatkan token akses dengan imbalan untuk menyajikan pemberian otorisasi atau token refresh.
+Menentukan titik akhir token bagi klien untuk mendapatkan token akses dengan imbalan menyajikan pemberian otorisasi atau token refresh.
 
 ```yaml
 Type: System.String

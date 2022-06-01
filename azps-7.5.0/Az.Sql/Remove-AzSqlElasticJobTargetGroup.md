@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/Az.sql/remove-Azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlElasticJobTargetGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlElasticJobTargetGroup.md
-ms.openlocfilehash: d804f6fa5b0f6da9dfe87a2c42039ada24c478b8
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 1f737361b41c810cf29cf23d050a88fef6efbbfe
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145724734"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145973262"
 ---
 # Remove-AzSqlElasticJobTargetGroup
 
@@ -47,7 +47,7 @@ Cmdlet Remove-AzSqlElasticJobTargetGroup menghapus grup target dan targetnya
 
 ### Contoh 1
 ```powershell
-$agent = Get-AzSqlElasticJobAgent -ResourceGroupName rg -ServerName elasticjobserver -Name agent 
+$agent = Get-AzSqlElasticJobAgent -ResourceGroupName rg -ServerName elasticjobserver -Name agent
 $agent | Remove-AzSqlElasticJobTargetGroup -Name tg1
 ```
 
@@ -63,8 +63,8 @@ Menghapus grup target dan targetnya
 
 Menghapus grup target. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Remove-AzSqlElasticJobTargetGroup -AgentName agent -Name tg1 -ResourceGroupName MyResourceGroup -ServerName s1
 ```
 

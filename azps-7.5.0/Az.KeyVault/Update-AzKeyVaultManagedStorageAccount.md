@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Update-AzKeyVaultManagedStorageAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Update-AzKeyVaultManagedStorageAccount.md
-ms.openlocfilehash: 057b1ab2fff861ac1c7ebb9bf98932192fbf8dc4
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: 0584af9b2a097d366349dd4e1a33dcf01e214e8a
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145795364"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145980841"
 ---
 # Update-AzKeyVaultManagedStorageAccount
 
@@ -68,8 +68,8 @@ Memperbarui kunci aktif Akun Azure Storage terkelola Key Vault menjadi 'key2'. '
 
 Perbarui atribut yang dapat diedit dari Akun Azure Storage terkelola Key Vault. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Update-AzKeyVaultManagedStorageAccount -AccountName 'mystorageaccount' -AutoRegenerateKey $false -RegenerationPeriod $regenerationPeriod -VaultName 'myvault'
 ```
 

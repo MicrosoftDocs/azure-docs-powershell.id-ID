@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/New-AzDataFactoryV2LinkedServiceEncryptedCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/New-AzDataFactoryV2LinkedServiceEncryptedCredential.md
-ms.openlocfilehash: f9f722661000d82404fff164aaf3d8d82084273f
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: aef7d993eb1e4a218b6f94fab70273330184eaf4
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145753138"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145974315"
 ---
 # New-AzDataFactoryV2LinkedServiceEncryptedCredential
 
@@ -49,7 +49,8 @@ Pastikan prasyarat berikut terpenuhi:
 
 Perintah ini mengenkripsi kredensial dalam file C:\samples\WikiSample\TaxiDemo1.json dengan runtime integrasi bernama test-selfhost-ir.
 
-```powershell <!-- Aladdin Generated Example --> 
+<!-- Aladdin Generated Example -->
+```powershell
 New-AzDataFactoryV2LinkedServiceEncryptedCredential -DataFactoryName WikiADF -DefinitionFile 'C:\samples\WikiSample\TaxiDemo1.json' -IntegrationRuntimeName 'test-selfhost-ir' -ResourceGroupName MyResourceGroup
 ```
 

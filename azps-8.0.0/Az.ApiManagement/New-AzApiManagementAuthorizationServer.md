@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementAuthorizationServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementAuthorizationServer.md
-ms.openlocfilehash: 9686bacd794a3298b879f45fcb1f987b026a71dc
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 462d44ecfe265c3dd7f85afefaaee161b362f52f
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145536366"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145979959"
 ---
 # New-AzApiManagementAuthorizationServer
 
@@ -49,8 +49,8 @@ Perintah ini membuat server otorisasi.
 
 Membuat server otorisasi. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 New-AzApiManagementAuthorizationServer -AccessTokenSendingMethods AuthorizationHeader -AuthorizationEndpointUrl 'https://contoso/auth' -AuthorizationRequestMethods Get -ClientAuthenticationMethods Basic -ClientId 'clientid' -ClientRegistrationPageUrl 'https://contoso/signup' -ClientSecret '0000000000000000000000000000000000000' -Context <PsApiManagementContext> -GrantTypes AuthorizationCode -Name 'Contoso OAuth2 server' -ServerId '0123456789' -TokenBodyParameters @{'par1'='val1'} -TokenEndpointUrl 'https://contoso/token'
 ```
 
@@ -232,8 +232,8 @@ Accept wildcard characters: False
 Menentukan array jenis hibah.
 psdx_paramvalues
 - AuthorizationCode
-- ClientCredentials 
-- Implisit 
+- ClientCredentials
+- Implisit
 - ResourceOwnerPassword
 
 ```yaml

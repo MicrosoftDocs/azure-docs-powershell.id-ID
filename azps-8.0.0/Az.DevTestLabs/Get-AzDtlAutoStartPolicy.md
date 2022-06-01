@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.devtestlabs/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DevTestLabs/DevTestLabs/help/Get-AzDtlAutoStartPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DevTestLabs/DevTestLabs/help/Get-AzDtlAutoStartPolicy.md
-ms.openlocfilehash: 7cb520aff78dc4fe1d473d38f3698c397c6692c4
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 47ef1f18897368e9846a8adcd1523614dab86263
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145538984"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145979527"
 ---
 # Get-AzDtlAutoStartPolicy
 
@@ -27,7 +27,7 @@ Get-AzDtlAutoStartPolicy [-LabName] <String> [-ResourceGroupName] <String>
 
 ## DESCRIPTION
 Cmdlet **Get-AzDtlAutoStartPolicy** mendapatkan kebijakan mulai otomatis lab yang menjadwalkan komputer virtual lab untuk mulai otomatis.
-Cmdlet mengembalikan status kebijakan yang diaktifkan atau dinonaktifkan dan hari dalam seminggu dan waktu hari yang telah Anda tetapkan untuk memungkinkan komputer virtual lab dijadwalkan untuk mulai otomatis.
+Cmdlet mengembalikan status kebijakan yang diaktifkan atau dinonaktifkan dan hari dalam seminggu dan waktu yang telah Anda tetapkan untuk memungkinkan komputer virtual lab dijadwalkan untuk mulai otomatis.
 
 ## EXAMPLES
 
@@ -35,7 +35,8 @@ Cmdlet mengembalikan status kebijakan yang diaktifkan atau dinonaktifkan dan har
 
 Mendapatkan kebijakan mulai otomatis lab di DevTest Labs. (dibuat otomatis)
 
-```powershell <!-- Aladdin Generated Example --> 
+<!-- Aladdin Generated Example -->
+```powershell
 Get-AzDtlAutoStartPolicy -LabName <String> -ResourceGroupName MyResourceGroup
 ```
 
@@ -57,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -LabName
-Menentukan nama lab tempat cmdlet ini mendapatkan kebijakan mulai otomatis.
+Menentukan nama lab yang cmdlet ini mendapatkan kebijakan mulai otomatis.
 
 ```yaml
 Type: System.String

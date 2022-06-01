@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/New-AzServiceBusTopic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/New-AzServiceBusTopic.md
-ms.openlocfilehash: 3cbf6f732e2b67ce4f080c94cc88bd16800c9975
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 9a78c4104ece4aabba1253d0b1374322def7e992
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145525606"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145978987"
 ---
 # New-AzServiceBusTopic
 
@@ -66,7 +66,8 @@ Membuat topik `SB-Topic_exampl1` Bus Layanan baru di namespace `SB-Example1`Bus 
 
 Membuat topik Bus Layanan baru di namespace Bus Layanan yang ditentukan. (dibuat otomatis)
 
-```powershell <!-- Aladdin Generated Example --> 
+<!-- Aladdin Generated Example -->
+```powershell
 New-AzServiceBusTopic -EnablePartitioning $true -MaxSizeInMegabytes <Int64> -Name SB-Topic_exampl1 -Namespace SB-Example1 -ResourceGroupName Default-ServiceBus-WestUS
 ```
 
@@ -165,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnablePartitioning
-Menentukan apakah akan mengaktifkan topik yang akan dipartisi di beberapa broker pesan. 
+Menentukan apakah akan mengaktifkan topik yang akan dipartisi di beberapa broker pesan.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -327,7 +328,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Nullable'1[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
-### System.Nullable'1[[System.Int64, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.Int64, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
 ## OUTPUTS
 

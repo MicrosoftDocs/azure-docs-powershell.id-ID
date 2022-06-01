@@ -6,17 +6,17 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Unregister-AzRecoveryServicesBackupManagementServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Unregister-AzRecoveryServicesBackupManagementServer.md
-ms.openlocfilehash: 604780a11d0269abb46992841377ed80bcee36cc
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 9e6f0b286c5bffba0aab441a6a339f99fd9604a1
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145647364"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145979239"
 ---
 # Unregister-AzRecoveryServicesBackupManagementServer
 
 ## SYNOPSIS
-Membatalkan pendaftaran server SCDPM atau Server cadangan dari vault.
+Membatalkan pendaftaran server SCDPM atau server Cadangan dari vault.
 
 > [!NOTE]
 >Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/unregister-azrecoveryservicesbackupmanagementserver) untuk informasi terbaru.
@@ -32,7 +32,7 @@ Unregister-AzRecoveryServicesBackupManagementServer [-AzureRmBackupManagementSer
 ## DESCRIPTION
 Cmdlet **Unregister-AzRecoveryServicesBackupManagementServer** membatalkan pendaftaran server System Center Data Protection Manager (SCDPM) atau server Azure Backup dari vault.
 Cmdlet ini menghapus referensi ke server yang tidak terdaftar dari vault.
-Sebelum dapat membatalkan pendaftaran kontainer, Anda harus menghapus data terlindungi yang terkait dengan kontainer tersebut.
+Sebelum dapat membatalkan pendaftaran kontainer, Anda harus menghapus data yang dilindungi yang terkait dengan kontainer tersebut.
 Atur konteks vault dengan menggunakan cmdlet Set-AzRecoveryServicesVaultContext sebelum Anda menggunakan cmdlet saat ini.
 
 ## EXAMPLES
@@ -48,10 +48,10 @@ Perintah kedua membatalkan pendaftaran server SCDPM dari vault.
 
 ### Contoh 2
 
-Membatalkan pendaftaran server SCDPM atau Server cadangan dari vault. (dibuat otomatis)
+Membatalkan pendaftaran server SCDPM atau server Cadangan dari vault. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Unregister-AzRecoveryServicesBackupManagementServer -AzureRmBackupManagementServer <BackupEngineBase> -VaultId $vault.ID
 ```
 
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Kembalikan Server Manajemen Cadangan yang akan dihapus.
+Mengembalikan Server Manajemen Cadangan yang akan dihapus.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Menunjukkan yang akan terjadi jika cmdlet dijalankan. 
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

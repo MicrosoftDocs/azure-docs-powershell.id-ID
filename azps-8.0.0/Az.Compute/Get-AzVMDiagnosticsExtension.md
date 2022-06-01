@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMDiagnosticsExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMDiagnosticsExtension.md
-ms.openlocfilehash: c397d3780465b598e2010eaaa0bb7d45b216a17c
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 0cc8f1d18b827eca3966492c97b67de65b764c34
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145527271"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145980733"
 ---
 # Get-AzVMDiagnosticsExtension
 
@@ -41,7 +41,8 @@ Perintah ini mendapatkan ekstensi diagnostik yang diterapkan ke komputer virtual
 
 Mendapatkan pengaturan ekstensi Diagnostik pada komputer virtual. (dibuat otomatis)
 
-```powershell <!-- Aladdin Generated Example --> 
+<!-- Aladdin Generated Example -->
+```powershell
 Get-AzVMDiagnosticsExtension -Name 'AgentPool01' -ResourceGroupName 'ResourceGroup11' -Status -VMName 'ContosoVM22'
 ```
 

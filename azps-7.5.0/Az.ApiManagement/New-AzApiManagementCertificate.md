@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementCertificate.md
-ms.openlocfilehash: 9a3b325f0edcd7c622ae0af5e9ae3f8bc300cf1d
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: 3643108b48bb82e908dab8fbf052bc6ed8122f49
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145767072"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145974775"
 ---
 # New-AzApiManagementCertificate
 
@@ -48,21 +48,21 @@ $ApiMgmtContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-Wes
 New-AzApiManagementCertificate -Context $ApiMgmtContext -PfxFilePath "C:\contoso\certificates\apimanagement.pfx" -PfxPassword "1111"
 ```
 
-Perintah ini mengunggah sertifikat ke Api Management. Sertifikat ini dapat digunakan untuk autentikasi bersama dengan backend menggunakan kebijakan.
+Perintah ini mengunggah sertifikat ke Api Management. Sertifikat ini dapat digunakan untuk autentikasi timbal balik dengan backend menggunakan kebijakan.
 
 ### Contoh 2
 
 Membuat sertifikat API Management yang akan digunakan selama Autentikasi dengan Backend. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 New-AzApiManagementCertificate -CertificateId '0123456789' -Context <PsApiManagementContext> -PfxFilePath 'C:\contoso\certificates\apimanagement.pfx' -PfxPassword '1111'
 ```
 
 ### Contoh 3 : Membuat Sertifikat keyVault
 ```powershell
 $secretIdentifier = 'https://contoso.vault.azure.net/secrets/xxxx'
-$keyvault = New-AzApiManagementKeyVaultObject -SecretIdentifier $secretIdentifier 
+$keyvault = New-AzApiManagementKeyVaultObject -SecretIdentifier $secretIdentifier
 $keyVaultcert = New-AzApiManagementCertificate -Context $context -CertificateId $kvcertId -KeyVault $keyvault
 ```
 
@@ -73,7 +73,7 @@ Perintah kedua membuat sertifikat menggunakan rahasia dari keyvault ini.
 
 ### -CertificateId
 Menentukan ID sertifikat yang akan dibuat.
-Jika Anda tidak menentukan parameter ini, ID dibuat untuk Anda.
+Jika Anda tidak menentukan parameter ini, ID akan dibuat untuk Anda.
 
 ```yaml
 Type: System.String

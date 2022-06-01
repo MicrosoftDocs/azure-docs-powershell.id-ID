@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementDiagnostic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementDiagnostic.md
-ms.openlocfilehash: 6f44f33b3210bbfbba267a913b3f9103231c5a57
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: ec78c2a024bd26cbe5770da300033cc1fab59774
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145523383"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145980355"
 ---
 # Set-AzApiManagementDiagnostic
 
@@ -90,8 +90,8 @@ Perintah ini memodifikasi Persentase Pengambilan Sampel diagnostik yang ditentuk
 
 Memodifikasi diagnostik API Management di cakupan Global atau Api. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Set-AzApiManagementDiagnostic -AlwaysLog allErrors -ApiId '0001' -Context <PsApiManagementContext> -DiagnosticId 'applicationinsights' -LoggerId 'Logger123' -SamplingSetting <PsApiManagementSamplingSetting>
 ```
 
