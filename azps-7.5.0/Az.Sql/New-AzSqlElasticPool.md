@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/new-azsqlela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlElasticPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlElasticPool.md
-ms.openlocfilehash: e240d0001b089f5990bb7eda91d301f39c2c4e34
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 5f90d1cca3fdc5aa44976cf4654bf5fdc4d34c9a
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145725904"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145973299"
 ---
 # Baru-AzSqlElasticPool
 
@@ -105,8 +105,8 @@ Perintah ini membuat kumpulan elastis di tingkat layanan GengeralPurpose bernama
 
 Membuat kumpulan database elastis untuk SQL Database. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 New-AzSqlElasticPool -ComputeGeneration Gen5 -Edition 'GeneralPurpose' -ElasticPoolName 'ElasticPool01' -ResourceGroupName 'ResourceGroup01' -ServerName 'Server01' -StorageMB 2097152 -VCore 2
 ```
 

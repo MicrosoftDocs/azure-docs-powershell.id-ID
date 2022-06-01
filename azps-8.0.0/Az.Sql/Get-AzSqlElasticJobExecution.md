@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/Az.sql/get-Azsqlela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlElasticJobExecution.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlElasticJobExecution.md
-ms.openlocfilehash: 63413fde3f4d8ecb3ada24266aa00337d2ec105f
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 27975eba2eb7050d11498efb6704244b83dc50a0
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145505351"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145977241"
 ---
 # Get-AzSqlElasticJobExecution
 
@@ -96,8 +96,8 @@ Mendapatkan satu atau beberapa eksekusi pekerjaan
 
 Mendapatkan satu atau beberapa eksekusi pekerjaan. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Get-AzSqlElasticJobExecution -JobExecutionId 00000000-0000-0000-0000-000000000000 -JobName job1
 ```
 

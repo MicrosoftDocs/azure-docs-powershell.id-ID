@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.devtestlabs/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DevTestLabs/DevTestLabs/help/Get-AzDtlAutoShutdownPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DevTestLabs/DevTestLabs/help/Get-AzDtlAutoShutdownPolicy.md
-ms.openlocfilehash: 5bd416b5ab70f10eb535781ea7ec6d57e3690309
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 354ab5c6ac8e3703280678d677bf91ef3eeb409d
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145562462"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145972831"
 ---
 # Get-AzDtlAutoShutdownPolicy
 
@@ -35,7 +35,8 @@ Cmdlet mengembalikan apakah status kebijakan diaktifkan, dan waktu hari yang tel
 
 Mendapatkan kebijakan matikan otomatis lab di DevTest Labs. (dibuat otomatis)
 
-```powershell <!-- Aladdin Generated Example --> 
+<!-- Aladdin Generated Example -->
+```powershell
 Get-AzDtlAutoShutdownPolicy -LabName <String> -ResourceGroupName MyResourceGroup
 ```
 

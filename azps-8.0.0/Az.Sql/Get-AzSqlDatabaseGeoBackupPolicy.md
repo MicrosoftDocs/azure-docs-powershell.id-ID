@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseGeoBackupPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseGeoBackupPolicy.md
-ms.openlocfilehash: 869e5d9208a148d732671788047ccd6e5ecf61c4
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 078db82263a15e2be95d1ccfaa061fe63128aa8e
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145559970"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145975837"
 ---
 # Get-AzSqlDatabaseGeoBackupPolicy
 
@@ -35,8 +35,8 @@ Ini adalah sumber daya Azure Backup yang digunakan untuk menentukan kebijakan pe
 
 Mendapatkan kebijakan pencadangan geografis database. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Get-AzSqlDatabaseGeoBackupPolicy -DatabaseName db1 -ResourceGroupName MyResourceGroup -ServerName s1
 ```
 

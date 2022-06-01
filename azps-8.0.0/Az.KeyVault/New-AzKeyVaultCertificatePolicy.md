@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/new-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/New-AzKeyVaultCertificatePolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/New-AzKeyVaultCertificatePolicy.md
-ms.openlocfilehash: 20c1df9de90ccc6bdc6fd5783b3d9d32f0544779
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: ed35979db85771db0e3ab7e77ed75ded6f0a352b
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145502159"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145977259"
 ---
 # Baru-AzKeyVaultCertificatePolicy
 
@@ -84,8 +84,8 @@ Perintah ini membuat kebijakan sertifikat yang berlaku selama enam bulan dan men
 
 Membuat objek kebijakan sertifikat dalam memori. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 New-AzKeyVaultCertificatePolicy -IssuerName 'Self' -KeyType RSA -RenewAtNumberOfDaysBeforeExpiry <Int32> -SecretContentType application/x-pkcs12 -SubjectName 'CN=contoso.com' -ValidityInMonths 6
 ```
 
@@ -420,7 +420,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubjectName
-Menentukan nama subjek sertifikat. 
+Menentukan nama subjek sertifikat.
 
 > [!NOTE]
 > Jika Anda harus menggunakan koma (,) atau titik (.) dalam properti dalam `SubjectName` parameter , Anda harus mengapit bidang properti dalam tanda kutip. Misalnya, Anda dapat menggunakan O="Contoso, Ltd." di bidang Nama Organisasi.

@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrReplicationProtectedItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrReplicationProtectedItem.md
-ms.openlocfilehash: 6811263aa8ca538126279df4bf89a1bc4584a59b
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 879a2f863b44e553c301c3a3029f303a47dd3790
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145650406"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145976917"
 ---
 # Get-AzRecoveryServicesAsrReplicationProtectedItem
 
@@ -62,8 +62,8 @@ Mencantumkan semua item yang dilindungi replikasi dalam kontainer perlindungan A
 
 Mendapatkan properti Item yang Dilindungi Replikasi Azure Site Recovery. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Get-AzRecoveryServicesAsrReplicationProtectedItem -FriendlyName XXXXXXXXXX -ProtectionContainer $PrimaryContainer
 ```
 
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProtectionContainer
-Menentukan objek kontainer perlindungan ASR dari kontainer perlindungan ASR yang sesuai dengan item yang dilindungi replikasi. 
+Menentukan objek kontainer perlindungan ASR dari kontainer perlindungan ASR yang sesuai dengan item yang dilindungi replikasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRProtectionContainer

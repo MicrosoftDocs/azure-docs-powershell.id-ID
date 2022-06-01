@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementUserToken.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementUserToken.md
-ms.openlocfilehash: c44aca397b88a85b1353fea0877a861a60c1620a
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: 381eebcb289026ce6e0e3105ea46bb9c76263d05
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145774992"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145976179"
 ---
 # New-AzApiManagementUserToken
 
@@ -53,8 +53,8 @@ Skrip ini membuat pengguna Git dikonfigurasi dalam layanan ApiManagement dan men
 
 Menghasilkan Token Akses Bersama untuk Pengguna. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 New-AzApiManagementUserToken -Context <PsApiManagementContext> -Expiry <DateTime> -UserId <String>
 ```
 

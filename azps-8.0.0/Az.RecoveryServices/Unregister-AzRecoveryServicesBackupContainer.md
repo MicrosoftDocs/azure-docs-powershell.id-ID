@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Unregister-AzRecoveryServicesBackupContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Unregister-AzRecoveryServicesBackupContainer.md
-ms.openlocfilehash: cec2c2b3dea45dc25891eeef8ed8daa097cc4556
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 2aa97c5b1e643a209390821f14873b1c8c087107
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145526899"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145975891"
 ---
 # Unregister-AzRecoveryServicesBackupContainer
 
@@ -47,8 +47,8 @@ Perintah kedua membatalkan pendaftaran server Windows yang ditentukan dari vault
 
 Membatalkan pendaftaran Windows Server atau kontainer lain dari vault. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Unregister-AzRecoveryServicesBackupContainer -Container $Cont -VaultId $vault.ID
 ```
 
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Menunjukkan yang akan terjadi jika cmdlet dijalankan. 
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

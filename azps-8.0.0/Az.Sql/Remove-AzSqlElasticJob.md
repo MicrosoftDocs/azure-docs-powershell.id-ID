@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/Az.sql/remove-Azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlElasticJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlElasticJob.md
-ms.openlocfilehash: b329872252d6ed08890f0d31d3be4b635a864107
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: bfd2ecdc12823823c3ecbf45119c337567af69ac
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145557783"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145971751"
 ---
 # Remove-AzSqlElasticJob
 
@@ -60,8 +60,8 @@ Menghapus pekerjaan
 
 Menghapus pekerjaan. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Remove-AzSqlElasticJob -AgentName agent -Name job1 -ResourceGroupName MyResourceGroup -ServerName s1
 ```
 

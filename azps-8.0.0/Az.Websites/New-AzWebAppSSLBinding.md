@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/new-azw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzWebAppSSLBinding.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzWebAppSSLBinding.md
-ms.openlocfilehash: fd5045d9260284c11ec70046fda0a1c6f6e5c9db
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 1bd3b1fbace58a2a6ca1bfaed7bd16eb66edd6ba
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145531894"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145971508"
 ---
 # New-AzWebAppSSLBinding
 
@@ -49,14 +49,14 @@ New-AzWebAppSSLBinding [-WebApp] <PSSite> [-Name] <String> [[-SslState] <SslStat
 
 ## DESCRIPTION
 Cmdlet **New-AzWebAppSSLBinding** membuat pengikatan sertifikat Secure Socket Layer (SSL) untuk Azure Web App.
-Cmdlet membuat pengikatan SSL dengan dua cara: 
+Cmdlet membuat pengikatan SSL dengan dua cara:
 - Anda dapat mengikat Aplikasi Web ke sertifikat yang sudah ada.
 - Anda dapat mengunggah sertifikat baru lalu mengikat Aplikasi Web ke sertifikat baru ini.
 Terlepas dari pendekatan mana yang Anda gunakan, sertifikat dan Aplikasi Web harus dikaitkan dengan grup sumber daya Azure yang sama.
-Jika Anda memiliki Aplikasi Web di Grup Sumber Daya A dan Anda ingin mengikat Aplikasi Web tersebut ke sertifikat di Grup Sumber Daya B, satu-satunya cara untuk melakukannya adalah dengan mengunggah salinan sertifikat ke Grup Sumber Daya A. Jika Anda mengunggah sertifikat baru, ingatlah persyaratan berikut untuk sertifikat Azure SSL: 
-- Sertifikat harus memuat kunci privat. 
-- Sertifikat harus menggunakan format Personal Information Exchange (PFX). 
-- Nama subjek sertifikat harus cocok dengan domain yang digunakan untuk mengakses Aplikasi Web. 
+Jika Anda memiliki Aplikasi Web di Grup Sumber Daya A dan Anda ingin mengikat Aplikasi Web tersebut ke sertifikat di Grup Sumber Daya B, satu-satunya cara untuk melakukannya adalah dengan mengunggah salinan sertifikat ke Grup Sumber Daya A. Jika Anda mengunggah sertifikat baru, ingatlah persyaratan berikut untuk sertifikat Azure SSL:
+- Sertifikat harus memuat kunci privat.
+- Sertifikat harus menggunakan format Personal Information Exchange (PFX).
+- Nama subjek sertifikat harus cocok dengan domain yang digunakan untuk mengakses Aplikasi Web.
 - Sertifikat harus menggunakan minimal enkripsi 2048-bit.
 
 ## EXAMPLES
@@ -72,8 +72,8 @@ Perintah ini mengikat sertifikat Azure yang ada (sertifikat dengan Thumbprint E3
 
 Membuat pengikatan sertifikat SSL untuk Azure Web App. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 New-AzWebAppSSLBinding -Name 'www.contoso.com' -ResourceGroupName 'ContosoResourceGroup' -SslState Disabled -Thumbprint 'E3A38EBA60CAA1C162785A2E1C44A15AD450199C3' -WebAppName 'ContosoWebApp'
 ```
 

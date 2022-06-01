@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqlser
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlServer.md
-ms.openlocfilehash: ba118774bb0db2f6305cff7fb733f9e2297203e9
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 456027f200009232e4b4b0bb8d06af309accef90
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145527463"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145971507"
 ---
 # Atur-AzSqlServer
 
@@ -35,7 +35,7 @@ Cmdlet **Set-AzSqlServer** memodifikasi properti server Azure SQL Database.
 
 ## EXAMPLES
 
-### Contoh 1: Mereset kata sandi administrator
+### Contoh 1: Mengatur ulang kata sandi administrator
 ```powershell
 $ServerPassword = "newpassword"
 $SecureString = ConvertTo-SecureString $ServerPassword -AsPlainText -Force
@@ -54,14 +54,14 @@ Identity                 :
 FullyQualifiedDomainName : server01.database.windows.net
 ```
 
-Perintah ini mengatur ulang kata sandi administrator di AzureSQL Server bernama server01.
+Perintah ini mereset kata sandi administrator di AzureSQL Server bernama server01.
 
 ### Contoh 2
 
 Memodifikasi properti server SQL Database. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Set-AzSqlServer -AssignIdentity -ResourceGroupName 'ResourceGroup01' -ServerName 'Server01'
 ```
 
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -MinimalTlsVersion
-Versi TLS minimal yang akan diterapkan untuk Sql Server
+Versi TLS minimal yang akan diberlakukan untuk Sql Server
 
 ```yaml
 Type: System.String
@@ -250,7 +250,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerVersion
-Menentukan versi di mana cmdlet ini mengubah server. Nilai yang dapat diterima untuk parameter ini adalah: 2.0 dan 12.0.
+Menentukan versi yang mana cmdlet ini mengubah server. Nilai yang dapat diterima untuk parameter ini adalah: 2.0 dan 12.0.
 
 ```yaml
 Type: System.String

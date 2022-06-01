@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/New-AzServiceBusQueue.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/New-AzServiceBusQueue.md
-ms.openlocfilehash: 126b00f8aa441e8cd68551a8cf80a2d2b1c8a295
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 0aa1382a325587e1d2111b7702d1857b96708924
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145522711"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145975427"
 ---
 # New-AzServiceBusQueue
 
@@ -72,7 +72,8 @@ Membuat antrean `SB-Queue_example1` Bus Layanan baru di namespace `SB-Example1`B
 
 Membuat antrean Bus Layanan di namespace Bus Layanan yang ditentukan. (dibuat otomatis)
 
-```powershell <!-- Aladdin Generated Example --> 
+<!-- Aladdin Generated Example -->
+```powershell
 New-AzServiceBusQueue -EnablePartitioning $true -MaxSizeInMegabytes <Int64> -Name SB-Queue_example1 -Namespace SB-Example1 -ResourceGroupName Default-ServiceBus-WestUS
 ```
 

@@ -6,17 +6,17 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Enable-AzRecoveryServicesBackupProtection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Enable-AzRecoveryServicesBackupProtection.md
-ms.openlocfilehash: 439514a43f2c95cf1da606f1c8082f7844e96473
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 1c12fc5817ca365e9b6005a9da6ea1741e3fae2b
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145650869"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145976899"
 ---
 # Enable-AzRecoveryServicesBackupProtection
 
 ## SYNOPSIS
-Aktifkan pencadangan untuk suatu item dengan kebijakan perlindungan Pencadangan yang ditentukan.
+Mengaktifkan atau melanjutkan pencadangan untuk item dengan kebijakan perlindungan Pencadangan tertentu.
 
 > [!NOTE]
 >Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/enable-azrecoveryservicesbackupprotection) untuk informasi terbaru.
@@ -51,7 +51,7 @@ Enable-AzRecoveryServicesBackupProtection [[-Policy] <PolicyBase>] [-Protectable
  [-VaultId <String>] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Ubah Proteksi
+### ModifyProtection
 ```
 Enable-AzRecoveryServicesBackupProtection [[-Policy] <PolicyBase>] [-Item] <ItemBase>
  [-InclusionDisksList <String[]>] [-ExclusionDisksList <String[]>] [-ResetExclusionSettings]
@@ -60,9 +60,7 @@ Enable-AzRecoveryServicesBackupProtection [[-Policy] <PolicyBase>] [-Item] <Item
 ```
 
 ## DESCRIPTION
-Cmdlet **Enable-AzRecoveryServicesBackupProtection** memungkinkan pencadangan dengan mengaitkan kebijakan perlindungan dengan item.
-Jika ID kebijakan tidak ada atau item cadangan tidak terkait dengan kebijakan apa pun, maka perintah ini akan mengharapkan policyID.
-Atur konteks vault dengan menggunakan cmdlet Set-AzRecoveryServicesVaultContext sebelum Anda menggunakan cmdlet saat ini.
+Cmdlet **Enable-AzRecoveryServicesBackupProtection** memungkinkan pencadangan dengan mengaitkan kebijakan perlindungan dengan item. Jika ID kebijakan tidak ada atau item cadangan tidak terkait dengan kebijakan apa pun, maka perintah ini akan mengharapkan policyID. Anda juga dapat menggunakan perintah yang sama untuk melanjutkan pencadangan untuk sumber daya yang telah Anda hentikan perlindungannya dengan opsi retensi data. Atur konteks vault dengan menggunakan cmdlet Set-AzRecoveryServicesVaultContext sebelum Anda menggunakan cmdlet saat ini.
 
 ## EXAMPLES
 
@@ -81,14 +79,13 @@ co03-vm         ConfigureBackup  Completed       11-Apr-16 12:19:49 PM      11-A
 
 Cmdlet pertama mendapatkan objek kebijakan default, lalu menyimpannya dalam variabel $Pol.
 Cmdlet kedua menentukan LUN disk yang akan dicadangkan dan menyimpannya dalam variabel $inclusionDiskLUNS.
-Cmdlet ketiga menetapkan kebijakan perlindungan Cadangan untuk komputer virtual ARM bernama V2VM menggunakan kebijakan dalam $Pol.
+Cmdlet ketiga menetapkan kebijakan Perlindungan cadangan untuk komputer virtual ARM bernama V2VM menggunakan kebijakan dalam $Pol.
 
 ### Contoh 2
 
-Aktifkan pencadangan untuk suatu item dengan kebijakan perlindungan Pencadangan yang ditentukan. (dibuat otomatis)
+Mengaktifkan pencadangan untuk item dengan kebijakan perlindungan Pencadangan tertentu atau melanjutkan pencadangan untuk item yang memiliki data yang dipertahankan saat pencadangan dihentikan.
 
 ```powershell
-<!-- Aladdin Generated Example --> 
 Enable-AzRecoveryServicesBackupProtection -Item $Item -Policy $Pol -VaultId $vault
 ```
 
@@ -155,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -Item
-Menentukan item Cadangan yang cmdletnya mengaktifkan perlindungan.
+Menentukan item Cadangan yang cmdlet ini mengaktifkan perlindungan.
 Untuk mendapatkan **AzureRmRecoveryServicesBackupItem**, gunakan cmdlet Get-AzRecoveryServicesBackupItem.
 
 ```yaml

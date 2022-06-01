@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.devtestlabs/set-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DevTestLabs/DevTestLabs/help/Set-AzDtlAutoStartPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DevTestLabs/DevTestLabs/help/Set-AzDtlAutoStartPolicy.md
-ms.openlocfilehash: 77aaed89dc09cd003883943534beeb531b370af0
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 0d8f6b3ae0c8676db7c0543e31569c4a178108e2
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145742716"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145975099"
 ---
 # Set-AzDtlAutoStartPolicy
 
@@ -47,7 +47,8 @@ Cmdlet menggunakan grup sumber daya dan nama lab yang ditentukan untuk mengatur 
 
 Menetapkan kebijakan mulai otomatis lab di DevTest Labs. (dibuat otomatis)
 
-```powershell <!-- Aladdin Generated Example --> 
+<!-- Aladdin Generated Example -->
+```powershell
 Set-AzDtlAutoStartPolicy -Days Sunday -Enable -LabName <String> -ResourceGroupName MyResourceGroup -Time <DateTime>
 ```
 

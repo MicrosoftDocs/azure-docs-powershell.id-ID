@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Update-AzKeyVaultCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Update-AzKeyVaultCertificate.md
-ms.openlocfilehash: 2df92e3d002d7eed6c0b41b19546fa44677a60e2
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: d2ac920696f50e357a38b743ac63fed036b2f2fb
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145694404"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145972561"
 ---
 # Update-AzKeyVaultCertificate
 
@@ -78,14 +78,14 @@ Updated     : 8/1/2016 5:37:48 PM
 ```
 
 Perintah pertama menetapkan array pasangan kunci/nilai ke variabel $Tags.
-Perintah kedua mengatur nilai tag sertifikat bernama TestCert01 menjadi $Tags.
+Perintah kedua menetapkan nilai tag sertifikat bernama TestCert01 menjadi $Tags.
 
 ### Contoh 2
 
 Memodifikasi atribut sertifikat yang dapat diedit. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Update-AzKeyVaultCertificate -Enable $true -Name 'TestCert01' -VaultName 'ContosoKV01'
 ```
 
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 
 ### -Name
 Nama sertifikat.
-Cmdlet membangun FQDN rahasia dari nama brankas, lingkungan dan nama rahasia yang saat ini dipilih.
+Cmdlet membangun FQDN rahasia dari nama vault, lingkungan dan nama rahasia yang saat ini dipilih.
 
 ```yaml
 Type: System.String

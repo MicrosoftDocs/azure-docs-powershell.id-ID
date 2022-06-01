@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqlins
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlInstanceDatabaseBackupLongTermRetentionPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlInstanceDatabaseBackupLongTermRetentionPolicy.md
-ms.openlocfilehash: 1ec9c68e8f4debfbe3c16d4b72425e2354ddd27f
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 94c5959e41a50cad984e92bb87d01c57288a2d50
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145516654"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145971553"
 ---
 # Set-AzSqlInstanceDatabaseBackupLongTermRetentionPolicy
 
@@ -93,8 +93,8 @@ Perintah ini menghapus kebijakan penyimpanan jangka panjang dari database.
 
 Cmdlet Set-AzSqlInstanceDatabaseLongTermRetentionBackup menetapkan kebijakan penyimpanan jangka panjang database terkelola. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Set-AzSqlInstanceDatabaseBackupLongTermRetentionPolicy -DatabaseName target1 -InstanceName testInstance -MonthlyRetention P24W -ResourceGroupName testResourceGroup -WeekOfYear 26 -WeeklyRetention 'P1W' -YearlyRetention P10Y
 ```
 
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ### -MonthlyRetention
 Retensi Bulanan.
 Jika hanya angka yang diteruskan alih-alih string ISO 8601, hari akan diasumsikan sebagai unit.
-Minimal ada 7 hari dan maksimal 10 tahun.
+Minimal 7 hari dan maksimal 10 tahun.
 
 ```yaml
 Type: System.String
@@ -207,7 +207,7 @@ Accept wildcard characters: False
 ### -WeeklyRetention
 Retensi Mingguan.
 Jika hanya angka yang diteruskan alih-alih string ISO 8601, hari akan diasumsikan sebagai unit.
-Minimal ada 7 hari dan maksimal 10 tahun.
+Minimal 7 hari dan maksimal 10 tahun.
 
 ```yaml
 Type: System.String
@@ -251,7 +251,7 @@ Accept wildcard characters: False
 ### -YearlyRetention
 Retensi Tahunan.
 Jika hanya angka yang diteruskan alih-alih string ISO 8601, hari akan diasumsikan sebagai unit.
-Minimal ada 7 hari dan maksimal 10 tahun.
+Minimal 7 hari dan maksimal 10 tahun.
 
 ```yaml
 Type: System.String

@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupStatus.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupStatus.md
-ms.openlocfilehash: 4d3c8eb90b2ca4ea0af5821eb20dad50dc2c7763
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 4eb3b3c57bf50d238c01be210aecc6d131596aac
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145649686"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145976809"
 ---
 # Get-AzRecoveryServicesBackupStatus
 
@@ -41,7 +41,8 @@ Get-AzRecoveryServicesBackupStatus -ResourceId <String> [-DefaultProfile <IAzure
 ```
 
 ## DESCRIPTION
-Perintah mengembalikan null/kosong jika sumber daya yang ditentukan tidak dilindungi di bawah vault Layanan Pemulihan apa pun dalam langganan. Jika dilindungi, detail vault yang relevan akan dikembalikan.
+Perintah mengembalikan null/kosong jika sumber daya yang ditentukan tidak dilindungi di bawah vault Layanan Pemulihan apa pun dalam langganan.
+Jika dilindungi, detail vault yang relevan akan dikembalikan.
 
 ## EXAMPLES
 
@@ -49,8 +50,8 @@ Perintah mengembalikan null/kosong jika sumber daya yang ditentukan tidak dilind
 
 Memeriksa apakah sumber daya ARM Anda dicadangkan atau tidak. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Get-AzRecoveryServicesBackupStatus -Name 'myAzureVM' -ResourceGroupName 'myAzureVMRG' -Type AzureVM
 ```
 
@@ -102,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya Sumber Daya Azure yang item perwakilannya perlu diperiksa apakah sudah dilindungi oleh beberapa Vault RecoveryServices dalam langganan.
+Nama grup sumber daya Sumber Daya Azure yang item perwakilannya perlu diperiksa apakah sudah dilindungi oleh beberapa RecoveryServices Vault dalam langganan.
 
 ```yaml
 Type: System.String

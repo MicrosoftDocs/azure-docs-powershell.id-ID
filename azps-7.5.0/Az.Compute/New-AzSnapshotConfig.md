@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azsn
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzSnapshotConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzSnapshotConfig.md
-ms.openlocfilehash: 750eed149cc74afa3ad9a8b184c266aec7cfe24b
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: d66ae2cc996897ccf6415860f08d5a3da88d8392
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145789984"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145973713"
 ---
 # New-AzSnapshotConfig
 
@@ -59,15 +59,15 @@ Perintah terakhir mengambil objek rekam jepret dan membuat rekam jepret dengan n
 
 Membuat objek rekam jepret yang dapat dikonfigurasi. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 New-AzSnapshotConfig -CreateOption Empty -Location 'Central US' -SourceUri 'https://contosoaccount.blob.core.windows.net/vhdstore/win7baseimage.vhd'
 ```
 
 ## PARAMETERS
 
 ### -AcceleratedNetwork
-Benar jika gambar tempat disk OS dibuat mendukung jaringan yang dipercepat.
+True jika gambar tempat disk OS dibuat mendukung jaringan yang dipercepat.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -247,7 +247,7 @@ Accept wildcard characters: False
 ```
 
 ### -Inkremental
-Menentukan rekam jepret inkremental. Rekam jepret bertambah bertahap pada disk yang sama menempati lebih sedikit ruang daripada rekam jepret penuh dan dapat berbeda.
+Menentukan rekam jepret bertahap. Rekam jepret bertambah bertahap pada disk yang sama menempati lebih sedikit ruang daripada rekam jepret penuh dan dapat berbeda.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -339,7 +339,7 @@ Accept wildcard characters: False
 ```
 
 ### -PurchasePlan
-{{ Fill PurchasePlan Description }}
+{{ Isi Deskripsi Pesawat Pembelian }}
 
 ```yaml
 Type: Microsoft.Azure.Commands.Compute.Automation.Models.PSPurchasePlan

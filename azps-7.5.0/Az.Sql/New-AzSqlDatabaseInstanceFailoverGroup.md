@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/Az.sql/new-Azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlDatabaseInstanceFailoverGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlDatabaseInstanceFailoverGroup.md
-ms.openlocfilehash: 2c20556d59935e6e20e6a6bc2a3cefb9d6b66216
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: de0944481a8cb575a65584e31450c93c6dff2075
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145726210"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145973317"
 ---
 # Baru-AzSqlDatabaseInstanceFailoverGroup
 
@@ -33,7 +33,7 @@ New-AzSqlDatabaseInstanceFailoverGroup [-Name] <String> [-PartnerResourceGroupNa
 ## DESCRIPTION
 Membuat Grup Failover Instans Azure SQL Database baru antara wilayah yang ditentukan dengan pasangan Instans Terkelola yang disebutkan.
 
-Dua titik akhir TDS Azure SQL Database dibuat di Name.SqlDatabaseDnsSuffix (misalnya, Name.database.windows.net) dan Name.secondary.SqlDatabaseDnsSuffix. Titik akhir ini dapat digunakan untuk menyambungkan ke wilayah utama dan sekunder dari Grup Failover. Jika wilayah utama dipengaruhi oleh pemadaman, failover otomatis titik akhir dan database akan dipicu sebagaimana ditentukan oleh kebijakan failover dan masa tenggang Grup Failover Instans.
+Dua titik akhir TDS Azure SQL Database dibuat di Name.SqlDatabaseDnsSuffix (misalnya, Name.database.windows.net) dan Name.secondary.SqlDatabaseDnsSuffix. Titik akhir ini dapat digunakan untuk terhubung ke wilayah utama dan sekunder dari Grup Failover, masing-masing. Jika wilayah utama dipengaruhi oleh pemadaman, failover otomatis titik akhir dan database akan dipicu sebagaimana ditentukan oleh kebijakan failover dan masa tenggang Grup Failover Instans.
 
 Selama pratinjau fitur Grup Failover Instans, hanya nilai yang lebih besar dari atau sama dengan 1 jam yang didukung untuk parameter '-GracePeriodWithDataLossHours'.
 
@@ -78,7 +78,7 @@ PartnerManagedInstanceName            : managedInstance2
 ReplicationRole                       : Primary
 ReplicationState                      : CATCH_UP
 ReadWriteFailoverPolicy               : Manual
-FailoverWithDataLossGracePeriodHours  : 
+FailoverWithDataLossGracePeriodHours  :
 ReadOnlyFailoverPolicy                : Disabled
 Id                                    : /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg/providers/Microsoft.Sql/locations/eastus/instanceFailoverGroups/fg
 ```
@@ -89,8 +89,8 @@ Perintah ini membuat Grup Failover Instans baru dengan kebijakan failover 'Manua
 
 Perintah ini membuat Grup Failover Instans Azure SQL Database baru. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 New-AzSqlDatabaseInstanceFailoverGroup -FailoverPolicy Automatic -GracePeriodWithDataLossHours 1 -Location location -Name fgName -PartnerManagedInstanceName $partnerManagedInstance.Name -PartnerRegion $partnerRegion -PartnerResourceGroupName rg2 -PrimaryManagedInstanceName $managedInstance.Name -ResourceGroupName rg
 ```
 
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Nama Wilayah Lokal tempat mengambil Grup Failover Instans.
+Nama Wilayah Lokal tempat untuk mengambil Grup Failover Instans.
 
 ```yaml
 Type: System.String

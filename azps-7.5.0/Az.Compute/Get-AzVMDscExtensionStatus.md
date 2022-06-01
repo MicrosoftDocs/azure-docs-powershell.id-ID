@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMDscExtensionStatus.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMDscExtensionStatus.md
-ms.openlocfilehash: 298834e5d6b9a24f01c87f459420fb5f23e86f11
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 2f499104d35474bd56887ea8f2cd3b608a68db24
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145735318"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145973911"
 ---
 # Get-AzVMDscExtensionStatus
 
@@ -45,8 +45,8 @@ Ketika konfigurasi diterapkan, cmdlet ini menghasilkan output yang konsisten den
 
 Mendapatkan status handler ekstensi DSC untuk komputer virtual. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Get-AzVMDscExtensionStatus -Name 'AgentPool01' -ResourceGroupName myresourcegroup -VMName 'VM01'
 ```
 

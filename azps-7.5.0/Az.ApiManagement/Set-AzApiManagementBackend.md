@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementBackend.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementBackend.md
-ms.openlocfilehash: 609e28b46ee5a3971784437ee11465f0ec6af2cf
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: c1bcdf313bd09fdd9a7af0430e552c2e641ce713
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145790344"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145976143"
 ---
 # Set-AzApiManagementBackend
 
@@ -56,8 +56,8 @@ Set-AzApiManagementBackend -Context $apimContext -BackendId 123 -Description "up
 
 Memperbarui Backend. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Set-AzApiManagementBackend -BackendId 123 -Context <PsApiManagementContext> -Credential <PsApiManagementBackendCredential> -Protocol http -ResourceId /subscriptions/subid/resourceGroups/Api-Default-West-US/providers/Microsoft.ApiManagement/service/contoso -Url 'https://contoso.com/awesomeapi'
 ```
 

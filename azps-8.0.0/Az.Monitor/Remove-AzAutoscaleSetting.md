@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Remove-AzAutoscaleSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Remove-AzAutoscaleSetting.md
-ms.openlocfilehash: 13db5fe54fecb1de1c35eb824883553e0a9627e8
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: e174ec17149d8b589ee8be1eaa1067d157f68a98
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145549120"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145972255"
 ---
 # Remove-AzAutoscaleSetting
 
@@ -36,7 +36,8 @@ Cmdlet ini mengimplementasikan pola ShouldProcess, yaitu mungkin meminta konfirm
 
 Menghapus pengaturan Skala Otomatis. (dibuat otomatis)
 
-```powershell <!-- Aladdin Generated Example --> 
+<!-- Aladdin Generated Example -->
+```powershell
 Remove-AzAutoscaleSetting -Name 'LogAlertRule1' -ResourceGroupName MyResourceGroup
 ```
 

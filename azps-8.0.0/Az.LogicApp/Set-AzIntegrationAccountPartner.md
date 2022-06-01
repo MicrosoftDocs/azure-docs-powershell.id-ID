@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/set-azi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Set-AzIntegrationAccountPartner.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Set-AzIntegrationAccountPartner.md
-ms.openlocfilehash: 4def16ca71e48d08c8ad51279f126c9e8e782821
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 3690302fb528edd5125ed9f01ed581c45ccb7973
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145510726"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145974721"
 ---
 # Set-AzIntegrationAccountPartner
 
@@ -54,13 +54,14 @@ BusinessIdentities : [{"Qualifier":"ZZ","Value":"AA"},{"Qualifier":"XX","Value":
 Metadata
 ```
 
-Perintah ini mengubah mitra akun integrasi bernama IntegrationAccountPartner22 di grup sumber daya yang ditentukan.
+Perintah ini mengubah mitra akun integrasi bernama IntegrationAccountPartner22 dalam grup sumber daya yang ditentukan.
 
 ### Contoh 2
 
 Memodifikasi mitra akun integrasi. (dibuat otomatis)
 
-```powershell <!-- Aladdin Generated Example --> 
+<!-- Aladdin Generated Example -->
+```powershell
 Set-AzIntegrationAccountPartner -BusinessIdentities <Object> -Metadata <Object> -Name 'IntegrationAccount31' -PartnerName 'IntegrationAccountPartner22' -PartnerType B2B -ResourceGroupName 'ResourceGroup11'
 ```
 

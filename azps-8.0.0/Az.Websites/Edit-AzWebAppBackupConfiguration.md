@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/edit-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Edit-AzWebAppBackupConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Edit-AzWebAppBackupConfiguration.md
-ms.openlocfilehash: 128d1566a6e80efce748806cbb58cbeb7c48409b
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 9e2c9778493a7a26a9eda59902648af619bcd225
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145513987"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145974019"
 ---
 # Edit-AzWebAppBackupConfiguration
 
@@ -44,8 +44,8 @@ Cmdlet **Edit-AzWebAppBackupConfiguration** mengedit cadangan konfigurasi saat i
 
 Cmdlet Edit-AzWebAppBackupConfiguration mengedit cadangan konfigurasi saat ini untuk Azure Web App. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Edit-AzWebAppBackupConfiguration -FrequencyInterval <Int32> -FrequencyUnit <String> -KeepAtLeastOneBackup -Name IpRule -ResourceGroupName MyResourceGroup -RetentionPeriodInDays <Int32> -StartTime 2016-11-30T22:00:00Z -StorageAccountUrl 'https://storageaccount.file.core.windows.net'
 ```
 

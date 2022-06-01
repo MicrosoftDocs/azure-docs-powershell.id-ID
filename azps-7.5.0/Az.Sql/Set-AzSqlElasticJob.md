@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/Az.sql/set-Azsqlela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlElasticJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlElasticJob.md
-ms.openlocfilehash: 7580e1ec09d1a2dd284c397344ff3399cf478e96
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: d218b703bdeba907d21f8dc3a84668b8b703ef8d
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145723132"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145973191"
 ---
 # Set-AzSqlElasticJob
 
@@ -104,8 +104,8 @@ Memperbarui pekerjaan
 
 ### Contoh 2
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Set-AzSqlElasticJob -AgentName agent -Enable -IntervalCount 1 -IntervalType Hour -Name step1 -ResourceGroupName MyResourceGroup -ServerName s1 -StartTime '9/16/2016 11:31:12'
 ```
 
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndTime
-Waktu akhir jadwal pekerjaan
+Waktu selesai jadwal pekerjaan
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]

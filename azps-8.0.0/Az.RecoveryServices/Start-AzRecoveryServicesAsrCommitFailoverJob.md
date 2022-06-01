@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Start-AzRecoveryServicesAsrCommitFailoverJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Start-AzRecoveryServicesAsrCommitFailoverJob.md
-ms.openlocfilehash: d8bd44256ff88730adaa5ab8bf81ef180f04c08c
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: f64416ac19273b384a672f80dbc9b24a1c46609b
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145507867"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145977637"
 ---
 # Start-AzRecoveryServicesAsrCommitFailoverJob
 
@@ -47,7 +47,8 @@ Memulai failover penerapan untuk rencana pemulihan yang ditentukan dan mengembal
 
 Memulai tindakan failover penerapan untuk objek Site Recovery. (dibuat otomatis)
 
-```powershell <!-- Aladdin Generated Example --> 
+<!-- Aladdin Generated Example -->
+```powershell
 Start-AzRecoveryServicesAsrCommitFailoverJob -ReplicationProtectedItem $ReplicationProtectedItem
 ```
 

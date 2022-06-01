@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementDiagnostic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementDiagnostic.md
-ms.openlocfilehash: 8aba42be62d32f83de962a6e3be56ae42b2a70d7
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 31bdcf5519e3fb6db715949477a53b6f16a20917
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145686442"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145976107"
 ---
 # Set-AzApiManagementDiagnostic
 
@@ -54,7 +54,7 @@ Cmdlet **Set-AzApiManagementDiagnostic** memperbarui diagnostik yang dikonfigura
 
 ## EXAMPLES
 
-### Contoh 1: Memodifikasi diagnostik di cakupan Global
+### Contoh 1: Mengubah diagnostik di lingkup Global
 ```powershell
 $context =New-AzApiManagementContext -ResourceGroupName Api-Default-WestUS -ServiceName contoso
 $diagnostic=Get-AzApiManagementDiagnostic -Context $context -DiagnosticId "applicationinsights"
@@ -93,8 +93,8 @@ Perintah ini memodifikasi Persentase Pengambilan Sampel diagnostik yang ditentuk
 
 Memodifikasi diagnostik API Management di cakupan Global atau Api. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Set-AzApiManagementDiagnostic -AlwaysLog allErrors -ApiId '0001' -Context <PsApiManagementContext> -DiagnosticId 'applicationinsights' -LoggerId 'Logger123' -SamplingSetting <PsApiManagementSamplingSetting>
 ```
 

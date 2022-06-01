@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/reset-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Reset-AzWebAppPublishingProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Reset-AzWebAppPublishingProfile.md
-ms.openlocfilehash: dd520fb02575d271fde4eff1f492ebd952726988
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: c3584377ef04002e51e87a4cb903016d0b97daf2
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145550800"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145974631"
 ---
 # Reset-AzWebAppPublishingProfile
 
@@ -40,8 +40,8 @@ Cmdlet **Reset-AzWebAppPublishingProfile** mengatur ulang profil penerbitan untu
 
 Contoh berikut mereset profil penerbitan untuk IpRule Aplikasi Web yang terkait dengan grup sumber daya MyResourceGroup.
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Reset-AzWebAppPublishingProfile -Name IpRule -ResourceGroupName MyResourceGroup
 ```
 

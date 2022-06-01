@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azsn
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzSnapshotConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzSnapshotConfig.md
-ms.openlocfilehash: 37447ab838e528a177e8ee61bb2d9d700d2861ac
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 685b0f94f8c1b93d82329aaad74fe1eb019308e0
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145538284"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145975440"
 ---
 # New-AzSnapshotConfig
 
@@ -57,15 +57,15 @@ Perintah terakhir mengambil objek rekam jepret dan membuat rekam jepret dengan n
 
 Membuat objek rekam jepret yang dapat dikonfigurasi. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 New-AzSnapshotConfig -CreateOption Empty -Location 'Central US' -SourceUri 'https://contosoaccount.blob.core.windows.net/vhdstore/win7baseimage.vhd'
 ```
 
 ## PARAMETERS
 
 ### -AcceleratedNetwork
-True jika gambar tempat disk OS dibuat mendukung jaringan yang dipercepat.
+Benar jika gambar tempat disk OS dibuat mendukung jaringan yang dipercepat.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -Arsitektur
-Arsitektur CPU didukung oleh disk OS. Nilai yang mungkin adalah "X64" dan "Arm64".
+Arsitektur CPU yang didukung oleh disk OS. Nilai yang mungkin adalah "X64" dan "Arm64".
 
 ```yaml
 Type: System.String
@@ -275,7 +275,7 @@ Accept wildcard characters: False
 ```
 
 ### -Inkremental
-Menentukan rekam jepret bertahap. Rekam jepret bertambah bertahap pada disk yang sama menempati lebih sedikit ruang daripada rekam jepret penuh dan dapat berbeda.
+Menentukan rekam jepret inkremental. Rekam jepret bertambah bertahap pada disk yang sama menempati lebih sedikit ruang daripada rekam jepret penuh dan dapat berbeda.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -367,7 +367,7 @@ Accept wildcard characters: False
 ```
 
 ### -PurchasePlan
-{{ Isi Deskripsi Pesawat Pembelian }}
+{{ Fill PurchasePlan Description }}
 
 ```yaml
 Type: Microsoft.Azure.Commands.Compute.Automation.Models.PSPurchasePlan

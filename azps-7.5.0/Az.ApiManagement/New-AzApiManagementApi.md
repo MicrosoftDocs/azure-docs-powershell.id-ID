@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementApi.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementApi.md
-ms.openlocfilehash: 0f16bea7c55ae57374fd6a32294ef869815cb429
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: 1766ac471b2ef7a12b4dcaf974599397ed78ced0
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145775244"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145974415"
 ---
 # New-AzApiManagementApi
 
@@ -86,8 +86,8 @@ Perintah ini membuat API `echoapiv3` di ApiVersionSet `xmsVersionSet` dan menyal
 
 Membuat API. (dibuat otomatis)
 
-```powershell
 <!-- Aladdin Generated Example -->
+```powershell
 New-AzApiManagementApi -ApiId '0001' -Context <PsApiManagementContext> -Name 'Echo api' -Path 'echov3' -Protocols Http -ServiceUrl 'https://contoso.com/apis/echo'
 ```
 

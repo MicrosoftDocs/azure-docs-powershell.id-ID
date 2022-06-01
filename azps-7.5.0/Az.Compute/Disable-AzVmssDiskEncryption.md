@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/disable-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Disable-AzVmssDiskEncryption.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Disable-AzVmssDiskEncryption.md
-ms.openlocfilehash: c05582b0f5975bdfc10dbc2afa9029af1e09719f
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: d3145a4f9aad588218a852e7bb00a922a9a50ba3
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145736164"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145972111"
 ---
 # Disable-AzVmssDiskEncryption
 
@@ -44,7 +44,8 @@ Menonaktifkan enkripsi disk pada set skala VM bernama VMSS001 yang termasuk dala
 
 Menonaktifkan enkripsi disk pada set skala VM. (dibuat otomatis)
 
-```powershell <!-- Aladdin Generated Example --> 
+<!-- Aladdin Generated Example -->
+```powershell
 Disable-AzVmssDiskEncryption -ResourceGroupName 'Group001' -VMScaleSetName 'VMSS001' -VolumeType OS
 ```
 

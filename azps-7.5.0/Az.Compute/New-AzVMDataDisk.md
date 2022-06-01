@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVMDataDisk.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVMDataDisk.md
-ms.openlocfilehash: 34635ba83066ee6aeba972d6a50d7b5e68f05cc7
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 78cfdc16e9071d04b6973009237f554d9d5dcad4
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145734418"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145977218"
 ---
 # New-AzVMDataDisk
 
@@ -59,7 +59,8 @@ Perintah akhir memperbarui VM VM dengan menambahkan disk data baru.
 
 Membuat objek disk data lokal untuk komputer virtual atau VM Vmss. (dibuat otomatis)
 
-```powershell <!-- Aladdin Generated Example --> 
+<!-- Aladdin Generated Example -->
+```powershell
 New-AzVMDataDisk -Caching None -CreateOption Attach -DiskSizeInGB 1 -Lun 2 -Name 'AgentPool01'
 ```
 

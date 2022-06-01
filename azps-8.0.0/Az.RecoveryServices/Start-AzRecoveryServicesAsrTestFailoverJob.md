@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Start-AzRecoveryServicesAsrTestFailoverJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Start-AzRecoveryServicesAsrTestFailoverJob.md
-ms.openlocfilehash: ca2216ec7061bdfe94c5152c01ef65700dfaed7e
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: facd2674b36d10de2a3614b53a5221cf76c347f4
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145507858"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145977601"
 ---
 # Start-AzRecoveryServicesAsrTestFailoverJob
 
@@ -68,7 +68,7 @@ Start-AzRecoveryServicesAsrTestFailoverJob -ReplicationProtectedItem <ASRReplica
 ```
 
 ## DESCRIPTION
-Cmdlet **Start-AzRecoveryServicesAsrTestFailoverJob** memulai uji failover item yang dilindungi replikasi Azure Site Recovery atau rencana pemulihan.
+Cmdlet **Start-AzRecoveryServicesAsrTestFailoverJob** memulai uji failover item atau rencana pemulihan yang dilindungi replikasi Azure Site Recovery.
 Anda dapat memeriksa apakah pekerjaan berhasil dengan menggunakan cmdlet Get-AzRecoveryServicesAsrJob.
 
 ## EXAMPLES
@@ -84,15 +84,15 @@ Memulai operasi failover pengujian untuk rencana pemulihan dengan parameter yang
 
 Memulai operasi failover pengujian. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Start-AzRecoveryServicesAsrTestFailoverJob -AzureVMNetworkId <String> -Direction PrimaryToRecovery -RecoveryPlan $RP
 ```
 
 ## PARAMETERS
 
 ### -AzureVMNetworkId
-Menentukan id jaringan azure vm untuk pemulihan VM setelah failover.
+Menentukan id jaringan Azure vm untuk VM pemulihan setelah failover.
 
 ```yaml
 Type: System.String

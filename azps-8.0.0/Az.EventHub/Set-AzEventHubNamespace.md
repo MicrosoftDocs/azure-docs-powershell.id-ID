@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/set-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Set-AzEventHubNamespace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Set-AzEventHubNamespace.md
-ms.openlocfilehash: 52c8c7ae571ac78bed9b3e91211d4084e9c7b76a
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 513c4408a6122b8963372ac2f1ba0ea136ca548d
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145543688"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145972471"
 ---
 # Set-AzEventHubNamespace
 
@@ -69,7 +69,7 @@ Memperbarui Tag untuk namespace \`MyNamespaceName\` menjadi Dibuat.
 
 ### Contoh 2
 ```powershell
-Set-AzEventHubNamespace -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -Location "WestUS" -State Created -EnableAutoInflate -MaximumThroughputUnits 10 
+Set-AzEventHubNamespace -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -Location "WestUS" -State Created -EnableAutoInflate -MaximumThroughputUnits 10
 ```
 
 ```output
@@ -97,7 +97,8 @@ Memperbarui status namespace \`MyNamespaceName\` dengan AutoInflate = diaktifkan
 
 Memperbarui namespace layanan Azure Event Hubs yang ditentukan. (dibuat otomatis)
 
-```powershell <!-- Aladdin Generated Example --> 
+<!-- Aladdin Generated Example -->
+```powershell
 Set-AzEventHubNamespace -Location 'WestUS' -Name MyNamespaceName -ResourceGroupName MyResourceGroupName -SkuName Basic
 ```
 
@@ -136,19 +137,19 @@ Encryption.KeySource          : MicrosoftKeyVault
 Identity                      : PrinicipalId : 000000,
                                 TenantId: 000000,
                                 Type: SystemAssigned,
-                                UserAssignedIdentity: 
+                                UserAssignedIdentity:
 IdentityType                  : SystemAssigned
-IdentityId                    : 
+IdentityId                    :
 EncryptionConfig              : {{ KeyName: key1,
                                    KeyVaultUri: https://myvaultname.vault.azure.net,
                                    KeyVersion: ,
-                                   UserAssignedIdentity: 
+                                   UserAssignedIdentity:
                                  },
                                  {
                                    KeyName: key2,
                                    KeyVaultUri: https://myvaultname.vault.azure.net,
                                    KeyVersion: ,
-                                   UserAssignedIdentity: 
+                                   UserAssignedIdentity:
                                  }}
 ```
 
@@ -189,25 +190,25 @@ Encryption.KeySource          : MicrosoftKeyVault
 Identity                      : PrinicipalId : 000000,
                                 TenantId: 000000,
                                 Type: SystemAssigned,
-                                UserAssignedIdentity: 
+                                UserAssignedIdentity:
 IdentityType                  : SystemAssigned
-IdentityId                    : 
+IdentityId                    :
 EncryptionConfig              : {{ KeyName: key1,
                                    KeyVaultUri: https://myvaultname.vault.azure.net,
                                    KeyVersion: ,
-                                   UserAssignedIdentity: 
+                                   UserAssignedIdentity:
                                  },
                                  {
                                    KeyName: key2,
                                    KeyVaultUri: https://myvaultname.vault.azure.net,
                                    KeyVersion: ,
-                                   UserAssignedIdentity: 
+                                   UserAssignedIdentity:
                                  },
                                  {
                                    KeyName: key3,
                                    KeyVaultUri: https://myvaultname.vault.azure.net,
                                    KeyVersion: ,
-                                   UserAssignedIdentity: 
+                                   UserAssignedIdentity:
                                  }}
 ```
 

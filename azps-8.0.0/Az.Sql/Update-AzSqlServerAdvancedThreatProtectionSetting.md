@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/Update-AzSql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Update-AzSqlServerAdvancedThreatProtectionSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Update-AzSqlServerAdvancedThreatProtectionSetting.md
-ms.openlocfilehash: a8a54b31954d70a5df31390d736a3c9e38615a05
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 4427b9166cb5e3a7d794ec554ef2a276b15f50ff
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145530718"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145974649"
 ---
 # Update-AzSqlServerAdvancedThreatProtectionSetting
 
@@ -28,7 +28,7 @@ Update-AzSqlServerAdvancedThreatProtectionSetting [-PassThru] [-NotificationReci
 ```
 
 ## DESCRIPTION
-**Cmdlet Update-AzSqlServerAdvancedThreatProtectionSetting** menetapkan pengaturan perlindungan ancaman tingkat lanjut pada server Azure SQL.
+Cmdlet **Update-AzSqlServerAdvancedThreatProtectionSetting** menetapkan pengaturan perlindungan ancaman tingkat lanjut pada server Azure SQL.
 Untuk mengaktifkan perlindungan ancaman tingkat lanjut pada server, pengaturan audit harus diaktifkan di server tersebut.
 Untuk menggunakan cmdlet ini, tentukan parameter *ResourceGroupName* dan ServerName untuk mengidentifikasi server.
 
@@ -45,8 +45,8 @@ Perintah ini mengatur pengaturan perlindungan ancaman tingkat lanjut untuk serve
 
 Mengatur pengaturan perlindungan ancaman tingkat lanjut pada server. (dibuat otomatis)
 
-```powershell
 <!-- Aladdin Generated Example -->
+```powershell
 Update-AzSqlServerAdvancedThreatProtectionSetting -EmailAdmins $false -ResourceGroupName 'ResourceGroup11' -RetentionInDays <UInt32> -ServerName 'Server01' -StorageAccountName 'mystorageAccount'
 ```
 
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExcludedDetectionType
-Menentukan array jenis deteksi untuk dikecualikan dari pengaturan.
+Menentukan array jenis deteksi yang akan dikecualikan dari pengaturan.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Sql_Injection
 - Sql_Injection_Vulnerability
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang sedang Anda kerjakan.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -235,7 +235,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Sql.ThreatDetection.Model.DetectionType[]
 
-### System.Nullable'1[[System.UInt32, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.UInt32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
 
 ## OUTPUTS
 

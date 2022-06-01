@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/Az.sql/remove-Azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlElasticJobStep.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlElasticJobStep.md
-ms.openlocfilehash: b000c51f4fe317ea870a706011795e5fb6fe2c01
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 3b3be42c38e7ca9d332972aee869e527e46edb60
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145724860"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145973227"
 ---
 # Remove-AzSqlElasticJobStep
 
@@ -62,8 +62,8 @@ Menghapus langkah pekerjaan dari pekerjaan
 
 ### Contoh 2
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Remove-AzSqlElasticJobStep -AgentName agent -JobName job1 -Name step1 -ResourceGroupName MyResourceGroup -ServerName s1
 ```
 

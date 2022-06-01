@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrJob.md
-ms.openlocfilehash: 3b0ef2504887debb11261ac52df5b30a192eb9ad
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 3fb81b7657611e337993eec7f107db54594d4ea0
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145650694"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145976881"
 ---
 # Get-AzRecoveryServicesAsrJob
 
@@ -49,13 +49,14 @@ Anda dapat menggunakan cmdlet ini untuk melihat pekerjaan ASR di vault Layanan P
 $jobs = Get-AzRecoveryServicesAsrJob -TargetObjectId $ASRObjectId
 ```
 
-Mengembalikan semua pekerjaan pada objek ASR tertentu (referensi objek ASR seperti item yang direplikasi atau rencana pemulihan dengan ID-nya.) 
+Mengembalikan semua pekerjaan pada objek ASR tertentu (referensikan objek ASR seperti item yang direplikasi atau rencana pemulihan dengan ID-nya.)
 
 ### Contoh 2
 
 Mendapatkan detail pekerjaan ASR yang ditentukan atau daftar pekerjaan ASR terbaru di vault Layanan Pemulihan. (dibuat otomatis)
 
-```powershell <!-- Aladdin Generated Example --> 
+<!-- Aladdin Generated Example -->
+```powershell
 Get-AzRecoveryServicesAsrJob -Job $Job
 ```
 
@@ -197,7 +198,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Mulai ulang-AzRecoveryServicesAsrJob](./Restart-AzRecoveryServicesAsrJob.md)
+[Restart-AzRecoveryServicesAsrJob](./Restart-AzRecoveryServicesAsrJob.md)
 
 [Resume-AzRecoveryServicesAsrJob](./Resume-AzRecoveryServicesAsrJob.md)
 

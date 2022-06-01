@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementLogger.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementLogger.md
-ms.openlocfilehash: 0ecc058b215378fb4fe951f9c9f6d034a1acc86b
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: 01a8678f7d1e27d554ccdfcaf87182cb037257ba
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145817388"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145975351"
 ---
 # New-AzApiManagementLogger
 
@@ -53,8 +53,8 @@ Perintah ini membuat pencatat bernama ContosoSdkEventHub dengan menggunakan stri
 
 Membuat pencatat API Management. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 New-AzApiManagementLogger -Context <PsApiManagementContext> -InstrumentationKey <String> -LoggerId 'Logger123'
 ```
 
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ### -IsBuffered
 Menentukan apakah rekaman dalam pencatat di-buffer sebelum diterbitkan.
 Nilai defaultnya adalah $True.
-Saat rekaman di-buffer, rekaman dikirim ke Azure Event Hubs setiap 15 detik, atau setiap kali buffer menerima pesan 256 KB.
+Ketika rekaman di-buffer, rekaman dikirim ke Azure Event Hubs setiap 15 detik, atau setiap kali buffer menerima pesan 256 KB.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]

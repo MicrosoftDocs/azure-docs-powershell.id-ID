@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Disable-AzRecoveryServicesBackupAutoProtection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Disable-AzRecoveryServicesBackupAutoProtection.md
-ms.openlocfilehash: d104064031913cf66a3405cb763de1a757fe1f9b
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: de65b2903b63d922061797718e7c14b0d63b0eff
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145651054"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145977187"
 ---
 # Disable-AzRecoveryServicesBackupAutoProtection
 
@@ -45,7 +45,8 @@ Cmdlet pertama mendapatkan kontainer Cadangan jenis AzureVMAppContainer.  Cmdlet
 
 Menonaktifkan pencadangan otomatis untuk item yang dapat dilindungi. (dibuat otomatis)
 
-```powershell <!-- Aladdin Generated Example --> 
+<!-- Aladdin Generated Example -->
+```powershell
 Disable-AzRecoveryServicesBackupAutoProtection -BackupManagementType AzureVM -InputItem <ProtectableItemBase> -VaultId $vault.ID -WorkloadType AzureVM
 ```
 

@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/disable
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Disable-AzContextAutosave.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Disable-AzContextAutosave.md
-ms.openlocfilehash: 768df672afd57dc2c9befdb21c02a7675b4f0dea
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: f9013af70d30ff1fccd17de515fdba02c457bd63
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145538337"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145977493"
 ---
 # Disable-AzContextAutosave
 
 ## SYNOPSIS
-Nonaktifkan simpan otomatis kredensial Azure.  Informasi masuk Anda akan dilupakan saat berikutnya Anda membuka jendela PowerShell
+Nonaktifkan penyimpanan otomatis kredensial Azure.  Informasi masuk Anda akan dilupakan saat anda membuka jendela PowerShell berikutnya
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Disable-AzContextAutosave [-Scope <ContextModificationScope>] [-DefaultProfile <
 ```
 
 ## DESCRIPTION
-Nonaktifkan simpan otomatis kredensial Azure.  Informasi masuk Anda akan dilupakan saat berikutnya Anda membuka jendela PowerShell
+Nonaktifkan penyimpanan otomatis kredensial Azure.  Informasi masuk Anda akan dilupakan saat anda membuka jendela PowerShell berikutnya
 
 ## EXAMPLES
 
@@ -38,9 +38,10 @@ Nonaktifkan simpan otomatis untuk pengguna saat ini.
 
 ### Contoh 2
 
-Nonaktifkan penyimpanan otomatis kredensial Azure dalam sesi powershell ini. (dibuat otomatis)
+Nonaktifkan menyimpan otomatis kredensial Azure dalam sesi powershell ini. (dibuat otomatis)
 
-```powershell <!-- Aladdin Generated Example --> 
+<!-- Aladdin Generated Example -->
+```powershell
 Disable-AzContextAutosave -Scope Process
 ```
 

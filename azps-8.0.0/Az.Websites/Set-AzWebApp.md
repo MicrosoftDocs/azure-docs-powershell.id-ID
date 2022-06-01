@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/set-azw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Set-AzWebApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Set-AzWebApp.md
-ms.openlocfilehash: 02400e32e410b2bb6e977b7c057ec8e85be82a3c
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 65a5d8674049f9d5b608dc7b86c95c66bd8361a7
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145618227"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145974487"
 ---
 # Set-AzWebApp
 
@@ -42,7 +42,7 @@ Set-AzWebApp [[-Use32BitWorkerProcess] <Boolean>] [[-AutoSwapSlotName] <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzWebApp** mengatur Azure Web App.
+Cmdlet **Set-AzWebApp** menetapkan Azure Web App.
 
 ## EXAMPLES
 
@@ -51,7 +51,7 @@ Cmdlet **Set-AzWebApp** mengatur Azure Web App.
 Set-AzWebApp -ResourceGroupName "Default-Web-WestUS" -Name "ContosoWebApp" -AppServicePlan "ContosoPlan"
 ```
 
-Perintah ini mengubah paket layanan aplikasi yang terkait dengan Aplikasi Web ContosoWebApp yang terkait dengan grup sumber daya Default-Web-WestUS. Gunakan tautan untuk mempelajari selengkapnya tentang mengubah paket layanan aplikasi dan batasan yang terkait dengannya.
+Perintah ini mengubah paket layanan aplikasi yang terkait dengan Aplikasi Web ContosoWebApp yang terkait dengan grup sumber daya Default-Web-WestUS. Gunakan tautan untuk mempelajari selengkapnya tentang mengubah paket dan batasan layanan aplikasi yang terkait dengannya.
 https://docs.microsoft.com/azure/app-service/app-service-plan-manage#move-an-app-to-another-app-service-plan
 
 ### Contoh 2
@@ -65,14 +65,14 @@ Perintah ini mengatur HttpLoggingEnabled ke true untuk Aplikasi Web ContosoWebAp
 
 Memodifikasi Azure Web App. (dibuat otomatis)
 
-```powershell
 <!-- Aladdin Generated Example -->
+```powershell
 Set-AzWebApp -AppSettings <Hashtable> -Name 'ContosoWebApp' -ResourceGroupName 'Default-Web-WestUS'
 ```
 
 ### Contoh 4
 
-Contoh berikut membuat string koneksi bernama myConnectionString untuk Aplikasi Web ContosoWebApp. Ini menggantikan semua string koneksi yang ada untuk Web App ContosoWebApp.
+Contoh berikut membuat string koneksi bernama myConnectionString untuk Aplikasi Web ContosoWebApp. Ini menggantikan semua string koneksi yang ada untuk Aplikasi Web ContosoWebApp.
 
 ```powershell
 $hashtable =  @{myConnectionString = @{Type='MySql';Value='MySql Connection string'}}
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -AppSettings
-Aplikasi Pengaturan HashTable. App Pengaturan yang ada akan diganti, menghapus pengaturan apa pun yang tidak disediakan.
+HashTable Pengaturan Aplikasi. Pengaturan Aplikasi yang ada akan diganti, menghapus pengaturan apa pun yang tidak disediakan.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -AssignIdentity
-Mengaktifkan/menonaktifkan MSI pada aplikasi web atau functionapp azure yang sudah ada
+Mengaktifkan/menonaktifkan MSI pada azure webapp atau functionapp yang sudah ada
 
 ```yaml
 Type: System.Boolean
@@ -198,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConnectionStrings
-String Koneksi HashTable
+HashTable String Koneksi
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -258,7 +258,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContainerRegistryUser
-Nama Pengguna Azure Container Registry Privat
+Nama Pengguna Registri Kontainer Privat
 
 ```yaml
 Type: System.String
@@ -303,7 +303,7 @@ Accept wildcard characters: False
 ```
 
 ### -DetailedErrorLoggingEnabled
-Boolean Yang Diaktifkan Pencatatan Kesalahan Terperinci
+Boolean Diaktifkan Pengelogan Kesalahan Terperinci
 
 ```yaml
 Type: System.Boolean
@@ -349,7 +349,7 @@ Accept wildcard characters: False
 ```
 
 ### -HandlerMappings
-Daftar Pemetaan Handler
+Daftar IList Pemetaan Handler
 
 ```yaml
 Type: System.Collections.Generic.IList`1[Microsoft.Azure.Management.WebSites.Models.HandlerMapping]
@@ -394,7 +394,7 @@ Accept wildcard characters: False
 ```
 
 ### -HttpsOnly
-Mengaktifkan/menonaktifkan pengalihan semua lalu lintas ke HTTPS di aplikasi web atau functionapp azure yang ada
+Mengaktifkan/menonaktifkan pengalihan semua lalu lintas ke HTTPS pada aplikasi web azure atau functionapp yang ada
 
 ```yaml
 Type: System.Boolean
@@ -591,7 +591,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.WebApps.Models.PSSite
 
 ## NOTES
-Cmdlet yang disediakan di bawah ini akan membantu Anda memperbarui Azure Web App ke **DOTNETCORE** $PropertiesObject = @{ "CURRENT_STACK" = "dotnetcore" } New-AzResource -PropertyObject $PropertiesObject -ResourceGroupName "Default-Web-WestUS" -- ResourceType Microsoft.Web/sites/config -ResourceName "ContosoWebApp/metadata" -ApiVersion 2018-02-01 -Force Ganti nilai `Default-Web-WestUS` dengan nama grup sumber daya Anda dari webapp dan `ContosoWebApp` dengan nama webapp.
+Cmdlet yang disediakan di bawah ini akan membantu Anda memperbarui Azure Web App ke **DOTNETCORE** $PropertiesObject = @{ "CURRENT_STACK" = "dotnetcore" } New-AzResource -PropertyObject $PropertiesObject -ResourceGroupName "Default-Web-WestUS" -- ResourceType Microsoft.Web/sites/config -ResourceName "ContosoWebApp/metadata" -ApiVersion 2018-02-01 -Paksa Ganti nilai `Default-Web-WestUS` dengan nama grup sumber daya aplikasi web Anda dan `ContosoWebApp` dengan nama webapp.
 
 ## RELATED LINKS
 
@@ -601,7 +601,7 @@ Cmdlet yang disediakan di bawah ini akan membantu Anda memperbarui Azure Web App
 
 [Remove-AzWebApp](./Remove-AzWebApp.md)
 
-[Hidupkan ulang-AzWebApp](./Restart-AzWebApp.md)
+[Mulai ulang-AzWebApp](./Restart-AzWebApp.md)
 
 [Start-AzWebApp](./Start-AzWebApp.md)
 

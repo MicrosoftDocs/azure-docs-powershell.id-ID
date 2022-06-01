@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/Az.sql/new-Azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlDatabaseInstanceFailoverGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlDatabaseInstanceFailoverGroup.md
-ms.openlocfilehash: 4b44a1116b841ee63c529fafca6ba4f5e2d00aaf
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 3b014be81b30bb2c2e18a5617ad2ee1315da0b08
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145545659"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145975369"
 ---
 # Baru-AzSqlDatabaseInstanceFailoverGroup
 
@@ -75,7 +75,7 @@ PartnerManagedInstanceName            : managedInstance2
 ReplicationRole                       : Primary
 ReplicationState                      : CATCH_UP
 ReadWriteFailoverPolicy               : Manual
-FailoverWithDataLossGracePeriodHours  : 
+FailoverWithDataLossGracePeriodHours  :
 ReadOnlyFailoverPolicy                : Disabled
 Id                                    : /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg/providers/Microsoft.Sql/locations/eastus/instanceFailoverGroups/fg
 ```
@@ -86,8 +86,8 @@ Perintah ini membuat Grup Failover Instans baru dengan kebijakan failover 'Manua
 
 Perintah ini membuat Grup Failover Instans Azure SQL Database baru. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 New-AzSqlDatabaseInstanceFailoverGroup -FailoverPolicy Automatic -GracePeriodWithDataLossHours 1 -Location location -Name fgName -PartnerManagedInstanceName $partnerManagedInstance.Name -PartnerRegion $partnerRegion -PartnerResourceGroupName rg2 -PrimaryManagedInstanceName $managedInstance.Name -ResourceGroupName rg
 ```
 

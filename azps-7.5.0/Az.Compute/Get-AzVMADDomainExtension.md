@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMADDomainExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMADDomainExtension.md
-ms.openlocfilehash: 131d172ebd770957df0524b38a04dfc8382dfbb0
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: a178fcdc3c4dbba7501d29a8e59fa27523bf61d9
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145798442"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145974361"
 ---
 # Get-AzVMADDomainExtension
 
@@ -37,7 +37,8 @@ Cmdlet **Get-AzVMADDomainExtension** mendapatkan informasi tentang ekstensi doma
 
 Mendapatkan informasi tentang ekstensi domain AD. (dibuat otomatis)
 
-```powershell <!-- Aladdin Generated Example --> 
+<!-- Aladdin Generated Example -->
+```powershell
 Get-AzVMADDomainExtension -Name 'AgentPool01' -ResourceGroupName myresourcegroup -VMName 'VM01'
 ```
 

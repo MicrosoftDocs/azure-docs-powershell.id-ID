@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Set-AzRecoveryServicesAsrAlertSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Set-AzRecoveryServicesAsrAlertSetting.md
-ms.openlocfilehash: b0b5ef08d99ee8ab7aeb67f3cee4262599957cd4
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 8b33be1a2dc2f6d6fcc8a44a029365843f0da286
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145619300"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145977709"
 ---
 # Set-AzRecoveryServicesAsrAlertSetting
 
@@ -78,7 +78,8 @@ Atur pemberitahuan untuk alamat email kustom dan untuk pemilik langganan.
 
 Konfigurasikan pengaturan pemberitahuan Azure Site Recovery (pemberitahuan email) untuk vault. (dibuat otomatis)
 
-```powershell <!-- Aladdin Generated Example --> 
+<!-- Aladdin Generated Example -->
+```powershell
 Set-AzRecoveryServicesAsrAlertSetting -CustomEmailAddress 'abcxxxx@xxxx.com' -DisableEmailToSubscriptionOwner
 ```
 
@@ -160,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -LocaleID
-Bahasa email pemberitahuan /pemberitahuan kepada pengguna(kode budaya yang didukung dari microsoft). 
+Bahasa email pemberitahuan /pemberitahuan kepada pengguna(kode budaya yang didukung dari microsoft).
 
 ```yaml
 Type: System.String

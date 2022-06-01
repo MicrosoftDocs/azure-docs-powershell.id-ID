@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Start-AzRecoveryServicesAsrCancelFailoverJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Start-AzRecoveryServicesAsrCancelFailoverJob.md
-ms.openlocfilehash: d725fa4b6628f14261fc1b409a00e69f310fe7a0
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 4c08c8b3343801349f9272f3112203b08f889c58
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145530994"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145977673"
 ---
 # Start-AzRecoveryServicesAsrCancelFailoverJob
 
@@ -47,8 +47,8 @@ Memulai failover pembatalan untuk rencana pemulihan yang ditentukan dan mengemba
 
 Memulai tindakan batalkan failover untuk objek Site Recovery. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Start-AzRecoveryServicesAsrCancelFailoverJob -ReplicationProtectedItem $ReplicationProtectedItem
 ```
 

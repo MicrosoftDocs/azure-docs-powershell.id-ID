@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/resu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Resume-AzDataFactoryPipeline.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Resume-AzDataFactoryPipeline.md
-ms.openlocfilehash: ab3d941ade4218496c8ac78c3a4420e9ec0094bb
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 655a386b859aa52012d3e026c37aa979d1760d15
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145519834"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145977331"
 ---
 # Resume-AzDataFactoryPipeline
 
@@ -44,7 +44,7 @@ Resume-AzDataFactoryPipeline -ResourceGroupName "ADF" -Name "DPWikisample" -Data
 
 ```output
 Confirm
-Are you sure you want to resume pipeline 'DPWikisample' in data factory 'WikiADF'? 
+Are you sure you want to resume pipeline 'DPWikisample' in data factory 'WikiADF'?
 [Y] Yes  [N] No  [S] Suspend  [?] Help (default is "Y"): Y
 True
 ```
@@ -57,7 +57,8 @@ Perintah mengembalikan nilai $True.
 
 Melanjutkan alur yang ditangguhkan di Data Factory. (dibuat otomatis)
 
-```powershell <!-- Aladdin Generated Example --> 
+<!-- Aladdin Generated Example -->
+```powershell
 Resume-AzDataFactoryPipeline -DataFactory $DataFactory -Name 'DPWikisample'
 ```
 
@@ -198,6 +199,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Set-AzDataFactoryPipelineActivePeriod](./Set-AzDataFactoryPipelineActivePeriod.md)
 
-[Suspensi-AzDataFactoryPipeline](./Suspend-AzDataFactoryPipeline.md)
+[Suspend-AzDataFactoryPipeline](./Suspend-AzDataFactoryPipeline.md)
 
 

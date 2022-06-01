@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMDscExtensionStatus.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMDscExtensionStatus.md
-ms.openlocfilehash: afdd6569e47bb72bae11278b35018605acc01440
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 220a8846d16cd9190dde7459106ad535d2588d65
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145505962"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145971805"
 ---
 # Get-AzVMDscExtensionStatus
 
@@ -34,7 +34,7 @@ Get-AzVMDscExtensionStatus [-VM <PSVirtualMachine>] [-DefaultProfile <IAzureCont
 
 ## DESCRIPTION
 Cmdlet **Get-AzVMDscExtensionStatus** mendapatkan status handler ekstensi Desired State Configuration (DSC) untuk komputer virtual dalam grup sumber daya.
-Ketika konfigurasi diterapkan cmdlet ini menghasilkan output yang konsisten dengan cmdlet Start-DscConfiguration.
+Ketika konfigurasi diterapkan, cmdlet ini menghasilkan output yang konsisten dengan cmdlet Start-DscConfiguration.
 
 ## EXAMPLES
 
@@ -42,8 +42,8 @@ Ketika konfigurasi diterapkan cmdlet ini menghasilkan output yang konsisten deng
 
 Mendapatkan status handler ekstensi DSC untuk komputer virtual. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Get-AzVMDscExtensionStatus -Name 'AgentPool01' -ResourceGroupName myresourcegroup -VMName 'VM01'
 ```
 

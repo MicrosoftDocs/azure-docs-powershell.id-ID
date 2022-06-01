@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.devtestlabs/set-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DevTestLabs/DevTestLabs/help/Set-AzDtlAutoShutdownPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DevTestLabs/DevTestLabs/help/Set-AzDtlAutoShutdownPolicy.md
-ms.openlocfilehash: 875c645005238e6967696222c94be4e7f49d246f
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 726527b8d8dcaffae0f1e28aed341c0d8d55bc8a
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145501308"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145977295"
 ---
 # Set-AzDtlAutoShutdownPolicy
 
@@ -42,7 +42,8 @@ Cmdlet menggunakan grup sumber daya dan nama lab yang ditentukan untuk mengatur 
 
 Mengatur kebijakan matikan otomatis lab DevTest Labs. (dibuat otomatis)
 
-```powershell <!-- Aladdin Generated Example --> 
+<!-- Aladdin Generated Example -->
+```powershell
 Set-AzDtlAutoShutdownPolicy -Enable -LabName <String> -ResourceGroupName MyResourceGroup -Time <DateTime>
 ```
 

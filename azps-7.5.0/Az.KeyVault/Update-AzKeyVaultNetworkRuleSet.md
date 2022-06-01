@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Update-AzKeyVaultNetworkRuleSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Update-AzKeyVaultNetworkRuleSet.md
-ms.openlocfilehash: 41c3f11a44f9845db456ce1a1010cf0948bda1c1
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 64772b99a5fcf720db91220df64070606a1b7c4f
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145694242"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145972543"
 ---
 # Update-AzKeyVaultNetworkRuleSet
 
@@ -50,13 +50,13 @@ Update-AzKeyVaultNetworkRuleSet [-ResourceId] <String>
 ```
 
 ## DESCRIPTION
-Perintah **Update-AzKeyVaultNetworkRuleSet** memperbarui aturan jaringan yang berlaku pada brankas kunci yang ditentukan. 
+Perintah **Update-AzKeyVaultNetworkRuleSet** memperbarui aturan jaringan yang berlaku pada brankas kunci yang ditentukan.
 
 ## EXAMPLES
 
 ### Contoh 1
 ```powershell
-$frontendSubnet = New-AzVirtualNetworkSubnetConfig -Name frontendSubnet -AddressPrefix "10.0.1.0/24" -ServiceEndpoint Microsoft.KeyVault 
+$frontendSubnet = New-AzVirtualNetworkSubnetConfig -Name frontendSubnet -AddressPrefix "10.0.1.0/24" -ServiceEndpoint Microsoft.KeyVault
 $virtualNetwork = New-AzVirtualNetwork -Name myVNet -ResourceGroupName myRG -Location westus -AddressPrefix "10.0.0.0/16" -Subnet $frontendSubnet
 $myNetworkResId = (Get-AzVirtualNetwork -Name myVNet -ResourceGroupName myRG).Subnets[0].Id
 Update-AzKeyVaultNetworkRuleSet -VaultName 'myVault' -ResourceGroupName myRG -Bypass AzureServices -IpAddressRange "10.0.1.0/24" -VirtualNetworkResourceId $myNetworkResId -PassThru
@@ -108,8 +108,8 @@ Perintah ini memperbarui set aturan jaringan pada vault bernama 'myVault' untuk 
 
 Memperbarui seperangkat aturan jaringan pada brankas kunci. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Update-AzKeyVaultNetworkRuleSet -DefaultAction Allow -VaultName 'myVault'
 ```
 

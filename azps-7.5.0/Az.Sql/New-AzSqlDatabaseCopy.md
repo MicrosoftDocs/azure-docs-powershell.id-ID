@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/new-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlDatabaseCopy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlDatabaseCopy.md
-ms.openlocfilehash: 2bb24c7c270ec301d8df47831ffd5979f7361cae
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: be444fdee85079ada7d5ad8fa0c5ef5f4ef00932
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145726318"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145973335"
 ---
 # New-AzSqlDatabaseCopy
 
@@ -52,8 +52,8 @@ Cmdlet ini juga didukung oleh layanan SQL Server Stretch Database di Azure.
 
 Membuat salinan SQL Database yang menggunakan rekam jepret pada saat ini. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 New-AzSqlDatabaseCopy -CopyDatabaseName <String> -CopyResourceGroupName <String> -CopyServerName <String> -DatabaseName db1 -ResourceGroupName MyResourceGroup -ServerName s1
 ```
 

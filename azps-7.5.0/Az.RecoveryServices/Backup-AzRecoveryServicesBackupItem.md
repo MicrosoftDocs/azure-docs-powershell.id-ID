@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Backup-AzRecoveryServicesBackupItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Backup-AzRecoveryServicesBackupItem.md
-ms.openlocfilehash: 1e7f43704852347e26c3967dd651eeb2aa9afe9b
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 4c02ec342fca3af827befcfa6031048673ae0873
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145651108"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145971859"
 ---
 # Backup-AzRecoveryServicesBackupItem
 
@@ -32,7 +32,9 @@ Backup-AzRecoveryServicesBackupItem -Item <ItemBase> [-ExpiryDateTimeUTC <DateTi
 
 ## DESCRIPTION
 
-Cmdlet **Backup-AzRecoveryServicesBackupItem** mengambil cadangan adhoc item cadangan Azure yang dilindungi. Dengan menggunakan cmdlet ini, Anda dapat melakukan pencadangan awal segera setelah mengaktifkan perlindungan atau memulai pencadangan jika pencadangan terjadwal gagal. Cmdlet ini juga dapat digunakan untuk retensi kustom dengan atau tanpa tanggal kedaluwarsa - lihat teks bantuan parameter untuk detail selengkapnya. 
+Cmdlet **Backup-AzRecoveryServicesBackupItem** mengambil cadangan adhoc item cadangan Azure yang dilindungi.
+Dengan menggunakan cmdlet ini, Anda dapat melakukan pencadangan awal segera setelah Mengaktifkan perlindungan atau memulai pencadangan jika pencadangan terjadwal gagal.
+Cmdlet ini juga dapat digunakan untuk retensi kustom dengan atau tanpa tanggal kedaluwarsa - lihat teks bantuan parameter untuk detail selengkapnya.
 
 ## EXAMPLES
 
@@ -53,15 +55,15 @@ pstestv2vm1      Backup               InProgress           4/23/2016 5:00:30 PM 
 ```
 
 Perintah pertama mendapatkan kontainer Cadangan jenis AzureVM bernama pstestv2vm1, lalu menyimpannya dalam variabel $NamedContainer.
-Perintah kedua mendapatkan item Backup yang sesuai dengan kontainer di $NamedContainer, lalu menyimpannya dalam variabel $Item.
+Perintah kedua mendapatkan item Cadangan yang sesuai dengan kontainer di $NamedContainer, lalu menyimpannya dalam variabel $Item.
 Perintah terakhir memicu pekerjaan pencadangan untuk item Cadangan di $Item.
 
 ### Contoh 2
 
 Memulai pencadangan untuk item Cadangan. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Backup-AzRecoveryServicesBackupItem -ExpiryDateTimeUTC <DateTime> -Item $Item -VaultId $vault.ID
 ```
 
@@ -118,7 +120,7 @@ Accept wildcard characters: False
 
 ### -ExpiryDateTimeUTC
 
-Menentukan waktu kedaluwarsa untuk titik Pemulihan sebagai objek DateTime, jika tidak ada yang diberikan, dibutuhkan nilai default 30 hari. Berlaku untuk VM, SQL (hanya untuk jenis cadangan salin-saja-penuh), item cadangan AFS.
+Menentukan waktu kedaluwarsa untuk titik Pemulihan sebagai objek DateTime, jika tidak ada yang diberikan, dibutuhkan nilai default 30 hari. Berlaku untuk VM, SQL (hanya untuk jenis pencadangan penuh salin saja), item cadangan AFS.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]

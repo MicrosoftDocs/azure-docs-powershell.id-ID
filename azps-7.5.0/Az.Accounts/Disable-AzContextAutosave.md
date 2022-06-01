@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/disable
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Disable-AzContextAutosave.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Disable-AzContextAutosave.md
-ms.openlocfilehash: 4e8a4f1097c80f2acfd1994785ca16162d143445
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: 74f2894e93c91d107e6041a36394559e55ea2e9c
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145814634"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145973983"
 ---
 # Disable-AzContextAutosave
 
 ## SYNOPSIS
-Nonaktifkan penyimpanan otomatis kredensial Azure.  Informasi masuk Anda akan dilupakan saat anda membuka jendela PowerShell berikutnya
+Nonaktifkan simpan otomatis kredensial Azure.  Informasi masuk Anda akan dilupakan saat berikutnya Anda membuka jendela PowerShell
 
 > [!NOTE]
 >Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.accounts/disable-azcontextautosave) untuk informasi terbaru.
@@ -28,7 +28,7 @@ Disable-AzContextAutosave [-Scope <ContextModificationScope>] [-DefaultProfile <
 ```
 
 ## DESCRIPTION
-Nonaktifkan penyimpanan otomatis kredensial Azure.  Informasi masuk Anda akan dilupakan saat anda membuka jendela PowerShell berikutnya
+Nonaktifkan simpan otomatis kredensial Azure.  Informasi masuk Anda akan dilupakan saat berikutnya Anda membuka jendela PowerShell
 
 ## EXAMPLES
 
@@ -41,9 +41,10 @@ Nonaktifkan simpan otomatis untuk pengguna saat ini.
 
 ### Contoh 2
 
-Nonaktifkan menyimpan otomatis kredensial Azure dalam sesi powershell ini. (dibuat otomatis)
+Nonaktifkan penyimpanan otomatis kredensial Azure dalam sesi powershell ini. (dibuat otomatis)
 
-```powershell <!-- Aladdin Generated Example --> 
+<!-- Aladdin Generated Example -->
+```powershell
 Disable-AzContextAutosave -Scope Process
 ```
 

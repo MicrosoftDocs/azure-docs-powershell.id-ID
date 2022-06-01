@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementUser.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementUser.md
-ms.openlocfilehash: 3df9c11179eb054527d9e57076604d0bbe7c6967
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 75f6c4adcfe53b36336376aa65e09ecdbedd49d6
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145686028"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145975225"
 ---
 # Set-AzApiManagementUser
 
@@ -48,8 +48,8 @@ Perintah ini menetapkan kata sandi pengguna dan alamat email baru dan memblokir 
 
 Mengatur detail pengguna. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Set-AzApiManagementUser -Context <PsApiManagementContext> -Email 'patti.fuller@contoso.com' -FirstName 'Patti' -LastName 'Fuller' -Password <SecureString> -State Active -UserId '0123456789'
 ```
 

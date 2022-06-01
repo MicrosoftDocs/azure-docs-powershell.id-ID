@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlsyn
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlSyncAgentLinkedDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlSyncAgentLinkedDatabase.md
-ms.openlocfilehash: e836f6b13a9577eb591a73b72be70d6a79c921f9
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 5ba465633cf5483f39a459470ef784ccabbff02b
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145726714"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145973371"
 ---
 # Get-AzSqlSyncAgentLinkedDatabase
 
@@ -36,8 +36,8 @@ Cmdlet **Get-AzSqlSyncAgentLinkedDatabase** mengembalikan informasi tentang data
 
 Contoh berikut mengembalikan database SQL Server tertaut yang ditautkan oleh agen sinkronisasi Azure SQL.
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Get-AzSqlSyncAgentLinkedDatabase -ResourceGroupName MyResourceGroup -ServerName s1 -SyncAgentName 'SyncAgent01'
 ```
 

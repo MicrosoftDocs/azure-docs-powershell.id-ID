@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseReplicationLink.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseReplicationLink.md
-ms.openlocfilehash: 2f4b1dcede0ff450fe5dcee6005c5879e62dfb5a
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 9d467b50fd9e8ed069ccfb4548d309cad24956dc
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145729414"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145973587"
 ---
 # Get-AzSqlDatabaseReplicationLink
 
@@ -39,8 +39,8 @@ Ini mendapatkan semua tautan replikasi geografis antara Azure SQL Database yang 
 
 Mendapatkan tautan replikasi geografis antara Azure SQL Database dan grup sumber daya atau SQL Server. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Get-AzSqlDatabaseReplicationLink -DatabaseName db1 -PartnerResourceGroupName rg2 -ResourceGroupName MyResourceGroup -ServerName s1
 ```
 

@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/restore
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Restore-AzWebAppBackup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Restore-AzWebAppBackup.md
-ms.openlocfilehash: 5448923c15ff7eddfc007ed38315f05cf6e68044
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 17170e21e94d4c98992b8a75b390ee79af5e9d25
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145539345"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145972237"
 ---
 # Restore-AzWebAppBackup
 
@@ -50,15 +50,15 @@ Memulihkan cadangan aplikasi yang ditentukan ContosoWebApp yang berada dalam gru
 
 Cmdlet Restore-AzWebAppBackup memulihkan Azure Web App Backup. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Restore-AzWebAppBackup -BlobName 'myBlob' -Name 'ContosoWebApp' -Overwrite -ResourceGroupName 'Default-Web-WestUS' -StorageAccountUrl 'https://storageaccount.file.core.windows.net'
 ```
 
 ## PARAMETERS
 
 ### -AppServicePlan
-Nama paket App Service untuk aplikasi yang dipulihkan. Jika dibiarkan kosong, Paket App Service aplikasi saat ini akan digunakan.
+Nama paket App Service untuk aplikasi yang dipulihkan. Jika dibiarkan kosong, Paket App Service aplikasi saat ini digunakan.
 
 ```yaml
 Type: System.String
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -IgnoreConflictingHostNames
-Abaikan Opsi Nama Host yang Berkonflik
+Abaikan Opsi HostNames yang Berkonflik
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

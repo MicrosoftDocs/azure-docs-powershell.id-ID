@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/new-azsqlela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlElasticJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlElasticJob.md
-ms.openlocfilehash: ba97e93f07a99c898209a3fc4e16b0d5c1c925d6
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 1acd8b4b2278ec75779f893da4842b68fc0adbfb
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145726084"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145973281"
 ---
 # New-AzSqlElasticJob
 
@@ -107,8 +107,8 @@ Membuat pekerjaan baru
 
 Membuat pekerjaan baru. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 New-AzSqlElasticJob -Name job1 -RunOnce
 ```
 
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndTime
-Waktu akhir jadwal pekerjaan
+Waktu selesai jadwal pekerjaan
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]

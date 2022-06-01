@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Disable-AzRecoveryServicesBackupProtection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Disable-AzRecoveryServicesBackupProtection.md
-ms.openlocfilehash: a835d9b2fc522c400d6d482455e8e2e1b82b10a7
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: f6c480fb8d25ed5669691ded04595032aca4b74c
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145651036"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145977159"
 ---
 # Disable-AzRecoveryServicesBackupProtection
 
@@ -38,21 +38,21 @@ Atur konteks vault dengan menggunakan cmdlet Set-AzRecoveryServicesVaultContext 
 
 ### Contoh 1: Nonaktifkan perlindungan Pencadangan
 ```powershell
-$Cont = Get-AzRecoveryServicesBackupContainer -ContainerType AzureVM -Status Registered 
-$PI = Get-AzRecoveryServicesBackupItem -Container $Cont[0] -WorkloadType AzureVM 
+$Cont = Get-AzRecoveryServicesBackupContainer -ContainerType AzureVM -Status Registered
+$PI = Get-AzRecoveryServicesBackupItem -Container $Cont[0] -WorkloadType AzureVM
 Disable-AzRecoveryServicesBackupProtection -Item $PI[0]
 ```
 
 Perintah pertama mendapatkan array kontainer cadangan, lalu menyimpannya di array $Cont.
-Perintah kedua mendapatkan item Cadangan yang sesuai dengan item kontainer pertama, lalu menyimpannya dalam variabel $PI.
-Perintah terakhir menonaktifkan perlindungan Cadangan untuk item di $PI\[0\], tetapi mempertahankan data.
+Perintah kedua mendapatkan item Backup yang sesuai dengan item kontainer pertama, lalu menyimpannya dalam variabel $PI.
+Perintah terakhir menonaktifkan perlindungan Pencadangan untuk item di $PI\[0\], tetapi mempertahankan data.
 
 ### Contoh 2
 
 Menonaktifkan perlindungan untuk item yang dilindungi Cadangan. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Disable-AzRecoveryServicesBackupProtection -Item $PI[0] -RemoveRecoveryPoints -VaultId $vault.ID
 ```
 
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -Item
-Menentukan item Cadangan yang cmdletnya menonaktifkan perlindungan.
+Menentukan item Cadangan di mana cmdlet ini menonaktifkan perlindungan.
 Untuk mendapatkan **AzureRmRecoveryServicesBackupItem**, gunakan cmdlet Get-AzRecoveryServicesBackupItem.
 
 ```yaml

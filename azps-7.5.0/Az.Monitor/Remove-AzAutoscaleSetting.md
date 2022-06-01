@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Remove-AzAutoscaleSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Remove-AzAutoscaleSetting.md
-ms.openlocfilehash: ddb26f5a53ecf14dd542cc725a5be0feec960b36
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: cf3fae680e2e4dc1058458f982fc75fd29e4be93
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145810854"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145975081"
 ---
 # Remove-AzAutoscaleSetting
 
@@ -29,7 +29,7 @@ Remove-AzAutoscaleSetting -ResourceGroupName <String> -Name <String> [-DefaultPr
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzAutoscaleSetting** menghapus pengaturan Autoscale.
+Cmdlet **Remove-AzAutoscaleSetting** menghapus pengaturan Skala Otomatis.
 Anda harus menentukan nama pengaturan dan nama grup sumber daya yang ditetapkan.
 Cmdlet ini mengimplementasikan pola ShouldProcess, yaitu mungkin meminta konfirmasi dari pengguna sebelum benar-benar membuat, memodifikasi, atau menghapus sumber daya.
 
@@ -39,7 +39,8 @@ Cmdlet ini mengimplementasikan pola ShouldProcess, yaitu mungkin meminta konfirm
 
 Menghapus pengaturan Skala Otomatis. (dibuat otomatis)
 
-```powershell <!-- Aladdin Generated Example --> 
+<!-- Aladdin Generated Example -->
+```powershell
 Remove-AzAutoscaleSetting -Name 'LogAlertRule1' -ResourceGroupName MyResourceGroup
 ```
 

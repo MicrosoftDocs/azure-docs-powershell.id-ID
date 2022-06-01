@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementUserToken.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementUserToken.md
-ms.openlocfilehash: 95cc2392d9ec416d01186cbae649d1a4ad09fe44
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: c84816d18e9ce93f91341d72e1a82ac67349d02d
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145620636"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145975063"
 ---
 # New-AzApiManagementUserToken
 
@@ -44,14 +44,14 @@ UserId      TokenExpiry         KeyType UserToken
 integration 5/3/2019 2:02:34 PM Primary integration&201905031402&zOwopJChWAA6oaqGHMyf7Ol9wUCPcrtdmBmff8c2lcmZk9Y...
 ```
 
-Skrip ini membuat pengguna Git dikonfigurasi dalam layanan ApiManagement dan menghasilkan Token Akses Bersama menggunakan Kunci Primer yang valid selama 8 jam.
+Skrip ini membuat pengguna Git dikonfigurasi dalam layanan ApiManagement dan menghasilkan Token Akses Bersama menggunakan Kunci Primer yang berlaku selama 8 jam.
 
 ### Contoh 2
 
 Menghasilkan Token Akses Bersama untuk Pengguna. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 New-AzApiManagementUserToken -Context <PsApiManagementContext> -Expiry <DateTime> -UserId <String>
 ```
 
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyType
-Kunci Pengguna yang digunakan saat membuat Token.
+Kunci Pengguna untuk digunakan saat membuat Token.
 Parameter ini bersifat opsional.
 
 ```yaml

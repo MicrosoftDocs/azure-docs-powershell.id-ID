@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/new-azsqlela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlElasticPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlElasticPool.md
-ms.openlocfilehash: 5229cfd2641a37fda48c6cff5bdb1e5c557c152f
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 9d03a591e15a55750ab777304a27253e56eceb71
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145548532"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145974703"
 ---
 # Baru-AzSqlElasticPool
 
@@ -102,8 +102,8 @@ Perintah ini membuat kumpulan elastis di tingkat layanan GengeralPurpose bernama
 
 Membuat kumpulan database elastis untuk SQL Database. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 New-AzSqlElasticPool -ComputeGeneration Gen5 -Edition 'GeneralPurpose' -ElasticPoolName 'ElasticPool01' -ResourceGroupName 'ResourceGroup01' -ServerName 'Server01' -StorageMB 2097152 -VCore 2
 ```
 
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseDtuMax
-Menentukan jumlah maksimum Unit Throughput Database (DTU) yang dapat digunakan oleh database tunggal apa pun di kumpulan.
+Menentukan jumlah maksimum Unit Throughput Database (DTU) yang dapat digunakan database tunggal dalam kumpulan.
 Nilai default untuk edisi yang berbeda adalah sebagai berikut:
 - Dasar. 5 DTU
 - Standar. 100 DTU
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseDtuMin
-Menentukan jumlah minimum DTU yang dijamin kumpulan elastis ke semua database dalam kumpulan.
+Menentukan jumlah minimum DTU yang dijamin kumpulan elastis untuk semua database di kumpulan.
 Nilai defaultnya adalah nol (0).
 Untuk detail tentang nilai mana yang valid, lihat tabel untuk kumpulan ukuran spesifik Anda di [kumpulan elastis](https://docs.microsoft.com/azure/sql-database/sql-database-elastic-pool).
 
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseVCoreMax
-Nomor VCore maksimum yang dapat digunakan SqlAzure Database di kumpulan.
+Nomor VCore maksimum yang dapat dikonsumsi SqlAzure Database apa pun di kumpulan.
 
 ```yaml
 Type: System.Double
@@ -191,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseVCoreMin
-Nomor VCore minimum yang dapat digunakan SqlAzure Database di kumpulan.
+Nomor VCore minimum yang dapat dikonsumsi SqlAzure Database apa pun di kumpulan.
 
 ```yaml
 Type: System.Double

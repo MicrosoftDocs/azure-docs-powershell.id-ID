@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/sync
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Sync-AzDataFactoryV2IntegrationRuntimeCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Sync-AzDataFactoryV2IntegrationRuntimeCredential.md
-ms.openlocfilehash: dce624c13b11a67aafa060c7301508d4b31cc91a
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: 35f7b4ac1ba8cf6a142c9d6c56848df4c2e07a9c
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145818198"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145973659"
 ---
 # Sync-AzDataFactoryV2IntegrationRuntimeCredential
 
@@ -50,7 +50,8 @@ Cmdlet **Sync-AzDataFactoryV2IntegrationRuntimeCredential** menyinkronkan kreden
 
 Menyinkronkan kredensial di antara simpul runtime integrasi. (dibuat otomatis)
 
-```powershell <!-- Aladdin Generated Example --> 
+<!-- Aladdin Generated Example -->
+```powershell
 Sync-AzDataFactoryV2IntegrationRuntimeCredential -DataFactoryName 'test-df-eu2' -IntegrationRuntimeName 'test-selfhost-ir' -ResourceGroupName 'rg-test-dfv2'
 ```
 

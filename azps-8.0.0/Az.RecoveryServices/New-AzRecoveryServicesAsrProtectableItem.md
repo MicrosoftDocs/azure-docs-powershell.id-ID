@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesAsrProtectableItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesAsrProtectableItem.md
-ms.openlocfilehash: 3f208202e14ee94fc892a925b016084272c92037
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 315c29c4071f1298e721a5f256076051dae3759a
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145510411"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145971769"
 ---
 # New-AzRecoveryServicesAsrProtectableItem
 
@@ -34,8 +34,8 @@ New-AzRecoveryServicesAsrProtectableItem -ProtectionContainer <ASRProtectionCont
 
 Tambahkan(Temukan) server fisik ke daftar item yang dapat dilindungi. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 New-AzRecoveryServicesAsrProtectableItem -FriendlyName XXXXXXXXXX -IPAddress $ipaddresss -OSType Windows -ProtectionContainer $pc
 ```
 

@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementOpenIdConnectProvider.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementOpenIdConnectProvider.md
-ms.openlocfilehash: 4409d880eb9a2c405666bd0d154034b3d80e1bbe
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 14d55a5e60f9f2ad3e2304ab88212701e4126048
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145686280"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145972201"
 ---
 # Set-AzApiManagementOpenIdConnectProvider
 
@@ -48,8 +48,8 @@ Perintah menentukan rahasia klien untuk penyedia.
 
 Memodifikasi penyedia Koneksi OpenID. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Set-AzApiManagementOpenIdConnectProvider -ClientId 'clientid' -ClientSecret 'q2w3e43r45' -Context <PsApiManagementContext> -OpenIdConnectProviderId 'OICProvider01' -PassThru
 ```
 

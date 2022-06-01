@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/new-azi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/New-AzIntegrationAccountMap.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/New-AzIntegrationAccountMap.md
-ms.openlocfilehash: 4d1819ce6ae297adbc73b7ac8523597084272ec5
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: 21032cd7bd052983b864312b7393e25bd891ad07
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145799918"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145974271"
 ---
 # New-AzIntegrationAccountMap
 
@@ -59,14 +59,15 @@ ContentSize : 3056
 Metadata    :
 ```
 
-Perintah ini membuat peta akun integrasi dalam grup sumber daya yang ditentukan.
+Perintah ini membuat peta akun integrasi di grup sumber daya yang ditentukan.
 Perintah menentukan definisi peta yang disimpan dalam variabel $MapContent oleh perintah sebelumnya.
 
 ### Contoh 2
 
 Membuat peta akun integrasi. (dibuat otomatis)
 
-```powershell <!-- Aladdin Generated Example --> 
+<!-- Aladdin Generated Example -->
+```powershell
 New-AzIntegrationAccountMap -MapFilePath <String> -MapName 'IntegrationAccountMap47' -MapType Xslt -Name 'IntegrationAccount31' -ResourceGroupName 'ResourceGroup11'
 ```
 
@@ -120,7 +121,8 @@ Accept wildcard characters: False
 ```
 
 ### -MapFilePath
-Menentukan jalur file definisi untuk peta akun integrasi. Tentukan parameter ini atau parameter *MapDefinition* .
+Menentukan jalur file definisi untuk peta akun integrasi.
+Tentukan parameter ini atau parameter *MapDefinition* .
 
 ```yaml
 Type: System.String

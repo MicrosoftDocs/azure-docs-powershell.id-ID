@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupRecoveryLogChain.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupRecoveryLogChain.md
-ms.openlocfilehash: e37784fab8b450a99ccc490e8dd1bcc199a3e73a
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: a1e0c9050b68a6315a43c678cda1ae06384a2f42
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145649776"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145976827"
 ---
 # Get-AzRecoveryServicesBackupRecoveryLogChain
 
@@ -36,15 +36,15 @@ Get-AzRecoveryServicesBackupRecoveryLogChain [[-StartDate] <DateTime>] [[-EndDat
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzRecoveryServicesBackupRecoveryLogChain** mendapatkan titik pemulihan rentang waktu tepat waktu untuk item Azure Backup yang dicadangkan.
+Cmdlet **Get-AzRecoveryServicesBackupRecoveryLogChain** mendapatkan titik pemulihan rentang waktu untuk item Azure Backup yang dicadangkan.
 Setelah item dicadangkan, objek **AzRecoveryServicesBackupRecoveryLogChain** memiliki satu atau beberapa rentang waktu pemulihan.
 
 ## EXAMPLES
 
 ### Contoh 1
 ```powershell
-$StartDate = (Get-Date).AddDays(-7) 
-$EndDate = Get-Date 
+$StartDate = (Get-Date).AddDays(-7)
+$EndDate = Get-Date
 $Container = Get-AzRecoveryServicesBackupContainer -ContainerType AzureWorkload -Status Registered
 $RP = Get-AzRecoveryServicesBackupItem -Container $Container -WorkloadType MSSQL | Get-AzRecoveryServicesBackupRecoveryLogChain -StartDate $Startdate.ToUniversalTime() -EndDate $Enddate.ToUniversalTime()
 ```
@@ -53,14 +53,14 @@ Perintah pertama mendapatkan tanggal dari tujuh hari yang lalu, lalu menyimpanny
 Perintah kedua mendapatkan tanggal hari ini, lalu menyimpannya dalam variabel $EndDate.
 Perintah ketiga mendapatkan kontainer cadangan AzureWorkload, dan menyimpannya dalam variabel $Container.
 Perintah keempat mendapatkan item cadangan, lalu membagikannya di seluruh cmdlet yang disalurkan sebagai objek item cadangan.
-Perintah terakhir mendapatkan array rentang waktu titik pemulihan untuk item di $BackupItem, lalu menyimpannya dalam variabel $RP.
+Perintah terakhir mendapatkan array rentang waktu titik pemulihan untuk item dalam $BackupItem, lalu menyimpannya dalam variabel $RP.
 
 ### Contoh 2
 
 Perintah ini mencantumkan titik awal dan akhir dari rantai log yang tidak terganggu dari item cadangan yang diberikan. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Get-AzRecoveryServicesBackupRecoveryLogChain -Item $Item -VaultId $vault.ID
 ```
 

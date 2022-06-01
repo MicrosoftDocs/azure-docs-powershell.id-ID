@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactorySlice.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactorySlice.md
-ms.openlocfilehash: d556d557db29ed207d252c4cf2cc1a6b8d071ac4
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: dd12f901580215cb3f2ce7c54ba4878259d668bd
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145801034"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145971912"
 ---
 # Get-AzDataFactorySlice
 
@@ -39,25 +39,25 @@ Get-AzDataFactorySlice [[-EndDateTime] <DateTime>] [-DataFactory] <PSDataFactory
 ## DESCRIPTION
 Cmdlet **Get-AzDataFactorySlice** mendapatkan irisan data untuk himpunan data di Azure Data Factory.
 Tentukan waktu mulai dan waktu akhir untuk menentukan rentang irisan data yang akan dilihat.
-Status ilis data adalah salah satu nilai berikut: 
+Status ilis data adalah salah satu nilai berikut:
 - PendingExecution.
-Pemrosesan data belum dimulai. 
+Pemrosesan data belum dimulai.
 - InProgress.
-Pemrosesan data sedang berlangsung. 
+Pemrosesan data sedang berlangsung.
 - Siap.
 Pemrosesan data selesai.
-Irisan data siap untuk irisan dependen untuk mengonsumsinya. 
+Irisan data siap untuk irisan dependen untuk mengonsumsinya.
 - Gagal.
-Eksekusi yang menghasilkan ilis gagal. 
+Eksekusi yang menghasilkan ilis gagal.
 - Melewatkan.
-Data Factory melewati pemrosesan ipotong. 
+Data Factory melewati pemrosesan ipotong.
 - Coba lagi.
-Data Factory mencoba kembali eksekusi yang menghasilkan ipotong. 
-- Waktu Habis. Waktu pemrosesan data habis. 
+Data Factory mencoba kembali eksekusi yang menghasilkan ipotong.
+- Waktu Habis. Waktu pemrosesan data habis.
 - Validasi Tertunda.
-Iringan data menunggu validasi sebelum diproses. 
+Iringan data menunggu validasi sebelum diproses.
 - Coba Lagi Validasi.
-Data Factory mencoba kembali validasi ikatan. 
+Data Factory mencoba kembali validasi ikatan.
 - Validasi Gagal.
 Validasi ilis gagal.
 Untuk setiap irisan, Anda dapat melihat informasi selengkapnya tentang eksekusi yang menghasilkan irisan dengan menggunakan cmdlet Get-AzDataFactoryRun.
@@ -86,7 +86,7 @@ End               : 5/21/2014 3:00:00 AM
 RetryCount        : 0
 Status            : Ready
 
-. . . 
+. . .
 
 ResourceGroupName : ADF
 DataFactoryName   : WikiADF
@@ -119,7 +119,8 @@ Dalam contoh ini, baik periode mulai dan akhir untuk alur dan ikhlis memiliki ni
 
 Mendapatkan irisan data untuk himpunan data di Azure Data Factory. (dibuat otomatis)
 
-```powershell <!-- Aladdin Generated Example --> 
+<!-- Aladdin Generated Example -->
+```powershell
 Get-AzDataFactorySlice -DataFactoryName 'WikiADF' -DatasetName 'DAWikiAggregatedData' -EndDateTime 2014-05-22T16:00:00Z -ResourceGroupName 'ADF' -StartDateTime 2014-05-20T10:00:00Z
 ```
 

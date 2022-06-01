@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrServicesProvider.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrServicesProvider.md
-ms.openlocfilehash: a02fb0b7cc64a14ae1fe4c925d52fb0006d97ac1
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 66e2a83e6120836575a836223178e57132dc3a32
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145650334"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145976863"
 ---
 # Get-AzRecoveryServicesAsrServicesProvider
 
@@ -56,7 +56,8 @@ Cantumkan semua penyedia layanan replikasi ASR yang terdaftar ke vault Layanan P
 
 Mendapatkan detail penyedia layanan pemulihan ASR yang terdaftar ke vault Layanan Pemulihan. (dibuat otomatis)
 
-```powershell <!-- Aladdin Generated Example --> 
+<!-- Aladdin Generated Example -->
+```powershell
 Get-AzRecoveryServicesAsrServicesProvider -Fabric $Fabric
 ```
 

@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Undo-AzRecoveryServicesBackupItemDeletion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Undo-AzRecoveryServicesBackupItemDeletion.md
-ms.openlocfilehash: 9b543e9311ae56442c64d794990724903ab520af
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 939181d62191f3dcd84b368592c242018d7db459
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145618556"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145977565"
 ---
 # Undo-AzRecoveryServicesBackupItemDeletion
 
 ## SYNOPSIS
-Jika item cadangan dihapus dan ada dalam status dihapus sementara, perintah ini membawa item kembali ke status di mana data disimpan selamanya 
+Jika item cadangan dihapus dan ada dalam status dihapus sementara, perintah ini membawa item kembali ke status di mana data disimpan selamanya
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Cmdlet Undo-AzRecoveryServicesBackupItemDeletion mengembalikan item yang dihapus
 ### Contoh 1
 ```powershell
 $Cont = Get-AzRecoveryServicesBackupContainer -ContainerType AzureVM
-$PI = Get-AzRecoveryServicesBackupItem -Container $Cont[0] -WorkloadType AzureVM 
+$PI = Get-AzRecoveryServicesBackupItem -Container $Cont[0] -WorkloadType AzureVM
 Disable-AzRecoveryServicesBackupProtection -Item $PI[0] -RemoveRecoveryPoints
 $PI = Get-AzRecoveryServicesBackupItem -Container $Cont[0] -WorkloadType AzureVM | Where-Object {$_.DeleteState -eq "ToBeDeleted"}
 Undo-AzRecoveryServicesBackupItemDeletion -Item $PI[0]
@@ -48,8 +48,8 @@ Perintah terakhir membawa VM yang dihapus sementara ke status di mana perlindung
 
 Merehidrasi Item yang dihapus sementara. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Undo-AzRecoveryServicesBackupItemDeletion -Item $PI[0] -VaultId $vault.ID
 ```
 

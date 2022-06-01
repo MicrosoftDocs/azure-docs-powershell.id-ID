@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlElasticJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlElasticJob.md
-ms.openlocfilehash: 43b43f535eb13a4086274a46a71f3384a35adcee
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 83d5d247a5f2d08ff11913ac2085204740d84a2a
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145728874"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145973569"
 ---
 # Get-AzSqlElasticJob
 
@@ -63,8 +63,8 @@ Mendapatkan pekerjaan
 
 Mendapatkan satu atau beberapa pekerjaan. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Get-AzSqlElasticJob -AgentName agent -Name job1 -ResourceGroupName rg -ServerName elasticjobserver
 ```
 

@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Start-AzRecoveryServicesAsrCommitFailoverJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Start-AzRecoveryServicesAsrCommitFailoverJob.md
-ms.openlocfilehash: 98670b4b7d1cfd0f9d60051c6502bd9e7adae02d
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: aef86eac18b89138b45a5c59f2bae848f855771f
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145647742"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145971841"
 ---
 # Start-AzRecoveryServicesAsrCommitFailoverJob
 
 ## SYNOPSIS
-Memulai tindakan failover penerapan untuk objek Site Recovery.
+Memulai tindakan penerapan failover untuk objek Site Recovery.
 
 > [!NOTE]
 >Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/start-azrecoveryservicesasrcommitfailoverjob) untuk informasi terbaru.
@@ -35,7 +35,7 @@ Start-AzRecoveryServicesAsrCommitFailoverJob -RecoveryPlan <ASRRecoveryPlan>
 ```
 
 ## DESCRIPTION
-Cmdlet **Start-AzRecoveryServicesAsrCommitFailoverJob** memulai proses penerapan failover untuk objek Azure Site Recovery setelah operasi failover.
+Cmdlet **Start-AzRecoveryServicesAsrCommitFailoverJob** memulai proses failover penerapan untuk objek Azure Site Recovery setelah operasi failover.
 
 ## EXAMPLES
 
@@ -48,9 +48,10 @@ Memulai failover penerapan untuk rencana pemulihan yang ditentukan dan mengembal
 
 ### Contoh 2
 
-Memulai tindakan failover penerapan untuk objek Site Recovery. (dibuat otomatis)
+Memulai tindakan penerapan failover untuk objek Site Recovery. (dibuat otomatis)
 
-```powershell <!-- Aladdin Generated Example --> 
+<!-- Aladdin Generated Example -->
+```powershell
 Start-AzRecoveryServicesAsrCommitFailoverJob -ReplicationProtectedItem $ReplicationProtectedItem
 ```
 

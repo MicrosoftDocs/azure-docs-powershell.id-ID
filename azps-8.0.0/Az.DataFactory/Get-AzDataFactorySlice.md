@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactorySlice.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactorySlice.md
-ms.openlocfilehash: 6cd99b1ce14705c4dafd601387e983ebee6cad45
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 16a9adb27927a3da9e95c3829b896a2aed370947
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145539110"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145972489"
 ---
 # Get-AzDataFactorySlice
 
@@ -36,25 +36,25 @@ Get-AzDataFactorySlice [[-EndDateTime] <DateTime>] [-DataFactory] <PSDataFactory
 ## DESCRIPTION
 Cmdlet **Get-AzDataFactorySlice** mendapatkan irisan data untuk himpunan data di Azure Data Factory.
 Tentukan waktu mulai dan waktu akhir untuk menentukan rentang irisan data yang akan dilihat.
-Status iringan data adalah salah satu nilai berikut: 
+Status iringan data adalah salah satu nilai berikut:
 - PendingExecution.
-Pemrosesan data belum dimulai. 
+Pemrosesan data belum dimulai.
 - InProgress.
-Pemrosesan data sedang berlangsung. 
+Pemrosesan data sedang berlangsung.
 - Siap.
 Pemrosesan data selesai.
-Irisan data siap untuk irisan dependen untuk mengonsumsinya. 
+Irisan data siap untuk irisan dependen untuk mengonsumsinya.
 - Gagal.
-Eksekusi yang menghasilkan iringan gagal. 
+Eksekusi yang menghasilkan iringan gagal.
 - Melewatkan.
-Data Factory melewati pemrosesan iringan. 
+Data Factory melewati pemrosesan iringan.
 - Coba lagi.
-Data Factory mencoba kembali eksekusi yang menghasilkan ikatan. 
-- Waktu Habis. Waktu pemrosesan data habis. 
+Data Factory mencoba kembali eksekusi yang menghasilkan ikatan.
+- Waktu Habis. Waktu pemrosesan data habis.
 - PendingValidation.
-Iringan data sedang menunggu validasi sebelum diproses. 
+Iringan data sedang menunggu validasi sebelum diproses.
 - Coba Lagi Validasi.
-Data Factory mencoba kembali validasi ikatan. 
+Data Factory mencoba kembali validasi ikatan.
 - Validasi Gagal.
 Validasi irama gagal.
 Untuk setiap irisan, Anda dapat melihat informasi selengkapnya tentang eksekusi yang menghasilkan irisan dengan menggunakan cmdlet Get-AzDataFactoryRun.
@@ -83,7 +83,7 @@ End               : 5/21/2014 3:00:00 AM
 RetryCount        : 0
 Status            : Ready
 
-. . . 
+. . .
 
 ResourceGroupName : ADF
 DataFactoryName   : WikiADF
@@ -116,7 +116,8 @@ Dalam contoh ini, periode mulai dan berakhir untuk alur dan iringan memiliki nil
 
 Mendapatkan irisan data untuk himpunan data di Azure Data Factory. (dibuat otomatis)
 
-```powershell <!-- Aladdin Generated Example --> 
+<!-- Aladdin Generated Example -->
+```powershell
 Get-AzDataFactorySlice -DataFactoryName 'WikiADF' -DatasetName 'DAWikiAggregatedData' -EndDateTime 2014-05-22T16:00:00Z -ResourceGroupName 'ADF' -StartDateTime 2014-05-20T10:00:00Z
 ```
 

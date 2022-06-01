@@ -4,12 +4,12 @@ Module Name: Az.Websites
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Update-AzWebAppAccessRestrictionConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Update-AzWebAppAccessRestrictionConfig.md
-ms.openlocfilehash: ea4860fc27c8b5e96b04bfd748fcf289103b0003
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: a70fbe06d80b62edd83603440a9b4b2b4783a85c
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145534641"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145974883"
 ---
 # Update-AzWebAppAccessRestrictionConfig
 
@@ -40,8 +40,8 @@ Cmdlet **Update-AzWebAppAccessRestrictionConfig** memperbarui konfigurasi Pembat
 
 Contoh berikut memperbarui Aplikasi Web bernama IpRule yang termasuk dalam grup sumber daya MyResourceGroup untuk menggunakan konfigurasi pembatasan akses situs utama di situs scm.
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Update-AzWebAppAccessRestrictionConfig -Name IpRule -ResourceGroupName MyResourceGroup -ScmSiteUseMainSiteRestrictionConfig
 ```
 

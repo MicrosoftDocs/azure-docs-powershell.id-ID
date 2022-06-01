@@ -6,17 +6,17 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Remove-AzRecoveryServicesBackupProtectionPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Remove-AzRecoveryServicesBackupProtectionPolicy.md
-ms.openlocfilehash: 3cc9f082240bc07a1259963e3e8a61e48f641154
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: ec40d58f4a74a33ecf3de070ba454399e70857d3
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145648390"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145976557"
 ---
 # Remove-AzRecoveryServicesBackupProtectionPolicy
 
 ## SYNOPSIS
-Menghapus kebijakan perlindungan Pencadangan dari vault.
+Menghapus kebijakan perlindungan Cadangan dari vault.
 
 > [!NOTE]
 >Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/remove-azrecoveryservicesbackupprotectionpolicy) untuk informasi terbaru.
@@ -37,7 +37,7 @@ Remove-AzRecoveryServicesBackupProtectionPolicy [-Policy] <PolicyBase> [-PassThr
 
 ## DESCRIPTION
 Cmdlet **Remove-AzRecoveryServicesBackupProtectionPolicy** menghapus kebijakan pencadangan untuk vault.
-Sebelum Anda dapat menghapus kebijakan perlindungan Pencadangan, kebijakan tidak boleh memiliki item Cadangan terkait.
+Sebelum Anda dapat menghapus kebijakan perlindungan Cadangan, kebijakan tidak boleh memiliki item Cadangan terkait.
 Sebelum Anda menghapus kebijakan, pastikan bahwa setiap item terkait dikaitkan dengan beberapa kebijakan lain.
 Untuk mengaitkan kebijakan lain dengan item Cadangan, gunakan cmdlet Enable-AzRecoveryServicesBackupProtection.
 Atur konteks vault dengan menggunakan cmdlet Set-AzRecoveryServicesVaultContext sebelum Anda menggunakan cmdlet saat ini.
@@ -55,10 +55,10 @@ Perintah kedua menghapus objek kebijakan di $Pol.
 
 ### Contoh 2
 
-Menghapus kebijakan perlindungan Pencadangan dari vault. (dibuat otomatis)
+Menghapus kebijakan perlindungan Cadangan dari vault. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Remove-AzRecoveryServicesBackupProtectionPolicy -Name 'V2VM' -VaultId $vault.ID
 ```
 
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Kembalikan kebijakan yang akan dihapus.
+Mengembalikan kebijakan yang akan dihapus.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

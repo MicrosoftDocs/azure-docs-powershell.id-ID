@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementApiRevision.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementApiRevision.md
-ms.openlocfilehash: a706618d298cec821f736debcfc39605256e21fd
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 4de18e53d6fd39b16e016023197e5b281b5248ea
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145512199"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145975045"
 ---
 # Remove-AzApiManagementApiRevision
 
@@ -48,8 +48,8 @@ Perintah ini menghapus `2` revisi API `echo-api` dari layanan API Management.
 
 Perintah ini menghapus 2 revisi API echo-api dari layanan API Management. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Remove-AzApiManagementApiRevision -ApiId '0001' -ApiRevision 6 -Context <PsApiManagementContext>
 ```
 

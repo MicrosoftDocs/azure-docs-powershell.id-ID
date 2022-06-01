@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Update-AzKeyVaultNetworkRuleSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Update-AzKeyVaultNetworkRuleSet.md
-ms.openlocfilehash: 1e881119121567bfbea609b94bae8610a54e143c
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 85e9c40aedaa52ca5da435806f48e8f11f5dbe59
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145518730"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145972273"
 ---
 # Update-AzKeyVaultNetworkRuleSet
 
@@ -47,13 +47,13 @@ Update-AzKeyVaultNetworkRuleSet [-ResourceId] <String>
 ```
 
 ## DESCRIPTION
-Perintah **Update-AzKeyVaultNetworkRuleSet** memperbarui aturan jaringan yang berlaku pada brankas kunci yang ditentukan. 
+Perintah **Update-AzKeyVaultNetworkRuleSet** memperbarui aturan jaringan yang berlaku pada brankas kunci yang ditentukan.
 
 ## EXAMPLES
 
 ### Contoh 1
 ```powershell
-$frontendSubnet = New-AzVirtualNetworkSubnetConfig -Name frontendSubnet -AddressPrefix "10.0.1.0/24" -ServiceEndpoint Microsoft.KeyVault 
+$frontendSubnet = New-AzVirtualNetworkSubnetConfig -Name frontendSubnet -AddressPrefix "10.0.1.0/24" -ServiceEndpoint Microsoft.KeyVault
 $virtualNetwork = New-AzVirtualNetwork -Name myVNet -ResourceGroupName myRG -Location westus -AddressPrefix "10.0.0.0/16" -Subnet $frontendSubnet
 $myNetworkResId = (Get-AzVirtualNetwork -Name myVNet -ResourceGroupName myRG).Subnets[0].Id
 Update-AzKeyVaultNetworkRuleSet -VaultName 'myVault' -ResourceGroupName myRG -Bypass AzureServices -IpAddressRange "10.0.1.0/24" -VirtualNetworkResourceId $myNetworkResId -PassThru
@@ -99,14 +99,14 @@ Network Rule Set                 :
 Tags                             :
 ```
 
-Perintah ini memperbarui set aturan jaringan pada vault bernama 'myVault' untuk rentang IP dan jaringan virtual yang ditentukan, memungkinkan melewati aturan jaringan untuk layanan Azure.
+Perintah ini memperbarui ruleset jaringan pada vault bernama 'myVault' untuk rentang IP dan jaringan virtual yang ditentukan, memungkinkan bypassing aturan jaringan untuk layanan Azure.
 
 ### Contoh 2
 
 Memperbarui seperangkat aturan jaringan pada brankas kunci. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Update-AzKeyVaultNetworkRuleSet -DefaultAction Allow -VaultName 'myVault'
 ```
 
@@ -238,7 +238,7 @@ Accept wildcard characters: False
 ### -SubscriptionId
 ID langganan.
 Secara default, cmdlet dijalankan dalam langganan yang diatur dalam konteks saat ini. Jika pengguna menentukan langganan lain, cmdlet saat ini dijalankan dalam langganan yang ditentukan oleh pengguna.
-Mengambil alih langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
+Mengesampingkan langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
 
 ```yaml
 Type: System.String
@@ -268,7 +268,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetworkResourceId
-Menentukan pengidentifikasi sumber daya jaringan virtual yang diizinkan dari aturan jaringan.
+Menentukan pengidentifikasi sumber daya jaringan virtual aturan jaringan yang diizinkan.
 
 ```yaml
 Type: System.String[]

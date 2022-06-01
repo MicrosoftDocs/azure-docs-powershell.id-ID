@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/edit-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Edit-AzWebAppBackupConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Edit-AzWebAppBackupConfiguration.md
-ms.openlocfilehash: f4cdfbbfb9753b46c4f239566c8242feccef25aa
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 9eea61ff5c0d8c20901054ad882d69956273340a
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145701010"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145975514"
 ---
 # Edit-AzWebAppBackupConfiguration
 
@@ -47,8 +47,8 @@ Cmdlet **Edit-AzWebAppBackupConfiguration** mengedit cadangan konfigurasi saat i
 
 Cmdlet Edit-AzWebAppBackupConfiguration mengedit cadangan konfigurasi saat ini untuk Azure Web App. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Edit-AzWebAppBackupConfiguration -FrequencyInterval <Int32> -FrequencyUnit <String> -KeepAtLeastOneBackup -Name IpRule -ResourceGroupName MyResourceGroup -RetentionPeriodInDays <Int32> -StartTime 2016-11-30T22:00:00Z -StorageAccountUrl 'https://storageaccount.file.core.windows.net'
 ```
 
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeepAtLeastOneBackup
-Pertahankan setidaknya satu opsi pencadangan
+Pertahankan Setidaknya Satu Opsi Pencadangan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -190,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartTime
-StartTime di UTC
+StartTime dalam UTC
 
 ```yaml
 Type: System.DateTime

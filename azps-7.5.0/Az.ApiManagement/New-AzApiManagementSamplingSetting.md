@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementSamplingSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementSamplingSetting.md
-ms.openlocfilehash: 6736c65de4d6c5417dc07e525ec11316bd318afa
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: f1aa9f9fbea9838e6e8962af0df943d4a7ccc6e1
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145798694"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145976161"
 ---
 # New-AzApiManagementSamplingSetting
 
@@ -49,8 +49,8 @@ Membuat pengaturan pengambilan sampel jenis `Fixed` dengan pengelogan untuk 100%
 
 Buat pengaturan pengambilan sampel baru untuk Diagnostik. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 New-AzApiManagementSamplingSetting -SamplingPercentage 100 -SamplingType fixed
 ```
 

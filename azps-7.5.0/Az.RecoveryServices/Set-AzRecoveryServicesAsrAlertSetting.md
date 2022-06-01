@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Set-AzRecoveryServicesAsrAlertSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Set-AzRecoveryServicesAsrAlertSetting.md
-ms.openlocfilehash: 060ad44749c1a54d833134a0b10fa1ea9b2c7d6e
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 635f6b893c3ad8d888c10c3589cc62698065e935
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145648066"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145971877"
 ---
 # Set-AzRecoveryServicesAsrAlertSetting
 
 ## SYNOPSIS
-Konfigurasikan pengaturan pemberitahuan Azure Site Recovery (pemberitahuan email) untuk vault.
+Mengonfigurasi pengaturan pemberitahuan Azure Site Recovery (pemberitahuan email) untuk vault.
 
 > [!NOTE]
 >Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/set-azrecoveryservicesasralertsetting) untuk informasi terbaru.
@@ -79,16 +79,17 @@ Atur pemberitahuan untuk alamat email kustom dan untuk pemilik langganan.
 
 ### Contoh: 3
 
-Konfigurasikan pengaturan pemberitahuan Azure Site Recovery (pemberitahuan email) untuk vault. (dibuat otomatis)
+Mengonfigurasi pengaturan pemberitahuan Azure Site Recovery (pemberitahuan email) untuk vault. (dibuat otomatis)
 
-```powershell <!-- Aladdin Generated Example --> 
+<!-- Aladdin Generated Example -->
+```powershell
 Set-AzRecoveryServicesAsrAlertSetting -CustomEmailAddress 'abcxxxx@xxxx.com' -DisableEmailToSubscriptionOwner
 ```
 
 ## PARAMETERS
 
 ### -CustomEmailAddress
-Pemberitahuan / Pemberitahuan dikirim ke email.
+Pemberitahuan / Pemberitahuan yang dikirim ke email.
 
 ```yaml
 Type: System.String[]
@@ -133,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableNotification
-Benderai untuk menonaktifkan semua pemberitahuan.
+Bendera untuk menonaktifkan semua pemberitahuan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -163,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -LocaleID
-Bahasa email pemberitahuan /pemberitahuan kepada pengguna(kode budaya yang didukung dari microsoft). 
+Bahasa email pemberitahuan /pemberitahuan kepada pengguna(kode budaya yang didukung dari microsoft).
 
 ```yaml
 Type: System.String
