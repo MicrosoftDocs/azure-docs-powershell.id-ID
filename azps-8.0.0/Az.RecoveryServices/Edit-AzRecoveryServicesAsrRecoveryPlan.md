@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Edit-AzRecoveryServicesAsrRecoveryPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Edit-AzRecoveryServicesAsrRecoveryPlan.md
-ms.openlocfilehash: 51c168defaedb3ab1c74dfcc8de3317faa0eacd0
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: e26157afeda433a5641c542a7b310d015828e7bf
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145510471"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145978268"
 ---
 # Edit-AzRecoveryServicesAsrRecoveryPlan
 
@@ -55,13 +55,14 @@ Cmdlet **Edit-AzRecoveryServicesAsrRecoveryPlan** mengedit paket Azure Site Reco
 $RP = Edit-AzRecoveryServicesAsrRecoveryPlan -RecoveryPlan $RP -AppendGroup
 ```
 
-Menambahkan grup ke paket Azure Site Recovery yang sudah ada dan mengembalikan rencana pemulihan yang diperbarui dalam memori. 
+Menambahkan grup ke paket Azure Site Recovery yang sudah ada dan mengembalikan rencana pemulihan yang diperbarui dalam memori.
 
 ### Contoh 2
 
 Mengedit paket Site Recovery. (dibuat otomatis)
 
-```powershell <!-- Aladdin Generated Example --> 
+<!-- Aladdin Generated Example -->
+```powershell
 Edit-AzRecoveryServicesAsrRecoveryPlan -AddProtectedItem <ASRReplicationProtectedItem[]> -Group <ASRRecoveryPlanGroup> -InputObject $RP
 ```
 

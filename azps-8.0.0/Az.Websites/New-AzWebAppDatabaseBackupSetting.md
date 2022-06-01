@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/new-azw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzWebAppDatabaseBackupSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzWebAppDatabaseBackupSetting.md
-ms.openlocfilehash: 4253e0bb937dd12801aa9b7d2fda3d7852e05783
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 2a3e8a5f5b8daf49989b3b429df1dd46742a7f4f
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145521754"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145978746"
 ---
 # New-AzWebAppDatabaseBackupSetting
 
@@ -40,8 +40,8 @@ Membuat pengaturan pencadangan database (string koneksi) jenis SqlAzure untuk ap
 
 Cmdlet New-AzWebAppDatabaseBackupSetting membuat pengaturan Azure Web App Backup baru. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 New-AzWebAppDatabaseBackupSetting -ConnectionString 'MyConnectionString' -ConnectionStringName <String> -DatabaseType 'SqlAzure' -Name 'ContosoWebApp'
 ```
 

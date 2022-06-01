@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqlela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlElasticPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlElasticPool.md
-ms.openlocfilehash: 0a699347762110b52120b1a241b058616491412d
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: e75d69f367ca219cf833a59adcb45bc9ef239f87
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145541924"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145978717"
 ---
 # Set-AzSqlElasticPool
 
@@ -94,8 +94,8 @@ Perintah ini memodifikasi properti untuk kumpulan elastis bernama elasticpool01.
 
 Memodifikasi properti kumpulan database elastis di Azure SQL Database. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Set-AzSqlElasticPool -Dtu 1000 -Edition 'GeneralPurpose' -ElasticPoolName 'ElasticPool01' -ResourceGroupName 'ResourceGroup01' -ServerName 'Server01'
 ```
 

@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Remove-AzRecoveryServicesAsrvCenter.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Remove-AzRecoveryServicesAsrvCenter.md
-ms.openlocfilehash: e739de467ca1071aefbcb92119fd497aac34e960
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 39f6cab8de6581ddf44259e78939912fdfcf1694
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145519387"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145977889"
 ---
 # Remove-AzRecoveryServicesAsrvCenter
 
@@ -47,13 +47,14 @@ Cmdlet **Remove-AzRecoveryServicesAsrvCenter** menghapus server vCenter dari fab
 Remove-AzRecoveryServicesAsrvCenter -InputObject $vCenter
 ```
 
-Menghapus server vCenter dari fabric ASR.
+Menghapus server vCenter server dari fabric ASR.
 
 ### Contoh 2
 
 Menghapus server vCenter dari fabric ASR dan menghentikan penemuan komputer virtual dari server vCenter Server. (dibuat otomatis)
 
-```powershell <!-- Aladdin Generated Example --> 
+<!-- Aladdin Generated Example -->
+```powershell
 Remove-AzRecoveryServicesAsrvCenter -Fabric $Fabric -Name 'V2VM'
 ```
 
@@ -90,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek ASR vCenter yang mewakili server vCenter yang akan dihapus.
+Objek ASR vCenter server yang mewakili server vCenter yang akan dihapus.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRvCenter
@@ -120,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Menentukan resourceId vCenter server yang akan dihapus.
+Menentukan resourceId vCenter Server yang akan dihapus.
 
 ```yaml
 Type: System.String

@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVmssConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVmssConfig.md
-ms.openlocfilehash: d65978fe7c18c34211c2b139db936fe67bd2fad6
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: d57dc06d21cbc815e1ad465519766814ea96c1e6
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145549509"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145978645"
 ---
 # New-AzVmssConfig
 
@@ -87,8 +87,8 @@ Contoh ini membuat objek konfigurasi VMSS. Perintah pertama menggunakan cmdlet *
 
 Membuat objek konfigurasi VMSS. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 New-AzVmssConfig -Location <String> -Overprovision $false -SkuCapacity 2 -SkuName 'Standard_A0' -Tag @{key0="value0";key1=$null;key2="value2"} -UpgradePolicyMode Automatic;
 ```
 
@@ -602,7 +602,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScaleInPolicy
-Aturan yang harus diikuti saat menskalakan-dalam set skala komputer virtual.  Nilai yang mungkin adalah: 'Default', 'OldestVM' dan 'NewestVM'.  'Default' ketika set skala komputer virtual diskalakan, set skala akan terlebih dahulu diseimbangkan di seluruh zona jika merupakan set skala zona.  Kemudian, itu akan seimbang di seluruh Domain Kesalahan sejauh mungkin.  Dalam setiap Domain Kesalahan, komputer virtual yang dipilih untuk dihapus akan menjadi yang terbaru yang tidak dilindungi dari penyempurnaan skala.  'OldestVM' ketika set skala komputer virtual sedang diskalakan, komputer virtual terlama yang tidak terlindungi dari penyempurnaan skala akan dipilih untuk dihapus.  Untuk set skala komputer virtual zonal, set skala pertama-tama akan seimbang di seluruh zona.  Dalam setiap zona, komputer virtual terlama yang tidak dilindungi akan dipilih untuk dihapus.  'NewestVM' ketika set skala komputer virtual sedang diskalakan, komputer virtual terbaru yang tidak terlindungi dari penyempurnaan skala akan dipilih untuk dihapus.  Untuk set skala komputer virtual zonal, set skala pertama-tama akan seimbang di seluruh zona.  Dalam setiap zona, komputer virtual terbaru yang tidak dilindungi akan dipilih untuk dihapus.
+Aturan yang harus diikuti saat menskalakan-dalam set skala komputer virtual.  Nilai yang mungkin adalah: 'Default', 'OldestVM' dan 'NewestVM'.  'Default' ketika set skala komputer virtual diskalakan, set skala pertama-tama akan seimbang di seluruh zona jika itu adalah set skala zona.  Kemudian, ini akan diseimbangkan di seluruh Domain Kesalahan sejauh mungkin.  Dalam setiap Domain Kesalahan, komputer virtual yang dipilih untuk dihapus akan menjadi yang terbaru yang tidak dilindungi dari penyempurnaan skala.  'OldestVM' ketika set skala komputer virtual sedang diskalakan, komputer virtual terlama yang tidak terlindungi dari penyempurnaan skala akan dipilih untuk dihapus.  Untuk set skala komputer virtual zonal, set skala pertama-tama akan diseimbangkan di seluruh zona.  Dalam setiap zona, komputer virtual tertua yang tidak dilindungi akan dipilih untuk dihapus.  'NewestVM' ketika set skala komputer virtual sedang diskalakan, komputer virtual terbaru yang tidak dilindungi dari penyempurnaan skala akan dipilih untuk dihapus.  Untuk set skala komputer virtual zonal, set skala pertama-tama akan diseimbangkan di seluruh zona.  Dalam setiap zona, komputer virtual terbaru yang tidak dilindungi akan dipilih untuk dihapus.
 
 ```yaml
 Type: System.String[]
@@ -632,7 +632,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkipExtensionsOnOverprovisionedVMs
-Menentukan bahwa ekstensi tidak berjalan pada VM ekstra yang terlalu provisi.
+Menentukan bahwa ekstensi tidak berjalan pada VM ekstra yang kelebihan provisi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -694,7 +694,7 @@ Accept wildcard characters: False
 ```
 
 ### -SpotRestoreTimeout
-Menentukan nilai batas waktu yang dinyatakan sebagai durasi waktu ISO 8601 setelah itu platform tidak akan mencoba memulihkan instans VMSS SPOT
+Menentukan nilai batas waktu yang dinyatakan sebagai durasi waktu ISO 8601 setelah itu platform tidak akan mencoba memulihkan instans SPOT VMSS
 
 ```yaml
 Type: System.String
@@ -740,7 +740,7 @@ Accept wildcard characters: False
 ```
 
 ### -TerminateScheduledEventNotBeforeTimeoutInMinutes
-Durasi waktu yang dapat dikonfigurasi (dalam menit) Komputer Virtual yang dihapus harus berpotensi menyetujui Peristiwa Terjadwal Penghentian sebelum peristiwa disetujui secara otomatis (waktu habis).
+Durasi waktu yang dapat dikonfigurasi (dalam menit) Komputer Virtual yang dihapus harus berpotensi menyetujui Acara Terjadwal Penghentian sebelum peristiwa disetujui secara otomatis (waktu habis).
 
 ```yaml
 Type: System.Int32
@@ -819,7 +819,7 @@ Accept wildcard characters: False
 ```
 
 ### -ZoneBalance
-Apakah akan memaksa distribusi Komputer Virtual secara ketat melintasi x-zona jika terjadi pemadaman zona.
+Apakah akan memaksa distribusi Virtual Machine secara ketat melintasi x-zona jika terjadi pemadaman zona.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

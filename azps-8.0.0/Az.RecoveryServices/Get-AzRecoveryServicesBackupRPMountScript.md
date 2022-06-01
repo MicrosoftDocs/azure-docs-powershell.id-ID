@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupRPMountScript.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupRPMountScript.md
-ms.openlocfilehash: 5f58ef6a02bb019117443afaae2447a8ac6391b1
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 0c8b7661d0e3546b21f30b5b602042bf5b1d3046
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145521247"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145978033"
 ---
 # Get-AzRecoveryServicesBackupRPMountScript
 
@@ -54,8 +54,8 @@ Ketika skrip dijalankan, skrip akan memasang file titik pemulihan $rp\[0\]
 
 Mengunduh skrip untuk memasang semua file titik pemulihan. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Get-AzRecoveryServicesBackupRPMountScript -RecoveryPoint $rp[0] -VaultId $vault.ID
 ```
 

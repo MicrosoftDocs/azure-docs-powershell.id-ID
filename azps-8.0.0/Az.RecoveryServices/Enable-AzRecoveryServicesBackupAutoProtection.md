@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Enable-AzRecoveryServicesBackupAutoProtection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Enable-AzRecoveryServicesBackupAutoProtection.md
-ms.openlocfilehash: 3b2da29016973a424f1c2d67f130c8775c206363
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: fbf37af55bb8f0ea0bed7f9dfaee3692fce4cf94
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145536545"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145978284"
 ---
 # Enable-AzRecoveryServicesBackupAutoProtection
 
@@ -34,7 +34,7 @@ Perintah ini memungkinkan pengguna untuk secara otomatis melindungi semua SQL DB
 ### Contoh 1
 ```powershell
 $Pol = Get-AzRecoveryServicesBackupProtectionPolicy -Name "DefaultSQLPolicy"
-$SQLInstance = Get-AzRecoveryServicesBackupProtectableItem -workloadType MSSQL -ItemType SQLInstance -VaultId $targetVault.ID -Name "MSSQLInstance" -ServerName "TestSQLServer" 
+$SQLInstance = Get-AzRecoveryServicesBackupProtectableItem -workloadType MSSQL -ItemType SQLInstance -VaultId $targetVault.ID -Name "MSSQLInstance" -ServerName "TestSQLServer"
 Enable-AzRecoveryServicesBackupAutoProtection -InputItem $SQLInstance -BackupManagementType AzureWorkload -WorkloadType MSSQL -Policy $Pol -VaultId $targetvault.ID
 ```
 
@@ -45,8 +45,8 @@ Cmdlet kedua mengambil SQLInstance yang relevan yang merupakan item yang dapat d
 
 Perintah ini memungkinkan pengguna untuk secara otomatis melindungi semua DB yang tidak terlindungi yang ada dan DB apa pun yang akan ditambahkan nanti dengan kebijakan yang diberikan. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Enable-AzRecoveryServicesBackupAutoProtection -BackupManagementType AzureVM -InputItem <ProtectableItemBase> -Policy $Pol -VaultId $vault.ID -WorkloadType AzureVM
 ```
 
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputItem
-Menentukan objek item yang dapat dilindungi yang dapat diteruskan sebagai input. Nilai yang didukung saat ini adalah objek protectableItem jenis "SQLInstance". 
+Menentukan objek item yang dapat dilindungi yang dapat diteruskan sebagai input. Nilai yang didukung saat ini adalah objek protectableItem jenis "SQLInstance".
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.ProtectableItemBase

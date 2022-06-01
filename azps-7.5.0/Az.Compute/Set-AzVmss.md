@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVmss.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVmss.md
-ms.openlocfilehash: 3c4172e50dc3d028e451dccb6f374eccd34a04cf
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: dc3b88e4ff74fe6cc128ecc604bf65d98d20e512
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145778106"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145975729"
 ---
 # Set-AzVmss
 
@@ -65,8 +65,8 @@ Perintah ini menggambar ulang VMSS bernama ContosoVMSS yang termasuk dalam grup 
 
 Mengatur tindakan tertentu pada VMSS tertentu. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Set-AzVmss -ReimageAll -ResourceGroupName 'ContosoGroup' -VMScaleSetName 'ContosoVMSS'
 ```
 

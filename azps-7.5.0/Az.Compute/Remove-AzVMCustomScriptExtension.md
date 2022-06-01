@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzVMCustomScriptExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzVMCustomScriptExtension.md
-ms.openlocfilehash: 2f3e6ca6efb1f68997947c6e3d7239d8c41d94b9
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: 4c651613a030d125493c0031165ef28094f6ccaf
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145798046"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145975783"
 ---
 # Remove-AzVMCustomScriptExtension
 
@@ -37,7 +37,8 @@ Cmdlet **Remove-AzVMCustomScriptExtension** menghapus Ekstensi Komputer Virtual 
 
 Menghapus ekstensi skrip kustom dari komputer virtual. (dibuat otomatis)
 
-```powershell <!-- Aladdin Generated Example --> 
+<!-- Aladdin Generated Example -->
+```powershell
 Remove-AzVMCustomScriptExtension -Name 'AgentPool01' -ResourceGroupName myresourcegroup -VMName 'VM01'
 ```
 

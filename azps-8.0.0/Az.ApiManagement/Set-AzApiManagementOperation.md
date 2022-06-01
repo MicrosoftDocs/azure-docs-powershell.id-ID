@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementOperation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementOperation.md
-ms.openlocfilehash: f1bd877dc111cba3f24887bed96ccefd634eac1b
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: dc488742d29573fc719aa3e98447e9b40ab7bd75
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145507603"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145972519"
 ---
 # Set-AzApiManagementOperation
 
@@ -45,8 +45,8 @@ Perintah ini menetapkan detail operasi untuk manajemen API.
 
 Mengatur detail operasi API. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Set-AzApiManagementOperation -ApiId '0001' -Context <PsApiManagementContext> -Method 'GET' -Name 'ContosoApi' -OperationId 'Operation003' -UrlTemplate '/newresource'
 ```
 

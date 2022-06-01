@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrReplicationProtectedItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrReplicationProtectedItem.md
-ms.openlocfilehash: 7925e826aa006d27f360875823b373b1268ba655
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: a09513b7e422ce305abf2e13ef3da021a23259db
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145508866"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145978159"
 ---
 # Get-AzRecoveryServicesAsrReplicationProtectedItem
 
 ## SYNOPSIS
-Mendapatkan properti Item yang Dilindungi Replikasi Azure Site Recovery.
+Mendapatkan properti Item yang Dilindungi Replikasi azure Site Recovery.
 
 ## SYNTAX
 
@@ -57,10 +57,10 @@ Mencantumkan semua item yang dilindungi replikasi dalam kontainer perlindungan A
 
 ### Contoh 2
 
-Mendapatkan properti Item yang Dilindungi Replikasi Azure Site Recovery. (dibuat otomatis)
+Mendapatkan properti Item yang Dilindungi Replikasi azure Site Recovery. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Get-AzRecoveryServicesAsrReplicationProtectedItem -FriendlyName XXXXXXXXXX -ProtectionContainer $PrimaryContainer
 ```
 
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProtectionContainer
-Menentukan objek kontainer perlindungan ASR dari kontainer perlindungan ASR yang sesuai dengan item yang dilindungi replikasi. 
+Menentukan objek kontainer perlindungan ASR dari kontainer perlindungan ASR yang sesuai dengan item yang dilindungi replikasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRProtectionContainer

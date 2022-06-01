@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/enable-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Enable-AzContextAutosave.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Enable-AzContextAutosave.md
-ms.openlocfilehash: f6e2fcdea01c9bb97c8a65c4b8899537bd9bfbba
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: c836dc197bd55141e174424df69b8775d08b5a28
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145814562"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145972579"
 ---
 # Enable-AzContextAutosave
 
@@ -35,7 +35,7 @@ Memungkinkan informasi konteks Azure disimpan dan dimuat secara otomatis saat pr
 
 ## EXAMPLES
 
-### Contoh 1: Mengaktifkan kredensial penyimpanan otomatis untuk pengguna saat ini
+### Contoh 1: Aktifkan simpan otomatis kredensial untuk pengguna saat ini
 
 Aktifkan penyimpanan otomatis kredensial untuk pengguna saat ini. Setiap kali jendela PowerShell dibuka, konteks Anda saat ini diingat tanpa masuk.
 
@@ -45,9 +45,10 @@ Enable-AzContextAutosave
 
 ### Contoh 2
 
-Izinkan informasi kredensial, akun, dan langganan Azure, disimpan dan dimuat secara otomatis saat Anda membuka jendela PowerShell di sesi PowerShell ini. (dibuat otomatis)
+Izinkan informasi masuk, akun, dan langganan Azure, disimpan dan dimuat secara otomatis saat Anda membuka jendela PowerShell di sesi PowerShell ini. (dibuat otomatis)
 
-```powershell <!-- Aladdin Generated Example -->
+<!-- Aladdin Generated Example -->
+```powershell
 Enable-AzContextAutosave -Scope Process
 ```
 
@@ -71,7 +72,7 @@ Accept wildcard characters: False
 
 ### -Cakupan
 
-Menentukan cakupan perubahan konteks. Misalnya, apakah perubahan hanya berlaku untuk proses saat ini, atau untuk semua sesi yang dimulai oleh pengguna ini. Perubahan yang dilakukan dengan cakupan `CurrentUser` akan memengaruhi semua sesi PowerShell yang dimulai oleh pengguna. Jika sesi tertentu harus memiliki pengaturan yang berbeda, gunakan cakupan `Process`.
+Menentukan cakupan perubahan konteks. Misalnya, apakah perubahan hanya berlaku untuk proses saat ini, atau untuk semua sesi yang dimulai oleh pengguna ini. Perubahan yang dibuat dengan cakupan `CurrentUser` akan memengaruhi semua sesi PowerShell yang dimulai oleh pengguna. Jika sesi tertentu perlu memiliki pengaturan yang berbeda, gunakan cakupan `Process`.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Profile.Common.ContextModificationScope

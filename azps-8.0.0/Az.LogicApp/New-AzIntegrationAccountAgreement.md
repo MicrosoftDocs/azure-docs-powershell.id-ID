@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/new-azi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/New-AzIntegrationAccountAgreement.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/New-AzIntegrationAccountAgreement.md
-ms.openlocfilehash: fa414d35f2c9dc6c59f60cae53d6e4ded42cac46
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 63e47f30b66a1198bbf45ead972e85ac9b5aa230
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145527043"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145978472"
 ---
 # New-AzIntegrationAccountAgreement
 
@@ -70,7 +70,8 @@ Perintah ini membuat perjanjian akun integrasi di grup sumber daya Azure yang di
 
 Membuat perjanjian akun integrasi. (dibuat otomatis)
 
-```powershell <!-- Aladdin Generated Example --> 
+<!-- Aladdin Generated Example -->
+```powershell
 New-AzIntegrationAccountAgreement -AgreementContent <String> -AgreementName 'IntegrationAccountAgreement06' -AgreementType X12 -GuestIdentityQualifier 'BB' -GuestIdentityQualifierValue <String> -GuestPartner 'GuestPartner' -HostIdentityQualifier 'AA' -HostIdentityQualifierValue <String> -HostPartner 'HostPartner' -Name 'IntegrationAccount31' -ResourceGroupName 'ResourceGroup11'
 ```
 
@@ -124,8 +125,9 @@ Accept wildcard characters: False
 ```
 
 ### -AgreementType
-Menentukan jenis perjanjian akun integrasi. Nilai yang dapat diterima untuk parameter ini adalah:
-- X12 
+Menentukan jenis perjanjian akun integrasi.
+Nilai yang dapat diterima untuk parameter ini adalah:
+- X12
 - Applicability Statement 2
 - Edifact
 

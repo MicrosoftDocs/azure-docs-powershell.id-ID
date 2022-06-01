@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Remove-AzDataFactoryV2IntegrationRuntimeNode.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Remove-AzDataFactoryV2IntegrationRuntimeNode.md
-ms.openlocfilehash: de4c991eed3f23fcc911d2ec7d74bbacb88bb8b0
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: 62ffa41e0f2eb06c8c06c9060c0b93e26a09cfd3
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145816092"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145978681"
 ---
 # Remove-AzDataFactoryV2IntegrationRuntimeNode
 
@@ -50,7 +50,8 @@ Cmdlet Remove-AzDataFactoryV2IntegrationRuntimeNode menghapus simpul dalam runti
 
 Hapus simpul dengan nama yang diberikan pada runtime integrasi. (dibuat otomatis)
 
-```powershell <!-- Aladdin Generated Example --> 
+<!-- Aladdin Generated Example -->
+```powershell
 Remove-AzDataFactoryV2IntegrationRuntimeNode -DataFactoryName 'test-df-eu2' -IntegrationRuntimeName 'test-selfhost-ir' -NodeName 'Node_1' -ResourceGroupName 'rg-test-dfv2'
 ```
 

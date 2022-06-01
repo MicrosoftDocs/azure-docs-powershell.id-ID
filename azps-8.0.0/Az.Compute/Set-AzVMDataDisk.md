@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMDataDisk.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMDataDisk.md
-ms.openlocfilehash: 381d11878502550d570edc527df24de7e0c6c11f
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 87da88eb097c4f7d9730bb2aa5d4cd34764ec831
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145542621"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145976467"
 ---
 # Set-AzVMDataDisk
 
@@ -55,7 +55,8 @@ Perubahan pada mode kasir menyebabkan komputer virtual dimulai ulang.
 
 Memodifikasi properti disk data komputer virtual. (dibuat otomatis)
 
-```powershell <!-- Aladdin Generated Example --> 
+<!-- Aladdin Generated Example -->
+```powershell
 Set-AzVMDataDisk -Caching None -Lun 1 -VM <PSVirtualMachine>
 ```
 
@@ -98,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskEncryptionSetId
-Menentukan ID sumber daya set enkripsi disk yang dikelola pelanggan.  Ini hanya dapat ditentukan untuk disk terkelola.
+Menentukan ID sumber daya dari kumpulan enkripsi disk yang dikelola pelanggan.  Ini hanya dapat ditentukan untuk disk terkelola.
 
 ```yaml
 Type: System.String
@@ -158,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountType
-Jenis akun disk terkelola komputer virtual.
+Jenis akun disk yang dikelola komputer virtual.
 
 ```yaml
 Type: System.String
@@ -212,7 +213,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
 ### System.Nullable'1[[Microsoft.Azure.Management.Compute.Models.CachingTypes, Microsoft.Azure.Management.Compute, Version=23.0.0.0, Culture=netral, PublicKeyToken=31bf3856ad364e35]]
 

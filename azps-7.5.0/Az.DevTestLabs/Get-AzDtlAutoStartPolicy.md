@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.devtestlabs/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DevTestLabs/DevTestLabs/help/Get-AzDtlAutoStartPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DevTestLabs/DevTestLabs/help/Get-AzDtlAutoStartPolicy.md
-ms.openlocfilehash: 438e371f93af06c3f32771e56bfb6d8514e41674
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: fb42064b4b8b2ae619b3871aac500dc120c30594
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145742788"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145978627"
 ---
 # Get-AzDtlAutoStartPolicy
 
@@ -38,7 +38,8 @@ Cmdlet mengembalikan status kebijakan yang diaktifkan atau dinonaktifkan dan har
 
 Mendapatkan kebijakan mulai otomatis lab di DevTest Labs. (dibuat otomatis)
 
-```powershell <!-- Aladdin Generated Example --> 
+<!-- Aladdin Generated Example -->
+```powershell
 Get-AzDtlAutoStartPolicy -LabName <String> -ResourceGroupName MyResourceGroup
 ```
 

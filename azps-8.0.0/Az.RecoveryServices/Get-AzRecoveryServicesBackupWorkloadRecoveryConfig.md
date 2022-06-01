@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupWorkloadRecoveryConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupWorkloadRecoveryConfig.md
-ms.openlocfilehash: dd9bf34357ea37975ecd433d0c573cdef3f57fc1
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 95224c5420ecbba3051de9af4139a5a33dbdf15c
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145538620"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145977961"
 ---
 # Get-AzRecoveryServicesBackupWorkloadRecoveryConfig
 
 ## SYNOPSIS
-Perintah ini membangun konfigurasi pemulihan item yang dicadangkan seperti SQL DB. Objek konfigurasi menyimpan semua detail seperti mode pemulihan, tujuan target untuk pemulihan dan parameter spesifik aplikasi seperti jalur fisik target untuk SQL.
+Perintah ini membangun konfigurasi pemulihan item yang dicadangkan seperti SQL DB. Objek konfigurasi menyimpan semua detail seperti mode pemulihan, tujuan target untuk parameter pemulihan dan spesifik aplikasi seperti jalur fisik target untuk SQL.
 
 ## SYNTAX
 
@@ -48,17 +48,17 @@ $SQLRecoveryObject = Get-AzRecoveryServicesBackupRecoveryPoint -Item $SQLBkpItem
 $SQLRecoveryObject = Get-AzRecoveryServicesBackupRecoveryPoint -Item $SQLBkpItem $startdate $enddate | Get-AzRecoveryServicesWorkloadRecoveryConfig -AlternateWorkloadRestore -TargetItem $SQLProtItem -TargetContainer $targetVMContainer
 ```
 
-Cmdlet pertama digunakan untuk mendapatkan objek titik Pemulihan.
+Cmdlet pertama digunakan untuk mendapatkan objek Titik pemulihan.
 Cmdlet kedua membuat rencana pemulihan untuk pemulihan lokasi asli.
-Cmdlet ketiga membuat rencana pemulihan untuk pemulihan lokasi alternatif.
-Catatan: Parameter -TargetContainer wajib dalam kasus AlternateLocationRestore atau RestoreAsFiles.
+Cmdlet ketiga THe membuat rencana pemulihan untuk pemulihan lokasi alternatif.
+Catatan: Parameter -TargetContainer adalah wajib dalam kasus AlternateLocationRestore atau RestoreAsFiles.
 
 ### Contoh 2
 
 Perintah ini membangun konfigurasi pemulihan item yang dicadangkan seperti SQL DB. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Get-AzRecoveryServicesBackupWorkloadRecoveryConfig -AlternateWorkloadRestore -RecoveryPoint $rp[0] -TargetItem <ProtectableItemBase> -TargetContainer $targetVMContainer -VaultId $vault.ID
 ```
 
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -FromFull
-Menentukan Titik Pemulihan Penuh tempat pencadangan Log akan diterapkan.
+Menentukan RecoveryPoint Penuh tempat pencadangan Log akan diterapkan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.RecoveryPointBase
@@ -215,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetItem
-Menentukan target tempat DB perlu dipulihkan. Untuk pemulihan SQL, jenis item yang dapat dilindungi hanya SQLInstance.
+Menentukan target tempat DB perlu dipulihkan. Untuk pemulihan SQL, hanya perlu jenis item yang dapat dilindungi SQLInstance.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.ProtectableItemBase

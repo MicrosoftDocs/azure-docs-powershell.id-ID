@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Disable-AzRecoveryServicesBackupRPMountScript.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Disable-AzRecoveryServicesBackupRPMountScript.md
-ms.openlocfilehash: f32320653ab9f745bf6a5fd2535959f71014c0c2
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: eb4da7403cd6cf498a28af81a00e4c9fbeddd126
+ms.sourcegitcommit: 22f85a560177b7234f114dd21a108e3bc8b1608b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145537735"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "145978321"
 ---
 # Disable-AzRecoveryServicesBackupRPMountScript
 
@@ -56,8 +56,8 @@ Disable-AzRecoveryServicesBackupRPMountScript -RecoveryPoint $rp[0]
 
 Melepas semua file titik pemulihan. (dibuat otomatis)
 
+<!-- Aladdin Generated Example -->
 ```powershell
-<!-- Aladdin Generated Example --> 
 Disable-AzRecoveryServicesBackupRPMountScript -Confirm -RecoveryPoint $rp[0] -VaultId $vault.ID
 ```
 
