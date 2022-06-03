@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/upda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Update-AzNetAppFilesBackup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Update-AzNetAppFilesBackup.md
-ms.openlocfilehash: f7c04b9d4223683bdbd299400c3689e90f08a4f1
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 5267f71f26a1600c0f0968607ec4616327664807
+ms.sourcegitcommit: 525359578ef742dc2186adf7a2027c12c4a06310
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145552284"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "146063776"
 ---
 # Update-AzNetAppFilesBackup
 
@@ -296,7 +296,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
  [New-AzNetAppFilesBackupPolicy](./New-AzNetAppFilesBackupPolicy.md)
  [Update-AzNetAppFilesBackupPolicy](./Update-AzNetAppFilesBackupPolicy.md)
  [Remove-AzNetAppFilesBackupPolicy](./Remove-AzNetAppFilesBackupPolicy.md)
- [Get-AzNetAppFilesVolume](./Get-AzNetAppFilessVolume.md)
- [New-AzNetAppFilesVolume](./New-AzNetAppFilessVolume.md)
- [Update-AzNetAppFilesVolume](./Update-AzNetAppFilessVolume.md)
- [Remove-AzNetAppFilesVolume](./Remove-AzNetAppFilessVolume.md)
+ [Get-AzNetAppFilesVolume](./Get-AzNetAppFilesVolume.md)
+ [New-AzNetAppFilesVolume](./New-AzNetAppFilesVolume.md)
+ [Update-AzNetAppFilesVolume](./Update-AzNetAppFilesVolume.md)
+ [Remove-AzNetAppFilesVolume](./Remove-AzNetAppFilesVolume.md)

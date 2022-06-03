@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/susp
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Suspend-AzNetAppFilesReplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Suspend-AzNetAppFilesReplication.md
-ms.openlocfilehash: 754785417003baf005fdb5535ec8f9756178497b
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 0a3ce91038e3a2e4703d865879232ef6ab054069
+ms.sourcegitcommit: 525359578ef742dc2186adf7a2027c12c4a06310
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145553583"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "146063667"
 ---
 # Suspend-AzNetAppFilesReplication
 
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -ForceBreak
-Jika replikasi dalam status ditransfer dan Anda ingin menghentikan replikasi secara paksa, atur ke true
+Jika replikasi dalam status mentransfer dan Anda ingin menghentikan replikasi secara paksa, atur ke true
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek volume tujuan ANF dengan replikasi untuk diputuskan
+Objek volume tujuan ANF dengan replikasi untuk diputus
 
 ```yaml
 Type: Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesVolume
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan apakah pemisahan replikasi volume yang ditentukan dilakukan
+Mengembalikan apakah pemutusan replikasi volume yang ditentukan dilakukan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -235,12 +235,12 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Menyetujui-AzNetAppFilesReplication](./Approve-AzNetAppFilesReplication.md)
- [Initialize-AzNetAppFilesReplication](./Inititialize-AzNetAppFilesReplication.md)
+[Setujui-AzNetAppFilesReplication](./Approve-AzNetAppFilesReplication.md)
+ [Initialize-AzNetAppFilesReplication](./Initialize-AzNetAppFilesReplication.md)
  [Resume-AzNetAppFilesReplication](./Resume-AzNetAppFilesReplication.md)
  [Remove-AzNetAppFilesReplication](./Remove-AzNetAppFilesReplication.md)
  [Get-AzNetAppFilesReplicationStatus](./Get-AzNetAppFilesReplicationStatus.md)
- [Get-AzNetAppFilesVolume](./Get-AzNetAppFilessVolume.md)
- [New-AzNetAppFilesVolume](./New-AzNetAppFilessVolume.md)
- [Update-AzNetAppFilesVolume](./Update-AzNetAppFilessVolume.md)
- [Remove-AzNetAppFilesVolume](./Remove-AzNetAppFilessVolume.md)
+ [Get-AzNetAppFilesVolume](./Get-AzNetAppFilesVolume.md)
+ [New-AzNetAppFilesVolume](./New-AzNetAppFilesVolume.md)
+ [Update-AzNetAppFilesVolume](./Update-AzNetAppFilesVolume.md)
+ [Remove-AzNetAppFilesVolume](./Remove-AzNetAppFilesVolume.md)

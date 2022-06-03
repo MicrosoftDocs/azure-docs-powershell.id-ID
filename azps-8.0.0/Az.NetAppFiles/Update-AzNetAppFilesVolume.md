@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/upda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Update-AzNetAppFilesVolume.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Update-AzNetAppFilesVolume.md
-ms.openlocfilehash: f76a098f0235ad91989ef0368f39e979e8f3af0a
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 797bed15b145cb7e0c27d35ddafec78ff4981238
+ms.sourcegitcommit: 525359578ef742dc2186adf7a2027c12c4a06310
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145502019"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "146063759"
 ---
 # Update-AzNetAppFilesVolume
 
@@ -103,7 +103,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Backup
+### -Pencadangan
 Array hashtable yang mewakili objek cadangan
 
 ```yaml
@@ -359,7 +359,7 @@ Accept wildcard characters: False
 ```
 
 ### -UnixPermission
-UNIX izin untuk volume NFS yang diterima dalam format oktal 4 digit. Digit pertama memilih atribut SET USER ID(4), set group ID (2) dan sticky (1). Digit kedua memilih izin untuk pemilik file: baca (4), tulis (2) dan jalankan (1). Ketiga memilih izin untuk pengguna lain dalam grup yang sama. yang keempat untuk pengguna lain yang tidak ada dalam grup. 0755 - memberikan izin baca/tulis/jalankan kepada pemilik dan baca/jalankan ke grup dan pengguna lain.
+UNIX izin untuk volume NFS yang diterima dalam format oktal 4 digit. Digit pertama memilih atribut SET USER ID(4), set group ID (2) dan sticky (1). Digit kedua memilih izin untuk pemilik file: baca (4), tulis (2) dan jalankan (1). Ketiga memilih izin untuk pengguna lain dalam grup yang sama. yang keempat untuk pengguna lain yang tidak ada dalam grup. 0755 - memberikan izin baca/tulis/eksekusi kepada pemilik dan baca/jalankan ke grup dan pengguna lain.
 
 ```yaml
 Type: System.String
@@ -445,7 +445,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
  [Set-AzNetAppFilesVolumePool](./Set-AzNetAppFilesVolumePool.md)
  [Get-AzNetAppFilesVolumeBackupStatus](./Get-AzNetAppFilesVolumeBackupStatus.md)
  [Get-AzNetAppFilesVolumeRestoreStatus](./Get-AzNetAppFilesVolumeRestoreStatus.md)
- [Setujui-AzNetAppFilesReplication](./Approve-AzNetAppFilesReplication.md)
- [Inisialize-AzNetAppFilesReplication](./Inititialize-AzNetAppFilesReplication.md)
+ [Menyetujui-AzNetAppFilesReplication](./Approve-AzNetAppFilesReplication.md)
+ [Initialize-AzNetAppFilesReplication](./Initialize-AzNetAppFilesReplication.md)
  [Resume-AzNetAppFilesReplication](./Resume-AzNetAppFilesReplication.md)
  [Remove-AzNetAppFilesReplication](./Remove-AzNetAppFilesReplication.md)

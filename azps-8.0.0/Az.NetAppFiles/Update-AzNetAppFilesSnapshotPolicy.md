@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/upda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Update-AzNetAppFilesSnapshotPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Update-AzNetAppFilesSnapshotPolicy.md
-ms.openlocfilehash: 6c9bf161910591d061d14bf08f2c036d44aafc4c
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: abd6c8d5078ae21ea13d69e1e5b32f3a2000f622
+ms.sourcegitcommit: 525359578ef742dc2186adf7a2027c12c4a06310
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145531114"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "146063732"
 ---
 # Update-AzNetAppFilesSnapshotPolicy
 
@@ -68,7 +68,7 @@ $hourlySchedule = @{
 Update-AzNetAppFilesSnapshotPolicy -ResourceGroupName "MyRG" -AccountName "MyAccount" -Name "MySnapshotPolicy" -HourlySchedule $hourlySchedule
 ```
 
-Perintah ini mengubah kebijakan pencadangan ANF "MySnapshotPolicy" menjadi HourlySchedule yang diberikan.
+Perintah ini mengubah kebijakan pencadangan ANF "MySnapshotPolicy" agar HourlySchedule yang diberikan.
 
 ## PARAMETERS
 
@@ -339,8 +339,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
  [Get-AzNetAppFilesSnapshot](./Get-AzNetAppFilesSnapshot.md)
  [New-AzNetAppFilesSnapshot](./New-AzNetAppFilesSnapshot.md)
  [Remove-AzNetAppFilesSnapshot](./Remove-AzNetAppFilesSnapshot.md)
- [Update-AzNetAppFilesSnapshot](./Update-AzNetAppFilesSnapshot.md)
- [Get-AzNetAppFilesVolume](./Get-AzNetAppFilessVolume.md)
- [New-AzNetAppFilesVolume](./New-AzNetAppFilessVolume.md)
- [Update-AzNetAppFilesVolume](./Update-AzNetAppFilessVolume.md)
- [Remove-AzNetAppFilesVolume](./Remove-AzNetAppFilessVolume.md)
+ [Get-AzNetAppFilesVolume](./Get-AzNetAppFilesVolume.md)
+ [New-AzNetAppFilesVolume](./New-AzNetAppFilesVolume.md)
+ [Update-AzNetAppFilesVolume](./Update-AzNetAppFilesVolume.md)
+ [Remove-AzNetAppFilesVolume](./Remove-AzNetAppFilesVolume.md)

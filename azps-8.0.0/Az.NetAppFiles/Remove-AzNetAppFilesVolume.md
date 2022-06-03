@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Remove-AzNetAppFilesVolume.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Remove-AzNetAppFilesVolume.md
-ms.openlocfilehash: 43b23fd71eda9136ff57f30e2b66561813033b62
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: b898821abde383ffdbcc559b8759f78d78357fc3
+ms.sourcegitcommit: 525359578ef742dc2186adf7a2027c12c4a06310
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145522147"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "146063632"
 ---
 # Remove-AzNetAppFilesVolume
 
@@ -266,6 +266,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
  [Get-AzNetAppFilesVolumeBackupStatus](./Get-AzNetAppFilesVolumeBackupStatus.md)
  [Get-AzNetAppFilesVolumeRestoreStatus](./Get-AzNetAppFilesVolumeRestoreStatus.md)
  [Setujui-AzNetAppFilesReplication](./Approve-AzNetAppFilesReplication.md)
- [Inisialize-AzNetAppFilesReplication](./Inititialize-AzNetAppFilesReplication.md)
+ [Initialize-AzNetAppFilesReplication](./Initialize-AzNetAppFilesReplication.md)
  [Resume-AzNetAppFilesReplication](./Resume-AzNetAppFilesReplication.md)
  [Remove-AzNetAppFilesReplication](./Remove-AzNetAppFilesReplication.md)

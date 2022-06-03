@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/upda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Update-AzNetAppFilesBackupPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Update-AzNetAppFilesBackupPolicy.md
-ms.openlocfilehash: 7d71d168593369b11d9e3824a24df89e8c980971
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: eaee891c29c1f8bf02bd3e9571890d670d7fc307
+ms.sourcegitcommit: 525359578ef742dc2186adf7a2027c12c4a06310
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145549117"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "146063615"
 ---
 # Update-AzNetAppFilesBackupPolicy
 
@@ -60,7 +60,7 @@ Cmdlet **Update-AzNetAppFilesBackupPolicy** memodifikasi kebijakan pencadangan A
 Update-AzNetAppFilesBackupPolicy -ResourceGroupName "MyRG" -AccountName "MyAccount" -Name "MyBackupPolicy" -DailyBackupsToKeep 2
 ```
 
-Perintah ini mengubah kebijakan pencadangan ANF "MyBackupPolicy" menjadi DailyBackupsToKeep yang diberikan.
+Perintah ini mengubah kebijakan pencadangan ANF "MyBackupPolicy" agar DailyBackupsToKeep diberikan.
 
 ## PARAMETERS
 
@@ -316,8 +316,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
  [Get-AzNetAppFilesSnapshot](./Get-AzNetAppFilesSnapshot.md)
  [New-AzNetAppFilesSnapshot](./New-AzNetAppFilesSnapshot.md)
  [Remove-AzNetAppFilesSnapshot](./Remove-AzNetAppFilesSnapshot.md)
- [Update-AzNetAppFilesSnapshot](./Update-AzNetAppFilesSnapshot.md)
- [Get-AzNetAppFilesVolume](./Get-AzNetAppFilessVolume.md)
- [New-AzNetAppFilesVolume](./New-AzNetAppFilessVolume.md)
- [Update-AzNetAppFilesVolume](./Update-AzNetAppFilessVolume.md)
- [Remove-AzNetAppFilesVolume](./Remove-AzNetAppFilessVolume.md)
+ [Get-AzNetAppFilesVolume](./Get-AzNetAppFilesVolume.md)
+ [New-AzNetAppFilesVolume](./New-AzNetAppFilesVolume.md)
+ [Update-AzNetAppFilesVolume](./Update-AzNetAppFilesVolume.md)
+ [Remove-AzNetAppFilesVolume](./Remove-AzNetAppFilesVolume.md)
