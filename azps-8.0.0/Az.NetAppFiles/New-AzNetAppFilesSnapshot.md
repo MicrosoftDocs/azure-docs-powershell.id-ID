@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/New-AzNetAppFilesSnapshot.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/New-AzNetAppFilesSnapshot.md
-ms.openlocfilehash: 28dee1c679379d5560d54cb2db8305df73d105f7
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 054e8885616bb69b0ed20a55b96925021f050e65
+ms.sourcegitcommit: 7694b86b71e0246a30757731dc3978641aecee40
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145535985"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "146083567"
 ---
 # New-AzNetAppFilesSnapshot
 
@@ -256,13 +256,12 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzNetAppFilesSnapshot](./Get-AzNetAppFilesSnapshot.md)
  [Remove-AzNetAppFilesSnapshot](./Remove-AzNetAppFilesSnapshot.md)
- [Update-AzNetAppFilesSnapshot](./Update-AzNetAppFilesSnapshot.md)
  [Get-AzNetAppFilesSnapshotPolicy](./Get-AzNetAppFilesSnapshotPolicy.md)
  [New-AzNetAppFilesSnapshotPolicy](./New-AzNetAppFilesSnapshotPolicy.md)
  [Update-AzNetAppFilesSnapshotPolicy](./Update-AzNetAppFilesSnapshotPolicy.md)
  [Remove-AzNetAppFilesSnapshotPolicy](./Remove-AzNetAppFilesSnapshotPolicy.md)
  [Set-AzNetAppFilesSnapshotPolicy](./Set-AzNetAppFilesSnapshotPolicy.md)
- [Get-AzNetAppFilesVolume](./Get-AzNetAppFilessVolume.md)
- [New-AzNetAppFilesVolume](./New-AzNetAppFilessVolume.md)
- [Update-AzNetAppFilesVolume](./Update-AzNetAppFilessVolume.md)
- [Remove-AzNetAppFilesVolume](./Remove-AzNetAppFilessVolume.md)
+ [Get-AzNetAppFilesVolume](./Get-AzNetAppFilesVolume.md)
+ [New-AzNetAppFilesVolume](./New-AzNetAppFilesVolume.md)
+ [Update-AzNetAppFilesVolume](./Update-AzNetAppFilesVolume.md)
+ [Remove-AzNetAppFilesVolume](./Remove-AzNetAppFilesVolume.md)

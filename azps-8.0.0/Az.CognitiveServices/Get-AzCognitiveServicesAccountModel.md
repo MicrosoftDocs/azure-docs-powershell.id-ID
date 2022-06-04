@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.cognitiveservice
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/Get-AzCognitiveServicesAccountModel.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/Get-AzCognitiveServicesAccountModel.md
-ms.openlocfilehash: 47ccee9ff047f1c499d764bf8db0877b769b73c2
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: ef99dd9c9939f6a378afa5e67fc344290021fe73
+ms.sourcegitcommit: 7694b86b71e0246a30757731dc3978641aecee40
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145506670"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "146083594"
 ---
 # Get-AzCognitiveServicesAccountModel
 
@@ -138,4 +138,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzCognitiveServicesAccountDeployment](./New-AzCognitiveServicesAccountDeployment)
+[New-AzCognitiveServicesAccountDeployment](./New-AzCognitiveServicesAccountDeployment.md)

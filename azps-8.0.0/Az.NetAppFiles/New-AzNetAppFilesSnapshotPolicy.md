@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/New-AzNetAppFilesSnapshotPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/New-AzNetAppFilesSnapshotPolicy.md
-ms.openlocfilehash: 5684c2039f97e6fa28c305259b0b476cd24e44cd
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 0368f13fad8b61f803ff5e12e4add969cccbf43f
+ms.sourcegitcommit: 7694b86b71e0246a30757731dc3978641aecee40
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145559211"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "146083551"
 ---
 # New-AzNetAppFilesSnapshotPolicy
 
@@ -43,7 +43,7 @@ Cmdlet **New-AzNetAppFilesActiveDirectory** membuat kebijakan rekam jepret baru 
 
 ### Contoh 1
 ```powershell
-$hourlySchedule = @{        
+$hourlySchedule = @{
         Minute = 2
         SnapshotsToKeep = 6
     }
@@ -53,14 +53,14 @@ $hourlySchedule = @{
         SnapshotsToKeep = 6
     }
     $weeklySchedule = @{
-        Minute = 2    
-        Hour = 1                
+        Minute = 2
+        Hour = 1
         Day = "Sunday,Monday"
         SnapshotsToKeep = 6
     }
     $monthlySchedule = @{
-        Minute = 2    
-        Hour = 1        
+        Minute = 2
+        Hour = 1
         DaysOfMonth = "2,11,21"
         SnapshotsToKeep = 6
     }
@@ -304,8 +304,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
  [Get-AzNetAppFilesSnapshot](./Get-AzNetAppFilesSnapshot.md)
  [New-AzNetAppFilesSnapshot](./New-AzNetAppFilesSnapshot.md)
  [Remove-AzNetAppFilesSnapshot](./Remove-AzNetAppFilesSnapshot.md)
- [Update-AzNetAppFilesSnapshot](./Update-AzNetAppFilesSnapshot.md)
- [Get-AzNetAppFilesVolume](./Get-AzNetAppFilessVolume.md)
- [New-AzNetAppFilesVolume](./New-AzNetAppFilessVolume.md)
- [Update-AzNetAppFilesVolume](./Update-AzNetAppFilessVolume.md)
- [Remove-AzNetAppFilesVolume](./Remove-AzNetAppFilessVolume.md)
+ [Get-AzNetAppFilesVolume](./Get-AzNetAppFilesVolume.md)
+ [New-AzNetAppFilesVolume](./New-AzNetAppFilesVolume.md)
+ [Update-AzNetAppFilesVolume](./Update-AzNetAppFilesVolume.md)
+ [Remove-AzNetAppFilesVolume](./Remove-AzNetAppFilesVolume.md)
