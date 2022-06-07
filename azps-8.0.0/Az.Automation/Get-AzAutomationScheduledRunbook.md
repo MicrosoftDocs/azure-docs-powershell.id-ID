@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationScheduledRunbook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationScheduledRunbook.md
-ms.openlocfilehash: 23a55b64ed5b5db6b02f338ee71def1410dd11af
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: e559ea34aab3c1502d2e5ce5c4dfd4ab45bdc5af
+ms.sourcegitcommit: b25c9636c23d562117142e59609269625f9dd51a
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145513855"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "146159256"
 ---
 # Get-AzAutomationScheduledRunbook
 
@@ -78,22 +78,12 @@ Get-AzAutomationScheduledRunbook -AutomationAccountName "Contoso17" -ResourceGro
 
 Perintah ini mendapatkan semua runbook terjadwal untuk jadwal Schedule01 di akun Azure Automation bernama Contoso17.
 
-### Contoh 4: Dapatkan Parameter yang diberikan ke Runbook Terjadwal
-
-Output perintah di bawah ini menyediakan JobScheduleId yang terkait dengan runbook Runbk01.
+### Contoh 4: Dapatkan Parameter yang diberikan ke Runbook Terjadwal tertentu
 
 ```powershell
-Get-AzAutomationScheduledRunbook -AutomationAccountName "Contoso17" -ResourceGroupName "ResourceGroup01" -RunbookName "Runbk01"
+Get-AzAutomationScheduledRunbook -AutomationAccountName "Contoso17" -ResourceGroupName "ResourceGroup01" -JobScheduleId “2b1d7738-093d-4ff7-b87b-e4b2321319e5”
 ```
-
-### Contoh 5: Gunakan JobScheduleId yang diperoleh di atas untuk mendapatkan parameter runbook terjadwal Runbk01.
-
-```powershell
-$x = Get-AzAutomationScheduledRunbook -AutomationAccountName "Contoso17" -ResourceGroupName "ResourceGroup01" -JobScheduleId “2b1d7738-093d-4ff7-b87b-e4b2321319e5”
-$x.Parameters
-```
-
-Metode ini saat ini tidak didukung untuk pekerjaan yang dibuat dengan parameter kompleks (misalnya - array) melalui portal Azure.
+Saat ini tidak didukung untuk pekerjaan yang dibuat dengan parameter kompleks (misalnya - array) melalui portal Microsoft Azure.
 
 ## PARAMETERS
 
@@ -128,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -JobScheduleId
-Menentukan ID pekerjaan terjadwal yang didapat cmdlet ini.
+Menentukan ID pekerjaan terjadwal yang didapatkan cmdlet ini.
 
 ```yaml
 Type: System.Nullable`1[System.Guid]
@@ -143,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya untuk runbook terjadwal yang didapat cmdlet ini.
+Menentukan nama grup sumber daya untuk runbook terjadwal yang didapatkan cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -158,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -RunbookName
-Menentukan nama runbook tempat cmdlet ini mendapatkan runbook terjadwal.
+Menentukan nama runbook yang cmdlet ini mendapatkan runbook terjadwal.
 
 ```yaml
 Type: System.String
