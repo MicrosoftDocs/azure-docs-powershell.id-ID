@@ -1,17 +1,17 @@
 ---
 description: Cara masuk dengan Azure PowerShell sebagai pengguna, perwakilan layanan, atau dengan identitas terkelola untuk sumber daya Azure.
 ms.custom: devx-track-azurepowershell
-ms.date: 05/24/2022
+ms.date: 06/07/2022
 ms.devlang: powershell
 ms.service: azure-powershell
 ms.topic: conceptual
 title: Masuk dengan Azure PowerShell
-ms.openlocfilehash: ab7e2e523dd7e25dae11c74aa0be856f23118a6b
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: 508ce4192a9fc43f05a33b6a6571a98b0bd9d685
+ms.sourcegitcommit: 10639f1badb6c7312556e6dcfa0f38f5d33a4b9c
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145802580"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "146191465"
 ---
 # <a name="sign-in-with-azure-powershell"></a>Masuk dengan Azure PowerShell
 
@@ -21,7 +21,7 @@ Awalnya, Anda masuk ke langganan pertama yang kembali Azure jika Anda memiliki a
 
 > [!IMPORTANT]
 > Info masuk Anda dibagikan di antara beberapa sesi PowerShell selama Anda tetap masuk.
-> Untuk informasi selengkapnya, lihat artikel tentang [Info Masuk Persisten](context-persistence.md).
+> Untuk informasi selengkapnya, lihat [Objek konteks Azure PowerShell](context-persistence.md).
 
 ## <a name="sign-in-interactively"></a>Masuk secara interaktif
 
@@ -31,15 +31,20 @@ Untuk masuk secara interaktif, gunakan cmdlet [Connect-AzAccount](/powershell/mo
 Connect-AzAccount
 ```
 
-Dimulai dengan modul Az PowerShell versi 5.0.0, cmdlet ini menyajikan perintah masuk berbasis browser interaktif secara default. Anda dapat menentukan parameter `UseDeviceAuthentication` untuk menerima string token yang sebelumnya merupakan default untuk PowerShell versi 6 dan yang lebih tinggi.
-
-> [!IMPORTANT]
-> Otorisasi info masuk nama pengguna/kata sandi telah dihapus di Azure PowerShell karena perubahan dalam implementasi otorisasi Active Directory dan masalah keamanan. Jika Anda menggunakan otorisasi kredensial untuk tujuan otomatisasi, sebagai gantinya [buat perwakilan layanan](create-azure-service-principal-azureps.md).
+Cmdlet ini menyajikan permintaan masuk berbasis browser interaktif secara default.
 
 Gunakan cmdlet [Get-AzContext](/powershell/module/az.accounts/get-azcontext) untuk menyimpan ID penyewa Anda dalam variabel yang akan digunakan di dua bagian berikutnya dari artikel ini.
 
 ```azurepowershell-interactive
 $tenantId = (Get-AzContext).Tenant.Id
+```
+
+## <a name="device-code-authentication"></a>Autentikasi kode perangkat
+
+Anda dapat menentukan `UseDeviceAuthentication` parameter untuk menggunakan autentikasi kode perangkat alih-alih kontrol browser.
+
+```azurepowershell-interactive
+Connect-AzAccount -UseDeviceAuthentication
 ```
 
 ## <a name="sign-in-with-a-service-principal"></a>Masuk dengan perwakilan layanan
