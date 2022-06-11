@@ -1,17 +1,17 @@
 ---
 description: Memperkenalkan modul Az PowerShell, yang direkomendasikan untuk berinteraksi dengan Azure, dan penggantian modul AzureRM PowerShell.
 ms.custom: devx-track-azurepowershell
-ms.date: 05/11/2022
+ms.date: 06/09/2022
 ms.devlang: powershell
 ms.service: azure-powershell
 ms.topic: conceptual
 title: Memperkenalkan modul Azure Az PowerShell
-ms.openlocfilehash: 32830d370cf9cbfdff9a5d91db26b5217064300d
-ms.sourcegitcommit: 97a10cac523612de4dbece96f25bd7e3f2431276
+ms.openlocfilehash: 213aad05c86fe4184c803a5c3521dc7294d767d9
+ms.sourcegitcommit: 37440f9593703a5e400f8052b026691982899953
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "144957371"
+ms.lasthandoff: 06/11/2022
+ms.locfileid: "146259715"
 ---
 # <a name="introducing-the-azure-az-powershell-module"></a>Memperkenalkan modul Azure Az PowerShell
 
@@ -21,6 +21,8 @@ Modul Az PowerShell adalah satu set cmdlet untuk mengelola sumber daya Azure lan
 PowerShell menyediakan fitur canggih untuk otomatisasi yang dapat dimanfaatkan untuk mengelola sumber daya Azure Anda, misalnya dalam konteks alur CI/CD.
 
 Modul Az PowerShell adalah pengganti AzureRM dan merupakan versi yang disarankan untuk digunakan untuk berinteraksi dengan Azure.
+
+[!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
 Anda dapat menggunakan modul Az PowerShell dengan salah satu metode berikut:
 

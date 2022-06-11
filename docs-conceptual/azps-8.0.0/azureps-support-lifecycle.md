@@ -1,17 +1,17 @@
 ---
 description: Detail tentang siklus hidup dukungan modul Azure PowerShell
 ms.custom: devx-track-azurepowershell
-ms.date: 05/24/2022
+ms.date: 06/09/2022
 ms.devlang: powershell
 ms.service: azure-powershell
 ms.topic: conceptual
 title: Siklus hidup dukungan Azure PowerShell
-ms.openlocfilehash: 3dff78e5fae375430be5af5d2ca316d2ff6ccdef
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 85b99a50b52eab0914dbd809509c9d87e8d90aef
+ms.sourcegitcommit: 37440f9593703a5e400f8052b026691982899953
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145860584"
+ms.lasthandoff: 06/11/2022
+ms.locfileid: "146259733"
 ---
 # <a name="azure-powershell-support-lifecycle"></a>Siklus Hidup Dukungan Azure PowerShell
 
@@ -23,7 +23,7 @@ Siklus hidup dukungan modul Az PowerShell termasuk dalam [kebijakan siklus hidup
 
 ## <a name="azurerm-powershell-modules"></a>Modul AzureRM PowerShell
 
-Karena modul Az PowerShell sekarang memiliki semua kemampuan modul AzureRM PowerShell dan lebih banyak lagi, kami akan menghentikan modul AzureRM PowerShell pada 29 Februari 2024.
+[!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
 Untuk menghindari gangguan layanan, [perbarui skrip Anda](https://aka.ms/azpsmigrate) yang menggunakan modul AzureRM PowerShell untuk menggunakan modul Az PowerShell paling lambat 29 Februari 2024. Untuk memperbarui skrip Anda secara otomatis, ikuti [panduan memulai cepat](/powershell/azure/quickstart-migrate-azurerm-to-az-automatically).
 
@@ -33,8 +33,9 @@ Tabel berikut mengidentifikasi platform yang didukung untuk modul Az, AzureRM, d
 
 |        Az        | PowerShell <br/> 7.1.3 | PowerShell <br/> >= 7.0.6 | PowerShell <br/> <= 7.0.5 | Windows PowerShell <br/> 5.1 |
 | :--------------: | :--------------------: | :-----------------------: | :-----------------------: | :--------------------------: |
+|      Az 8.x      |       Didukung        |         Didukung         |       Tidak didukung       |          Didukung           |
 |      Az 7.x      |       Didukung        |         Didukung         |       Tidak didukung       |          Didukung           |
-|      Az 6.x      |       Didukung        |         Didukung         |       Tidak didukung       |          Didukung           |
+|      Az 6.x      |     Tidak didukung      |       Tidak didukung       |       Tidak didukung       |        Tidak didukung         |
 | AzureRM (6.13.2) |     Tidak Didukung      |       Tidak Didukung       |       Tidak Didukung       |          Didukung           |
 |  Azure (5.3.1)   |     Tidak Didukung      |       Tidak Didukung       |       Tidak Didukung       |          Didukung           |
 
@@ -45,4 +46,4 @@ Tabel berikut mengidentifikasi platform yang didukung untuk modul Az, AzureRM, d
 
 Modul Az PowerShell menggunakan komponen yang dipengaruhi oleh penasihat keamanan [CVE-2021-26701](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-26701) yang telah diperbaiki di PowerShell 7.0.6 dan 7.1.3. Untuk informasi selengkapnya, lihat [Microsoft Security Advisory CVE-2021-26701: .NET Core Remote Code Execution Vulnerability](https://github.com/PowerShell/Announcements/issues/23).
 
-Dimulai dengan Az 6.0.0, PowerShell 7.0.6 atau 7.1.3 atau yang lebih baru diperlukan. Saat modul Az.Accounts diimpor, pesan non-pemblokiran berikut akan ditampilkan jika versi PowerShell yang tidak didukung sedang digunakan: _"Versi Az.Accounts ini hanya didukung di Windows PowerShell 5.1 dan PowerShell 7.0.6 atau lebih tinggi, buka [https://aka.ms/install-powershell](https://aka.ms/install-powershell) untuk mempelajari cara meningkatkan. Untuk informasi lebih lanjut, kunjungi [https://aka.ms/azpslifecyle](https://aka.ms/azpslifecycle)."_
+Dimulai dengan Az 6.0.0, PowerShell 7.0.6 atau 7.1.3 atau yang lebih baru diperlukan. Saat modul Az.Accounts diimpor, pesan non-pemblokiran berikut ditampilkan jika versi PowerShell yang tidak didukung sedang digunakan: _"Versi Az.Accounts ini hanya didukung pada Windows PowerShell 5.1 dan PowerShell 7.0.6 atau yang lebih baru, buka [https://aka.ms/install-powershell](https://aka.ms/install-powershell) untuk mempelajari cara meningkatkan. Untuk informasi lebih lanjut, buka [https://aka.ms/azpslifecyle](https://aka.ms/azpslifecycle)."_

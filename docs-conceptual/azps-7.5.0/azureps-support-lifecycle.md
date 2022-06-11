@@ -1,17 +1,17 @@
 ---
 description: Detail tentang siklus hidup dukungan modul Azure PowerShell
 ms.custom: devx-track-azurepowershell
-ms.date: 05/24/2022
+ms.date: 06/09/2022
 ms.devlang: powershell
 ms.service: azure-powershell
 ms.topic: conceptual
 title: Siklus hidup dukungan Azure PowerShell
-ms.openlocfilehash: 9270c00d6f7ae211d1e9c2e20120b127f79f0fb7
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: 85b99a50b52eab0914dbd809509c9d87e8d90aef
+ms.sourcegitcommit: 37440f9593703a5e400f8052b026691982899953
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145818999"
+ms.lasthandoff: 06/11/2022
+ms.locfileid: "146259703"
 ---
 # <a name="azure-powershell-support-lifecycle"></a>Siklus Hidup Dukungan Azure PowerShell
 
@@ -23,7 +23,7 @@ Siklus hidup dukungan modul Az PowerShell termasuk dalam [kebijakan siklus hidup
 
 ## <a name="azurerm-powershell-modules"></a>Modul AzureRM PowerShell
 
-Karena modul Az PowerShell sekarang memiliki semua kemampuan modul AzureRM PowerShell dan lebih banyak lagi, kami akan menghentikan modul AzureRM PowerShell pada 29 Februari 2024.
+[!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
 Untuk menghindari gangguan layanan, [perbarui skrip Anda](https://aka.ms/azpsmigrate) yang menggunakan modul AzureRM PowerShell untuk menggunakan modul Az PowerShell paling lambat 29 Februari 2024. Untuk memperbarui skrip Anda secara otomatis, ikuti [panduan memulai cepat](/powershell/azure/quickstart-migrate-azurerm-to-az-automatically).
 

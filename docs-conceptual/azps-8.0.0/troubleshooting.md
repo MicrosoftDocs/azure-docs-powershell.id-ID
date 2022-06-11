@@ -1,17 +1,17 @@
 ---
 description: Memecahkan masalah modul Azure Az PowerShell.
 ms.custom: devx-track-azurepowershell
-ms.date: 05/24/2022
+ms.date: 06/09/2022
 ms.devlang: powershell
 ms.service: azure-powershell
 ms.topic: conceptual
 title: Pemecahan masalah modul Azure Az PowerShell
-ms.openlocfilehash: 23e11fe09ffeebf007d6ac69d1453c7e76f86815
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: e5072c11ccafccc612712c21e48c370ba7b8c77c
+ms.sourcegitcommit: 37440f9593703a5e400f8052b026691982899953
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145793852"
+ms.lasthandoff: 06/11/2022
+ms.locfileid: "146259754"
 ---
 # <a name="troubleshooting-the-azure-az-powershell-module"></a>Pemecahan masalah modul Azure Az PowerShell
 
@@ -29,6 +29,25 @@ Untuk mengaktifkan pengelogan debug untuk seluruh sesi PowerShell, Anda menetapk
 
 ```powershell-interactive
 $DebugPreference = 'Continue'
+```
+
+## <a name="object-reference-not-set-to-an-instance-of-an-object"></a>Referensi objek tidak diatur ke instans objek
+
+Pesan "_referensi objek tidak diatur ke instans objek_" berarti Anda merujuk ke objek yang null atau sumber daya Azure yang tidak ada atau Anda tidak memiliki izin untuk mengakses.
+
+```azurepowershell
+$resourceId =  '/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/<resource-group-name>/providers/Microsoft.Web/sites/<webapp-name>/privateEndpointConnections/<endpoint-name>'
+Get-AzPrivateEndpointConnection -ResourceId $resourceId
+```
+
+```Output
+Get-AzPrivateEndpointConnection: Object reference not set to an instance of an object.
+```
+
+Anda dapat menggunakan `Get-AzResource` cmdlet untuk memverifikasi bahwa sumber daya Azure yang ditentukan ada.
+
+```azurepowershell
+Get-AzResource -ResourceId $resourceId
 ```
 
 ## <a name="permission-issues-with-azad-cmdlets"></a>Masalah izin dengan cmdlet AzAD
@@ -66,6 +85,8 @@ Pesan ini muncul ketika Anda menginstal modul Az dan AzureRM PowerShell yang dii
 > Saat AzureRM diinstal dalam cakupan `AllUsers` Windows PowerShell, AzureRM diinstal di lokasi yang merupakan bagian dari `$env:PSModulePath` untuk PowerShell 7. Ini tidak didukung karena konflik antara modul AzureRM dan Az PowerShell.
 
 Az dan AzureRM dapat hidup berdampingan pada sistem Windows yang sama, tetapi hanya jika AzureRM diinstal dalam cakupan `CurrentUser` Windows PowerShell dan Az yang diinstal di PowerShell 7. Untuk informasi selengkapnya, lihat [Menginstal modul Azure PowerShell](/powershell/azure/install-az-ps).
+
+[!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
 ## <a name="on-macos-an-error-returns-when-keychain-authorization-fails"></a>Di MacOS, kesalahan akan kembali terjadi saat otorisasi KeyChain gagal
 
