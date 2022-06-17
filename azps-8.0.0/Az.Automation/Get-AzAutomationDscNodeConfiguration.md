@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationDscNodeConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationDscNodeConfiguration.md
-ms.openlocfilehash: c398a320a95918a1df189325daa377dbfa586a47
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: a1c6abadd88adf9c5344142cbfa2d94002483de9
+ms.sourcegitcommit: 16496dee798f33b983ffdc113dd248d57f3ece4d
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145619040"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "146420918"
 ---
 # Get-AzAutomationDscNodeConfiguration
 
@@ -40,7 +40,7 @@ Get-AzAutomationDscNodeConfiguration -ConfigurationName <String> [-RollupStatus 
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzAutomationDscNodeConfiguration** mendapatkan metadata untuk konfigurasi node APS Desired State Configuration (DSC) dalam Azure Automation.
+Cmdlet **Get-AzAutomationDscNodeConfiguration** mendapatkan metadata untuk konfigurasi node APS Desired State Configuration (DSC) di Azure Automation.
 Automation menyimpan konfigurasi simpul DSC sebagai dokumen konfigurasi Managed Object Format (MOF).
 
 ## EXAMPLES
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Menentukan nama konfigurasi simpul DSC yang cmdlet ini mendapatkan metadata.
+Menentukan nama konfigurasi simpul DSC tempat cmdlet ini mendapatkan metadata.
 
 ```yaml
 Type: System.String
@@ -145,10 +145,12 @@ Accept wildcard characters: False
 ```
 
 ### -RollupStatus
-Menentukan status rollup konfigurasi simpul DSC yang didapat cmdlet ini.
+Menentukan status rollup konfigurasi simpul DSC yang didapatkan cmdlet ini.
 Nilai yang valid adalah: 
 - Buruk 
 - Baik
+
+*Buruk: Tidak Patuh*, *Baik: Patuh*
 
 ```yaml
 Type: System.String

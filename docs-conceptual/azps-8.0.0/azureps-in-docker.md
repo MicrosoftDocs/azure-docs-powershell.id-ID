@@ -6,12 +6,12 @@ ms.devlang: powershell
 ms.service: azure-powershell
 ms.topic: conceptual
 title: Menggunakan Azure PowerShell di Docker
-ms.openlocfilehash: 6322c3eb4c79fe9a3cf460c7abfaaf960e802be4
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 071dfec2adcd0e997ef4113011ac244e393a3f1e
+ms.sourcegitcommit: 16496dee798f33b983ffdc113dd248d57f3ece4d
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145688304"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "146420900"
 ---
 # <a name="using-azure-powershell-in-docker"></a>Menggunakan Azure PowerShell di Docker
 
@@ -25,7 +25,7 @@ Citra kontainer terbaru berisi versi PowerShell terbaru dan modul Azure PowerShe
 
 Untuk setiap rilis baru modul Az, kami merilis citra untuk sistem operasi berikut:
 
-- Ubuntu 18.04 (default)
+- Ubuntu 20.04 (default)
 - Debian 9
 - CentOS 7+
 
