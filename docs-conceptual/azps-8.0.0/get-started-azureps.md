@@ -6,12 +6,12 @@ ms.devlang: powershell
 ms.service: azure-powershell
 ms.topic: get-started-article
 title: Mulai menggunakan Azure PowerShell
-ms.openlocfilehash: 9d039b74e402a28763425e2cef5ec618833a3220
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: 399c1081602044f5a4c64be453a282be218b308a
+ms.sourcegitcommit: 0ced01f5fe159ab5fc8aceb2030ae5069e8117d3
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145818982"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "146473333"
 ---
 # <a name="get-started-with-azure-powershell"></a>Mulai menggunakan Azure PowerShell
 
@@ -70,9 +70,12 @@ Untuk membantu Anda menemukan perintah umum, tabel ini mencantumkan jenis sumber
 
 Untuk daftar lengkap modul di Azure PowerShell, lihat [daftar modul Azure PowerShell](https://github.com/Azure/azure-powershell/blob/master/documentation/azure-powershell-modules.md) yang dihosting di GitHub.
 
-## <a name="telemetry"></a>Telemetri
+## <a name="data-collection"></a>Kumpulan Data
 
-Azure PowerShell secara otomatis mengumpulkan data telemetri secara default. Microsoft mengagregasi kumpulan data untuk mengidentifikasi pola penggunaan, mengidentifikasi masalah umum, dan meningkatkan pengalaman Azure PowerShell. Microsoft Azure PowerShell tidak mengumpulkan data pribadi atau personal apa pun. Untuk menonaktifkan pengumpulan data, Anda harus menolak secara eksplisit dengan menjalankan [Disable-AzDataCollection](/powershell/module/az.accounts/disable-azdatacollection).
+Azure PowerShell mengumpulkan data telemetri secara default. Agregat Microsoft mengumpulkan data untuk mengidentifikasi pola penggunaan guna mengidentifikasi masalah umum dan meningkatkan pengalaman Azure PowerShell.
+Microsoft Azure PowerShell tidak mengumpulkan data privat atau pribadi apa pun. Misalnya, data penggunaan membantu mengidentifikasi masalah seperti cmdlet dengan keberhasilan rendah dan membantu memprioritaskan pekerjaan kita.
+
+Meskipun kami menghargai wawasan yang diberikan data ini, kami juga memahami bahwa tidak semua orang ingin mengirim data penggunaan. Anda dapat menonaktifkan pengumpulan data dengan cmdlet [`Disable-AzDataCollection`](/powershell/module/az.accounts/disable-azdatacollection). Anda juga dapat membaca [pernyataan privasi](https://privacy.microsoft.com/privacystatement) kami untuk mempelajari lebih lanjut.
 
 ## <a name="learn-azure-powershell-basics-with-quickstarts-and-tutorials"></a>Pelajari dasar-dasar Azure PowerShell dengan panduan mulai cepat dan tutorial
 
