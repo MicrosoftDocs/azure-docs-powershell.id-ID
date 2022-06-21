@@ -3,17 +3,17 @@ external help file: Microsoft.WindowsAzure.Commands.ServiceManagement.dll-Help.x
 ms.assetid: F94584BC-EC02-412D-B089-B98A6FF8F505
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: b31483b37331e0ed7e4df78755dc6a1feeb98c74
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a9a9d719350a47f19815599ec6d89021d3fe7815
+ms.sourcegitcommit: f0ef06d70765493313065d26e44c730ae9963f5d
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143210627"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "146520662"
 ---
 # New-AzureQuickVM
 
 ## SYNOPSIS
-Mengonfigurasi dan membuat mesin virtual Azure.
+Mengonfigurasi dan membuat komputer virtual Azure.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -43,46 +43,46 @@ New-AzureQuickVM [-Linux] -ServiceName <String> [-Name <String>] -ImageName <Str
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureQuickVM** mengonfigurasi dan membuat mesin virtual Azure.
-Cmdlet ini dapat menyebarkan mesin virtual ke layanan Azure yang sudah ada.
-Cmdlet ini dapat membuat layanan Azure alternatif yang menghosting mesin virtual baru.
+Cmdlet **New-AzureQuickVM** mengonfigurasi dan membuat komputer virtual Azure.
+Cmdlet ini dapat menyebarkan komputer virtual ke dalam layanan Azure yang ada.
+Cmdlet ini dapat membuat layanan Azure yang menghosting komputer virtual baru.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat mesin virtual
+### Contoh 1: Membuat komputer virtual
 ```
 PS C:\> New-AzureQuickVM -Windows -ServiceName "ContosoService17" -Name "VirutalMachine01" -ImageName "Image07" -Password "password" -AdminUsername "AdminMain" -WaitForBoot
 ```
 
-Perintah ini membuat mesin virtual yang menjalankan sistem operasi Windows dalam layanan yang sudah ada.
-Cmdlet mendasarkan mesin virtual pada gambar yang ditentukan.
+Perintah ini membuat komputer virtual yang menjalankan sistem operasi Windows dalam layanan yang ada.
+Cmdlet mendasarkan komputer virtual pada gambar yang ditentukan.
 Perintah menentukan parameter *WaitForBoot* .
-Oleh karena itu, cmdlet menunggu mesin virtual dimulai.
+Oleh karena itu, cmdlet menunggu komputer virtual dimulai.
 
-### Contoh 2: Membuat mesin virtual yang menggunakan sertifikat
+### Contoh 2: Membuat komputer virtual dengan menggunakan sertifikat
 ```
 PS C:\> $certs = Get-ChildItem Cert:\CurrentUser\My
 PS C:\> New-AzureQuickVM -Windows -ServiceName "MySvc1" -name "MyWinVM1" -ImageName "Image07" -Password "password" -AdminUserName "AdminMain" -WinRMCertificate $certs[0] -X509Certificates $certs[1], $certs[2] -WaitForBoot
 ```
 
-Perintah pertama mendapatkan sertifikat dari toko, dan menyimpannya dalam variabel $certs.
+Perintah pertama mendapatkan sertifikat dari penyimpanan, dan menyimpannya dalam variabel $certs.
 
-Perintah kedua membuat mesin virtual yang menjalankan sistem operasi Windows dalam layanan yang sudah ada dari gambar.
-Secara default, pendengar WinRM Https diaktifkan di mesin virtual.
+Perintah kedua membuat komputer virtual yang menjalankan sistem operasi Windows dalam layanan yang ada dari gambar.
+Secara default, listener WinRM Https diaktifkan pada komputer virtual.
 Perintah menentukan parameter *WaitForBoot* .
-Oleh karena itu, cmdlet menunggu mesin virtual dimulai.
-Perintah mengunggah Sertifikat WinRM dan X509Menerima ke layanan yang dihosting.
+Oleh karena itu, cmdlet menunggu komputer virtual dimulai.
+Perintah mengunggah Sertifikat WinRM dan X509Certificates ke layanan yang dihosting.
 
-### Contoh 3: Membuat mesin virtual yang menjalankan sistem operasi Linux
+### Contoh 3: Membuat komputer virtual yang menjalankan sistem operasi Linux
 ```
 PS C:\> New-AzureQuickVM -Linux -ServiceName "ContosoServiceLinux01" -Name "LinuxVirtualMachine01" -ImageName "LinuxImage01" -LinuxUser "RootMain" -Password "password" -Location "Central US"
 ```
 
-Perintah ini membuat mesin virtual yang menjalankan sistem operasi Linux dari gambar.
-Perintah ini membuat layanan untuk menghosting mesin virtual baru.
+Perintah ini membuat komputer virtual yang menjalankan sistem operasi Linux dari gambar.
+Perintah ini membuat layanan untuk menghosting komputer virtual baru.
 Perintah menentukan lokasi untuk layanan.
 
-### Contoh 4: Buat mesin virtual dan buat layanan untuk menghosting mesin virtual baru
+### Contoh 4: Membuat komputer virtual dan membuat layanan untuk menghosting komputer virtual baru
 ```
 PS C:\> $Locations = Get-AzureLocation
 PS C:\> $Images = Get-AzureVMImage
@@ -91,15 +91,15 @@ PS C:\> New-AzureQuickVM -Windows -InstanceSize "Large" -ServiceName "ContosoSer
 
 Perintah pertama mendapatkan lokasi dengan menggunakan cmdlet **Get-AzureLocation** , lalu menyimpannya dalam variabel array $Locations.
 
-Perintah kedua mendapatkan gambar yang tersedia menggunakan cmdlet **Get-AzureVMImage** , lalu menyimpannya dalam variabel array $Images.
+Perintah kedua mendapatkan gambar yang tersedia dengan menggunakan cmdlet **Get-AzureVMImage** , lalu menyimpannya dalam variabel array $Images.
 
-Perintah terakhir membuat mesin virtual besar bernama VirtualMachine25.
-Mesin virtual menjalankan sistem operasi Windows.
-Ini didasarkan pada salah satu gambar di $Images.
-Perintah membuat layanan bernama ContosoService03 untuk mesin virtual baru.
-Layanan berada di lokasi di $Locations.
+Perintah akhir membuat komputer virtual besar bernama VirtualMachine25.
+Komputer virtual menjalankan sistem operasi Windows.
+Ini didasarkan pada salah satu gambar dalam $Images.
+Perintah membuat layanan bernama ContosoService03 untuk komputer virtual baru.
+Layanan ini berada di lokasi di $Locations.
 
-### Contoh 5: Membuat mesin virtual yang memiliki nama IP khusus
+### Contoh 5: Membuat komputer virtual yang memiliki nama IP khusus
 ```
 PS C:\> $Locations = Get-AzureLocation
 PS C:\> $Images = Get-AzureVMImage
@@ -110,14 +110,14 @@ Perintah pertama mendapatkan lokasi, lalu menyimpannya dalam variabel array $Loc
 
 Perintah kedua mendapatkan gambar yang tersedia, lalu menyimpannya dalam variabel array $Images.
 
-Perintah terakhir membuat mesin virtual bernama VirtualMachine27 berdasarkan salah satu gambar dalam $Images.
+Perintah akhir membuat komputer virtual bernama VirtualMachine27 berdasarkan salah satu gambar di $Images.
 Perintah membuat layanan di lokasi di $Locations.
-Mesin virtual memiliki nama IP khusus, sebelumnya disimpan dalam variabel $ipName.
+Komputer virtual memiliki nama IP yang dipesan, yang sebelumnya disimpan dalam variabel $ipName.
 
 ## PARAMETERS
 
 ### -AdminUsername
-Menentukan nama pengguna akun Administrator yang dibuat cmdlet ini pada mesin virtual.
+Menentukan nama pengguna akun Administrator yang dibuat cmdlet ini pada komputer virtual.
 
 ```yaml
 Type: String
@@ -132,8 +132,8 @@ Accept wildcard characters: False
 ```
 
 ### -AffinityGroup
-Menentukan grup affinity untuk mesin virtual.
-Tentukan parameter ini atau parameter *Lokasi* hanya jika cmdlet ini membuat layanan Azure untuk mesin virtual.
+Menentukan grup afinitas untuk komputer virtual.
+Tentukan parameter ini atau parameter *Lokasi* hanya jika cmdlet ini membuat layanan Azure untuk komputer virtual.
 
 ```yaml
 Type: String
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -AvailabilitySetName
-Menentukan nama set ketersediaan di mana cmdlet ini membuat mesin virtual.
+Menentukan nama set ketersediaan tempat cmdlet ini membuat komputer virtual.
 
 ```yaml
 Type: String
@@ -178,15 +178,15 @@ Accept wildcard characters: False
 ```
 
 ### -CustomDataFile
-Menentukan file data untuk mesin virtual.
-Cmdlet ini mengkodekan konten file sebagai Base64.
+Menentukan file data untuk komputer virtual.
+Cmdlet ini mengodekan konten file sebagai Base64.
 Panjang file harus kurang dari 64 kilobyte.
 
 Jika sistem operasi tamu adalah sistem operasi Windows, cmdlet ini menyimpan data ini sebagai file biner yang bernama %SYSTEMDRIVE%\AzureData\CustomData.bin.
 
-Jika sistem operasi tamu adalah Linux, cmdlet ini melewati data menggunakan file ovf-env.xml.
-Instalasi menyalin file tersebut ke direktori /var/lib/waagent.
-Agen juga menyimpan data berkode Base64 di /var/lib/waagent/CustomData.
+Jika sistem operasi tamu adalah Linux, cmdlet ini meneruskan data dengan menggunakan file ovf-env.xml.
+Penginstalan menyalin file tersebut ke direktori /var/lib/waagent.
+Agen ini juga menyimpan data yang dikodekan Base64 di /var/lib/waagent/CustomData.
 
 ```yaml
 Type: String
@@ -201,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableGuestAgent
-Menunjukkan bahwa cmdlet ini menonaktifkan infrastruktur sebagai layanan (IaaS) penyediaan agen tamu.
+Menunjukkan bahwa cmdlet ini menonaktifkan agen tamu penyediaan infrastruktur sebagai layanan (IaaS).
 
 ```yaml
 Type: SwitchParameter
@@ -248,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableWinRMHttp
-Menunjukkan bahwa cmdlet ini mengaktifkan WinRM melalui HTTP.
+Menunjukkan bahwa cmdlet ini memungkinkan WinRM melalui HTTP.
 
 ```yaml
 Type: SwitchParameter
@@ -263,7 +263,7 @@ Accept wildcard characters: False
 ```
 
 ### -HostCaching
-Menentukan mode cache host untuk disk sistem operasi.
+Menentukan mode penembolokan host untuk disk sistem operasi.
 Nilai yang valid adalah: 
 
 - ReadOnly
@@ -297,16 +297,16 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet ini merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons peristiwa informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Mengabaikan
+- Ignore
 - Menanyakan
-- DiamKontinue
-- Stop
-- Menangguhkan
+- Lanjutkan Diam-diam
+- Hentikan
+- Tangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -335,13 +335,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Instancesize
+### -InstanceSize
 Menentukan ukuran instans.
 Nilai yang valid adalah: 
 
 - ExtraSmall
 - Kecil
-- Menengah
+- Medium
 - Besar
 - ExtraLarge
 - A5
@@ -376,7 +376,7 @@ Accept wildcard characters: False
 ```
 
 ### -Linux
-Menunjukkan bahwa cmdlet ini membuat mesin virtual berbasis Linux.
+Menunjukkan bahwa cmdlet ini membuat komputer virtual berbasis Linux.
 
 ```yaml
 Type: SwitchParameter
@@ -391,7 +391,7 @@ Accept wildcard characters: False
 ```
 
 ### -LinuxUser
-Menentukan nama pengguna akun administratif Linux yang dibuat cmdlet ini di mesin virtual.
+Menentukan nama pengguna akun administratif Linux yang dibuat cmdlet ini pada komputer virtual.
 
 ```yaml
 Type: String
@@ -406,9 +406,9 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan pusat data Azure yang menjadi host mesin virtual.
+Menentukan pusat data Azure yang menghosting komputer virtual.
 Jika Anda menentukan parameter ini, cmdlet akan membuat layanan Azure di lokasi yang ditentukan.
-Tentukan parameter ini atau parameter *AffinityGroup* hanya jika cmdlet ini membuat layanan Azure untuk mesin virtual.
+Tentukan parameter ini atau parameter *AffinityGroup* hanya jika cmdlet ini membuat layanan Azure untuk komputer virtual.
 
 ```yaml
 Type: String
@@ -422,8 +422,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -MediaLokasi
-Menentukan lokasi Azure Storage tempat cmdlet ini membuat disk mesin virtual.
+### -MediaLocation
+Menentukan lokasi Azure Storage tempat cmdlet ini membuat disk komputer virtual.
 
 ```yaml
 Type: String
@@ -437,8 +437,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Menentukan nama mesin virtual yang dibuat cmdlet ini.
+### -Name
+Menentukan nama komputer virtual yang dibuat cmdlet ini.
 
 ```yaml
 Type: String
@@ -468,7 +468,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWinRMEndpoint
-Menunjukkan bahwa cmdlet ini tidak menambahkan titik akhir WinRM untuk mesin virtual.
+Menunjukkan bahwa cmdlet ini tidak menambahkan titik akhir WinRM untuk komputer virtual.
 
 ```yaml
 Type: SwitchParameter
@@ -482,7 +482,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Password
+### -Kata sandi
 Menentukan kata sandi untuk akun administratif.
 
 ```yaml
@@ -499,7 +499,7 @@ Accept wildcard characters: False
 
 ### -Profil
 Menentukan profil Azure tempat cmdlet ini dibaca.
-Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
+Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -514,7 +514,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReservedIPName
-Menentukan nama IP khusus.
+Menentukan nama IP yang dipesan.
 
 ```yaml
 Type: String
@@ -544,12 +544,12 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceName
-Menentukan nama layanan Azure baru atau yang sudah ada tempat cmdlet ini menambahkan mesin virtual baru.
+Menentukan nama layanan Azure baru atau yang sudah ada tempat cmdlet ini menambahkan komputer virtual baru.
 
 Jika Anda menentukan layanan baru, cmdlet ini akan membuatnya.
 Untuk membuat layanan baru, Anda harus menentukan parameter *Lokasi* atau *AffinityGroup* .
 
-Jika Anda menentukan layanan yang sudah ada, jangan tentukan *Lokasi* atau *AffinityGroup*.
+Jika Anda menentukan layanan yang ada, jangan tentukan *Lokasi* atau *AffinityGroup*.
 
 ```yaml
 Type: String
@@ -579,7 +579,7 @@ Accept wildcard characters: False
 ```
 
 ### -SSHPublicKeys
-Menentukan kunci publik SSH.
+Menentukan kunci umum SSH.
 
 ```yaml
 Type: SSHPublicKeyList
@@ -594,7 +594,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubnetNames
-Menentukan array nama subnet untuk mesin virtual.
+Menentukan array nama subnet untuk komputer virtual.
 
 ```yaml
 Type: String[]
@@ -609,7 +609,7 @@ Accept wildcard characters: False
 ```
 
 ### -VNetName
-Menentukan nama jaringan virtual untuk mesin maya.
+Menentukan nama jaringan virtual untuk komputer virtual.
 
 ```yaml
 Type: String
@@ -624,8 +624,8 @@ Accept wildcard characters: False
 ```
 
 ### -WaitForBoot
-Menunjukkan bahwa cmdlet ini menunggu mesin virtual mencapai ReadyRole negara bagian.
-Jika mesin virtual mencapai salah satu status berikut, cmdlet gagal: FailedStartingVM, ProvisioningFailed, atau ProvisioningTimeout.
+Menunjukkan bahwa cmdlet ini menunggu komputer virtual mencapai status ReadyRole.
+Jika komputer virtual mencapai salah satu status berikut, cmdlet gagal: FailedStartingVM, ProvisioningFailed, atau ProvisioningTimeout.
 
 ```yaml
 Type: SwitchParameter
@@ -640,7 +640,7 @@ Accept wildcard characters: False
 ```
 
 ### -Windows
-Menunjukkan bahwa cmdlet ini membuat mesin virtual Windows.
+Menunjukkan bahwa cmdlet ini membuat komputer virtual Windows.
 
 ```yaml
 Type: SwitchParameter
@@ -669,8 +669,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -X509Sertifikaat
-Menentukan array sertifikat X509 yang digunakan untuk layanan yang dihosting.
+### -X509Certificates
+Menentukan array sertifikat X509 yang disebarkan ke layanan yang dihosting.
 
 ```yaml
 Type: X509Certificate2[]
@@ -685,7 +685,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -699,6 +699,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureVMImage](./Get-AzureVMImage.md)
 
-[AzureDns baru](./New-AzureDns.md)
+[New-AzureDns](./New-AzureDns.md)
 
 
