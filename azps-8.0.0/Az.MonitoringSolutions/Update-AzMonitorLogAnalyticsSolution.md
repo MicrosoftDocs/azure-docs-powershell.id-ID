@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.monitoringsoluti
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MonitoringSolutions/help/Update-AzMonitorLogAnalyticsSolution.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MonitoringSolutions/help/Update-AzMonitorLogAnalyticsSolution.md
-ms.openlocfilehash: 5763bd9f64bdabbefd4d0f0113b4a66ae3e64817
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 9aa913e82ac8e3d68641f8ae0da122583f049d2e
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145513462"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146641234"
 ---
 # Update-AzMonitorLogAnalyticsSolution
 
@@ -208,7 +208,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMonitoringSolutionsIdentity>: Parameter Identitas
+INPUTOBJECT `<IMonitoringSolutionsIdentity>`: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ManagementAssociationName <String>]`: User ManagementAssociation Name.
   - `[ManagementConfigurationName <String>]`: Nama Konfigurasi Manajemen Pengguna.

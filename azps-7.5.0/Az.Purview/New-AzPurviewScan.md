@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.purview/new-azpu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewScan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewScan.md
-ms.openlocfilehash: 5ed32443ed4c5fb701e2ddb9da20cb2308b3f9d7
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: d90c29c4af8e471e3a70269eb61b759edd2e6fb3
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145652116"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146642242"
 ---
 # New-AzPurviewScan
 
@@ -60,7 +60,7 @@ Membuat instans pemindaian 'ScanTest' di bawah sumber data
 
 ### -Isi
 .
-Untuk membuat, lihat bagian CATATAN untuk properti BODY dan buat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti BODY dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Purviewdata.Models.Api20211001Preview.IScan
@@ -186,7 +186,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-ISI <IScan>: .
+TUBUH `<IScan>`: .
   - `Kind <ScanAuthorizationType>`: 
 
 ## RELATED LINKS

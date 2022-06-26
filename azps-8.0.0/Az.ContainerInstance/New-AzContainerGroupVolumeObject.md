@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.ContainerInstanc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/New-AzContainerGroupVolumeObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/New-AzContainerGroupVolumeObject.md
-ms.openlocfilehash: ff44b23b051550ea1927d77f6a0e29acf545af27
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 39e84720c548d5bfaee30e965444996c118ce9ff
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145535414"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146641845"
 ---
 # New-AzContainerGroupVolumeObject
 
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -GitRepoRepositoryUrl
-URL Repositori.
+URL repositori.
 
 ```yaml
 Type: System.String
@@ -209,7 +209,7 @@ Accept wildcard characters: False
 
 ### -Rahasia
 Volume rahasia.
-Untuk membuat, lihat bagian CATATAN untuk properti SECRET dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti SECRET dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ContainerInstance.Models.Api20210901.ISecretVolume
@@ -241,10 +241,10 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-EMPTYDIR <IVolumeEmptyDir>: Volume direktori kosong.
+EMPTYDIR `<IVolumeEmptyDir>`: Volume direktori kosong.
   - `[(Any) <Object>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
 
-RAHASIA <ISecretVolume>: Volume rahasia.
+RAHASIA `<ISecretVolume>`: Volume rahasia.
   - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
 
 ## RELATED LINKS

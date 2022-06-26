@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.botservice/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/BotService/help/Get-AzBotService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/BotService/help/Get-AzBotService.md
-ms.openlocfilehash: 57221c049e838ded62c0375e68d6ac4268db7c5e
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 0e82c530522da654b10140a4dacbd941d0122d1d
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145529683"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146642134"
 ---
 # Get-AzBotService
 
@@ -61,7 +61,7 @@ Etag                                   Kind Location Name             SkuName Sk
 
 Dapatkan semua BotServices
 
-### Contoh 2: Dapatkan BotService dengan ResourceGroupName dan Name
+### Contoh 2: Dapatkan BotService menurut ResourceGroupName dan Nama
 ```powershell
 Get-AzBotService -Name 'youri-bot1' -ResourceGroupName 'youriBotTest'
 ```
@@ -71,7 +71,7 @@ Etag                                   Kind Location Name       SkuName SkuTier 
 "060085fb-0000-1800-0000-5fd71d7c0000" bot  global   youri-bot F0              Microsoft.BotService/botServices
 ```
 
-Dapatkan BotService dengan ResourceGroupName dan Nama
+Dapatkan BotService menurut ResourceGroupName dan Nama
 
 ### Contoh 3: Dapatkan semua BotServices dengan ResourceGroupName
 ```powershell
@@ -86,7 +86,7 @@ Etag                                   Kind Location Name             SkuName Sk
 "0600ef2b-0000-0200-0000-5fd727a70000" sdk  global   youritest1314    S1              Microsoft.BotService/botServices
 ```
 
-Mendapatkan semua BotServices oleh ResourceGroupName
+Mendapatkan semua BotServices menurut ResourceGroupName
 
 ### Contoh 4: Dapatkan BotService dengan inputObject
 ```powershell
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.BotService.Models.IBotServiceIdentity
@@ -198,7 +198,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IBotServiceIdentity>: Parameter Identitas
+INPUTOBJECT `<IBotServiceIdentity>`: Parameter Identitas
   - `[ChannelName <ChannelName?>]`: Nama sumber daya Saluran.
   - `[ConnectionName <String>]`: Nama sumber daya Pengaturan Koneksi Bot Service
   - `[Id <String>]`: Jalur identitas sumber daya

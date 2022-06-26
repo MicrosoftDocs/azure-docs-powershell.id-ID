@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.connectedmachine
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedMachine/help/Update-AzConnectedPrivateLinkScopeTag.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedMachine/help/Update-AzConnectedPrivateLinkScopeTag.md
-ms.openlocfilehash: fcc03d455d2b5c4fed839cee624e5791910df403
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: b7e5742cc1349d02cf3cfe3c64b26e154cb08d65
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145618940"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146641936"
 ---
 # Update-AzConnectedPrivateLinkScopeTag
 
 ## SYNOPSIS
-Memperbarui tag PrivateLinkScope yang ada.
+Updates tag PrivateLinkScope yang sudah ada.
 Untuk memperbarui bidang lain, gunakan metode CreateOrUpdate.
 
 ## SYNTAX
@@ -47,7 +47,7 @@ Update-AzConnectedPrivateLinkScopeTag -InputObject <IConnectedMachineIdentity> [
 ```
 
 ## DESCRIPTION
-Memperbarui tag PrivateLinkScope yang ada.
+Updates tag PrivateLinkScope yang sudah ada.
 Untuk memperbarui bidang lain, gunakan metode CreateOrUpdate.
 
 ## EXAMPLES
@@ -228,7 +228,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IConnectedMachineIdentity>: Parameter Identitas
+INPUTOBJECT `<IConnectedMachineIdentity>`: Parameter Identitas
   - `[ExtensionName <String>]`: Nama ekstensi komputer.
   - `[GroupName <String>]`: Nama sumber daya tautan privat.
   - `[Id <String>]`: Jalur identitas sumber daya
@@ -240,7 +240,7 @@ INPUTOBJECT <IConnectedMachineIdentity>: Parameter Identitas
   - `[ScopeName <String>]`: Nama sumber daya Azure Arc PrivateLinkScope.
   - `[SubscriptionId <String>]`: ID langganan target.
 
-PRIVATELINKSCOPETAG <ITagsResource>: Kontainer yang hanya menyimpan Tag untuk sumber daya, memungkinkan pengguna memperbarui tag pada instans PrivateLinkScope.
+PRIVATELINKSCOPETAG `<ITagsResource>`: Kontainer yang hanya menyimpan Tag untuk sumber daya, memungkinkan pengguna memperbarui tag pada instans PrivateLinkScope.
   - `[Tag <ITagsResourceTags>]`: Tag sumber daya
     - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
 

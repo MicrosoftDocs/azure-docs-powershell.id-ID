@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.portal/update-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Portal/help/Update-AzPortalDashboard.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Portal/help/Update-AzPortalDashboard.md
-ms.openlocfilehash: 38490ae4ccf3ab14b0e88d41bbd199a314f79208
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: fba15dc5430b6b83f5fbd5971127e7bd5f6abdb5
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145658650"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146642314"
 ---
 # Update-AzPortalDashboard
 
 ## SYNOPSIS
-Memperbarui Dasbor yang sudah ada.
+Updates Dasbor yang sudah ada.
 
 > [!NOTE]
 >Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.portal/update-azportaldashboard) untuk informasi terbaru.
@@ -36,7 +36,7 @@ Update-AzPortalDashboard -InputObject <IPortalIdentity> [-Lens <Hashtable>] [-Me
 ```
 
 ## DESCRIPTION
-Memperbarui Dasbor yang sudah ada.
+Updates Dasbor yang sudah ada.
 
 ## EXAMPLES
 
@@ -242,7 +242,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IPortalIdentity>: Parameter Identitas
+INPUTOBJECT `<IPortalIdentity>`: Parameter Identitas
   - `[DashboardName <String>]`: Nama dasbor.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ResourceGroupName <String>]`: Nama grup sumber daya.

@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.dataprotection/e
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Edit-AzDataProtectionPolicyTagClientObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Edit-AzDataProtectionPolicyTagClientObject.md
-ms.openlocfilehash: 9e65c2dba36f9dec18fb017430a6800b80e19ac3
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: aaee4feb1a0625e135d347a3f3dd398b388a5b55
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145618023"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146641738"
 ---
 # Edit-AzDataProtectionPolicyTagClientObject
 
@@ -67,7 +67,7 @@ Perintah ini menghapus tag Mingguan dari kebijakan pencadangan.
 
 ### -Kriteria
 Kriteria yang akan dikaitkan dengan tag jadwal.
-Untuk membuat, lihat bagian CATATAN untuk properti CRITERIA dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti CRITERIA dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Models.Api20210701.IScheduleBasedBackupCriteria[]
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 
 ### -Kebijakan
 Objek Kebijakan Pencadangan.
-Untuk membuat, lihat bagian CATATAN untuk properti POLICY dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti POLICY dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Models.Api20210701.IBackupPolicy
@@ -148,18 +148,18 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 KRITERIA <IScheduleBasedBackupCriteria[]>: Kriteria yang akan dikaitkan dengan tag jadwal.
   - `ObjectType <String>`: Jenis objek tertentu - digunakan untuk deserialisasi
   - `[AbsoluteCriterion <AbsoluteMarker[]>]`: berisi nilai absolut seperti "AllBackup" / "FirstOfDay" / "FirstOfWeek" / "FirstOfMonth" dan harus menjadi bagian dari enum AbsoluteMarker
-  - `[DaysOfMonth <IDay[]>]`: Ini adalah hari dalam sebulan dari 1 hingga 28 bijaksana lainnya bulan lalu
+  - `[DaysOfMonth <IDay[]>]`: Ini adalah hari dalam sebulan dari 1 hingga 28 bulan terakhir yang bijaksana lainnya
     - `[Date <Int32?>]`: Tanggal bulan
     - `[IsLast <Boolean?>]`: Apakah Tanggal adalah tanggal terakhir bulan
   - `[DaysOfTheWeek <DayOfWeek[]>]`: Seharusnya Hari Minggu/Senin/T..../Sabtu
-  - `[MonthsOfYear <Month[]>]`: Seharusnya Januari/Februari/....../Desember
+  - `[MonthsOfYear <Month[]>]`: Seharusnya Januari/Februari/.../Desember
   - `[ScheduleTime <DateTime[]>]`: Daftar waktu jadwal untuk pencadangan
   - `[WeeksOfTheMonth <WeekNumber[]>]`: Seharusnya Pertama/Detik/Ketiga/Keempat/Terakhir
 
-KEBIJAKAN <IBackupPolicy>: Objek Kebijakan Pencadangan.
+KEBIJAKAN `<IBackupPolicy>`: Objek Kebijakan Pencadangan.
   - `DatasourceType <String[]>`: Jenis sumber data untuk manajemen cadangan
   - `ObjectType <String>`: 
-  - `PolicyRule <IBasePolicyRule[]>`: Kamus aturan kebijakan yang berisi aturan untuk setiap jenis cadangan yaitu Penuh/Inkremental/Logs dll
+  - `PolicyRule <IBasePolicyRule[]>`: Kamus aturan kebijakan yang berisi aturan untuk setiap jenis cadangan yaitu Penuh/Inkremental/Log dll
     - `Name <String>`: 
     - `ObjectType <String>`: 
     - `DataStoreObjectType <String>`: Jenis objek Datasource, digunakan untuk menginisialisasi jenis warisan yang tepat

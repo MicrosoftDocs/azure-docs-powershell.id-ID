@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.postgresql/resto
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Restore-AzPostgreSqlServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Restore-AzPostgreSqlServer.md
-ms.openlocfilehash: fe7813e7cb6b4985cf5e5234c72ead76c4d6741f
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: b010c8858eab8206f62851a103366e8c21dcc3d2
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145657966"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146640118"
 ---
 # Restore-AzPostgreSqlServer
 
@@ -318,7 +318,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IServer>: Objek server sumber untuk dipulihkan.
+INPUTOBJECT `<IServer>`: Objek server sumber untuk dipulihkan.
   - `Location <String>`: Lokasi geografis tempat sumber daya berada
   - `[Tag <ITrackedResourceTags>]`: Tag sumber daya.
     - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.

@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.providerhub/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/Get-AzProviderHubResourceTypeRegistration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/Get-AzProviderHubResourceTypeRegistration.md
-ms.openlocfilehash: fcec59bab8c8f898c5f4d3ec4a07dc06f61bc2b8
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 66cee75fcec1b7e1b8c384f662a18590713cc121
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145545925"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146641108"
 ---
 # Get-AzProviderHubResourceTypeRegistration
 
@@ -179,7 +179,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IProviderHubIdentity>: Parameter Identitas
+INPUTOBJECT `<IProviderHubIdentity>`: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[NestedResourceTypeFirst <String>]`: Jenis sumber daya anak pertama.
   - `[NestedResourceTypeSecond <String>]`: Jenis sumber daya anak kedua.

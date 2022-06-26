@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.providerhub/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/Get-AzProviderHubResourceTypeRegistration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/Get-AzProviderHubResourceTypeRegistration.md
-ms.openlocfilehash: a39000697ddcf7c0908431a0e0c156492bd71304
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 8ec71a0f14c77eba4146624dde2b5dddaca7a020
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145656976"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146642260"
 ---
 # Get-AzProviderHubResourceTypeRegistration
 
 ## SYNOPSIS
-Mendapatkan detail jenis sumber daya di langganan dan penyedia yang diberikan.
+Mendapatkan detail jenis sumber daya dalam langganan dan penyedia yang diberikan.
 
 > [!NOTE]
 >Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.providerhub/get-azproviderhubresourcetyperegistration) untuk informasi terbaru.
@@ -41,11 +41,11 @@ Get-AzProviderHubResourceTypeRegistration -InputObject <IProviderHubIdentity> [-
 ```
 
 ## DESCRIPTION
-Mendapatkan detail jenis sumber daya di langganan dan penyedia yang diberikan.
+Mendapatkan detail jenis sumber daya dalam langganan dan penyedia yang diberikan.
 
 ## EXAMPLES
 
-### Contoh 1: Cantumkan semua jenis sumber daya di bawah namespace layanan penyedia sumber daya.
+### Contoh 1: Mencantumkan semua jenis sumber daya di bawah namespace layanan penyedia sumber daya.
 ```powershell
 Get-AzProviderHubResourceTypeRegistration -ProviderNamespace "Microsoft.Contoso"
 ```
@@ -70,7 +70,7 @@ Name                        Type
 testResourceType1           Microsoft.ProviderHub/providerRegistrations/resourceTypeRegistrations
 ```
 
-Mendapatkan jenis sumber daya berdasarkan nama.
+Mendapatkan jenis sumber daya menurut nama.
 
 ### Contoh 3: Mendapatkan jenis sumber daya berlapis menurut nama.
 ```powershell
@@ -83,7 +83,7 @@ Name                                      Type
 testResourceType1/nestedResourceType      Microsoft.ProviderHub/providerRegistrations/resourceTypeRegistrations
 ```
 
-Mendapatkan jenis sumber daya berdasarkan nama.
+Mendapatkan jenis sumber daya menurut nama.
 
 ## PARAMETERS
 
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.IProviderHubIdentity
@@ -182,7 +182,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IProviderHubIdentity>: Parameter Identitas
+INPUTOBJECT `<IProviderHubIdentity>`: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[NestedResourceTypeFirst <String>]`: Jenis sumber daya anak pertama.
   - `[NestedResourceTypeSecond <String>]`: Jenis sumber daya anak kedua.

@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.labservices/upda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Update-AzLabServicesLabPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Update-AzLabServicesLabPlan.md
-ms.openlocfilehash: 4a7d8fb739a7769c226be27920d67132b989be8f
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 00b401ab8444780b9aa222a04876e81b859c4fbe
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145518115"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146639092"
 ---
 # Update-AzLabServicesLabPlan
 
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultAutoShutdownProfileIdleDelay
-Jumlah waktu VM akan diam sebelum dimatikan jika perilaku ini diaktifkan.
+Jumlah waktu VM akan menganggur sebelum dimatikan jika perilaku ini diaktifkan.
 
 ```yaml
 Type: System.TimeSpan
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultAutoShutdownProfileShutdownOnDisconnect
-Apakah matikan saat sambungan terputus diaktifkan
+Apakah matikan saat pemutusan sambungan diaktifkan
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.LabServices.Support.EnableState
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultAutoShutdownProfileShutdownWhenNotConnected
-Apakah VM akan dimatikan ketika belum tersambung setelah jangka waktu tertentu.
+Apakah VM akan dimatikan saat belum tersambung setelah jangka waktu tertentu.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.LabServices.Support.EnableState
@@ -312,7 +312,7 @@ Accept wildcard characters: False
 ```
 
 ### -LabPlan
-Untuk membuat, lihat bagian NOTES untuk properti LABPLAN dan buat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti LABPLAN dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.LabServices.Models.Api20211001Preview.LabPlan
@@ -327,7 +327,7 @@ Accept wildcard characters: False
 ```
 
 ### -LinkedLmsInstance
-Url Dasar instans lms, rencana lab ini dapat menautkan daftar nama lab.
+Url Dasar instans lms yang dikemukakan oleh rencana lab ini dapat menautkan daftar nama lab.
 
 ```yaml
 Type: System.String
@@ -342,7 +342,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Nama paket lab yang secara unik mengidentifikasinya dalam grup sumber daya.
+Nama paket lab yang secara unik mengidentifikasinya dalam berisi grup sumber daya.
 Digunakan dalam URI sumber daya dan di UI.
 
 ```yaml
@@ -389,9 +389,9 @@ Accept wildcard characters: False
 ```
 
 ### -SharedGalleryId
-ID sumber daya Shared Image Gallery yang dilampirkan ke paket lab ini.
-Saat menyimpan citra komputer virtual templat lab, gambar tersebut akan bertahan di galeri ini.
-Gambar bersama dari galeri dapat digunakan saat membuat lab baru.
+ID sumber daya dari Shared Image Gallery yang dilampirkan ke rencana lab ini.
+Saat menyimpan citra komputer virtual templat lab, gambar tersebut akan tetap ada di galeri ini.
+Gambar bersama dari galeri dapat disediakan untuk digunakan saat membuat lab baru.
 
 ```yaml
 Type: System.String
@@ -546,31 +546,31 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-LABPLAN <LabPlan>: 
+LABPLAN `<LabPlan>`: 
   - `Location <String>`: Lokasi geografis tempat sumber daya berada
   - `[AllowedRegion <String[]>]`: Wilayah yang diizinkan untuk digunakan pembuat lab saat membuat lab menggunakan rencana lab ini.
   - `[DefaultAutoShutdownProfileDisconnectDelay <TimeSpan?>]`: Jumlah waktu VM akan tetap berjalan setelah pengguna terputus jika perilaku ini diaktifkan.
-  - `[DefaultAutoShutdownProfileIdleDelay <TimeSpan?>]`: Jumlah waktu VM akan diam sebelum dimatikan jika perilaku ini diaktifkan.
+  - `[DefaultAutoShutdownProfileIdleDelay <TimeSpan?>]`: Jumlah waktu VM akan menganggur sebelum dimatikan jika perilaku ini diaktifkan.
   - `[DefaultAutoShutdownProfileNoConnectDelay <TimeSpan?>]`: Jumlah waktu VM akan tetap berjalan sebelum dimatikan jika tidak ada koneksi yang dibuat dan perilaku ini diaktifkan.
-  - `[DefaultAutoShutdownProfileShutdownOnDisconnect <EnableState?>]`: Apakah matikan saat pemutusan sambungan diaktifkan
+  - `[DefaultAutoShutdownProfileShutdownOnDisconnect <EnableState?>]`: Apakah pematian saat pemutusan sambungan diaktifkan
   - `[DefaultAutoShutdownProfileShutdownOnIdle <ShutdownOnIdleMode?>]`: Apakah VM akan dimatikan ketika telah menganggur untuk jangka waktu tertentu.
-  - `[DefaultAutoShutdownProfileShutdownWhenNotConnected <EnableState?>]`: Apakah VM akan dimatikan saat belum tersambung setelah jangka waktu tertentu.
+  - `[DefaultAutoShutdownProfileShutdownWhenNotConnected <EnableState?>]`: Apakah VM akan dimatikan ketika belum tersambung setelah jangka waktu tertentu.
   - `[DefaultConnectionProfileClientRdpAccess <ConnectionType?>]`: Tingkat akses yang diaktifkan untuk Akses Klien melalui RDP.
   - `[DefaultConnectionProfileClientSshAccess <ConnectionType?>]`: Tingkat akses yang diaktifkan untuk Akses Klien melalui SSH.
   - `[DefaultConnectionProfileWebRdpAccess <ConnectionType?>]`: Tingkat akses yang diaktifkan untuk Akses Web melalui RDP.
   - `[DefaultConnectionProfileWebSshAccess <ConnectionType?>]`: Tingkat akses yang diaktifkan untuk Akses Web melalui SSH.
   - `[DefaultNetworkProfileSubnetId <String>]`: Id sumber daya subnet eksternal
   - `[LinkedLmsInstance <String>]`: Url Dasar instans lms rencana lab ini dapat menautkan daftar nama lab.
-  - `[SharedGalleryId <String>]`: ID sumber daya dari Shared Image Gallery yang dilampirkan ke paket lab ini. Saat menyimpan citra komputer virtual templat lab, gambar tersebut akan bertahan di galeri ini. Gambar bersama dari galeri dapat digunakan saat membuat lab baru.
-  - `[SupportInfoEmail <String>]`: Mendukung alamat email kontak.
+  - `[SharedGalleryId <String>]`: ID sumber daya dari Shared Image Gallery yang dilampirkan ke rencana lab ini. Saat menyimpan citra komputer virtual templat lab, gambar tersebut akan tetap ada di galeri ini. Gambar bersama dari galeri dapat disediakan untuk digunakan saat membuat lab baru.
+  - `[SupportInfoEmail <String>]`: Alamat email kontak dukungan.
   - `[SupportInfoInstruction <String>]`: Instruksi dukungan.
-  - `[SupportInfoPhone <String>]`: Mendukung nomor telepon kontak.
+  - `[SupportInfoPhone <String>]`: Nomor telepon kontak dukungan.
   - `[SupportInfoUrl <String>]`: Alamat web dukungan.
   - `[SystemDataCreatedAt <DateTime?>]`: Tanda waktu pembuatan sumber daya (UTC).
   - `[SystemDataCreatedBy <String>]`: Identitas yang membuat sumber daya.
   - `[SystemDataCreatedByType <CreatedByType?>]`: Jenis identitas yang membuat sumber daya.
   - `[SystemDataLastModifiedAt <DateTime?>]`: Tanda waktu modifikasi terakhir sumber daya (UTC)
-  - `[SystemDataLastModifiedBy <String>]`: Identitas yang terakhir mengubah sumber daya.
+  - `[SystemDataLastModifiedBy <String>]`: Identitas yang terakhir memodifikasi sumber daya.
   - `[SystemDataLastModifiedByType <CreatedByType?>]`: Jenis identitas yang terakhir memodifikasi sumber daya.
   - `[Tag <ITrackedResourceTags>]`: Tag sumber daya.
     - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.

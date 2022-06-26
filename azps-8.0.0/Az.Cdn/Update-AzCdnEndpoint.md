@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/update-azcdn
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/help/Update-AzCdnEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/help/Update-AzCdnEndpoint.md
-ms.openlocfilehash: 29efae654a53440fc425ef8a9bcb36cb48dafce5
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 3a4bdb6cff503b5a65394ddbc06a2a855145a888
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145546499"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146639416"
 ---
 # Update-AzCdnEndpoint
 
 ## SYNOPSIS
-Memperbarui titik akhir CDN yang sudah ada dengan nama titik akhir yang ditentukan di bawah langganan, grup sumber daya, dan profil yang ditentukan.
+Updates titik akhir CDN yang sudah ada dengan nama titik akhir yang ditentukan di bawah langganan, grup sumber daya, dan profil yang ditentukan.
 Hanya tag yang dapat diperbarui setelah membuat titik akhir.
 Untuk memperbarui asal, gunakan operasi Perbarui Asal.
 Untuk memperbarui grup asal, gunakan operasi Perbarui grup Asal.
@@ -47,7 +47,7 @@ Update-AzCdnEndpoint -InputObject <ICdnIdentity> [-ContentTypesToCompress <Strin
 ```
 
 ## DESCRIPTION
-Memperbarui titik akhir CDN yang sudah ada dengan nama titik akhir yang ditentukan di bawah langganan, grup sumber daya, dan profil yang ditentukan.
+Updates titik akhir CDN yang sudah ada dengan nama titik akhir yang ditentukan di bawah langganan, grup sumber daya, dan profil yang ditentukan.
 Hanya tag yang dapat diperbarui setelah membuat titik akhir.
 Untuk memperbarui asal, gunakan operasi Perbarui Asal.
 Untuk memperbarui grup asal, gunakan operasi Perbarui grup Asal.
@@ -515,12 +515,12 @@ DELIVERYPOLICYRULE <IDeliveryRule[]>: Daftar aturan pengiriman.
     - `Name <MatchVariable>`: Nama kondisi untuk aturan pengiriman.
   - `[Name <String>]`: Nama aturan
 
-GEOFILTER <IGeoFilter[]>: Daftar aturan yang menentukan akses geo pengguna dalam titik akhir CDN. Setiap filter geografis mendefinisikan aturan akses ke jalur atau konten tertentu, misalnya memblokir APAC untuk jalur /pictures/
+GEOFILTER <IGeoFilter[]>: Daftar aturan yang menentukan akses geo pengguna dalam titik akhir CDN. Setiap filter geografis menentukan aturan akses ke jalur atau konten tertentu, misalnya memblokir APAC untuk jalur /gambar/
   - `Action <GeoFilterActions>`: Tindakan filter geografis, yaitu mengizinkan atau memblokir akses.
-  - `CountryCode <String[]>`: Dua kode negara atau wilayah huruf yang menentukan akses negara atau wilayah pengguna dalam filter geografis, misalnya AU, MX, AS.
+  - `CountryCode <String[]>`: Kode negara atau wilayah dua huruf yang menentukan akses negara atau wilayah pengguna dalam filter geografis, misalnya AU, MX, AS.
   - `RelativePath <String>`: Jalur relatif yang berlaku untuk filter geografis. (misalnya '/mypictures', '/mypicture/kitty.jpg', dan lain-lain.)
 
-INPUTOBJECT <ICdnIdentity>: Parameter Identitas
+INPUTOBJECT `<ICdnIdentity>`: Parameter Identitas
   - `[CustomDomainName <String>]`: Nama domain di bawah profil yang unik secara global.
   - `[EndpointName <String>]`: Nama titik akhir di bawah profil yang unik secara global.
   - `[Id <String>]`: Jalur identitas sumber daya
@@ -536,7 +536,7 @@ INPUTOBJECT <ICdnIdentity>: Parameter Identitas
   - `[SubscriptionId <String>]`: ID Langganan Azure.
 
 URLSIGNINGKEY <IUrlSigningKey[]>: Daftar kunci yang digunakan untuk memvalidasi hash URL yang ditandatangani.
-  - `KeyId <String>`: Menentukan Id kunci yang ditentukan pelanggan. Id ini akan ada dalam permintaan masuk untuk menunjukkan kunci yang digunakan untuk membentuk hash.
+  - `KeyId <String>`: Menentukan ID kunci yang ditentukan pelanggan. Id ini akan ada dalam permintaan masuk untuk menunjukkan kunci yang digunakan untuk membentuk hash.
   - `KeySourceParameterResourceGroupName <String>`: Grup sumber daya Key Vault pengguna yang berisi rahasia
   - `KeySourceParameterSecretName <String>`: Nama rahasia dalam Key Vault.
   - `KeySourceParameterSecretVersion <String>`: Versi (GUID) rahasia dalam Key Vault.

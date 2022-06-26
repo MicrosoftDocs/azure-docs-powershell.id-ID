@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.communication/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Communication/help/New-AzCommunicationServiceKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Communication/help/New-AzCommunicationServiceKey.md
-ms.openlocfilehash: 799871ebf8a306f2c3e8acaeea31edc8f3f5b1a5
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 65ef6f85ef1213e3544c35d02d937ce2e7b626a8
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145541630"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146642116"
 ---
 # New-AzCommunicationServiceKey
 
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -240,13 +240,13 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ICommunicationIdentity>: Parameter Identitas
+INPUTOBJECT `<ICommunicationIdentity>`: Parameter Identitas
   - `[CommunicationServiceName <String>]`: Nama sumber daya CommunicationService.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
 
-PARAMETER <IRegenerateKeyParameters>: Parameter menjelaskan permintaan untuk meregenerasi kunci akses
+PARAMETER `<IRegenerateKeyParameters>`: Parameter menjelaskan permintaan untuk meregenerasi kunci akses
   - `[KeyType <KeyType?>]`: KeyType yang akan diregenerasi. Harus berupa 'primer' atau 'sekunder'(tidak peka huruf besar/kecil).
 
 ## RELATED LINKS

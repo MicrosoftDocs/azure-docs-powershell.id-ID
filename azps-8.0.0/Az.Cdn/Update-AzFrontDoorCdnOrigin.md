@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/update-azfro
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/help/Update-AzFrontDoorCdnOrigin.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/help/Update-AzFrontDoorCdnOrigin.md
-ms.openlocfilehash: a9ff34ef9f6d2e5108dd603eea89872ab0027e7a
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: d395734dcdaa98c0a4f361a124a0631104437492
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145558514"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146639380"
 ---
 # Update-AzFrontDoorCdnOrigin
 
 ## SYNOPSIS
-Memperbarui asal yang ada dalam grup asal.
+Updates asal yang ada dalam grup asal.
 
 ## SYNTAX
 
@@ -43,7 +43,7 @@ Update-AzFrontDoorCdnOrigin -InputObject <ICdnIdentity> [-AzureOriginId <String>
 ```
 
 ## DESCRIPTION
-Memperbarui asal yang ada dalam grup asal.
+Updates asal yang ada dalam grup asal.
 
 ## EXAMPLES
 
@@ -196,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Cdn.Models.ICdnIdentity
@@ -243,7 +243,7 @@ Accept wildcard characters: False
 ### -OriginHostHeader
 Nilai header host dikirim ke asal dengan setiap permintaan.
 Jika Anda membiarkan ini kosong, nama host permintaan menentukan nilai ini.
-Azure CDN asal, seperti Web Apps, Storage Blob, dan Cloud Services memerlukan nilai header host ini agar sesuai dengan nama host asal secara default.
+Azure CDN asal, seperti Web Apps, Blob Storage, dan Cloud Services memerlukan nilai header host ini agar sesuai dengan nama host asal secara default.
 Ini mengambil alih header host yang ditentukan di Titik Akhir
 
 ```yaml
@@ -335,7 +335,7 @@ Accept wildcard characters: False
 ```
 
 ### -SharedPrivateLinkResourceGroupId
-Id grup dari penyedia sumber daya untuk sumber daya tautan privat bersama.
+Id grup dari penyedia sumber daya untuk sumber daya tautan privat bersama adalah untuk.
 
 ```yaml
 Type: System.String
@@ -381,7 +381,7 @@ Accept wildcard characters: False
 
 ### -SharedPrivateLinkResourceStatus
 Status sumber daya tautan privat bersama.
-Dapat Tertunda, Disetujui, Ditolak, Terputus, atau Waktu Habis.
+Dapat tertunda, Disetujui, Ditolak, Terputus, atau Waktu Habis.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Cdn.Support.SharedPrivateLinkResourceStatus
@@ -410,7 +410,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Bobot
+### -Berat
 Berat asal dalam grup asal yang diberikan untuk penyeimbangan beban.
 Harus antara 1 dan 1000
 
@@ -477,7 +477,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ICdnIdentity>: Parameter Identitas
+INPUTOBJECT `<ICdnIdentity>`: Parameter Identitas
   - `[CustomDomainName <String>]`: Nama domain di bawah profil yang unik secara global.
   - `[EndpointName <String>]`: Nama titik akhir di bawah profil yang unik secara global.
   - `[Id <String>]`: Jalur identitas sumber daya

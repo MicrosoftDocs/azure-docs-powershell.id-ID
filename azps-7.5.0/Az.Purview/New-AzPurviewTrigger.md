@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.purview/new-azpu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewTrigger.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewTrigger.md
-ms.openlocfilehash: 233022655aa7e14be367603ec066d947ef95a959
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 17e4742c5a1dcdf596efb1e8a51c7d48b44d2727
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145651918"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146639884"
 ---
 # New-AzPurviewTrigger
 
@@ -60,13 +60,13 @@ ScheduleMonthlyOccurrence  :
 ScheduleWeekDay            :
 ```
 
-Buat pemicu untuk pemindaian penuh mulai 02/17/22 13:31 UTC dan berakhir 20/7/2022 12:00:00, terjadi setiap 1 bulan, pada tanggal 10 bulan, pukul 09.00 UTC
+Buat pemicu untuk pemindaian penuh mulai 02/17/22 13.31 UTC dan berakhir 20/7/2022 12.00.00, terjadi setiap 1 bulan, pada tanggal 10 bulan, pukul 09.00 UTC
 
 ## PARAMETERS
 
 ### -Isi
 .
-Untuk membuat, lihat bagian CATATAN untuk properti BODY dan buat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti BODY dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Purviewdata.Models.Api20211001Preview.ITrigger
@@ -192,25 +192,25 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-ISI <ITrigger>: .
-  - `[IncrementalScanStartTime <DateTime?>]`: 
-  - `[Interval <Int32?>]`: 
-  - `[RecurrenceEndTime <DateTime?>]`: 
-  - `[RecurrenceFrequency <TriggerFrequency?>]`: 
-  - `[RecurrenceInterval <String>]`: 
-  - `[RecurrenceStartTime <DateTime?>]`: 
-  - `[RecurrenceTimeZone <String>]`: 
-  - `[ScanLevel <ScanLevelType?>]`: 
-  - `[ScheduleAdditionalProperty <IRecurrenceScheduleAdditionalProperties>]`: Kamus <any>
+TUBUH `<ITrigger>`: .
+  - `[IncrementalScanStartTime <DateTime?>]`:
+  - `[Interval <Int32?>]`:
+  - `[RecurrenceEndTime <DateTime?>]`:
+  - `[RecurrenceFrequency <TriggerFrequency?>]`:
+  - `[RecurrenceInterval <String>]`:
+  - `[RecurrenceStartTime <DateTime?>]`:
+  - `[RecurrenceTimeZone <String>]`:
+  - `[ScanLevel <ScanLevelType?>]`:
+  - `[ScheduleAdditionalProperty <IRecurrenceScheduleAdditionalProperties>]`: Kamus dari `<any>`
     - `[(Any) <Object>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
-  - `[ScheduleHour <Int32[]>]`: 
-  - `[ScheduleMinute <Int32[]>]`: 
-  - `[ScheduleMonthDay <Int32[]>]`: 
-  - `[ScheduleMonthlyOccurrence <IRecurrenceScheduleOccurrence[]>]`: 
-    - `[AdditionalProperty <IRecurrenceScheduleOccurrenceAdditionalProperties>]`: Kamus <any>
+  - `[ScheduleHour <Int32[]>]`:
+  - `[ScheduleMinute <Int32[]>]`:
+  - `[ScheduleMonthDay <Int32[]>]`:
+  - `[ScheduleMonthlyOccurrence <IRecurrenceScheduleOccurrence[]>]`:
+    - `[AdditionalProperty <IRecurrenceScheduleOccurrenceAdditionalProperties>]`: Kamus dari `<any>`
       - `[(Any) <Object>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
-    - `[Day <DayOfWeek?>]`: 
-    - `[Occurrence <Int32?>]`: 
-  - `[ScheduleWeekDay <DaysOfWeek[]>]`: 
+    - `[Day <DayOfWeek?>]`:
+    - `[Occurrence <Int32?>]`:
+  - `[ScheduleWeekDay <DaysOfWeek[]>]`:
 
 ## RELATED LINKS

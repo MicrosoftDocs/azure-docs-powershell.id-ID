@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.kusto/update-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Update-AzKustoDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Update-AzKustoDatabase.md
-ms.openlocfilehash: 74e58fed60a26f19b0ac61cef7f4f0a946dd9c24
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: 3a076104203a4b4c19d19d608e9484603220e176
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145777170"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146640424"
 ---
 # Update-AzKustoDatabase
 
 ## SYNOPSIS
-Memperbarui database.
+Updates database.
 
 > [!NOTE]
 >Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.kusto/update-azkustodatabase) untuk informasi terbaru.
@@ -37,7 +37,7 @@ Update-AzKustoDatabase -InputObject <IKustoIdentity> -Kind <Kind> -Location <Str
 ```
 
 ## DESCRIPTION
-Memperbarui database.
+Updates database.
 
 ## EXAMPLES
 
@@ -84,7 +84,7 @@ Kind              Location Name                                Type
 ReadOnlyFollowing East US  myfollowercluster/mykustodatabase Microsoft.Kusto/Clusters/Databases
 ```
 
-Perintah di atas memperbarui periode cache panas dari database Kusto "mykustodatabase" di kluster "myfollowercluster" yang ditemukan di grup sumber daya "testrg".
+Perintah di atas memperbarui periode singgahan panas database Kusto "mykustodatabase" di kluster "myfollowercluster" yang ditemukan di grup sumber daya "testrg".
 
 ### Contoh 4: Memperbarui database ReadOnly yang ada melalui identitas
 ```powershell
@@ -99,7 +99,7 @@ Kind              Location Name                                Type
 ReadOnlyFollowing East US  myfollowercluster/mykustodatabase Microsoft.Kusto/Clusters/Databases
 ```
 
-Perintah di atas memperbarui periode cache panas dari database Kusto "mykustodatabase" di kluster "myfollowercluster" yang ditemukan di grup sumber daya "testrg".
+Perintah di atas memperbarui periode singgahan panas database Kusto "mykustodatabase" di kluster "myfollowercluster" yang ditemukan di grup sumber daya "testrg".
 
 ## PARAMETERS
 
@@ -164,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Kusto.Models.IKustoIdentity
@@ -178,7 +178,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Kind
+### -Jenis
 Jenis database
 
 ```yaml
@@ -335,7 +335,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IKustoIdentity>: Parameter Identitas
+INPUTOBJECT `<IKustoIdentity>`: Parameter Identitas
   - `[AttachedDatabaseConfigurationName <String>]`: Nama konfigurasi database terlampir.
   - `[ClusterName <String>]`: Nama kluster Kusto.
   - `[DataConnectionName <String>]`: Nama koneksi data.
@@ -343,7 +343,7 @@ INPUTOBJECT <IKustoIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Nama lokasi (wilayah) Azure.
   - `[ManagedPrivateEndpointName <String>]`: Nama titik akhir privat terkelola.
-  - `[OperationId <String>]`: Guid ID operasi
+  - `[OperationId <String>]`: Panduan ID operasi
   - `[PrincipalAssignmentName <String>]`: Nama Kusto principalAssignment.
   - `[PrivateEndpointConnectionName <String>]`: Nama koneksi titik akhir privat.
   - `[PrivateLinkResourceName <String>]`: Nama sumber daya tautan privat.

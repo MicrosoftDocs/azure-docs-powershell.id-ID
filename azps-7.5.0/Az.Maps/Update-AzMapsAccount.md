@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.maps/update-azma
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/Update-AzMapsAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/Update-AzMapsAccount.md
-ms.openlocfilehash: fc5f96b446d7f71e1d20105e4b141946c54529ea
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: d59c3af59acc077bcc93a8718400c2f69957697e
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145794542"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146640226"
 ---
 # Update-AzMapsAccount
 
 ## SYNOPSIS
-Memperbarui Akun Peta.
+Updates Akun Peta.
 Hanya subset parameter yang dapat diperbarui setelah pembuatan, seperti Sku, Tag, Properti.
 
 > [!NOTE]
@@ -37,12 +37,12 @@ Update-AzMapsAccount -InputObject <IMapsIdentity> [-DisableLocalAuth] [-Kind <Ki
 ```
 
 ## DESCRIPTION
-Memperbarui Akun Peta.
+Updates Akun Peta.
 Hanya subset parameter yang dapat diperbarui setelah pembuatan, seperti Sku, Tag, Properti.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui Akun Peta
+### Contoh 1: Updates Akun Peta
 ```powershell
 Update-AzMapsAccount -ResourceGroupName azure-rg-test -Name pwsh-mapsAccount03 -Tag @{'key1'='value1'; 'key2'='value2'}
 ```
@@ -56,7 +56,7 @@ eastus   pwsh-mapsAccount03 Microsoft.Maps/accounts Gen1
 Perintah ini memperbarui Akun Peta.
 Hanya subset parameter yang dapat diperbarui setelah pembuatan, seperti Sku, Tag, Properti.
 
-### Contoh 2: Memperbarui Akun Peta menurut alur
+### Contoh 2: Updates Akun Peta menurut alur
 ```powershell
 Get-AzMapsAccount -ResourceGroupName azure-rg-test -Name pwsh-mapsAccount03 | Update-AzMapsAccount -Tag @{'key1'='value1'; 'key2'='value2'}
 ```
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -263,11 +263,11 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMapsIdentity>: Parameter Identitas
+INPUTOBJECT `<IMapsIdentity>`: Parameter Identitas
   - `[AccountName <String>]`: Nama Akun Peta.
   - `[CreatorName <String>]`: Nama instans Peta Creator.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
 
 ## RELATED LINKS

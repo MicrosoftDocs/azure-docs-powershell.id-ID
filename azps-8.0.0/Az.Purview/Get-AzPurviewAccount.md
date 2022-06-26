@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.purview/get-azpu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Get-AzPurviewAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Get-AzPurviewAccount.md
-ms.openlocfilehash: 6f948f2f4f660b8b31c9fd08f80805df1dd6a193
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 68e786f3ae9970c1b5ab502945b7346fc554d1d0
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145522774"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146641018"
 ---
 # Get-AzPurviewAccount
 
@@ -73,9 +73,9 @@ IdentityPrincipalId                  IdentityTenantId                     Identi
 xxxxxxxx-7956-4978-87e8-9ddd82cfe2b7 xxxxxxxx-38d6-4fb2-bad9-b7b93a3e9c5a SystemAssigned eastus   test-pa 8/17/2021 6:18:57 AM xxxxxxxxxx@microsoft.com User                    8/17/2021 6:18:5…
 ```
 
-Dapatkan nama akun purview test-rg dalam grup sumber daya test-pa
+Mendapatkan nama akun purview test-rg dalam grup sumber daya test-pa
 
-### Contoh 3: Mencantumkan Akun Purview dalam Grup Sumber Daya Tertentu
+### Contoh 3: Mencantumkan Akun Purview dalam Grup Sumber Daya tertentu
 ```powershell
 Get-AzPurviewAccount -ResourceGroupName test-rg
 ```
@@ -86,7 +86,7 @@ IdentityPrincipalId                  IdentityTenantId                     Identi
 xxxxxxxx-7956-4978-87e8-9ddd82cfe2b7 xxxxxxxx-38d6-4fb2-bad9-b7b93a3e9c5a SystemAssigned eastus   test-pa 8/17/2021 6:18:57 AM xxxxxxxxxx@microsoft.com User                    8/17/2021 6:18:5…
 ```
 
-Mencantumkan akun purview di grup sumber daya test-pa
+Mencantumkan akun purview dalam uji-pa grup sumber daya
 
 ### Contoh 4: Dapatkan Akun Purview dengan InputObject
 ```powershell
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Purview.Models.IPurviewIdentity
@@ -165,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkipToken
-Lewati token.
+Token lewati.
 
 ```yaml
 Type: System.String
@@ -214,7 +214,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IPurviewIdentity>: Parameter Identitas
+INPUTOBJECT `<IPurviewIdentity>`: Parameter Identitas
   - `[AccountName <String>]`: Nama akun.
   - `[GroupId <String>]`: Pengidentifikasi grup.
   - `[Id <String>]`: Jalur identitas sumber daya

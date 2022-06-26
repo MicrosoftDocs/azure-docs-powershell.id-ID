@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/new-azs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzStaticWebAppFunctionAppSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzStaticWebAppFunctionAppSetting.md
-ms.openlocfilehash: c24644b51d68a49c360e6325f36c6e476514866c
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: b4e69d13f4e26e6bab16fedf64e791da933ed86e
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145554115"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146638515"
 ---
 # New-AzStaticWebAppFunctionAppSetting
 
 ## SYNOPSIS
-Deskripsi untuk Membuat atau memperbarui pengaturan aplikasi fungsi situs statis.
+Deskripsi untuk Membuat atau memperbarui pengaturan aplikasi fungsi dari situs statis.
 
 ## SYNTAX
 
@@ -33,11 +33,11 @@ New-AzStaticWebAppFunctionAppSetting -InputObject <IWebsitesIdentity> [-AppSetti
 ```
 
 ## DESCRIPTION
-Deskripsi untuk Membuat atau memperbarui pengaturan aplikasi fungsi situs statis.
+Deskripsi untuk Membuat atau memperbarui pengaturan aplikasi fungsi dari situs statis.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat atau memperbarui pengaturan aplikasi fungsi situs statis
+### Contoh 1: Membuat atau memperbarui pengaturan aplikasi fungsi dari situs statis
 ```powershell
 New-AzStaticWebAppFunctionAppSetting -ResourceGroupName azure-rg-test -Name staticweb-pwsh01  -AppSetting @{'function01' = 'value01'; 'function02' = 'value02' }
 ```
@@ -50,7 +50,7 @@ Kind Name        Type
 
 Perintah ini membuat atau memperbarui pengaturan aplikasi fungsi dari situs statis.
 
-### Contoh 2: Membuat atau memperbarui pengaturan aplikasi fungsi situs statis menurut alur
+### Contoh 2: Membuat atau memperbarui pengaturan aplikasi fungsi dari situs statis menurut alur
 ```powershell
 Get-AzStaticWebAppFunctionAppSetting -ResourceGroupName resourceGroup -Name staticweb01 | New-AzStaticWebAppFunctionAppSetting -AppSetting @{'function01' = 'value01'; 'function02' = 'value02' }
 ```
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Websites.Models.IWebsitesIdentity
@@ -110,7 +110,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Jenis
+### -Kind
 Jenis sumber daya.
 
 ```yaml
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 
 ### -SubscriptionId
 ID langganan Azure Anda.
-Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000).
+Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-00000000000).
 
 ```yaml
 Type: System.String
@@ -222,7 +222,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IWebsitesIdentity>: Parameter Identitas
+INPUTOBJECT `<IWebsitesIdentity>`: Parameter Identitas
   - `[Authprovider <String>]`: Penyedia autentikasi untuk pengguna.
   - `[DomainName <String>]`: Nama domain kustom.
   - `[EnvironmentName <String>]`: Pengidentifikasi situs tahapan.
@@ -234,7 +234,7 @@ INPUTOBJECT <IWebsitesIdentity>: Parameter Identitas
   - `[PrivateEndpointConnectionName <String>]`: Nama koneksi titik akhir privat.
   - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat sumber daya berada.
   - `[Slot <String>]`: Nama slot penyebaran. Jika slot tidak ditentukan, API akan menghapus penyebaran untuk slot produksi.
-  - `[SubscriptionId <String>]`: ID langganan Azure Anda. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000).
+  - `[SubscriptionId <String>]`: ID langganan Azure Anda. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-00000000000).
   - `[Userid <String>]`: Id pengguna pengguna.
   - `[WebJobName <String>]`: Nama Pekerjaan Web.
 

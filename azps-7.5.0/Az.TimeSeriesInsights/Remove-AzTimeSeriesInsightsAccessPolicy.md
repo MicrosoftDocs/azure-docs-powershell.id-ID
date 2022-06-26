@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.timeseriesinsigh
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/Remove-AzTimeSeriesInsightsAccessPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/Remove-AzTimeSeriesInsightsAccessPolicy.md
-ms.openlocfilehash: 50c24d83b31848434e44b590740cac588aa47ff5
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: db05d49f112da786016ef966927431db03921709
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145703530"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146639776"
 ---
 # Remove-AzTimeSeriesInsightsAccessPolicy
 
@@ -45,7 +45,7 @@ Remove-AzTimeSeriesInsightsAccessPolicy -EnvironmentName tsitest001 -Name policy
 
 ```
 
-Perintah ini menghapus kebijakan akses yang ditentukan.
+Perintah ini menghapus kebijakan akses tertentu.
 
 ### Contoh 2: Menghapus kebijakan akses tertentu menurut objek
 ```powershell
@@ -54,7 +54,7 @@ Remove-AzTimeSeriesInsightsAccessPolicy -InputObject $policy
 
 ```
 
-Perintah ini menghapus kebijakan akses yang ditentukan.
+Perintah ini menghapus kebijakan akses tertentu.
 
 ## PARAMETERS
 
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.TimeSeriesInsights.Models.ITimeSeriesInsightsIdentity
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -214,7 +214,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ITimeSeriesInsightsIdentity>: Parameter Identitas
+INPUTOBJECT `<ITimeSeriesInsightsIdentity>`: Parameter Identitas
   - `[AccessPolicyName <String>]`: Nama kebijakan akses.
   - `[EnvironmentName <String>]`: Nama lingkungan
   - `[EventSourceName <String>]`: Nama sumber peristiwa Time Series Insights yang terkait dengan lingkungan yang ditentukan.

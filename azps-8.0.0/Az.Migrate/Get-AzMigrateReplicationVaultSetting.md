@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/get-azmi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateReplicationVaultSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateReplicationVaultSetting.md
-ms.openlocfilehash: ac88e55be98af3586a00a93f8409f060e009f780
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 9626d71a8c317c96ace32a0c135e537919700af4
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145554871"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146641288"
 ---
 # Get-AzMigrateReplicationVaultSetting
 
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Migrate.Models.IMigrateIdentity
@@ -174,7 +174,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMigrateIdentity>: Parameter Identitas
+INPUTOBJECT `<IMigrateIdentity>`: Parameter Identitas
   - `[AccountName <String>]`: Jalankan sebagai nama ARM akun.
   - `[AlertSettingName <String>]`: Nama konfigurasi pemberitahuan email.
   - `[ClusterName <String>]`: Nama ARM kluster.
@@ -194,7 +194,7 @@ INPUTOBJECT <IMigrateIdentity>: Parameter Identitas
   - `[MigrationRecoveryPointName <String>]`: Nama titik pemulihan migrasi.
   - `[NetworkMappingName <String>]`: Nama pemetaan jaringan.
   - `[NetworkName <String>]`: Nama jaringan utama.
-  - `[OperationStatusName <String>]`: Status operasi nama ARM.
+  - `[OperationStatusName <String>]`: Nama ARM status operasi.
   - `[PolicyName <String>]`: Nama kebijakan replikasi.
   - `[ProtectableItemName <String>]`: Nama item yang dapat dilindungi.
   - `[ProtectionContainerName <String>]`: Nama kontainer perlindungan.
@@ -203,7 +203,7 @@ INPUTOBJECT <IMigrateIdentity>: Parameter Identitas
   - `[RecoveryPointName <String>]`: Nama titik pemulihan.
   - `[ReplicatedProtectedItemName <String>]`: Nama item yang dilindungi replikasi.
   - `[ReplicationProtectedItemName <String>]`: Nama item yang dilindungi tempat agen akan diperbarui.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[ResourceName <String>]`: Nama vault layanan pemulihan.
   - `[SiteName <String>]`: Nama situs.
   - `[SolutionName <String>]`: Nama unik solusi migrasi dalam proyek migrasi.

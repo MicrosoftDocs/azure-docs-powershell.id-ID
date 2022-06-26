@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.dnsresolver/upda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/Update-AzDnsForwardingRulesetVirtualNetworkLink.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/Update-AzDnsForwardingRulesetVirtualNetworkLink.md
-ms.openlocfilehash: 3f12e735ae2c8ef2c43f4a0690a82c210d683799
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 64c131fbb831dac9380f65afbbcd4cda4a228c6d
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145688392"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146640496"
 ---
 # Update-AzDnsForwardingRulesetVirtualNetworkLink
 
 ## SYNOPSIS
-Memperbarui tautan jaringan virtual ke set aturan penerusan DNS.
+Updates tautan jaringan virtual ke set aturan penerusan DNS.
 
 > [!NOTE]
 >Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dnsresolver/update-azdnsforwardingrulesetvirtualnetworklink) untuk informasi terbaru.
@@ -37,11 +37,11 @@ Update-AzDnsForwardingRulesetVirtualNetworkLink -InputObject <IDnsResolverIdenti
 ```
 
 ## DESCRIPTION
-Memperbarui tautan jaringan virtual ke set aturan penerusan DNS.
+Updates tautan jaringan virtual ke set aturan penerusan DNS.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui tautan jaringan virtual berdasarkan nama (menambahkan metadata)
+### Contoh 1: Perbarui tautan jaringan virtual berdasarkan nama (menambahkan metadata)
 ```powershell
 Update-AzDnsForwardingRulesetVirtualNetworkLink -DnsForwardingRulesetName sampleDnsForwardingRuleset -Name sampleVnetLink -Metadata @{"value0" = "value1"}
 ```
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -DnsForwardingRulesetName
-Nama set aturan penerusan DNS.
+Nama kumpulan aturan penerusan DNS.
 
 ```yaml
 Type: System.String
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DnsResolver.Models.IDnsResolverIdentity
@@ -194,7 +194,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -274,14 +274,14 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IDnsResolverIdentity>: Parameter Identitas
-  - `[DnsForwardingRulesetName <String>]`: Nama set aturan penerusan DNS.
+INPUTOBJECT `<IDnsResolverIdentity>`: Parameter Identitas
+  - `[DnsForwardingRulesetName <String>]`: Nama kumpulan aturan penerusan DNS.
   - `[DnsResolverName <String>]`: Nama pemecah masalah DNS.
   - `[ForwardingRuleName <String>]`: Nama aturan penerusan.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[InboundEndpointName <String>]`: Nama titik akhir masuk untuk pemecah masalah DNS.
   - `[OutboundEndpointName <String>]`: Nama titik akhir keluar untuk pemecah masalah DNS.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
   - `[VirtualNetworkLinkName <String>]`: Nama tautan jaringan virtual.
   - `[VirtualNetworkName <String>]`: Nama jaringan virtual.

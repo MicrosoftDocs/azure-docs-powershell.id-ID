@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.mysql/update-azm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Update-AzMySqlFlexibleServerFirewallRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Update-AzMySqlFlexibleServerFirewallRule.md
-ms.openlocfilehash: 395752f0604f8b47eaf67f6687ecec85768e66df
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 759377ee00be2433ab6617af415499be20c5f3ff
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145621068"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146641198"
 ---
 # Update-AzMySqlFlexibleServerFirewallRule
 
 ## SYNOPSIS
-Memperbarui aturan firewall yang ada.
+Updates aturan firewall yang ada.
 
 ## SYNTAX
 
@@ -47,11 +47,11 @@ Update-AzMySqlFlexibleServerFirewallRule -InputObject <IMySqlIdentity> -EndIPAdd
 ```
 
 ## DESCRIPTION
-Memperbarui aturan firewall yang ada.
+Updates aturan firewall yang ada.
 
 ## EXAMPLES
 
-### Contoh 1: Perbarui Aturan Firewall MySql berdasarkan nama
+### Contoh 1: Memperbarui Aturan Firewall MySql berdasarkan nama
 ```powershell
 Update-AzMySqlFlexibleServerFirewallRule -Name rule -ResourceGroupName PowershellMySqlTest -ServerName mysql-test -EndIPAddress 0.0.0.3 -StartIPAddress 0.0.0.2
 ```
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClientIPAddress
-Klien menentukan IP tunggal dari aturan firewall server.
+KLIEN menentukan IP tunggal dari aturan firewall server.
 Harus format IPv4.
 
 ```yaml
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.MySql.Models.IMySqlIdentity
@@ -300,7 +300,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMySqlIdentity>: Parameter Identitas
+INPUTOBJECT `<IMySqlIdentity>`: Parameter Identitas
   - `[BackupName <String>]`: Nama cadangan.
   - `[ConfigurationName <String>]`: Nama konfigurasi server.
   - `[DatabaseName <String>]`: Nama database.

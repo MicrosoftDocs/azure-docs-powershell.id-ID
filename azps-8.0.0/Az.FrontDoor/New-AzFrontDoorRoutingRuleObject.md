@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.frontdoor/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorRoutingRuleObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorRoutingRuleObject.md
-ms.openlocfilehash: b74db096f724b8bc81e7282970e350eef65513d4
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 95e4467ce3ce7c866cfab66327baeab809e19827
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145518151"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146641450"
 ---
 # New-AzFrontDoorRoutingRuleObject
 
@@ -45,7 +45,7 @@ Membuat PSRoutingRuleObject untuk pembuatan Front Door
 
 ### Contoh 1: Membuat PSRoutingRuleObject untuk pembuatan Front Door dengan aturan penerusan
 ```powershell
-New-AzFrontDoorRoutingRuleObject -Name $routingRuleName -FrontDoorName $frontDoorName -ResourceGroupName $rgname -FrontendEndpointName "frontendEndpoint1" -BackendPoolName "backendPool1" 
+New-AzFrontDoorRoutingRuleObject -Name $routingRuleName -FrontDoorName $frontDoorName -ResourceGroupName $rgname -FrontendEndpointName "frontendEndpoint1" -BackendPoolName "backendPool1"
 ```
 
 ```output
@@ -90,7 +90,7 @@ Membuat PSRoutingRuleObject untuk pembuatan Front Door
 ## PARAMETERS
 
 ### -AcceptedProtocol
-Skema protokol yang cocok dengan aturan ini.
+Skema protokol yang cocok untuk aturan ini.
 Nilai defaultnya adalah {Https, Http}
 
 ```yaml
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackendPoolName
-Id sumber daya BackendPool yang dirutekan aturan ini
+Id sumber daya backendPool yang dirutekan aturan ini
 
 ```yaml
 Type: System.String
@@ -183,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -CustomQueryString
-Kumpulan string kueri yang akan ditempatkan di URL pengalihan. Mengatur nilai ini akan menggantikan string kueri yang ada; biarkan kosong untuk mempertahankan string kueri masuk. String kueri harus ada di <key>=<value> format. Yang pertama? dan & akan ditambahkan secara otomatis, jadi jangan sertakan di depan, tetapi pisahkan beberapa string kueri dengan &.
+Kumpulan string kueri yang akan ditempatkan di URL pengalihan. Mengatur nilai ini akan menggantikan string kueri yang ada; biarkan kosong untuk mempertahankan string kueri masuk. String kueri harus dalam `<key>=<value>` format. Yang pertama? dan & akan ditambahkan secara otomatis sehingga jangan sertakan di depan, tetapi lakukan beberapa string kueri terpisah dengan &.
 
 ```yaml
 Type: System.String
@@ -213,8 +213,8 @@ Accept wildcard characters: False
 ```
 
 ### -DynamicCompression
-Apakah akan mengaktifkan pemadatan dinamis untuk konten yang di-cache saat penembolokan diaktifkan.
-Nilai default Diaktifkan
+Apakah mengaktifkan pemadatan dinamis untuk konten yang di-cache saat penembolokan diaktifkan.
+Nilai default diaktifkan
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSEnabledState
@@ -230,7 +230,8 @@ Accept wildcard characters: False
 ```
 
 ### -EnableCaching
-Apakah akan mengaktifkan penembolokan untuk rute ini. Nilai defaultnya adalah false
+Apakah akan mengaktifkan penembolokan untuk rute ini.
+Nilai defaultnya adalah false
 
 ```yaml
 Type: System.Boolean
@@ -246,7 +247,7 @@ Accept wildcard characters: False
 
 ### -EnabledState
 Apakah akan mengaktifkan penggunaan aturan ini.
-Nilai default Diaktifkan
+Nilai default diaktifkan
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSEnabledState
@@ -322,7 +323,8 @@ Accept wildcard characters: False
 ```
 
 ### -PatternToMatch
-Pola rute aturan, Tidak boleh memiliki * kecuali mungkin setelah akhir / di akhir jalur. Nilai defaultnya adalah /*
+Pola rute aturan, Tidak boleh memiliki * kecuali mungkin setelah akhir / di akhir jalur.
+Nilai defaultnya adalah /*
 
 ```yaml
 Type: System.String[]

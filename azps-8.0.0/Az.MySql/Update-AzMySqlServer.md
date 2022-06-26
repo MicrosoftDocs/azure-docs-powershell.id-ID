@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.mysql/update-azm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Update-AzMySqlServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Update-AzMySqlServer.md
-ms.openlocfilehash: 2896b71c8c52431748049e32c5d7b8edb29c57f9
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 18c1dccedcaddf7b14232a27b409f423164af351
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145554829"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146638876"
 ---
 # Update-AzMySqlServer
 
@@ -305,7 +305,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAutogrow
-Aktifkan Storage Tumbuh Otomatis.
+Aktifkan Storage Pertumbuhan Otomatis.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.MySql.Support.StorageAutogrow
@@ -320,7 +320,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageInMb
-Penyimpanan maks yang diizinkan untuk server.
+Penyimpanan maksimum yang diizinkan untuk server.
 
 ```yaml
 Type: System.Int32
@@ -415,14 +415,14 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMySqlIdentity>: Parameter Identitas.
+INPUTOBJECT `<IMySqlIdentity>`: Parameter Identitas.
   - `[BackupName <String>]`: Nama cadangan.
   - `[ConfigurationName <String>]`: Nama konfigurasi server.
   - `[DatabaseName <String>]`: Nama database.
   - `[FirewallRuleName <String>]`: Nama aturan firewall server.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[LocationName <String>]`: Nama lokasi.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SecurityAlertPolicyName <SecurityAlertPolicyName?>]`: Nama kebijakan pemberitahuan keamanan.
   - `[ServerName <String>]`: Nama server.
   - `[SubscriptionId <String>]`: ID langganan target.
