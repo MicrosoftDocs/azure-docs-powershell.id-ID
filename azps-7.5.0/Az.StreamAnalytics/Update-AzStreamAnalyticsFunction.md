@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.streamanalytics/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Update-AzStreamAnalyticsFunction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Update-AzStreamAnalyticsFunction.md
-ms.openlocfilehash: d2216f50e4a9f17cd973cae32c2ab0a448fa7f6a
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: ee8ac67d6b43b4593d3c4400e78cb1509cb303b2
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145711558"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146633224"
 ---
 # Update-AzStreamAnalyticsFunction
 
 ## SYNOPSIS
-Memperbarui fungsi yang ada di bawah pekerjaan streaming yang ada.
+Updates fungsi yang ada di bawah pekerjaan streaming yang ada.
 Ini dapat digunakan untuk memperbarui sebagian (yaitu.
 memperbarui satu atau dua properti) fungsi tanpa memengaruhi sisa pekerjaan atau definisi fungsi.
 
@@ -38,7 +38,7 @@ Update-AzStreamAnalyticsFunction -File <String> -InputObject <IStreamAnalyticsId
 ```
 
 ## DESCRIPTION
-Memperbarui fungsi yang ada di bawah pekerjaan streaming yang ada.
+Updates fungsi yang ada di bawah pekerjaan streaming yang ada.
 Ini dapat digunakan untuk memperbarui sebagian (yaitu.
 memperbarui satu atau dua properti) fungsi tanpa memengaruhi sisa pekerjaan atau definisi fungsi.
 
@@ -245,7 +245,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IStreamAnalyticsIdentity>: Parameter Identitas
+INPUTOBJECT `<IStreamAnalyticsIdentity>`: Parameter Identitas
   - `[ClusterName <String>]`: Nama kluster.
   - `[FunctionName <String>]`: Nama fungsi.
   - `[Id <String>]`: Jalur identitas sumber daya

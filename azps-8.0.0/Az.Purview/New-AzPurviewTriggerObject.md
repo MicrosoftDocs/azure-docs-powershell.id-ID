@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.Purview/new-AzPu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewTriggerObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewTriggerObject.md
-ms.openlocfilehash: 12551a3f2ccc506d007b336b86611b8a2764dc07
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 58a56673e7fac564d293a996699e7ef6240f5977
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145526902"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146636572"
 ---
 # New-AzPurviewTriggerObject
 
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScheduleAdditionalProperty
-Kamus dari \<any\>.
+Kamus dari `<any>`.
 Untuk membuat, lihat bagian CATATAN untuk properti SCHEDULEADDITIONALPROPERTY dan buat tabel hash.
 
 ```yaml
@@ -282,13 +282,13 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-SCHEDULEADDITIONALPROPERTY <IRecurrenceScheduleAdditionalProperties>: Kamus <any>.
+SCHEDULEADDITIONALPROPERTY `<IRecurrenceScheduleAdditionalProperties>`: Kamus `<any>`.
   - `[(Any) <Object>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
 
-SCHEDULEMONTHLYOCCURRENCE <IRecurrenceScheduleOccurrence[]>: 
-  - `[AdditionalProperty <IRecurrenceScheduleOccurrenceAdditionalProperties>]`: Kamus <any>
+SCHEDULEMONTHLYOCCURRENCE <IRecurrenceScheduleOccurrence[]>:
+  - `[AdditionalProperty <IRecurrenceScheduleOccurrenceAdditionalProperties>]`: Kamus `<any>`
     - `[(Any) <Object>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
-  - `[Day <DayOfWeek?>]`: 
-  - `[Occurrence <Int32?>]`: 
+  - `[Day <DayOfWeek?>]`:
+  - `[Occurrence <Int32?>]`:
 
 ## RELATED LINKS

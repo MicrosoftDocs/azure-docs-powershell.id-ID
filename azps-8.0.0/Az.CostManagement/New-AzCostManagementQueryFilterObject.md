@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.CostManagement/n
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CostManagement/help/New-AzCostManagementQueryFilterObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CostManagement/help/New-AzCostManagementQueryFilterObject.md
-ms.openlocfilehash: 12ae43996d5855ba7ce769352bd5d03a93c108cc
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 94a8d0c4c71dff519f45daa647ec0d6d19261158
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145504903"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146635238"
 ---
 # New-AzCostManagementQueryFilterObject
 
@@ -65,7 +65,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Dimensi
+### -Dimensions
 Memiliki ekspresi perbandingan untuk dimensi.
 Untuk membuat, lihat bagian CATATAN untuk properti DIMENSIONS dan membuat tabel hash.
 
@@ -157,11 +157,11 @@ AND <IQueryFilter[]>: Ekspresi "AND" logis. Harus memiliki setidaknya 2 item.
   - `[Or <IQueryFilter[]>]`: Ekspresi "OR" logis. Harus memiliki setidaknya 2 item.
   - `[Tag <IQueryComparisonExpression>]`: Memiliki ekspresi perbandingan untuk tag
 
-DIMENSIONS <IQueryComparisonExpression>: Memiliki ekspresi perbandingan untuk dimensi.
+DIMENSIONS `<IQueryComparisonExpression>`: Memiliki ekspresi perbandingan untuk dimensi.
   - `Name <String>`: Nama kolom yang akan digunakan sebagai perbandingan.
   - `Value <String[]>`: Array nilai yang akan digunakan untuk perbandingan
 
-NOT <IQueryFilter>: Ekspresi "NOT" logis.
+NOT `<IQueryFilter>`: Ekspresi logis "NOT".
   - `[And <IQueryFilter[]>]`: Ekspresi "AND" logis. Harus memiliki setidaknya 2 item.
   - `[Dimensions <IQueryComparisonExpression>]`: Memiliki ekspresi perbandingan untuk dimensi
     - `Name <String>`: Nama kolom yang akan digunakan sebagai perbandingan.
@@ -179,7 +179,7 @@ OR <IQueryFilter[]>: Ekspresi "OR" logis. Harus memiliki setidaknya 2 item.
   - `[Or <IQueryFilter[]>]`: Ekspresi "OR" logis. Harus memiliki setidaknya 2 item.
   - `[Tag <IQueryComparisonExpression>]`: Memiliki ekspresi perbandingan untuk tag
 
-TAG <IQueryComparisonExpression>: Memiliki ekspresi perbandingan untuk tag.
+TAG `<IQueryComparisonExpression>`: Memiliki ekspresi perbandingan untuk tag.
   - `Name <String>`: Nama kolom yang akan digunakan sebagai perbandingan.
   - `Value <String[]>`: Array nilai yang akan digunakan untuk perbandingan
 

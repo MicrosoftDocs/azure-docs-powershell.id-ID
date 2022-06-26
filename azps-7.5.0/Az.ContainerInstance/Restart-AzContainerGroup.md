@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.containerinstanc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/Restart-AzContainerGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/Restart-AzContainerGroup.md
-ms.openlocfilehash: 3ef39f33d5f71a69f612592937ff232db172c627
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: 8b96ced2c6392645f0b42a1e597629f6bb01a536
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145801394"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146638354"
 ---
 # Restart-AzContainerGroup
 
@@ -48,12 +48,12 @@ Restart-AzContainerGroup -Name test-cg -ResourceGroupName test-rg
 
 Perintah ini memulai ulang semua kontainer dalam grup kontainer.
 
-### Contoh 2: Menghidupkan ulang semua kontainer dalam grup kontainer dengan menyalurkan
+### Contoh 2: Menghidupkan ulang semua kontainer dalam grup kontainer dengan pipa
 ```powershell
 Get-AzContainerGroup -Name test-cg -ResourceGroupName test-rg | Restart-AzContainerGroup
 ```
 
-Perintah ini memulai ulang semua kontainer dalam grup kontainer dengan menyalurkan pipa.
+Perintah ini menghidupkan ulang semua kontainer dalam grup kontainer dengan pipa.
 
 ## PARAMETERS
 
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ContainerInstance.Models.IContainerInstanceIdentity
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+Info masuk langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
@@ -229,7 +229,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IContainerInstanceIdentity>: Parameter Identitas
+INPUTOBJECT `<IContainerInstanceIdentity>`: Parameter Identitas
   - `[ContainerGroupName <String>]`: Nama grup kontainer.
   - `[ContainerName <String>]`: Nama instans kontainer.
   - `[Id <String>]`: Jalur identitas sumber daya

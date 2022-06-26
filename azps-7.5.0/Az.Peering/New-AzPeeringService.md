@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.peering/new-azpe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/New-AzPeeringService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/New-AzPeeringService.md
-ms.openlocfilehash: 195a743006a2a0e53cbad9b21783d6dc635f52b7
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 80fb81a75f148ae2c5cbf86e91435fe4c1f90f19
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145659676"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146635672"
 ---
 # New-AzPeeringService
 
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -PeeringLocation
-Lokasi Fisik Berbeda dari Wilayah Azure. Gunakan Get-AzPeeringServiceLocation [-Country <country>]
+Lokasi Fisik Berbeda dari Wilayah Azure. Gunakan `Get-AzPeeringServiceLocation [-Country <country>]`
 
 ```yaml
 Type: System.String
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Membuat atau menggunakan nama grup sumber daya yang sudah ada.
+Buat atau gunakan nama grup sumber daya yang sudah ada.
 
 ```yaml
 Type: System.String

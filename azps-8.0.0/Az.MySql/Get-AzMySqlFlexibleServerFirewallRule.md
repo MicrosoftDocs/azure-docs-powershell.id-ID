@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.mysql/get-azmysq
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Get-AzMySqlFlexibleServerFirewallRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Get-AzMySqlFlexibleServerFirewallRule.md
-ms.openlocfilehash: 2f76902136e5a95c398e4886fe38f4b44fc9d056
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 216a6ec41a2effa998a9f41cd5fb464c97f21904
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145507246"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146634664"
 ---
 # Get-AzMySqlFlexibleServerFirewallRule
 
@@ -42,7 +42,7 @@ Mendapatkan informasi tentang aturan firewall server.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan aturan firewall menurut nama
+### Contoh 1: Dapatkan aturan firewall berdasarkan nama
 ```powershell
 Get-AzMySqlFlexibleServerFirewallRule -Name firewallrule-test -ResourceGroupName PowershellMySqlTest -ServerName mysql-test
 ```
@@ -55,7 +55,7 @@ firewallrule-test   12.12.12.12     23.23.23.23
 
 Cmdlet ini mendapatkan aturan firewall berdasarkan nama.
 
-### Contoh 2: Mendapatkan aturan firewall menurut identitas
+### Contoh 2: Mendapatkan aturan firewall berdasarkan identitas
 ```powershell
 $ID = "/subscriptions/<SubscriptionId>/resourceGroups/PowershellMySqlTest/providers/Microsoft.DBforMySQL/servers/mysql-test/firewallRules/firewallrule-test"
 Get-AzMySqlFlexibleServerFirewallRule -InputObject $ID
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.MySql.Models.IMySqlIdentity
@@ -196,7 +196,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMySqlIdentity>: Parameter Identitas
+INPUTOBJECT `<IMySqlIdentity>`: Parameter Identitas
   - `[BackupName <String>]`: Nama cadangan.
   - `[ConfigurationName <String>]`: Nama konfigurasi server.
   - `[DatabaseName <String>]`: Nama database.

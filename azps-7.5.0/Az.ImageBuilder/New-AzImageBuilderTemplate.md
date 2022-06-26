@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.imagebuilder/New
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImageBuilder/help/New-AzImageBuilderTemplate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImageBuilder/help/New-AzImageBuilderTemplate.md
-ms.openlocfilehash: 1d46ee79ee9ca91cf98440099087a5db6f80a40e
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 3cee2535bb0a3bcb1b24d717535446f1b177c8da
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145695700"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146638048"
 ---
 # New-AzImageBuilderTemplate
 
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-wilayah HideParameter Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+wilayah HideParameter Info masuk, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
 
 ```yaml
 Type: System.Management.Automation.PSObject
@@ -221,7 +221,7 @@ Accept wildcard characters: False
 
 ### -Sumber
 Menjelaskan sumber gambar komputer virtual untuk membangun, menyesuaikan, dan mendistribusikan.
-Untuk membuat, lihat bagian CATATAN untuk properti SUMBER dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti SUMBER dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ImageBuilder.Models.Api20200214.IImageTemplateSource
@@ -236,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+Info masuk langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
 
 ```yaml
 Type: System.String
@@ -297,7 +297,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMProfileVmSize
-Ukuran komputer virtual yang digunakan untuk membangun, menyesuaikan, dan mengambil gambar.
+Ukuran komputer virtual yang digunakan untuk membangun, menyesuaikan, dan menangkap gambar.
 Hilangkan atau tentukan string kosong untuk menggunakan default (Standard_D1_v2).
 
 ```yaml
@@ -313,7 +313,7 @@ Accept wildcard characters: False
 ```
 
 ### -VnetConfigSubnetId
-Id sumber daya dari subnet yang sudah ada sebelumnya.
+Id sumber daya subnet yang sudah ada sebelumnya.
 
 ```yaml
 Type: System.String
@@ -386,7 +386,7 @@ DISTRIBUTE <IImageTemplateDistributor[]>: Distribusi menargetkan tempat output g
   - `[ArtifactTag <IImageTemplateDistributorArtifactTags>]`: Tag yang akan diterapkan ke artefak setelah dibuat/diperbarui oleh distributor.
     - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
 
-SUMBER <IImageTemplateSource>: Menjelaskan sumber gambar komputer virtual untuk membangun, menyesuaikan, dan mendistribusikan.
+SUMBER `<IImageTemplateSource>`: Menjelaskan sumber gambar komputer virtual untuk membangun, menyesuaikan, dan mendistribusikan.
   - `Type <String>`: Menentukan jenis gambar sumber yang ingin Anda mulai.
 
 ## RELATED LINKS

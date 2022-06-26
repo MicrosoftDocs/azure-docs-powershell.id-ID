@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.kusto/add-azkust
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Add-AzKustoClusterLanguageExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Add-AzKustoClusterLanguageExtension.md
-ms.openlocfilehash: 7c4f742772599bfbeebd79e0695efa78f3677ba7
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 79543dc30cf48524fe718a16e9431fab4056a1ac
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145694098"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146635870"
 ---
 # Add-AzKustoClusterLanguageExtension
 
@@ -237,7 +237,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IKustoIdentity>: Parameter Identitas
+INPUTOBJECT `<IKustoIdentity>`: Parameter Identitas
   - `[AttachedDatabaseConfigurationName <String>]`: Nama konfigurasi database terlampir.
   - `[ClusterName <String>]`: Nama kluster Kusto.
   - `[DataConnectionName <String>]`: Nama koneksi data.

@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.purview/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Update-AzPurviewAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Update-AzPurviewAccount.md
-ms.openlocfilehash: 535a49ac73e7cfda798b46aa458028d0887719b6
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 86bc8a9de8254be73c37e38f63a33c822ed68396
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145521958"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146636482"
 ---
 # Update-AzPurviewAccount
 
 ## SYNOPSIS
-Memperbarui akun
+Updates akun
 
 ## SYNTAX
 
@@ -34,7 +34,7 @@ Update-AzPurviewAccount -InputObject <IPurviewIdentity> [-ManagedResourceGroupNa
 ```
 
 ## DESCRIPTION
-Memperbarui akun
+Updates akun
 
 ## EXAMPLES
 
@@ -362,7 +362,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IPurviewIdentity>: Parameter Identitas
+INPUTOBJECT `<IPurviewIdentity>`: Parameter Identitas
   - `[AccountName <String>]`: Nama akun.
   - `[GroupId <String>]`: Pengidentifikasi grup.
   - `[Id <String>]`: Jalur identitas sumber daya

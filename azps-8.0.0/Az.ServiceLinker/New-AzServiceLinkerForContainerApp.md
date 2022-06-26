@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.servicelinker/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceLinker/help/New-AzServiceLinkerForContainerApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceLinker/help/New-AzServiceLinkerForContainerApp.md
-ms.openlocfilehash: 5e486570b2023da6247bd66900a5cee0c6b8684a
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 00857472ec60432da56bbb6a7613063e52f19f3f
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145539558"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146636356"
 ---
 # New-AzServiceLinkerForContainerApp
 
@@ -68,7 +68,7 @@ Accept wildcard characters: False
 
 ### -AuthInfo
 Jenis Autentikasi.
-Untuk membuat, lihat bagian CATATAN untuk properti AUTHINFO dan buat tabel hash.
+Untuk membuat, lihat bagian NOTES untuk properti AUTHINFO dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ServiceLinker.Models.Api20220501.IAuthInfoBase
@@ -234,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetService
-Properti layanan target Untuk dibangun, lihat bagian CATATAN untuk properti TARGETSERVICE dan buat tabel hash.
+Properti layanan target Untuk membangun, lihat bagian CATATAN untuk properti TARGETSERVICE dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ServiceLinker.Models.Api20220501.ITargetServiceBase
@@ -312,10 +312,10 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-AUTHINFO <IAuthInfoBase>: Jenis autentikasi.
+AUTHINFO `<IAuthInfoBase>`: Jenis autentikasi.
   - `AuthType <AuthType>`: Jenis autentikasi.
 
-TARGETSERVICE <ITargetServiceBase>: Properti layanan target
+TARGETSERVICE `<ITargetServiceBase>`: Properti layanan target
   - `Type <TargetServiceType>`: Jenis layanan target.
 
 ## RELATED LINKS

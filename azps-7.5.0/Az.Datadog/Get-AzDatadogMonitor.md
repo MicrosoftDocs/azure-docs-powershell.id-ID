@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.datadog/get-azda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/Get-AzDatadogMonitor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/Get-AzDatadogMonitor.md
-ms.openlocfilehash: 88475d4ceb2e6739862a7548b11b324b2a511392
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 95aaf7cca8948025319e6399d1ed1cc2e2411c15
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145746784"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146635906"
 ---
 # Get-AzDatadogMonitor
 
@@ -88,7 +88,7 @@ eastus2euap Datadog microsoft.Datadog/monitors
 
 Perintah ini mendapatkan properti sumber daya monitor tertentu.
 
-### Contoh 4: Mendapatkan properti sumber daya monitor tertentu berdasarkan alur
+### Contoh 4: Mendapatkan properti sumber daya monitor tertentu menurut alur
 ```powershell
 Get-AzDatadogMonitor -ResourceGroupName azure-rg-Datadog -Name Datadog | Get-AzDatadogMonitor
 ```
@@ -99,7 +99,7 @@ Location    Name         Type
 eastus2euap Datadog microsoft.Datadog/monitors
 ```
 
-Perintah ini mendapatkan properti sumber daya monitor tertentu berdasarkan alur.
+Perintah ini mendapatkan properti sumber daya monitor tertentu menurut alur.
 
 ## PARAMETERS
 
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.IDatadogIdentity
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -199,11 +199,11 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IDatadogIdentity>: Parameter Identitas
+INPUTOBJECT `<IDatadogIdentity>`: Parameter Identitas
   - `[ConfigurationName <String>]`: Nama konfigurasi
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[MonitorName <String>]`: Memantau nama sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[RuleSetName <String>]`: Nama seperangkat aturan
   - `[SubscriptionId <String>]`: ID langganan target.
 

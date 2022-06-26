@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.springcloud/stop
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SpringCloud/help/Stop-AzSpringCloudAppDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SpringCloud/help/Stop-AzSpringCloudAppDeployment.md
-ms.openlocfilehash: b92f2fd70d0848eeaf384297e7a4d8fade17dc0b
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 22cd1123bbc10b8281337e6abefdf96872cc67f1
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145560919"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146634232"
 ---
 # Stop-AzSpringCloudAppDeployment
 
@@ -19,7 +19,7 @@ Hentikan penyebaran.
 
 ## SYNTAX
 
-### Hentikan (Default)
+### Berhenti (Default)
 ```
 Stop-AzSpringCloudAppDeployment -AppName <String> -Name <String> -ResourceGroupName <String>
  -ServiceName <String> [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru]
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.SpringCloud.Models.ISpringCloudIdentity
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -256,7 +256,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ISpringCloudIdentity>: Parameter Identitas
+INPUTOBJECT `<ISpringCloudIdentity>`: Parameter Identitas
   - `[AppName <String>]`: Nama sumber daya Aplikasi.
   - `[BindingName <String>]`: Nama sumber daya Pengikatan.
   - `[CertificateName <String>]`: Nama sumber daya sertifikat.

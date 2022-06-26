@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.vmware/new-azvmw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/New-AzVMwarePlacementPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/New-AzVMwarePlacementPolicy.md
-ms.openlocfilehash: f3e89bce7b12207ec0be5ebcc3f61bf4f5aa5d21
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: d7210d2c8257648e6a7040faac1f6391af25b414
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145701766"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146637382"
 ---
 # New-AzVMwarePlacementPolicy
 
@@ -152,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -Properti
-properti kebijakan penempatan Untuk membangun, lihat bagian CATATAN untuk properti PROPERTI dan membuat tabel hash.
+properti kebijakan penempatan Untuk membangun, lihat bagian CATATAN untuk properti PROPERTI dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.VMware.Models.Api20211201.IPlacementPolicyProperties
@@ -246,7 +246,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-PROPERTI <IPlacementPolicyProperties>: properti kebijakan penempatan
+PROPERTI `<IPlacementPolicyProperties>`: properti kebijakan penempatan
   - `Type <PlacementPolicyType>`: jenis kebijakan penempatan
   - `[DisplayName <String>]`: Nama tampilan kebijakan penempatan
   - `[State <PlacementPolicyState?>]`: Apakah kebijakan penempatan diaktifkan atau dinonaktifkan

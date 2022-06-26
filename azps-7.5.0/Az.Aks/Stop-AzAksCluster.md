@@ -5,24 +5,24 @@ online version: https://docs.microsoft.com/powershell/module/az.aks/stop-azakscl
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Stop-AzAksCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Stop-AzAksCluster.md
-ms.openlocfilehash: 5447b3eaf603513f5945dfa9b8b587865523482b
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: ab34e8d426678a2b089cc0bf61cf93486778e666
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145782676"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146636212"
 ---
 # Stop-AzAksCluster
 
 ## SYNOPSIS
-Menghentikan Kluster Terkelola yang Berjalan
+Menghentikan Kluster Terkelola yang Sedang Berjalan
 
 > [!NOTE]
 >Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.aks/stop-azakscluster) untuk informasi terbaru.
 
 ## SYNTAX
 
-### Hentikan (Default)
+### Berhenti (Default)
 ```
 Stop-AzAksCluster -Name <String> -ResourceGroupName <String> [-SubscriptionId <String>]
  [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
@@ -35,7 +35,7 @@ Stop-AzAksCluster -InputObject <IAksIdentity> [-DefaultProfile <PSObject>] [-AsJ
 ```
 
 ## DESCRIPTION
-Menghentikan Kluster Terkelola yang Berjalan
+Menghentikan Kluster Terkelola yang Sedang Berjalan
 
 ## EXAMPLES
 
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Aks.Models.IAksIdentity
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+Info masuk langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
@@ -227,7 +227,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IAksIdentity>: Parameter Identitas
+INPUTOBJECT `<IAksIdentity>`: Parameter Identitas
   - `[AgentPoolName <String>]`: Nama kumpulan agen.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Nama wilayah Azure yang didukung.

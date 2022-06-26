@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.labservices/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Get-AzLabServicesLab.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Get-AzLabServicesLab.md
-ms.openlocfilehash: cc428c2d29f9bf497f8f34f5bee5e6f240801275
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: b960e8522ed9c95ace431b3c7ecffc2de4de8765
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145560376"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146636590"
 ---
 # Get-AzLabServicesLab
 
@@ -53,7 +53,7 @@ API untuk mendapatkan lab.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua lab
+### Contoh 1: Mendapatkan semua lab
 ```powershell
 Get-AzLab
 ```
@@ -82,7 +82,7 @@ westus2       yourlabName                                        Microsoft.LabSe
 
 Dapatkan lab tertentu menggunakan nama grup sumber daya dan nama lab.
 
-### Contoh 3: Membuat semua lab dengan rencana lab
+### Contoh 3: Membuat semua lab dengan paket lab
 ```powershell
 $plan = Get-AzLabPlan -LabPlanName 'lab plan name'
 $plan | Get-AzLab -Name 'lab name'
@@ -96,7 +96,7 @@ westus2       lab Name                                        Microsoft.LabServi
 
 Dapatkan lab tertentu dalam rencana lab menggunakan objek rencana lab dan nama lab.
 
-### Contoh 4: Dapatkan lab menggunakan kartubebas dalam nama lab.
+### Contoh 4: Mendapatkan lab menggunakan kartubebas dalam nama lab.
 ```powershell
 Get-AzLab -ResourceGroupName 'group name' -Name '*lab name'
 ```
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -LabPlan
-Untuk membuat, lihat bagian CATATAN untuk properti LABPLAN dan buat tabel hash.
+Untuk membuat, lihat bagian NOTES untuk properti LABPLAN dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.LabServices.Models.Api20211001Preview.LabPlan
@@ -253,31 +253,31 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-LABPLAN <LabPlan>: 
+LABPLAN `<LabPlan>`: 
   - `Location <String>`: Lokasi geografis tempat sumber daya berada
   - `[AllowedRegion <String[]>]`: Wilayah yang diizinkan untuk digunakan pembuat lab saat membuat lab menggunakan rencana lab ini.
   - `[DefaultAutoShutdownProfileDisconnectDelay <TimeSpan?>]`: Jumlah waktu VM akan tetap berjalan setelah pengguna terputus jika perilaku ini diaktifkan.
-  - `[DefaultAutoShutdownProfileIdleDelay <TimeSpan?>]`: Jumlah waktu VM akan menganggur sebelum dimatikan jika perilaku ini diaktifkan.
+  - `[DefaultAutoShutdownProfileIdleDelay <TimeSpan?>]`: Jumlah waktu VM akan diam sebelum dimatikan jika perilaku ini diaktifkan.
   - `[DefaultAutoShutdownProfileNoConnectDelay <TimeSpan?>]`: Jumlah waktu VM akan tetap berjalan sebelum dimatikan jika tidak ada koneksi yang dibuat dan perilaku ini diaktifkan.
-  - `[DefaultAutoShutdownProfileShutdownOnDisconnect <EnableState?>]`: Apakah pematian saat pemutusan sambungan diaktifkan
+  - `[DefaultAutoShutdownProfileShutdownOnDisconnect <EnableState?>]`: Apakah matikan saat pemutusan sambungan diaktifkan
   - `[DefaultAutoShutdownProfileShutdownOnIdle <ShutdownOnIdleMode?>]`: Apakah VM akan dimatikan ketika telah menganggur untuk jangka waktu tertentu.
-  - `[DefaultAutoShutdownProfileShutdownWhenNotConnected <EnableState?>]`: Apakah VM akan dimatikan ketika belum tersambung setelah jangka waktu tertentu.
+  - `[DefaultAutoShutdownProfileShutdownWhenNotConnected <EnableState?>]`: Apakah VM akan dimatikan saat belum tersambung setelah jangka waktu tertentu.
   - `[DefaultConnectionProfileClientRdpAccess <ConnectionType?>]`: Tingkat akses yang diaktifkan untuk Akses Klien melalui RDP.
   - `[DefaultConnectionProfileClientSshAccess <ConnectionType?>]`: Tingkat akses yang diaktifkan untuk Akses Klien melalui SSH.
   - `[DefaultConnectionProfileWebRdpAccess <ConnectionType?>]`: Tingkat akses yang diaktifkan untuk Akses Web melalui RDP.
   - `[DefaultConnectionProfileWebSshAccess <ConnectionType?>]`: Tingkat akses yang diaktifkan untuk Akses Web melalui SSH.
   - `[DefaultNetworkProfileSubnetId <String>]`: Id sumber daya subnet eksternal
   - `[LinkedLmsInstance <String>]`: Url Dasar instans lms rencana lab ini dapat menautkan daftar nama lab.
-  - `[SharedGalleryId <String>]`: ID sumber daya dari Shared Image Gallery yang dilampirkan ke rencana lab ini. Saat menyimpan citra komputer virtual templat lab, gambar tersebut akan tetap ada di galeri ini. Gambar bersama dari galeri dapat disediakan untuk digunakan saat membuat lab baru.
-  - `[SupportInfoEmail <String>]`: Alamat email kontak dukungan.
+  - `[SharedGalleryId <String>]`: ID sumber daya dari Shared Image Gallery yang dilampirkan ke paket lab ini. Saat menyimpan citra komputer virtual templat lab, gambar tersebut akan bertahan di galeri ini. Gambar bersama dari galeri dapat digunakan saat membuat lab baru.
+  - `[SupportInfoEmail <String>]`: Mendukung alamat email kontak.
   - `[SupportInfoInstruction <String>]`: Instruksi dukungan.
-  - `[SupportInfoPhone <String>]`: Nomor telepon kontak dukungan.
+  - `[SupportInfoPhone <String>]`: Mendukung nomor telepon kontak.
   - `[SupportInfoUrl <String>]`: Alamat web dukungan.
   - `[SystemDataCreatedAt <DateTime?>]`: Tanda waktu pembuatan sumber daya (UTC).
   - `[SystemDataCreatedBy <String>]`: Identitas yang membuat sumber daya.
   - `[SystemDataCreatedByType <CreatedByType?>]`: Jenis identitas yang membuat sumber daya.
   - `[SystemDataLastModifiedAt <DateTime?>]`: Tanda waktu modifikasi terakhir sumber daya (UTC)
-  - `[SystemDataLastModifiedBy <String>]`: Identitas yang terakhir mengubah sumber daya.
+  - `[SystemDataLastModifiedBy <String>]`: Identitas yang terakhir memodifikasi sumber daya.
   - `[SystemDataLastModifiedByType <CreatedByType?>]`: Jenis identitas yang terakhir memodifikasi sumber daya.
   - `[Tag <ITrackedResourceTags>]`: Tag sumber daya.
     - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.

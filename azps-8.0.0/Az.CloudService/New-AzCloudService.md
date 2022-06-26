@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.cloudservice/new
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/New-AzCloudService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/New-AzCloudService.md
-ms.openlocfilehash: 8ec15fb38903517964a894a5ca6c82f49b8e5c55
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: e9d3242359e3fca8c39eb7e12cc98a4ccbad1005
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145542677"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146635402"
 ---
 # New-AzCloudService
 
@@ -612,7 +612,7 @@ Accept wildcard characters: False
 ### -UpgradeMode
 Perbarui mode untuk layanan awan.
 Instans peran dialokasikan untuk memperbarui domain saat layanan disebarkan.
-Pembaruan dapat dimulai secara manual di setiap domain pembaruan atau dimulai secara otomatis di semua domain pembaruan. Nilai yang Mungkin adalah \<br /\>\<br /\>**Manual** \<br /\>\<br /\>**Otomatis**\<br /\>\<br /\> **Simultan**\<br /\>\<br /\>Jika tidak ditentukan, nilai defaultnya adalah Otomatis. Jika diatur ke Manual, PUT UpdateDomain harus dipanggil untuk menerapkan pembaruan.
+Updates dapat dimulai secara manual di setiap domain pembaruan atau dimulai secara otomatis di semua domain pembaruan. Nilai yang Mungkin adalah \<br /\>\<br /\>**Manual** \<br /\>\<br /\>**Otomatis**\<br /\>\<br /\> **Simultan**\<br /\>\<br /\>Jika tidak ditentukan, nilai defaultnya adalah Otomatis. Jika diatur ke Manual, PUT UpdateDomain harus dipanggil untuk menerapkan pembaruan.
 Jika diatur ke Otomatis, pembaruan secara otomatis diterapkan ke setiap domain pembaruan secara berurutan.
 
 ```yaml
@@ -676,7 +676,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-EXTENSIONPROFILE <ICloudServiceExtensionProfile>: Menjelaskan profil ekstensi layanan cloud.
+EXTENSIONPROFILE `<ICloudServiceExtensionProfile>`: Menjelaskan profil ekstensi layanan cloud.
   - `[Extension <IExtension[]>]`: Daftar ekstensi untuk layanan cloud.
     - `[AutoUpgradeMinorVersion <Boolean?>]`: Secara eksplisit menentukan apakah platform dapat secara otomatis meningkatkan typeHandlerVersion ke versi minor yang lebih tinggi ketika tersedia.
     - `[ForceUpdateTag <String>]`: Tag untuk memaksa menerapkan pengaturan publik dan terlindungi yang disediakan.         Mengubah nilai tag memungkinkan untuk menjalankan kembali ekstensi tanpa mengubah pengaturan publik atau terlindungi.         Jika forceUpdateTag tidak diubah, pembaruan pada pengaturan publik atau terlindungi akan tetap diterapkan oleh handler.         Jika tidak ada forceUpdateTag atau pengaturan publik atau terproteksi yang berubah, ekstensi akan mengalir ke instans peran dengan nomor urutan yang sama, dan terserah implementasi handler apakah akan menjalankannya kembali atau tidak
@@ -690,7 +690,7 @@ EXTENSIONPROFILE <ICloudServiceExtensionProfile>: Menjelaskan profil ekstensi la
     - `[Type <String>]`: Menentukan jenis ekstensi.
     - `[TypeHandlerVersion <String>]`: Menentukan versi ekstensi. Menentukan versi ekstensi. Jika elemen ini tidak ditentukan atau tanda bintang (*) digunakan sebagai nilai, versi terbaru ekstensi akan digunakan. Jika nilai ditentukan dengan nomor versi utama dan tanda bintang sebagai nomor versi minor (X.), versi minor terbaru dari versi utama yang ditentukan dipilih. Jika nomor versi utama dan nomor versi minor ditentukan (X.Y), versi ekstensi tertentu dipilih. Jika versi ditentukan, peningkatan otomatis dilakukan pada instans peran.
 
-NETWORKPROFILE <ICloudServiceNetworkProfile>: Profil Jaringan untuk layanan cloud.
+NETWORKPROFILE `<ICloudServiceNetworkProfile>`: Profil Jaringan untuk layanan cloud.
   - `[LoadBalancerConfiguration <ILoadBalancerConfiguration[]>]`: Daftar konfigurasi Load balancer. Layanan cloud dapat memiliki hingga dua konfigurasi load balancer, sesuai dengan Load Balancer Publik dan Load Balancer Internal.
     - `FrontendIPConfiguration <ILoadBalancerFrontendIPConfiguration[]>`: Menentukan IP frontend yang akan digunakan untuk load balancer. Hanya alamat IP frontend IPv4 yang didukung. Setiap konfigurasi load balancer harus memiliki tepat satu konfigurasi IP frontend.
       - `Name <String>`: Nama sumber daya yang unik dalam kumpulan konfigurasi IP frontend yang digunakan oleh load balancer. Nama ini dapat digunakan untuk mengakses sumber daya.
@@ -702,13 +702,13 @@ NETWORKPROFILE <ICloudServiceNetworkProfile>: Profil Jaringan untuk layanan clou
   - `[SwappableCloudService <ISubResource>]`: Referensi id layanan awan yang berisi IP target tempat layanan cloud subjek dapat melakukan pertukaran. Properti ini tidak dapat diperbarui setelah diatur. Layanan cloud yang dapat ditukar yang dirujuk oleh id ini harus ada jika tidak, kesalahan akan dilemparkan.
     - `[Id <String>]`: Id Sumber Daya
 
-OSPROFILE <ICloudServiceOSProfile>: Menjelaskan profil OS untuk layanan cloud.
+OSPROFILE `<ICloudServiceOSProfile>`: Menjelaskan profil OS untuk layanan cloud.
   - `[Secret <ICloudServiceVaultSecretGroup[]>]`: Menentukan sekumpulan sertifikat yang harus diinstal ke instans peran.
     - `[SourceVaultId <String>]`: Id Sumber Daya
     - `[VaultCertificate <ICloudServiceVaultCertificate[]>]`: Daftar referensi brankas kunci di SourceVault yang berisi sertifikat.
       - `[CertificateUrl <String>]`: Ini adalah URL sertifikat yang telah diunggah ke Key Vault sebagai rahasia.
 
-ROLEPROFILE <ICloudServiceRoleProfile>: Menjelaskan profil peran untuk layanan cloud.
+ROLEPROFILE `<ICloudServiceRoleProfile>`: Menjelaskan profil peran untuk layanan cloud.
   - `[Role <ICloudServiceRoleProfileProperties[]>]`: Daftar peran untuk layanan awan.
     - `[Name <String>]`: Nama sumber daya.
     - `[SkuCapacity <Int64?>]`: Menentukan jumlah instans peran di layanan cloud.

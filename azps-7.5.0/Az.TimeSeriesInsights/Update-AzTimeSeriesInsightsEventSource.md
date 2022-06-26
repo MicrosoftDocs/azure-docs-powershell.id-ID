@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.timeseriesinsigh
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/Update-AzTimeSeriesInsightsEventSource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/Update-AzTimeSeriesInsightsEventSource.md
-ms.openlocfilehash: 6753844070731773a4a33b8e48e71134dec577e2
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 9cf121dfb07fa12fde9f0ad208bc881b34e59efa
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145703260"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146637400"
 ---
 # Update-AzTimeSeriesInsightsEventSource
 
 ## SYNOPSIS
-Memperbarui sumber peristiwa dengan nama yang ditentukan dalam langganan, grup sumber daya, dan lingkungan yang ditentukan.
+Updates sumber peristiwa dengan nama yang ditentukan dalam langganan, grup sumber daya, dan lingkungan yang ditentukan.
 
 > [!NOTE]
 >Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.timeseriesinsights/update-aztimeseriesinsightseventsource) untuk informasi terbaru.
@@ -36,7 +36,7 @@ Update-AzTimeSeriesInsightsEventSource -InputObject <ITimeSeriesInsightsIdentity
 ```
 
 ## DESCRIPTION
-Memperbarui sumber peristiwa dengan nama yang ditentukan dalam langganan, grup sumber daya, dan lingkungan yang ditentukan.
+Updates sumber peristiwa dengan nama yang ditentukan dalam langganan, grup sumber daya, dan lingkungan yang ditentukan.
 
 ## EXAMPLES
 
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.TimeSeriesInsights.Models.ITimeSeriesInsightsIdentity
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Nama Time Series Insights sumber peristiwa yang terkait dengan lingkungan yang ditentukan.
+Nama sumber peristiwa Time Series Insights yang terkait dengan lingkungan yang ditentukan.
 
 ```yaml
 Type: System.String
@@ -239,7 +239,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ITimeSeriesInsightsIdentity>: Parameter Identitas
+INPUTOBJECT `<ITimeSeriesInsightsIdentity>`: Parameter Identitas
   - `[AccessPolicyName <String>]`: Nama kebijakan akses.
   - `[EnvironmentName <String>]`: Nama lingkungan
   - `[EventSourceName <String>]`: Nama sumber peristiwa Time Series Insights yang terkait dengan lingkungan yang ditentukan.

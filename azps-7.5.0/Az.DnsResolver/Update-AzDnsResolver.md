@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.dnsresolver/upda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/Update-AzDnsResolver.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/Update-AzDnsResolver.md
-ms.openlocfilehash: ea0f09d685ec16340acb8f88d6d5d15972f56664
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: db3ca00ea7cf97689476ac4b0e3937b97d259361
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145688322"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146633764"
 ---
 # Update-AzDnsResolver
 
 ## SYNOPSIS
-Memperbarui pemecah masalah DNS.
+Updates pemecah masalah DNS.
 
 > [!NOTE]
 >Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dnsresolver/update-azdnsresolver) untuk informasi terbaru.
@@ -35,7 +35,7 @@ Update-AzDnsResolver -InputObject <IDnsResolverIdentity> [-IfMatch <String>] [-T
 ```
 
 ## DESCRIPTION
-Memperbarui pemecah masalah DNS.
+Updates pemecah masalah DNS.
 
 ## EXAMPLES
 
@@ -50,9 +50,9 @@ Location Name                      Type                           Etag
 westus2  psdnsresolvername33nmy1fz Microsoft.Network/dnsResolvers "0000efd6-0000-0800-0000-60401c7c0000"
 ```
 
-Perintah ini memperbarui Pemecah Masalah DNS yang sudah ada berdasarkan nama ( menambahkan tag ).
+Perintah ini memperbarui Pemecah Masalah DNS yang ada berdasarkan nama ( menambahkan tag ).
 
-### Contoh 2: Memperbarui Pemecah Masalah DNS yang sudah ada berdasarkan identitas
+### Contoh 2: Updates Pemecah Masalah DNS yang sudah ada berdasarkan identitas
 ```powershell
 $dnsResolverObject = Get-AzDnsResolver -ResourceGroupName powershell-test-rg -Name  psdnsresolvername33nmy1fz
 Update-AzDnsResolver -InputObject $dnsResolverObject  -Tag @{} 
@@ -63,7 +63,7 @@ Location Name                      Type                           Etag
 -------- ----                      ----                           ----
 westus2  psdnsresolvername33nmy1fz Microsoft.Network/dnsResolvers "0000efd6-0000-0800-0000-60401c7c0000"
 ```
-Perintah ini memperbarui Pemecah Masalah DNS yang ada menurut identitas ( menghapus tag ).
+Perintah ini memperbarui Pemecah Masalah DNS yang ada berdasarkan identitas ( menghapus tag ).
 
 ## PARAMETERS
 
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DnsResolver.Models.IDnsResolverIdentity
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -256,14 +256,14 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IDnsResolverIdentity>: Parameter Identitas
-  - `[DnsForwardingRulesetName <String>]`: Nama set aturan penerusan DNS.
+INPUTOBJECT `<IDnsResolverIdentity>`: Parameter Identitas
+  - `[DnsForwardingRulesetName <String>]`: Nama kumpulan aturan penerusan DNS.
   - `[DnsResolverName <String>]`: Nama pemecah masalah DNS.
   - `[ForwardingRuleName <String>]`: Nama aturan penerusan.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[InboundEndpointName <String>]`: Nama titik akhir masuk untuk pemecah masalah DNS.
   - `[OutboundEndpointName <String>]`: Nama titik akhir keluar untuk pemecah masalah DNS.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
   - `[VirtualNetworkLinkName <String>]`: Nama tautan jaringan virtual.
   - `[VirtualNetworkName <String>]`: Nama jaringan virtual.

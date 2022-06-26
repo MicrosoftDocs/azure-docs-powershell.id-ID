@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.mysql/get-azmysq
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Get-AzMySqlConnectionString.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Get-AzMySqlConnectionString.md
-ms.openlocfilehash: d32e82ba77502a02731762048e2b1c980b27191d
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 11ae76a8869dd63464b05dd2dcd4cefb5661f13a
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145562305"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146634736"
 ---
 # Get-AzMySqlConnectionString
 
@@ -171,7 +171,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IServer>: Server untuk string koneksi.
+INPUTOBJECT `<IServer>`: Server untuk string koneksi.
   - `Location <String>`: Lokasi geografis tempat sumber daya berada
   - `[Tag <ITrackedResourceTags>]`: Tag sumber daya.
     - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.

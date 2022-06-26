@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/restart-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Restart-AzMigrateServerReplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Restart-AzMigrateServerReplication.md
-ms.openlocfilehash: 4069374c9f06c98f9ae3e2260eeff03695bbdba3
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: 350ebb79ea9ca045cfb1238e7d2bd641e434457d
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145768386"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146637714"
 ---
 # Restart-AzMigrateServerReplication
 
@@ -69,7 +69,7 @@ Type                             : Microsoft.RecoveryServices/vaults/replication
 
 Berdasarkan id.
 
-### Contoh 2: Berdasarkan Objek Input
+### Contoh 2: Menurut Objek Input
 ```powershell
 $obj = Get-AzMigrateServerReplication -TargetObjectID "/Subscriptions/xxx-xxx-xxx/resourceGroups/azmigratepwshtestasr13072020/providers/Microsoft.RecoveryServices/vaults/AzMigrateTestProjectPWSH02aarsvault/replicationFabrics/AzMigratePWSHTc8d1replicationfabric/replicationProtectionContainers/AzMigratePWSHTc8d1replicationcontainer/replicationMigrationItems/bcdr-vcenter-fareast-corp-micro-cfcc5a24-a40e-56b9-a6af-e206c9ca4f93_50063baa-9806-d6d6-7e09-c0ae87309b4f"
 $output = Restart-AzMigrateServerReplication -InputObject $obj
@@ -98,7 +98,7 @@ Task                             : {DisableProtectionOnPrimary, UpdateDraState}
 Type                             : Microsoft.RecoveryServices/vaults/replicationJobs
 ```
 
-Menurut Objek Input.
+Berdasarkan Objek Input.
 
 ## PARAMETERS
 
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetObjectID
-Menentukan server replcating yang resyncnya perlu dimulai.
+Menentukan server replcating tempat sinkronisasi ulang perlu dimulai.
 ID harus diambil menggunakan cmdlet Get-AzMigrateServerReplication.
 
 ```yaml
@@ -182,7 +182,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMigrationItem>: Menentukan objek mesin server replikasi.
+INPUTOBJECT `<IMigrationItem>`: Menentukan objek mesin server replikasi.
   - `[Location <String>]`: Lokasi Sumber Daya
   - `[ProviderSpecificDetail <IMigrationProviderSpecificSettings>]`: Pengaturan kustom penyedia migrasi.
 

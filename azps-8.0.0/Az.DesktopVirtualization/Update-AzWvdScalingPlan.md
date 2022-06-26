@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.desktopvirtualiz
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Update-AzWvdScalingPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Update-AzWvdScalingPlan.md
-ms.openlocfilehash: 2642bd55a203182fc415c1ccbfc5dd0e7a5cc9c3
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: c2af9c255dbb0083863d14028e9f6c110f96094c
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145546348"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146636716"
 ---
 # Update-AzWvdScalingPlan
 
 ## SYNOPSIS
-Memperbarui paket penskalakan.
+Memperbarui rencana penskalakan.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Update-AzWvdScalingPlan -InputObject <IDesktopVirtualizationIdentity> [-Descript
 ```
 
 ## DESCRIPTION
-Memperbarui paket penskalakan.
+Memperbarui rencana penskalakan.
 
 ## EXAMPLES
 
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.IDesktopVirtualizationIdentity
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -345,17 +345,17 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 HOSTPOOLREFERENCE <IScalingHostPoolReference[]>: Daftar definisi ScalingHostPoolReference.
-  - `[HostPoolArmPath <String>]`: Jalur arm dari hostpool yang dirujuk.
+  - `[HostPoolArmPath <String>]`: Jalur arm hostpool yang dirujuk.
   - `[ScalingPlanEnabled <Boolean?>]`: Apakah rencana penskalaan diaktifkan untuk hostpool ini.
 
-INPUTOBJECT <IDesktopVirtualizationIdentity>: Parameter Identitas
+INPUTOBJECT `<IDesktopVirtualizationIdentity>`: Parameter Identitas
   - `[ApplicationGroupName <String>]`: Nama grup aplikasi
   - `[ApplicationName <String>]`: Nama aplikasi dalam grup aplikasi yang ditentukan
   - `[DesktopName <String>]`: Nama desktop dalam grup desktop yang ditentukan
   - `[HostPoolName <String>]`: Nama kumpulan host dalam grup sumber daya yang ditentukan
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[MsixPackageFullName <String>]`: Nama lengkap paket khusus versi dari paket MSIX dalam hostpool tertentu
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[MsixPackageFullName <String>]`: Nama lengkap paket spesifik versi dari paket MSIX dalam hostpool yang ditentukan
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[ScalingPlanName <String>]`: Nama rencana penskalaan.
   - `[SessionHostName <String>]`: Nama host sesi dalam kumpulan host yang ditentukan
   - `[SubscriptionId <String>]`: ID langganan target.
@@ -369,7 +369,7 @@ SCHEDULE <IScalingSchedule[]>: Daftar definisi ScalingSchedule.
   - `[OffPeakStartTime <DateTime?>]`: Waktu mulai untuk periode di luar puncak.
   - `[PeakLoadBalancingAlgorithm <SessionHostLoadBalancingAlgorithm?>]`: Algoritma penyeimbangan beban untuk periode puncak.
   - `[PeakStartTime <DateTime?>]`: Waktu mulai untuk periode puncak.
-  - `[RampDownCapacityThresholdPct <Int32?>]`: Ambang kapasitas untuk periode penurunan.
+  - `[RampDownCapacityThresholdPct <Int32?>]`: Ambang batas kapasitas untuk periode penurunan.
   - `[RampDownForceLogoffUser <Boolean?>]`: Haruskah pengguna dicatat secara paksa dari host.
   - `[RampDownLoadBalancingAlgorithm <SessionHostLoadBalancingAlgorithm?>]`: Algoritma penyeimbangan beban untuk periode penurunan.
   - `[RampDownMinimumHostsPct <Int32?>]`: Persentase host minimum untuk periode penurunan.
@@ -377,8 +377,8 @@ SCHEDULE <IScalingSchedule[]>: Daftar definisi ScalingSchedule.
   - `[RampDownStartTime <DateTime?>]`: Waktu mulai untuk periode penurunan.
   - `[RampDownStopHostsWhen <StopHostsWhen?>]`: Menentukan kapan harus menghentikan host selama periode penurunan.
   - `[RampDownWaitTimeMinute <Int32?>]`: Jumlah menit untuk menunggu menghentikan host selama periode penurunan.
-  - `[RampUpCapacityThresholdPct <Int32?>]`: Ambang kapasitas untuk periode peningkatan.
-  - `[RampUpLoadBalancingAlgorithm <SessionHostLoadBalancingAlgorithm?>]`: Algoritma penyeimbangan beban untuk periode peningkatan ramp.
+  - `[RampUpCapacityThresholdPct <Int32?>]`: Ambang batas kapasitas untuk periode peningkatan.
+  - `[RampUpLoadBalancingAlgorithm <SessionHostLoadBalancingAlgorithm?>]`: Algoritma penyeimbangan beban untuk periode peningkatan.
   - `[RampUpMinimumHostsPct <Int32?>]`: Persentase host minimum untuk periode peningkatan.
   - `[RampUpStartTime <DateTime?>]`: Waktu mulai untuk periode peningkatan.
 

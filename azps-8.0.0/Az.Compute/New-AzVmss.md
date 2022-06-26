@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVmss.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVmss.md
-ms.openlocfilehash: 6030e50ed14b97d0b87180da8a09165835128b66
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 124847e4d56122b7db84d70a839b38104f7c9dfa
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145540703"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146636932"
 ---
 # New-AzVmss
 
@@ -46,14 +46,14 @@ New-AzVmss [[-ResourceGroupName] <String>] [-VMScaleSetName] <String> [-AsJob] [
 
 ## DESCRIPTION
 Cmdlet **New-AzVmss** membuat Virtual Machine Scale Set (VMSS) di Azure.
-Gunakan set parameter sederhana (`SimpleParameterSet`) untuk membuat VMSS yang telah ditetapkan dan sumber daya terkait dengan cepat. Gunakan set parameter default (`DefaultParameter`) untuk skenario yang lebih canggih saat Anda perlu mengonfigurasi setiap komponen VMSS dengan tepat dan setiap sumber daya terkait sebelum pembuatan.
+Gunakan set parameter sederhana (`SimpleParameterSet`) untuk membuat VMSS yang telah ditetapkan sebelumnya dan sumber daya terkait dengan cepat. Gunakan set parameter default (`DefaultParameter`) untuk skenario yang lebih canggih saat Anda perlu mengonfigurasi setiap komponen VMSS dan setiap sumber daya terkait sebelum pembuatan.
 
 ## EXAMPLES
 
 ### Contoh 1: Membuat VMSS menggunakan SimpleParameterSet
 ```powershell
 $vmssName = <VMSSNAME>
-# Create credentials, I am using one way to create credentials, there are others as well. 
+# Create credentials, I am using one way to create credentials, there are others as well.
 # Pick one that makes the most sense according to your use case.
 $vmPassword = ConvertTo-SecureString <PASSWORD_HERE> -AsPlainText -Force
 $vmCred = New-Object System.Management.Automation.PSCredential(<USERNAME_HERE>, $vmPassword)
@@ -83,7 +83,7 @@ New-AzResourceGroup -Name $RGName -Location $LOC -Force;
 $STOName = "STO" + $RGName;
 $STOType = "Standard_GRS";
 New-AzStorageAccount -ResourceGroupName $RGName -Name $STOName -Location $LOC -Type $STOType;
-$STOAccount = Get-AzStorageAccount -ResourceGroupName $RGName -Name $STOName; 
+$STOAccount = Get-AzStorageAccount -ResourceGroupName $RGName -Name $STOName;
 
 # NRP
 $SubNet = New-AzVirtualNetworkSubnetConfig -Name ("subnet" + $RGName) -AddressPrefix "10.0.0.0/24";
@@ -122,11 +122,11 @@ $VMSSName = "VMSS" + $RGName;
 $AdminUsername = "Admin01";
 $AdminPassword = "p4ssw0rd@123" + $RGName;
 
-$PublisherName = "MicrosoftWindowsServer" 
-$Offer         = "WindowsServer" 
-$Sku           = "2012-R2-Datacenter" 
+$PublisherName = "MicrosoftWindowsServer"
+$Offer         = "WindowsServer"
+$Sku           = "2012-R2-Datacenter"
 $Version       = "latest"
-        
+
 $VHDContainer = "https://" + $STOName + ".blob.core.contoso.net/" + $VMSSName;
 
 $ExtName = "CSETest";
@@ -139,7 +139,7 @@ $IPCfg = New-AzVmssIPConfig -Name "Test" `
     -LoadBalancerInboundNatPoolsId $ExpectedLb.InboundNatPools[0].Id `
     -LoadBalancerBackendAddressPoolsId $ExpectedLb.BackendAddressPools[0].Id `
     -SubnetId $SubNetId;
-            
+
 #VMSS Config
 $VMSS = New-AzVmssConfig -Location $LOC -SkuCapacity 2 -SkuName "Standard_E4-2ds_v4" -UpgradePolicyMode "Automatic" `
     | Add-AzVmssNetworkInterfaceConfiguration -Name "Test" -Primary $True -IPConfiguration $IPCfg `
@@ -159,7 +159,7 @@ New-AzVmss -ResourceGroupName $RGName -Name $VMSSName -VirtualMachineScaleSet $V
 $ResourceGroupName = '<RESOURCE GROUP NAME>';
 $vmssName = <VMSSNAME>;
 $domainNameLabel = "dnl" + $ResourceGroupName;
-# Create credentials, I am using one way to create credentials, there are others as well. 
+# Create credentials, I am using one way to create credentials, there are others as well.
 # Pick one that makes the most sense according to your use case.
 $vmPassword = ConvertTo-SecureString <PASSWORD_HERE> -AsPlainText -Force;
 $vmCred = New-Object System.Management.Automation.PSCredential(<USERNAME_HERE>, $vmPassword);
@@ -176,7 +176,7 @@ $vmss = Get-AzVmss -ResourceGroupName $ResourceGroupName -VMScaleSetName $vmssNa
 Contoh kompleks di atas membuat VMSS, berikut adalah penjelasan tentang apa yang terjadi:
 * Perintah pertama membuat grup sumber daya dengan nama dan lokasi yang ditentukan.
 * Perintah kedua menggunakan cmdlet **New-AzStorageAccount** untuk membuat akun penyimpanan.
-* Perintah ketiga kemudian menggunakan cmdlet **Get-AzStorageAccount** untuk mendapatkan akun penyimpanan yang dibuat di perintah kedua dan menyimpan hasilnya dalam variabel $STOAccount.
+* Perintah ketiga kemudian menggunakan cmdlet **Get-AzStorageAccount** untuk membuat akun penyimpanan di perintah kedua dan menyimpan hasilnya dalam variabel $STOAccount.
 * Perintah kelima menggunakan cmdlet **New-AzVirtualNetworkSubnetConfig** untuk membuat subnet dan menyimpan hasilnya dalam variabel bernama $SubNet.
 * Perintah keenam menggunakan cmdlet **New-AzVirtualNetwork** untuk membuat jaringan virtual dan menyimpan hasilnya dalam variabel bernama $VNet.
 * Perintah ketujuh menggunakan **Get-AzVirtualNetwork** untuk mendapatkan informasi tentang jaringan virtual yang dibuat dalam perintah keenam dan menyimpan informasi dalam variabel bernama $VNet.
@@ -184,8 +184,8 @@ Contoh kompleks di atas membuat VMSS, berikut adalah penjelasan tentang apa yang
 * Perintah menyimpan informasi dalam variabel bernama $PubIP.
 * Perintah kesepuluh menggunakan cmdlet **New- AzureRmLoadBalancerFrontendIpConfig** untuk membuat penyeimbang beban frontend dan menyimpan hasilnya dalam variabel bernama $Frontend.
 * Perintah kesebelas menggunakan **New-AzLoadBalancerBackendAddressPoolConfig** untuk membuat konfigurasi kumpulan alamat backend dan menyimpan hasilnya dalam variabel bernama $BackendAddressPool.
-* Perintah kedua belas menggunakan **New-AzLoadBalancerProbeConfig** untuk membuat pemeriksaan dan menyimpan informasi pemeriksaan dalam variabel bernama $Probe.
-* Perintah ketiga belas menggunakan cmdlet **New-AzLoadBalancerInboundNatPoolConfig** untuk membuat konfigurasi kumpulan terjemahan alamat jaringan masuk (NAT) penyeimbang muatan.
+* Perintah **ke-12 menggunakan New-AzLoadBalancerProbeConfig** untuk membuat pemeriksaan dan menyimpan informasi pemeriksaan dalam variabel bernama $Probe.
+* Perintah ketiga belas menggunakan cmdlet **New-AzLoadBalancerInboundNatPoolConfig** untuk membuat konfigurasi kumpulan terjemahan alamat jaringan masuk (NAT) penyeimbang beban.
 * Perintah keempat belas menggunakan **New-AzLoadBalancerRuleConfig** untuk membuat konfigurasi aturan load balancer dan menyimpan hasilnya dalam variabel bernama $LBRule.
 * Perintah kelima belas menggunakan cmdlet **New-AzLoadBalancer** untuk membuat load balancer dan menyimpan hasilnya dalam variabel bernama $ActualLb.
 * Perintah keenam belas menggunakan **Get-AzLoadBalancer** untuk mendapatkan informasi tentang load balancer yang dibuat dalam perintah kelima belas dan menyimpan informasi dalam variabel bernama $ExpectedLb.
@@ -242,7 +242,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackendPort
-Nomor port backend yang digunakan oleh load balancer Set Skala untuk berkomunikasi dengan VM di Set Skala.  Jika tidak ada nilai yang ditentukan, port 3389 dan 5985 akan digunakan untuk Windows VMS, dan port 22 akan digunakan untuk VM Linux.
+Nomor port backend yang digunakan oleh penyeimbang beban Set Skala untuk berkomunikasi dengan VM di Set Skala.  Jika tidak ada nilai yang ditentukan, port 3389 dan 5985 akan digunakan untuk VMS Windows, dan port 22 akan digunakan untuk VM Linux.
 
 ```yaml
 Type: System.Int32[]
@@ -317,7 +317,7 @@ Accept wildcard characters: False
 ```
 
 ### -DomainNameLabel
-Label nama domain untuk nama domain Fully-Qualified publik (FQDN) untuk Set Skala ini. Ini adalah komponen pertama dari nama domain yang secara otomatis ditetapkan ke Set Skala. Nama domain yang ditetapkan secara otomatis menggunakan formulir (<DomainNameLabel>.<Location>. cloudapp.azure.com). Jika tidak ada nilai yang disediakan, label nama domain default akan menjadi perangkaian <ScaleSetName> dan <ResourceGroupName>.
+Label nama domain untuk nama domain Fully-Qualified publik (FQDN) untuk Set Skala ini. Ini adalah komponen pertama dari nama domain yang secara otomatis ditetapkan ke Set Skala. Nama domain yang ditetapkan secara otomatis menggunakan formulir (`<DomainNameLabel>.<Location>.cloudapp.azure.com`). Jika tidak ada nilai yang disediakan, label nama domain default akan menjadi perangkaian `<ScaleSetName>` dan `<ResourceGroupName>`.
 
 ```yaml
 Type: System.String
@@ -346,7 +346,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -EnableUltrassD
+### -EnableUltrassd
 Gunakan disk UltraSSD untuk VM dalam set skala.
 
 ```yaml
@@ -362,7 +362,8 @@ Accept wildcard characters: False
 ```
 
 ### -EncryptionAtHost
-Parameter ini akan mengaktifkan enkripsi untuk semua disk termasuk disk Resource/Temp di host itu sendiri. Default: Enkripsi di host akan dinonaktifkan kecuali properti ini diatur ke true untuk sumber daya.
+Parameter ini akan mengaktifkan enkripsi untuk semua disk termasuk disk Resource/Temp di host itu sendiri.
+Default: Enkripsi di host akan dinonaktifkan kecuali properti ini diatur ke true untuk sumber daya.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -377,7 +378,7 @@ Accept wildcard characters: False
 ```
 
 ### -EvictionPolicy
-Kebijakan pengeluaran untuk set skala komputer virtual prioritas rendah.  Hanya nilai yang didukung yang 'Batalkan alokasi' dan 'Hapus'.
+Kebijakan pengeluaran untuk set skala komputer virtual prioritas rendah.  Hanya nilai yang didukung adalah 'Batalkan alokasi' dan 'Hapus'.
 
 ```yaml
 Type: System.String
@@ -392,7 +393,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrontendPoolName
-Nama kumpulan alamat frontend yang akan digunakan dalam load balancer Set Skala.  Jika tidak ada nilai yang disediakan, Kumpulan Alamat Frontend baru akan dibuat, dengan nama yang sama dengan set skala.
+Nama kumpulan alamat frontend yang akan digunakan dalam penyeimbang beban Set Skala.  Jika tidak ada nilai yang disediakan, Kumpulan Alamat Frontend baru akan dibuat, dengan nama yang sama dengan set skala.
 
 ```yaml
 Type: System.String
@@ -467,7 +468,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi Azure tempat Set Skala ini akan dibuat.  Jika tidak ada nilai yang ditentukan, lokasi akan disimpulkan dari lokasi sumber daya lain yang dirujuk dalam parameter.
+Lokasi Azure tempat Set Skala ini akan dibuat.  Jika tidak ada nilai yang ditentukan, lokasi akan disimpulkan dari lokasi sumber daya lain yang direferensikan dalam parameter.
 
 ```yaml
 Type: System.String
@@ -482,7 +483,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxPrice
-Harga maksimum penagihan set skala komputer virtual berprioritas rendah.
+Harga maksimum penagihan set skala komputer virtual prioritas rendah.
 
 ```yaml
 Type: System.Double
@@ -617,7 +618,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScaleInPolicy
-Aturan yang harus diikuti saat menskalakan-dalam set skala komputer virtual.  Nilai yang mungkin adalah: 'Default', 'OldestVM' dan 'NewestVM'.  'Default' ketika set skala komputer virtual diskalakan, set skala akan terlebih dahulu diseimbangkan di seluruh zona jika merupakan set skala zona.  Kemudian, itu akan seimbang di seluruh Domain Kesalahan sejauh mungkin.  Dalam setiap Domain Kesalahan, komputer virtual yang dipilih untuk dihapus akan menjadi yang terbaru yang tidak dilindungi dari penyempurnaan skala.  'OldestVM' ketika set skala komputer virtual sedang diskalakan, komputer virtual terlama yang tidak terlindungi dari penyempurnaan skala akan dipilih untuk dihapus.  Untuk set skala komputer virtual zonal, set skala pertama-tama akan seimbang di seluruh zona.  Dalam setiap zona, komputer virtual terlama yang tidak dilindungi akan dipilih untuk dihapus.  'NewestVM' ketika set skala komputer virtual sedang diskalakan, komputer virtual terbaru yang tidak terlindungi dari penyempurnaan skala akan dipilih untuk dihapus.  Untuk set skala komputer virtual zonal, set skala pertama-tama akan seimbang di seluruh zona.  Dalam setiap zona, komputer virtual terbaru yang tidak dilindungi akan dipilih untuk dihapus.
+Aturan yang harus diikuti saat menskalakan-dalam set skala komputer virtual.  Nilai yang mungkin adalah: 'Default', 'OldestVM' dan 'NewestVM'.  'Default' ketika set skala komputer virtual diskalakan, set skala pertama-tama akan seimbang di seluruh zona jika itu adalah set skala zona.  Kemudian, ini akan diseimbangkan di seluruh Domain Kesalahan sejauh mungkin.  Dalam setiap Domain Kesalahan, komputer virtual yang dipilih untuk dihapus akan menjadi yang terbaru yang tidak dilindungi dari penyempurnaan skala.  'OldestVM' ketika set skala komputer virtual sedang diskalakan, komputer virtual terlama yang tidak terlindungi dari penyempurnaan skala akan dipilih untuk dihapus.  Untuk set skala komputer virtual zonal, set skala pertama-tama akan diseimbangkan di seluruh zona.  Dalam setiap zona, komputer virtual tertua yang tidak dilindungi akan dipilih untuk dihapus.  'NewestVM' ketika set skala komputer virtual sedang diskalakan, komputer virtual terbaru yang tidak dilindungi dari penyempurnaan skala akan dipilih untuk dihapus.  Untuk set skala komputer virtual zonal, set skala pertama-tama akan diseimbangkan di seluruh zona.  Dalam setiap zona, komputer virtual terbaru yang tidak dilindungi akan dipilih untuk dihapus.
 
 ```yaml
 Type: System.String[]
@@ -677,7 +678,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkipExtensionsOnOverprovisionedVMs
-Menentukan bahwa ekstensi tidak berjalan pada VM ekstra yang terlalu provisi.
+Menentukan bahwa ekstensi tidak berjalan pada VM ekstra yang kelebihan provisi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -722,7 +723,7 @@ Accept wildcard characters: False
 ```
 
 ### -SystemAssignedIdentity
-Jika parameter ada, maka VM dalam set skala adalah(adalah) diberi identitas sistem terkelola yang dibuat secara otomatis.
+Jika parameter ada maka VM dalam set skala adalah(adalah) diberi identitas sistem terkelola yang dibuat secara otomatis.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -924,7 +925,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet
 
-### System.Collections.Generic.List'1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Collections.Generic.List'1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
 ## OUTPUTS
 
@@ -936,9 +937,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Dapatkan-AzVmss](./Get-AzVmss.md)
 
-[Remove-AzVmss](./Remove-AzVmss.md)
+[Hapus-AzVmss](./Remove-AzVmss.md)
 
-[Mulai ulang-AzVmss](./Restart-AzVmss.md)
+[Hidupkan ulang-AzVmss](./Restart-AzVmss.md)
 
 [Set-AzVmss](./Set-AzVmss.md)
 

@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.kubernetesconfig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KubernetesConfiguration/help/Update-AzKubernetesExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KubernetesConfiguration/help/Update-AzKubernetesExtension.md
-ms.openlocfilehash: 666332f2d5ea74697a4c4c726ecfe0559996d7eb
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: 0199307db901c4487d468abfba79cec3e7beec77
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145777260"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146635888"
 ---
 # Update-AzKubernetesExtension
 
@@ -323,7 +323,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IKubernetesConfigurationIdentity>: Parameter Identitas
+INPUTOBJECT `<IKubernetesConfigurationIdentity>`: Parameter Identitas
   - `[ClusterName <String>]`: Nama kluster kubernetes.
   - `[ClusterResourceName <String>]`: Nama sumber daya kluster Kubernetes - baik managedClusters (untuk kluster AKS) atau connectedClusters (untuk kluster OnPrem K8S).
   - `[ClusterRp <String>]`: RP kluster Kubernetes - baik Microsoft.ContainerService (untuk kluster AKS) atau Microsoft.Kubernetes (untuk kluster OnPrem K8S).

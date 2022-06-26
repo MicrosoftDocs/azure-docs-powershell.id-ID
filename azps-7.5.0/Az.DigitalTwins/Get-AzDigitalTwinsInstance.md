@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.digitaltwins/get
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DigitalTwins/help/Get-AzDigitalTwinsInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DigitalTwins/help/Get-AzDigitalTwinsInstance.md
-ms.openlocfilehash: 2dcfe5833ff50f613d8fb044e326a2857f52555d
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 6e22be6efefcfd678aaffc7fb51c97f6e8c5898e
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145741564"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146638138"
 ---
 # Get-AzDigitalTwinsInstance
 
@@ -62,7 +62,7 @@ eastus   youriDigitalTwinsTest   Microsoft.DigitalTwins/digitalTwinsInstances
 eastus   youriDigitalTwin        Microsoft.DigitalTwins/digitalTwinsInstances
 ```
 
-Dapatkan semua DigitalTwinsInstance secara default
+Mendapatkan semua DigitalTwinsInstance secara default
 
 ### Contoh 2: Dapatkan
 ```powershell
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DigitalTwins.Models.IDigitalTwinsIdentity
@@ -202,7 +202,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IDigitalTwinsIdentity>: Parameter Identitas
+INPUTOBJECT `<IDigitalTwinsIdentity>`: Parameter Identitas
   - `[EndpointName <String>]`: Nama Sumber Daya Titik Akhir.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Lokasi DigitalTwinsInstance.

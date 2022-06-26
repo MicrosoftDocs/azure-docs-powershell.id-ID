@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.compu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/New-AzureRmVmss.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/New-AzureRmVmss.md
-ms.openlocfilehash: 9f6135917f2e6cbfc05511637b3b20bd126d54b5
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 00a129052b0f82f3d7e65c5a2233e719f621ef6b
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142923287"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146638732"
 ---
 # New-AzureRmVmss
 
@@ -44,15 +44,15 @@ New-AzureRmVmss [[-ResourceGroupName] <String>] [-VMScaleSetName] <String> [-AsJ
 ```
 
 ## DESCRIPTION
-Cmdlet **AzureRmVmss baru** membuat Kumpulan Skala Mesin Virtual (VMSS) di Azure.
-Gunakan kumpulan parameter sederhana (`SimpleParameterSet`) untuk membuat VMSS yang telah ditetapkan sebelumnya dan sumber daya terkait dengan cepat. Gunakan kumpulan parameter default (`DefaultParameter`) untuk skenario tingkat lanjut lainnya saat Anda perlu mengonfigurasi setiap komponen VMSS dan setiap sumber daya terkait sebelum pembuatan.
+Cmdlet **New-AzureRmVmss** membuat Virtual Machine Scale Set (VMSS) di Azure.
+Gunakan set parameter sederhana (`SimpleParameterSet`) untuk membuat VMSS yang telah ditetapkan dan sumber daya terkait dengan cepat. Gunakan set parameter default (`DefaultParameter`) untuk skenario yang lebih canggih saat Anda perlu mengonfigurasi setiap komponen VMSS dengan tepat dan setiap sumber daya terkait sebelum pembuatan.
 
 ## EXAMPLES
 
 ### Contoh 1: Membuat VMSS menggunakan **`SimpleParameterSet`**
 ```powershell
 $vmssName = <VMSSNAME>
-# Create credentials, I am using one way to create credentials, there are others as well. 
+# Create credentials, I am using one way to create credentials, there are others as well.
 # Pick one that makes the most sense according to your use case.
 $vmPassword = ConvertTo-SecureString <PASSWORD_HERE> -AsPlainText -Force
 $vmCred = New-Object System.Management.Automation.PSCredential(<USERNAME_HERE>, $vmPassword)
@@ -65,10 +65,10 @@ Perintah di atas membuat yang berikut ini dengan nama `$vmssName` :
 * Grup Sumber Daya
 * Jaringan virtual
 * Penyeimbang beban
-* IP publik
+* IP Publik
 * VMSS dengan 2 instans
 
-Gambar default yang dipilih untuk VM dalam VMSS adalah `2016-Datacenter Windows Server` dan SKU `Standard_DS1_v2`
+Gambar default yang dipilih untuk VM di VMSS adalah `2016-Datacenter Windows Server` dan SKU adalah `Standard_DS1_v2`
 
 ### Contoh 2: Membuat VMSS menggunakan **`DefaultParameterSet`**
 ```powershell
@@ -82,7 +82,7 @@ New-AzureRmResourceGroup -Name $RGName -Location $LOC -Force;
 $STOName = "STO" + $RGName;
 $STOType = "Standard_GRS";
 New-AzureRmStorageAccount -ResourceGroupName $RGName -Name $STOName -Location $LOC -Type $STOType;
-$STOAccount = Get-AzureRmStorageAccount -ResourceGroupName $RGName -Name $STOName; 
+$STOAccount = Get-AzureRmStorageAccount -ResourceGroupName $RGName -Name $STOName;
 
 # NRP
 $SubNet = New-AzureRmVirtualNetworkSubnetConfig -Name ("subnet" + $RGName) -AddressPrefix "10.0.0.0/24";
@@ -121,11 +121,11 @@ $VMSSName = "VMSS" + $RGName;
 $AdminUsername = "Admin01";
 $AdminPassword = "p4ssw0rd@123" + $RGName;
 
-$PublisherName = "MicrosoftWindowsServer" 
-$Offer         = "WindowsServer" 
-$Sku           = "2012-R2-Datacenter" 
+$PublisherName = "MicrosoftWindowsServer"
+$Offer         = "WindowsServer"
+$Sku           = "2012-R2-Datacenter"
 $Version       = "latest"
-        
+
 $VHDContainer = "https://" + $STOName + ".blob.core.contoso.net/" + $VMSSName;
 
 $ExtName = "CSETest";
@@ -138,7 +138,7 @@ $IPCfg = New-AzureRmVmssIPConfig -Name "Test" `
     -LoadBalancerInboundNatPoolsId $ExpectedLb.InboundNatPools[0].Id `
     -LoadBalancerBackendAddressPoolsId $ExpectedLb.BackendAddressPools[0].Id `
     -SubnetId $SubNetId;
-            
+
 #VMSS Config
 $VMSS = New-AzureRmVmssConfig -Location $LOC -SkuCapacity 2 -SkuName "Standard_A2" -UpgradePolicyMode "Automatic" `
     | Add-AzureRmVmssNetworkInterfaceConfiguration -Name "Test" -Primary $True -IPConfiguration $IPCfg `
@@ -153,30 +153,30 @@ $VMSS = New-AzureRmVmssConfig -Location $LOC -SkuCapacity 2 -SkuName "Standard_A
 New-AzureRmVmss -ResourceGroupName $RGName -Name $VMSSName -VirtualMachineScaleSet $VMSS;
 ```
 
-Contoh kompleks di atas membuat VMSS, berikut ini adalah penjelasan tentang apa yang terjadi:
+Contoh kompleks di atas membuat VMSS, berikut adalah penjelasan tentang apa yang terjadi:
 * Perintah pertama membuat grup sumber daya dengan nama dan lokasi yang ditentukan.
 * Perintah kedua menggunakan cmdlet **New-AzureRmStorageAccount** untuk membuat akun penyimpanan.
-* Perintah ketiga kemudian menggunakan cmdlet **Get-AzureRmStorageAccount** untuk membuat akun penyimpanan dibuat di perintah kedua dan menyimpan hasilnya dalam variabel $STOAccount.
+* Perintah ketiga kemudian menggunakan cmdlet **Get-AzureRmStorageAccount** untuk mendapatkan akun penyimpanan yang dibuat di perintah kedua dan menyimpan hasilnya dalam variabel $STOAccount.
 * Perintah kelima menggunakan cmdlet **New-AzureRmVirtualNetworkSubnetConfig** untuk membuat subnet dan menyimpan hasilnya dalam variabel bernama $SubNet.
 * Perintah keenam menggunakan cmdlet **New-AzureRmVirtualNetwork** untuk membuat jaringan virtual dan menyimpan hasilnya dalam variabel bernama $VNet.
 * Perintah ketujuh menggunakan **Get-AzureRmVirtualNetwork** untuk mendapatkan informasi tentang jaringan virtual yang dibuat dalam perintah keenam dan menyimpan informasi dalam variabel bernama $VNet.
 * Perintah kedelapan dan kesembilan menggunakan **New-AzureRmPublicIpAddress** dan **Get- AzureRmPublicIpAddress** untuk membuat dan mendapatkan informasi dari alamat IP publik tersebut.
 * Perintah menyimpan informasi dalam variabel bernama $PubIP.
-* Perintah kesepuluh menggunakan cmdlet **New- AzureRmLoadBalancerFrontendIpConfig** untuk membuat frontend load balancer dan menyimpan hasilnya dalam variabel bernama $Frontend.
+* Perintah kesepuluh menggunakan cmdlet **New- AzureRmLoadBalancerFrontendIpConfig** untuk membuat penyeimbang beban frontend dan menyimpan hasilnya dalam variabel bernama $Frontend.
 * Perintah kesebelas menggunakan **New-AzureRmLoadBalancerBackendAddressPoolConfig** untuk membuat konfigurasi kumpulan alamat backend dan menyimpan hasilnya dalam variabel bernama $BackendAddressPool.
-* Perintah kedua belas menggunakan **New-AzureRmLoadBalancerProbeConfig** untuk membuat probe dan menyimpan informasi probe dalam variabel bernama $Probe.
-* Perintah ketiga belas menggunakan cmdlet **New-AzureRmLoadBalancerInboundNatPoolConfig** untuk membuat konfigurasi kumpulan terjemahan alamat jaringan masuk (NAT) penyeimbang muatan.
+* Perintah kedua belas menggunakan **New-AzureRmLoadBalancerProbeConfig** untuk membuat pemeriksaan dan menyimpan informasi pemeriksaan dalam variabel bernama $Probe.
+* Perintah ketiga belas menggunakan cmdlet **New-AzureRmLoadBalancerInboundNatPoolConfig** untuk membuat konfigurasi kumpulan terjemahan alamat jaringan masuk (NAT) penyeimbang beban.
 * Perintah keempat belas menggunakan **New-AzureRmLoadBalancerRuleConfig** untuk membuat konfigurasi aturan load balancer dan menyimpan hasilnya dalam variabel bernama $LBRule.
 * Perintah kelima belas menggunakan cmdlet **New-AzureRmLoadBalancer** untuk membuat load balancer dan menyimpan hasilnya dalam variabel bernama $ActualLb.
 * Perintah keenam belas menggunakan **Get-AzureRmLoadBalancer** untuk mendapatkan informasi tentang load balancer yang dibuat dalam perintah kelima belas dan menyimpan informasi dalam variabel bernama $ExpectedLb.
 * Perintah ketujuh belas menggunakan cmdlet **New-AzureRmVmssIPConfig** untuk membuat konfigurasi IP VMSS dan menyimpan informasi dalam variabel bernama $IPCfg.
-* Perintah kedelapan belas menggunakan cmdlet **New-AzureRmVmsConfig** untuk membuat objek konfigurasi VMSS dan menyimpan hasilnya dalam variabel bernama $VMSS.
+* Perintah kedelapan belas menggunakan cmdlet **New-AzureRmVmssConfig** untuk membuat objek konfigurasi VMSS dan menyimpan hasilnya dalam variabel bernama $VMSS.
 * Perintah kesembilan belas menggunakan cmdlet **New-AzureRmVmss** untuk membuat VMSS.
 
 ## PARAMETERS
 
 ### -AllocationMethod
-Metode alokasi untuk Alamat IP Publik Kumpulan Skala (Statis atau Dinamis).  Jika tidak ada nilai yang disediakan, alokasi akan statis.
+Metode alokasi untuk Alamat IP Publik dari Set Skala (Statis atau Dinamis).  Jika tidak ada nilai yang disediakan, alokasi akan statis.
 
 ```yaml
 Type: System.String
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang dan kembalikan Job untuk melacak kemajuan.
+Jalankan cmdlet di latar belakang dan kembalikan Pekerjaan untuk melacak kemajuan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -207,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackendPoolName
-Nama kumpulan alamat backend yang digunakan dalam penyeimbang muat untuk Kumpulan Skala ini.  Jika tidak ada nilai yang disediakan, kumpulan backend baru akan dibuat, dengan nama yang sama seperti Kumpulan Skala.
+Nama kumpulan alamat backend yang akan digunakan dalam load balancer untuk Set Skala ini.  Jika tidak ada nilai yang disediakan, kumpulan backend baru akan dibuat, dengan nama yang sama dengan Set Skala.
 
 ```yaml
 Type: System.String
@@ -222,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackendPort
-Nomor port backend yang digunakan oleh penyeimbang muatan Kumpulan Skala untuk berkomunikasi dengan VM dalam Kumpulan Skala.  Jika tidak ada nilai yang ditentukan, port 3389 dan 5985 akan digunakan untuk Windows VMS, dan port 22 akan digunakan untuk VM Linux.
+Nomor port backend yang digunakan oleh load balancer Set Skala untuk berkomunikasi dengan VM di Set Skala.  Jika tidak ada nilai yang ditentukan, port 3389 dan 5985 akan digunakan untuk Windows VMS, dan port 22 akan digunakan untuk VM Linux.
 
 ```yaml
 Type: System.Int32[]
@@ -236,8 +236,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Kredensial
-Kredensial administrator (nama pengguna dan kata sandi) untuk VM dalam Kumpulan Skala ini.
+### -Credential
+Info masuk administrator (nama pengguna dan kata sandi) untuk VM dalam Set Skala ini.
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -282,7 +282,7 @@ Accept wildcard characters: False
 ```
 
 ### -DomainNameLabel
-Label nama domain untuk nama domain Fully-Qualified publik (FQDN) untuk Kumpulan Skala ini. Ini adalah komponen pertama nama domain yang ditetapkan secara otomatis ke Kumpulan Skala. Nama Domain yang ditetapkan secara otomatis menggunakan formulir (<DomainNameLabel>.<Location>. cloudapp.azure.com). Jika tidak ada nilai yang disediakan, label nama domain default akan menjadi penggandaan dan <ScaleSetName> <ResourceGroupName>.
+Label nama domain untuk nama domain Fully-Qualified publik (FQDN) untuk Set Skala ini. Ini adalah komponen pertama dari nama domain yang secara otomatis ditetapkan ke Set Skala. Nama domain yang ditetapkan secara otomatis menggunakan formulir (`<DomainNameLabel>.<Location>.cloudapp.azure.com`). Jika tidak ada nilai yang disediakan, label nama domain default akan menjadi perangkaian `<ScaleSetName>` dan `<ResourceGroupName>`.
 
 ```yaml
 Type: System.String
@@ -297,7 +297,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrontendPoolName
-Nama kumpulan alamat frontend untuk digunakan dalam penyeimbang muatan Kumpulan Skala.  Jika tidak ada nilai yang disediakan, Kumpulan Alamat Frontend baru akan dibuat, dengan nama yang sama seperti kumpulan skala.
+Nama kumpulan alamat frontend yang akan digunakan dalam load balancer Set Skala.  Jika tidak ada nilai yang disediakan, Kumpulan Alamat Frontend baru akan dibuat, dengan nama yang sama dengan set skala.
 
 ```yaml
 Type: System.String
@@ -312,7 +312,7 @@ Accept wildcard characters: False
 ```
 
 ### -ImageName
-Nama gambar untuk VM dalam Kumpulan Skala ini. Jika tidak ada nilai yang disediakan, gambar "Windows Server 2016 DataCenter" akan digunakan.
+Nama gambar untuk VM dalam Set Skala ini. Jika tidak ada nilai yang disediakan, gambar "Windows Server 2016 DataCenter" akan digunakan.
 
 ```yaml
 Type: System.String
@@ -327,7 +327,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceCount
-Jumlah gambar VM dalam Kumpulan Skala.  Jika tidak ada nilai yang disediakan, 2 instans akan dibuat.
+Jumlah gambar VM dalam Set Skala.  Jika tidak ada nilai yang disediakan, 2 instans akan dibuat.
 
 ```yaml
 Type: System.Int32
@@ -342,7 +342,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancerName
-Nama penyeimbang muatan yang digunakan dengan Kumpulan Skala ini.  Penyeimbang muatan baru menggunakan nama yang sama seperti Kumpulan Skala akan dibuat jika tidak ada nilai yang ditentukan.
+Nama load balancer yang akan digunakan dengan Set Skala ini.  Load balancer baru yang menggunakan nama yang sama dengan Set Skala akan dibuat jika tidak ada nilai yang ditentukan.
 
 ```yaml
 Type: System.String
@@ -357,7 +357,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi Azure tempat Kumpulan Skala ini akan dibuat.  Jika tidak ada nilai yang ditentukan, lokasi akan disimpulkan dari lokasi sumber daya lain yang dirujuk dalam parameter.
+Lokasi Azure tempat Set Skala ini akan dibuat.  Jika tidak ada nilai yang ditentukan, lokasi akan disimpulkan dari lokasi sumber daya lain yang dirujuk dalam parameter.
 
 ```yaml
 Type: System.String
@@ -372,7 +372,7 @@ Accept wildcard characters: False
 ```
 
 ### -NatBackendPort
-Port backend untuk penerjemahan alamat jaringan masuk.
+Port backend untuk terjemahan alamat jaringan masuk.
 
 ```yaml
 Type: System.Int32[]
@@ -387,7 +387,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicIpAddressName
-Nama Alamat IP publik untuk digunakan dengan kumpulan skala ini.  Alamat IP Publik baru dengan nama yang sama seperti Kumpulan Skala akan dibuat jika tidak ada nilai yang disediakan.
+Nama Alamat IP publik yang akan digunakan dengan set skala ini.  IPAddress Publik baru dengan nama yang sama dengan Set Skala akan dibuat jika tidak ada nilai yang disediakan.
 
 ```yaml
 Type: System.String
@@ -402,7 +402,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya VMSS.  Jika tidak ada nilai yang ditentukan, ResourceGroup baru akan dibuat menggunakan nama yang sama seperti Kumpulan Skala.
+Menentukan nama grup sumber daya VMSS.  Jika tidak ada nilai yang ditentukan, ResourceGroup baru akan dibuat menggunakan nama yang sama dengan Set Skala.
 
 ```yaml
 Type: System.String
@@ -429,7 +429,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecurityGroupName
-Nama grup keamanan jaringan untuk diterapkan ke Kumpulan Skala ini.  Jika tidak ada nilai yang disediakan, grup keamanan jaringan default dengan nama yang sama seperti Kumpulan Skala akan dibuat dan diterapkan ke Kumpulan Skala.
+Nama grup keamanan jaringan yang akan diterapkan ke Set Skala ini.  Jika tidak ada nilai yang disediakan, grup keamanan jaringan default dengan nama yang sama dengan Set Skala akan dibuat dan diterapkan ke Set Skala.
 
 ```yaml
 Type: System.String
@@ -444,7 +444,7 @@ Accept wildcard characters: False
 ```
 
 ### -SinglePlacementGroup
-Gunakan ini untuk membuat kumpulan Skala dalam grup penempatan tunggal, defaultnya adalah beberapa grup
+Gunakan ini untuk membuat set Skala dalam satu grup penempatan, defaultnya adalah beberapa grup
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -459,7 +459,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubnetAddressPrefix
-Prefiks alamat Subnet yang akan digunakan oleh ScaleSet ini. Pengaturan Default Subnet (192.168.1.0/24) akan diterapkan jika tidak ada nilai yang disediakan.
+Awalan alamat Subnet yang akan digunakan ScaleSet ini. Pengaturan Subnet default (192.168.1.0/24) akan diterapkan jika tidak ada nilai yang disediakan.
 
 ```yaml
 Type: System.String
@@ -474,7 +474,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubnetName
-Nama subnet yang akan digunakan dengan Kumpulan Skala ini.  Subnet baru akan dibuat dengan nama yang sama seperti Kumpulan Skala jika tidak ada nilai yang disediakan.
+Nama subnet yang akan digunakan dengan Set Skala ini.  Subnet baru akan dibuat dengan nama yang sama dengan Set Skala jika tidak ada nilai yang disediakan.
 
 ```yaml
 Type: System.String
@@ -489,7 +489,7 @@ Accept wildcard characters: False
 ```
 
 ### -SystemAssignedIdentity
-Jika parameter ada, maka VM dalam kumpulan skala adalah(adalah) menetapkan identitas sistem terkelola yang dihasilkan secara otomatis.
+Jika parameter ada, maka VM dalam set skala adalah(adalah) diberi identitas sistem terkelola yang dibuat secara otomatis.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -504,7 +504,7 @@ Accept wildcard characters: False
 ```
 
 ### -UpgradePolicyMode
-Mode kebijakan pemutakhiran untuk instans VM dalam Kumpulan Skala ini.  Kebijakan pemutakhiran dapat menentukan pemutakhiran Otomatis, Manual, atau Rolling.
+Mode kebijakan peningkatan untuk instans VM dalam Set Skala ini.  Kebijakan peningkatan dapat menentukan peningkatan Otomatis, Manual, atau Bergulir.
 
 ```yaml
 Type: Microsoft.Azure.Management.Compute.Models.UpgradeMode
@@ -520,7 +520,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserAssignedIdentity
-Nama identitas layanan terkelola yang harus ditetapkan ke VM dalam kumpulan skala.
+Nama identitas layanan terkelola yang harus ditetapkan ke VM dalam set skala.
 
 ```yaml
 Type: System.String
@@ -550,7 +550,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetworkName
-Nama untuk Virtual Network digunakan dengan kumpulan skala ini.  Jika tidak ada nilai yang disertakan, jaringan virtual baru dengan nama yang sama seperti Kumpulan Skala akan dibuat.
+Nama untuk Virtual Network digunakan dengan set skala ini.  Jika tidak ada nilai yang disediakan, jaringan virtual baru dengan nama yang sama dengan Set Skala akan dibuat.
 
 ```yaml
 Type: System.String
@@ -592,7 +592,7 @@ Accept wildcard characters: False
 ```
 
 ### -VmSize
-Ukuran instans VM dalam kumpulan skala ini.  Ukuran default (Standard_DS1_v2) akan digunakan jika tidak ada Ukuran yang ditentukan.
+Ukuran instans VM dalam set skala ini.  Ukuran default (Standard_DS1_v2) akan digunakan jika tidak ada Ukuran yang ditentukan.
 
 ```yaml
 Type: System.String
@@ -607,7 +607,7 @@ Accept wildcard characters: False
 ```
 
 ### -VnetAddressPrefix
-Prefiks alamat untuk jaringan virtual yang digunakan dengan Kumpulan Skala ini.  Pengaturan prefiks alamat jaringan virtual default (192.168.0.0/16) akan digunakan jika tidak ada nilai yang disediakan.
+Awalan alamat untuk jaringan virtual yang digunakan dengan Set Skala ini.  Pengaturan awalan alamat jaringan virtual default (192.168.0.0/16) akan digunakan jika tidak ada nilai yang disediakan.
 
 ```yaml
 Type: System.String
@@ -622,7 +622,7 @@ Accept wildcard characters: False
 ```
 
 ### -Zona
-Daftar zona ketersediaan yang mencantumkan IP yang dialokasikan untuk sumber daya yang diperlukan.
+Daftar zona ketersediaan yang menunjukkan IP yang dialokasikan untuk kebutuhan sumber daya.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -636,8 +636,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -652,7 +652,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -668,7 +668,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -687,18 +687,18 @@ Parameter: VirtualMachineScaleSet (ByValue)
 
 ## RELATED LINKS
 
-[Get-AzureRmVms](./Get-AzureRmVmss.md)
+[Get-AzureRmVmss](./Get-AzureRmVmss.md)
 
-[Hapus-AzureRmVms](./Remove-AzureRmVmss.md)
+[Remove-AzureRmVmss](./Remove-AzureRmVmss.md)
 
-[Mulai ulang-AzureRmVms](./Restart-AzureRmVmss.md)
+[Restart-AzureRmVmss](./Restart-AzureRmVmss.md)
 
-[Set-AzureRmVms](./Set-AzureRmVmss.md)
+[Set-AzureRmVmss](./Set-AzureRmVmss.md)
 
-[Mulai AzureRmVms](./Start-AzureRmVmss.md)
+[Start-AzureRmVmss](./Start-AzureRmVmss.md)
 
-[Stop-AzureRmVms](./Stop-AzureRmVmss.md)
+[Stop-AzureRmVmss](./Stop-AzureRmVmss.md)
 
-[Pembaruan-AzureRmVms](./Update-AzureRmVmss.md)
+[Update-AzureRmVmss](./Update-AzureRmVmss.md)
 
 

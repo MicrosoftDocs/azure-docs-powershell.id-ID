@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.managedserviceid
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServiceIdentity/help/Update-AzUserAssignedIdentity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServiceIdentity/help/Update-AzUserAssignedIdentity.md
-ms.openlocfilehash: f03e8950b7b83c045cf47f2d71c68fa25b172767
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: b821e4807b55ec0ed16761665f2bbbd1e2631fbd
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145620271"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146635006"
 ---
 # Update-AzUserAssignedIdentity
 
 ## SYNOPSIS
-Perbarui identitas dalam langganan dan grup sumber daya yang ditentukan.
+Perbarui identitas dalam grup langganan dan sumber daya yang ditentukan.
 
 ## SYNTAX
 
@@ -33,11 +33,11 @@ Update-AzUserAssignedIdentity -InputObject <IManagedServiceIdentity> [-Location 
 ```
 
 ## DESCRIPTION
-Perbarui identitas dalam langganan dan grup sumber daya yang ditentukan.
+Perbarui identitas dalam grup langganan dan sumber daya yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui identitas yang ditetapkan pengguna
+### Contoh 1: Updates identitas yang ditetapkan pengguna
 ```powershell
 PS C:\> Update-AzUserAssignedIdentity -ResourceGroupName azure-rg-test -Name uai-pwsh01 -Tag @{'key01'='value01'; 'key02'='value02'}
 
@@ -48,7 +48,7 @@ eastus   uai-pwsh01 azure-rg-test
 
 Perintah ini memperbarui identitas yang ditetapkan pengguna.
 
-### Contoh 2: Memperbarui identitas yang ditetapkan pengguna berdasarkan alur
+### Contoh 2: Updates identitas yang ditetapkan pengguna berdasarkan alur
 ```powershell
 PS C:\> Get-AzUserAssignedIdentity -ResourceGroupName azure-rg-test -Name uai-pwsh01 | Update-AzUserAssignedIdentity -Tag @{'key01'='value01'; 'key02'='value02'}
 
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ManagedServiceIdentity.Models.IManagedServiceIdentity
@@ -217,7 +217,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IManagedServiceIdentity>: Parameter Identitas
+INPUTOBJECT `<IManagedServiceIdentity>`: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ResourceGroupName <String>]`: Nama Grup Sumber Daya tempat identitas berada.
   - `[ResourceName <String>]`: Nama sumber daya identitas.

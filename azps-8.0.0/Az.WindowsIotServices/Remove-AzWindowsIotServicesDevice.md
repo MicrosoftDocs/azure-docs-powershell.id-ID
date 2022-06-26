@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.windowsiotservic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/WindowsIotServices/help/Remove-AzWindowsIotServicesDevice.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/WindowsIotServices/help/Remove-AzWindowsIotServicesDevice.md
-ms.openlocfilehash: 23ff8213a00a3127a4240943e11fbb37b29908f1
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 7ee815e2f313a93e9c1fc48b48da1abb6e64c578
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145536405"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146634052"
 ---
 # Remove-AzWindowsIotServicesDevice
 
@@ -181,7 +181,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IWindowsIotServicesIdentity>: Parameter Identitas
+INPUTOBJECT `<IWindowsIotServicesIdentity>`: Parameter Identitas
   - `[DeviceName <String>]`: Nama Windows IoT Device Service.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi Windows IoT Device Service.

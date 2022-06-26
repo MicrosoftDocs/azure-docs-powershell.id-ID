@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.EdgeOrder/new-Az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/New-AzEdgeOrderPreferencesObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/New-AzEdgeOrderPreferencesObject.md
-ms.openlocfilehash: ed4b86d6cd70e26402ca6c9ce4ef260c97d49548
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: bb9687ad0feb020c6a2c59f090e2df83c39488c0
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145769952"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146633728"
 ---
 # New-AzEdgeOrderPreferencesObject
 
@@ -125,17 +125,17 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-ENCRYPTIONPREFERENCE <IEncryptionPreferences>: Preferensi yang terkait dengan Enkripsi.
+ENCRYPTIONPREFERENCE `<IEncryptionPreferences>`: Preferensi yang terkait dengan Enkripsi.
   - `[DoubleEncryptionStatus <DoubleEncryptionStatus?>]`: Status enkripsi ganda seperti yang dimasukkan oleh pelanggan. Wajib untuk memberikan parameter ini jika kebijakan 'Tolak' atau 'Dinonaktifkan' dikonfigurasi.
 
-MANAGEMENTRESOURCEPREFERENCE <IManagementResourcePreferences>: Preferensi yang terkait dengan sumber daya Manajemen.
+MANAGEMENTRESOURCEPREFERENCE `<IManagementResourcePreferences>`: Preferensi yang terkait dengan sumber daya Manajemen.
   - `[PreferredManagementResourceId <String>]`: ID ARM sumber daya Manajemen pilihan pelanggan
 
 NOTIFICATIONPREFERENCE <INotificationPreference[]>: Preferensi pemberitahuan.
   - `SendNotification <Boolean>`: Pemberitahuan diperlukan atau tidak.
   - `StageName <NotificationStageName>`: Nama panggung.
 
-TRANSPORTPREFERENCE <ITransportPreferences>: Preferensi yang terkait dengan logistik pengiriman pesanan.
+TRANSPORTPREFERENCE `<ITransportPreferences>`: Preferensi yang terkait dengan logistik pengiriman pesanan.
   - `PreferredShipmentType <TransportShipmentTypes>`: Menunjukkan jenis Logistik Pengiriman yang disukai pelanggan.
 
 ## RELATED LINKS

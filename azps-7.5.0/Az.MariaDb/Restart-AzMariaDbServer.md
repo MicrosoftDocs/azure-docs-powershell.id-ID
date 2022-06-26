@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.mariadb/restart-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/Restart-AzMariaDbServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/Restart-AzMariaDbServer.md
-ms.openlocfilehash: f052f6b7a7154bce99e6798c91291ff9dcf63177
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: f338a74baf15f343a20a0003715532b95f2041a4
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145776432"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146637760"
 ---
 # Restart-AzMariaDbServer
 
@@ -227,7 +227,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMariaDbIdentity>: Parameter Identitas
+INPUTOBJECT `<IMariaDbIdentity>`: Parameter Identitas
   - `[ConfigurationName <String>]`: Nama konfigurasi server.
   - `[DatabaseName <String>]`: Nama database.
   - `[FirewallRuleName <String>]`: Nama aturan firewall server.

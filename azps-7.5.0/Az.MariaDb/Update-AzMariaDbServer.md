@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.mariadb/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/Update-AzMariaDbServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/Update-AzMariaDbServer.md
-ms.openlocfilehash: c4a7874201c137ff6e8e7501f5fa2750a4326fb9
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: 8aba54e84c7df6ca9779b2f36977258d4cb58a46
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145783522"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146635816"
 ---
 # Update-AzMariaDbServer
 
@@ -49,7 +49,7 @@ Gunakan Update-AzMariaDbConfiguration sebagai gantinya jika Anda ingin memperbar
 
 ## EXAMPLES
 
-### Contoh 1: Perbarui MariaDB
+### Contoh 1: Memperbarui MariaDB
 ```powershell
 Update-AzMariaDbServer -Name mariadb-test-4rmtig -ResourceGroupName mariadb-test-qu5ov0 -StorageInMb 8192
 ```
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.MariaDb.Models.IMariaDbIdentity
@@ -258,7 +258,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAutogrow
-Aktifkan Storage Pertumbuhan Otomatis.
+Aktifkan Storage Tumbuh Otomatis.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.MariaDb.Support.StorageAutogrow
@@ -273,7 +273,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageInMb
-Penyimpanan maksimum yang diizinkan untuk server.
+Penyimpanan maks yang diizinkan untuk server.
 
 ```yaml
 Type: System.Int32
@@ -368,7 +368,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMariaDbIdentity>: Parameter Identitas
+INPUTOBJECT `<IMariaDbIdentity>`: Parameter Identitas
   - `[ConfigurationName <String>]`: Nama konfigurasi server.
   - `[DatabaseName <String>]`: Nama database.
   - `[FirewallRuleName <String>]`: Nama aturan firewall server.

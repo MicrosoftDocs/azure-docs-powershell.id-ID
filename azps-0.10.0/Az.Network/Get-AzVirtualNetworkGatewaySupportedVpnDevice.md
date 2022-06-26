@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.network/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Get-AzVirtualNetworkGatewaySupportedVpnDevice.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Get-AzVirtualNetworkGatewaySupportedVpnDevice.md
-ms.openlocfilehash: 794f432b06c693d6758603975a98ca6b2f5e3511
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: ee44be05d18b5aca1c8d2f4e6b017a09815a89a5
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143206235"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146634034"
 ---
-# Get-AzVirtualNetworkGatewaySupportedVpnDevice
+# Dapatkan-AzVirtualNetworkGatewaySupportedVpnDevice
 
 ## SYNOPSIS
-Commandlet ini mengembalikan daftar merek, model, dan versi firmware perangkat VPN yang didukung.
+Commandlet ini mengembalikan daftar merek perangkat VPN, model, dan versi firmware yang didukung.
 
 ## SYNTAX
 
@@ -25,24 +25,19 @@ Get-AzVirtualNetworkGatewaySupportedVpnDevice -Name <String> -ResourceGroupName 
 ```
 
 ## DESCRIPTION
-Commandlet ini mengembalikan daftar merek, model, dan versi firmware perangkat VPN yang didukung.
+Commandlet ini mengembalikan daftar merek perangkat VPN, model, dan versi firmware yang didukung.
 
 ## EXAMPLES
 
 ### Contoh 1
-```
-PS C:\> Get-AzVirtualNetworkGatewaySupportedVpnDevice -ResourceGroupName TestRG -Name TestGateway 
-<?xml version="1.0" encoding="utf-8"?>
-<RpVpnDeviceList version="1.0">
-  <Vendor name="Cisco-Test">
-    <DeviceFamily name="IOS-Test">
-       <FirmwareVersion name="20" />
-    </DeviceFamily>
-  </Vendor>
-</RpVpnDeviceList>
+
+Mengembalikan daftar merek perangkat VPN, model, dan versi firmware yang didukung:
+
+```powershell
+Get-AzVirtualNetworkGatewaySupportedVpnDevice -ResourceGroupName TestRG -Name TestGateway
 ```
 
-Mengembalikan daftar merek, model, dan versi firmware perangkat VPN yang didukung:
+```Output
 <?xml version="1.0" encoding="utf-8"?>
 <RpVpnDeviceList version="1.0">
   <Vendor name="Cisco-Test">
@@ -51,6 +46,7 @@ Mengembalikan daftar merek, model, dan versi firmware perangkat VPN yang didukun
     </DeviceFamily>
   </Vendor>
 </RpVpnDeviceList>
+```
 
 ## PARAMETERS
 
@@ -69,7 +65,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama gateway jaringan virtual.
 
 ```yaml
@@ -90,7 +86,7 @@ Nama grup sumber daya.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -100,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Remove-AzDataMigrationToSqlDb.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Remove-AzDataMigrationToSqlDb.md
-ms.openlocfilehash: f6af15ef33b7b588df2dac25b2c1e26a2f179534
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 3d26fe6ea050f586afe31bbf90088bf9e8c52145
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145749826"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146635960"
 ---
 # Remove-AzDataMigrationToSqlDb
 
@@ -259,7 +259,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IDataMigrationIdentity>: Parameter Identitas
+INPUTOBJECT `<IDataMigrationIdentity>`: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ManagedInstanceName <String>]`: 
   - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi sumber daya. Anda dapat memperoleh nilai ini dari Azure Resource Manager API atau portal.

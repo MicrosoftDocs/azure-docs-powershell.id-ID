@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.signalr/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Remove-AzWebPubSubHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Remove-AzWebPubSubHub.md
-ms.openlocfilehash: e90327154453c1b2efa18123977965a8e8d3cd3a
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 34d22efa189f64d95a569750c397ad7e0ee71b11
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145629476"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146635582"
 ---
 # Remove-AzWebPubSubHub
 
@@ -249,7 +249,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IWebPubSubIdentity>: Parameter Identitas
+INPUTOBJECT `<IWebPubSubIdentity>`: Parameter Identitas
   - `[HubName <String>]`: Nama hub.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: wilayah

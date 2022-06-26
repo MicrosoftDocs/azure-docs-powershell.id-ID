@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.connectedkuberne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedKubernetes/help/Update-AzConnectedKubernetes.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedKubernetes/help/Update-AzConnectedKubernetes.md
-ms.openlocfilehash: c7d5b37a99cd6b25ba95918404293d99b3dc41fd
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 236eb2f0ee34d1ffeb5471e312a977767c642d91
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145560572"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146635420"
 ---
 # Update-AzConnectedKubernetes
 
@@ -65,7 +65,7 @@ Perintah ini memperbarui kubernetes yang terhubung berdasarkan objek.
 ## PARAMETERS
 
 ### -ClusterName
-Nama kluster Kubernetes tempat dipanggil.
+Nama kluster Kubernetes tempat get dipanggil.
 
 ```yaml
 Type: System.String
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ConnectedKubernetes.Models.IConnectedKubernetesIdentity
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -206,10 +206,10 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IConnectedKubernetesIdentity>: Parameter Identitas
-  - `[ClusterName <String>]`: Nama kluster Kubernetes tempat dipanggil.
+INPUTOBJECT `<IConnectedKubernetesIdentity>`: Parameter Identitas
+  - `[ClusterName <String>]`: Nama kluster Kubernetes yang dipanggil.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
 
 ## RELATED LINKS

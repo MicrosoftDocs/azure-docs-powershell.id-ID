@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.marketplace/set-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Set-AzMarketplaceBulkPrivateStoreCollectionAction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Set-AzMarketplaceBulkPrivateStoreCollectionAction.md
-ms.openlocfilehash: e135ea1046da86022d8f1cc8de7b7df328a864ec
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: ca74617f6bcadd86c7d49b315c233e150abf0dae
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145513474"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146634844"
 ---
 # Set-AzMarketplaceBulkPrivateStoreCollectionAction
 
@@ -36,7 +36,7 @@ Melakukan tindakan pada koleksi massal
 
 ## EXAMPLES
 
-### Contoh 1: Tindakan massal praformat pada koleksi 
+### Contoh 1: Tindakan massal preform pada koleksi 
 ```powershell
 Set-AzMarketplaceBulkPrivateStoreCollectionAction -PrivateStoreId 3ac32d8c-e888-4dc6-b4ff-be4d755af13a -Payload @{Action = "EnableCollections"; CollectionId = "3ac32d8c-e888-4dc6-b4ff-be4d755af13a", "fdb889a1-cf3e-49f0-95b8-2bb012fa01f1" }
 ```
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -CollectionId
-id koleksi mencantumkan tindakan yang dilakukan
+id koleksi mencantumkan bahwa tindakan dilakukan pada
 
 ```yaml
 Type: System.String[]
@@ -177,7 +177,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-PAYLOAD <IBulkCollectionsPayload>: Properti tindakan pengumpulan massal
+PAYLOAD `<IBulkCollectionsPayload>`: Properti tindakan koleksi massal
   - `[Action <String>]`: Tindakan yang harus dilakukan (Misalnya: EnableCollections, DisableCollections)
   - `[CollectionId <String[]>]`: id koleksi mencantumkan bahwa tindakan dilakukan pada
 

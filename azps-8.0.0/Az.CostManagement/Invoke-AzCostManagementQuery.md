@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.costmanagement/i
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CostManagement/help/Invoke-AzCostManagementQuery.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CostManagement/help/Invoke-AzCostManagementQuery.md
-ms.openlocfilehash: d8db8bb75ec43d324ba12e85460071c77ebba6ba
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 17134e96c88afce7db92a6abc89623d6b19dddcd
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145522495"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146636824"
 ---
 # Invoke-AzCostManagementQuery
 
@@ -317,7 +317,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-DATASETFILTER <IQueryFilter>: Memiliki ekspresi filter untuk digunakan dalam kueri.
+DATASETFILTER `<IQueryFilter>`: Memiliki ekspresi filter untuk digunakan dalam kueri.
   - `[And <IQueryFilter[]>]`: Ekspresi "AND" logis. Harus memiliki setidaknya 2 item.
   - `[Dimensions <IQueryComparisonExpression>]`: Memiliki ekspresi perbandingan untuk dimensi
     - `Name <String>`: Nama kolom yang akan digunakan sebagai perbandingan.

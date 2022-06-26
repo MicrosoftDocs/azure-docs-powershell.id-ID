@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.addomainservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ADDomainServices/help/Get-AzADDomainService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ADDomainServices/help/Get-AzADDomainService.md
-ms.openlocfilehash: a50665fbf29b6836f5ec24f9f6439549abbe71e0
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 5f90391880921ec5ed5f292cea69e5461f69a01d
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145542736"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146637040"
 ---
 # Get-AzADDomainService
 
@@ -199,7 +199,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IAdDomainServicesIdentity>: Parameter Identitas
+INPUTOBJECT `<IAdDomainServicesIdentity>`: Parameter Identitas
   - `[DomainServiceName <String>]`: Nama layanan domain.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ResourceGroupName <String>]`: Nama grup sumber daya dalam langganan pengguna. Nama tidak peka huruf besar/kecil.
