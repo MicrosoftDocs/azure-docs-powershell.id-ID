@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.managedserviceid
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServiceIdentity/help/Get-AzUserAssignedIdentity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServiceIdentity/help/Get-AzUserAssignedIdentity.md
-ms.openlocfilehash: 768b20cdaa3e446506d87fc1a880d69d0ebf5fa7
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 3466732d8594f36a2279abf586f8f1e6b7a8ab58
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145529203"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146590422"
 ---
 # Get-AzUserAssignedIdentity
 
@@ -191,7 +191,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IManagedServiceIdentity>: Parameter Identitas
+INPUTOBJECT `<IManagedServiceIdentity>`: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ResourceGroupName <String>]`: Nama Grup Sumber Daya tempat identitas berada.
   - `[ResourceName <String>]`: Nama sumber daya identitas.

@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/start-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Start-AzWebAppSlotTriggeredWebJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Start-AzWebAppSlotTriggeredWebJob.md
-ms.openlocfilehash: 2ddd874f331b55f4ebfbab0067b178f9d585e4dc
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: d8dcec783f321a4f41cfd79b3e408553655958a9
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145697608"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146591808"
 ---
 # Start-AzWebAppSlotTriggeredWebJob
 
@@ -229,7 +229,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IWebsitesIdentity>: Parameter Identitas
+INPUTOBJECT `<IWebsitesIdentity>`: Parameter Identitas
   - `[Authprovider <String>]`: Penyedia autentikasi untuk pengguna.
   - `[DomainName <String>]`: Nama domain kustom.
   - `[EnvironmentName <String>]`: Pengidentifikasi situs tahapan.

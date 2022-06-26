@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.dnsresolver/upda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/Update-AzDnsForwardingRuleset.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/Update-AzDnsForwardingRuleset.md
-ms.openlocfilehash: 9ca7a6714fd52e94b84c198a93745b96cb5bf91b
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 17d4e9884bc2c74f5222cc1505249758beca9e36
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145688340"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146589522"
 ---
 # Update-AzDnsForwardingRuleset
 
 ## SYNOPSIS
-Memperbarui aturan penerusan DNS.
+Updates aturan penerusan DNS.
 
 > [!NOTE]
 >Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dnsresolver/update-azdnsforwardingruleset) untuk informasi terbaru.
@@ -36,7 +36,7 @@ Update-AzDnsForwardingRuleset -InputObject <IDnsResolverIdentity> [-IfMatch <Str
 ```
 
 ## DESCRIPTION
-Memperbarui aturan penerusan DNS.
+Updates aturan penerusan DNS.
 
 ## EXAMPLES
 
@@ -53,7 +53,7 @@ westus2  dnsForwardingRuleset Microsoft.Network/dnsForwardingRulesets "04005592-
 
 Perintah ini memperbarui aturan Penerusan DNS berdasarkan nama (menambahkan metadata)
 
-### Contoh 2: Memperbarui aturan Penerusan DNS yang ada berdasarkan identitas
+### Contoh 2: Updates aturan Penerusan DNS yang ada berdasarkan identitas
 ```powershell
 $inputObject = Get-AzDnsForwardingRuleset -ResourceGroupName powershell-test-rg -Name  dnsForwardingRuleset
 Update-AzDnsForwardingRuleset -InputObject $inputObject  -Metadata @{"key0" = "value0"} 
@@ -65,7 +65,7 @@ Location Name                 Type                                    Etag
 westus2  dnsForwardingRuleset Microsoft.Network/dnsForwardingRulesets "04005592-0000-0800-0000-60e7ec170000"
 ```
 
-Perintah ini memperbarui aturan Penerusan DNS melalui identitas (menambahkan metadata)
+Perintah ini memperbarui kumpulan aturan Penerusan DNS melalui identitas (menambahkan metadata)
 
 ## PARAMETERS
 
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DnsResolver.Models.IDnsResolverIdentity
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Nama set aturan penerusan DNS.
+Nama kumpulan aturan penerusan DNS.
 
 ```yaml
 Type: System.String
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -258,14 +258,14 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IDnsResolverIdentity>: Parameter Identitas
-  - `[DnsForwardingRulesetName <String>]`: Nama set aturan penerusan DNS.
+INPUTOBJECT `<IDnsResolverIdentity>`: Parameter Identitas
+  - `[DnsForwardingRulesetName <String>]`: Nama kumpulan aturan penerusan DNS.
   - `[DnsResolverName <String>]`: Nama pemecah masalah DNS.
   - `[ForwardingRuleName <String>]`: Nama aturan penerusan.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[InboundEndpointName <String>]`: Nama titik akhir masuk untuk pemecah masalah DNS.
   - `[OutboundEndpointName <String>]`: Nama titik akhir keluar untuk pemecah masalah DNS.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
   - `[VirtualNetworkLinkName <String>]`: Nama tautan jaringan virtual.
   - `[VirtualNetworkName <String>]`: Nama jaringan virtual.

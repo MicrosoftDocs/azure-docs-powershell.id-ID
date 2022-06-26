@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.dataprotection/s
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Start-AzDataProtectionBackupInstanceRestore.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Start-AzDataProtectionBackupInstanceRestore.md
-ms.openlocfilehash: 2dcf8cac7f2b3503cc2a5073365cb355e13ec960
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: c67893d89b2c97f15079b03f172320b0ab2bc596
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145557254"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146588424"
 ---
 # Start-AzDataProtectionBackupInstanceRestore
 
@@ -50,7 +50,7 @@ Start-AzDataProtectionBackupInstanceRestore -BackupInstanceName $instance.Backup
 
 
 
-### Contoh 2: Picu pemulihan sebagai DB untuk AzureDatabaseForPostgreSQL yang dilindungi menggunakan penyimpanan rahasia.
+### Contoh 2: Memicu pemulihan sebagai DB untuk AzureDatabaseForPostgreSQL yang dilindungi menggunakan penyimpanan rahasia.
 ```powershell
 $instance = Get-AzDataProtectionBackupInstance -SubscriptionId "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" -ResourceGroupName "resourceGroupName" -VaultName "vaultName"
 $rp = Get-AzDataProtectionRecoveryPoint -SubscriptionId "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" -ResourceGroupName "resourceGroupName" -VaultName "vaultName" -BackupInstanceName $instance.Name
@@ -75,7 +75,7 @@ Perintah keempat menginisialisasi URI rahasia.
 Perintah kelima, keenam menginisialisasi dan memicu permintaan pemulihan untuk AzureDatabaseForPostgreSQL dengan penyimpanan rahasia.
 Perintah ketujuh, delapan, kesembilan melacak pekerjaan pemulihan hingga selesai.
 
-### Contoh 3: Memicu pemulihan sebagai File untuk AzureDatabaseForPostgreSQL yang dilindungi.
+### Contoh 3: Picu pemulihan sebagai File untuk AzureDatabaseForPostgreSQL yang dilindungi.
 ```powershell
 $instance = Get-AzDataProtectionBackupInstance -SubscriptionId "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" -ResourceGroupName "resourceGroupName" -VaultName "vaultName"
 $rp = Get-AzDataProtectionRecoveryPoint -SubscriptionId "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" -ResourceGroupName "resourceGroupName" -VaultName "vaultName" -BackupInstanceName $instance.Name
@@ -208,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### -RestoreTargetInfo
-Mendapatkan atau mengatur informasi target pemulihan.
+Mendapatkan atau menetapkan informasi target pemulihan.
 Untuk membuat, lihat bagian CATATAN untuk properti RESTORETARGETINFO dan buat tabel hash.
 
 ```yaml
@@ -319,14 +319,14 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-PARAMETER <IAzureBackupRestoreRequest>: Permintaan pemulihan cadangan Azure
+PARAMETER `<IAzureBackupRestoreRequest>`: Permintaan pemulihan cadangan Azure
   - `ObjectType <String>`: 
   - `RestoreTargetInfo <IRestoreTargetInfoBase>`: Mendapatkan atau menetapkan informasi target pemulihan.
     - `ObjectType <String>`: Jenis objek Datasource, digunakan untuk menginisialisasi jenis warisan yang tepat
     - `[RestoreLocation <String>]`: Wilayah Pemulihan Target
   - `SourceDataStoreType <SourceDataStoreType>`: Mendapatkan atau mengatur jenis penyimpanan data sumber.
 
-RESTORETARGETINFO <IRestoreTargetInfoBase>: Mendapatkan atau menetapkan informasi target pemulihan.
+RESTORETARGETINFO `<IRestoreTargetInfoBase>`: Mendapatkan atau menetapkan informasi target pemulihan.
   - `ObjectType <String>`: Jenis objek Datasource, digunakan untuk menginisialisasi jenis warisan yang tepat
   - `[RestoreLocation <String>]`: Wilayah Pemulihan Target
 

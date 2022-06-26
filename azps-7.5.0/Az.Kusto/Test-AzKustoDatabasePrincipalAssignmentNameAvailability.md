@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.kusto/test-azkus
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Test-AzKustoDatabasePrincipalAssignmentNameAvailability.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Test-AzKustoDatabasePrincipalAssignmentNameAvailability.md
-ms.openlocfilehash: 451c3ceceebc290b5a5a221fa1b4217f9b2de7e0
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 9a2b94b03e12c6f34d5042291bb63887c9322433
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145693126"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146589162"
 ---
 # Test-AzKustoDatabasePrincipalAssignmentNameAvailability
 
 ## SYNOPSIS
-Memeriksa apakah penetapan utama database valid dan belum digunakan.
+Memeriksa bahwa penetapan utama database valid dan belum digunakan.
 
 > [!NOTE]
 >Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.kusto/test-azkustodatabaseprincipalassignmentnameavailability) untuk informasi terbaru.
@@ -36,11 +36,11 @@ Test-AzKustoDatabasePrincipalAssignmentNameAvailability -InputObject <IKustoIden
 ```
 
 ## DESCRIPTION
-Memeriksa apakah penetapan utama database valid dan belum digunakan.
+Memeriksa bahwa penetapan utama database valid dan belum digunakan.
 
 ## EXAMPLES
 
-### Contoh 1: Periksa ketersediaan nama penetapan prinsipal database yang sedang digunakan
+### Contoh 1: Periksa ketersediaan nama database principalassignment yang sedang digunakan
 ```powershell
 Test-AzKustoDatabasePrincipalAssignmentNameAvailability -ResourceGroupName "testrg" -ClusterName "testnewkustocluster" -DatabaseName "mykustodatabase" -Name "myprincipal"
 ```
@@ -53,7 +53,7 @@ Database principal assignment myprincipal already exists in database mykustodata
 
 Perintah di atas mengembalikan apakah PrincipalAssignment bernama "myprincipal" ada di database "mykustodatabase" dari kluster "testnewkustocluster".
 
-### Contoh 2: Periksa ketersediaan nama penetapan prinsipal database yang tidak digunakan
+### Contoh 2: Periksa ketersediaan nama database principalassignment yang tidak digunakan
 ```powershell
 Test-AzKustoDatabasePrincipalAssignmentNameAvailability -ResourceGroupName "testrg" -ClusterName "testnewkustocluster" -DatabaseName "mykustodatabase" -Name "newprincipal"
 ```
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Kusto.Models.IKustoIdentity
@@ -225,7 +225,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IKustoIdentity>: Parameter Identitas
+INPUTOBJECT `<IKustoIdentity>`: Parameter Identitas
   - `[AttachedDatabaseConfigurationName <String>]`: Nama konfigurasi database terlampir.
   - `[ClusterName <String>]`: Nama kluster Kusto.
   - `[DataConnectionName <String>]`: Nama koneksi data.
@@ -233,7 +233,7 @@ INPUTOBJECT <IKustoIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Nama lokasi (wilayah) Azure.
   - `[ManagedPrivateEndpointName <String>]`: Nama titik akhir privat terkelola.
-  - `[OperationId <String>]`: Panduan ID operasi
+  - `[OperationId <String>]`: Guid ID operasi
   - `[PrincipalAssignmentName <String>]`: Nama Kusto principalAssignment.
   - `[PrivateEndpointConnectionName <String>]`: Nama koneksi titik akhir privat.
   - `[PrivateLinkResourceName <String>]`: Nama sumber daya tautan privat.

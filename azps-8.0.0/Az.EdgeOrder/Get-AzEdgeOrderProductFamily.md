@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.edgeorder/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/Get-AzEdgeOrderProductFamily.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/Get-AzEdgeOrderProductFamily.md
-ms.openlocfilehash: 520b248973c5b9829683c693060db61a941830e1
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: a2a07806a55ea2106b0c4083e22b511c5d1cb21f
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145618860"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146588153"
 ---
 # Get-AzEdgeOrderProductFamily
 
@@ -158,7 +158,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-CUSTOMERSUBSCRIPTIONDETAIL <ICustomerSubscriptionDetails>: Properti langganan pelanggan. Klien dapat menampilkan produk yang tersedia untuk pelanggan yang tidak terdaftar dengan secara eksplisit meneruskan detail langganan
+CUSTOMERSUBSCRIPTIONDETAIL `<ICustomerSubscriptionDetails>`: Properti langganan pelanggan. Klien dapat menampilkan produk yang tersedia untuk pelanggan yang tidak terdaftar dengan secara eksplisit meneruskan detail langganan
   - `QuotaId <String>`: ID Kuota langganan
   - `[LocationPlacementId <String>]`: Id penempatan lokasi langganan
   - `[RegisteredFeature <ICustomerSubscriptionRegisteredFeatures[]>]`: Daftar bendera fitur terdaftar untuk langganan

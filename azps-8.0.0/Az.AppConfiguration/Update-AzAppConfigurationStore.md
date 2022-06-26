@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.appconfiguration
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AppConfiguration/help/Update-AzAppConfigurationStore.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AppConfiguration/help/Update-AzAppConfigurationStore.md
-ms.openlocfilehash: f5d392f682eb83f85a03155fefac62e6853218aa
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: e84b738b7f2be885dc112b4e28e9be1d2c49638b
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145513858"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146588549"
 ---
 # Update-AzAppConfigurationStore
 
 ## SYNOPSIS
-Memperbarui penyimpanan konfigurasi dengan parameter yang ditentukan.
+Updates penyimpanan konfigurasi dengan parameter yang ditentukan.
 
 ## SYNTAX
 
@@ -36,7 +36,7 @@ Update-AzAppConfigurationStore -InputObject <IAppConfigurationIdentity> [-Encryp
 ```
 
 ## DESCRIPTION
-Memperbarui penyimpanan konfigurasi dengan parameter yang ditentukan.
+Updates penyimpanan konfigurasi dengan parameter yang ditentukan.
 
 ## EXAMPLES
 
@@ -353,7 +353,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IAppConfigurationIdentity>: Parameter Identitas
+INPUTOBJECT `<IAppConfigurationIdentity>`: Parameter Identitas
   - `[ConfigStoreName <String>]`: Nama penyimpanan konfigurasi.
   - `[GroupName <String>]`: Nama grup sumber daya tautan privat.
   - `[Id <String>]`: Jalur identitas sumber daya

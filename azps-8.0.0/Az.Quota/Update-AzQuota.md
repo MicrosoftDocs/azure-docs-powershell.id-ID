@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.quota/update-azq
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Quota/help/Update-AzQuota.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Quota/help/Update-AzQuota.md
-ms.openlocfilehash: 0a88e67f4702fc5d50c7f084693d1515148118d8
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 0a52b8e07c4e63537d8f7b9e18ceae7a256d639c
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145521250"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146590206"
 ---
 # Update-AzQuota
 
@@ -201,7 +201,7 @@ Accept wildcard characters: False
 
 ### -Cakupan
 URI sumber daya Azure target.
-Contohnya:`/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/qms-test/providers/Microsoft.Batch/batchAccounts/testAccount/`
+Contohnya,`/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/qms-test/providers/Microsoft.Batch/batchAccounts/testAccount/`.
 Ini adalah URI sumber daya Azure target untuk operasi Daftar GET.
 `{resourceName}` Jika ditambahkan setelah `/quotas`, maka itu adalah URI sumber daya Azure target dalam operasi GET untuk sumber daya tertentu.
 
@@ -268,11 +268,11 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IQuotaIdentity>: Parameter Identitas
+INPUTOBJECT `<IQuotaIdentity>`: Parameter Identitas
   - `[Id <String>]`: ID permintaan kuota.
   - `[Id1 <String>]`: Jalur identitas sumber daya
   - `[ResourceName <String>]`: Nama sumber daya untuk penyedia sumber daya tertentu. Misalnya: - Nama SKU untuk Microsoft.Compute - SKU atau TotalLowPriorityCores untuk Microsoft.MachineLearningServices Untuk Microsoft.Network PublicIPAddresses.
-  - `[Scope <String>]`: Target URI sumber daya Azure. Contohnya:`/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/qms-test/providers/Microsoft.Batch/batchAccounts/testAccount/` Ini adalah URI sumber daya Azure target untuk operasi Daftar GET. `{resourceName}` Jika ditambahkan setelah `/quotas`, maka itu adalah URI sumber daya Azure target dalam operasi GET untuk sumber daya tertentu.
+  - `[Scope <String>]`: Target URI sumber daya Azure. Contohnya,`/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/qms-test/providers/Microsoft.Batch/batchAccounts/testAccount/`. Ini adalah URI sumber daya Azure target untuk operasi Daftar GET. `{resourceName}` Jika ditambahkan setelah `/quotas`, maka itu adalah URI sumber daya Azure target dalam operasi GET untuk sumber daya tertentu.
 
 ## RELATED LINKS
 

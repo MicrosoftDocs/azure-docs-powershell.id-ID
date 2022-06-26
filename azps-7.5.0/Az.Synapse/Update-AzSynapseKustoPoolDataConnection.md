@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseKustoPoolDataConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseKustoPoolDataConnection.md
-ms.openlocfilehash: f7690ce8e9cef43647cfc7a7022fc5465710e297
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: bb7ffe611336bcb345371b80b27f129daaaa5c4d
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145704250"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146592042"
 ---
 # Update-AzSynapseKustoPoolDataConnection
 
 ## SYNOPSIS
-Memperbarui koneksi data.
+Updates koneksi data.
 
 > [!NOTE]
 >Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/update-azsynapsekustopooldataconnection) untuk informasi terbaru.
@@ -80,7 +80,7 @@ Update-AzSynapseKustoPoolDataConnection -InputObject <ISynapseIdentity> -Consume
 ```
 
 ## DESCRIPTION
-Memperbarui koneksi data.
+Updates koneksi data.
 
 ## EXAMPLES
 
@@ -197,7 +197,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Pemadatan
+### -Kompresi
 Jenis kompresi pesan pusat aktivitas.
 
 ```yaml
@@ -259,7 +259,7 @@ Accept wildcard characters: False
 
 ### -DataFormat
 Format data pesan.
-Secara opsional format data dapat ditambahkan ke setiap pesan.
+Secara opsional, format data dapat ditambahkan ke setiap pesan.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Synapse.Support.EventGridDataFormat
@@ -304,7 +304,7 @@ Accept wildcard characters: False
 ```
 
 ### -EventSystemProperty
-Properti sistem dari event/iot hub.
+Properti sistem dari hub peristiwa/iot.
 
 ```yaml
 Type: System.String[]
@@ -319,7 +319,7 @@ Accept wildcard characters: False
 ```
 
 ### -IgnoreFirstRecord
-Jika diatur ke true, menunjukkan bahwa penyerapan harus mengabaikan rekaman pertama dari setiap file.
+Jika diatur ke true, menunjukkan bahwa penyerapan harus mengabaikan catatan pertama setiap file.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -334,7 +334,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Synapse.Models.ISynapseIdentity
@@ -363,7 +363,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Kind
+### -Jenis
 Jenis titik akhir untuk koneksi data
 
 ```yaml
@@ -410,7 +410,7 @@ Accept wildcard characters: False
 
 ### -MappingRuleName
 Aturan pemetaan yang akan digunakan untuk menyerap data.
-Secara opsional informasi pemetaan dapat ditambahkan ke setiap pesan.
+Secara opsional, informasi pemetaan dapat ditambahkan ke setiap pesan.
 
 ```yaml
 Type: System.String
@@ -441,7 +441,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -582,7 +582,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ISynapseIdentity>: Parameter Identitas
+INPUTOBJECT `<ISynapseIdentity>`: Parameter Identitas
   - `[AttachedDatabaseConfigurationName <String>]`: Nama konfigurasi database terlampir.
   - `[DataConnectionName <String>]`: Nama koneksi data.
   - `[DatabaseName <String>]`: Nama database di kumpulan Kusto.
@@ -590,7 +590,7 @@ INPUTOBJECT <ISynapseIdentity>: Parameter Identitas
   - `[KustoPoolName <String>]`: Nama kumpulan Kusto.
   - `[Location <String>]`: Nama wilayah Azure.
   - `[PrincipalAssignmentName <String>]`: Nama Kusto principalAssignment.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
   - `[WorkspaceName <String>]`: Nama ruang kerja
 

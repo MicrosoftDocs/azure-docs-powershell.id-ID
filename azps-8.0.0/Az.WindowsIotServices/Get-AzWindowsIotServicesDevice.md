@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.windowsiotservic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/WindowsIotServices/help/Get-AzWindowsIotServicesDevice.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/WindowsIotServices/help/Get-AzWindowsIotServicesDevice.md
-ms.openlocfilehash: de5f7a3ff62b8b926af5154cda9a5a1d0f2a871f
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: d94768fd6258343b670df682ea99704f16aaa396
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145506130"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146587668"
 ---
 # Get-AzWindowsIotServicesDevice
 
@@ -207,7 +207,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IWindowsIotServicesIdentity>: Parameter Identitas
+INPUTOBJECT `<IWindowsIotServicesIdentity>`: Parameter Identitas
   - `[DeviceName <String>]`: Nama Windows IoT Device Service.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi Windows IoT Device Service.

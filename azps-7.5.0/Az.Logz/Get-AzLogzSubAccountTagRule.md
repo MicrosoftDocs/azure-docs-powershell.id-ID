@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.logz/get-azlogzs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Get-AzLogzSubAccountTagRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Get-AzLogzSubAccountTagRule.md
-ms.openlocfilehash: 72805188a7b928e735cef9e742995455accaef22
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: 0ba22c3952ec076c37fa4d34529bb9139d8a7819
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145771256"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146592448"
 ---
 # Get-AzLogzSubAccountTagRule
 
@@ -177,7 +177,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ILogzIdentity>: Parameter Identitas
+INPUTOBJECT `<ILogzIdentity>`: Parameter Identitas
   - `[ConfigurationName <String>]`: 
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[MonitorName <String>]`: Memantau nama sumber daya

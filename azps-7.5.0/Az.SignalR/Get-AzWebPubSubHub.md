@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.signalr/get-azwe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Get-AzWebPubSubHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Get-AzWebPubSubHub.md
-ms.openlocfilehash: 4d7d8fc155a2606d019d7fbb2e5836c8e7ab5ab4
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: c05a7aaf2dc978eef38e17c51759d4ffa23c827e
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145629836"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146592078"
 ---
 # Get-AzWebPubSubHub
 
@@ -202,7 +202,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IWebPubSubIdentity>: Parameter Identitas
+INPUTOBJECT `<IWebPubSubIdentity>`: Parameter Identitas
   - `[HubName <String>]`: Nama hub.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: wilayah

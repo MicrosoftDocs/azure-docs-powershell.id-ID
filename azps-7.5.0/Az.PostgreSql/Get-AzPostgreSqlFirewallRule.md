@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.postgresql/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Get-AzPostgreSqlFirewallRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Get-AzPostgreSqlFirewallRule.md
-ms.openlocfilehash: 2ceeac3852cd15f16ee0e50e6be7a669357eab2f
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: f262523910e5a8787b1754174e764c01212cd1b6
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145658578"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146592366"
 ---
 # Get-AzPostgreSqlFirewallRule
 
@@ -58,7 +58,7 @@ rule 0.0.0.0        0.0.0.1
 
 Cmdlet ini mencantumkan semua Aturan Firewall di server PostgreSql tertentu.
 
-### Contoh 2: Dapatkan Aturan Firewall menurut nama
+### Contoh 2: Dapatkan Aturan Firewall berdasarkan nama
 ```powershell
 Get-AzPostgreSqlFirewallRule -Name rule -ResourceGroupName PostgreSqlTestRG -ServerName PostgreSqlTestServer
 ```
@@ -71,7 +71,7 @@ rule 0.0.0.0        0.0.0.1
 
 Cmdlet ini mendapatkan Aturan Firewall berdasarkan nama.
 
-### Contoh 3: Dapatkan Aturan Firewall menurut identitas
+### Contoh 3: Dapatkan Aturan Firewall berdasarkan identitas
 ```powershell
 $ID = "/subscriptions/<SubscriptionId>/resourceGroups/PostgreSqlTestRG/providers/Microsoft.DBforPostgreSQL/servers/PostgreSqlTestServer/firewallRules/rule"
 Get-AzPostgreSqlFirewallRule -InputObject $ID
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.PostgreSql.Models.IPostgreSqlIdentity
@@ -198,7 +198,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IPostgreSqlIdentity>: Parameter Identitas
+INPUTOBJECT `<IPostgreSqlIdentity>`: Parameter Identitas
   - `[ConfigurationName <String>]`: Nama konfigurasi server.
   - `[DatabaseName <String>]`: Nama database.
   - `[FirewallRuleName <String>]`: Nama aturan firewall server.

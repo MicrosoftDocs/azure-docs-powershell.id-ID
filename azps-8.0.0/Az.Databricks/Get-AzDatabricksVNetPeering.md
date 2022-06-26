@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.databricks/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Databricks/help/Get-AzDatabricksVNetPeering.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Databricks/help/Get-AzDatabricksVNetPeering.md
-ms.openlocfilehash: b8955956fb94eb812bc955cc6fffc99c65173e0e
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 951c0a88b6c7e7f835143cc25ced908c889ab3f8
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145509178"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146591016"
 ---
 # Get-AzDatabricksVNetPeering
 
 ## SYNOPSIS
-Mendapatkan Peering vNet ruang kerja.
+Mendapatkan peering vNet ruang kerja.
 
 ## SYNTAX
 
@@ -38,7 +38,7 @@ Get-AzDatabricksVNetPeering -InputObject <IDatabricksIdentity> [-DefaultProfile 
 ```
 
 ## DESCRIPTION
-Mendapatkan Peering vNet ruang kerja.
+Mendapatkan peering vNet ruang kerja.
 
 ## EXAMPLES
 
@@ -69,7 +69,7 @@ MyPeering-test01
 
 Perintah ini mendapatkan peering vnet.
 
-### Contoh 3: Mendapatkan peering vnet berdasarkan objek
+### Contoh 3: Mendapatkan peering vnet menurut objek
 ```powershell
 New-AzDatabricksVNetPeering -Name vnetpeering-t02 -WorkspaceName databricks-test01 -ResourceGroupName lucas-manual-test -RemoteVirtualNetworkId '/subscriptions/xxxxx-xxxx-xxx-xxxxx/resourceGroups/azure-manual-test/providers/Microsoft.Network/virtualNetworks/vnet-test02' | Get-AzDatabricksVNetPeering
 ```
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Databricks.Models.IDatabricksIdentity
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -210,12 +210,12 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IDatabricksIdentity>: Parameter Identitas
+INPUTOBJECT `<IDatabricksIdentity>`: Parameter Identitas
   - `[GroupId <String>]`: Nama sumber daya tautan privat
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[PeeringName <String>]`: Nama peering vNet ruang kerja.
   - `[PrivateEndpointConnectionName <String>]`: Nama koneksi titik akhir privat
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
   - `[WorkspaceName <String>]`: Nama ruang kerja.
 

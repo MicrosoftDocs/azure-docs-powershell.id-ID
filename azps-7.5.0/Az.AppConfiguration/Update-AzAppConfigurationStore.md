@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.appconfiguration
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AppConfiguration/help/Update-AzAppConfigurationStore.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AppConfiguration/help/Update-AzAppConfigurationStore.md
-ms.openlocfilehash: ec7071aefaa3aade3d4c3d276f58600d7861c80e
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 4c747d39285bcf743166f6dd33b8302c4ae0a551
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145685650"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146589900"
 ---
 # Update-AzAppConfigurationStore
 
 ## SYNOPSIS
-Memperbarui penyimpanan konfigurasi dengan parameter yang ditentukan.
+Updates penyimpanan konfigurasi dengan parameter yang ditentukan.
 
 > [!NOTE]
 >Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.appconfiguration/update-azappconfigurationstore) untuk informasi terbaru.
@@ -39,11 +39,11 @@ Update-AzAppConfigurationStore -InputObject <IAppConfigurationIdentity> [-Encryp
 ```
 
 ## DESCRIPTION
-Memperbarui penyimpanan konfigurasi dengan parameter yang ditentukan.
+Updates penyimpanan konfigurasi dengan parameter yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Mengaktifkan enkripsi data penyimpanan konifgurasi aplikasi berdasarkan identitas terkelola yang ditetapkan sistem
+### Contoh 1: Mengaktifkan enkripsi data penyimpanan konifgurasi aplikasi oleh identitas terkelola yang ditetapkan sistem
 ```powershell
 $key = Add-AzKeyVaultKey -VaultName kv-Name -Name key-Name -Destination 'Software'
 $systemAssignedAppStore = New-AzAppConfigurationStore -Name appconfig-test11 -ResourceGroupName azpwsh-manual-test -Location $env.location -Sku 'standard' -IdentityType "SystemAssigned"
@@ -58,7 +58,7 @@ eastus   appconfig-test01 Microsoft.AppConfiguration/configurationStores
 ```
 
 Perintah ini memungkinkan enkripsi data oleh kunci yang disimpan di Azure Key Vault menggunakan identitas terkelola yang ditetapkan sistem.
-Vault harus mengaktifkan penghapusan sementara dan perlindungan penghapusan menyeluruh, dan identitas terkelola harus memiliki izin kunci ini: get, wrapKey, unwrapKey.
+Brankas harus mengaktifkan penghapusan sementara dan perlindungan penghapusan menyeluruh, dan identitas terkelola harus memiliki izin kunci ini: get, wrapKey, unwrapKey.
 
 ### Contoh 2: Mengaktifkan enkripsi data penyimpanan konifgurasi aplikasi oleh identitas terkelola yang ditetapkan pengguna
 ```powershell
@@ -76,8 +76,8 @@ eastus   appconfig-test10 Microsoft.AppConfiguration/configurationStores
 ```
 
 Perintah ini memungkinkan enkripsi data oleh kunci yang disimpan di Azure Key Vault menggunakan identitas terkelola yang ditetapkan pengguna.
-Identitas yang ditetapkan pengguna harus diatur dengan `-UserAssignedIdentity`.
-Vault harus mengaktifkan penghapusan sementara dan perlindungan penghapusan menyeluruh, dan identitas terkelola harus memiliki izin kunci ini: get, wrapKey, unwrapKey.
+Identitas yang ditetapkan pengguna harus telah diatur dengan `-UserAssignedIdentity`.
+Brankas harus mengaktifkan penghapusan sementara dan perlindungan penghapusan menyeluruh, dan identitas terkelola harus memiliki izin kunci ini: get, wrapKey, unwrapKey.
 
 ### Contoh 3: Menonaktifkan enkripsi penyimpanan konifgurasi aplikasi.
 ```powershell
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.AppConfiguration.Models.IAppConfigurationIdentity
@@ -356,7 +356,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IAppConfigurationIdentity>: Parameter Identitas
+INPUTOBJECT `<IAppConfigurationIdentity>`: Parameter Identitas
   - `[ConfigStoreName <String>]`: Nama penyimpanan konfigurasi.
   - `[GroupName <String>]`: Nama grup sumber daya tautan privat.
   - `[Id <String>]`: Jalur identitas sumber daya

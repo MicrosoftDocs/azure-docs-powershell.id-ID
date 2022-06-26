@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.resourcegraph/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceGraph/ResourceGraph/help/Remove-AzResourceGraphQuery.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceGraph/ResourceGraph/help/Remove-AzResourceGraphQuery.md
-ms.openlocfilehash: 07457d283aba9ace567b427f61d7c5fa3417b95b
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 55b47f795c2db7a69efbba2d1c5661431e3d2af0
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145504374"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146590188"
 ---
 # Remove-AzResourceGraphQuery
 
@@ -194,7 +194,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IResourceGraphIdentity>: Parameter Identitas
+INPUTOBJECT `<IResourceGraphIdentity>`: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ResourceGroupName <String>]`: Nama grup sumber daya.
   - `[ResourceName <String>]`: Nama sumber daya kueri Graph.

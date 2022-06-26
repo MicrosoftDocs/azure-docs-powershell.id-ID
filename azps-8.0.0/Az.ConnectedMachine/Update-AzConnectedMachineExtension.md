@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.connectedmachine
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedMachine/help/Update-AzConnectedMachineExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedMachine/help/Update-AzConnectedMachineExtension.md
-ms.openlocfilehash: 775e8536c7624b4c6ba9383ee02a38a811cbfdd0
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 18468d3c6529a73e9e45539bfee987e929136613
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145526383"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146588388"
 ---
 # Update-AzConnectedMachineExtension
 
@@ -74,7 +74,7 @@ Name         Location ProvisioningState
 customScript eastus   Succeeded
 ```
 
-Memperbarui ekstensi pada komputer tertentu.
+Updates ekstensi pada komputer tertentu.
 
 ### Contoh 2: Memperbarui ekstensi dengan lokasi yang ditentukan melalui alur
 ```powershell
@@ -90,7 +90,7 @@ Name         Location ProvisioningState
 customScript eastus   Succeeded
 ```
 
-Memperbarui ekstensi tertentu yang diteruskan melalui alur.
+Updates ekstensi tertentu yang diteruskan melalui alur.
 Di sini kita menggunakan ekstensi yang diteruskan melalui alur untuk membantu kita mengidentifikasi ekstensi mana yang ingin kita operasikan dan menentukan apa yang ingin kita ubah melalui parameter normal (seperti `-Settings`)
 
 ### Contoh 3: Memperbarui ekstensi dengan parameter ekstensi yang ditentukan melalui alur
@@ -112,7 +112,7 @@ Name         Location ProvisioningState
 customScript eastus   Succeeded
 ```
 
-Memperbarui ekstensi tertentu yang diteruskan melalui alur.
+Updates ekstensi tertentu yang diteruskan melalui alur.
 Di sini kita menggunakan ekstensi yang diteruskan melalui alur untuk memberikan perubahan yang ingin kita buat pada ekstensi.
 Lokasi ekstensi tidak diambil melalui alur melainkan melalui parameter yang ditentukan secara normal (oleh parameter splat).
 
@@ -130,7 +130,7 @@ Name         Location ProvisioningState
 customScript eastus   Succeeded
 ```
 
-Memperbarui ekstensi tertentu yang diteruskan melalui alur.
+Updates ekstensi tertentu yang diteruskan melalui alur.
 Di sini kami menggunakan ekstensi yang diteruskan melalui alur untuk membantu kami mengidentifikasi ekstensi mana yang ingin kami operasikan.
 Selain itu, kami menggunakan parameter objek ekstensi untuk menentukan apa yang harus diperbarui.
 
@@ -320,7 +320,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -462,7 +462,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-EXTENSIONPARAMETER <IMachineExtensionUpdate>: Menjelaskan Pembaruan Ekstensi Mesin.
+EXTENSIONPARAMETER `<IMachineExtensionUpdate>`: Menjelaskan Pembaruan Ekstensi Mesin.
   - `[Tag <IResourceUpdateTags>]`: Tag sumber daya
     - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
   - `[AutoUpgradeMinorVersion <Boolean?>]`: Menunjukkan apakah ekstensi harus menggunakan versi minor yang lebih baru jika tersedia pada waktu penyebaran. Setelah disebarkan, bagaimanapun, ekstensi tidak akan meningkatkan versi kecil kecuali dipekerjakan kembali, bahkan jika properti ini diatur ke true.
@@ -474,7 +474,7 @@ EXTENSIONPARAMETER <IMachineExtensionUpdate>: Menjelaskan Pembaruan Ekstensi Mes
   - `[Type <String>]`: Menentukan jenis ekstensi; contohnya adalah "CustomScriptExtension".
   - `[TypeHandlerVersion <String>]`: Menentukan versi penangan skrip.
 
-INPUTOBJECT <IConnectedMachineIdentity>: Parameter Identitas
+INPUTOBJECT `<IConnectedMachineIdentity>`: Parameter Identitas
   - `[ExtensionName <String>]`: Nama ekstensi komputer.
   - `[GroupName <String>]`: Nama sumber daya tautan privat.
   - `[Id <String>]`: Jalur identitas sumber daya
@@ -482,7 +482,7 @@ INPUTOBJECT <IConnectedMachineIdentity>: Parameter Identitas
   - `[MachineName <String>]`: Nama komputer hibrid.
   - `[PrivateEndpointConnectionName <String>]`: Nama koneksi titik akhir privat.
   - `[PrivateLinkScopeId <String>]`: Id (Guid) sumber daya Azure Arc PrivateLinkScope.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[ScopeName <String>]`: Nama sumber daya Azure Arc PrivateLinkScope.
   - `[SubscriptionId <String>]`: ID langganan target.
 

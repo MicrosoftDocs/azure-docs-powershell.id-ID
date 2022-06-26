@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.digitaltwins/get
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DigitalTwins/help/Get-AzDigitalTwinsEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DigitalTwins/help/Get-AzDigitalTwinsEndpoint.md
-ms.openlocfilehash: aa782c134b4ef93a73fc4fa3a403fa8606b4f2d9
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 950d57d4257208a75e48eddbda605cf31322a956
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145741546"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146589576"
 ---
 # Get-AzDigitalTwinsEndpoint
 
@@ -71,7 +71,7 @@ youriDigitalTwinEndpoint Microsoft.DigitalTwins/digitalTwinsInstances/endpoints
 
 Dapatkan AzDigitalTwinsEndpoint by EndpointName di ResourceGroup
 
-### Contoh 3: Dapatkan Objek AzDigitalTwinsEndpoint oleh 'AzDigitalTwinsEndpoint'
+### Contoh 3: Dapatkan AzDigitalTwinsEndpoint oleh Objek 'AzDigitalTwinsEndpoint'
 ```powershell
 $GetAzDigitalTwinsEndpoint = Get-AzDigitalTwinsEndpoint -EndpointName youriDigitalTwinEndpoint -ResourceGroupName youritemp -ResourceName youriDigitalTwinsTest
 Get-AzDigitalTwinsEndpoint -InputObject $GetAzDigitalTwinsEndpoint
@@ -83,7 +83,7 @@ Name                     Type
 youriDigitalTwinEndpoint Microsoft.DigitalTwins/digitalTwinsInstances/endpoints
 ```
 
-Dapatkan Objek AzDigitalTwinsEndpoint by 'AzDigitalTwinsEndpoint'
+Dapatkan Objek AzDigitalTwinsEndpoint oleh 'AzDigitalTwinsEndpoint'
 
 ## PARAMETERS
 
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DigitalTwins.Models.IDigitalTwinsIdentity
@@ -197,7 +197,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IDigitalTwinsIdentity>: Parameter Identitas
+INPUTOBJECT `<IDigitalTwinsIdentity>`: Parameter Identitas
   - `[EndpointName <String>]`: Nama Sumber Daya Titik Akhir.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Lokasi DigitalTwinsInstance.

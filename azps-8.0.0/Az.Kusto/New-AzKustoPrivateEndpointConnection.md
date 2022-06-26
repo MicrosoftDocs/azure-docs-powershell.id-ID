@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.kusto/new-azkust
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/New-AzKustoPrivateEndpointConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/New-AzKustoPrivateEndpointConnection.md
-ms.openlocfilehash: d4d6963cc126fbdcd41c8d57649143b0249a802e
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 37706bef72be33a7326b635a5bfcd6838c2153b5
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145516243"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146588100"
 ---
 # New-AzKustoPrivateEndpointConnection
 
@@ -256,14 +256,14 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-PARAMETER <IPrivateEndpointConnection>: Koneksi titik akhir privat
+PARAMETER `<IPrivateEndpointConnection>`: Koneksi titik akhir privat
   - `[PrivateLinkServiceConnectionStateDescription <String>]`: Deskripsi koneksi layanan tautan privat.
   - `[PrivateLinkServiceConnectionStateStatus <String>]`: Status koneksi layanan tautan privat.
   - `[SystemDataCreatedAt <DateTime?>]`: Tanda waktu pembuatan sumber daya (UTC).
   - `[SystemDataCreatedBy <String>]`: Identitas yang membuat sumber daya.
   - `[SystemDataCreatedByType <CreatedByType?>]`: Jenis identitas yang membuat sumber daya.
   - `[SystemDataLastModifiedAt <DateTime?>]`: Tanda waktu modifikasi terakhir sumber daya (UTC)
-  - `[SystemDataLastModifiedBy <String>]`: Identitas yang terakhir mengubah sumber daya.
+  - `[SystemDataLastModifiedBy <String>]`: Identitas yang terakhir memodifikasi sumber daya.
   - `[SystemDataLastModifiedByType <CreatedByType?>]`: Jenis identitas yang terakhir memodifikasi sumber daya.
 
 ## RELATED LINKS

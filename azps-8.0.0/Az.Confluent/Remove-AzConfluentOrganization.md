@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.confluent/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Confluent/help/Remove-AzConfluentOrganization.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Confluent/help/Remove-AzConfluentOrganization.md
-ms.openlocfilehash: 9721da2c05fa9362304220f0297e5bc9d7540a79
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 962716621671b7e9b790d283420877a0c8239ce9
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145531462"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146591520"
 ---
 # Remove-AzConfluentOrganization
 
@@ -237,7 +237,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IConfluentIdentity>: Parameter Identitas
+INPUTOBJECT `<IConfluentIdentity>`: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[OrganizationName <String>]`: Nama sumber daya organisasi
   - `[ResourceGroupName <String>]`: Nama grup sumber daya

@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.vmware/get-azvmw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/Get-AzVMwareCloudLink.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/Get-AzVMwareCloudLink.md
-ms.openlocfilehash: 1e464e3e13d5e00cd303b603aa16ffcf478bb44b
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: a5b03208d4eb59ff2476eba3e00fa976981d19ac
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145702324"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146591952"
 ---
 # Get-AzVMwareCloudLink
 
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.VMware.Models.IVMwareIdentity
@@ -181,7 +181,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IVMwareIdentity>: Parameter Identitas
+INPUTOBJECT `<IVMwareIdentity>`: Parameter Identitas
   - `[AddonName <String>]`: Nama addon untuk cloud privat
   - `[AuthorizationName <String>]`: Nama Otorisasi Sirkuit ExpressRoute di cloud privat
   - `[CloudLinkName <String>]`: Nama sumber daya tautan cloud

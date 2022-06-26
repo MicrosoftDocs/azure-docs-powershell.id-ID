@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.datadog/new-azda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/New-AzDatadogSingleSignOnConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/New-AzDatadogSingleSignOnConfiguration.md
-ms.openlocfilehash: 09b58791c8b21c6859db51a67da5fce361af51a8
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 4ca49e43792dcf263d338343ed04056d0ad7e6a9
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145746406"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146589632"
 ---
 # New-AzDatadogSingleSignOnConfiguration
 
@@ -271,7 +271,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IDatadogIdentity>: Parameter Identitas
+INPUTOBJECT `<IDatadogIdentity>`: Parameter Identitas
   - `[ConfigurationName <String>]`: Nama konfigurasi
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[MonitorName <String>]`: Memantau nama sumber daya

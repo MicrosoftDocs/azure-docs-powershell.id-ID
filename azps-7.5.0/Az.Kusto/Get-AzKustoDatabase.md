@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.kusto/get-azkust
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Get-AzKustoDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Get-AzKustoDatabase.md
-ms.openlocfilehash: af3d290669b9582d01daf977522ef41e694fadf5
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: 97be8d015142123544a93dadbc150b038a23b1a8
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145771626"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146589216"
 ---
 # Get-AzKustoDatabase
 
@@ -69,7 +69,7 @@ Kind      Location Name                                Type
 ReadWrite East US  testnewkustocluster/mykustodatabase Microsoft.Kusto/Clusters/Databases
 ```
 
-Perintah di atas mengembalikan database Kusto bernama "mykustodatabase" dalam kluster "testnewkustocluster" yang ditemukan dalam grup sumber daya "testrg".
+Perintah di atas mengembalikan database Kusto bernama "mykustodatabase" di kluster "testnewkustocluster" yang ditemukan di grup sumber daya "testrg".
 
 ## PARAMETERS
 
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Kusto.Models.IKustoIdentity
@@ -184,7 +184,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IKustoIdentity>: Parameter Identitas
+INPUTOBJECT `<IKustoIdentity>`: Parameter Identitas
   - `[AttachedDatabaseConfigurationName <String>]`: Nama konfigurasi database terlampir.
   - `[ClusterName <String>]`: Nama kluster Kusto.
   - `[DataConnectionName <String>]`: Nama koneksi data.
@@ -192,7 +192,7 @@ INPUTOBJECT <IKustoIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Nama lokasi (wilayah) Azure.
   - `[ManagedPrivateEndpointName <String>]`: Nama titik akhir privat terkelola.
-  - `[OperationId <String>]`: Panduan ID operasi
+  - `[OperationId <String>]`: Guid ID operasi
   - `[PrincipalAssignmentName <String>]`: Nama Kusto principalAssignment.
   - `[PrivateEndpointConnectionName <String>]`: Nama koneksi titik akhir privat.
   - `[PrivateLinkResourceName <String>]`: Nama sumber daya tautan privat.

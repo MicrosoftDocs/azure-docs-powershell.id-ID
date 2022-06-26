@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.dataprotection/b
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Backup-AzDataProtectionBackupInstanceAdhoc.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Backup-AzDataProtectionBackupInstanceAdhoc.md
-ms.openlocfilehash: 5d67ab0b65bb3299418ab336b94cf1daaaad0f7b
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 1a22de41115446173463f52031f36abf4c310440
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145508326"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146591250"
 ---
 # Backup-AzDataProtectionBackupInstanceAdhoc
 
@@ -62,7 +62,7 @@ while($jobstatus -ne "Completed")
 }
 ```
 
-Perintah Ini Memicu Pencadangan untuk instans cadangan tertentu menggunakan kebijakan perlindungan yang digunakan untuk melindungi instans cadangan.
+Perintah ini Memicu Pencadangan untuk instans cadangan tertentu menggunakan kebijakan perlindungan yang digunakan untuk melindungi instans cadangan.
 Kemudian kita melacak pekerjaan pencadangan dalam perulangan sampai selesai.
 
 ## PARAMETERS
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Models.IDataProtectionIdentity
@@ -268,16 +268,16 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IDataProtectionIdentity>: Parameter Identitas
+INPUTOBJECT `<IDataProtectionIdentity>`: Parameter Identitas
   - `[BackupInstanceName <String>]`: Nama instans cadangan
   - `[BackupPolicyName <String>]`: 
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[JobId <String>]`: ID Pekerjaan. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-00000000000).
+  - `[JobId <String>]`: ID Pekerjaan. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000).
   - `[Location <String>]`: Lokasi di mana keunikan akan diverifikasi.
   - `[OperationId <String>]`: 
   - `[RecoveryPointId <String>]`: 
   - `[RequestName <String>]`: 
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat vault cadangan ada.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat vault cadangan berada.
   - `[ResourceGuardsName <String>]`: Nama ResourceGuard
   - `[SubscriptionId <String>]`: Id langganan.
   - `[VaultName <String>]`: Nama brankas cadangan.

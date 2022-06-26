@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.dnsresolver/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/Get-AzDnsForwardingRuleset.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/Get-AzDnsForwardingRuleset.md
-ms.openlocfilehash: ce51ed8d5170d27831f0dbd4561e78183dade8b3
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: f957e9fdd929f33bd19e8a1ca36de8dc5ba6ab01
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145506535"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146588190"
 ---
 # Get-AzDnsForwardingRuleset
 
 ## SYNOPSIS
-Mendapatkan properti aturan penerusan DNS.
+Mendapatkan properti set aturan penerusan DNS.
 
 ## SYNTAX
 
@@ -51,7 +51,7 @@ Get-AzDnsForwardingRuleset -ResourceGroupName <String> -VirtualNetworkName <Stri
 ```
 
 ## DESCRIPTION
-Mendapatkan properti aturan penerusan DNS.
+Mendapatkan properti set aturan penerusan DNS.
 
 ## EXAMPLES
 
@@ -72,7 +72,7 @@ eastus2  dnsforwardingruleset-test-eastus2-main-syn-outbound-secondary-0 Microso
 
 Perintah ini mendapatkan semua aturan penerusan DNS di bawah langganan.
 
-### Contoh 2: Mendapatkan aturan penerusan DNS tunggal menurut nama
+### Contoh 2: Dapatkan aturan penerusan DNS tunggal menurut nama
 ```powershell
 Get-AzDnsForwardingRuleset -Name dnsForwardingRuleset -ResourceGroupName sampleRG
 ```
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DnsResolver.Models.IDnsResolverIdentity
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Nama kumpulan aturan penerusan DNS.
+Nama set aturan penerusan DNS.
 
 ```yaml
 Type: System.String
@@ -288,8 +288,8 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IDnsResolverIdentity>: Parameter Identitas
-  - `[DnsForwardingRulesetName <String>]`: Nama kumpulan aturan penerusan DNS.
+INPUTOBJECT `<IDnsResolverIdentity>`: Parameter Identitas
+  - `[DnsForwardingRulesetName <String>]`: Nama set aturan penerusan DNS.
   - `[DnsResolverName <String>]`: Nama pemecah masalah DNS.
   - `[ForwardingRuleName <String>]`: Nama aturan penerusan.
   - `[Id <String>]`: Jalur identitas sumber daya

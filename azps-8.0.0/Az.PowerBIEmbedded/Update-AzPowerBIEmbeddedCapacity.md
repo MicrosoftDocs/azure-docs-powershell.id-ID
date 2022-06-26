@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.powerbiembedded/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PowerBIEmbedded/PowerBIEmbedded/help/Update-AzPowerBIEmbeddedCapacity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PowerBIEmbedded/PowerBIEmbedded/help/Update-AzPowerBIEmbeddedCapacity.md
-ms.openlocfilehash: 71e578d14d274fe1cd8a1afdfd51ea28064970bd
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 15b5d98bbf0af0a4628aae0fecbbdc41cfe8a4a1
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145544388"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146590304"
 ---
 # Update-AzPowerBIEmbeddedCapacity
 
@@ -69,7 +69,7 @@ Memodifikasi kapasitas bernama testcapacity dalam grup uji grup sumber daya untu
 ## PARAMETERS
 
 ### -Administrator
-Nama yang dipisahkan koma untuk ditetapkan sebagai administrator pada kapasitas. Untuk perwakilan layanan: <service principal object id>@<tenant id>
+Nama yang dipisahkan koma untuk ditetapkan sebagai administrator pada kapasitas. Untuk perwakilan layanan: `<service principal object id>@<tenant id>`
 
 ```yaml
 Type: System.String[]
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Nama Kapasitas PowerBI Embedded
+Nama Kapasitas Tersemat PowerBI
 
 ```yaml
 Type: System.String

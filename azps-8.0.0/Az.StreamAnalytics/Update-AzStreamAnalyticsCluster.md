@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.streamanalytics/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Update-AzStreamAnalyticsCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Update-AzStreamAnalyticsCluster.md
-ms.openlocfilehash: c47ebacd35876bbe7a336ec61828f0568fff4928
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: a3b5c57f611c412da8c9bc9194f60aed7d2bfdd3
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145512295"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146587704"
 ---
 # Update-AzStreamAnalyticsCluster
 
 ## SYNOPSIS
-Memperbarui kluster yang ada.
+Updates kluster yang ada.
 Ini dapat digunakan untuk memperbarui sebagian (yaitu.
 memperbarui satu atau dua properti) kluster tanpa memengaruhi definisi kluster lainnya.
 
@@ -36,7 +36,7 @@ Update-AzStreamAnalyticsCluster -InputObject <IStreamAnalyticsIdentity> [-IfMatc
 ```
 
 ## DESCRIPTION
-Memperbarui kluster yang ada.
+Updates kluster yang ada.
 Ini dapat digunakan untuk memperbarui sebagian (yaitu.
 memperbarui satu atau dua properti) kluster tanpa memengaruhi definisi kluster lainnya.
 
@@ -65,7 +65,7 @@ Location        Name         Type                               Etag
 West Central US sac-m-test01 Microsoft.StreamAnalytics/clusters
 ```
 
-Perintah ini memperbarui kluster analisis aliran menurut alur.
+Perintah ini memperbarui kluster analisis aliran berdasarkan alur.
 
 ## PARAMETERS
 
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.StreamAnalytics.Models.IStreamAnalyticsIdentity
@@ -306,7 +306,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IStreamAnalyticsIdentity>: Parameter Identitas
+INPUTOBJECT `<IStreamAnalyticsIdentity>`: Parameter Identitas
   - `[ClusterName <String>]`: Nama kluster.
   - `[FunctionName <String>]`: Nama fungsi.
   - `[Id <String>]`: Jalur identitas sumber daya

@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.cloudservice/Swi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Switch-AzCloudService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Switch-AzCloudService.md
-ms.openlocfilehash: 8534469b984577e5b2e43cc67a57623f938088ea
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: b55af15c0661fdda3955d55e8295b2242cf722d9
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145543923"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146588514"
 ---
 # Switch-AzCloudService
 
@@ -210,7 +210,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-CLOUDSERVICE <CloudService>: 
+CLOUDSERVICE `<CloudService>`: 
   - `Location <String>`: Lokasi sumber daya.
   - `[AllowModelOverride <Boolean?>]`: (Opsional) Menunjukkan apakah properti sku peran (roleProfile.roles.sku) yang ditentukan dalam model/templat harus mengganti jumlah instans peran dan ukuran vm yang ditentukan dalam .cscfg dan .csdef masing-masing.         Nilai defaultnya adalah `false`.
   - `[Configuration <String>]`: Menentukan konfigurasi layanan XML (.cscfg) untuk layanan cloud.
@@ -251,10 +251,10 @@ CLOUDSERVICE <CloudService>:
       - `[SkuCapacity <Int64?>]`: Menentukan jumlah instans peran di layanan cloud.
       - `[SkuName <String>]`: Nama sku. CATATAN: Jika SKU baru tidak didukung pada perangkat keras tempat layanan cloud saat ini aktif, Anda perlu menghapus dan membuat ulang layanan cloud atau kembali ke sku lama.
       - `[SkuTier <String>]`: Menentukan tingkat layanan cloud. Nilai yang Mungkin adalah <br /><br /> **Standard** <br /><br /> **Dasar**
-  - `[StartCloudService <Boolean?>]`: (Opsional) Menunjukkan apakah akan memulai layanan cloud segera setelah dibuat. Nilai defaultnya adalah `true`.         Jika false, model layanan masih disebarkan, tetapi kode tidak segera dijalankan. Sebagai gantinya, layanan ini adalah PoweredOff sampai Anda memanggil Mulai, pada saat itu layanan akan dimulai. Layanan yang disebarkan masih dikenakan biaya, bahkan jika diberdayakan.
+  - `[StartCloudService <Boolean?>]`: (Opsional) Menunjukkan apakah akan segera memulai layanan cloud setelah dibuat. Nilai defaultnya adalah `true`.         Jika false, model layanan masih disebarkan, tetapi kode tidak segera dijalankan. Sebagai gantinya, layanan ini Adalah PoweredOff sampai Anda memanggil Mulai, pada saat layanan akan dimulai. Layanan yang disebarkan masih dikenakan biaya, bahkan jika itu dimatikan.
   - `[Tag <ICloudServiceTags>]`: Tag sumber daya.
     - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
-  - `[UpgradeMode <CloudServiceUpgradeMode?>]`: Perbarui mode untuk layanan awan. Instans peran dialokasikan untuk memperbarui domain saat layanan disebarkan. Pembaruan dapat dimulai secara manual di setiap domain pembaruan atau dimulai secara otomatis di semua domain pembaruan.         Nilai yang Mungkin adalah <br /><br />**Auto**<br /><br />**Manual** <br /><br />**Simultan**<br /><br />         Jika tidak ditentukan, nilai defaultnya adalah Otomatis. Jika diatur ke Manual, PUT UpdateDomain harus dipanggil untuk menerapkan pembaruan. Jika diatur ke Otomatis, pembaruan secara otomatis diterapkan ke setiap domain pembaruan secara berurutan.
+  - `[UpgradeMode <CloudServiceUpgradeMode?>]`: Perbarui mode untuk layanan awan. Instans peran dialokasikan untuk memperbarui domain saat layanan disebarkan. Updates dapat dimulai secara manual di setiap domain pembaruan atau dimulai secara otomatis di semua domain pembaruan.         Nilai yang Mungkin adalah <br /><br />**Auto**<br /><br />**Manual** <br /><br />**Simultan**<br /><br />         Jika tidak ditentukan, nilai defaultnya adalah Otomatis. Jika diatur ke Manual, PUT UpdateDomain harus dipanggil untuk menerapkan pembaruan. Jika diatur ke Otomatis, pembaruan secara otomatis diterapkan ke setiap domain pembaruan secara berurutan.
 
 ## RELATED LINKS
 

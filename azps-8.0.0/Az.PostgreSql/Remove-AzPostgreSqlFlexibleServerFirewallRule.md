@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.postgresql/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Remove-AzPostgreSqlFlexibleServerFirewallRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Remove-AzPostgreSqlFlexibleServerFirewallRule.md
-ms.openlocfilehash: 066ad9c2578b8f5edfb6d3f4c262b7059e175d9d
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: c4dfa6e1c192d0be1bb92dfe0962b37902820af6
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145531015"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146590305"
 ---
 # Remove-AzPostgreSqlFlexibleServerFirewallRule
 
@@ -243,7 +243,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IPostgreSqlIdentity>: Parameter Identitas
+INPUTOBJECT `<IPostgreSqlIdentity>`: Parameter Identitas
   - `[ConfigurationName <String>]`: Nama konfigurasi server.
   - `[DatabaseName <String>]`: Nama database.
   - `[FirewallRuleName <String>]`: Nama aturan firewall server.

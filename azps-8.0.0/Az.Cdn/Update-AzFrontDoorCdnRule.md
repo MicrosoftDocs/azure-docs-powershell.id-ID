@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/update-azfro
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/help/Update-AzFrontDoorCdnRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/help/Update-AzFrontDoorCdnRule.md
-ms.openlocfilehash: 79943a3d2e3d6b0b2abf9028d86b961d33d12c00
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 1102b7329c8c9a4e2da81d54353a43bda02254c4
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145618148"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146591700"
 ---
 # Update-AzFrontDoorCdnRule
 
 ## SYNOPSIS
-Memperbarui aturan pengiriman yang ada dalam seperangkat aturan.
+Updates aturan pengiriman yang ada dalam seperangkat aturan.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Update-AzFrontDoorCdnRule -InputObject <ICdnIdentity> [-Action <IDeliveryRuleAct
 ```
 
 ## DESCRIPTION
-Memperbarui aturan pengiriman yang ada dalam seperangkat aturan.
+Updates aturan pengiriman yang ada dalam seperangkat aturan.
 
 ## EXAMPLES
 
@@ -321,7 +321,7 @@ ACTION <IDeliveryRuleAction1[]>: Daftar tindakan yang dijalankan ketika semua ko
 CONDITION <IDeliveryRuleCondition[]>: Daftar kondisi yang harus dicocokkan agar tindakan dijalankan
   - `Name <MatchVariable>`: Nama kondisi untuk aturan pengiriman.
 
-INPUTOBJECT <ICdnIdentity>: Parameter Identitas
+INPUTOBJECT `<ICdnIdentity>`: Parameter Identitas
   - `[CustomDomainName <String>]`: Nama domain di bawah profil yang unik secara global.
   - `[EndpointName <String>]`: Nama titik akhir di bawah profil yang unik secara global.
   - `[Id <String>]`: Jalur identitas sumber daya

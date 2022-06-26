@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.containerinstanc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/Remove-AzContainerGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/Remove-AzContainerGroup.md
-ms.openlocfilehash: edb833543b04e791d24b3f2613567863ddb5e944
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 7cc70dd9a9dcdecdecb3b48231e85090b9dd600a
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145518811"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146591358"
 ---
 # Remove-AzContainerGroup
 
 ## SYNOPSIS
-Hapus grup kontainer yang ditentukan di grup langganan dan sumber daya yang ditentukan.
+Hapus grup kontainer yang ditentukan dalam langganan dan grup sumber daya yang ditentukan.
 Operasi ini tidak menghapus sumber daya lain yang disediakan oleh pengguna, seperti volume.
 
 ## SYNTAX
@@ -33,7 +33,7 @@ Remove-AzContainerGroup -InputObject <IContainerInstanceIdentity> [-DefaultProfi
 ```
 
 ## DESCRIPTION
-Hapus grup kontainer yang ditentukan di grup langganan dan sumber daya yang ditentukan.
+Hapus grup kontainer yang ditentukan dalam langganan dan grup sumber daya yang ditentukan.
 Operasi ini tidak menghapus sumber daya lain yang disediakan oleh pengguna, seperti volume.
 
 ## EXAMPLES
@@ -51,7 +51,7 @@ eastus   test-cg      test-rg
 
 Perintah ini menghapus grup kontainer yang ditentukan.
 
-### Contoh 2: Menghapus grup kontainer dengan menyalurkan
+### Contoh 2: Menghapus grup kontainer dengan mempipa
 ```powershell
 Get-AzContainerGroup -Name test-cg -ResourceGroupName bez-rg | Remove-AzContainerGroup
 ```
@@ -62,7 +62,7 @@ Location Name    Zone ResourceGroupName
 eastus   test-cg      test-rg
 ```
 
-Perintah ini menghapus grup kontainer dengan menyalurkan.
+Perintah ini menghapus grup kontainer dengan pipa.
 
 ## PARAMETERS
 
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ContainerInstance.Models.IContainerInstanceIdentity
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+Info masuk langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
@@ -238,7 +238,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IContainerInstanceIdentity>: Parameter Identitas
+INPUTOBJECT `<IContainerInstanceIdentity>`: Parameter Identitas
   - `[ContainerGroupName <String>]`: Nama grup kontainer.
   - `[ContainerName <String>]`: Nama instans kontainer.
   - `[Id <String>]`: Jalur identitas sumber daya

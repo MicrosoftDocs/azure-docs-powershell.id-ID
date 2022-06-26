@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.maps/get-azmapsa
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/Get-AzMapsAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/Get-AzMapsAccount.md
-ms.openlocfilehash: 38875e04e3880e1c0df6df0d75bc01ebf533aa2a
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: f18740c5b0d8d8600cacdd547cf4455dcbe6fcd8
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145794590"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146592402"
 ---
 # Get-AzMapsAccount
 
@@ -73,9 +73,9 @@ Location Name               Type                    Kind
 eastus   pwsh-mapsAccount01 Microsoft.Maps/accounts Gen1
 ```
 
-Perintah ini mencantumkan semua akun Peta di bawah grup sumber daya.
+Perintah ini mencantumkan semua Akun Peta di bawah grup sumber daya.
 
-### Contoh 3: Mendapatkan Akun Peta
+### Contoh 3: Dapatkan Akun Peta
 ```powershell
 Get-AzMapsAccount -ResourceGroupName azure-rg-test -Name pwsh-mapsAccount01
 ```
@@ -88,7 +88,7 @@ eastus   pwsh-mapsAccount01 Microsoft.Maps/accounts Gen1
 
 Perintah ini mendapatkan Akun Peta.
 
-### Contoh 4: Mendapatkan Akun Peta menurut alur
+### Contoh 4: Mendapatkan Akun Peta berdasarkan alur
 ```powershell
 New-AzMapsAccount -ResourceGroupName azure-rg-test -Name pwsh-mapsAccount01 -SkuName S0 -Location eastus | Get-AzMapsAccount
 ```
@@ -99,7 +99,7 @@ Location Name               Type                    Kind
 eastus   pwsh-mapsAccount01 Microsoft.Maps/accounts Gen1
 ```
 
-Perintah ini mendapatkan Akun Peta menurut alur.
+Perintah ini mendapatkan Akun Peta berdasarkan alur.
 
 ## PARAMETERS
 
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Maps.Models.IMapsIdentity
@@ -199,7 +199,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMapsIdentity>: Parameter Identitas
+INPUTOBJECT `<IMapsIdentity>`: Parameter Identitas
   - `[AccountName <String>]`: Nama Akun Peta.
   - `[CreatorName <String>]`: Nama instans Peta Creator.
   - `[Id <String>]`: Jalur identitas sumber daya

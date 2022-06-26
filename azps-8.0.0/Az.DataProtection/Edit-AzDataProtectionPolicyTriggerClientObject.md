@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.dataprotection/e
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Edit-AzDataProtectionPolicyTriggerClientObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Edit-AzDataProtectionPolicyTriggerClientObject.md
-ms.openlocfilehash: 2ce076bf278b8510983a873e1dd5853ded01ab61
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: a375cc0c91af3ef1d095a29691517e3d450f1d99
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145553737"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146591143"
 ---
 # Edit-AzDataProtectionPolicyTriggerClientObject
 
 ## SYNOPSIS
-Memperbarui jadwal Pencadangan dari kebijakan pencadangan yang ada.
+Updates Jadwal pencadangan dari kebijakan pencadangan yang ada.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Edit-AzDataProtectionPolicyTriggerClientObject -Policy <IBackupPolicy> -Schedule
 ```
 
 ## DESCRIPTION
-Memperbarui jadwal Pencadangan dari kebijakan pencadangan yang ada.
+Updates Jadwal pencadangan dari kebijakan pencadangan yang ada.
 
 ## EXAMPLES
 
@@ -41,13 +41,13 @@ DatasourceType            ObjectType
 {Microsoft.Compute/disks} BackupPolicy
 ```
 
-Perintah ini memperbarui jadwal pencadangan dari kebijakan yang diberikan ke pencadangan harian.
+Perintah ini memperbarui jadwal pencadangan kebijakan yang diberikan ke pencadangan harian.
 
 ## PARAMETERS
 
 ### -Kebijakan
 Objek Kebijakan Pencadangan.
-Untuk membuat, lihat bagian CATATAN untuk properti POLICY dan buat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti POLICY dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Models.Api20210701.IBackupPolicy
@@ -94,10 +94,10 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-KEBIJAKAN <IBackupPolicy>: Objek Kebijakan Pencadangan.
+KEBIJAKAN `<IBackupPolicy>`: Objek Kebijakan Pencadangan.
   - `DatasourceType <String[]>`: Jenis sumber data untuk manajemen cadangan
   - `ObjectType <String>`: 
-  - `PolicyRule <IBasePolicyRule[]>`: Kamus aturan kebijakan yang berisi aturan untuk setiap jenis cadangan yaitu Penuh/Inkremental/Log dll
+  - `PolicyRule <IBasePolicyRule[]>`: Kamus aturan kebijakan yang berisi aturan untuk setiap jenis cadangan yaitu Penuh/Inkremental/Logs dll
     - `Name <String>`: 
     - `ObjectType <String>`: 
     - `DataStoreObjectType <String>`: Jenis objek Datasource, digunakan untuk menginisialisasi jenis warisan yang tepat

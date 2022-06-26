@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.timeseriesinsigh
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/Update-AzTimeSeriesInsightsEventSource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/Update-AzTimeSeriesInsightsEventSource.md
-ms.openlocfilehash: 53a8de9c0632982a254b3276d70a37873efed5d8
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: e745aa8276b76dd4b0df1e0c6f728ee22bfab53e
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145515703"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146589972"
 ---
 # Update-AzTimeSeriesInsightsEventSource
 
 ## SYNOPSIS
-Memperbarui sumber peristiwa dengan nama yang ditentukan dalam langganan, grup sumber daya, dan lingkungan yang ditentukan.
+Updates sumber peristiwa dengan nama yang ditentukan dalam langganan, grup sumber daya, dan lingkungan yang ditentukan.
 
 ## SYNTAX
 
@@ -33,7 +33,7 @@ Update-AzTimeSeriesInsightsEventSource -InputObject <ITimeSeriesInsightsIdentity
 ```
 
 ## DESCRIPTION
-Memperbarui sumber peristiwa dengan nama yang ditentukan dalam langganan, grup sumber daya, dan lingkungan yang ditentukan.
+Updates sumber peristiwa dengan nama yang ditentukan dalam langganan, grup sumber daya, dan lingkungan yang ditentukan.
 
 ## EXAMPLES
 
@@ -236,7 +236,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ITimeSeriesInsightsIdentity>: Parameter Identitas
+INPUTOBJECT `<ITimeSeriesInsightsIdentity>`: Parameter Identitas
   - `[AccessPolicyName <String>]`: Nama kebijakan akses.
   - `[EnvironmentName <String>]`: Nama lingkungan
   - `[EventSourceName <String>]`: Nama sumber peristiwa Time Series Insights yang terkait dengan lingkungan yang ditentukan.

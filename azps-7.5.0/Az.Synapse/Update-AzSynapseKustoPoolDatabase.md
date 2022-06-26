@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseKustoPoolDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseKustoPoolDatabase.md
-ms.openlocfilehash: 184f141b48776e241729c13deac0a65ef679aff2
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 111c5a45ec8229374916334138c3b0099f2c57cd
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145704268"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146592024"
 ---
 # Update-AzSynapseKustoPoolDatabase
 
 ## SYNOPSIS
-Memperbarui database.
+Updates database.
 
 > [!NOTE]
 >Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.synapse/update-azsynapsekustopooldatabase) untuk informasi terbaru.
@@ -38,7 +38,7 @@ Update-AzSynapseKustoPoolDatabase -InputObject <ISynapseIdentity> -Kind <Kind> [
 ```
 
 ## DESCRIPTION
-Memperbarui database.
+Updates database.
 
 ## EXAMPLES
 
@@ -136,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Synapse.Models.ISynapseIdentity
@@ -150,7 +150,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Jenis
+### -Kind
 Jenis database
 
 ```yaml
@@ -322,7 +322,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ISynapseIdentity>: Parameter Identitas
+INPUTOBJECT `<ISynapseIdentity>`: Parameter Identitas
   - `[AttachedDatabaseConfigurationName <String>]`: Nama konfigurasi database terlampir.
   - `[DataConnectionName <String>]`: Nama koneksi data.
   - `[DatabaseName <String>]`: Nama database di kumpulan Kusto.
