@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.datadog/get-azda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/Get-AzDatadogSingleSignOnConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/Get-AzDatadogSingleSignOnConfiguration.md
-ms.openlocfilehash: 3fed63d4bb8026291e55bfa7a52930584d018116
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 20e217a039abff42c20f5db8f41162e8975b0b93
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145498746"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146627428"
 ---
 # Get-AzDatadogSingleSignOnConfiguration
 
@@ -68,7 +68,7 @@ default microsoft.Datadog/monitors/singlesignonconfigurations
 
 Perintah ini mendapatkan sumber daya akses menyeluruh Datadog untuk Monitor yang diberikan.
 
-### Contoh 3: Mendapatkan sumber daya akses menyeluruh Datadog untuk Monitor yang diberikan berdasarkan alur
+### Contoh 3: Mendapatkan sumber daya akses menyeluruh Datadog untuk Monitor berdasarkan alur yang diberikan
 ```powershell
 New-AzDatadogSingleSignOnConfiguration -ResourceGroupName azure-rg-Datadog -MonitorName Datadog -Name 'default' -SingleSignOnState Enable -EnterpriseAppId 00000000-0000-0000-0000-000000000000 | Get-AzDatadogSingleSignOnConfiguration
 ```
@@ -79,7 +79,7 @@ Name    Type
 default microsoft.Datadog/monitors/singlesignonconfigurations
 ```
 
-Perintah ini mendapatkan sumber daya akses menyeluruh Datadog untuk Monitor oleh alur yang diberikan.
+Perintah ini mendapatkan sumber daya akses menyeluruh Datadog untuk Monitor berdasarkan alur yang diberikan.
 
 ## PARAMETERS
 
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.IDatadogIdentity
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -194,11 +194,11 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IDatadogIdentity>: Parameter Identitas
+INPUTOBJECT `<IDatadogIdentity>`: Parameter Identitas
   - `[ConfigurationName <String>]`: Nama konfigurasi
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[MonitorName <String>]`: Memantau nama sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[RuleSetName <String>]`: Nama seperangkat aturan
   - `[SubscriptionId <String>]`: ID langganan target.
 

@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.customlocation/g
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CustomLocation/help/Get-AzCustomLocation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CustomLocation/help/Get-AzCustomLocation.md
-ms.openlocfilehash: b472cd44df55d8e57c3ca657b3d99cde6e91a407
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: 772439da46ba6ce15e36e28e4b2c7a67c6bc24c0
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145789120"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146628742"
 ---
 # Get-AzCustomLocation
 
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -199,9 +199,9 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ICustomLocationIdentity>: Parameter Identitas
+INPUTOBJECT `<ICustomLocationIdentity>`: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[ResourceName <String>]`: Nama Lokasi Kustom.
   - `[SubscriptionId <String>]`: ID langganan target.
 

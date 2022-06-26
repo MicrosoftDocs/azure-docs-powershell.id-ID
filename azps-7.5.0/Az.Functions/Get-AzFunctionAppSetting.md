@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.functions/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Get-AzFunctionAppSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Get-AzFunctionAppSetting.md
-ms.openlocfilehash: 397ba406f1554887925dbf6d9f230f6d5c8eec67
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: 0bc8448cfb584be34ae632ad113c5cc66ad6d7de
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145788022"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146628580"
 ---
 # Get-AzFunctionAppSetting
 
@@ -174,7 +174,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ISite>: 
+INPUTOBJECT `<ISite>`: 
   - `Location <String>`: Lokasi Sumber Daya.
   - `[Kind <String>]`: Jenis sumber daya.
   - `[Tag <IResourceTags>]`: Tag sumber daya.

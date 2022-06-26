@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/update-azfro
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/help/Update-AzFrontDoorCdnRoute.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/help/Update-AzFrontDoorCdnRoute.md
-ms.openlocfilehash: e017809ab54ab738c25e834b79832b8432253ca3
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 62c41c3f712c2c30850b3c8c70d53cd5707b82be
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145548291"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146626222"
 ---
 # Update-AzFrontDoorCdnRoute
 
 ## SYNOPSIS
-Memperbarui rute yang sudah ada dengan nama rute yang ditentukan di bawah langganan, grup sumber daya, profil, dan titik akhir AzureFrontDoor yang ditentukan.
+Updates rute yang sudah ada dengan nama rute yang ditentukan di bawah langganan, grup sumber daya, profil, dan titik akhir AzureFrontDoor yang ditentukan.
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ Update-AzFrontDoorCdnRoute -InputObject <ICdnIdentity> [-CacheConfigurationQuery
 ```
 
 ## DESCRIPTION
-Memperbarui rute yang sudah ada dengan nama rute yang ditentukan di bawah langganan, grup sumber daya, profil, dan titik akhir AzureFrontDoor yang ditentukan.
+Updates rute yang sudah ada dengan nama rute yang ditentukan di bawah langganan, grup sumber daya, profil, dan titik akhir AzureFrontDoor yang ditentukan.
 
 ## EXAMPLES
 
@@ -481,7 +481,7 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 CUSTOMDOMAIN <IActivatedResourceReference[]>: Domain yang direferensikan oleh titik akhir ini.
   - `[Id <String>]`: ID Sumber Daya.
 
-INPUTOBJECT <ICdnIdentity>: Parameter Identitas
+INPUTOBJECT `<ICdnIdentity>`: Parameter Identitas
   - `[CustomDomainName <String>]`: Nama domain di bawah profil yang unik secara global.
   - `[EndpointName <String>]`: Nama titik akhir di bawah profil yang unik secara global.
   - `[Id <String>]`: Jalur identitas sumber daya

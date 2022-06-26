@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.databricks/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Databricks/help/Remove-AzDatabricksVNetPeering.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Databricks/help/Remove-AzDatabricksVNetPeering.md
-ms.openlocfilehash: 42c206951fbc52ea6f7a97f4a96f0ea8f74e58c8
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: b9f83683120c0e79f25f29f13e2a24e29bae7689
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145746982"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146626762"
 ---
 # Remove-AzDatabricksVNetPeering
 
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Databricks.Models.IDatabricksIdentity
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -243,7 +243,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IDatabricksIdentity>: Parameter Identitas
+INPUTOBJECT `<IDatabricksIdentity>`: Parameter Identitas
   - `[GroupId <String>]`: Nama sumber daya tautan privat
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[PeeringName <String>]`: Nama peering vNet ruang kerja.

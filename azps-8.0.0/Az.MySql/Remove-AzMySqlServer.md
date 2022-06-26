@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.mysql/remove-azm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Remove-AzMySqlServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Remove-AzMySqlServer.md
-ms.openlocfilehash: 24d9084959c902231974df02a4b30ec8b0467077
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 0baf635bec518c18c322ed8acae88192f238627f
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145509058"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146627122"
 ---
 # Remove-AzMySqlServer
 
@@ -36,12 +36,12 @@ Menghapus server.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus server MySql menurut resourceGroup dan nama server
+### Contoh 1: Menghapus server MySql dengan resourceGroup dan nama server
 ```powershell
 Remove-AzMySqlServer -ResourceGroupName PowershellMySqlTest -Name mysql-test
 ```
 
-Cmdlet ini menghapus server MySql dengan resourceGroup dan nama server.
+Cmdlet ini menghapus server MySql berdasarkan resourceGroup dan nama server.
 
 ### Contoh 2: Menghapus server MySql menurut identitas
 ```powershell
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.MySql.Models.IMySqlIdentity
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -225,7 +225,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMySqlIdentity>: Parameter Identitas
+INPUTOBJECT `<IMySqlIdentity>`: Parameter Identitas
   - `[BackupName <String>]`: Nama cadangan.
   - `[ConfigurationName <String>]`: Nama konfigurasi server.
   - `[DatabaseName <String>]`: Nama database.

@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.redisenterprisec
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisEnterpriseCache/help/Remove-AzRedisEnterpriseCache.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisEnterpriseCache/help/Remove-AzRedisEnterpriseCache.md
-ms.openlocfilehash: 90fcca0625c9466f855f3b45b9ea3c2932897923
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: e35038700a26f061d62b6d2438b26120a0c86db9
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145620751"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146629336"
 ---
 # Remove-AzRedisEnterpriseCache
 
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -229,14 +229,14 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IRedisEnterpriseCacheIdentity>: Parameter Identitas
+INPUTOBJECT `<IRedisEnterpriseCacheIdentity>`: Parameter Identitas
   - `[ClusterName <String>]`: Nama kluster RedisEnterprise.
   - `[DatabaseName <String>]`: Nama database.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Wilayah tempat operasi berada.
   - `[OperationId <String>]`: Pengidentifikasi unik operasi.
   - `[PrivateEndpointConnectionName <String>]`: Nama koneksi titik akhir privat yang terkait dengan sumber daya Azure
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
 
 ## RELATED LINKS

@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.labservices/upda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Update-AzLabServicesPlanImage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Update-AzLabServicesPlanImage.md
-ms.openlocfilehash: de5af9d81fb1844e1f2b0ea53fa74c1890db17ab
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 17c7f4b3daf1bc5e178be87d0a78588eeb86f4cf
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145518094"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146625502"
 ---
 # Update-AzLabServicesPlanImage
 
 ## SYNOPSIS
-Memperbarui sumber daya gambar.
+Updates sumber daya gambar.
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ Update-AzLabServicesPlanImage -LabPlanName <String> -Name <String> -ResourceGrou
 ```
 
 ## DESCRIPTION
-Memperbarui sumber daya gambar.
+Updates sumber daya gambar.
 
 ## EXAMPLES
 
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -261,7 +261,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-LABPLAN <LabPlan>: 
+LABPLAN `<LabPlan>`: 
   - `Location <String>`: Lokasi geografis tempat sumber daya berada
   - `[AllowedRegion <String[]>]`: Wilayah yang diizinkan untuk digunakan pembuat lab saat membuat lab menggunakan rencana lab ini.
   - `[DefaultAutoShutdownProfileDisconnectDelay <TimeSpan?>]`: Jumlah waktu VM akan tetap berjalan setelah pengguna terputus jika perilaku ini diaktifkan.

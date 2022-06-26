@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.applicationinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/help/Get-AzApplicationInsightsWebTest.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/help/Get-AzApplicationInsightsWebTest.md
-ms.openlocfilehash: 1358a4ed39d9659587e71aa58410330ac1a1eab9
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: d946a4efc2ffb51c92c57ed9ed75f781e8947dff
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145535537"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146626348"
 ---
 # Get-AzApplicationInsightsWebTest
 
@@ -54,7 +54,7 @@ Dapatkan definisi pengujian web Insights Aplikasi tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Mencantumkan semua pengujian web Application Insights di bawah langganan
+### Contoh 1: Mencantumkan semua pengujian web Insights Aplikasi di bawah langganan
 ```powershell
 Get-AzApplicationInsightsWebTest
 ```
@@ -69,7 +69,7 @@ standard-portal-appinsights-portal01 westus2  standard    azpwsh-rg-test
 standard-pwsh01                      westus2  standard    azpwsh-rg-test
 ```
 
-Perintah ini mencantumkan semua pengujian web Application Insights di bawah langganan.
+Perintah ini mencantumkan semua pengujian web Insights Aplikasi di bawah langganan.
 
 ### Contoh 2: Mencantumkan semua pengujian web Insights Aplikasi di bawah grup sumber daya
 ```powershell
@@ -86,7 +86,7 @@ standard-portal-appinsights-portal01 westus2  standard    azpwsh-rg-test
 standard-pwsh01                      westus2  standard    azpwsh-rg-test
 ```
 
-Perintah ini mencantumkan semua pengujian web Application Insights di bawah grup sumber daya.
+Perintah ini mencantumkan semua pengujian web Insights Aplikasi di bawah grup sumber daya.
 
 ### Contoh 3: Mencantumkan semua pengujian web Insights Aplikasi di bawah Insights Aplikasi tertentu
 ```powershell
@@ -103,7 +103,7 @@ standard-portal-appinsights-portal01 westus2  standard    azpwsh-rg-test      Tr
 standard-pwsh01                      westus2  standard    azpwsh-rg-test      True
 ```
 
-Perintah ini mencantumkan semua pengujian web Application Insights di bawah Insights Aplikasi tertentu.
+Perintah ini mencantumkan semua pengujian web Insights Aplikasi di bawah Insights Aplikasi tertentu.
 
 ### Contoh 4: Mendapatkan definisi pengujian web Insights Aplikasi tertentu
 ```powershell
@@ -116,9 +116,9 @@ Name            Location WebTestKind ResourceGroupName  Enabled
 standard-pwsh01 westus2  standard    azpwsh-rg-test     True
 ```
 
-Perintah ini mendapatkan definisi pengujian web Application Insights tertentu.
+Perintah ini mendapatkan definisi pengujian web Insights Aplikasi tertentu.
 
-### Contoh 5: Mendapatkan definisi pengujian web Insights Aplikasi tertentu berdasarkan alur
+### Contoh 5: Mendapatkan definisi pengujian web Insights Aplikasi tertentu menurut alur
 ```powershell
 $location01 = New-AzApplicationInsightsWebTestGeolocationObject -Location "emea-nl-ams-azr"
 $location02 = New-AzApplicationInsightsWebTestGeolocationObject -Location "us-ca-sjc-azr"
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ApplicationInsights.Models.IApplicationInsightsIdentity
@@ -186,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Nama sumber daya Application Insights WebTest.
+Nama sumber daya WebTest Insights Aplikasi.
 
 ```yaml
 Type: System.String
@@ -202,7 +202,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -251,14 +251,14 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IApplicationInsightsIdentity>: Parameter Identitas
+INPUTOBJECT `<IApplicationInsightsIdentity>`: Parameter Identitas
   - `[AnnotationId <String>]`: ID anotasi unik. Ini unik dalam komponen Insights Aplikasi.
   - `[ComponentName <String>]`: Nama sumber daya komponen Insights Aplikasi.
   - `[ExportId <String>]`: ID konfigurasi Ekspor Berkelanjutan. Ini unik dalam komponen Insights Aplikasi.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[KeyId <String>]`: ID Kunci API. Ini unik dalam komponen Insights Aplikasi.
   - `[PurgeId <String>]`: Dalam permintaan status penghapusan menyeluruh, ini adalah Id operasi yang statusnya dikembalikan.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[ResourceName <String>]`: Nama sumber daya komponen Insights Aplikasi.
   - `[StorageType <StorageType?>]`: Jenis sumber data komponen Application Insights untuk akun penyimpanan yang ditautkan.
   - `[SubscriptionId <String>]`: ID langganan target.

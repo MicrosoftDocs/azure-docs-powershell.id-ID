@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayHttpListener.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayHttpListener.md
-ms.openlocfilehash: d244d1c9667b74d2593bb124121055764aa5b78e
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: dca1b3c3069fdf0aec660dd0cd581384ea4d71ac
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145677622"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146628094"
 ---
 # New-AzApplicationGatewayHttpListener
 
@@ -56,13 +56,13 @@ $Listener = New-AzApplicationGatewayHttpListener -Name "Listener01" -Protocol "H
 
 Perintah ini membuat listener HTTP bernama Listener01 dan menyimpan hasilnya dalam variabel bernama $Listener.
 
-### Contoh 2: Membuat listener HTTP dengan SSL
+### Contoh 2: Membuat pendengar HTTP dengan SSL
 ```powershell
 $Listener = New-AzApplicationGatewayHttpListener -Name "Listener01" -Protocol "Https" -FrontendIpConfiguration $FIp01 -FrontendPort $FP01 -SslCertificate $SSLCert01
 ```
 
-Perintah ini membuat listener HTTP yang menggunakan offload SSL dan menyediakan sertifikat SSL dalam variabel $SSLCert 01.
-Perintah menyimpan hasil dalam variabel bernama $Listener.
+Perintah ini membuat pendengar HTTP yang menggunakan offload SSL dan menyediakan sertifikat SSL dalam variabel $SSLCert 01.
+Perintah menyimpan hasilnya dalam variabel bernama $Listener.
 
 ### Contoh 3: Membuat pendengar HTTP dengan kebijakan firewall
 ```powershell
@@ -76,8 +76,8 @@ Perintah ini membuat listener HTTP bernama Listener01, FirewallPolicy sebagai $f
 $Listener = New-AzApplicationGatewayHttpListener -Name "Listener01" -Protocol "Https" -FrontendIpConfiguration $FIp01 -FrontendPort $FP01 -SslCertificate $SSLCert01 -HostNames "*.contoso.com,www.microsoft.com"
 ```
 
-Perintah ini membuat listener HTTP yang menggunakan offload SSL dan menyediakan sertifikat SSL dalam variabel $SSLCert 01 bersama dengan dua HostName.
-Perintah menyimpan hasil dalam variabel bernama $Listener.
+Perintah ini membuat pendengar HTTP yang menggunakan offload SSL dan menyediakan sertifikat SSL dalam variabel $SSLCert 01 bersama dengan dua HostName.
+Perintah menyimpan hasilnya dalam variabel bernama $Listener.
 
 ## PARAMETERS
 
@@ -112,8 +112,10 @@ Accept wildcard characters: False
 ```
 
 ### -FirewallPolicy
-Menentukan referensi objek ke kebijakan firewall tingkat atas. Referensi objek dapat dibuat dengan menggunakan cmdlet New-AzApplicationGatewayWebApplicationFirewallPolicy.
-$firewallPolicy = New-AzApplicationGatewayFirewallPolicy -Name "wafPolicy1" -ResourceGroup "rgName" Kebijakan firewall yang dibuat menggunakan commandlet di atas dapat dirujuk pada tingkat aturan jalur. perintah dia di atas akan membuat pengaturan kebijakan default dan aturan terkelola.
+Menentukan referensi objek ke kebijakan firewall tingkat atas.
+Referensi objek dapat dibuat dengan menggunakan cmdlet New-AzApplicationGatewayWebApplicationFirewallPolicy.
+$firewallPolicy = New-AzApplicationGatewayFirewallPolicy -Name "wafPolicy1" -ResourceGroup "rgName" Kebijakan firewall yang dibuat menggunakan commandlet di atas dapat dirujuk pada tingkat aturan jalur.
+perintah dia di atas akan membuat pengaturan kebijakan default dan aturan terkelola.
 Alih-alih nilai default, pengguna dapat menentukan PolicySettings, ManagedRules dengan menggunakan New-AzApplicationGatewayFirewallPolicySettings dan New-AzApplicationGatewayFirewallPolicyManagedRules masing-masing.
 
 ```yaml
@@ -130,8 +132,9 @@ Accept wildcard characters: False
 
 ### -FirewallPolicyId
 Menentukan ID sumber daya firewall aplikasi web tingkat atas yang ada.
-ID kebijakan firewall dapat dikembalikan dengan menggunakan cmdlet Get-AzApplicationGatewayWebApplicationFirewallPolicy. Setelah kami memiliki ID, Anda dapat menggunakan parameter *FirewallPolicyId* alih-alih parameter *FirewallPolicy* .
-Misalnya: -FirewallPolicyId /subscriptions/<subscription-id>/resourceGroups/<resource-group-id>/providers/Microsoft.Network/ApplicationGatewayWebApplicationFirewallPolicies/<firewallPolicyName>
+ID kebijakan firewall dapat dikembalikan dengan menggunakan cmdlet Get-AzApplicationGatewayWebApplicationFirewallPolicy.
+Setelah kami memiliki ID, Anda dapat menggunakan parameter *FirewallPolicyId* alih-alih parameter *FirewallPolicy* .
+Misalnya: -FirewallPolicyId `/subscriptions/<subscription-id>/resourceGroups/<resource-group-id>/providers/Microsoft.Network/ApplicationGatewayWebApplicationFirewallPolicies/<firewallPolicyName>`
 
 ```yaml
 Type: System.String

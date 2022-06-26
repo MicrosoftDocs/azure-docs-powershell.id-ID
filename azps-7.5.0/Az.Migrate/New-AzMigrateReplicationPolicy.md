@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/new-azmi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/New-AzMigrateReplicationPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/New-AzMigrateReplicationPolicy.md
-ms.openlocfilehash: c3833bc16691ee98f21f787d515c7c61b6f8941b
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: b822d506c0cdc3e5d4c4e113564bc66ccc648d0c
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145817730"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146628256"
 ---
 # New-AzMigrateReplicationPolicy
 
@@ -224,7 +224,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-PROVIDERSPECIFICINPUT <IPolicyProviderSpecificInput>: ReplicationProviderSettings.
+PROVIDERSPECIFICINPUT `<IPolicyProviderSpecificInput>`: ReplicationProviderSettings.
   - `[InstanceType <String>]`: Jenis kelas.
 
 ## RELATED LINKS

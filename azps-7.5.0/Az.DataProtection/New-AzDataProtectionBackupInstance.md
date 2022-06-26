@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.dataprotection/n
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/New-AzDataProtectionBackupInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/New-AzDataProtectionBackupInstance.md
-ms.openlocfilehash: 11b6cf25ab59ff5c384a183e7f8603425d0ce8a2
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 2f315920682910168a638ab6ff99b6cf720c05f6
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145748908"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146626744"
 ---
 # New-AzDataProtectionBackupInstance
 
@@ -51,9 +51,9 @@ sarathdisk-sarathdisk-3df6ac08-9496-4839-8fb5-8b78e594f166 Microsoft.DataProtect
 
 Perintah ketiga mendapatkan kebijakan dengan disk mana yang akan dicadangkan.
 Perintah keempat menginisialisasi permintaan instans cadangan.
-Perintah terakhir mengonfigurasi cadangan disk azure yang diberikan di brankas cadangan.
+Perintah terakhir mengonfigurasi pencadangan disk azure yang diberikan di brankas cadangan.
 
-### Contoh 2: Mengonfigurasi perlindungan untuk database AzureDatabaseForPostgreSQL dalam brankas cadangan (menggunakan autentikasi penyimpanan rahasia).
+### Contoh 2: Mengonfigurasi perlindungan untuk database AzureDatabaseForPostgreSQL di brankas cadangan (menggunakan autentikasi penyimpanan rahasia).
 ```powershell
 $sub = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
 $dataSourceId = "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/ResourceGroupName/providers/Microsoft.DBforPostgreSQL/servers/OssServerName/databases/DBName"
@@ -73,9 +73,9 @@ xyz-postgresql-wus-empdb10-xxxxxxxx-xxxx-xxxx-a3ba-be75108d8b21 Microsoft.DataPr
 
 Perintah ketiga menginisialisasi secretURI untuk autentikasi penyimpanan rahasia.
 
-Perintah kelima mendapatkan kebijakan tempat database akan dilindungi.
+Perintah kelima mendapatkan kebijakan dengan database mana yang akan dilindungi.
 Perintah keenam menginisialisasi objek permintaan instans cadangan.
-Perintah terakhir mengonfigurasi cadangan $dataSourceId yang diberikan di brankas cadangan.
+Perintah terakhir mengonfigurasi pencadangan $dataSourceId yang diberikan di brankas cadangan.
 
 ## PARAMETERS
 
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID Langganan vault
+Id Langganan vault
 
 ```yaml
 Type: System.String
@@ -231,14 +231,14 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-BACKUPINSTANCE <IBackupInstanceResource>: Objek permintaan instans cadangan yang akan digunakan untuk mengonfigurasi pencadangan
+BACKUPINSTANCE `<IBackupInstanceResource>`: Objek permintaan instans cadangan yang akan digunakan untuk mengonfigurasi pencadangan
   - `[Property <IBackupInstance>]`: Properti BackupInstanceResource
     - `DataSourceInfo <IDatasource>`: Mendapatkan atau mengatur informasi sumber data.
       - `ResourceId <String>`: ID ARM lengkap sumber daya. Untuk sumber daya azure, ini adalah ARM ID. Untuk sumber daya non azure, ini akan menjadi ID yang dibuat oleh layanan cadangan melalui Fabric/Vault.
       - `[ObjectType <String>]`: Jenis objek Datasource, digunakan untuk menginisialisasi jenis warisan yang tepat
       - `[ResourceLocation <String>]`: Lokasi sumber data.
       - `[ResourceName <String>]`: Pengidentifikasi unik sumber daya dalam konteks induk.
-      - `[ResourceType <String>]`: Jenis Sumber Daya Sumber Daya.
+      - `[ResourceType <String>]`: Jenis Sumber Daya Sumber Data.
       - `[ResourceUri <String>]`: Uri sumber daya.
       - `[Type <String>]`: DatasourceType sumber daya.
     - `ObjectType <String>`: 
@@ -254,7 +254,7 @@ BACKUPINSTANCE <IBackupInstanceResource>: Objek permintaan instans cadangan yang
       - `[ObjectType <String>]`: Jenis objek Datasource, digunakan untuk menginisialisasi jenis warisan yang tepat
       - `[ResourceLocation <String>]`: Lokasi sumber data.
       - `[ResourceName <String>]`: Pengidentifikasi unik sumber daya dalam konteks induk.
-      - `[ResourceType <String>]`: Jenis Sumber Daya Sumber Daya.
+      - `[ResourceType <String>]`: Jenis Sumber Daya Sumber Data.
       - `[ResourceUri <String>]`: Uri sumber daya.
     - `[DatasourceAuthCredentials <IAuthCredentials>]`: Kredensial yang digunakan untuk mengautentikasi dengan penyedia sumber data.
       - `ObjectType <String>`: Jenis objek tertentu - digunakan untuk deserialisasi

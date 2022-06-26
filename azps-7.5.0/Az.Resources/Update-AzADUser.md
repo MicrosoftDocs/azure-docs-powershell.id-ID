@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/update
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Update-AzADUser.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Update-AzADUser.md
-ms.openlocfilehash: 2bf985855d270f9380c5092afc623c239e176835
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 7a6631b43ad7d44861fdf3c0a97bebd694616485
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145638188"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146627842"
 ---
 # Update-AzADUser
 
 ## SYNOPSIS
-Memperbarui entitas dalam pengguna
+Updates entitas dalam pengguna
 
 [!INCLUDE [msgraph-migration-banner-az7](../../includes/msgraph-migration-banner-az7.md)]
 
@@ -85,7 +85,7 @@ Update-AzADUser [-AccountEnabled <Boolean>] [-Password <SecureString>] [-ForceCh
 ```
 
 ## DESCRIPTION
-Memperbarui entitas dalam pengguna
+Updates entitas dalam pengguna
 
 ## EXAMPLES
 
@@ -514,7 +514,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Nama utama pengguna dari pengguna yang akan diperbarui.
+Nama utama pengguna pengguna yang akan diperbarui.
 
 ```yaml
 Type: System.String
@@ -580,7 +580,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -766,8 +766,8 @@ Accept wildcard characters: False
 
 ### -UsageLocation
 Kode negara dua huruf (standar ISO 3166).
-Diperlukan bagi pengguna yang akan diberi lisensi karena persyaratan hukum untuk memeriksa ketersediaan layanan di negara- negara.
-Contohnya meliputi: AS, JP, dan GB.
+Diperlukan untuk pengguna yang akan diberi lisensi karena persyaratan hukum untuk memeriksa ketersediaan layanan di negara- negara.
+Contohnya meliputi: US, JP, dan GB.
 Tidak dapat diubah ke null.
 Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith).
 
@@ -789,7 +789,7 @@ UPN adalah nama untuk masuk berbasis Internet untuk pengguna berdasarkan standar
 Menurut konvensi, ini harus dipetakan ke nama email pengguna.
 Format umumnya adalah alias@domain, di mana domain harus ada dalam kumpulan domain terverifikasi penyewa.
 Properti ini diperlukan saat pengguna dibuat.
-Domain terverifikasi untuk penyewa dapat diakses dari properti verifiedDomains organisasi. CATATAN: Meskipun properti ini dapat berisi karakter aksen, properti ini dapat menyebabkan masalah akses ke aplikasi pihak pertama untuk pengguna.
+Domain terverifikasi untuk penyewa dapat diakses dari properti organisasi verifiedDomains. CATATAN: Meskipun properti ini dapat berisi karakter aksen, properti ini dapat menyebabkan masalah akses ke aplikasi pihak pertama untuk pengguna.
 Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith, endsWith) dan $orderBy.
 
 ```yaml
@@ -875,10 +875,10 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 IDENTITY <IMicrosoftGraphObjectIdentity[]>: Mewakili identitas yang dapat digunakan untuk masuk ke akun pengguna ini. Identitas dapat disediakan oleh Microsoft (juga dikenal sebagai akun lokal), oleh organisasi, atau oleh penyedia identitas sosial seperti Facebook, Google, dan Microsoft, dan terkait dengan akun pengguna. Mungkin berisi beberapa item dengan nilai signInType yang sama. Mendukung $filter (eq) hanya di mana signInType bukan userPrincipalName.
   - `[Issuer <String>]`: Menentukan penerbit identitas, misalnya facebook.com.Untuk akun lokal (di mana signInType tidak terfederasi), properti ini adalah nama domain default penyewa B2C lokal, misalnya contoso.onmicrosoft.com.Untuk pengguna eksternal dari organisasi Azure AD lain, ini akan menjadi domain organisasi federasi, misalnya contoso.com.Supports $filter. Batas karakter 512.
-  - `[IssuerAssignedId <String>]`: Menentukan pengidentifikasi unik yang ditetapkan untuk pengguna oleh penerbit. Kombinasi penerbit dan issuerAssignedId harus unik dalam organisasi. Mewakili nama masuk untuk pengguna, saat signInType diatur ke emailAddress atau userName (juga dikenal sebagai akun lokal). Ketika signInType diatur ke: emailAddress, (atau string kustom yang dimulai dengan emailAddress seperti emailAddress1) issuerAssignedId harus berupa addressuserName email yang valid, issuerAssignedId harus menjadi bagian lokal yang valid dari alamat emailSupports $filter. Batas 100 karakter.
-  - `[SignInType <String>]`: Menentukan jenis masuk pengguna di direktori Anda, seperti emailAddress, userName, atau federated. Di sini, federasi mewakili pengidentifikasi unik untuk pengguna dari penerbit, yang dapat dalam format apa pun yang dipilih oleh pengeluar sertifikat. Validasi tambahan diberlakukan pada issuerAssignedId saat jenis masuk diatur ke emailAddress atau userName. Properti ini juga dapat diatur ke string kustom apa pun.
+  - `[IssuerAssignedId <String>]`: Menentukan pengidentifikasi unik yang ditetapkan untuk pengguna oleh penerbit. Kombinasi pengeluar sertifikat dan issuerAssignedId harus unik dalam organisasi. Mewakili nama masuk untuk pengguna, saat signInType diatur ke emailAddress atau userName (juga dikenal sebagai akun lokal). Ketika signInType diatur ke: emailAddress, (atau string kustom yang dimulai dengan emailAddress seperti emailAddress1) issuerAssignedId harus berupa addressuserName email yang valid, issuerAssignedId harus menjadi bagian lokal yang valid dari alamat emailSupports $filter. Batas 100 karakter.
+  - `[SignInType <String>]`: Menentukan jenis masuk pengguna di direktori Anda, seperti emailAddress, userName, atau federated. Di sini, federasi mewakili pengidentifikasi unik untuk pengguna dari penerbit, yang dapat dalam format apa pun yang dipilih oleh penerbit. Validasi tambahan diberlakukan pada issuerAssignedId saat jenis masuk diatur ke emailAddress atau userName. Properti ini juga dapat diatur ke string kustom apa pun.
 
-INPUTOBJECT <IMicrosoftGraphUser>: objek input pengguna
+INPUTOBJECT `<IMicrosoftGraphUser>`: objek input pengguna
   - `[(Any) <Object>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
   - `[DeletedDateTime <DateTime?>]`: 
   - `[DisplayName <String>]`: Nama yang ditampilkan dalam direktori
@@ -917,8 +917,8 @@ INPUTOBJECT <IMicrosoftGraphUser>: objek input pengguna
   - `[PasswordPolicy <String>]`: Menentukan kebijakan kata sandi untuk pengguna. Nilai ini adalah enumerasi dengan satu nilai yang mungkin adalah DisableStrongPassword, yang memungkinkan kata sandi yang lebih lemah daripada kebijakan default yang ditentukan. DisablePasswordExpiration juga dapat ditentukan. Keduanya dapat ditentukan bersama-sama; misalnya: DisablePasswordExpiration, DisableStrongPassword.Supports $filter (ne, NOT).
   - `[PasswordProfile <IMicrosoftGraphPasswordProfile>]`: passwordProfile
     - `[(Any) <Object>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
-    - `[ForceChangePasswordNextSignIn <Boolean?>]`: benar jika pengguna harus mengubah kata sandinya pada login berikutnya; jika tidak salah. Jika tidak diatur, defaultnya adalah false. CATATAN: Untuk penyewa Azure B2C, atur ke false dan sebagai gantinya gunakan kebijakan kustom dan alur pengguna untuk memaksa reset kata sandi saat pertama kali masuk. Lihat Memaksa reset kata sandi pada log masuk pertama.
-    - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: Jika true, pada rincian masuk berikutnya, pengguna harus melakukan autentikasi multifaktor (MFA) sebelum dipaksa untuk mengubah kata sandi mereka. Perilaku ini identik dengan forceChangePasswordNextSignIn kecuali bahwa pengguna diperlukan untuk terlebih dahulu melakukan autentikasi multifaktor sebelum perubahan kata sandi. Setelah perubahan kata sandi, properti ini akan secara otomatis diatur ulang ke false. Jika tidak diatur, defaultnya adalah false.
+    - `[ForceChangePasswordNextSignIn <Boolean?>]`: benar jika pengguna harus mengubah kata sandinya pada login berikutnya; jika tidak salah. Jika tidak diatur, defaultnya adalah false. CATATAN: Untuk penyewa Azure B2C, atur ke false dan sebagai gantinya gunakan kebijakan kustom dan alur pengguna untuk memaksa reset kata sandi saat pertama kali masuk. Lihat Memaksa reset kata sandi pada saat pertama kali masuk.
+    - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: Jika true, pada rincian masuk berikutnya, pengguna harus melakukan autentikasi multifaktor (MFA) sebelum dipaksa untuk mengubah kata sandi mereka. Perilaku ini identik dengan forceChangePasswordNextSignIn kecuali bahwa pengguna harus terlebih dahulu melakukan autentikasi multifaktor sebelum perubahan kata sandi. Setelah perubahan kata sandi, properti ini akan secara otomatis direset ke false. Jika tidak diatur, defaultnya adalah false.
     - `[Password <String>]`: Kata sandi untuk pengguna. Properti ini diperlukan saat pengguna dibuat. Ini dapat diperbarui, tetapi pengguna akan diminta untuk mengubah kata sandi pada login berikutnya. Kata sandi harus memenuhi persyaratan minimum seperti yang ditentukan oleh properti passwordPolicies pengguna. Secara default, kata sandi yang kuat diperlukan.
   - `[PhysicalId <String[]>]`: Hanya untuk penggunaan internal. Tidak dapat diubah ke null. Mendukung $filter (eq, bukan, ge, le, startsWith).
   - `[PostalCode <String>]`: Kode pos untuk alamat pos pengguna. Kode pos khusus untuk negara/wilayah pengguna. Di Amerika Serikat, atribut ini berisi kode pos. Panjang maksimum adalah 40 karakter. Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith).
@@ -928,14 +928,14 @@ INPUTOBJECT <IMicrosoftGraphUser>: objek input pengguna
   - `[StreetAddress <String>]`: Alamat jalan tempat bisnis pengguna. Panjang maksimum adalah 1024 karakter. Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith).
   - `[Surname <String>]`: Nama keluarga pengguna (nama keluarga atau nama belakang). Panjang maksimum adalah 64 karakter. Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith).
   - `[TrustType <String>]`: Jenis kepercayaan untuk perangkat yang bergabung. Baca-saja. Nilai yang mungkin: Tempat kerja (menunjukkan bawa perangkat pribadi Anda sendiri), AzureAd (Perangkat yang bergabung hanya cloud), ServerAd (perangkat yang bergabung dengan domain lokal bergabung ke Azure AD). Untuk detail selengkapnya, lihat Pengenalan manajemen perangkat di Azure Active Directory
-  - `[UsageLocation <String>]`: Kode negara dua huruf (standar ISO 3166). Diperlukan untuk pengguna yang akan diberi lisensi karena persyaratan hukum untuk memeriksa ketersediaan layanan di negara- negara.  Contohnya meliputi: US, JP, dan GB. Tidak dapat diubah ke null. Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith).
-  - `[UserPrincipalName <String>]`: Nama prinsipal pengguna (UPN) pengguna. UPN adalah nama untuk masuk berbasis Internet untuk pengguna berdasarkan standar Internet RFC 822. Menurut konvensi, ini harus dipetakan ke nama email pengguna. Format umumnya adalah alias@domain, di mana domain harus ada dalam kumpulan domain terverifikasi penyewa. Properti ini diperlukan saat pengguna dibuat. Domain terverifikasi untuk penyewa dapat diakses dari properti organisasi verifiedDomains. CATATAN: Meskipun properti ini dapat berisi karakter aksen, properti ini dapat menyebabkan masalah akses ke aplikasi pihak pertama untuk pengguna. Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith, endsWith) dan $orderBy.
+  - `[UsageLocation <String>]`: Kode negara dua huruf (standar ISO 3166). Diperlukan bagi pengguna yang akan diberi lisensi karena persyaratan hukum untuk memeriksa ketersediaan layanan di negara- negara.  Contohnya meliputi: AS, JP, dan GB. Tidak dapat diubah ke null. Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith).
+  - `[UserPrincipalName <String>]`: Nama prinsipal pengguna (UPN) pengguna. UPN adalah nama untuk masuk berbasis Internet untuk pengguna berdasarkan standar Internet RFC 822. Menurut konvensi, ini harus dipetakan ke nama email pengguna. Format umumnya adalah alias@domain, di mana domain harus ada dalam kumpulan domain terverifikasi penyewa. Properti ini diperlukan saat pengguna dibuat. Domain terverifikasi untuk penyewa dapat diakses dari properti verifiedDomains organisasi. CATATAN: Meskipun properti ini dapat berisi karakter aksen, properti ini dapat menyebabkan masalah akses ke aplikasi pihak pertama untuk pengguna. Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith, endsWith) dan $orderBy.
   - `[UserType <String>]`: Nilai string yang dapat digunakan untuk mengklasifikasikan jenis pengguna di direktori Anda, seperti Anggota dan Tamu. Mendukung $filter (eq, ne, NOT, in,).
 
-PASSWORDPROFILE <IMicrosoftGraphPasswordProfile>: passwordProfile
+PASSWORDPROFILE `<IMicrosoftGraphPasswordProfile>`: passwordProfile
   - `[(Any) <Object>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
-  - `[ForceChangePasswordNextSignIn <Boolean?>]`: benar jika pengguna harus mengubah kata sandinya pada login berikutnya; jika tidak salah. Jika tidak diatur, defaultnya adalah false. CATATAN: Untuk penyewa Azure B2C, atur ke false dan sebagai gantinya gunakan kebijakan kustom dan alur pengguna untuk memaksa reset kata sandi saat pertama kali masuk. Lihat Memaksa reset kata sandi pada log masuk pertama.
-  - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: Jika true, pada rincian masuk berikutnya, pengguna harus melakukan autentikasi multifaktor (MFA) sebelum dipaksa untuk mengubah kata sandi mereka. Perilaku ini identik dengan forceChangePasswordNextSignIn kecuali bahwa pengguna diperlukan untuk terlebih dahulu melakukan autentikasi multifaktor sebelum perubahan kata sandi. Setelah perubahan kata sandi, properti ini akan secara otomatis diatur ulang ke false. Jika tidak diatur, defaultnya adalah false.
+  - `[ForceChangePasswordNextSignIn <Boolean?>]`: benar jika pengguna harus mengubah kata sandinya pada login berikutnya; jika tidak salah. Jika tidak diatur, defaultnya adalah false. CATATAN: Untuk penyewa Azure B2C, atur ke false dan sebagai gantinya gunakan kebijakan kustom dan alur pengguna untuk memaksa reset kata sandi saat pertama kali masuk. Lihat Memaksa reset kata sandi pada saat pertama kali masuk.
+  - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: Jika true, pada rincian masuk berikutnya, pengguna harus melakukan autentikasi multifaktor (MFA) sebelum dipaksa untuk mengubah kata sandi mereka. Perilaku ini identik dengan forceChangePasswordNextSignIn kecuali bahwa pengguna harus terlebih dahulu melakukan autentikasi multifaktor sebelum perubahan kata sandi. Setelah perubahan kata sandi, properti ini akan secara otomatis direset ke false. Jika tidak diatur, defaultnya adalah false.
   - `[Password <String>]`: Kata sandi untuk pengguna. Properti ini diperlukan saat pengguna dibuat. Ini dapat diperbarui, tetapi pengguna akan diminta untuk mengubah kata sandi pada login berikutnya. Kata sandi harus memenuhi persyaratan minimum seperti yang ditentukan oleh properti passwordPolicies pengguna. Secara default, kata sandi yang kuat diperlukan.
 
 ## RELATED LINKS

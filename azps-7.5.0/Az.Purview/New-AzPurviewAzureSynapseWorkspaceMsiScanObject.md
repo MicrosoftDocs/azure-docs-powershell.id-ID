@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.Purview/new-AzPu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAzureSynapseWorkspaceMsiScanObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAzureSynapseWorkspaceMsiScanObject.md
-ms.openlocfilehash: 7696dccd007972eb83af95d8cc6d61f4e5603959
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 8f97d1ebde8ea3c59ebcbbca9c5fc0dafc248fe8
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145652728"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146627968"
 ---
 # New-AzPurviewAzureSynapseWorkspaceMsiScanObject
 
@@ -221,7 +221,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-RESOURCETYPE <IExpandingResourceScanPropertiesResourceTypes>: 
+RESOURCETYPE `<IExpandingResourceScanPropertiesResourceTypes>`: 
   - `[AdlGen1ScanRulesetName <String>]`: 
   - `[AdlGen1ScanRulesetType <ScanRulesetType?>]`: 
   - `[AdlGen2ScanRulesetName <String>]`: 

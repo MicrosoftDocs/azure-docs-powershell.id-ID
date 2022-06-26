@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.monitoringsoluti
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MonitoringSolutions/help/Remove-AzMonitorLogAnalyticsSolution.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MonitoringSolutions/help/Remove-AzMonitorLogAnalyticsSolution.md
-ms.openlocfilehash: f6cf08938b211cc61489b875ec9cd9d162da5d0f
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: b2957e308365af6db4056f1c1cbd1b64325a5411
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145779652"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146628220"
 ---
 # Remove-AzMonitorLogAnalyticsSolution
 
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.MonitoringSolutions.Models.IMonitoringSolutionsIdentity
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -206,9 +206,9 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMonitoringSolutionsIdentity>: Parameter Identitas
+INPUTOBJECT `<IMonitoringSolutionsIdentity>`: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[ManagementAssociationName <String>]`: User ManagementAssociation Name.
+  - `[ManagementAssociationName <String>]`: Nama Manajemen PenggunaAssosiasi.
   - `[ManagementConfigurationName <String>]`: Nama Konfigurasi Manajemen Pengguna.
   - `[ProviderName <String>]`: Nama penyedia untuk sumber daya induk.
   - `[ResourceGroupName <String>]`: Nama grup sumber daya yang akan didapatkan. Nama tidak peka huruf besar/kecil.

@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.mariadb/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/Update-AzMariaDbConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/Update-AzMariaDbConfiguration.md
-ms.openlocfilehash: a0531f2fb488137a5d354b370b97d88fcbae2579
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: 70f32bbf493cad08acf23bd0ac745ab0f94a9941
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145776378"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146628346"
 ---
 # Update-AzMariaDbConfiguration
 
 ## SYNOPSIS
-Memperbarui konfigurasi server.
+Updates konfigurasi server.
 Gunakan Update-AzMariaDbServer sebagai gantinya jika Anda ingin memperbarui AdministratorLoginPassword, sku, dll.
 
 > [!NOTE]
@@ -37,7 +37,7 @@ Update-AzMariaDbConfiguration -InputObject <IMariaDbIdentity> [-Source <String>]
 ```
 
 ## DESCRIPTION
-Memperbarui konfigurasi server.
+Updates konfigurasi server.
 Gunakan Update-AzMariaDberver sebagai gantinya jika Anda ingin memperbarui AdministratorLoginPassword, sku, dll.
 
 ## EXAMPLES
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.MariaDb.Models.IMariaDbIdentity
@@ -259,7 +259,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMariaDbIdentity>: Parameter Identitas
+INPUTOBJECT `<IMariaDbIdentity>`: Parameter Identitas
   - `[ConfigurationName <String>]`: Nama konfigurasi server.
   - `[DatabaseName <String>]`: Nama database.
   - `[FirewallRuleName <String>]`: Nama aturan firewall server.

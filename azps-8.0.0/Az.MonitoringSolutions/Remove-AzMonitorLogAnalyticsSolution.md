@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.monitoringsoluti
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MonitoringSolutions/help/Remove-AzMonitorLogAnalyticsSolution.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MonitoringSolutions/help/Remove-AzMonitorLogAnalyticsSolution.md
-ms.openlocfilehash: 3c23ed08804875cc267ddd553a17d13195c165ea
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 0bafc2cada2f4e11ee1c50c9199cd694b60b98e8
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145620252"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146629732"
 ---
 # Remove-AzMonitorLogAnalyticsSolution
 
@@ -76,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.MonitoringSolutions.Models.IMonitoringSolutionsIdentity
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya yang akan didapatkan.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -203,12 +203,12 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMonitoringSolutionsIdentity>: Parameter Identitas
+INPUTOBJECT `<IMonitoringSolutionsIdentity>`: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[ManagementAssociationName <String>]`: Nama Manajemen PenggunaAssosiasi.
+  - `[ManagementAssociationName <String>]`: User ManagementAssociation Name.
   - `[ManagementConfigurationName <String>]`: Nama Konfigurasi Manajemen Pengguna.
   - `[ProviderName <String>]`: Nama penyedia untuk sumber daya induk.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang akan didapatkan. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang akan didapatkan. Nama tidak peka huruf besar/kecil.
   - `[ResourceName <String>]`: Nama sumber daya induk.
   - `[ResourceType <String>]`: Jenis sumber daya untuk sumber daya induk
   - `[SolutionName <String>]`: Nama Solusi Pengguna.

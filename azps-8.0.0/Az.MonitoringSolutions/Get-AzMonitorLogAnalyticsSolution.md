@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.monitoringsoluti
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MonitoringSolutions/help/Get-AzMonitorLogAnalyticsSolution.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MonitoringSolutions/help/Get-AzMonitorLogAnalyticsSolution.md
-ms.openlocfilehash: b2adb6512546dfa2c1490138844a19fdc69d7eb1
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 0e8429c6637ed7015f0afc1847ef471cfba011b4
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145558035"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146629750"
 ---
 # Get-AzMonitorLogAnalyticsSolution
 
@@ -164,7 +164,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya yang akan didapatkan.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -214,12 +214,12 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMonitoringSolutionsIdentity>: Parameter Identitas
+INPUTOBJECT `<IMonitoringSolutionsIdentity>`: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ManagementAssociationName <String>]`: Nama Manajemen PenggunaAssosiasi.
   - `[ManagementConfigurationName <String>]`: Nama Konfigurasi Manajemen Pengguna.
   - `[ProviderName <String>]`: Nama penyedia untuk sumber daya induk.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang akan didapatkan. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang akan didapatkan. Nama tidak peka huruf besar/kecil.
   - `[ResourceName <String>]`: Nama sumber daya induk.
   - `[ResourceType <String>]`: Jenis sumber daya untuk sumber daya induk
   - `[SolutionName <String>]`: Nama Solusi Pengguna.

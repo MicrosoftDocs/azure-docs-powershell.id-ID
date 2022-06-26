@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.kusto/new-azkust
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/New-AzKustoManagedPrivateEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/New-AzKustoManagedPrivateEndpoint.md
-ms.openlocfilehash: 0ab7d60678530fb031ef65c649f1ff325f29d9a7
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 295207ec101e3b468c26414fd8b5c504f33aca2f
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145513579"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146625718"
 ---
 # New-AzKustoManagedPrivateEndpoint
 
@@ -287,7 +287,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-PARAMETER <IManagedPrivateEndpoint>: Kelas yang mewakili titik akhir privat terkelola.
+PARAMETER `<IManagedPrivateEndpoint>`: Kelas yang mewakili titik akhir privat terkelola.
   - `[AzureAsyncOperation <String>]`: 
   - `[GroupId <String>]`: GroupId tempat titik akhir privat terkelola dibuat.
   - `[PrivateLinkResourceId <String>]`: ID sumber daya ARM dari sumber daya tempat titik akhir privat terkelola dibuat.
@@ -297,7 +297,7 @@ PARAMETER <IManagedPrivateEndpoint>: Kelas yang mewakili titik akhir privat terk
   - `[SystemDataCreatedBy <String>]`: Identitas yang membuat sumber daya.
   - `[SystemDataCreatedByType <CreatedByType?>]`: Jenis identitas yang membuat sumber daya.
   - `[SystemDataLastModifiedAt <DateTime?>]`: Tanda waktu modifikasi terakhir sumber daya (UTC)
-  - `[SystemDataLastModifiedBy <String>]`: Identitas yang terakhir mengubah sumber daya.
+  - `[SystemDataLastModifiedBy <String>]`: Identitas yang terakhir memodifikasi sumber daya.
   - `[SystemDataLastModifiedByType <CreatedByType?>]`: Jenis identitas yang terakhir memodifikasi sumber daya.
 
 ## RELATED LINKS

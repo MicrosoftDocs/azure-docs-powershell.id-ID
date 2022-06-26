@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/start-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Start-AzMigrateTestMigration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Start-AzMigrateTestMigration.md
-ms.openlocfilehash: 64a9f89aca5d0d713c8f2a2fb6aec6a3dd4cd6cf
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: e5238d89123d9c520a489049f5803c8165829e3e
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145510666"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146629822"
 ---
 # Start-AzMigrateTestMigration
 
@@ -67,7 +67,7 @@ Type                             : Microsoft.RecoveryServices/vaults/replication
 
 Berdasarkan id komputer.
 
-### Contoh 2: Berdasarkan objek input
+### Contoh 2: Menurut objek input
 ```powershell
 $obj = Get-AzMigrateServerReplication -TargetObjectID $env.srsMachineId -SubscriptionId $env.srsSubscriptionId
 Start-AzMigrateTestMigration -InputObject $obj -TestNetworkId '/subscriptions/xxx-xxx-xxx/resourceGroups/AzMigratePWSHtargetRG/providers/Microsoft.Network/virtualNetworks/AzMigrateTargetNetwork'
@@ -97,7 +97,7 @@ Type                             : Microsoft.RecoveryServices/vaults/replication
 
 ```
 
-Dengan objek input.
+Berdasarkan objek input.
 
 ## PARAMETERS
 
@@ -165,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -TestNetworkID
-Memperbarui id Virtual Network dalam langganan Azure tujuan yang akan digunakan untuk migrasi pengujian.
+Updates id Virtual Network dalam langganan Azure tujuan yang akan digunakan untuk migrasi pengujian.
 
 ```yaml
 Type: System.String
@@ -197,7 +197,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMigrationItem>: Menentukan server replikasi yang migrasi pengujiannya perlu dimulai. Objek server dapat diambil menggunakan cmdlet Get-AzMigrateServerReplication.
+INPUTOBJECT `<IMigrationItem>`: Menentukan server replikasi yang migrasi pengujiannya perlu dimulai. Objek server dapat diambil menggunakan cmdlet Get-AzMigrateServerReplication.
   - `[Location <String>]`: Lokasi Sumber Daya
   - `[ProviderSpecificDetail <IMigrationProviderSpecificSettings>]`: Pengaturan kustom penyedia migrasi.
 

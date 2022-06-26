@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.providerhub/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/New-AzProviderHubManifest.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/New-AzProviderHubManifest.md
-ms.openlocfilehash: 429ede90a1d340b40794c70d2b1262033a6386d1
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 85501ba670bcf3650ff01761c02e2980f449cc13
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145656906"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146628022"
 ---
 # New-AzProviderHubManifest
 
@@ -52,7 +52,7 @@ Microsoft.Contoso Internal, Hidden 2.0
 
 Buat manifes penyedia sumber daya.
 
-### Contoh 2: Buat manifes penyedia sumber daya.
+### Contoh 2: Hasilkan manifes penyedia sumber daya.
 ```powershell
 New-AzProviderHubManifest -ProviderNamespace "Microsoft.Contoso"
 ```
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.IProviderHubIdentity
@@ -178,7 +178,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IProviderHubIdentity>: Parameter Identitas
+INPUTOBJECT `<IProviderHubIdentity>`: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[NestedResourceTypeFirst <String>]`: Jenis sumber daya anak pertama.
   - `[NestedResourceTypeSecond <String>]`: Jenis sumber daya anak kedua.

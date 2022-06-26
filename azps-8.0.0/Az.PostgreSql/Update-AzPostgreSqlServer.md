@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.postgresql/updat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Update-AzPostgreSqlServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Update-AzPostgreSqlServer.md
-ms.openlocfilehash: c7d3bc946f13dafd623d93b299b1f405e96b7c68
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 81d3790d0ee18a6211d4378ac2d07fc0a3e8de3c
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145552788"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146629444"
 ---
 # Update-AzPostgreSqlServer
 
@@ -61,7 +61,7 @@ postgresqltestserver eastus   pwsh               9.6     5120                   
 
 Cmdlet ini memperbarui server PostgreSql berdasarkan grup sumber daya dan nama server.
 
-### Contoh 2: Memperbarui server PostgreSql menurut identitas.
+### Contoh 2: Perbarui server PostgreSql menurut identitas.
 ```powershell
 Get-AzPostgreSqlServer -ResourceGroupName PostgreSqlTestRG -ServerName PostgreSqlTestServer | Update-AzPostgreSqlServer -BackupRetentionDay 23
 ```
@@ -321,7 +321,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAutogrow
-Aktifkan Storage Tumbuh Otomatis.
+Aktifkan Storage Pertumbuhan Otomatis.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.PostgreSql.Support.StorageAutogrow
@@ -336,7 +336,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageInMb
-Penyimpanan maks yang diizinkan untuk server.
+Penyimpanan maksimum yang diizinkan untuk server.
 
 ```yaml
 Type: System.Int32
@@ -431,13 +431,13 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IPostgreSqlIdentity>: Parameter Identitas.
+INPUTOBJECT `<IPostgreSqlIdentity>`: Parameter Identitas.
   - `[ConfigurationName <String>]`: Nama konfigurasi server.
   - `[DatabaseName <String>]`: Nama database.
   - `[FirewallRuleName <String>]`: Nama aturan firewall server.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[LocationName <String>]`: Nama lokasi.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SecurityAlertPolicyName <SecurityAlertPolicyName?>]`: Nama kebijakan pemberitahuan keamanan.
   - `[ServerName <String>]`: Nama server.
   - `[SubscriptionId <String>]`: ID langganan target.

@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.applicationinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/help/Remove-AzApplicationInsightsWebTest.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/help/Remove-AzApplicationInsightsWebTest.md
-ms.openlocfilehash: eed9636c816f0d885f1b58ece1b387d8dc9ae601
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 59e95cc521d02cc124266e2370522ce890b4294e
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145528846"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146627644"
 ---
 # Remove-AzApplicationInsightsWebTest
 
@@ -41,14 +41,14 @@ Menghapus pengujian web Insights Aplikasi.
 Remove-AzApplicationInsightsWebTest -ResourceGroupName azpwsh-rg-test -Name standardwebtest01-lucasappinsights
 ```
 
-Perintah ini menghapus pengujian web Application Insights.
+Perintah ini menghapus pengujian web Insights Aplikasi.
 
 ### Contoh 2: Menghapus pengujian web Insights Aplikasi berdasarkan alur
 ```powershell
 Get-AzApplicationInsightsWebTest -ResourceGroupName azpwsh-rg-test -Name webtest01-lucasappinsights | Remove-AzApplicationInsightsWebTest
 ```
 
-Perintah ini menghapus pengujian web Application Insights berdasarkan alur.
+Perintah ini menghapus pengujian web Insights Aplikasi berdasarkan alur.
 
 ## PARAMETERS
 
@@ -68,7 +68,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ApplicationInsights.Models.IApplicationInsightsIdentity
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Nama sumber daya Application Insights WebTest.
+Nama sumber daya WebTest Insights Aplikasi.
 
 ```yaml
 Type: System.String
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -194,14 +194,14 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IApplicationInsightsIdentity>: Parameter Identitas
+INPUTOBJECT `<IApplicationInsightsIdentity>`: Parameter Identitas
   - `[AnnotationId <String>]`: ID anotasi unik. Ini unik dalam komponen Insights Aplikasi.
   - `[ComponentName <String>]`: Nama sumber daya komponen Insights Aplikasi.
   - `[ExportId <String>]`: ID konfigurasi Ekspor Berkelanjutan. Ini unik dalam komponen Insights Aplikasi.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[KeyId <String>]`: ID Kunci API. Ini unik dalam komponen Insights Aplikasi.
   - `[PurgeId <String>]`: Dalam permintaan status penghapusan menyeluruh, ini adalah Id operasi yang statusnya dikembalikan.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[ResourceName <String>]`: Nama sumber daya komponen Insights Aplikasi.
   - `[StorageType <StorageType?>]`: Jenis sumber data komponen Application Insights untuk akun penyimpanan yang ditautkan.
   - `[SubscriptionId <String>]`: ID langganan target.

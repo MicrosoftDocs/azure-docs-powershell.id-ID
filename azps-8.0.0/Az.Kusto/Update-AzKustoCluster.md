@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.kusto/update-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Update-AzKustoCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Update-AzKustoCluster.md
-ms.openlocfilehash: 2ab4dfd66d316b10c68720a616cb5320186ff594
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: caf9a2715c59a38f14723c52b5ed01b238915a08
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145541392"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146625682"
 ---
 # Update-AzKustoCluster
 
@@ -753,7 +753,7 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 ACCEPTEDAUDIENCE <IAcceptedAudiences[]>: Audiens yang diterima kluster.
   - `[Value <String>]`: GUID atau URL valid yang mewakili audiens yang diterima.
 
-INPUTOBJECT <IKustoIdentity>: Parameter Identitas
+INPUTOBJECT `<IKustoIdentity>`: Parameter Identitas
   - `[AttachedDatabaseConfigurationName <String>]`: Nama konfigurasi database terlampir.
   - `[ClusterName <String>]`: Nama kluster Kusto.
   - `[DataConnectionName <String>]`: Nama koneksi data.

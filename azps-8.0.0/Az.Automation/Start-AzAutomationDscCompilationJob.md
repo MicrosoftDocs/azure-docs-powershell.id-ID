@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/start
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Start-AzAutomationDscCompilationJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Start-AzAutomationDscCompilationJob.md
-ms.openlocfilehash: 078a7c8faa9d7277b3ec2a67bef727357b31fe70
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: d61df57871f51b349297b65f1fc28542cfffb6e6
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145506778"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146627608"
 ---
 # Start-AzAutomationDscCompilationJob
 
@@ -42,7 +42,7 @@ Perintah pertama membuat kamus parameter, dan menyimpannya dalam variabel $Param
 Perintah kedua mengkompilasi konfigurasi DSC bernama Config01.
 Perintah ini menyertakan nilai dalam $Params untuk parameter konfigurasi DSC.
 
-### Contoh 2: Mengompilasi konfigurasi Azure DSC di Automation dengan versi build Konfigurasi Simpul baru.
+### Contoh 2: Kompilasi konfigurasi Azure DSC di Automation dengan versi build Konfigurasi Simpul baru.
 ```powershell
 $Params = @{"StringParam"="Hello World";"IntegerParam"=32}
 Start-AzAutomationDscCompilationJob -ConfigurationName "Config01" -Parameters $Params -ResourceGroupName "ResourceGroup01" -IncrementNodeConfigurationBuild
@@ -51,7 +51,7 @@ Start-AzAutomationDscCompilationJob -ConfigurationName "Config01" -Parameters $P
 Mirip dengan contoh pertama, perintah pertama membuat kamus parameter, dan menyimpannya dalam variabel $Params.
 Perintah kedua mengkompilasi konfigurasi DSC bernama Config01.
 Perintah ini menyertakan nilai dalam $Params untuk parameter konfigurasi DSC.
-Ini tidak menimpa Konfigurasi Simpul yang ada sebelumnya dengan membuat Konfigurasi Simpul baru dengan nama Config01[<2>].<NodeName>. Nomor versi ditambahkan berdasarkan nomor versi yang sudah ada.
+Ini tidak mengambil alih Konfigurasi Simpul yang ada sebelumnya dengan membuat Konfigurasi Simpul baru dengan nama `Config01[<2>].<NodeName>`. Nomor versi ditambahkan berdasarkan nomor versi yang sudah ada.
 
 ## PARAMETERS
 

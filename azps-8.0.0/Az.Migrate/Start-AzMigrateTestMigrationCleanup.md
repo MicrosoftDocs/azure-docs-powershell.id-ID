@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/start-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Start-AzMigrateTestMigrationCleanup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Start-AzMigrateTestMigrationCleanup.md
-ms.openlocfilehash: fda3249c94092698a157fdbc78573d063da19be2
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 949ca5b842b7bfa50062711461c4d5417a6cc653
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145538858"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146629804"
 ---
 # Start-AzMigrateTestMigrationCleanup
 
@@ -67,7 +67,7 @@ Type                             : Microsoft.RecoveryServices/vaults/replication
 
 Berdasarkan id komputer.
 
-### Contoh 2: Menurut objek input
+### Contoh 2: Berdasarkan objek input
 ```powershell
 $obj = Get-AzMigrateServerReplication -TargetObjectID $env.srsMachineId -SubscriptionId $env.srsSubscriptionId
 Start-AzMigrateTestMigrationCleanup -InputObject $obj
@@ -99,7 +99,7 @@ Type                             : Microsoft.RecoveryServices/vaults/replication
 
 ```
 
-Berdasarkan objek input.
+Dengan objek input.
 
 ## PARAMETERS
 
@@ -183,7 +183,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMigrationItem>: Menentukan server replikasi yang pembersihan migrasi pengujiannya perlu dimulai. Objek server dapat diambil menggunakan cmdlet Get-AzMigrateServerReplication
+INPUTOBJECT `<IMigrationItem>`: Menentukan server replikasi tempat pembersihan migrasi pengujian perlu dimulai. Objek server dapat diambil menggunakan cmdlet Get-AzMigrateServerReplication
   - `[Location <String>]`: Lokasi Sumber Daya
   - `[ProviderSpecificDetail <IMigrationProviderSpecificSettings>]`: Pengaturan kustom penyedia migrasi.
 
