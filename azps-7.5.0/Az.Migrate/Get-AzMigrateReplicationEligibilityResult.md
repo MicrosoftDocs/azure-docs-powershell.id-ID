@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/get-azmi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateReplicationEligibilityResult.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateReplicationEligibilityResult.md
-ms.openlocfilehash: bb4e396eabd551da880e12187352dc81191b73fe
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: b58b8ff2c9136386ad998ee2b8e85866db248694
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145690246"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146619742"
 ---
 # Get-AzMigrateReplicationEligibilityResult
 
@@ -160,7 +160,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMigrateIdentity>: Parameter Identitas
+INPUTOBJECT `<IMigrateIdentity>`: Parameter Identitas
   - `[AccountName <String>]`: Jalankan sebagai nama ARM akun.
   - `[AlertSettingName <String>]`: Nama konfigurasi pemberitahuan email.
   - `[ClusterName <String>]`: Nama ARM kluster.
@@ -189,7 +189,7 @@ INPUTOBJECT <IMigrateIdentity>: Parameter Identitas
   - `[RecoveryPointName <String>]`: Nama titik pemulihan.
   - `[ReplicatedProtectedItemName <String>]`: Nama item yang dilindungi replikasi.
   - `[ReplicationProtectedItemName <String>]`: Nama item yang dilindungi tempat agen akan diperbarui.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[ResourceName <String>]`: Nama vault layanan pemulihan.
   - `[SiteName <String>]`: Nama situs.
   - `[SolutionName <String>]`: Nama unik solusi migrasi dalam proyek migrasi.

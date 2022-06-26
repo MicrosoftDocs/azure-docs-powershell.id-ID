@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.mysql/update-azm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Update-AzMySqlFlexibleServerConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Update-AzMySqlFlexibleServerConfiguration.md
-ms.openlocfilehash: 4b56833d235313e43a0e9e101b3bc1d10ca13be5
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: 2c40191e8faf53d1d209719fc437d82aa76e9325
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145804020"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146619616"
 ---
 # Update-AzMySqlFlexibleServerConfiguration
 
 ## SYNOPSIS
-Memperbarui informasi tentang konfigurasi server fleksibel MySQL.
+Updates informasi tentang konfigurasi server fleksibel MySQL.
 
 > [!NOTE]
 >Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.mysql/update-azmysqlflexibleserverconfiguration) untuk informasi terbaru.
@@ -36,7 +36,7 @@ Update-AzMySqlFlexibleServerConfiguration -InputObject <IMySqlIdentity> [-Source
 ```
 
 ## DESCRIPTION
-Memperbarui informasi tentang konfigurasi server fleksibel MySQL.
+Updates informasi tentang konfigurasi server fleksibel MySQL.
 
 ## EXAMPLES
 
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.MySql.Models.IMySqlIdentity
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 
 ### -Sumber
 Sumber nilai pembaruan.
-Nilai defaultnya adalah user-override
+Nilai defaultnya adalah pengguna-override
 
 ```yaml
 Type: System.String
@@ -272,14 +272,14 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMySqlIdentity>: Parameter Identitas
+INPUTOBJECT `<IMySqlIdentity>`: Parameter Identitas
   - `[BackupName <String>]`: Nama cadangan.
   - `[ConfigurationName <String>]`: Nama konfigurasi server.
   - `[DatabaseName <String>]`: Nama database.
   - `[FirewallRuleName <String>]`: Nama aturan firewall server.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[LocationName <String>]`: Nama lokasi.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SecurityAlertPolicyName <SecurityAlertPolicyName?>]`: Nama kebijakan pemberitahuan keamanan.
   - `[ServerName <String>]`: Nama server.
   - `[SubscriptionId <String>]`: ID langganan target.

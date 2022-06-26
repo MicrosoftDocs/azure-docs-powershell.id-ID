@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.edgeorder/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/New-AzEdgeOrderItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/New-AzEdgeOrderItem.md
-ms.openlocfilehash: e351b168c39394b8ed58972327ae0534dcfba928
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: a8aa7bd4564dce57bec223a11793a667b5f15e89
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145534361"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146618644"
 ---
 # New-AzEdgeOrderItem
 
@@ -79,7 +79,7 @@ Type                           : Microsoft.EdgeOrder/orderItems
 
 Membuat orderItem baru.
 
-### Contoh 2: Membuat orderItem baru dengan preferensi yang ditetapkan untuk transportasi, enkripsi, dan sumber daya manajemen
+### Contoh 2: Membuat orderItem baru dengan preferensi yang diatur untuk sumber daya transportasi, enkripsi, dan manajemen
 ```powershell
 $contactDetail = New-AzEdgeOrderContactDetailsObject -ContactName "ContactName2" -EmailList $env.EmailList -Phone $env.Phone
 $ShippingDetails = New-AzEdgeOrderShippingAddressObject -StreetAddress1 $env.StreetAddress1 -StateOrProvince $env.StateOrProvince -Country $env.Country -City $env.City -PostalCode $env.PostalCode -AddressType $env.AddressType
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -ForwardAddressContactDetail
-Detail kontak untuk alamat Untuk membangun, lihat bagian CATATAN untuk properti FORWARDADDRESSCONTACTDETAIL dan buat tabel hash.
+Detail kontak untuk alamat Untuk membangun, lihat bagian CATATAN untuk properti FORWARDADDRESSCONTACTDETAIL dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.EdgeOrder.Models.Api20211201.IContactDetails
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -ForwardShippingAddress
-Detail pengiriman untuk alamat Untuk membangun, lihat bagian CATATAN untuk properti FORWARDSHIPPINGADDRESS dan buat tabel hash.
+Detail pengiriman untuk alamat Untuk dibangun, lihat bagian CATATAN untuk properti FORWARDSHIPPINGADDRESS dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.EdgeOrder.Models.Api20211201.IShippingAddress
@@ -237,7 +237,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -330,14 +330,14 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-FORWARDADDRESSCONTACTDETAIL <IContactDetails>: Detail kontak untuk alamat
+FORWARDADDRESSCONTACTDETAIL `<IContactDetails>`: Detail kontak untuk alamat
   - `ContactName <String>`: Nama kontak orang tersebut.
   - `EmailList <String[]>`: Daftar Email-id yang akan diberi tahu tentang kemajuan pekerjaan.
   - `Phone <String>`: Telepon nomor kontak.
   - `[Mobile <String>]`: Nomor ponsel kontak.
   - `[PhoneExtension <String>]`: Telepon nomor ekstensi kontak.
 
-FORWARDSHIPPINGADDRESS <IShippingAddress>: Detail pengiriman untuk alamat
+FORWARDSHIPPINGADDRESS `<IShippingAddress>`: Detail pengiriman untuk alamat
   - `Country <String>`: Nama Negara.
   - `StreetAddress1 <String>`: Alamat Jalan baris 1.
   - `[AddressType <AddressType?>]`: Jenis alamat.
@@ -349,13 +349,13 @@ FORWARDSHIPPINGADDRESS <IShippingAddress>: Detail pengiriman untuk alamat
   - `[StreetAddress3 <String>]`: Alamat Jalan baris 3.
   - `[ZipExtendedCode <String>]`: Kode Pos yang diperluas.
 
-ORDERITEMDETAIL <IOrderItemDetails>: Mewakili detail item pesanan.
+ORDERITEMDETAIL `<IOrderItemDetails>`: Mewakili detail item pesanan.
   - `OrderItemType <OrderItemType>`: Jenis item pesanan.
   - `ProductDetail <IProductDetails>`: Pengidentifikasi unik untuk konfigurasi.
     - `HierarchyInformation <IHierarchyInformation>`: Hierarki produk yang secara unik mengidentifikasi produk
       - `[ConfigurationName <String>]`: Mewakili nama konfigurasi yang secara unik mengidentifikasi konfigurasi
       - `[ProductFamilyName <String>]`: Mewakili nama keluarga produk yang secara unik mengidentifikasi keluarga produk
-      - `[ProductLineName <String>]`: Mewakili nama lini produk yang secara unik mengidentifikasi lini produk
+      - `[ProductLineName <String>]`: Mewakili nama baris produk yang secara unik mengidentifikasi lini produk
       - `[ProductName <String>]`: Mewakili nama produk yang secara unik mengidentifikasi produk
   - `[NotificationEmailList <String[]>]`: Daftar email pemberitahuan tambahan
   - `[Preference <IPreferences>]`: Preferensi pemberitahuan pelanggan

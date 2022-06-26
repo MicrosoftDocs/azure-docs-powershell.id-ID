@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.labservices/star
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Start-AzLabServicesUserVM.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Start-AzLabServicesUserVM.md
-ms.openlocfilehash: 4b0ff0cbecfdb742efeb525975aae5386d94c8ff
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 0066968554a34e7c27016eb44b58642ea3feafc2
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145520506"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146621578"
 ---
 # Start-AzLabServicesUserVM
 
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -User
-Untuk membuat, lihat bagian CATATAN untuk properti USER dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti USER dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.LabServices.Models.Api20211001Preview.User
@@ -219,14 +219,14 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-USER <User>: 
+USER `<User>`: 
   - `Email <String>`: Alamat email pengguna.
   - `[AdditionalUsageQuota <TimeSpan?>]`: Jumlah waktu kuota penggunaan yang didapat pengguna selain kuota penggunaan lab.
   - `[SystemDataCreatedAt <DateTime?>]`: Tanda waktu pembuatan sumber daya (UTC).
   - `[SystemDataCreatedBy <String>]`: Identitas yang membuat sumber daya.
   - `[SystemDataCreatedByType <CreatedByType?>]`: Jenis identitas yang membuat sumber daya.
   - `[SystemDataLastModifiedAt <DateTime?>]`: Tanda waktu modifikasi terakhir sumber daya (UTC)
-  - `[SystemDataLastModifiedBy <String>]`: Identitas yang terakhir memodifikasi sumber daya.
+  - `[SystemDataLastModifiedBy <String>]`: Identitas yang terakhir mengubah sumber daya.
   - `[SystemDataLastModifiedByType <CreatedByType?>]`: Jenis identitas yang terakhir memodifikasi sumber daya.
 
 ## RELATED LINKS

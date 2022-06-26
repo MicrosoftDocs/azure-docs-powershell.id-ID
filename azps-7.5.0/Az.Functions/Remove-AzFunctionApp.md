@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.functions/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Remove-AzFunctionApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Remove-AzFunctionApp.md
-ms.openlocfilehash: 9d0c78ef8e47ff3abbd181b5e17ef0e9f0a9bb0b
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: 78c676c93c157fead00557b763bed7b0662e4bb5
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145780588"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146620066"
 ---
 # Remove-AzFunctionApp
 
@@ -211,7 +211,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ISite>: 
+INPUTOBJECT `<ISite>`: 
   - `Location <String>`: Lokasi Sumber Daya.
   - `[Kind <String>]`: Jenis sumber daya.
   - `[Tag <IResourceTags>]`: Tag sumber daya.

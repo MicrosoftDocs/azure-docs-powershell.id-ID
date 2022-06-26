@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.customproviders/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CustomProviders/help/Remove-AzCustomProviderAssociation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CustomProviders/help/Remove-AzCustomProviderAssociation.md
-ms.openlocfilehash: a17de649a1da4a795e7b80f43c3083b5be47eb67
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 05d5b4bc716b1562c876f1f6a1d4084bc93662ce
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145754758"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146620462"
 ---
 # Remove-AzCustomProviderAssociation
 
@@ -55,7 +55,7 @@ Get-AzCustomProviderAssociation | Remove-AzCustomProviderAssociation -PassThru
 True
 ```
 
-Hapus asosiasi penyedia kustom, menggunakan piping dan fitur PassThru untuk menunjukkan keberhasilan atau kegagalan.
+Hapus asosiasi penyedia kustom, menggunakan pipa dan fitur PassThru untuk menunjukkan keberhasilan atau kegagalan.
 
 ## PARAMETERS
 
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.CustomProviders.Models.ICustomProvidersIdentity
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -215,13 +215,13 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ICustomProvidersIdentity>: Parameter Identitas
+INPUTOBJECT `<ICustomProvidersIdentity>`: Parameter Identitas
   - `[AssociationName <String>]`: Nama asosiasi.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ResourceGroupName <String>]`: Nama grup sumber daya.
   - `[ResourceProviderName <String>]`: Nama penyedia sumber daya.
   - `[Scope <String>]`: Ruang lingkup asosiasi.
-  - `[SubscriptionId <String>]`: ID langganan Azure. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000)
+  - `[SubscriptionId <String>]`: ID langganan Azure. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-00000000000)
 
 ## RELATED LINKS
 

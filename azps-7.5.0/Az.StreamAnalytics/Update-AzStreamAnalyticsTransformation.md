@@ -5,19 +5,19 @@ online version: https://docs.microsoft.com/powershell/module/az.streamanalytics/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Update-AzStreamAnalyticsTransformation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Update-AzStreamAnalyticsTransformation.md
-ms.openlocfilehash: 19889b27b8d5ce946dd0add3038edf228d861055
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 98d748538f19a19a7e742e93392c6aa9cb205fa2
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145711324"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146622603"
 ---
 # Update-AzStreamAnalyticsTransformation
 
 ## SYNOPSIS
-Memperbarui transformasi yang ada di bawah pekerjaan streaming yang ada.
+Updates transformasi yang ada di bawah pekerjaan streaming yang ada.
 Ini dapat digunakan untuk memperbarui sebagian (yaitu.
-memperbarui satu atau dua properti) transformasi tanpa memengaruhi sisa pekerjaan atau definisi transformasi.
+memperbarui satu atau dua properti) transformasi tanpa memengaruhi sisa definisi pekerjaan atau transformasi.
 
 > [!NOTE]
 >Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.streamanalytics/update-azstreamanalyticstransformation) untuk informasi terbaru.
@@ -39,9 +39,9 @@ Update-AzStreamAnalyticsTransformation -InputObject <IStreamAnalyticsIdentity> [
 ```
 
 ## DESCRIPTION
-Memperbarui transformasi yang ada di bawah pekerjaan streaming yang ada.
+Updates transformasi yang ada di bawah pekerjaan streaming yang ada.
 Ini dapat digunakan untuk memperbarui sebagian (yaitu.
-memperbarui satu atau dua properti) transformasi tanpa memengaruhi sisa pekerjaan atau definisi transformasi.
+memperbarui satu atau dua properti) transformasi tanpa memengaruhi sisa definisi pekerjaan atau transformasi.
 
 ## EXAMPLES
 
@@ -67,7 +67,7 @@ Name     Type                                                    ETag
 tranf-01 Microsoft.StreamAnalytics/streamingjobs/transformations 3d6570c5-6e0f-4ec6-b242-ba9e161c3e01
 ```
 
-Perintah ini memperbarui transformasi dalam pekerjaan analisis aliran menurut alur.
+Perintah ini memperbarui transformasi dalam pekerjaan analisis aliran berdasarkan alur.
 
 ## PARAMETERS
 
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.StreamAnalytics.Models.IStreamAnalyticsIdentity
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 
 ### -Kueri
 Menentukan kueri yang akan dijalankan dalam pekerjaan streaming.
-Anda dapat mempelajari selengkapnya tentang Bahasa Kueri Analisis Aliran (SAQL) di sini: https://msdn.microsoft.com/library/azure/dn834998 .
+Anda dapat mempelajari selengkapnya tentang Bahasa Kueri Azure Stream Analytics (SAQL) di sini: https://msdn.microsoft.com/library/azure/dn834998 .
 Diperlukan pada permintaan PUT (CreateOrReplace).
 
 ```yaml
@@ -262,7 +262,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IStreamAnalyticsIdentity>: Parameter Identitas
+INPUTOBJECT `<IStreamAnalyticsIdentity>`: Parameter Identitas
   - `[ClusterName <String>]`: Nama kluster.
   - `[FunctionName <String>]`: Nama fungsi.
   - `[Id <String>]`: Jalur identitas sumber daya

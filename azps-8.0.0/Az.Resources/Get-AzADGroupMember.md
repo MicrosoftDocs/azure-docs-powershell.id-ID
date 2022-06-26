@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzADGroupMember.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzADGroupMember.md
-ms.openlocfilehash: d94d0a621d9fae872542e656dfeff1d2901bb418
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: f726ef8f16669c7eedb740d3a4a4c74238a6df94
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145562011"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146623522"
 ---
 # Get-AzADGroupMember
 
@@ -247,7 +247,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-GROUPOBJECT <IMicrosoftGraphGroup>: Objek grup target, dapat digunakan sebagai input alur.
+GROUPOBJECT `<IMicrosoftGraphGroup>`: Objek grup target, dapat digunakan sebagai input alur.
   - `[(Any) <Object>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
   - `[DeletedDateTime <DateTime?>]`: 
   - `[DisplayName <String>]`: Nama yang ditampilkan dalam direktori
@@ -286,7 +286,7 @@ GROUPOBJECT <IMicrosoftGraphGroup>: Objek grup target, dapat digunakan sebagai i
   - `[PreferredLanguage <String>]`: Bahasa pilihan untuk grup Microsoft 365. Harus mengikuti Kode ISO 639-1; misalnya 'en-US'. Dikembalikan secara default. Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith).
   - `[SecurityEnabled <Boolean?>]`: Menentukan apakah grup tersebut adalah grup keamanan. Dikembalikan secara default. Mendukung $filter (eq, ne, NOT, in).
   - `[SecurityIdentifier <String>]`: Pengidentifikasi keamanan grup, digunakan dalam skenario Windows. Dikembalikan secara default.
-  - `[Theme <String>]`: Menentukan tema warna grup Microsoft 365. Nilai yang mungkin adalah Teal, Purple, Green, Blue, Pink, Orange atau Red. Dikembalikan secara default.
+  - `[Theme <String>]`: Menentukan tema warna grup Microsoft 365. Nilai yang mungkin adalah Teal, Ungu, Hijau, Biru, Merah Muda, Oranye atau Merah. Dikembalikan secara default.
   - `[Visibility <String>]`: Menentukan kebijakan gabungan grup dan visibilitas konten grup untuk grup. Nilai yang mungkin adalah: Privat, Publik, atau Hiddenmembership. Hiddenmembership hanya dapat diatur untuk grup Microsoft 365, saat grup dibuat. Ini tidak dapat diperbarui nanti. Nilai visibilitas lainnya dapat diperbarui setelah pembuatan grup. Jika nilai visibilitas tidak ditentukan selama pembuatan grup di Microsoft Graph, grup keamanan dibuat sebagai Privat secara default dan grup Microsoft 365 adalah Publik. Lihat opsi visibilitas grup untuk mempelajari selengkapnya. Dikembalikan secara default.
 
 ## RELATED LINKS

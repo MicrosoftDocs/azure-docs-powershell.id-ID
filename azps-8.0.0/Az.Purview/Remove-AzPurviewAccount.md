@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.purview/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Remove-AzPurviewAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Remove-AzPurviewAccount.md
-ms.openlocfilehash: 0e1ee1f00eaf3767f8ea11d973b45577153c3b01
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 9c33bc5cb7c4a9e78a510b803692750ef8d59663
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145619988"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146621272"
 ---
 # Remove-AzPurviewAccount
 
@@ -43,7 +43,7 @@ Remove-AzPurviewAccount -Name test-pa -ResourceGroupName test-rg
 
 Menghapus akun purview bernama 'test-pa'
 
-### Contoh 2: Menghapus akun purview oleh InputObject
+### Contoh 2: Menghapus akun purview dengan InputObject
 ```powershell
 $get = Get-AzPurviewAccount -Name test-pa -ResourceGroupName test-rg
 Remove-AzPurviewAccount -InputObject $get
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Purview.Models.IPurviewIdentity
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -224,7 +224,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IPurviewIdentity>: Parameter Identitas
+INPUTOBJECT `<IPurviewIdentity>`: Parameter Identitas
   - `[AccountName <String>]`: Nama akun.
   - `[GroupId <String>]`: Pengidentifikasi grup.
   - `[Id <String>]`: Jalur identitas sumber daya

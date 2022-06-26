@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.connectedmachine
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedMachine/help/Remove-AzConnectedMachineExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedMachine/help/Remove-AzConnectedMachineExtension.md
-ms.openlocfilehash: a2dce527abcf0b7e82fa0e0a242f1ec970af6dec
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 1b42622e48a476666661ced01193a9b72c1dbfe6
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145617411"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146622316"
 ---
 # Remove-AzConnectedMachineExtension
 
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -240,7 +240,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IConnectedMachineIdentity>: Parameter Identitas
+INPUTOBJECT `<IConnectedMachineIdentity>`: Parameter Identitas
   - `[ExtensionName <String>]`: Nama ekstensi komputer.
   - `[GroupName <String>]`: Nama sumber daya tautan privat.
   - `[Id <String>]`: Jalur identitas sumber daya
@@ -248,7 +248,7 @@ INPUTOBJECT <IConnectedMachineIdentity>: Parameter Identitas
   - `[MachineName <String>]`: Nama komputer hibrid.
   - `[PrivateEndpointConnectionName <String>]`: Nama koneksi titik akhir privat.
   - `[PrivateLinkScopeId <String>]`: Id (Guid) sumber daya Azure Arc PrivateLinkScope.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[ScopeName <String>]`: Nama sumber daya Azure Arc PrivateLinkScope.
   - `[SubscriptionId <String>]`: ID langganan target.
 

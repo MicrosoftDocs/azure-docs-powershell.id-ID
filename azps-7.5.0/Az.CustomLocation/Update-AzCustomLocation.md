@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.customlocation/u
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CustomLocation/help/Update-AzCustomLocation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CustomLocation/help/Update-AzCustomLocation.md
-ms.openlocfilehash: de5cfb09ff024346251155768d1655663fb4952a
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: 2595672cd958d4a9897e1080f20c3c99391a1573
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145789084"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146623000"
 ---
 # Update-AzCustomLocation
 
 ## SYNOPSIS
-Memperbarui Lokasi Kustom dengan Nama Sumber Daya yang ditentukan dalam Grup Sumber Daya dan Langganan yang ditentukan.
+Updates Lokasi Kustom dengan Nama Sumber Daya yang ditentukan dalam Grup Sumber Daya dan Langganan yang ditentukan.
 
 > [!NOTE]
 >Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.customlocation/update-azcustomlocation) untuk informasi terbaru.
@@ -40,11 +40,11 @@ Update-AzCustomLocation -InputObject <ICustomLocationIdentity> [-AuthenticationT
 ```
 
 ## DESCRIPTION
-Memperbarui Lokasi Kustom dengan Nama Sumber Daya yang ditentukan dalam Grup Sumber Daya dan Langganan yang ditentukan.
+Updates Lokasi Kustom dengan Nama Sumber Daya yang ditentukan dalam Grup Sumber Daya dan Langganan yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui Lokasi Kustom dengan Nama Sumber Daya yang ditentukan dalam Grup Sumber Daya dan Langganan yang ditentukan.
+### Contoh 1: Updates Lokasi Kustom dengan Nama Sumber Daya yang ditentukan dalam Grup Sumber Daya dan Langganan yang ditentukan.
 ```powershell
 Update-AzCustomLocation -ResourceGroupName azps_test_group -Name azps_test_cluster_1 -ClusterExtensionId "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/azps_test_group/providers/Microsoft.Kubernetes/connectedClusters/azps_test_cluster/providers/Microsoft.KubernetesConfiguration/extensions/azps_test_extension" -HostResourceId "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/azps_test_group/providers/Microsoft.Kubernetes/connectedClusters/azps_test_cluster" -Namespace arc
 ```
@@ -55,9 +55,9 @@ Location Name                Namespace
 eastus   azps_test_cluster_1 arc
 ```
 
-Memperbarui Lokasi Kustom dengan Nama Sumber Daya yang ditentukan dalam Grup Sumber Daya dan Langganan yang ditentukan.
+Updates Lokasi Kustom dengan Nama Sumber Daya yang ditentukan dalam Grup Sumber Daya dan Langganan yang ditentukan.
 
-### Contoh 2: Memperbarui Lokasi Kustom.
+### Contoh 2: Updates Lokasi Kustom.
 ```powershell
 Get-AzCustomLocation -ResourceGroupName azps_test_group -Name azps_test_cluster | Update-AzCustomLocation
 ```
@@ -68,7 +68,7 @@ Location Name                Namespace
 eastus   azps_test_cluster_1 arc
 ```
 
-Memperbarui Lokasi Kustom.
+Updates Lokasi Kustom.
 
 ## PARAMETERS
 
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 
 ### -HostResourceId
 Kluster yang Terhubung atau Kluster AKS.
-RP Lokasi Kustom akan melakukan API checkAccess untuk izin listAdminCredentials.
+RP Lokasi Kustom akan melakukan CHECKAccess API untuk izin listAdminCredentials.
 
 ```yaml
 Type: System.String
@@ -179,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.CustomLocation.Models.ICustomLocationIdentity
@@ -209,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Namespace layanan Kubernetes yang akan dibuat pada kluster yang ditentukan.
+Namespace layanan Kube yang akan dibuat pada kluster yang ditentukan.
 
 ```yaml
 Type: System.String
@@ -320,7 +320,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ICustomLocationIdentity>: Parameter Identitas
+INPUTOBJECT `<ICustomLocationIdentity>`: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[ResourceName <String>]`: Nama Lokasi Kustom.

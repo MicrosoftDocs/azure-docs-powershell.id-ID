@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.confidentialledg
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConfidentialLedger/help/Get-AzConfidentialLedger.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConfidentialLedger/help/Get-AzConfidentialLedger.md
-ms.openlocfilehash: 2e2200f13cbad3e6e0b84b22d257d5ee849abbd8
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: d5ebda7ed92f0917690a72f24353a5f598a6f671
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145786150"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146620570"
 ---
 # Get-AzConfidentialLedger
 
@@ -62,7 +62,7 @@ eastus   testledger1
 eastus   testledger2
 ```
 
-Mencantumkan semua Confidential Ledgers di bawah langganan.
+Mencantumkan semua Azure Confidential Ledgers di bawah langganan.
 
 ### Contoh 2: Mendapatkan Confidential Ledger
 ```powershell
@@ -74,7 +74,7 @@ Location Name
 eastus   test-ledger
 ```
 
-Mencantumkan semua Confidential Ledgers di bawah grup sumber daya.
+Mencantumkan semua Azure Confidential Ledgers di bawah grup sumber daya.
 
 ## PARAMETERS
 
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ConfidentialLedger.Models.IConfidentialLedgerIdentity
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 
 ### -SubscriptionId
 Atur ID Langganan Azure.
-Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000)
+Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-00000000000)
 
 ```yaml
 Type: System.String[]
@@ -191,11 +191,11 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IConfidentialLedgerIdentity>: Parameter Identitas
+INPUTOBJECT `<IConfidentialLedgerIdentity>`: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[LedgerName <String>]`: Nama Confidential Ledger
   - `[ResourceGroupName <String>]`: Nama grup sumber daya.
-  - `[SubscriptionId <String>]`: ID langganan Azure. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000)
+  - `[SubscriptionId <String>]`: ID langganan Azure. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-00000000000)
 
 ## RELATED LINKS
 

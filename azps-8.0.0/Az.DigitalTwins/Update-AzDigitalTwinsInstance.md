@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.digitaltwins/upd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DigitalTwins/help/Update-AzDigitalTwinsInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DigitalTwins/help/Update-AzDigitalTwinsInstance.md
-ms.openlocfilehash: 8c617d566f25daab83b7c18f170f636fdf6cc8a1
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: db3ecb91be2137a0a0bd2ead0c9465314fbedd2b
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145559477"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146622064"
 ---
 # Update-AzDigitalTwinsInstance
 
@@ -238,11 +238,11 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-DIGITALTWINSPATCHDESCRIPTION <IDigitalTwinsPatchDescription>: Deskripsi layanan DigitalTwins.
+DIGITALTWINSPATCHDESCRIPTION `<IDigitalTwinsPatchDescription>`: Deskripsi layanan DigitalTwins.
   - `[Tag <IDigitalTwinsPatchDescriptionTags>]`: Tag instans
     - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
 
-INPUTOBJECT <IDigitalTwinsIdentity>: Parameter Identitas
+INPUTOBJECT `<IDigitalTwinsIdentity>`: Parameter Identitas
   - `[EndpointName <String>]`: Nama Sumber Daya Titik Akhir.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Lokasi DigitalTwinsInstance.

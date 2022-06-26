@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.servicelinker/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceLinker/help/Remove-AzServiceLinkerForContainerApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceLinker/help/Remove-AzServiceLinkerForContainerApp.md
-ms.openlocfilehash: 8c32e131eb87bb0293ed290bf1d1934cd986a359
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 20ae0d0533229e7f99ef5951b57393066e4b03af
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145539544"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146621164"
 ---
 # Remove-AzServiceLinkerForContainerApp
 
@@ -248,7 +248,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IServiceLinkerIdentity>: Parameter Identitas
+INPUTOBJECT `<IServiceLinkerIdentity>`: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[LinkerName <String>]`: Nama sumber daya Linker.
   - `[ResourceUri <String>]`: Pengidentifikasi Azure Resource manager yang sepenuhnya memenuhi syarat dari sumber daya yang akan disambungkan.

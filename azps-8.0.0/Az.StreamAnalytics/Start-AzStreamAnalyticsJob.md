@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.streamanalytics/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Start-AzStreamAnalyticsJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Start-AzStreamAnalyticsJob.md
-ms.openlocfilehash: 1e74c19def6b049ce3d09940a3be589a2ea89ec5
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 3134b747d828ee5fa46b10c7415375ca786d5107
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145514047"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146620948"
 ---
 # Start-AzStreamAnalyticsJob
 
@@ -48,13 +48,13 @@ Start-AzStreamAnalyticsJob -ResourceGroupName azure-rg-test -Name sajob-01-porta
 
 Perintah ini memulai pekerjaan StreamingJob.
 
-### Contoh 2: Memulai pekerjaan Azure Stream Analytics menurut alur
+### Contoh 2: Memulai pekerjaan Azure Stream Analytics berdasarkan alur
 ```powershell
 Get-AzStreamAnalyticsJob -ResourceGroupName azure-rg-test -Name sajob-01-portal | Start-AzStreamAnalyticsJob
 
 ```
 
-Perintah ini memulai pekerjaan StreamingJob menurut alur.
+Perintah ini memulai pekerjaan StreamingJob berdasarkan alur.
 
 ## PARAMETERS
 
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.StreamAnalytics.Models.IStreamAnalyticsIdentity
@@ -165,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -261,7 +261,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IStreamAnalyticsIdentity>: Parameter Identitas
+INPUTOBJECT `<IStreamAnalyticsIdentity>`: Parameter Identitas
   - `[ClusterName <String>]`: Nama kluster.
   - `[FunctionName <String>]`: Nama fungsi.
   - `[Id <String>]`: Jalur identitas sumber daya

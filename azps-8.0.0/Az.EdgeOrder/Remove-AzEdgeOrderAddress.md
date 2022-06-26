@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.edgeorder/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/Remove-AzEdgeOrderAddress.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/Remove-AzEdgeOrderAddress.md
-ms.openlocfilehash: a272d90938015dcd82049b717031444e587abd85
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 182096bc621522b54dfa75740212584b9b4e540b
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145526146"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146621956"
 ---
 # Remove-AzEdgeOrderAddress
 
@@ -218,7 +218,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IEdgeOrderIdentity>: Parameter Identitas
+INPUTOBJECT `<IEdgeOrderIdentity>`: Parameter Identitas
   - `[AddressName <String>]`: Nama alamat Sumber Daya dalam grup sumber daya yang ditentukan. panjang nama alamat harus antara 3 dan 24 karakter dan hanya menggunakan alfanumerik dan garis bawah
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Nama wilayah Azure.

@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/new-azfrontd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/help/New-AzFrontDoorCdnOriginGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/help/New-AzFrontDoorCdnOriginGroup.md
-ms.openlocfilehash: c373f794c3761dfcc0093b391f6d4a1896c8d207
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: ff8eef678c5568e3ba7a3e152114eb86e2b4e898
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145561675"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146619148"
 ---
 # New-AzFrontDoorCdnOriginGroup
 
@@ -274,13 +274,13 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-HEALTHPROBESETTING <IHealthProbeParameters>: Pengaturan pemeriksaan kesehatan ke asal yang digunakan untuk menentukan kesehatan asal.
+HEALTHPROBESETTING `<IHealthProbeParameters>`: Pengaturan pemeriksaan kesehatan ke asal yang digunakan untuk menentukan kesehatan asal.
   - `[ProbeIntervalInSecond <Int32?>]`: Jumlah detik antara pemeriksaan kesehatan. Defaultnya adalah 240 detik.
   - `[ProbePath <String>]`: Jalur relatif terhadap asal yang digunakan untuk menentukan kesehatan asal.
   - `[ProbeProtocol <ProbeProtocol?>]`: Protokol yang digunakan untuk pemeriksaan kesehatan.
   - `[ProbeRequestType <HealthProbeRequestType?>]`: Jenis permintaan pemeriksaan kesehatan yang dibuat.
 
-LOADBALANCINGSETTING <ILoadBalancingSettingsParameters>: Pengaturan penyeimbangan beban untuk kumpulan backend
+LOADBALANCINGSETTING `<ILoadBalancingSettingsParameters>`: Pengaturan penyeimbangan beban untuk kumpulan backend
   - `[AdditionalLatencyInMillisecond <Int32?>]`: Latensi tambahan dalam milidetik untuk pemeriksaan jatuh ke dalam wadah latensi terendah
   - `[SampleSize <Int32?>]`: Jumlah sampel yang perlu dipertimbangkan untuk keputusan penyeimbangan beban
   - `[SuccessfulSamplesRequired <Int32?>]`: Jumlah sampel dalam periode sampel yang harus berhasil

@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.confidentialledg
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConfidentialLedger/help/Update-AzConfidentialLedger.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConfidentialLedger/help/Update-AzConfidentialLedger.md
-ms.openlocfilehash: c1bd50789c80a3100c80f90606c6854c2acd93b2
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 11f0b8d47c1c8c4fce5f9d8623f399f98b7ac2ac
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145499709"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146619004"
 ---
 # Update-AzConfidentialLedger
 
 ## SYNOPSIS
-Memperbarui properti Confidential Ledger
+Updates properti Confidential Ledger
 
 ## SYNTAX
 
@@ -36,7 +36,7 @@ Update-AzConfidentialLedger -InputObject <IConfidentialLedgerIdentity> -Location
 ```
 
 ## DESCRIPTION
-Memperbarui properti Confidential Ledger
+Updates properti Confidential Ledger
 
 ## EXAMPLES
 
@@ -69,12 +69,12 @@ Location Name
 eastus   test-ledger
 ```
 
-Memperbarui metadata untuk Confidential Ledger yang ada.
+Updates metadata untuk Confidential Ledger yang ada.
 
 ## PARAMETERS
 
 ### -AadBasedSecurityPrincipal
-Array dari semua Perwakilan Keamanan berbasis AAD.
+Array dari semua Prinsip Keamanan berbasis AAD.
 Untuk membuat, lihat bagian CATATAN untuk properti AADBASEDSECURITYPRINCIPAL dan buat tabel hash.
 
 ```yaml
@@ -105,8 +105,8 @@ Accept wildcard characters: False
 ```
 
 ### -CertBasedSecurityPrincipal
-Array semua Perwakilan Keamanan berbasis sertifikasi.
-Untuk membuat, lihat bagian CATATAN untuk properti CERTBASEDSECURITYPRINCIPAL dan buat tabel hash.
+Array semua Prinsip Keamanan berbasis sertifikasi.
+Untuk membuat, lihat bagian NOTES untuk properti CERTBASEDSECURITYPRINCIPAL dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ConfidentialLedger.Models.Api20210513Preview.ICertBasedSecurityPrincipal[]
@@ -136,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ConfidentialLedger.Models.IConfidentialLedgerIdentity
@@ -227,7 +227,7 @@ Accept wildcard characters: False
 
 ### -SubscriptionId
 Atur ID Langganan Azure.
-Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-00000000000)
+Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000)
 
 ```yaml
 Type: System.String
@@ -308,19 +308,19 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 AADBASEDSECURITYPRINCIPAL <IAadBasedSecurityPrincipal[]>: Array semua Perwakilan Keamanan berbasis AAD.
-  - `[LedgerRoleName <LedgerRoleName?>]`: LedgerRole yang terkait dengan Perwakilan Keamanan Ledger
+  - `[LedgerRoleName <LedgerRoleName?>]`: LedgerRole yang terkait dengan Prinsip Keamanan Ledger
   - `[PrincipalId <String>]`: Id Utama berbasis UUID/GUID dari Perwakilan Keamanan
   - `[TenantId <String>]`: Id Penyewa berbasis UUID/GUID dari Perwakilan Keamanan
 
-CERTBASEDSECURITYPRINCIPAL <ICertBasedSecurityPrincipal[]>: Array semua Perwakilan Keamanan berbasis sertifikasi.
+CERTBASEDSECURITYPRINCIPAL <ICertBasedSecurityPrincipal[]>: Array semua Prinsip Keamanan berbasis sertifikasi.
   - `[Cert <String>]`: Kunci umum sertifikat pengguna (.pem atau .cer)
-  - `[LedgerRoleName <LedgerRoleName?>]`: LedgerRole yang terkait dengan Perwakilan Keamanan Ledger
+  - `[LedgerRoleName <LedgerRoleName?>]`: LedgerRole yang terkait dengan Prinsip Keamanan Ledger
 
-INPUTOBJECT <IConfidentialLedgerIdentity>: Parameter Identitas
+INPUTOBJECT `<IConfidentialLedgerIdentity>`: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[LedgerName <String>]`: Nama Confidential Ledger
   - `[ResourceGroupName <String>]`: Nama grup sumber daya.
-  - `[SubscriptionId <String>]`: ID langganan Azure. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-00000000000)
+  - `[SubscriptionId <String>]`: ID langganan Azure. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000)
 
 ## RELATED LINKS
 

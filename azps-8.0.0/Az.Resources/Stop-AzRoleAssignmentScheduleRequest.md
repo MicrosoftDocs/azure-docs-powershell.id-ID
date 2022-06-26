@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/stop-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Stop-AzRoleAssignmentScheduleRequest.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Stop-AzRoleAssignmentScheduleRequest.md
-ms.openlocfilehash: 36490c1e8c3121c980e5d872432829f9fb78ba87
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 78a58b0f8aa47c822efedc3bdea0a9cc07730a4f
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145540090"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146623421"
 ---
 # Stop-AzRoleAssignmentScheduleRequest
 
@@ -173,7 +173,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IAuthorizationIdentity>: Parameter Identitas
+INPUTOBJECT `<IAuthorizationIdentity>`: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[RoleAssignmentScheduleInstanceName <String>]`: Nama (hash nama jadwal + waktu) dari jadwal penetapan peran yang akan didapatkan.
   - `[RoleAssignmentScheduleName <String>]`: Nama (guid) dari jadwal penetapan peran yang akan didapatkan.

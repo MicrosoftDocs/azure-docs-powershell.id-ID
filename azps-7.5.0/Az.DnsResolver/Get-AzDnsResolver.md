@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.dnsresolver/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/Get-AzDnsResolver.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/Get-AzDnsResolver.md
-ms.openlocfilehash: 4010fdf17aca2aff65de3ba01c0ffb7d7a53950f
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: f6eeab22e90dde753f26417cbdb0e5e6040be11a
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145740106"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146620174"
 ---
 # Get-AzDnsResolver
 
@@ -94,7 +94,7 @@ westus2  psdnsresolvername35m3jf0n Microsoft.Network/dnsResolvers "0000d0d4-0000
 
 Perintah ini mendapatkan semua Pemecah Masalah DNS di bawah grup sumber daya.
 
-### Contoh 3: Mendapatkan Pemecah Masalah DNS tunggal berdasarkan nama 
+### Contoh 3: Dapatkan Pemecah Masalah DNS tunggal berdasarkan nama 
 ```powershell
 Get-AzDnsResolver -ResourceGroupName powershell-test-rg -Name  psdnsresolvername33nmy1fz
 ```
@@ -105,7 +105,7 @@ Location Name                      Type                           Etag
 westus2  psdnsresolvername33nmy1fz Microsoft.Network/dnsResolvers "0000c2d4-0000-0800-0000-604013880000"
 ```
 
-Perintah ini mendapatkan pemecah Masalah DNS tunggal berdasarkan nama.
+Perintah ini mendapatkan pemecah masalah DNS tunggal berdasarkan nama.
 
 ### Contoh 4: Mencantumkan semua Pemecah Masalah DNS di bawah jaringan virtual 
 ```powershell
@@ -118,7 +118,7 @@ Location Name                      Type                           Etag
 westus2  psdnsresolvername33nmy1fz Microsoft.Network/dnsResolvers "0000c2d4-0000-0800-0000-604013880000"
 ```
 
-Perintah ini mendapatkan pemecah Masalah DNS tunggal dengan jaringan virtual.
+Perintah ini mendapatkan Pemecah Masalah DNS tunggal dengan jaringan virtual.
 
 ## PARAMETERS
 
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DnsResolver.Models.IDnsResolverIdentity
@@ -282,8 +282,8 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IDnsResolverIdentity>: Parameter Identitas
-  - `[DnsForwardingRulesetName <String>]`: Nama kumpulan aturan penerusan DNS.
+INPUTOBJECT `<IDnsResolverIdentity>`: Parameter Identitas
+  - `[DnsForwardingRulesetName <String>]`: Nama set aturan penerusan DNS.
   - `[DnsResolverName <String>]`: Nama pemecah masalah DNS.
   - `[ForwardingRuleName <String>]`: Nama aturan penerusan.
   - `[Id <String>]`: Jalur identitas sumber daya

@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.cloudservice/res
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Restart-AzCloudService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Restart-AzCloudService.md
-ms.openlocfilehash: bb2fa8f8bde5a83bd55946fd43d2f09236d9eebe
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: e9fcb82e43a924673c4585360ca5f7bfc0b6f534
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145737694"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146620732"
 ---
 # Restart-AzCloudService
 
@@ -245,7 +245,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ICloudServiceIdentity>: Parameter Identitas
+INPUTOBJECT `<ICloudServiceIdentity>`: Parameter Identitas
   - `[CloudServiceName <String>]`: 
   - `[IPConfigurationName <String>]`: Nama konfigurasi IP.
   - `[Id <String>]`: Jalur identitas sumber daya

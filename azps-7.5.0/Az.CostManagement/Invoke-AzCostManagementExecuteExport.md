@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.costmanagement/i
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CostManagement/help/Invoke-AzCostManagementExecuteExport.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CostManagement/help/Invoke-AzCostManagementExecuteExport.md
-ms.openlocfilehash: b9a4e4509c648a1de566d096363f2b51948d09c4
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: 5ad17fdbf3b297d41ac11c77daee1d646e7b5679
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145816110"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146620498"
 ---
 # Invoke-AzCostManagementExecuteExport
 
@@ -39,14 +39,14 @@ Operasi untuk menjalankan ekspor.
 
 ## EXAMPLES
 
-### Contoh 1: Memanggil Ekspor dengan ExportName dan Cakupan
+### Contoh 1: Panggil Ekspor menurut ExportName dan Cakupan
 ```powershell
 Invoke-AzCostManagementExecuteExport -ExportName 'TestExport' -Scope 'subscriptions/**********'
 ```
 
 Panggil Ekspor menurut ExportName dan Cakupan
 
-### Contoh 2: Memanggil Ekspor oleh InputObject
+### Contoh 2: Panggil Ekspor oleh InputObject
 ```powershell
 $getExport = Get-AzCostManagementExport -Name 'TestExport' -Scope 'subscriptions/**********'
 Invoke-AzCostManagementExecuteExport -InputObject $getExport
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.CostManagement.Models.ICostManagementIdentity
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -Cakupan
-Parameter ini mendefinisikan cakupan costmanagement dari perspektif 'Langganan' yang berbeda,'ResourceGroup' dan 'Berikan Layanan'.
+Parameter ini mendefinisikan cakupan costmanagement dari perspektif yang berbeda 'Langganan','ResourceGroup' dan 'Sediakan Layanan'.
 
 ```yaml
 Type: System.String
@@ -182,10 +182,10 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ICostManagementIdentity>: Parameter Identitas
+INPUTOBJECT `<ICostManagementIdentity>`: Parameter Identitas
   - `[AlertId <String>]`: ID Pemberitahuan
   - `[ExportName <String>]`: Nama Ekspor.
-  - `[ExternalCloudProviderId <String>]`: Ini bisa berupa '{externalSubscriptionId}' untuk akun tertaut atau '{externalBillingAccountId}' untuk akun konsolidasi yang digunakan dengan operasi dimensi/kueri.
+  - `[ExternalCloudProviderId <String>]`: Ini bisa menjadi '{externalSubscriptionId}' untuk akun tertaut atau '{externalBillingAccountId}' untuk akun konsolidasi yang digunakan dengan operasi dimensi/kueri.
   - `[ExternalCloudProviderType <ExternalCloudProviderType?>]`: Jenis penyedia cloud eksternal yang terkait dengan operasi dimensi/kueri. Ini termasuk 'externalSubscriptions' untuk akun tertaut dan 'externalBillingAccounts' untuk akun konsolidasi.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Scope <String>]`: Cakupan yang terkait dengan operasi tampilan. Ini termasuk 'subscriptions/{subscriptionId}' untuk cakupan langganan, 'subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}' untuk cakupan resourceGroup, 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}' for Billing Account scope, 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}/departments/{departmentId}' for Department scope, 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}/enrollmentAccounts/{ enrollmentAccountId}' untuk cakupan EnrollmentAccount, 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}/billingProfiles/{billingProfileId}' untuk cakupan BillingProfile, 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}/invoiceSections/{invoiceSectionId}' untuk cakupan InvoiceSection, 'providers/Microsoft.Management/managementGroups/{managementGroupId}' untuk cakupan Grup Manajemen, 'providers/Microsoft.CostManagement/externalBillingAccounts/{ externalBillingAccountName}' untuk cakupan Akun Penagihan Eksternal dan 'providers/Microsoft.CostManagement/externalSubscriptions/{externalSubscriptionName}' untuk cakupan Langganan Eksternal.

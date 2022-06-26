@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.mysql/remove-azm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Remove-AzMySqlFlexibleServerFirewallRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Remove-AzMySqlFlexibleServerFirewallRule.md
-ms.openlocfilehash: 6bb55c5128d42a5422e4a6cbd7cf2819ec9f8cf6
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: b8fc83a17fcc6b21e03d27af6c7255a7c61173b9
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145779616"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146622712"
 ---
 # Remove-AzMySqlFlexibleServerFirewallRule
 
@@ -40,14 +40,14 @@ Menghapus aturan firewall.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus Aturan Firewall MySql berdasarkan nama
+### Contoh 1: Hapus Aturan Firewall MySql menurut nama
 ```powershell
 Remove-AzMySqlFlexibleServerFirewallRule -Name firewall-rule-test -ResourceGroupName PowershellMySqlTest -ServerName mysql-test
 ```
 
 Cmdlet ini menghapus Aturan Firewall MySql berdasarkan nama.
 
-### Contoh 2: Menghapus Aturan Firewall MySql menurut identitas
+### Contoh 2: Hapus Aturan Firewall MySql menurut identitas
 ```powershell
 $ID = "/subscriptions/<SubscriptionId>/resourceGroups/PowershellMySqlTest/providers/Microsoft.DBforMySQL/flexibleServers/mysql-test/firewallRules/firewall-rule-test"
 Remove-AzMySqlFlexibleServerFirewallRule -InputObject $ID
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.MySql.Models.IMySqlIdentity
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -244,14 +244,14 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMySqlIdentity>: Parameter Identitas
+INPUTOBJECT `<IMySqlIdentity>`: Parameter Identitas
   - `[BackupName <String>]`: Nama cadangan.
   - `[ConfigurationName <String>]`: Nama konfigurasi server.
   - `[DatabaseName <String>]`: Nama database.
   - `[FirewallRuleName <String>]`: Nama aturan firewall server.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[LocationName <String>]`: Nama lokasi.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SecurityAlertPolicyName <SecurityAlertPolicyName?>]`: Nama kebijakan pemberitahuan keamanan.
   - `[ServerName <String>]`: Nama server.
   - `[SubscriptionId <String>]`: ID langganan target.

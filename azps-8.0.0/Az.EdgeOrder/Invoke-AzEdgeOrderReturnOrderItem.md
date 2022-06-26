@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.edgeorder/invoke
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/Invoke-AzEdgeOrderReturnOrderItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/Invoke-AzEdgeOrderReturnOrderItem.md
-ms.openlocfilehash: 4ddaeaec12c26c2e1e9da956d6e5cd0b4e043769
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 8527baafd72ccd7c2cad8ab4d63990e3ecb8fe2b
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145526170"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146622028"
 ---
 # Invoke-AzEdgeOrderReturnOrderItem
 
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -296,23 +296,23 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IEdgeOrderIdentity>: Parameter Identitas
+INPUTOBJECT `<IEdgeOrderIdentity>`: Parameter Identitas
   - `[AddressName <String>]`: Nama alamat Sumber Daya dalam grup sumber daya yang ditentukan. panjang nama alamat harus antara 3 dan 24 karakter dan hanya menggunakan alfanumerik dan garis bawah
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Nama wilayah Azure.
   - `[OrderItemName <String>]`: Nama item pesanan
   - `[OrderName <String>]`: Nama pesanan
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
 
-RETURNADDRESSCONTACTDETAIL <IContactDetails>: Detail kontak untuk alamat
+RETURNADDRESSCONTACTDETAIL `<IContactDetails>`: Detail kontak untuk alamat
   - `ContactName <String>`: Nama kontak orang tersebut.
   - `EmailList <String[]>`: Daftar Email-id yang akan diberi tahu tentang kemajuan pekerjaan.
   - `Phone <String>`: Telepon nomor kontak.
   - `[Mobile <String>]`: Nomor ponsel kontak.
   - `[PhoneExtension <String>]`: Telepon nomor ekstensi kontak.
 
-RETURNADDRESSSHIPPINGADDRESS <IShippingAddress>: Detail pengiriman untuk alamat
+RETURNADDRESSSHIPPINGADDRESS `<IShippingAddress>`: Detail pengiriman untuk alamat
   - `Country <String>`: Nama Negara.
   - `StreetAddress1 <String>`: Alamat Jalan baris 1.
   - `[AddressType <AddressType?>]`: Jenis alamat.

@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.marketplace/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Get-AzMarketplacePrivateStoreV1.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Get-AzMarketplacePrivateStoreV1.md
-ms.openlocfilehash: 2d489ea70b3bb70b7114c3e37d6c25586328cd10
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: fe3092bff472935731a1e13b63de8c8eafc23e08
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145815066"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146619724"
 ---
 # Get-AzMarketplacePrivateStoreV1
 
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Marketplace.Models.IMarketplaceIdentity
@@ -139,11 +139,11 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMarketplaceIdentity>: Parameter Identitas
+INPUTOBJECT `<IMarketplaceIdentity>`: Parameter Identitas
   - `[AdminRequestApprovalId <String>]`: ID persetujuan permintaan admin untuk membuat atau memperbarui
   - `[CollectionId <String>]`: ID koleksi
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[OfferId <String>]`: ID penawaran untuk memperbarui atau menghapus
+  - `[OfferId <String>]`: ID penawaran yang akan diperbarui atau dihapus
   - `[PrivateStoreId <String>]`: ID penyimpanan - harus menggunakan ID penyewa
   - `[RequestApprovalId <String>]`: ID persetujuan permintaan untuk membuat atau memperbarui
 

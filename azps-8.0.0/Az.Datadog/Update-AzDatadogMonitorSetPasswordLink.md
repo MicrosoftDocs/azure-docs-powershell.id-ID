@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.datadog/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/Update-AzDatadogMonitorSetPasswordLink.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/Update-AzDatadogMonitorSetPasswordLink.md
-ms.openlocfilehash: 201e704727c24ae579df2b89a2d9aecb166f5012
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 4adeaf61caed9fa3b76bcd72190d0c3c9f3b5d5d
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145516339"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146622208"
 ---
 # Update-AzDatadogMonitorSetPasswordLink
 
@@ -36,7 +36,7 @@ Refresh tautan atur kata sandi dan kembalikan yang terbaru.
 
 ## EXAMPLES
 
-### Contoh 1: Refresh tautan kata sandi yang ditetapkan dan kembalikan yang terbaru
+### Contoh 1: Refresh tautan set kata sandi dan kembalikan yang terbaru
 ```powershell
 Update-AzDatadogMonitorSetPasswordLink -ResourceGroupName azure-rg-Datadog -Name Datadog
 ```
@@ -45,9 +45,9 @@ Update-AzDatadogMonitorSetPasswordLink -ResourceGroupName azure-rg-Datadog -Name
 https://us3.Datadoghq.com/account/reset_password/xxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
-Perintah ini menyegarkan tautan set kata sandi dan mengembalikan yang terbaru.
+Perintah ini me-refresh tautan atur kata sandi dan mengembalikan yang terbaru.
 
-### Contoh 2: Refresh tautan kata sandi yang ditetapkan dan kembalikan yang terbaru menurut alur
+### Contoh 2: Refresh tautan set kata sandi dan kembalikan yang terbaru menurut alur
 ```powershell
 Get-AzDatadogMonitor -ResourceGroupName azure-rg-Datadog -Name Datadog | Update-AzDatadogMonitorSetPasswordLink
 ```
@@ -56,7 +56,7 @@ Get-AzDatadogMonitor -ResourceGroupName azure-rg-Datadog -Name Datadog | Update-
 https://us3.Datadoghq.com/account/reset_password/xxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
-Perintah ini menyegarkan tautan set kata sandi dan mengembalikan yang terbaru menurut alur.
+Perintah ini merefresh tautan atur kata sandi dan mengembalikan yang terbaru menurut alur.
 
 ## PARAMETERS
 
@@ -76,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.IDatadogIdentity
@@ -187,7 +187,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IDatadogIdentity>: Parameter Identitas
+INPUTOBJECT `<IDatadogIdentity>`: Parameter Identitas
   - `[ConfigurationName <String>]`: Nama konfigurasi
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[MonitorName <String>]`: Memantau nama sumber daya

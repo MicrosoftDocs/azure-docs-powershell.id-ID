@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.maps/update-azma
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/Update-AzMapsCreator.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/Update-AzMapsCreator.md
-ms.openlocfilehash: 29fbada47c810cae8789a97aa1e26e5cc59c7a3f
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: 51ba445a91d3f90127cae7f8a38c434e49b19b93
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145794547"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146622784"
 ---
 # Update-AzMapsCreator
 
 ## SYNOPSIS
-Memperbarui sumber daya Peta Creator.
+Updates sumber daya pembuat Peta.
 Hanya subset parameter yang dapat diperbarui setelah pembuatan, seperti Tag.
 
 > [!NOTE]
@@ -37,12 +37,12 @@ Update-AzMapsCreator -InputObject <IMapsIdentity> [-StorageUnit <Int32>] [-Tag <
 ```
 
 ## DESCRIPTION
-Memperbarui sumber daya Peta Creator.
+Updates sumber daya pembuat Peta.
 Hanya subset parameter yang dapat diperbarui setelah pembuatan, seperti Tag.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui sumber daya pembuat Peta
+### Contoh 1: Updates sumber daya pembuat Peta
 ```powershell
 Update-AzMapsCreator -ResourceGroupName azure-rg-test -AccountName pwsh-mapsAccount03 -Name creator-01 -Tag @{'key1'='value1'; 'key2'='value2'}
 ```
@@ -53,10 +53,10 @@ Location Name       Type
 eastus2  creator-01 Microsoft.Maps/accounts/creators
 ```
 
-Perintah ini memperbarui sumber daya pembuat Peta.
+Perintah ini memperbarui sumber daya Peta Creator.
 Hanya subset parameter yang dapat diperbarui setelah pembuatan, seperti Tag.
 
-### Contoh 2: Memperbarui sumber daya pembuat Peta menurut alur
+### Contoh 2: Updates sumber daya pembuat Peta menurut alur
 ```powershell
 Get-AzMapsCreator -ResourceGroupName azure-rg-test -AccountName pwsh-mapsAccount03 -Name creator-01 | Update-AzMapsCreator -Tag @{'key1'='value1'; 'key2'='value2'}
 ```
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Maps.Models.IMapsIdentity
@@ -181,7 +181,7 @@ Accept wildcard characters: False
 
 ### -Tag
 Mendapatkan atau menetapkan daftar pasangan nilai kunci yang menjelaskan sumber daya.
-Tag ini dapat digunakan dalam melihat dan mengelompokkan sumber daya ini (di seluruh grup sumber daya).
+Tag ini dapat digunakan dalam menampilkan dan mengelompokkan sumber daya ini (di seluruh grup sumber daya).
 Maksimal 15 tag dapat disediakan untuk sumber daya.
 Setiap tag harus memiliki kunci yang tidak lebih besar dari 128 karakter dan nilai tidak lebih besar dari 256 karakter.
 
@@ -248,7 +248,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMapsIdentity>: Parameter Identitas
+INPUTOBJECT `<IMapsIdentity>`: Parameter Identitas
   - `[AccountName <String>]`: Nama Akun Peta.
   - `[CreatorName <String>]`: Nama instans Peta Creator.
   - `[Id <String>]`: Jalur identitas sumber daya

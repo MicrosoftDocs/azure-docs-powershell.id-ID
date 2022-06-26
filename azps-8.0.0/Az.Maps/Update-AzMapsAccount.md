@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.maps/update-azma
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/Update-AzMapsAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/Update-AzMapsAccount.md
-ms.openlocfilehash: 4366ce1cd77121c5399112cd0b84679c885dd1b6
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 2ee77541a6ee1f2be9848d97622eb7c57b4d8e0c
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145500510"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146621542"
 ---
 # Update-AzMapsAccount
 
 ## SYNOPSIS
-Memperbarui Akun Peta.
+Updates Akun Peta.
 Hanya subset parameter yang dapat diperbarui setelah pembuatan, seperti Sku, Tag, Properti.
 
 ## SYNTAX
@@ -34,12 +34,12 @@ Update-AzMapsAccount -InputObject <IMapsIdentity> [-DisableLocalAuth] [-Kind <Ki
 ```
 
 ## DESCRIPTION
-Memperbarui Akun Peta.
+Updates Akun Peta.
 Hanya subset parameter yang dapat diperbarui setelah pembuatan, seperti Sku, Tag, Properti.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui Akun Peta
+### Contoh 1: Updates Akun Peta
 ```powershell
 Update-AzMapsAccount -ResourceGroupName azure-rg-test -Name pwsh-mapsAccount03 -Tag @{'key1'='value1'; 'key2'='value2'}
 ```
@@ -53,7 +53,7 @@ eastus   pwsh-mapsAccount03 Microsoft.Maps/accounts Gen1
 Perintah ini memperbarui Akun Peta.
 Hanya subset parameter yang dapat diperbarui setelah pembuatan, seperti Sku, Tag, Properti.
 
-### Contoh 2: Memperbarui Akun Peta menurut alur
+### Contoh 2: Updates Akun Peta menurut alur
 ```powershell
 Get-AzMapsAccount -ResourceGroupName azure-rg-test -Name pwsh-mapsAccount03 | Update-AzMapsAccount -Tag @{'key1'='value1'; 'key2'='value2'}
 ```
@@ -260,7 +260,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMapsIdentity>: Parameter Identitas
+INPUTOBJECT `<IMapsIdentity>`: Parameter Identitas
   - `[AccountName <String>]`: Nama Akun Peta.
   - `[CreatorName <String>]`: Nama instans Peta Creator.
   - `[Id <String>]`: Jalur identitas sumber daya

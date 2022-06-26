@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.redisenterprisec
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisEnterpriseCache/help/Update-AzRedisEnterpriseCache.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisEnterpriseCache/help/Update-AzRedisEnterpriseCache.md
-ms.openlocfilehash: 989d749967a451f2f6b7d88d37488d07fd8676d0
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 2f04812159fd54a588138cb256a0ae7f6f50e842
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145645798"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146619580"
 ---
 # Update-AzRedisEnterpriseCache
 
 ## SYNOPSIS
-Memperbarui kluster RedisEnterprise yang ada
+Updates kluster RedisEnterprise yang ada
 
 > [!NOTE]
 >Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.redisenterprisecache/update-azredisenterprisecache) untuk informasi terbaru.
@@ -37,7 +37,7 @@ Update-AzRedisEnterpriseCache -InputObject <IRedisEnterpriseCacheIdentity> [-Cap
 ```
 
 ## DESCRIPTION
-Memperbarui kluster RedisEnterprise yang ada
+Updates kluster RedisEnterprise yang ada
 
 ## EXAMPLES
 
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.RedisEnterpriseCache.Models.IRedisEnterpriseCacheIdentity
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -277,14 +277,14 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IRedisEnterpriseCacheIdentity>: Parameter Identitas
+INPUTOBJECT `<IRedisEnterpriseCacheIdentity>`: Parameter Identitas
   - `[ClusterName <String>]`: Nama kluster RedisEnterprise.
   - `[DatabaseName <String>]`: Nama database.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Wilayah tempat operasi berada.
   - `[OperationId <String>]`: Pengidentifikasi unik operasi.
   - `[PrivateEndpointConnectionName <String>]`: Nama koneksi titik akhir privat yang terkait dengan sumber daya Azure
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
 
 ## RELATED LINKS

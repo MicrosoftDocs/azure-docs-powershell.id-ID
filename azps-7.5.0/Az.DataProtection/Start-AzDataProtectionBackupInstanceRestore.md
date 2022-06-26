@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.dataprotection/s
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Start-AzDataProtectionBackupInstanceRestore.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Start-AzDataProtectionBackupInstanceRestore.md
-ms.openlocfilehash: e55808b7c1a37e088479bd8648728d0828e294f1
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 0d439e7b1062331c886e2105ef7846775d1ed307
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145748512"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146620318"
 ---
 # Start-AzDataProtectionBackupInstanceRestore
 
@@ -322,14 +322,14 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-PARAMETER <IAzureBackupRestoreRequest>: Permintaan pemulihan cadangan Azure
+PARAMETER `<IAzureBackupRestoreRequest>`: Permintaan pemulihan cadangan Azure
   - `ObjectType <String>`: 
   - `RestoreTargetInfo <IRestoreTargetInfoBase>`: Mendapatkan atau menetapkan informasi target pemulihan.
     - `ObjectType <String>`: Jenis objek Datasource, digunakan untuk menginisialisasi jenis warisan yang tepat
     - `[RestoreLocation <String>]`: Wilayah Pemulihan Target
   - `SourceDataStoreType <SourceDataStoreType>`: Mendapatkan atau mengatur jenis penyimpanan data sumber.
 
-RESTORETARGETINFO <IRestoreTargetInfoBase>: Mendapatkan atau menetapkan informasi target pemulihan.
+RESTORETARGETINFO `<IRestoreTargetInfoBase>`: Mendapatkan atau menetapkan informasi target pemulihan.
   - `ObjectType <String>`: Jenis objek Datasource, digunakan untuk menginisialisasi jenis warisan yang tepat
   - `[RestoreLocation <String>]`: Wilayah Pemulihan Target
 

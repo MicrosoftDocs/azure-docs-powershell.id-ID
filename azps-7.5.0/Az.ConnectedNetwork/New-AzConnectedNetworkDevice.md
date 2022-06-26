@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.connectednetwork
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/New-AzConnectedNetworkDevice.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/New-AzConnectedNetworkDevice.md
-ms.openlocfilehash: ef554eb697fdf4fc101b8a39a8c25bd925c5d82f
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: 8c16a76c0eb2ee8aa900dff115305e4f35e570c4
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145766784"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146620552"
 ---
 # New-AzConnectedNetworkDevice
 
@@ -180,7 +180,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -273,7 +273,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-PROPERTI <IDevicePropertiesFormat>: Properti perangkat.
+PROPERTI `<IDevicePropertiesFormat>`: Properti perangkat.
   - `DeviceType <DeviceType>`: Jenis perangkat.
 
 ## RELATED LINKS

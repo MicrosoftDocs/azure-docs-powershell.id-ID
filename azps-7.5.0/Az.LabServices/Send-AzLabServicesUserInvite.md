@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.labservices/send
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Send-AzLabServicesUserInvite.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Send-AzLabServicesUserInvite.md
-ms.openlocfilehash: 3822c97f066de6cb77d5b11edd7c190700350331
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 89ace0e67cdd0865c5e2489baec9b3d55df57572
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145692650"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146619814"
 ---
 # Send-AzLabServicesUserInvite
 
@@ -276,7 +276,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-USER <User>: 
+USER `<User>`: 
   - `Email <String>`: Alamat email pengguna.
   - `[AdditionalUsageQuota <TimeSpan?>]`: Jumlah waktu kuota penggunaan yang didapat pengguna selain kuota penggunaan lab.
   - `[SystemDataCreatedAt <DateTime?>]`: Tanda waktu pembuatan sumber daya (UTC).

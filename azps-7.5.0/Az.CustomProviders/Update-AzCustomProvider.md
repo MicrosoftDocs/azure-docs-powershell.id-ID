@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.customproviders/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CustomProviders/help/Update-AzCustomProvider.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CustomProviders/help/Update-AzCustomProvider.md
-ms.openlocfilehash: 8633dac42f37eea7bb0cb2bf8900c7121b08356e
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: 11e429d6118f1972a2bb7c0614e4b3da453b2a4f
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145800980"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146620480"
 ---
 # Update-AzCustomProvider
 
 ## SYNOPSIS
-Memperbarui penyedia sumber daya kustom yang ada.
+Updates penyedia sumber daya kustom yang sudah ada.
 Satu-satunya nilai yang dapat diperbarui melalui PATCH saat ini adalah tag.
 
 > [!NOTE]
@@ -36,7 +36,7 @@ Update-AzCustomProvider -InputObject <ICustomProvidersIdentity> [-Tag <Hashtable
 ```
 
 ## DESCRIPTION
-Memperbarui penyedia sumber daya kustom yang ada.
+Updates penyedia sumber daya kustom yang sudah ada.
 Satu-satunya nilai yang dapat diperbarui melalui PATCH saat ini adalah tag.
 
 ## EXAMPLES
@@ -91,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.CustomProviders.Models.ICustomProvidersIdentity
@@ -137,7 +137,7 @@ Accept wildcard characters: False
 
 ### -SubscriptionId
 Atur ID Langganan Azure.
-Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000)
+Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-00000000000)
 
 ```yaml
 Type: System.String
@@ -217,13 +217,13 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ICustomProvidersIdentity>: Parameter Identitas
+INPUTOBJECT `<ICustomProvidersIdentity>`: Parameter Identitas
   - `[AssociationName <String>]`: Nama asosiasi.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ResourceGroupName <String>]`: Nama grup sumber daya.
   - `[ResourceProviderName <String>]`: Nama penyedia sumber daya.
   - `[Scope <String>]`: Ruang lingkup asosiasi.
-  - `[SubscriptionId <String>]`: ID langganan Azure. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000)
+  - `[SubscriptionId <String>]`: ID langganan Azure. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-00000000000)
 
 ## RELATED LINKS
 

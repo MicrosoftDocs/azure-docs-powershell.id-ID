@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Remove-AzMigrateServerReplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Remove-AzMigrateServerReplication.md
-ms.openlocfilehash: b6d7f297cbe8ff2d05ddfed02427ac50c44659a6
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: 1f1b4b30127795db0085949763d4c07db05cbc7b
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145791748"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146622766"
 ---
 # Remove-AzMigrateServerReplication
 
@@ -198,7 +198,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMigrationItem>: Menentukan objek mesin server replikasi.
+INPUTOBJECT `<IMigrationItem>`: Menentukan objek mesin server replikasi.
   - `[Location <String>]`: Lokasi Sumber Daya
   - `[ProviderSpecificDetail <IMigrationProviderSpecificSettings>]`: Pengaturan kustom penyedia migrasi.
 

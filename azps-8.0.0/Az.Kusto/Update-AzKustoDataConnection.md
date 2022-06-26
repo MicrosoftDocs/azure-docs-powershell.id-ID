@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.kusto/update-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Update-AzKustoDataConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Update-AzKustoDataConnection.md
-ms.openlocfilehash: bfe1dde6c0bf3505ec12dd4361d395734a6c1a5b
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 11e201a2a1363d84e4aca66703a13a5cc024aa96
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145532457"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146621704"
 ---
 # Update-AzKustoDataConnection
 
 ## SYNOPSIS
-Memperbarui koneksi data.
+Updates koneksi data.
 
 ## SYNTAX
 
@@ -76,7 +76,7 @@ Update-AzKustoDataConnection -InputObject <IKustoIdentity> -ConsumerGroup <Strin
 ```
 
 ## DESCRIPTION
-Memperbarui koneksi data.
+Updates koneksi data.
 
 ## EXAMPLES
 
@@ -563,7 +563,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IKustoIdentity>: Parameter Identitas
+INPUTOBJECT `<IKustoIdentity>`: Parameter Identitas
   - `[AttachedDatabaseConfigurationName <String>]`: Nama konfigurasi database terlampir.
   - `[ClusterName <String>]`: Nama kluster Kusto.
   - `[DataConnectionName <String>]`: Nama koneksi data.

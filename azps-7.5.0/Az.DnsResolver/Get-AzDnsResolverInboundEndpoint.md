@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.dnsresolver/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/Get-AzDnsResolverInboundEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/Get-AzDnsResolverInboundEndpoint.md
-ms.openlocfilehash: 5bba43c9a3c0dadd2310b03e1ea981c5988f9cdb
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 507dc9c2110028b413c4278c0e5c5d837cccd18b
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145740124"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146620138"
 ---
 # Get-AzDnsResolverInboundEndpoint
 
@@ -199,7 +199,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IDnsResolverIdentity>: Parameter Identitas
+INPUTOBJECT `<IDnsResolverIdentity>`: Parameter Identitas
   - `[DnsForwardingRulesetName <String>]`: Nama kumpulan aturan penerusan DNS.
   - `[DnsResolverName <String>]`: Nama pemecah masalah DNS.
   - `[ForwardingRuleName <String>]`: Nama aturan penerusan.

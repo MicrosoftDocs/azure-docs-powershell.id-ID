@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.cloudservice/sto
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Stop-AzCloudService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Stop-AzCloudService.md
-ms.openlocfilehash: 24de7c565999f57636cd9910ed53a4dbf5654a31
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: acec3c89410e8ddd285b1312022e98507bc7874b
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145737568"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146620588"
 ---
 # Stop-AzCloudService
 
@@ -222,7 +222,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ICloudServiceIdentity>: Parameter Identitas
+INPUTOBJECT `<ICloudServiceIdentity>`: Parameter Identitas
   - `[CloudServiceName <String>]`: 
   - `[IPConfigurationName <String>]`: Nama konfigurasi IP.
   - `[Id <String>]`: Jalur identitas sumber daya

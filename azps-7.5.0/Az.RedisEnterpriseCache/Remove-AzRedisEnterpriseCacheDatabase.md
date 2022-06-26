@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.redisenterprisec
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisEnterpriseCache/help/Remove-AzRedisEnterpriseCacheDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisEnterpriseCache/help/Remove-AzRedisEnterpriseCacheDatabase.md
-ms.openlocfilehash: 4c09bda2139f2e9b7e30d4bf1a6a6a19feee5ea0
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 586bb42115e23bc1c0711b2252c622106484da79
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145645852"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146619544"
 ---
 # Remove-AzRedisEnterpriseCacheDatabase
 
@@ -233,7 +233,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IRedisEnterpriseCacheIdentity>: Parameter Identitas
+INPUTOBJECT `<IRedisEnterpriseCacheIdentity>`: Parameter Identitas
   - `[ClusterName <String>]`: Nama kluster RedisEnterprise.
   - `[DatabaseName <String>]`: Nama database.
   - `[Id <String>]`: Jalur identitas sumber daya

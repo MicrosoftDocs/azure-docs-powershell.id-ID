@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.DataBox/new-AzDa
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/New-AzDataBoxJobDetailsObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/New-AzDataBoxJobDetailsObject.md
-ms.openlocfilehash: 9a51dc646b03c912c55d75b59a06013a1e098351
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: 1ed5022cda5e02539167e77f4ca77d4ac65a9801
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145806792"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146620444"
 ---
 # New-AzDataBoxJobDetailsObject
 
@@ -120,7 +120,7 @@ Jika ini tidak diteruskan, layanan akan menghasilkan kata sandi itu sendiri.
 Ini tidak akan dikembalikan di Dapatkan Panggilan.
 Persyaratan Kata Sandi : Kata sandi harus minimal 12 dan maksimum 64 karakter.
 Kata sandi harus memiliki setidaknya satu alfabet huruf besar, satu angka dan satu karakter khusus.
-Kata sandi tidak boleh memiliki karakter berikut : Kata Sandi IilLoO0 hanya boleh memiliki alfabet, angka dan karakter ini : @#\-$%^!+=;:_()]+.
+Kata sandi tidak boleh memiliki karakter berikut: Kata Sandi IilLoO0 hanya boleh memiliki alfabet, angka, dan karakter ini : @#\-$%^!+=;:_()]+.
 
 ```yaml
 Type: System.String
@@ -230,7 +230,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-CONTACTDETAIL <IContactDetails>: Detail kontak untuk pemberitahuan dan pengiriman.
+CONTACTDETAIL `<IContactDetails>`: Detail kontak untuk pemberitahuan dan pengiriman.
   - `ContactName <String>`: Nama kontak orang tersebut.
   - `EmailList <String[]>`: Daftar Email-id yang akan diberi tahu tentang kemajuan pekerjaan.
   - `Phone <String>`: Telepon nomor kontak.
@@ -266,20 +266,20 @@ DATAIMPORTDETAIL <IDataImportDetails[]>: Detail data yang akan diimpor ke azure.
   - `AccountDetailDataAccountType <DataAccountType>`: Jenis akun data yang akan ditransfer.
   - `[AccountDetailSharePassword <String>]`: Kata sandi untuk semua berbagi yang akan dibuat pada perangkat. Tidak boleh diteruskan untuk pekerjaan TransferType:ExportFromAzure. Jika ini tidak diteruskan, layanan akan menghasilkan kata sandi itu sendiri. Ini tidak akan dikembalikan di Dapatkan Panggilan. Persyaratan Kata Sandi : Kata sandi harus minimal 12 dan maksimum 64 karakter. Kata sandi harus memiliki setidaknya satu alfabet huruf besar, satu angka dan satu karakter khusus. Kata sandi tidak boleh memiliki karakter berikut: Kata Sandi IilLoO0 hanya boleh memiliki alfabet, angka dan karakter ini : @#\-$%^!+=;:_()]+
 
-KEYENCRYPTIONKEY <IKeyEncryptionKey>: Detail tentang jenis enkripsi kunci mana yang sedang digunakan.
+KEYENCRYPTIONKEY `<IKeyEncryptionKey>`: Detail tentang jenis enkripsi kunci mana yang sedang digunakan.
   - `KekType <KekType>`: Jenis kunci enkripsi yang digunakan untuk enkripsi kunci.
   - `[IdentityProperty <IIdentityProperties>]`: Properti identitas terkelola yang digunakan untuk enkripsi kunci.
     - `[Type <String>]`: Jenis identitas layanan terkelola.
     - `[UserAssignedResourceId <String>]`: Id sumber daya arm untuk identitas yang ditetapkan pengguna yang akan digunakan untuk mengambil token MSI.
-  - `[KekUrl <String>]`: Kunci enkripsi kunci. Ini diperlukan dalam kasus KekType yang dikelola Pelanggan.
-  - `[KekVaultResourceId <String>]`: Id sumber daya kek vault. Ini diperlukan dalam kasus KekType yang dikelola Pelanggan.
+  - `[KekUrl <String>]`: Kunci enkripsi kunci. Hal ini diperlukan dalam kasus KekType yang dikelola pelanggan.
+  - `[KekVaultResourceId <String>]`: Id sumber daya kek vault. Hal ini diperlukan dalam kasus KekType yang dikelola pelanggan.
 
-PREFERENSI <IPreferences>: Preferensi untuk pesanan.
+PREFERENSI `<IPreferences>`: Preferensi untuk pesanan.
   - `[EncryptionPreferenceDoubleEncryption <DoubleEncryption?>]`: Menentukan lapisan sekunder pengaktifan enkripsi berbasis perangkat lunak.
   - `[PreferredDataCenterRegion <String[]>]`: Wilayah pusat data pilihan.
   - `[TransportPreferencePreferredShipmentType <TransportShipmentTypes?>]`: Menunjukkan jenis Logistik Pengiriman yang disukai pelanggan.
 
-SHIPPINGADDRESS <IShippingAddress>: Alamat pengiriman pelanggan.
+SHIPPINGADDRESS `<IShippingAddress>`: Alamat pengiriman pelanggan.
   - `Country <String>`: Nama Negara.
   - `StreetAddress1 <String>`: Alamat Jalan baris 1.
   - `[AddressType <AddressType?>]`: Jenis alamat.

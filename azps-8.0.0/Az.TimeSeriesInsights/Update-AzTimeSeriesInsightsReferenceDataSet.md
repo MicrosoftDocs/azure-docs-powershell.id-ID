@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.timeseriesinsigh
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/Update-AzTimeSeriesInsightsReferenceDataSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/Update-AzTimeSeriesInsightsReferenceDataSet.md
-ms.openlocfilehash: 62a8cf341bd54308d12d03f18b26b4ac874da39c
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 9389d46a78b06b2f29813612a63db52ececffa75
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145539793"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146620894"
 ---
 # Update-AzTimeSeriesInsightsReferenceDataSet
 
 ## SYNOPSIS
-Memperbarui himpunan data referensi dengan nama yang ditentukan dalam langganan, grup sumber daya, dan lingkungan yang ditentukan.
+Updates himpunan data referensi dengan nama yang ditentukan dalam langganan, grup sumber daya, dan lingkungan yang ditentukan.
 
 ## SYNTAX
 
@@ -33,7 +33,7 @@ Update-AzTimeSeriesInsightsReferenceDataSet -InputObject <ITimeSeriesInsightsIde
 ```
 
 ## DESCRIPTION
-Memperbarui himpunan data referensi dengan nama yang ditentukan dalam langganan, grup sumber daya, dan lingkungan yang ditentukan.
+Updates himpunan data referensi dengan nama yang ditentukan dalam langganan, grup sumber daya, dan lingkungan yang ditentukan.
 
 ## EXAMPLES
 
@@ -220,7 +220,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ITimeSeriesInsightsIdentity>: Parameter Identitas
+INPUTOBJECT `<ITimeSeriesInsightsIdentity>`: Parameter Identitas
   - `[AccessPolicyName <String>]`: Nama kebijakan akses.
   - `[EnvironmentName <String>]`: Nama lingkungan
   - `[EventSourceName <String>]`: Nama sumber peristiwa Time Series Insights yang terkait dengan lingkungan yang ditentukan.

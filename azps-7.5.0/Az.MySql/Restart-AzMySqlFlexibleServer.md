@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.mysql/restart-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Restart-AzMySqlFlexibleServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Restart-AzMySqlFlexibleServer.md
-ms.openlocfilehash: c7f8ade2cf08223be42836d321c579b72c8ea8cf
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: 3835cffd210eac00382dcb268abc0bc33a57bcd0
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145771122"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146619706"
 ---
 # Restart-AzMySqlFlexibleServer
 
@@ -201,7 +201,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -298,20 +298,20 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMySqlIdentity>: Parameter Identitas
+INPUTOBJECT `<IMySqlIdentity>`: Parameter Identitas
   - `[BackupName <String>]`: Nama cadangan.
   - `[ConfigurationName <String>]`: Nama konfigurasi server.
   - `[DatabaseName <String>]`: Nama database.
   - `[FirewallRuleName <String>]`: Nama aturan firewall server.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[LocationName <String>]`: Nama lokasi.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SecurityAlertPolicyName <SecurityAlertPolicyName?>]`: Nama kebijakan pemberitahuan keamanan.
   - `[ServerName <String>]`: Nama server.
   - `[SubscriptionId <String>]`: ID langganan target.
   - `[VirtualNetworkRuleName <String>]`: Nama aturan jaringan virtual.
 
-PARAMETER <IServerRestartParameter>: Parameter hidupkan ulang server.
+PARAMETER `<IServerRestartParameter>`: Parameter hidupkan ulang server.
   - `[MaxFailoverSecond <Int32?>]`: Waktu failover maksimum yang diizinkan dalam detik.
   - `[RestartWithFailover <EnableStatusEnum?>]`: Apakah failover ke server siaga saat memulai ulang server dengan ketersediaan tinggi diaktifkan atau tidak.
 

@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.appconfiguration
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AppConfiguration/help/Get-AzAppConfigurationStore.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AppConfiguration/help/Get-AzAppConfigurationStore.md
-ms.openlocfilehash: 45decb177488ed458f9ce16773cea41ce91c09e0
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 7368c9a1ccca437fd95ab6d95cb3e22c0340d0bf
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145685848"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146620858"
 ---
 # Get-AzAppConfigurationStore
 
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.AppConfiguration.Models.IAppConfigurationIdentity
@@ -201,7 +201,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IAppConfigurationIdentity>: Parameter Identitas
+INPUTOBJECT `<IAppConfigurationIdentity>`: Parameter Identitas
   - `[ConfigStoreName <String>]`: Nama penyimpanan konfigurasi.
   - `[GroupName <String>]`: Nama grup sumber daya tautan privat.
   - `[Id <String>]`: Jalur identitas sumber daya

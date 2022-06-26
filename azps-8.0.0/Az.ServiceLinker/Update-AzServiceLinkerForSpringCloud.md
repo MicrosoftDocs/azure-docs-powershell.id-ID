@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.servicelinker/up
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceLinker/help/Update-AzServiceLinkerForSpringCloud.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceLinker/help/Update-AzServiceLinkerForSpringCloud.md
-ms.openlocfilehash: 7244c0345b51bcbbf1c9dbf0ee95e5459dabebe9
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 79bca0f6af47bd7421d73bcd12b912c53d5a3397
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145534812"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146621092"
 ---
 # Update-AzServiceLinkerForSpringCloud
 
@@ -41,7 +41,7 @@ Operasi untuk memperbarui tautan yang ada di spring cloud.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui linker
+### Contoh 1: Perbarui linker
 ```powershell
 $target=New-AzServiceLinkerAzureResourceObject -Id /subscriptions/937bc588-a144-4083-8612-5f9ffbbddb14/resourceGroups/servicelinker-test-group/providers/Microsoft.DBforPostgreSQL/servers/servicelinker-postgresql/databases/test
 $authInfo=New-AzServiceLinkerSecretAuthInfoObject -Name username -SecretValue password 
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 
 ### -AuthInfo
 Jenis Autentikasi.
-Untuk membuat, lihat bagian NOTES untuk properti AUTHINFO dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti AUTHINFO dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ServiceLinker.Models.Api20220501.IAuthInfoBase
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ServiceLinker.Models.IServiceLinkerIdentity
@@ -286,7 +286,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetService
-Properti layanan target Untuk membangun, lihat bagian CATATAN untuk properti TARGETSERVICE dan membuat tabel hash.
+Properti layanan target Untuk dibangun, lihat bagian CATATAN untuk properti TARGETSERVICE dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ServiceLinker.Models.Api20220501.ITargetServiceBase
@@ -366,15 +366,15 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-AUTHINFO <IAuthInfoBase>: Jenis autentikasi.
+AUTHINFO `<IAuthInfoBase>`: Jenis autentikasi.
   - `AuthType <AuthType>`: Jenis autentikasi.
 
-INPUTOBJECT <IServiceLinkerIdentity>: Parameter Identitas
+INPUTOBJECT `<IServiceLinkerIdentity>`: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[LinkerName <String>]`: Nama sumber daya Linker.
-  - `[ResourceUri <String>]`: Pengidentifikasi Azure Resource Manager yang sepenuhnya memenuhi syarat dari sumber daya yang akan disambungkan.
+  - `[ResourceUri <String>]`: Pengidentifikasi Azure Resource manager yang sepenuhnya memenuhi syarat dari sumber daya yang akan disambungkan.
 
-TARGETSERVICE <ITargetServiceBase>: Properti layanan target
+TARGETSERVICE `<ITargetServiceBase>`: Properti layanan target
   - `Type <TargetServiceType>`: Jenis layanan target.
 
 ## RELATED LINKS

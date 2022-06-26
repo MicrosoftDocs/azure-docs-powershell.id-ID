@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.databricks/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Databricks/help/Get-AzDatabricksWorkspace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Databricks/help/Get-AzDatabricksWorkspace.md
-ms.openlocfilehash: c50f11e33ba0f03e3bd4dd67d73da00b5e601be3
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 4bb7f4b63a7261053575dc51bb8b7470dc6a1786
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145747054"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146620210"
 ---
 # Get-AzDatabricksWorkspace
 
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Databricks.Models.IDatabricksIdentity
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -192,12 +192,12 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IDatabricksIdentity>: Parameter Identitas
+INPUTOBJECT `<IDatabricksIdentity>`: Parameter Identitas
   - `[GroupId <String>]`: Nama sumber daya tautan privat
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[PeeringName <String>]`: Nama peering vNet ruang kerja.
   - `[PrivateEndpointConnectionName <String>]`: Nama koneksi titik akhir privat
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
   - `[WorkspaceName <String>]`: Nama ruang kerja.
 

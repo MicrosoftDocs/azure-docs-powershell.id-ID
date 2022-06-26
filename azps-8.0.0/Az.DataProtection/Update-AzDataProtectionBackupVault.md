@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.dataprotection/u
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Update-AzDataProtectionBackupVault.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Update-AzDataProtectionBackupVault.md
-ms.openlocfilehash: b51adc423a68990f6797df6e6017ef660fee0d59
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: a72884a715be0a16ca9866bd93c3f38da8d20273
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145529398"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146622244"
 ---
 # Update-AzDataProtectionBackupVault
 
 ## SYNOPSIS
-Memperbarui sumber daya BackupVault milik grup sumber daya.
+Updates sumber daya BackupVault milik grup sumber daya.
 Misalnya, memperbarui tag untuk sumber daya.
 
 ## SYNTAX
@@ -34,7 +34,7 @@ Update-AzDataProtectionBackupVault -InputObject <IDataProtectionIdentity> [-Iden
 ```
 
 ## DESCRIPTION
-Memperbarui sumber daya BackupVault milik grup sumber daya.
+Updates sumber daya BackupVault milik grup sumber daya.
 Misalnya, memperbarui tag untuk sumber daya.
 
 ## EXAMPLES
@@ -242,7 +242,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IDataProtectionIdentity>: Parameter Identitas
+INPUTOBJECT `<IDataProtectionIdentity>`: Parameter Identitas
   - `[BackupInstanceName <String>]`: Nama instans cadangan
   - `[BackupPolicyName <String>]`: 
   - `[Id <String>]`: Jalur identitas sumber daya

@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.confidentialledg
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConfidentialLedger/help/Remove-AzConfidentialLedger.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConfidentialLedger/help/Remove-AzConfidentialLedger.md
-ms.openlocfilehash: c8ab2547293fbcae86c94a42b3cca0dd6c4ccee7
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: eec6071c56c2f2f322caf6e3ece2c66db1791ecd
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145785988"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146622982"
 ---
 # Remove-AzConfidentialLedger
 
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ConfidentialLedger.Models.IConfidentialLedgerIdentity
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 
 ### -SubscriptionId
 Atur ID Langganan Azure.
-Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-00000000000)
+Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000)
 
 ```yaml
 Type: System.String
@@ -224,11 +224,11 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IConfidentialLedgerIdentity>: Parameter Identitas
+INPUTOBJECT `<IConfidentialLedgerIdentity>`: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[LedgerName <String>]`: Nama Confidential Ledger
   - `[ResourceGroupName <String>]`: Nama grup sumber daya.
-  - `[SubscriptionId <String>]`: ID langganan Azure. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-00000000000)
+  - `[SubscriptionId <String>]`: ID langganan Azure. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000)
 
 ## RELATED LINKS
 

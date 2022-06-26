@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.databricks/updat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Databricks/help/Update-AzDatabricksWorkspace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Databricks/help/Update-AzDatabricksWorkspace.md
-ms.openlocfilehash: 8d84a5cdcd345703c318900217c65e9f114e126f
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 3e69233356a109ab54b1f090a9f5395dcdd41f26
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145621200"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146622226"
 ---
 # Update-AzDatabricksWorkspace
 
 ## SYNOPSIS
-Memperbarui ruang kerja.
+Updates ruang kerja.
 
 ## SYNTAX
 
@@ -38,11 +38,11 @@ Update-AzDatabricksWorkspace -InputObject <IDatabricksIdentity> [-AmlWorkspaceId
 ```
 
 ## DESCRIPTION
-Memperbarui ruang kerja.
+Updates ruang kerja.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui tag ruang kerja Databricks
+### Contoh 1: Updates tag ruang kerja Databricks
 ```powershell
 $dbr = Get-AzDatabricksWorkspace -ResourceGroupName databricks-rg-rqb2yo -Name workspaceopsc46
 Update-AzDatabricksWorkspace -InputObject $dbr -Tag @{key="value"}
@@ -305,7 +305,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -415,12 +415,12 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IDatabricksIdentity>: Parameter identitas.
+INPUTOBJECT `<IDatabricksIdentity>`: Parameter identitas.
   - `[GroupId <String>]`: Nama sumber daya tautan privat
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[PeeringName <String>]`: Nama peering vNet ruang kerja.
   - `[PrivateEndpointConnectionName <String>]`: Nama koneksi titik akhir privat
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
   - `[WorkspaceName <String>]`: Nama ruang kerja.
 

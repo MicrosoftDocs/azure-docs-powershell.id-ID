@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.communication/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Communication/help/New-AzCommunicationServiceKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Communication/help/New-AzCommunicationServiceKey.md
-ms.openlocfilehash: 5555f86c87cbfa3663738f7defd1a4dcbdcdf746
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: 52d2ac392137fdc8c3273141d6cdb7443a51ce6e
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145782028"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146623036"
 ---
 # New-AzCommunicationServiceKey
 
@@ -243,13 +243,13 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ICommunicationIdentity>: Parameter Identitas
+INPUTOBJECT `<ICommunicationIdentity>`: Parameter Identitas
   - `[CommunicationServiceName <String>]`: Nama sumber daya CommunicationService.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
 
-PARAMETER <IRegenerateKeyParameters>: Parameter menjelaskan permintaan untuk meregenerasi kunci akses
+PARAMETER `<IRegenerateKeyParameters>`: Parameter menjelaskan permintaan untuk meregenerasi kunci akses
   - `[KeyType <KeyType?>]`: KeyType yang akan diregenerasi. Harus berupa 'primer' atau 'sekunder'(tidak peka huruf besar/kecil).
 
 ## RELATED LINKS

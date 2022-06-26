@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.containerinstanc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/Get-AzContainerInstanceContainerGroupOutboundNetworkDependencyEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/Get-AzContainerInstanceContainerGroupOutboundNetworkDependencyEndpoint.md
-ms.openlocfilehash: 22b02f0445e0ea3a0e134fed7c724999785721b7
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 6add69c5b4697d9c6ca3994dd5a424bcb169dc2f
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145529563"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146622298"
 ---
 # Get-AzContainerInstanceContainerGroupOutboundNetworkDependencyEndpoint
 
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ContainerInstance.Models.IContainerInstanceIdentity
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Info masuk langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+Kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
@@ -150,7 +150,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IContainerInstanceIdentity>: Parameter Identitas
+INPUTOBJECT `<IContainerInstanceIdentity>`: Parameter Identitas
   - `[ContainerGroupName <String>]`: Nama grup kontainer.
   - `[ContainerName <String>]`: Nama instans kontainer.
   - `[Id <String>]`: Jalur identitas sumber daya

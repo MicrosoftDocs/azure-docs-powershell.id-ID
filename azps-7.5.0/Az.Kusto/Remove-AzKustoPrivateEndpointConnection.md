@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.kusto/remove-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Remove-AzKustoPrivateEndpointConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Remove-AzKustoPrivateEndpointConnection.md
-ms.openlocfilehash: 4c9eca1d055a3998c69e455ee8db467a65c73b9e
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: 660e6b8a29e8e7f354f3d777e89f9c4b3bda4e15
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145800044"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146619850"
 ---
 # Remove-AzKustoPrivateEndpointConnection
 
@@ -236,7 +236,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IKustoIdentity>: Parameter Identitas
+INPUTOBJECT `<IKustoIdentity>`: Parameter Identitas
   - `[AttachedDatabaseConfigurationName <String>]`: Nama konfigurasi database terlampir.
   - `[ClusterName <String>]`: Nama kluster Kusto.
   - `[DataConnectionName <String>]`: Nama koneksi data.

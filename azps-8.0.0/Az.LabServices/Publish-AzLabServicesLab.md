@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.labservices/publ
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Publish-AzLabServicesLab.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Publish-AzLabServicesLab.md
-ms.openlocfilehash: 39307caeb568fbd8988574adb98efadfa4c038ae
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 906c5f28f5c706a1fb2d70d4c8c2a10e07b78fc7
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145503909"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146621632"
 ---
 # Publish-AzLabServicesLab
 
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lab
-Untuk membuat, lihat bagian NOTES untuk properti LAB dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti LAB dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.LabServices.Models.Api20211001Preview.Lab
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Nama lab yang secara unik mengidentifikasinya dalam akun lab.
+Nama lab yang secara unik mengidentifikasinya dalam berisi akun lab.
 Digunakan dalam URI sumber daya.
 
 ```yaml
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -264,17 +264,17 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-LAB <Lab>: 
+LAB `<Lab>`: 
   - `Location <String>`: Lokasi geografis tempat sumber daya berada
   - `[AdditionalCapabilityInstallGpuDriver <EnableState?>]`: Benderai ke driver GPU khusus pra-instal.
   - `[AdminUserPassword <String>]`: Kata sandi untuk pengguna. Ini diperlukan untuk TemplateVM createOption.
   - `[AdminUserUsername <String>]`: Nama pengguna yang digunakan saat masuk ke VM lab.
   - `[AutoShutdownProfileDisconnectDelay <TimeSpan?>]`: Jumlah waktu VM akan tetap berjalan setelah pengguna terputus jika perilaku ini diaktifkan.
-  - `[AutoShutdownProfileIdleDelay <TimeSpan?>]`: Jumlah waktu VM akan diam sebelum dimatikan jika perilaku ini diaktifkan.
+  - `[AutoShutdownProfileIdleDelay <TimeSpan?>]`: Jumlah waktu VM akan menganggur sebelum dimatikan jika perilaku ini diaktifkan.
   - `[AutoShutdownProfileNoConnectDelay <TimeSpan?>]`: Jumlah waktu VM akan tetap berjalan sebelum dimatikan jika tidak ada koneksi yang dibuat dan perilaku ini diaktifkan.
-  - `[AutoShutdownProfileShutdownOnDisconnect <EnableState?>]`: Apakah matikan saat pemutusan sambungan diaktifkan
+  - `[AutoShutdownProfileShutdownOnDisconnect <EnableState?>]`: Apakah pematian saat pemutusan sambungan diaktifkan
   - `[AutoShutdownProfileShutdownOnIdle <ShutdownOnIdleMode?>]`: Apakah VM akan dimatikan ketika telah menganggur untuk jangka waktu tertentu.
-  - `[AutoShutdownProfileShutdownWhenNotConnected <EnableState?>]`: Apakah VM akan dimatikan saat belum tersambung setelah jangka waktu tertentu.
+  - `[AutoShutdownProfileShutdownWhenNotConnected <EnableState?>]`: Apakah VM akan dimatikan ketika belum tersambung setelah jangka waktu tertentu.
   - `[ConnectionProfileClientRdpAccess <ConnectionType?>]`: Tingkat akses yang diaktifkan untuk Akses Klien melalui RDP.
   - `[ConnectionProfileClientSshAccess <ConnectionType?>]`: Tingkat akses yang diaktifkan untuk Akses Klien melalui SSH.
   - `[ConnectionProfileWebRdpAccess <ConnectionType?>]`: Tingkat akses yang diaktifkan untuk Akses Web melalui RDP.
@@ -297,16 +297,16 @@ LAB <Lab>:
   - `[RosterProfileLtiContextId <String>]`: Pengidentifikasi konteks unik untuk lab di lms.
   - `[RosterProfileLtiRosterEndpoint <String>]`: Uri titik akhir layanan nama dan peran pada lms untuk kelas yang melekat pada lab ini.
   - `[SecurityProfileOpenAccess <EnableState?>]`: Apakah ada pengguna atau hanya pengguna tertentu yang dapat mendaftar ke lab.
-  - `[SkuCapacity <Int32?>]`: Jika SKU mendukung peluasan skala/masuk, bilangan bulat kapasitas harus disertakan. Jika peluasan/penyempurnaan skala tidak dimungkinkan untuk sumber daya, ini dapat dihilangkan.
+  - `[SkuCapacity <Int32?>]`: Jika SKU mendukung peluasan skala/masuk, bilangan bulat kapasitas harus disertakan. Jika peluasan/masuk skala tidak dimungkinkan untuk sumber daya, ini dapat dihilangkan.
   - `[SkuFamily <String>]`: Jika layanan memiliki generasi perangkat keras yang berbeda, untuk SKU yang sama, maka itu dapat ditangkap di sini.
-  - `[SkuName <String>]`: Nama SKU. Mantan - P3. Biasanya kode huruf+angka
+  - `[SkuName <String>]`: Nama SKU. Ex - P3. Biasanya kode huruf+angka
   - `[SkuSize <String>]`: Ukuran SKU. Ketika bidang nama adalah kombinasi tingkat dan beberapa nilai lainnya, ini akan menjadi kode mandiri. 
-  - `[SkuTier <SkuTier?>]`: Bidang ini diperlukan untuk diimplementasikan oleh Penyedia Sumber Jika layanan memiliki lebih dari satu tingkat, tetapi tidak diperlukan pada PUT.
+  - `[SkuTier <SkuTier?>]`: Bidang ini harus diimplementasikan oleh Penyedia Sumber Jika layanan memiliki lebih dari satu tingkat, tetapi tidak diperlukan pada PUT.
   - `[SystemDataCreatedAt <DateTime?>]`: Tanda waktu pembuatan sumber daya (UTC).
   - `[SystemDataCreatedBy <String>]`: Identitas yang membuat sumber daya.
   - `[SystemDataCreatedByType <CreatedByType?>]`: Jenis identitas yang membuat sumber daya.
   - `[SystemDataLastModifiedAt <DateTime?>]`: Tanda waktu modifikasi terakhir sumber daya (UTC)
-  - `[SystemDataLastModifiedBy <String>]`: Identitas yang terakhir memodifikasi sumber daya.
+  - `[SystemDataLastModifiedBy <String>]`: Identitas yang terakhir mengubah sumber daya.
   - `[SystemDataLastModifiedByType <CreatedByType?>]`: Jenis identitas yang terakhir memodifikasi sumber daya.
   - `[Title <String>]`: Judul lab.
   - `[VirtualMachineProfileCreateOption <CreateOption?>]`: Menunjukkan dari komputer virtual lab mana yang dibuat.

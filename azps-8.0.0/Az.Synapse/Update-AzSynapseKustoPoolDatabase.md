@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseKustoPoolDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseKustoPoolDatabase.md
-ms.openlocfilehash: ad9261b4ee25a88204badbe0c4a4f9fdacca97db
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 42357f3fc8a6f9f44201459b660389ae0a1af814
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145498046"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146623424"
 ---
 # Update-AzSynapseKustoPoolDatabase
 
 ## SYNOPSIS
-Memperbarui database.
+Updates database.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Update-AzSynapseKustoPoolDatabase -InputObject <ISynapseIdentity> -Kind <Kind> [
 ```
 
 ## DESCRIPTION
-Memperbarui database.
+Updates database.
 
 ## EXAMPLES
 
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Synapse.Models.ISynapseIdentity
@@ -147,7 +147,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Jenis
+### -Kind
 Jenis database
 
 ```yaml
@@ -319,7 +319,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ISynapseIdentity>: Parameter Identitas
+INPUTOBJECT `<ISynapseIdentity>`: Parameter Identitas
   - `[AttachedDatabaseConfigurationName <String>]`: Nama konfigurasi database terlampir.
   - `[DataConnectionName <String>]`: Nama koneksi data.
   - `[DatabaseName <String>]`: Nama database di kumpulan Kusto.

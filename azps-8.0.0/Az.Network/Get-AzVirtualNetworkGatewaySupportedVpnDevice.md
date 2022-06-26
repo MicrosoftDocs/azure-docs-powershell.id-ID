@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkGatewaySupportedVpnDevice.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkGatewaySupportedVpnDevice.md
-ms.openlocfilehash: edbb0ebe73b23625cfb4c04b134962467746bc10
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: cf23dc136e7ca5629a8b0a97570237c833fe2d85
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145553558"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146621470"
 ---
 # Dapatkan-AzVirtualNetworkGatewaySupportedVpnDevice
 
@@ -30,22 +30,14 @@ Commandlet ini mengembalikan daftar merek perangkat VPN, model, dan versi firmwa
 ## EXAMPLES
 
 ### Contoh 1
-```powershell
-Get-AzVirtualNetworkGatewaySupportedVpnDevice -ResourceGroupName TestRG -Name TestGateway 
-```
-
-```output
-<?xml version="1.0" encoding="utf-8"?>
-<RpVpnDeviceList version="1.0">
-  <Vendor name="Cisco-Test">
-    <DeviceFamily name="IOS-Test">
-       <FirmwareVersion name="20" />
-    </DeviceFamily>
-  </Vendor>
-</RpVpnDeviceList>
-```
 
 Mengembalikan daftar merek, model, dan versi firmware perangkat VPN yang didukung:
+
+```powershell
+Get-AzVirtualNetworkGatewaySupportedVpnDevice -ResourceGroupName TestRG -Name TestGateway
+```
+
+```Output
 <?xml version="1.0" encoding="utf-8"?>
 <RpVpnDeviceList version="1.0">
   <Vendor name="Cisco-Test">
@@ -54,6 +46,7 @@ Mengembalikan daftar merek, model, dan versi firmware perangkat VPN yang didukun
     </DeviceFamily>
   </Vendor>
 </RpVpnDeviceList>
+```
 
 ## PARAMETERS
 
