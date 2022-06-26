@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.kusto/test-azkus
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Test-AzKustoClusterNameAvailability.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Test-AzKustoClusterNameAvailability.md
-ms.openlocfilehash: 9d6466601f91fe5c0ddb06b6fe883445aafb897e
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 434fca951fab15a0d19f407abecf6db4dcfff9d2
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145693288"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146598828"
 ---
 # Test-AzKustoClusterNameAvailability
 
@@ -194,7 +194,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IKustoIdentity>: Parameter Identitas
+INPUTOBJECT `<IKustoIdentity>`: Parameter Identitas
   - `[AttachedDatabaseConfigurationName <String>]`: Nama konfigurasi database terlampir.
   - `[ClusterName <String>]`: Nama kluster Kusto.
   - `[DataConnectionName <String>]`: Nama koneksi data.

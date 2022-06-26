@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.mysql/update-azm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Update-AzMySqlServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Update-AzMySqlServer.md
-ms.openlocfilehash: 8e8719476c3a566272179cbbf4922421ccb89be1
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: 966f0b467b5128b5cba206b5c1d8c2461dcd77d6
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145803966"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146601150"
 ---
 # Update-AzMySqlServer
 
@@ -418,7 +418,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMySqlIdentity>: Parameter Identitas.
+INPUTOBJECT `<IMySqlIdentity>`: Parameter Identitas.
   - `[BackupName <String>]`: Nama cadangan.
   - `[ConfigurationName <String>]`: Nama konfigurasi server.
   - `[DatabaseName <String>]`: Nama database.

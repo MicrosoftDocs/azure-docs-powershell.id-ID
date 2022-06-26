@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.dnsresolver/upda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/Update-AzDnsResolver.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/Update-AzDnsResolver.md
-ms.openlocfilehash: d812950e4a0d1f71f3033220bffc7a071ab3401f
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 0007856cec3167502edb4bee75942d23442f5e93
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145512871"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146599872"
 ---
 # Update-AzDnsResolver
 
 ## SYNOPSIS
-Memperbarui pemecah masalah DNS.
+Updates pemecah masalah DNS.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Update-AzDnsResolver -InputObject <IDnsResolverIdentity> [-IfMatch <String>] [-T
 ```
 
 ## DESCRIPTION
-Memperbarui pemecah masalah DNS.
+Updates pemecah masalah DNS.
 
 ## EXAMPLES
 
@@ -49,7 +49,7 @@ westus2  psdnsresolvername33nmy1fz Microsoft.Network/dnsResolvers "0000efd6-0000
 
 Perintah ini memperbarui Pemecah Masalah DNS yang sudah ada berdasarkan nama ( menambahkan tag ).
 
-### Contoh 2: Memperbarui Pemecah Masalah DNS yang sudah ada berdasarkan identitas
+### Contoh 2: Updates Pemecah Masalah DNS yang sudah ada berdasarkan identitas
 ```powershell
 $dnsResolverObject = Get-AzDnsResolver -ResourceGroupName powershell-test-rg -Name  psdnsresolvername33nmy1fz
 Update-AzDnsResolver -InputObject $dnsResolverObject  -Tag @{} 
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -253,14 +253,14 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IDnsResolverIdentity>: Parameter Identitas
+INPUTOBJECT `<IDnsResolverIdentity>`: Parameter Identitas
   - `[DnsForwardingRulesetName <String>]`: Nama set aturan penerusan DNS.
   - `[DnsResolverName <String>]`: Nama pemecah masalah DNS.
   - `[ForwardingRuleName <String>]`: Nama aturan penerusan.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[InboundEndpointName <String>]`: Nama titik akhir masuk untuk pemecah masalah DNS.
   - `[OutboundEndpointName <String>]`: Nama titik akhir keluar untuk pemecah masalah DNS.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
   - `[VirtualNetworkLinkName <String>]`: Nama tautan jaringan virtual.
   - `[VirtualNetworkName <String>]`: Nama jaringan virtual.

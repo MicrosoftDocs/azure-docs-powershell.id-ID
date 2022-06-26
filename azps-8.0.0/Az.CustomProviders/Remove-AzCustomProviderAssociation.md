@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.customproviders/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CustomProviders/help/Remove-AzCustomProviderAssociation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CustomProviders/help/Remove-AzCustomProviderAssociation.md
-ms.openlocfilehash: 7213ddf6f887b37bdd1b07bab7338c65577582e4
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 4bc79ee011093515b9c6badfd66b38f32747166f
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145544738"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146600178"
 ---
 # Remove-AzCustomProviderAssociation
 
@@ -212,7 +212,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ICustomProvidersIdentity>: Parameter Identitas
+INPUTOBJECT `<ICustomProvidersIdentity>`: Parameter Identitas
   - `[AssociationName <String>]`: Nama asosiasi.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ResourceGroupName <String>]`: Nama grup sumber daya.

@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzRoleEligibilityScheduleRequest.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzRoleEligibilityScheduleRequest.md
-ms.openlocfilehash: c8d61a16aa943fd974e5b5c1f2066a0b22bc68f9
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 8b64412b42c990933d7c49445f4713fc75c5f1e8
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145619947"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146599530"
 ---
 # Get-AzRoleEligibilityScheduleRequest
 
@@ -83,7 +83,7 @@ Name                                 Type                                       
 4cd7e26b-8eca-425c-969d-ec708c88bf18 Microsoft.Authorization/roleEligibilityScheduleRequests /subscriptions/38ab2ccc-3747-4567-b36b-9478f5602f0d                         /subscriptions/38ab2ccc-3747-4567-b36b-9478f5602f0d/prov…
 ```
 
-Mengembalikan semua `roleEligibilitySchedules` untuk tempat `scope` pengguna panggilan adalah pemberi izin.
+Mengembalikan semua `roleEligibilitySchedules` untuk `scope` tempat pengguna panggilan adalah pemberi persetujuan.
 
 ### Contoh 4: Mendapatkan permintaan jadwal penetapan peran berdasarkan cakupan dan nama
 ```powershell
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Resources.Authorization.Models.IAuthorizationIdentity
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Nama (guid) dari permintaan jadwal kelayakan peran yang akan didapatkan.
+Nama (guid) permintaan jadwal kelayakan peran yang akan didapatkan.
 
 ```yaml
 Type: System.String
@@ -199,7 +199,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IAuthorizationIdentity>: Parameter Identitas
+INPUTOBJECT `<IAuthorizationIdentity>`: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[RoleAssignmentScheduleInstanceName <String>]`: Nama (hash nama jadwal + waktu) dari jadwal penetapan peran yang akan didapatkan.
   - `[RoleAssignmentScheduleName <String>]`: Nama (guid) dari jadwal penetapan peran yang akan didapatkan.
@@ -209,6 +209,6 @@ INPUTOBJECT <IAuthorizationIdentity>: Parameter Identitas
   - `[RoleEligibilityScheduleRequestName <String>]`: Nama kelayakan peran untuk dibuat. Ini bisa menjadi GUID yang valid.
   - `[RoleManagementPolicyAssignmentName <String>]`: Nama format {guid_guid} penetapan kebijakan manajemen peran yang akan didapatkan.
   - `[RoleManagementPolicyName <String>]`: Nama (guid) dari kebijakan manajemen peran yang akan didapatkan.
-  - `[Scope <String>]`: Cakupan kebijakan manajemen peran.
+  - `[Scope <String>]`: Ruang lingkup kebijakan manajemen peran.
 
 ## RELATED LINKS

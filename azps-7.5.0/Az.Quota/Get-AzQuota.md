@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.quota/get-azquot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Quota/help/Get-AzQuota.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Quota/help/Get-AzQuota.md
-ms.openlocfilehash: e41001d6b365aed75e8d0907fd97a980b29a7078
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 4de612f778b8591b32fe4d1cb7772fb726e58fe5
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145651414"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146598486"
 ---
 # Get-AzQuota
 
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Quota.Models.IQuotaIdentity
@@ -127,8 +127,8 @@ Accept wildcard characters: False
 ```
 
 ### -Cakupan
-Target URI sumber daya Azure.
-Contohnya:`/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/qms-test/providers/Microsoft.Batch/batchAccounts/testAccount/`
+URI sumber daya Azure target.
+Contohnya,`/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/qms-test/providers/Microsoft.Batch/batchAccounts/testAccount/`.
 Ini adalah URI sumber daya Azure target untuk operasi Daftar GET.
 `{resourceName}` Jika ditambahkan setelah `/quotas`, maka itu adalah URI sumber daya Azure target dalam operasi GET untuk sumber daya tertentu.
 
@@ -164,11 +164,11 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IQuotaIdentity>: Parameter Identitas
+INPUTOBJECT `<IQuotaIdentity>`: Parameter Identitas
   - `[Id <String>]`: ID permintaan kuota.
   - `[Id1 <String>]`: Jalur identitas sumber daya
   - `[ResourceName <String>]`: Nama sumber daya untuk penyedia sumber daya tertentu. Misalnya: - Nama SKU untuk Microsoft.Compute - SKU atau TotalLowPriorityCores untuk Microsoft.MachineLearningServices Untuk Microsoft.Network PublicIPAddresses.
-  - `[Scope <String>]`: Target URI sumber daya Azure. Contohnya:`/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/qms-test/providers/Microsoft.Batch/batchAccounts/testAccount/` Ini adalah URI sumber daya Azure target untuk operasi Daftar GET. `{resourceName}` Jika ditambahkan setelah `/quotas`, maka itu adalah URI sumber daya Azure target dalam operasi GET untuk sumber daya tertentu.
+  - `[Scope <String>]`: Target URI sumber daya Azure. Contohnya,`/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/qms-test/providers/Microsoft.Batch/batchAccounts/testAccount/`. Ini adalah URI sumber daya Azure target untuk operasi Daftar GET. `{resourceName}` Jika ditambahkan setelah `/quotas`, maka itu adalah URI sumber daya Azure target dalam operasi GET untuk sumber daya tertentu.
 
 ## RELATED LINKS
 

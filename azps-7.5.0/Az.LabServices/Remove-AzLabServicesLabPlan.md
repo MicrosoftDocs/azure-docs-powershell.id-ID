@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.labservices/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Remove-AzLabServicesLabPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Remove-AzLabServicesLabPlan.md
-ms.openlocfilehash: 2e3618a77a2f9be9b447cbbec1d4b42217cc1f2b
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: e65d114840fbb9c7966bbf9b83f1f1ce489746a0
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145771482"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146598810"
 ---
 # Remove-AzLabServicesLabPlan
 
@@ -223,7 +223,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-LABPLAN <LabPlan>: 
+LABPLAN `<LabPlan>`: 
   - `Location <String>`: Lokasi geografis tempat sumber daya berada
   - `[AllowedRegion <String[]>]`: Wilayah yang diizinkan untuk digunakan pembuat lab saat membuat lab menggunakan rencana lab ini.
   - `[DefaultAutoShutdownProfileDisconnectDelay <TimeSpan?>]`: Jumlah waktu VM akan tetap berjalan setelah pengguna terputus jika perilaku ini diaktifkan.

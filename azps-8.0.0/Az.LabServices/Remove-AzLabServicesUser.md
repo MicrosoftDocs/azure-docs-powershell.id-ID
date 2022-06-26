@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.labservices/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Remove-AzLabServicesUser.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Remove-AzLabServicesUser.md
-ms.openlocfilehash: e6fc5691e753b6a1acb4e13797a11d20418a318e
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: c352dc71398a0d3f812616561ede8339ab5e98c3
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145503895"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146599692"
 ---
 # Remove-AzLabServicesUser
 
@@ -279,7 +279,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-LAB <Lab>: 
+LAB `<Lab>`: 
   - `Location <String>`: Lokasi geografis tempat sumber daya berada
   - `[AdditionalCapabilityInstallGpuDriver <EnableState?>]`: Benderai ke driver GPU khusus pra-instal.
   - `[AdminUserPassword <String>]`: Kata sandi untuk pengguna. Ini diperlukan untuk TemplateVM createOption.
@@ -330,7 +330,7 @@ LAB <Lab>:
   - `[Tag <ITrackedResourceTags>]`: Tag sumber daya.
     - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
 
-USER <User>: 
+USER `<User>`: 
   - `Email <String>`: Alamat email pengguna.
   - `[AdditionalUsageQuota <TimeSpan?>]`: Jumlah waktu kuota penggunaan yang didapat pengguna selain kuota penggunaan lab.
   - `[SystemDataCreatedAt <DateTime?>]`: Tanda waktu pembuatan sumber daya (UTC).

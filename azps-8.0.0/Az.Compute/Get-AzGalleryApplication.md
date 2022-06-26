@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azga
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzGalleryApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzGalleryApplication.md
-ms.openlocfilehash: c7565dc10ebe880bf5fc79ce659c50a8f0ac8292
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 3efb0985d2b00ee3a94512f210bcce21911cf85d
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145533706"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146600232"
 ---
 # Get-AzGalleryApplication
 
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Compute.Models.IComputeIdentity
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Nama galeri Definisi Aplikasi yang akan diambil.
+Nama Galeri Definisi Aplikasi yang akan diambil.
 
 ```yaml
 Type: System.String
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+Info masuk langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
@@ -168,13 +168,13 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IComputeIdentity>: Parameter Identitas
+INPUTOBJECT `<IComputeIdentity>`: Parameter Identitas
   - `[CommandId <String>]`: Id perintah.
-  - `[GalleryApplicationName <String>]`: Nama galeri Definisi Aplikasi yang akan dibuat atau diperbarui. Karakter yang diizinkan adalah alfabet dan angka dengan titik, tanda hubung, dan titik yang diizinkan di tengah. Panjang maksimum adalah 80 karakter.
-  - `[GalleryApplicationVersionName <String>]`: Nama galeri Versi Aplikasi yang akan dibuat. Perlu mengikuti pola nama versi semantik: Karakter yang diizinkan adalah digit dan titik. Digit harus berada dalam rentang bilangan bulat 32-bit. Format: <MajorVersion>.<MinorVersion>.<Patch>
+  - `[GalleryApplicationName <String>]`: Nama Definisi Aplikasi galeri yang akan dibuat atau diperbarui. Karakter yang diizinkan adalah alfabet dan angka dengan titik, tanda hubung, dan titik yang diizinkan di tengah. Panjang maksimum adalah 80 karakter.
+  - `[GalleryApplicationVersionName <String>]`: Nama Galeri Versi Aplikasi yang akan dibuat. Perlu mengikuti pola nama versi semantik: Karakter yang diizinkan adalah digit dan titik. Digit harus berada dalam rentang bilangan bulat 32-bit. Format: `<MajorVersion>.<MinorVersion>.<Patch>`
   - `[GalleryImageName <String>]`: Nama definisi gambar galeri yang akan dibuat atau diperbarui. Karakter yang diizinkan adalah alfabet dan angka dengan titik, tanda hubung, dan titik yang diizinkan di tengah. Panjang maksimum adalah 80 karakter.
-  - `[GalleryImageVersionName <String>]`: Nama versi gambar galeri yang akan dibuat. Perlu mengikuti pola nama versi semantik: Karakter yang diizinkan adalah digit dan titik. Digit harus berada dalam rentang bilangan bulat 32-bit. Format: <MajorVersion>.<MinorVersion>.<Patch>
-  - `[GalleryName <String>]`: Nama Shared Image Gallery. Karakter yang diizinkan adalah alfabet dan angka dengan titik dan titik yang diizinkan di tengah. Panjang maksimum adalah 80 karakter.
+  - `[GalleryImageVersionName <String>]`: Nama versi gambar galeri yang akan dibuat. Perlu mengikuti pola nama versi semantik: Karakter yang diizinkan adalah digit dan titik. Digit harus berada dalam rentang bilangan bulat 32-bit. Format: `<MajorVersion>.<MinorVersion>.<Patch>`
+  - `[GalleryName <String>]`: Nama Shared Image Gallery. Karakter yang diperbolehkan adalah alfabet dan angka dengan titik dan titik yang diizinkan di tengah. Panjang maksimum adalah 80 karakter.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[InstanceId <String>]`: ID instans komputer virtual.
   - `[Location <String>]`: Lokasi tempat perintah eksekusi dikueri.

@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.springcloud/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SpringCloud/help/Get-AzSpringCloud.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SpringCloud/help/Get-AzSpringCloud.md
-ms.openlocfilehash: 9d04db91c271cffab6d8f954358383fba90dfb61
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: ce02c0ac4f6b452e498e805a7ea2d2617935f0ee
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145772832"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146600790"
 ---
 # Get-AzSpringCloud
 
@@ -100,7 +100,7 @@ Trace                                            : Microsoft.Azure.PowerShell.Cm
 TraceError                                       : Microsoft.Azure.PowerShell.Cmdlets.SpringCloud.Models.Api20190501Preview.Error
 ```
 
-Dapatkan Layanan Spring Cloud berdasarkan nama
+Dapatkan Spring Cloud Service berdasarkan nama
 
 ### Contoh 2: Mencantumkan semua layanan spring cloud di bawah grup sumber daya.
 ```powershell
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.SpringCloud.Models.ISpringCloudIdentity
@@ -214,7 +214,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ISpringCloudIdentity>: Parameter Identitas
+INPUTOBJECT `<ISpringCloudIdentity>`: Parameter Identitas
   - `[AppName <String>]`: Nama sumber daya Aplikasi.
   - `[BindingName <String>]`: Nama sumber daya Pengikatan.
   - `[CertificateName <String>]`: Nama sumber daya sertifikat.

@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzADSpCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzADSpCredential.md
-ms.openlocfilehash: 90f8a90b6d75ec291788df6d4f05ecf7ec1e884c
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: b46b2202771e00ea68260f24e988058e72751fb7
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145540115"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146597720"
 ---
 # Remove-AzADSpCredential
 
@@ -223,7 +223,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-SERVICEPRINCIPALOBJECT <IMicrosoftGraphServicePrincipal>: Objek perwakilan layanan, dapat digunakan sebagai input alur.
+SERVICEPRINCIPALOBJECT `<IMicrosoftGraphServicePrincipal>`: Objek perwakilan layanan, dapat digunakan sebagai input alur.
   - `[(Any) <Object>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
   - `[DeletedDateTime <DateTime?>]`: 
   - `[DisplayName <String>]`: Nama yang ditampilkan dalam direktori
@@ -270,7 +270,7 @@ SERVICEPRINCIPALOBJECT <IMicrosoftGraphServicePrincipal>: Objek perwakilan layan
     - `[PermissionName <String>]`: Nilai klaim (nilai) untuk izin yang didelegasikan yang tercantum dalam kumpulan servicePrincipal yang diterbitkan. Tidak mendukung $filter.
   - `[Description <String>]`: Bidang teks gratis untuk memberikan deskripsi internal yang dihadapi pengguna akhir dari perwakilan layanan. Portal pengguna akhir seperti MyApps akan menampilkan deskripsi aplikasi di bidang ini. Ukuran maksimum yang diizinkan adalah 1024 karakter. Mendukung $filter (eq, ne, NOT, ge, le, startsWith) dan $search.
   - `[DisabledByMicrosoftStatus <String>]`: Menentukan apakah Microsoft telah menonaktifkan aplikasi terdaftar. Nilai yang mungkin adalah: null (nilai default), NotDisabled, dan DisabledDueToViolationOfServicesAgreement (alasannya mungkin termasuk aktivitas yang mencurigakan, melecehkan, atau berbahaya, atau pelanggaran Perjanjian Layanan Microsoft).  Mendukung $filter (eq, ne, NOT).
-  - `[Endpoint <IMicrosoftGraphEndpoint[]>]`: Titik akhir tersedia untuk penemuan. Layanan seperti Sharepoint mengisi properti ini dengan titik akhir SharePoint khusus penyewa yang dapat ditemukan dan digunakan aplikasi lain dalam pengalaman mereka.
+  - `[Endpoint <IMicrosoftGraphEndpoint[]>]`: Titik akhir tersedia untuk penemuan. Layanan seperti Sharepoint mengisi properti ini dengan titik akhir SharePoint spesifik penyewa yang dapat ditemukan dan digunakan aplikasi lain dalam pengalaman mereka.
     - `[DeletedDateTime <DateTime?>]`: 
     - `[DisplayName <String>]`: Nama yang ditampilkan dalam direktori
   - `[HomeRealmDiscoveryPolicy <IMicrosoftGraphHomeRealmDiscoveryPolicy[]>]`: HomeRealmDiscoveryPolicies yang ditetapkan untuk perwakilan layanan ini. Mendukung $expand.
@@ -296,10 +296,10 @@ SERVICEPRINCIPALOBJECT <IMicrosoftGraphServicePrincipal>: Objek perwakilan layan
     - `[StartDateTime <DateTime?>]`: Tanggal dan waktu di mana kredensial menjadi valid. Jenis Tanda waktu mewakili informasi tanggal dan waktu menggunakan format ISO 8601 dan selalu dalam waktu UTC. Misalnya, tengah malam UTC pada 1 Jan 2014 adalah 2014-01-01T00:00:00Z
     - `[Type <String>]`: Jenis kredensial kunci; misalnya, 'Simetris'.
     - `[Usage <String>]`: String yang menjelaskan tujuan kunci dapat digunakan; misalnya, 'Verifikasi'.
-  - `[LoginUrl <String>]`: Menentukan URL tempat penyedia layanan mengalihkan pengguna ke Azure AD untuk mengautentikasi. Azure AD menggunakan URL untuk meluncurkan aplikasi dari Microsoft 365 atau Aplikasi Saya Azure AD. Jika kosong, Azure ACTIVE Directory melakukan masuk yang dimulai IdP untuk aplikasi yang dikonfigurasi dengan akses menyeluruh berbasis SAML. Pengguna meluncurkan aplikasi dari Microsoft 365, Aplikasi Saya Azure AD, atau URL SSO Microsoft Azure AD.
-  - `[LogoutUrl <String>]`: Menentukan URL yang akan digunakan oleh layanan otorisasi Microsoft untuk keluar dari pengguna menggunakan protokol keluar saluran depan OpenId Connect, saluran belakang, atau SAML.
+  - `[LoginUrl <String>]`: Menentukan URL tempat penyedia layanan mengalihkan pengguna ke Azure AD untuk mengautentikasi. Azure AD menggunakan URL untuk meluncurkan aplikasi dari Microsoft 365 atau Azure AD Aplikasi Saya. Jika kosong, Azure AD melakukan masuk yang dimulai IdP untuk aplikasi yang dikonfigurasi dengan akses menyeluruh berbasis SAML. Pengguna meluncurkan aplikasi dari Microsoft 365, Azure AD Aplikasi Saya, atau URL SSO Azure AD.
+  - `[LogoutUrl <String>]`: Menentukan URL yang akan digunakan oleh layanan otorisasi Microsoft untuk keluar dari pengguna menggunakan OpenId Koneksi protokol keluar saluran depan, saluran belakang, atau SAML.
   - `[Note <String>]`: Bidang teks gratis untuk mengambil informasi tentang perwakilan layanan, biasanya digunakan untuk tujuan operasional. Ukuran maksimum yang diizinkan adalah 1024 karakter.
-  - `[NotificationEmailAddress <String[]>]`: Menentukan daftar alamat email tempat Azure AD mengirim pemberitahuan saat sertifikat aktif mendekati tanggal kedaluwarsa. Ini hanya untuk sertifikat yang digunakan untuk menandatangani token SAML yang dikeluarkan untuk aplikasi Galeri Azure ACTIVE Directory.
+  - `[NotificationEmailAddress <String[]>]`: Menentukan daftar alamat email tempat Azure AD mengirim pemberitahuan saat sertifikat aktif mendekati tanggal kedaluwarsa. Ini hanya untuk sertifikat yang digunakan untuk menandatangani token SAML yang dikeluarkan untuk aplikasi Azure AD Gallery.
   - `[Oauth2PermissionScope <IMicrosoftGraphPermissionScope[]>]`: Izin yang didelegasikan yang diekspos oleh aplikasi. Untuk informasi selengkapnya, lihat properti oauth2PermissionScopes pada properti api entitas aplikasi. Tidak dapat diubah ke null.
     - `[AdminConsentDescription <String>]`: Deskripsi izin yang didelegasikan, dimaksudkan untuk dibaca oleh administrator yang memberikan izin atas nama semua pengguna. Teks ini muncul dalam pengalaman persetujuan admin di seluruh penyewa.
     - `[AdminConsentDisplayName <String>]`: Judul izin, dimaksudkan untuk dibaca oleh administrator yang memberikan izin atas nama semua pengguna.
@@ -312,10 +312,10 @@ SERVICEPRINCIPALOBJECT <IMicrosoftGraphServicePrincipal>: Objek perwakilan layan
     - `[Value <String>]`: Menentukan nilai yang akan disertakan dalam klaim scp (cakupan) dalam token akses. Panjang tidak boleh melebihi 120 karakter. Karakter yang diizinkan adalah : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ [ ] ^ + _ { } ~, serta karakter dalam rentang 0-9, A-Z dan a-z. Karakter lainnya, termasuk karakter spasi, tidak diperbolehkan. Mungkin tidak dimulai dengan ..
   - `[PasswordCredentials <IMicrosoftGraphPasswordCredential[]>]`: Pengumpulan kredensial kata sandi yang terkait dengan perwakilan layanan. Tidak dapat diubah ke null.
     - `[CustomKeyIdentifier <Byte[]>]`: Jangan gunakan.
-    - `[DisplayName <String>]`: Nama yang mudah diingat untuk kata sandi. Opsional.
-    - `[EndDateTime <DateTime?>]`: Tanggal dan waktu saat kata sandi kedaluwarsa diwakili menggunakan format ISO 8601 dan selalu dalam waktu UTC. Misalnya, UTC tengah malam pada 1 Jan 2014 adalah 2014-01-01T00:00:00Z. Opsional.
+    - `[DisplayName <String>]`: Nama yang mudah diingat untuk kata sandi. Pilihan.
+    - `[EndDateTime <DateTime?>]`: Tanggal dan waktu saat kata sandi kedaluwarsa diwakili menggunakan format ISO 8601 dan selalu dalam waktu UTC. Misalnya, UTC tengah malam pada 1 Jan 2014 adalah 2014-01-01T00:00:00Z. Pilihan.
     - `[KeyId <String>]`: Pengidentifikasi unik untuk kata sandi.
-    - `[StartDateTime <DateTime?>]`: Tanggal dan waktu kata sandi menjadi valid. Jenis Tanda waktu mewakili informasi tanggal dan waktu menggunakan format ISO 8601 dan selalu dalam waktu UTC. Misalnya, UTC tengah malam pada 1 Jan 2014 adalah 2014-01-01T00:00:00Z. Opsional.
+    - `[StartDateTime <DateTime?>]`: Tanggal dan waktu kata sandi menjadi valid. Jenis Tanda waktu mewakili informasi tanggal dan waktu menggunakan format ISO 8601 dan selalu dalam waktu UTC. Misalnya, UTC tengah malam pada 1 Jan 2014 adalah 2014-01-01T00:00:00Z. Pilihan.
   - `[PreferredSingleSignOnMode <String>]`: Menentukan mode akses menyeluruh yang dikonfigurasi untuk aplikasi ini. Azure AD menggunakan mode akses menyeluruh pilihan untuk meluncurkan aplikasi dari Microsoft 365 atau Azure AD Aplikasi Saya. Nilai yang didukung adalah kata sandi, saml, notSupported, dan oidc.
   - `[PreferredTokenSigningKeyThumbprint <String>]`: Hanya dicadangkan untuk penggunaan internal. Jangan menulis atau mengandalkan properti ini. Dapat dihapus dalam versi mendatang.
   - `[ReplyUrl <String[]>]`: URL tempat token pengguna dikirim untuk masuk dengan aplikasi terkait, atau URI pengalihan tempat kode otorisasi OAuth 2.0 dan token akses dikirim untuk aplikasi terkait. Tidak dapat diubah ke null.

@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.edgeorder/update
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/Update-AzEdgeOrderItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/Update-AzEdgeOrderItem.md
-ms.openlocfilehash: 1db6df607f231c9ff823aa9f8842fbb6bc075947
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: ab92a6f0fe5c6affb847c4f7cf01db3a14e8f673
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145504766"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146599764"
 ---
 # Update-AzEdgeOrderItem
 
 ## SYNOPSIS
-Memperbarui properti item pesanan yang sudah ada.
+Updates properti item pesanan yang sudah ada.
 
 ## SYNTAX
 
@@ -36,7 +36,7 @@ Update-AzEdgeOrderItem -InputObject <IEdgeOrderIdentity> [-ForwardAddressContact
 ```
 
 ## DESCRIPTION
-Memperbarui properti item pesanan yang sudah ada.
+Updates properti item pesanan yang sudah ada.
 
 ## EXAMPLES
 
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -ForwardAddressContactDetail
-Detail kontak untuk alamat Untuk membangun, lihat bagian CATATAN untuk properti FORWARDADDRESSCONTACTDETAIL dan membuat tabel hash.
+Detail kontak untuk alamat Untuk membangun, lihat bagian CATATAN untuk properti FORWARDADDRESSCONTACTDETAIL dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.EdgeOrder.Models.Api20211201.IContactDetails
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -ForwardAddressShippingAddress
-Detail pengiriman untuk alamat Untuk membangun, lihat bagian CATATAN untuk properti FORWARDADDRESSSHIPPINGADDRESS dan membuat tabel hash.
+Detail pengiriman untuk alamat Untuk membangun, lihat bagian CATATAN untuk properti FORWARDADDRESSSHIPPINGADDRESS dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.EdgeOrder.Models.Api20211201.IShippingAddress
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.EdgeOrder.Models.IEdgeOrderIdentity
@@ -241,7 +241,7 @@ Accept wildcard characters: False
 
 ### -Tag
 Daftar pasangan nilai kunci yang menjelaskan sumber daya.
-Tag ini dapat digunakan dalam melihat dan mengelompokkan sumber daya ini (di seluruh grup sumber daya).
+Tag ini dapat digunakan dalam menampilkan dan mengelompokkan sumber daya ini (di seluruh grup sumber daya).
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -306,14 +306,14 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-FORWARDADDRESSCONTACTDETAIL <IContactDetails>: Detail kontak untuk alamat
+FORWARDADDRESSCONTACTDETAIL `<IContactDetails>`: Detail kontak untuk alamat
   - `ContactName <String>`: Nama kontak orang tersebut.
   - `EmailList <String[]>`: Daftar Email-id yang akan diberi tahu tentang kemajuan pekerjaan.
   - `Phone <String>`: Telepon nomor kontak.
   - `[Mobile <String>]`: Nomor ponsel kontak.
   - `[PhoneExtension <String>]`: Telepon nomor ekstensi kontak.
 
-FORWARDADDRESSSHIPPINGADDRESS <IShippingAddress>: Detail pengiriman untuk alamat
+FORWARDADDRESSSHIPPINGADDRESS `<IShippingAddress>`: Detail pengiriman untuk alamat
   - `Country <String>`: Nama Negara.
   - `StreetAddress1 <String>`: Alamat Jalan baris 1.
   - `[AddressType <AddressType?>]`: Jenis alamat.
@@ -325,7 +325,7 @@ FORWARDADDRESSSHIPPINGADDRESS <IShippingAddress>: Detail pengiriman untuk alamat
   - `[StreetAddress3 <String>]`: Alamat Jalan baris 3.
   - `[ZipExtendedCode <String>]`: Kode Pos yang diperluas.
 
-INPUTOBJECT <IEdgeOrderIdentity>: Parameter Identitas
+INPUTOBJECT `<IEdgeOrderIdentity>`: Parameter Identitas
   - `[AddressName <String>]`: Nama alamat Sumber Daya dalam grup sumber daya yang ditentukan. panjang nama alamat harus antara 3 dan 24 karakter dan hanya menggunakan alfanumerik dan garis bawah
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Nama wilayah Azure.
@@ -334,7 +334,7 @@ INPUTOBJECT <IEdgeOrderIdentity>: Parameter Identitas
   - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
 
-PREFERENSI <IPreferences>: Preferensi pelanggan.
+PREFERENSI `<IPreferences>`: Preferensi pelanggan.
   - `[EncryptionPreference <IEncryptionPreferences>]`: Preferensi yang terkait dengan Enkripsi.
     - `[DoubleEncryptionStatus <DoubleEncryptionStatus?>]`: Status enkripsi ganda seperti yang dimasukkan oleh pelanggan. Wajib untuk memberikan parameter ini jika kebijakan 'Tolak' atau 'Dinonaktifkan' dikonfigurasi.
   - `[ManagementResourcePreference <IManagementResourcePreferences>]`: Preferensi yang terkait dengan sumber daya Manajemen.

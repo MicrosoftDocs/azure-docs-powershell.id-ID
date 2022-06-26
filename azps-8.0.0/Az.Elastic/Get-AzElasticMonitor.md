@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.elastic/get-azel
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Elastic/help/Get-AzElasticMonitor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Elastic/help/Get-AzElasticMonitor.md
-ms.openlocfilehash: 14753fd83919c84974579c954a82e40024620416
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 151404c5856fcadb9dbf8dd222f2b9243f26f5c2
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145512862"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146599746"
 ---
 # Get-AzElasticMonitor
 
@@ -203,7 +203,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IElasticIdentity>: Parameter Identitas
+INPUTOBJECT `<IElasticIdentity>`: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[MonitorName <String>]`: Memantau nama sumber daya
   - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat sumber daya Elastic berada.

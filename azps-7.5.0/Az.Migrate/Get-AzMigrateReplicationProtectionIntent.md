@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/get-azmi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateReplicationProtectionIntent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateReplicationProtectionIntent.md
-ms.openlocfilehash: a78a072408f7c6716958aa17d1f9254a76f30340
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 22defdb60f339dd2802940065d0dc56d510a65a1
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145690138"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146598666"
 ---
 # Get-AzMigrateReplicationProtectionIntent
 
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Migrate.Models.IMigrateIdentity
@@ -206,7 +206,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMigrateIdentity>: Parameter Identitas
+INPUTOBJECT `<IMigrateIdentity>`: Parameter Identitas
   - `[AccountName <String>]`: Jalankan sebagai nama ARM akun.
   - `[AlertSettingName <String>]`: Nama konfigurasi pemberitahuan email.
   - `[ClusterName <String>]`: Nama ARM kluster.
@@ -226,7 +226,7 @@ INPUTOBJECT <IMigrateIdentity>: Parameter Identitas
   - `[MigrationRecoveryPointName <String>]`: Nama titik pemulihan migrasi.
   - `[NetworkMappingName <String>]`: Nama pemetaan jaringan.
   - `[NetworkName <String>]`: Nama jaringan utama.
-  - `[OperationStatusName <String>]`: Nama ARM status operasi.
+  - `[OperationStatusName <String>]`: Status operasi nama ARM.
   - `[PolicyName <String>]`: Nama kebijakan replikasi.
   - `[ProtectableItemName <String>]`: Nama item yang dapat dilindungi.
   - `[ProtectionContainerName <String>]`: Nama kontainer perlindungan.

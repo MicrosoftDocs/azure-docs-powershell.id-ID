@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.mysql/get-azmysq
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Get-AzMySqlVirtualNetworkRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Get-AzMySqlVirtualNetworkRule.md
-ms.openlocfilehash: 5f67f4c1234202a0656cebbbb4909aa139252a26
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: e5e57af1b99a5eeea4ca6c75aab3712f097711f4
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145804262"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146601348"
 ---
 # Get-AzMySqlVirtualNetworkRule
 
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -213,14 +213,14 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMySqlIdentity>: Parameter Identitas
+INPUTOBJECT `<IMySqlIdentity>`: Parameter Identitas
   - `[BackupName <String>]`: Nama cadangan.
   - `[ConfigurationName <String>]`: Nama konfigurasi server.
   - `[DatabaseName <String>]`: Nama database.
   - `[FirewallRuleName <String>]`: Nama aturan firewall server.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[LocationName <String>]`: Nama lokasi.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SecurityAlertPolicyName <SecurityAlertPolicyName?>]`: Nama kebijakan pemberitahuan keamanan.
   - `[ServerName <String>]`: Nama server.
   - `[SubscriptionId <String>]`: ID langganan target.

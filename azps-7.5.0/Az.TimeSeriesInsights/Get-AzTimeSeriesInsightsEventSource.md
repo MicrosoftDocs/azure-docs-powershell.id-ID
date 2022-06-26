@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.timeseriesinsigh
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/Get-AzTimeSeriesInsightsEventSource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/Get-AzTimeSeriesInsightsEventSource.md
-ms.openlocfilehash: 37e5a0e3d870cb58ca35e782b1ee53bb323a1cc0
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: c70d33876ec74a61ab0a16b10e9b6f0a4a24706d
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145703674"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146600718"
 ---
 # Get-AzTimeSeriesInsightsEventSource
 
@@ -236,7 +236,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ITimeSeriesInsightsIdentity>: Parameter Identitas
+INPUTOBJECT `<ITimeSeriesInsightsIdentity>`: Parameter Identitas
   - `[AccessPolicyName <String>]`: Nama kebijakan akses.
   - `[EnvironmentName <String>]`: Nama lingkungan
   - `[EventSourceName <String>]`: Nama sumber peristiwa Time Series Insights yang terkait dengan lingkungan yang ditentukan.

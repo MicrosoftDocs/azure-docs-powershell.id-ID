@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.hanaonazure/upda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HanaOnAzure/help/Update-AzSapMonitor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HanaOnAzure/help/Update-AzSapMonitor.md
-ms.openlocfilehash: 77965bdb75044f22b093d51de3c9772e572a90b2
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 676b0b921f478f73207c559bf683b5f59bf907d1
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145527082"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146598378"
 ---
 # Update-AzSapMonitor
 
 ## SYNOPSIS
-Menambal bidang Tag dari monitor SAP untuk langganan, grup sumber daya, dan nama monitor yang ditentukan.
+Menambal bidang Tag dari monitor SAP untuk langganan, grup sumber daya, dan nama pemantauan yang ditentukan.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Update-AzSapMonitor -InputObject <IHanaOnAzureIdentity> [-Tag <Hashtable>] [-Def
 ```
 
 ## DESCRIPTION
-Menambal bidang Tag dari monitor SAP untuk langganan, grup sumber daya, dan nama monitor yang ditentukan.
+Menambal bidang Tag dari monitor SAP untuk langganan, grup sumber daya, dan nama pemantauan yang ditentukan.
 
 ## EXAMPLES
 
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.HanaOnAzure.Models.IHanaOnAzureIdentity
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID Langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+ID langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
@@ -207,7 +207,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IHanaOnAzureIdentity>: Parameter Identitas
+INPUTOBJECT `<IHanaOnAzureIdentity>`: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Lokasi vault yang dihapus.
   - `[OperationKind <AccessPolicyUpdateKind?>]`: Nama operasi

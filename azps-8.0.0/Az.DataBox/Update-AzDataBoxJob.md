@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.databox/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/Update-AzDataBoxJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/Update-AzDataBoxJob.md
-ms.openlocfilehash: 7865732935b7567ce549a21c040bf5796fedafe3
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 9ead9639b895bb39f7a18f7a3fb4977bc57a2848
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145540594"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146600088"
 ---
 # Update-AzDataBoxJob
 
 ## SYNOPSIS
-Memperbarui properti pekerjaan yang ada.
+Updates properti pekerjaan yang ada.
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Update-AzDataBoxJob -Name <String> -ResourceGroupName <String> [-SubscriptionId 
 ```
 
 ## DESCRIPTION
-Memperbarui properti pekerjaan yang ada.
+Updates properti pekerjaan yang ada.
 
 ## EXAMPLES
 
@@ -91,7 +91,7 @@ CustomerManaged keyIdentifier /subscriptions/SubscriptionId/resourceGroups/resou
 Perbarui enkripsi pekerjaan kotak data dari microsoft yang dikelola ke pelanggan yang dikelola pelanggan dengan identitas yang ditetapkan sytem.
 Untuk kegagalan apa pun, jalankan kembali dengan $DebugPreference = "Lanjutkan" seperti yang disebutkan dalam contoh 1
 
-### Contoh 3: Memperbarui pekerjaan kotak data dari sistem yang ditetapkan untuk pengguna yang ditetapkan dengan enkripsi kunci yang dikelola pelanggan
+### Contoh 3: Memperbarui pekerjaan kotak data dari sistem yang ditetapkan ke pengguna yang ditetapkan dengan enkripsi kunci yang dikelola pelanggan
 ```powershell
 $keyEncryptionDetails = New-AzDataBoxKeyEncryptionKeyObject -KekType "CustomerManaged" -IdentityProperty @{Type = "UserAssigned"; UserAssignedResourceId = "/subscriptions/SubscriptionId/resourceGroups/resourceGroupName/providers/Microsoft.ManagedIdentity/userAssignedIdentities/identityName"} -KekUrl "keyIdentifier" -KekVaultResourceId "/subscriptions/SubscriptionId/resourceGroups/resourceGroupName/providers/Microsoft.KeyVault/vaults/keyVaultName"
 $contactDetail = New-AzDataBoxContactDetailsObject -ContactName "random" -EmailList @("emailId") -Phone "1234567891"
@@ -100,7 +100,7 @@ $ShippingDetails = New-AzDataBoxShippingAddressObject -StreetAddress1 "101 TOWNS
 Update-AzDataBoxJob -Name "pwshTestSAssigned" -ResourceGroupName "resourceGroupName" -KeyEncryptionKey $keyEncryptionDetails -ContactDetail $contactDetail -ShippingAddress $ShippingDetails  -IdentityType "SystemAssigned,UserAssigned" -UserAssignedIdentity @{"/subscriptions/SubscriptionId/resourceGroups/resourceGroupName/providers/Microsoft.ManagedIdentity/userAssignedIdentities/identityName" = @{}}
 ```
 
-Perbarui pekerjaan kotak data dari sistem yang ditetapkan untuk pengguna yang ditetapkan dengan enkripsi kunci yang dikelola pelanggan.
+Perbarui pekerjaan kotak data dari sistem yang ditetapkan ke pengguna yang ditetapkan dengan enkripsi kunci yang dikelola pelanggan.
 Untuk kegagalan apa pun, jalankan kembali dengan $DebugPreference = "Lanjutkan" seperti yang disebutkan dalam contoh 1
 
 ## PARAMETERS
@@ -200,7 +200,7 @@ Accept wildcard characters: False
 
 ### -Name
 Nama sumber daya pekerjaan dalam grup sumber daya yang ditentukan.
-panjang nama pekerjaan harus antara 3 dan 24 karakter dan hanya menggunakan alfanumerik dan garis bawah
+nama pekerjaan harus memiliki panjang antara 3 dan 24 karakter dan hanya menggunakan alfanumerik dan garis bawah
 
 ```yaml
 Type: System.String
@@ -277,7 +277,7 @@ Accept wildcard characters: False
 
 ### -Tag
 Daftar pasangan nilai kunci yang menjelaskan sumber daya.
-Tag ini dapat digunakan dalam melihat dan mengelompokkan sumber daya ini (di seluruh grup sumber daya).
+Tag ini dapat digunakan dalam menampilkan dan mengelompokkan sumber daya ini (di seluruh grup sumber daya).
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -355,7 +355,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-CONTACTDETAIL <IContactDetails>: Detail kontak untuk pemberitahuan dan pengiriman.
+CONTACTDETAIL `<IContactDetails>`: Detail kontak untuk pemberitahuan dan pengiriman.
   - `ContactName <String>`: Nama kontak orang tersebut.
   - `EmailList <String[]>`: Daftar Email-id yang akan diberi tahu tentang kemajuan pekerjaan.
   - `Phone <String>`: Telepon nomor kontak.
@@ -365,15 +365,15 @@ CONTACTDETAIL <IContactDetails>: Detail kontak untuk pemberitahuan dan pengirima
     - `StageName <NotificationStageName>`: Nama panggung.
   - `[PhoneExtension <String>]`: Telepon nomor ekstensi kontak.
 
-KEYENCRYPTIONKEY <IKeyEncryptionKey>: Kunci enkripsi kunci untuk pekerjaan tersebut.
+KEYENCRYPTIONKEY `<IKeyEncryptionKey>`: Kunci enkripsi kunci untuk pekerjaan tersebut.
   - `KekType <KekType>`: Jenis kunci enkripsi yang digunakan untuk enkripsi kunci.
   - `[IdentityProperty <IIdentityProperties>]`: Properti identitas terkelola yang digunakan untuk enkripsi kunci.
     - `[Type <String>]`: Jenis identitas layanan terkelola.
     - `[UserAssignedResourceId <String>]`: Id sumber daya arm untuk identitas yang ditetapkan pengguna yang akan digunakan untuk mengambil token MSI.
-  - `[KekUrl <String>]`: Kunci enkripsi kunci. Hal ini diperlukan dalam kasus KekType yang dikelola pelanggan.
-  - `[KekVaultResourceId <String>]`: Id sumber daya kek vault. Hal ini diperlukan dalam kasus KekType yang dikelola pelanggan.
+  - `[KekUrl <String>]`: Kunci enkripsi kunci. Ini diperlukan dalam kasus KekType yang dikelola Pelanggan.
+  - `[KekVaultResourceId <String>]`: Id sumber daya kek vault. Ini diperlukan dalam kasus KekType yang dikelola Pelanggan.
 
-SHIPPINGADDRESS <IShippingAddress>: Alamat pengiriman pelanggan.
+SHIPPINGADDRESS `<IShippingAddress>`: Alamat pengiriman pelanggan.
   - `Country <String>`: Nama Negara.
   - `StreetAddress1 <String>`: Alamat Jalan baris 1.
   - `[AddressType <AddressType?>]`: Jenis alamat.

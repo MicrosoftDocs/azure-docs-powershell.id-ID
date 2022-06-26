@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.dnsresolver/upda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/Update-AzDnsForwardingRulesetVirtualNetworkLink.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/Update-AzDnsForwardingRulesetVirtualNetworkLink.md
-ms.openlocfilehash: 4225a576f7fc6325d4c7243bdfcbc34b5a3779f4
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 33175fbb7ceb798cbb40b39b92f77f029ae42c18
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145512874"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146599944"
 ---
 # Update-AzDnsForwardingRulesetVirtualNetworkLink
 
 ## SYNOPSIS
-Memperbarui tautan jaringan virtual ke kumpulan aturan penerusan DNS.
+Updates tautan jaringan virtual ke set aturan penerusan DNS.
 
 ## SYNTAX
 
@@ -34,7 +34,7 @@ Update-AzDnsForwardingRulesetVirtualNetworkLink -InputObject <IDnsResolverIdenti
 ```
 
 ## DESCRIPTION
-Memperbarui tautan jaringan virtual ke kumpulan aturan penerusan DNS.
+Updates tautan jaringan virtual ke set aturan penerusan DNS.
 
 ## EXAMPLES
 
@@ -271,7 +271,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IDnsResolverIdentity>: Parameter Identitas
+INPUTOBJECT `<IDnsResolverIdentity>`: Parameter Identitas
   - `[DnsForwardingRulesetName <String>]`: Nama kumpulan aturan penerusan DNS.
   - `[DnsResolverName <String>]`: Nama pemecah masalah DNS.
   - `[ForwardingRuleName <String>]`: Nama aturan penerusan.

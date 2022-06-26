@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.imagebuilder/sto
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImageBuilder/help/Stop-AzImageBuilderTemplate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImageBuilder/help/Stop-AzImageBuilderTemplate.md
-ms.openlocfilehash: a62b570aaa3a4705efaba579cf1d6ac85aa772ba
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: d8b607ab5f6c31af6dac4e847b2e86e19e690e97
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145695610"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146598936"
 ---
 # Stop-AzImageBuilderTemplate
 
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ImageBuilder.Models.IImageBuilderIdentity
@@ -136,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+Info masuk langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
 Id langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
@@ -232,7 +232,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IImageBuilderIdentity>: Parameter Identitas
+INPUTOBJECT `<IImageBuilderIdentity>`: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ImageTemplateName <String>]`: Nama Templat gambar
   - `[ResourceGroupName <String>]`: Nama grup sumber daya.

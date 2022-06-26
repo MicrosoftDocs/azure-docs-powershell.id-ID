@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.edgeorder/update
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/Update-AzEdgeOrderAddress.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/Update-AzEdgeOrderAddress.md
-ms.openlocfilehash: 15d70fda7834dd8075b1f0f257bcc8f445e0092b
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: 3edc91d8baed37a3273e7c3f5d482f791ad5c0d0
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145764670"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146599062"
 ---
 # Update-AzEdgeOrderAddress
 
 ## SYNOPSIS
-Memperbarui properti alamat yang sudah ada.
+Updates properti alamat yang sudah ada.
 
 > [!NOTE]
 >Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.edgeorder/update-azedgeorderaddress) untuk informasi terbaru.
@@ -37,7 +37,7 @@ Update-AzEdgeOrderAddress -InputObject <IEdgeOrderIdentity> [-ContactDetail <ICo
 ```
 
 ## DESCRIPTION
-Memperbarui properti alamat yang sudah ada.
+Updates properti alamat yang sudah ada.
 
 ## EXAMPLES
 
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -272,23 +272,23 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-CONTACTDETAIL <IContactDetails>: Detail kontak untuk alamat
+CONTACTDETAIL `<IContactDetails>`: Detail kontak untuk alamat
   - `ContactName <String>`: Nama kontak orang tersebut.
   - `EmailList <String[]>`: Daftar Email-id yang akan diberi tahu tentang kemajuan pekerjaan.
   - `Phone <String>`: Telepon nomor kontak.
   - `[Mobile <String>]`: Nomor ponsel kontak.
   - `[PhoneExtension <String>]`: Telepon nomor ekstensi kontak.
 
-INPUTOBJECT <IEdgeOrderIdentity>: Parameter Identitas
+INPUTOBJECT `<IEdgeOrderIdentity>`: Parameter Identitas
   - `[AddressName <String>]`: Nama alamat Sumber Daya dalam grup sumber daya yang ditentukan. panjang nama alamat harus antara 3 dan 24 karakter dan hanya menggunakan alfanumerik dan garis bawah
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Nama wilayah Azure.
   - `[OrderItemName <String>]`: Nama item pesanan
   - `[OrderName <String>]`: Nama pesanan
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
 
-SHIPPINGADDRESS <IShippingAddress>: Detail pengiriman untuk alamat
+SHIPPINGADDRESS `<IShippingAddress>`: Detail pengiriman untuk alamat
   - `Country <String>`: Nama Negara.
   - `StreetAddress1 <String>`: Alamat Jalan baris 1.
   - `[AddressType <AddressType?>]`: Jenis alamat.

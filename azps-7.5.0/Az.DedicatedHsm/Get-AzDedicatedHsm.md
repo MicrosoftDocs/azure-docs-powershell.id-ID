@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.dedicatedhsm/get
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DedicatedHsm/help/Get-AzDedicatedHsm.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DedicatedHsm/help/Get-AzDedicatedHsm.md
-ms.openlocfilehash: 32cfe5d02b8519c84a18462df2770bd52883370b
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 87d10c06f0bb2d3bf9eea4a91701c7a132236784
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145746172"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146599188"
 ---
 # Get-AzDedicatedHsm
 
@@ -50,7 +50,7 @@ Mendapatkan Azure dedicated HSM yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua Dedicated HSM di bawah langganan
+### Contoh 1: Mendapatkan semua Dedicated HSM di bawah langganan
 ```powershell
 Get-AzDedicatedHsm
 ```
@@ -62,7 +62,7 @@ hsm-7t2xaf Succeeded          SafeNet Luna Network HSM A790 eastus
 yeminghsm  Succeeded          SafeNet Luna Network HSM A790 eastus
 ```
 
-Perintah ini mendapatkan semua Dedicated HSM berdasarkan langganan
+Perintah ini mendapatkan semua Dedicated HSM di bawah langganan
 
 ### Contoh 2: Dapatkan semua Dedicated HSM di bawah grup sumber daya.
 ```powershell
@@ -77,7 +77,7 @@ hsm-7t2xaf Succeeded          SafeNet Luna Network HSM A790 eastus
 
 Perintah ini mendapatkan semua Dedicated HSM di bawah grup sumber daya.
 
-### Contoh 3: Dapatkan Dedicated HSM berdasarkan nama
+### Contoh 3: Mendapatkan Dedicated HSM berdasarkan nama
 ```powershell
 Get-AzDedicatedHsm -Name hsm-7t2xaf -ResourceGroupName dedicatedhsm-rg-n359cz
 ```
@@ -90,7 +90,7 @@ hsm-7t2xaf Succeeded          SafeNet Luna Network HSM A790 eastus
 
 Perintah ini mendapatkan Dedicated HSM berdasarkan nama.
 
-### Contoh 4: Dapatkan Dedicated HSM berdasarkan objek
+### Contoh 4: Mendapatkan Dedicated HSM menurut objek
 ```powershell
 $hsm = New-AzDedicatedHsm -Name hsm-n7wfxi -ResourceGroupName dedicatedhsm-rg-n359cz -Location eastus -Sku "SafeNet Luna Network HSM A790" -StampId stamp1 -SubnetId "/subscriptions/xxxx-xxxx-xxx-xxx/resourceGroups/dedicatedhsm-rg-n359cz/providers/Microsoft.Network/virtualNetworks/vnetq30la9/subnets/hsmsubnet" -NetworkInterface @{PrivateIPAddress = '10.2.1.120' }
 Get-AzDedicatedHsm -InputObject $hsm
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DedicatedHsm.Models.IDedicatedHsmIdentity
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+Info masuk langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
@@ -217,7 +217,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IDedicatedHsmIdentity>: Parameter Identitas
+INPUTOBJECT `<IDedicatedHsmIdentity>`: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Name <String>]`: Nama Hsm khusus
   - `[ResourceGroupName <String>]`: Nama Grup Sumber Daya tempat sumber daya berada.

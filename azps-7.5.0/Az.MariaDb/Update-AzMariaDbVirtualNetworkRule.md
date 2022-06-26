@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.mariadb/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/Update-AzMariaDbVirtualNetworkRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/Update-AzMariaDbVirtualNetworkRule.md
-ms.openlocfilehash: ec58066bf4b5323e1597a9d6dc1c3ddad5ec1ab4
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 08613ec891418353e8660a525eb4500f5781f9fd
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145690768"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146598720"
 ---
 # Update-AzMariaDbVirtualNetworkRule
 
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.MariaDb.Models.IMariaDbIdentity
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -274,7 +274,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMariaDbIdentity>: Parameter Identitas
+INPUTOBJECT `<IMariaDbIdentity>`: Parameter Identitas
   - `[ConfigurationName <String>]`: Nama konfigurasi server.
   - `[DatabaseName <String>]`: Nama database.
   - `[FirewallRuleName <String>]`: Nama aturan firewall server.

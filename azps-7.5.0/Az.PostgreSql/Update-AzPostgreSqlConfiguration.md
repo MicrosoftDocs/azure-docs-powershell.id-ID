@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.postgresql/updat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Update-AzPostgreSqlConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Update-AzPostgreSqlConfiguration.md
-ms.openlocfilehash: 090aa7fe5879cdd913916c1638bfaa8c31d7a70c
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 7621f47c98f7123ac24a4ce3721f8d6ddeae760b
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145657894"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146601043"
 ---
 # Update-AzPostgreSqlConfiguration
 
 ## SYNOPSIS
-Memperbarui konfigurasi server.
+Updates konfigurasi server.
 Gunakan Update-AzPostgreSqlServer sebagai gantinya jika Anda ingin memperbarui AdministratorLoginPassword, sku, dll.
 
 > [!NOTE]
@@ -37,7 +37,7 @@ Update-AzPostgreSqlConfiguration -InputObject <IPostgreSqlIdentity> [-Source <St
 ```
 
 ## DESCRIPTION
-Memperbarui konfigurasi server.
+Updates konfigurasi server.
 Gunakan Update-AzPostgreSqlServer sebagai gantinya jika Anda ingin memperbarui AdministratorLoginPassword, sku, dll.
 
 ## EXAMPLES
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -273,13 +273,13 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IPostgreSqlIdentity>: Parameter Identitas
+INPUTOBJECT `<IPostgreSqlIdentity>`: Parameter Identitas
   - `[ConfigurationName <String>]`: Nama konfigurasi server.
   - `[DatabaseName <String>]`: Nama database.
   - `[FirewallRuleName <String>]`: Nama aturan firewall server.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[LocationName <String>]`: Nama lokasi.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SecurityAlertPolicyName <SecurityAlertPolicyName?>]`: Nama kebijakan pemberitahuan keamanan.
   - `[ServerName <String>]`: Nama server.
   - `[SubscriptionId <String>]`: ID langganan target.

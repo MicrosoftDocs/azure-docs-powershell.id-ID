@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.diskpool/get-azd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DiskPool/help/Get-AzDiskPoolIscsiTarget.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DiskPool/help/Get-AzDiskPoolIscsiTarget.md
-ms.openlocfilehash: 18cf785f9a9bc5d18aa835dd674e03eb31511a8b
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: cfc43118a9eaa678d069eb6bd60db8ec1fd085bd
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145741186"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146601636"
 ---
 # Get-AzDiskPoolIscsiTarget
 
@@ -44,7 +44,7 @@ Dapatkan Target iSCSI.
 
 ## EXAMPLES
 
-### Contoh 1: Mencantumkan target iSCSI di Kumpulan Disk
+### Contoh 1: Mencantumkan target iSCSI dalam Kumpulan Disk
 ```powershell
 Get-AzDiskPoolIscsiTarget -ResourceGroupName 'storagepool-rg-test' -DiskPoolName 'disk-pool-5'
 ```
@@ -70,7 +70,7 @@ target0 Microsoft.StoragePool/diskPools/iscsiTargets
 
 Perintah ini mendapatkan target iSCSI.
 
-### Contoh 3: Mendapatkan target iSCSI menurut objek
+### Contoh 3: Mendapatkan target iSCSI berdasarkan objek
 ```powershell
 New-AzDiskPoolIscsiTarget -DiskPoolName 'disk-pool-5' -Name 'target1' -ResourceGroupName 'storagepool-rg-test' -AclMode 'Dynamic' | Get-AzDiskPoolIscsiTarget
 ```
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DiskPool.Models.IDiskPoolIdentity
@@ -196,7 +196,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IDiskPoolIdentity>: Parameter Identitas
+INPUTOBJECT `<IDiskPoolIdentity>`: Parameter Identitas
   - `[DiskPoolName <String>]`: Nama Kumpulan Disk.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[IscsiTargetName <String>]`: Nama Target iSCSI.

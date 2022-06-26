@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.kusto/update-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Update-AzKustoManagedPrivateEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Update-AzKustoManagedPrivateEndpoint.md
-ms.openlocfilehash: 038ea08eb6f3a8489e5829912f8cd56e98dd2cb0
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: c291fc5f5e58e6c666984479194ca4bdafa0a292
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145693036"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146601475"
 ---
 # Update-AzKustoManagedPrivateEndpoint
 
 ## SYNOPSIS
-Memperbarui titik akhir privat terkelola.
+Updates titik akhir privat terkelola.
 
 > [!NOTE]
 >Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.kusto/update-azkustomanagedprivateendpoint) untuk informasi terbaru.
@@ -51,7 +51,7 @@ Update-AzKustoManagedPrivateEndpoint -InputObject <IKustoIdentity> [-GroupId <St
 ```
 
 ## DESCRIPTION
-Memperbarui titik akhir privat terkelola.
+Updates titik akhir privat terkelola.
 
 ## EXAMPLES
 
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Kusto.Models.IKustoIdentity
@@ -320,7 +320,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IKustoIdentity>: Parameter Identitas
+INPUTOBJECT `<IKustoIdentity>`: Parameter Identitas
   - `[AttachedDatabaseConfigurationName <String>]`: Nama konfigurasi database terlampir.
   - `[ClusterName <String>]`: Nama kluster Kusto.
   - `[DataConnectionName <String>]`: Nama koneksi data.
@@ -328,7 +328,7 @@ INPUTOBJECT <IKustoIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Nama lokasi (wilayah) Azure.
   - `[ManagedPrivateEndpointName <String>]`: Nama titik akhir privat terkelola.
-  - `[OperationId <String>]`: Guid ID operasi
+  - `[OperationId <String>]`: Panduan ID operasi
   - `[PrincipalAssignmentName <String>]`: Nama Kusto principalAssignment.
   - `[PrivateEndpointConnectionName <String>]`: Nama koneksi titik akhir privat.
   - `[PrivateLinkResourceName <String>]`: Nama sumber daya tautan privat.
@@ -336,7 +336,7 @@ INPUTOBJECT <IKustoIdentity>: Parameter Identitas
   - `[ScriptName <String>]`: Nama skrip database Kusto.
   - `[SubscriptionId <String>]`: Mendapatkan kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
-PARAMETER <IManagedPrivateEndpoint>: Kelas yang mewakili titik akhir privat terkelola.
+PARAMETER `<IManagedPrivateEndpoint>`: Kelas yang mewakili titik akhir privat terkelola.
   - `[AzureAsyncOperation <String>]`: 
   - `[GroupId <String>]`: GroupId tempat titik akhir privat terkelola dibuat.
   - `[PrivateLinkResourceId <String>]`: ID sumber daya ARM dari sumber daya tempat titik akhir privat terkelola dibuat.
@@ -346,7 +346,7 @@ PARAMETER <IManagedPrivateEndpoint>: Kelas yang mewakili titik akhir privat terk
   - `[SystemDataCreatedBy <String>]`: Identitas yang membuat sumber daya.
   - `[SystemDataCreatedByType <CreatedByType?>]`: Jenis identitas yang membuat sumber daya.
   - `[SystemDataLastModifiedAt <DateTime?>]`: Tanda waktu modifikasi terakhir sumber daya (UTC)
-  - `[SystemDataLastModifiedBy <String>]`: Identitas yang terakhir mengubah sumber daya.
+  - `[SystemDataLastModifiedBy <String>]`: Identitas yang terakhir memodifikasi sumber daya.
   - `[SystemDataLastModifiedByType <CreatedByType?>]`: Jenis identitas yang terakhir memodifikasi sumber daya.
 
 ## RELATED LINKS

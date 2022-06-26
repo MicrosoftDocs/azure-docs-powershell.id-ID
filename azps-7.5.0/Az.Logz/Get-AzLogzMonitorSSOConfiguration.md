@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.logz/get-azlogzm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Get-AzLogzMonitorSSOConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Get-AzLogzMonitorSSOConfiguration.md
-ms.openlocfilehash: abaee90e65ab0509f7a4b6231e49083d62dfe937
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: f81d7ad53ef7a1731d477bd9397a40212f513194
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145811574"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146601402"
 ---
 # Get-AzLogzMonitorSSOConfiguration
 
@@ -163,7 +163,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ILogzIdentity>: Parameter Identitas
+INPUTOBJECT `<ILogzIdentity>`: Parameter Identitas
   - `[ConfigurationName <String>]`: 
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[MonitorName <String>]`: Memantau nama sumber daya

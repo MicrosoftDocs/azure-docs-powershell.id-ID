@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.logz/remove-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Remove-AzLogzSubAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Remove-AzLogzSubAccount.md
-ms.openlocfilehash: 94ee5c03e1cc8e67bf724d54aba0e7078bc3fcec
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: 0749e53589caed1df89e78fd8ad619428efe0ee1
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145773203"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146598774"
 ---
 # Remove-AzLogzSubAccount
 
@@ -165,7 +165,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -245,11 +245,11 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ILogzIdentity>: Parameter Identitas
+INPUTOBJECT `<ILogzIdentity>`: Parameter Identitas
   - `[ConfigurationName <String>]`: 
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[MonitorName <String>]`: Memantau nama sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[RuleSetName <String>]`: 
   - `[SubAccountName <String>]`: Nama sumber daya Sub Akun
   - `[SubscriptionId <String>]`: ID langganan target.

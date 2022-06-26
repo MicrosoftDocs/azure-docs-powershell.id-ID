@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.kusto/new-azkust
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/New-AzKustoManagedPrivateEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/New-AzKustoManagedPrivateEndpoint.md
-ms.openlocfilehash: 6ee54f706a2f8ffcce6c2a87d966e3d93388108d
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 16f2af5b08e060f32eb066370845b09b0da87898
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145693576"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146601528"
 ---
 # New-AzKustoManagedPrivateEndpoint
 
@@ -290,7 +290,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-PARAMETER <IManagedPrivateEndpoint>: Kelas yang mewakili titik akhir privat terkelola.
+PARAMETER `<IManagedPrivateEndpoint>`: Kelas yang mewakili titik akhir privat terkelola.
   - `[AzureAsyncOperation <String>]`: 
   - `[GroupId <String>]`: GroupId tempat titik akhir privat terkelola dibuat.
   - `[PrivateLinkResourceId <String>]`: ID sumber daya ARM dari sumber daya tempat titik akhir privat terkelola dibuat.

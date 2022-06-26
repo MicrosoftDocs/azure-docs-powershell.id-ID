@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.diskpool/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DiskPool/help/Update-AzDiskPoolIscsiTarget.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DiskPool/help/Update-AzDiskPoolIscsiTarget.md
-ms.openlocfilehash: be1f480dfc397b5d15008d9b1e19a3cbf445a73f
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 8e36a25c2d1360a7f0b89e2cc1c804752d0be60e
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145740610"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146599116"
 ---
 # Update-AzDiskPoolIscsiTarget
 
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DiskPool.Models.IDiskPoolIdentity
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 
 ### -Lun
 Daftar LUN yang akan diekspos melalui Target iSCSI.
-Untuk membuat, lihat bagian CATATAN untuk properti LUN dan buat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti LUN dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DiskPool.Models.Api20210801.IIscsiLun[]
@@ -225,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -StaticAcl
-Access Control List (ACL) untuk Target iSCSI; menentukan kebijakan masking LUN Untuk membangun, lihat bagian NOTES untuk properti STATICACL dan membuat tabel hash.
+Access Control List (ACL) untuk Target iSCSI; menentukan kebijakan masking LUN Untuk membangun, lihat bagian CATATAN untuk properti STATICACL dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DiskPool.Models.Api20210801.IAcl[]
@@ -305,7 +305,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IDiskPoolIdentity>: Parameter Identitas
+INPUTOBJECT `<IDiskPoolIdentity>`: Parameter Identitas
   - `[DiskPoolName <String>]`: Nama Kumpulan Disk.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[IscsiTargetName <String>]`: Nama Target iSCSI.

@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.streamanalytics/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Get-AzStreamAnalyticsTransformation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Get-AzStreamAnalyticsTransformation.md
-ms.openlocfilehash: 9e30c47df282c7452e74a3f3db14e7b56c067f33
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 48910f7ea61d12dd8d95c36190776c5856f2447b
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145533846"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146597640"
 ---
 # Get-AzStreamAnalyticsTransformation
 
@@ -48,7 +48,7 @@ tranf-01 Microsoft.StreamAnalytics/streamingjobs/transformations ec0c7238-6bb2-4
 
 Perintah ini mengembalikan informasi tentang transformasi pada pekerjaan.
 
-### Contoh 2: Mendapatkan informasi tentang transformasi Azure Stream Analytics berdasarkan alur
+### Contoh 2: Mendapatkan informasi tentang transformasi Azure Stream Analytics menurut alur
 ```powershell
  New-AzStreamAnalyticsTransformation -ResourceGroupName azure-rg-test -JobName sajob-01-portal -Name tranf-01 -StreamingUnit 6 -Query "Select Id, Name from input-01" | Get-AzStreamAnalyticsTransformation
 ```
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.StreamAnalytics.Models.IStreamAnalyticsIdentity
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -173,7 +173,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IStreamAnalyticsIdentity>: Parameter Identitas
+INPUTOBJECT `<IStreamAnalyticsIdentity>`: Parameter Identitas
   - `[ClusterName <String>]`: Nama kluster.
   - `[FunctionName <String>]`: Nama fungsi.
   - `[Id <String>]`: Jalur identitas sumber daya
@@ -181,7 +181,7 @@ INPUTOBJECT <IStreamAnalyticsIdentity>: Parameter Identitas
   - `[JobName <String>]`: Nama dari pekerjaan streaming.
   - `[Location <String>]`: Wilayah tempat untuk mengambil informasi kuota langganan. Anda dapat mengetahui wilayah mana yang didukung Azure Stream Analytics di sini: https://azure.microsoft.com/en-us/regions/
   - `[OutputName <String>]`: Nama output.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
   - `[TransformationName <String>]`: Nama transformasi.
 

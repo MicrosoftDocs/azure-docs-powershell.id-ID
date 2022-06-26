@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.mysql/remove-azm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Remove-AzMySqlFlexibleServerDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Remove-AzMySqlFlexibleServerDatabase.md
-ms.openlocfilehash: 000d83b10f52a45407856ed03f37d5e051e0d51d
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: 942f5b81939dccb88f1315df5a08e7db35d95129
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145814922"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146601168"
 ---
 # Remove-AzMySqlFlexibleServerDatabase
 
@@ -244,7 +244,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMySqlIdentity>: Parameter Identitas
+INPUTOBJECT `<IMySqlIdentity>`: Parameter Identitas
   - `[BackupName <String>]`: Nama cadangan.
   - `[ConfigurationName <String>]`: Nama konfigurasi server.
   - `[DatabaseName <String>]`: Nama database.

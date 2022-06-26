@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.customproviders/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CustomProviders/help/Get-AzCustomProvider.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CustomProviders/help/Get-AzCustomProvider.md
-ms.openlocfilehash: e920c24e192dd5961d336c1ca8831f199a5de531
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: 76d1a8b8b1ca1a949e7f9c92f6fc7223a80e0d54
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145789102"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146601852"
 ---
 # Get-AzCustomProvider
 
@@ -182,7 +182,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ICustomProvidersIdentity>: Parameter Identitas
+INPUTOBJECT `<ICustomProvidersIdentity>`: Parameter Identitas
   - `[AssociationName <String>]`: Nama asosiasi.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ResourceGroupName <String>]`: Nama grup sumber daya.

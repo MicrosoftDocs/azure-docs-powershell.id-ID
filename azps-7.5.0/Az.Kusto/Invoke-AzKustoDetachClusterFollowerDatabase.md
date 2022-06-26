@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.kusto/invoke-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Invoke-AzKustoDetachClusterFollowerDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Invoke-AzKustoDetachClusterFollowerDatabase.md
-ms.openlocfilehash: 8e0f1c61366f51694fd39e2a5f9b0937d8243ed4
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: 338a75a44de8413cf5f3fb1c34d96c2e8c177d4a
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145773714"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146598846"
 ---
 # Invoke-AzKustoDetachClusterFollowerDatabase
 
@@ -252,7 +252,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IKustoIdentity>: Parameter Identitas
+INPUTOBJECT `<IKustoIdentity>`: Parameter Identitas
   - `[AttachedDatabaseConfigurationName <String>]`: Nama konfigurasi database terlampir.
   - `[ClusterName <String>]`: Nama kluster Kusto.
   - `[DataConnectionName <String>]`: Nama koneksi data.

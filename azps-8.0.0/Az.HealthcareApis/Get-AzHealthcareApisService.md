@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.healthcareapis/g
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HealthcareApis/help/Get-AzHealthcareApisService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HealthcareApis/help/Get-AzHealthcareApisService.md
-ms.openlocfilehash: 6012d20e3736015d1d82ec74aed25dcd64a71e39
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 4fcc5fa53c06c709578884eab0042d0ab6e604f7
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145515226"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146598306"
 ---
 # Get-AzHealthcareApisService
 
@@ -177,7 +177,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IHealthcareApisIdentity>: Parameter Identitas
+INPUTOBJECT `<IHealthcareApisIdentity>`: Parameter Identitas
   - `[DicomServiceName <String>]`: Nama sumber daya Layanan DICOM.
   - `[FhirDestinationName <String>]`: Nama sumber daya tujuan FHIR Konektor IoT.
   - `[FhirServiceName <String>]`: Nama sumber daya Layanan FHIR.

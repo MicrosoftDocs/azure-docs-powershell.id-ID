@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.timeseriesinsigh
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/Update-AzTimeSeriesInsightsAccessPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/Update-AzTimeSeriesInsightsAccessPolicy.md
-ms.openlocfilehash: ebdcd48b2df3088900ac151824a0703571517041
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 7b5aabbe4736110762df4e8bb0f116b63aced123
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145560726"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146597424"
 ---
 # Update-AzTimeSeriesInsightsAccessPolicy
 
 ## SYNOPSIS
-Memperbarui kebijakan akses dengan nama yang ditentukan dalam langganan, grup sumber daya, dan lingkungan yang ditentukan.
+Updates kebijakan akses dengan nama yang ditentukan dalam langganan, grup sumber daya, dan lingkungan yang ditentukan.
 
 ## SYNTAX
 
@@ -33,7 +33,7 @@ Update-AzTimeSeriesInsightsAccessPolicy -InputObject <ITimeSeriesInsightsIdentit
 ```
 
 ## DESCRIPTION
-Memperbarui kebijakan akses dengan nama yang ditentukan dalam langganan, grup sumber daya, dan lingkungan yang ditentukan.
+Updates kebijakan akses dengan nama yang ditentukan dalam langganan, grup sumber daya, dan lingkungan yang ditentukan.
 
 ## EXAMPLES
 
@@ -47,7 +47,7 @@ Name      Type
 policy001 Microsoft.TimeSeriesInsights/Environments/AccessPolicies
 ```
 
-Perintah ini memperbarui kebijakan akses yang ditentukan.
+Perintah ini memperbarui kebijakan akses tertentu.
 
 ### Contoh 2: Memperbarui kebijakan akses tertentu menurut objek
 ```powershell
@@ -60,7 +60,7 @@ Name      Type
 policy001 Microsoft.TimeSeriesInsights/Environments/AccessPolicies
 ```
 
-Perintah ini memperbarui kebijakan akses yang ditentukan.
+Perintah ini memperbarui kebijakan akses tertentu.
 
 ## PARAMETERS
 
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.TimeSeriesInsights.Models.ITimeSeriesInsightsIdentity
@@ -235,7 +235,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ITimeSeriesInsightsIdentity>: Parameter Identitas
+INPUTOBJECT `<ITimeSeriesInsightsIdentity>`: Parameter Identitas
   - `[AccessPolicyName <String>]`: Nama kebijakan akses.
   - `[EnvironmentName <String>]`: Nama lingkungan
   - `[EventSourceName <String>]`: Nama sumber peristiwa Time Series Insights yang terkait dengan lingkungan yang ditentukan.

@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.healthcareapis/r
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HealthcareApis/help/Remove-AzHealthcareDicomService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HealthcareApis/help/Remove-AzHealthcareDicomService.md
-ms.openlocfilehash: 3fa6580493579fdf142ee5237c05354166181e27
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: bcc1d32cbbb1a6e683c7705c507c3b350f1fd9c8
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145515223"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146598126"
 ---
 # Remove-AzHealthcareDicomService
 
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.HealthcareApis.Models.IHealthcareApisIdentity
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -241,9 +241,9 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IHealthcareApisIdentity>: Parameter Identitas
+INPUTOBJECT `<IHealthcareApisIdentity>`: Parameter Identitas
   - `[DicomServiceName <String>]`: Nama sumber daya Layanan DICOM.
-  - `[FhirDestinationName <String>]`: Nama sumber daya tujuan FHIR Konektor IoT.
+  - `[FhirDestinationName <String>]`: Nama sumber daya tujuan IoT Connector FHIR.
   - `[FhirServiceName <String>]`: Nama sumber daya Layanan FHIR.
   - `[GroupName <String>]`: Nama grup sumber daya tautan privat.
   - `[Id <String>]`: Jalur identitas sumber daya

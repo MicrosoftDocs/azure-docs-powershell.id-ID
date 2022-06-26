@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.mysql/update-azm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Update-AzMySqlVirtualNetworkRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Update-AzMySqlVirtualNetworkRule.md
-ms.openlocfilehash: 260646fb96c84c409c5bb7c096d2acd9d6bb0c96
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 58848072f4eb7c6a67360d354a85e1b1dded050e
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145530211"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146597814"
 ---
 # Update-AzMySqlVirtualNetworkRule
 
@@ -286,7 +286,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMySqlIdentity>: Parameter Identitas
+INPUTOBJECT `<IMySqlIdentity>`: Parameter Identitas
   - `[BackupName <String>]`: Nama cadangan.
   - `[ConfigurationName <String>]`: Nama konfigurasi server.
   - `[DatabaseName <String>]`: Nama database.

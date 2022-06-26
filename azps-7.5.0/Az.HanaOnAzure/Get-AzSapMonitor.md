@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.hanaonazure/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HanaOnAzure/help/Get-AzSapMonitor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HanaOnAzure/help/Get-AzSapMonitor.md
-ms.openlocfilehash: 6093684cfbe149ee33d24c731984b31ab5b53ebf
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 5a6d61c6796e51252d244555f00e2d0a5461c556
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145696420"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146598990"
 ---
 # Get-AzSapMonitor
 
@@ -84,7 +84,7 @@ westus2  ps-spamonitor-t01 Microsoft.HanaOnAzure/sapMonitors
 
 Perintah ini mendapatkan monitor SAP berdasarkan objek.
 
-### Contoh 4: Mendapatkan monitor SAP menurut alur
+### Contoh 4: Mendapatkan monitor SAP berdasarkan alur
 ```powershell
 @{Id='/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/nancyc-hn1/providers/Microsoft.HanaOnAzure/sapMonitors/ps-spamonitor-t01'} | Get-AzSapMonitor
 ```
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.HanaOnAzure.Models.IHanaOnAzureIdentity
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+ID Langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
@@ -195,7 +195,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IHanaOnAzureIdentity>: Parameter Identitas
+INPUTOBJECT `<IHanaOnAzureIdentity>`: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Lokasi vault yang dihapus.
   - `[OperationKind <AccessPolicyUpdateKind?>]`: Nama operasi

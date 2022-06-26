@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.providerhub/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/Get-AzProviderHubSku.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/Get-AzProviderHubSku.md
-ms.openlocfilehash: db66bd0b46a5261dc8faa62f8b044f1fb0777a37
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 7ea09d22de1d77c8b6b0f52f659b0dea973ab211
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145656958"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146601075"
 ---
 # Get-AzProviderHubSku
 
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.IProviderHubIdentity
@@ -198,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-The SKU.
+SKU- nya.
 
 ```yaml
 Type: System.String
@@ -247,7 +247,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IProviderHubIdentity>: Parameter Identitas
+INPUTOBJECT `<IProviderHubIdentity>`: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[NestedResourceTypeFirst <String>]`: Jenis sumber daya anak pertama.
   - `[NestedResourceTypeSecond <String>]`: Jenis sumber daya anak kedua.

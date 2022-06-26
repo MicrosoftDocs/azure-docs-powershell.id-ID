@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.desktopvirtualiz
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Send-AzWvdUserSessionMessage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Send-AzWvdUserSessionMessage.md
-ms.openlocfilehash: e944d50d3da87eaeaeed3d53ac354eda172cc799
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 436a925e5fdbdf6ceb380c6f96f9db1f2b68af9d
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145743418"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146601691"
 ---
 # Send-AzWvdUserSessionMessage
 
@@ -256,7 +256,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IDesktopVirtualizationIdentity>: Parameter Identitas
+INPUTOBJECT `<IDesktopVirtualizationIdentity>`: Parameter Identitas
   - `[ApplicationGroupName <String>]`: Nama grup aplikasi
   - `[ApplicationName <String>]`: Nama aplikasi dalam grup aplikasi yang ditentukan
   - `[DesktopName <String>]`: Nama desktop dalam grup desktop yang ditentukan

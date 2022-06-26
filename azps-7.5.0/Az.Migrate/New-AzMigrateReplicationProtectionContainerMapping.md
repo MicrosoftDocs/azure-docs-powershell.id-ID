@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/new-azmi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/New-AzMigrateReplicationProtectionContainerMapping.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/New-AzMigrateReplicationProtectionContainerMapping.md
-ms.openlocfilehash: 0818c525a37b3c72e7d87cfa77a669edd0cde55f
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: bb3c3ce80371849b7ff7ac391c51418328418a06
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145814958"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146598576"
 ---
 # New-AzMigrateReplicationProtectionContainerMapping
 
@@ -91,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -FabricName
-Nama Fabric.
+Nama fabric.
 
 ```yaml
 Type: System.String
@@ -290,7 +290,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-PROVIDERSPECIFICINPUT <IReplicationProviderSpecificContainerMappingInput>: Input khusus penyedia untuk pemasangan.
+PROVIDERSPECIFICINPUT `<IReplicationProviderSpecificContainerMappingInput>`: Input khusus penyedia untuk pemasangan.
   - `[InstanceType <String>]`: Jenis kelas.
 
 ## RELATED LINKS

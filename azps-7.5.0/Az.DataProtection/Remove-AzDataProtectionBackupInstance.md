@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.dataprotection/r
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Remove-AzDataProtectionBackupInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Remove-AzDataProtectionBackupInstance.md
-ms.openlocfilehash: bd17bef94c89a46ca8a2a4d341f4f79bd17d339b
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 778e8e4651c03ce2ba9dfd4bbc96d3b66d6206d8
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145748782"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146601834"
 ---
 # Remove-AzDataProtectionBackupInstance
 
@@ -237,7 +237,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IDataProtectionIdentity>: Parameter Identitas
+INPUTOBJECT `<IDataProtectionIdentity>`: Parameter Identitas
   - `[BackupInstanceName <String>]`: Nama instans cadangan
   - `[BackupPolicyName <String>]`: 
   - `[Id <String>]`: Jalur identitas sumber daya

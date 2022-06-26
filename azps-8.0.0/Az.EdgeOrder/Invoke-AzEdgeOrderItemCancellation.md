@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.edgeorder/invoke
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/Invoke-AzEdgeOrderItemCancellation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/Invoke-AzEdgeOrderItemCancellation.md
-ms.openlocfilehash: 0ebe22ba6705c551391d386698511623cf1af993
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: e64fc318255156d8551ace94f2f2e0ab8d12817d
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145542439"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146599782"
 ---
 # Invoke-AzEdgeOrderItemCancellation
 
@@ -202,7 +202,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IEdgeOrderIdentity>: Parameter Identitas
+INPUTOBJECT `<IEdgeOrderIdentity>`: Parameter Identitas
   - `[AddressName <String>]`: Nama alamat Sumber Daya dalam grup sumber daya yang ditentukan. panjang nama alamat harus antara 3 dan 24 karakter dan hanya menggunakan alfanumerik dan garis bawah
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Nama wilayah Azure.

@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.vmware/remove-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/Remove-AzVMwareCloudLink.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/Remove-AzVMwareCloudLink.md
-ms.openlocfilehash: ec89f7a02e06b6d44ed2b62c3ab341897336477d
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 86f6eca460b779503370bc6203b8c0392c7fdac7
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145501770"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146599386"
 ---
 # Remove-AzVMwareCloudLink
 
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.VMware.Models.IVMwareIdentity
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -242,7 +242,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IVMwareIdentity>: Parameter Identitas
+INPUTOBJECT `<IVMwareIdentity>`: Parameter Identitas
   - `[AddonName <String>]`: Nama addon untuk cloud privat
   - `[AuthorizationName <String>]`: Nama Otorisasi Sirkuit ExpressRoute di cloud privat
   - `[CloudLinkName <String>]`: Nama sumber daya tautan cloud

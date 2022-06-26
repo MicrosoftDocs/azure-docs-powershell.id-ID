@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseKustoPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseKustoPool.md
-ms.openlocfilehash: 502fd7544043b946aec4b8a66871ff53e91fa105
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 95bb75d030648ffd1e33707c51a498a628ab043f
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145507651"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146599494"
 ---
 # Update-AzSynapseKustoPool
 
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -IfMatch
-ETag dari kumpulan Kusto.
+ETag Kusto Pool.
 Hilangkan nilai ini untuk selalu menimpa Kumpulan Kusto saat ini.
 Tentukan nilai ETag yang terakhir dilihat untuk mencegah penimpaan perubahan bersamaan secara tidak sengaja.
 
@@ -136,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Synapse.Models.ISynapseIdentity
@@ -412,7 +412,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ISynapseIdentity>: Parameter Identitas
+INPUTOBJECT `<ISynapseIdentity>`: Parameter Identitas
   - `[AttachedDatabaseConfigurationName <String>]`: Nama konfigurasi database terlampir.
   - `[DataConnectionName <String>]`: Nama koneksi data.
   - `[DatabaseName <String>]`: Nama database di kumpulan Kusto.
