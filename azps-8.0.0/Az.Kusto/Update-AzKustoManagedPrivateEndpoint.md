@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.kusto/update-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Update-AzKustoManagedPrivateEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Update-AzKustoManagedPrivateEndpoint.md
-ms.openlocfilehash: fbecb5fd5e0d9aca2cdce3e924fa1e8d29644a45
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 7edffd6a77868f7d5f2941661be8c061f4f6123f
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145501207"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146607898"
 ---
 # Update-AzKustoManagedPrivateEndpoint
 
 ## SYNOPSIS
-Memperbarui titik akhir privat terkelola.
+Updates titik akhir privat terkelola.
 
 ## SYNTAX
 
@@ -48,7 +48,7 @@ Update-AzKustoManagedPrivateEndpoint -InputObject <IKustoIdentity> [-GroupId <St
 ```
 
 ## DESCRIPTION
-Memperbarui titik akhir privat terkelola.
+Updates titik akhir privat terkelola.
 
 ## EXAMPLES
 
@@ -317,7 +317,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IKustoIdentity>: Parameter Identitas
+INPUTOBJECT `<IKustoIdentity>`: Parameter Identitas
   - `[AttachedDatabaseConfigurationName <String>]`: Nama konfigurasi database terlampir.
   - `[ClusterName <String>]`: Nama kluster Kusto.
   - `[DataConnectionName <String>]`: Nama koneksi data.
@@ -333,7 +333,7 @@ INPUTOBJECT <IKustoIdentity>: Parameter Identitas
   - `[ScriptName <String>]`: Nama skrip database Kusto.
   - `[SubscriptionId <String>]`: Mendapatkan kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
-PARAMETER <IManagedPrivateEndpoint>: Kelas yang mewakili titik akhir privat terkelola.
+PARAMETER `<IManagedPrivateEndpoint>`: Kelas yang mewakili titik akhir privat terkelola.
   - `[AzureAsyncOperation <String>]`: 
   - `[GroupId <String>]`: GroupId tempat titik akhir privat terkelola dibuat.
   - `[PrivateLinkResourceId <String>]`: ID sumber daya ARM dari sumber daya tempat titik akhir privat terkelola dibuat.

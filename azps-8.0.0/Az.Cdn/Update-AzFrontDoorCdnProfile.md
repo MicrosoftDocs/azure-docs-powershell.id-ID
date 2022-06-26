@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/update-azfro
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/help/Update-AzFrontDoorCdnProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/help/Update-AzFrontDoorCdnProfile.md
-ms.openlocfilehash: 6dd674af9a1a2860567ea37831733f045f5e4f48
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: d1d20212d2f47a95942b5981b24439d40beafe32
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145537318"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146608636"
 ---
 # Update-AzFrontDoorCdnProfile
 
 ## SYNOPSIS
-Memperbarui profil Azure Front Door Standard atau Azure Front Door Premium atau CDN yang sudah ada dengan nama profil yang ditentukan di bawah grup langganan dan sumber daya yang ditentukan.
+Updates profil Azure Front Door Standard atau Azure Front Door Premium atau CDN yang sudah ada dengan nama profil yang ditentukan di bawah langganan dan grup sumber daya yang ditentukan.
 
 ## SYNTAX
 
@@ -33,7 +33,7 @@ Update-AzFrontDoorCdnProfile -InputObject <ICdnIdentity> [-OriginResponseTimeout
 ```
 
 ## DESCRIPTION
-Memperbarui profil Azure Front Door Standard atau Azure Front Door Premium atau CDN yang sudah ada dengan nama profil yang ditentukan di bawah grup langganan dan sumber daya yang ditentukan.
+Updates profil Azure Front Door Standard atau Azure Front Door Premium atau CDN yang sudah ada dengan nama profil yang ditentukan di bawah langganan dan grup sumber daya yang ditentukan.
 
 ## EXAMPLES
 
@@ -248,7 +248,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ICdnIdentity>: Parameter Identitas
+INPUTOBJECT `<ICdnIdentity>`: Parameter Identitas
   - `[CustomDomainName <String>]`: Nama domain di bawah profil yang unik secara global.
   - `[EndpointName <String>]`: Nama titik akhir di bawah profil yang unik secara global.
   - `[Id <String>]`: Jalur identitas sumber daya

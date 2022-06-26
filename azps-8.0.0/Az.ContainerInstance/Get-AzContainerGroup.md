@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.containerinstanc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/Get-AzContainerGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/Get-AzContainerGroup.md
-ms.openlocfilehash: 6aced984a65dd768d4d28eb50c094c179504ba1c
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 2bf7e4fe2a54dcdda6870fe7040ac70a34031025
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145511983"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146611174"
 ---
 # Get-AzContainerGroup
 
 ## SYNOPSIS
-Mendapatkan properti grup kontainer yang ditentukan dalam langganan dan grup sumber daya yang ditentukan.
+Mendapatkan properti grup kontainer yang ditentukan dalam grup langganan dan sumber daya yang ditentukan.
 Operasi mengembalikan properti setiap grup kontainer termasuk kontainer, kredensial registri gambar, kebijakan hidupkan ulang, jenis alamat IP, jenis OS, status, dan volume.
 
 ## SYNTAX
@@ -44,7 +44,7 @@ Get-AzContainerGroup -ResourceGroupName <String> [-SubscriptionId <String[]>] [-
 ```
 
 ## DESCRIPTION
-Mendapatkan properti grup kontainer yang ditentukan dalam langganan dan grup sumber daya yang ditentukan.
+Mendapatkan properti grup kontainer yang ditentukan dalam grup langganan dan sumber daya yang ditentukan.
 Operasi mengembalikan properti setiap grup kontainer termasuk kontainer, kredensial registri gambar, kebijakan hidupkan ulang, jenis alamat IP, jenis OS, status, dan volume.
 
 ## EXAMPLES
@@ -135,7 +135,7 @@ eastus   test-cg2      test-rg
 
 Perintah mendapatkan grup kontainer dalam grup `test-rg`sumber daya .
 
-### Contoh 4: Mendapatkan grup kontainer menurut pipa
+### Contoh 4: Mendapatkan grup kontainer dengan menyalurkan
 ```powershell
 Update-AzContainerGroup -Name test-cg1 -ResourceGroupName test-rg -Tag @{"test"="value"} | Get-AzContainerGroup
 ```
@@ -146,7 +146,7 @@ Location Name    Zone ResourceGroupName
 eastus   test-cg1      test-rg
 ```
 
-Perintah mendapatkan grup kontainer yang diperbarui dengan pipa.
+Perintah mendapatkan grup kontainer yang diperbarui dengan menyalurkan.
 
 ## PARAMETERS
 
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ContainerInstance.Models.IContainerInstanceIdentity
@@ -211,7 +211,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Info masuk langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+Kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
@@ -246,7 +246,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IContainerInstanceIdentity>: Parameter Identitas
+INPUTOBJECT `<IContainerInstanceIdentity>`: Parameter Identitas
   - `[ContainerGroupName <String>]`: Nama grup kontainer.
   - `[ContainerName <String>]`: Nama instans kontainer.
   - `[Id <String>]`: Jalur identitas sumber daya

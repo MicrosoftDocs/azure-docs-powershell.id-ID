@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.functions/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Remove-AzFunctionApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Remove-AzFunctionApp.md
-ms.openlocfilehash: b0cdf3244b8b483f2005005383bd8ddb2cf74c07
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: a81f04fc7905f173f938759c652bcc72b85eae50
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145509166"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146608258"
 ---
 # Remove-AzFunctionApp
 
@@ -208,15 +208,15 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ISite>: 
+INPUTOBJECT `<ISite>`: 
   - `Location <String>`: Lokasi Sumber Daya.
   - `[Kind <String>]`: Jenis sumber daya.
   - `[Tag <IResourceTags>]`: Tag sumber daya.
     - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
   - `[ClientAffinityEnabled <Boolean?>]`: <code>true</code> untuk mengaktifkan afinitas klien; <code>false</code> untuk berhenti mengirim cookie afinitas sesi, yang merutekan permintaan klien dalam sesi yang sama ke instans yang sama. Defaultnya adalah <code>true</code>.
-  - `[ClientCertEnabled <Boolean?>]`: <code>true</code> untuk mengaktifkan autentikasi sertifikat klien (autentikasi bersama TLS); jika tidak, <code>false</code>. Defaultnya adalah <code>false</code>.
+  - `[ClientCertEnabled <Boolean?>]`: <code>true</code> untuk mengaktifkan autentikasi sertifikat klien (autentikasi timbal balik TLS); jika tidak, <code>false</code>. Defaultnya adalah <code>false</code>.
   - `[ClientCertExclusionPath <String>]`: jalur pengecualian yang dipisahkan koma autentikasi sertifikat klien
-  - `[CloningInfoAppSettingsOverride <ICloningInfoAppSettingsOverrides>]`: Penimpaan pengaturan aplikasi untuk aplikasi kloning. Jika ditentukan, pengaturan ini akan mengambil alih pengaturan yang dikloning dari aplikasi sumber. Jika tidak, pengaturan aplikasi dari aplikasi sumber dipertahankan.
+  - `[CloningInfoAppSettingsOverride <ICloningInfoAppSettingsOverrides>]`: Penimpaan pengaturan aplikasi untuk aplikasi kloning. Jika ditentukan, pengaturan ini mengambil alih pengaturan yang dikloning dari aplikasi sumber. Jika tidak, pengaturan aplikasi dari aplikasi sumber dipertahankan.
     - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
   - `[CloningInfoCloneCustomHostName <Boolean?>]`: <code>true</code> untuk mengkloning nama host kustom dari aplikasi sumber; jika tidak, <code>false</code>.
   - `[CloningInfoCloneSourceControl <Boolean?>]`: <code>true</code> untuk mengkloning kontrol sumber dari aplikasi sumber; jika tidak, <code>false</code>.
@@ -226,11 +226,11 @@ INPUTOBJECT <ISite>:
   - `[CloningInfoOverwrite <Boolean?>]`: <code>true</code> untuk menimpa aplikasi tujuan; jika tidak, <code>false</code>.
   - `[CloningInfoSourceWebAppId <String>]`: ID sumber daya ARM dari aplikasi sumber. ID sumber daya aplikasi adalah formulir /subscriptions/{subId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Web/sites/{siteName} untuk slot produksi dan /subscriptions/{subId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Web/sites/{siteName}/slots/{slotName} untuk slot lain.
   - `[CloningInfoSourceWebAppLocation <String>]`: Lokasi aplikasi sumber misalnya: US Barat atau Eropa Utara
-  - `[CloningInfoTrafficManagerProfileId <String>]`: ID sumber daya ARM dari profil Traffic Manager untuk digunakan, jika ada. Traffic Manager ID sumber daya adalah formulir /subscriptions/{subId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/trafficManagerProfiles/{profileName}.
-  - `[CloningInfoTrafficManagerProfileName <String>]`: Nama profil Traffic Manager untuk dibuat. Ini hanya diperlukan jika profil Traffic Manager belum ada.
+  - `[CloningInfoTrafficManagerProfileId <String>]`: ID sumber daya ARM dari profil Traffic Manager yang akan digunakan, jika ada. Traffic Manager ID sumber daya adalah formulir /subscriptions/{subId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/trafficManagerProfiles/{profileName}.
+  - `[CloningInfoTrafficManagerProfileName <String>]`: Nama profil Traffic Manager yang akan dibuat. Ini hanya diperlukan jika profil Traffic Manager belum ada.
   - `[Config <ISiteConfig>]`: Konfigurasi aplikasi.
     - `[AcrUseManagedIdentityCred <Boolean?>]`: Bendera untuk menggunakan Kredensial Identitas Terkelola untuk penarikan ACR
-    - `[AcrUserManagedIdentityId <String>]`: Jika menggunakan identitas terkelola pengguna, identitas terkelola pengguna ClientId
+    - `[AcrUserManagedIdentityId <String>]`: Jika menggunakan identitas terkelola pengguna, clientId identitas terkelola pengguna
     - `[ActionMinProcessExecutionTime <String>]`: Waktu minimum proses harus dijalankan sebelum mengambil tindakan
     - `[ActionType <AutoHealActionType?>]`: Tindakan yang telah ditentukan sebelumnya yang akan diambil.
     - `[AlwaysOn <Boolean?>]`: <code>true</code> jika Always On diaktifkan; jika tidak, <code>false</code>.
@@ -246,14 +246,14 @@ INPUTOBJECT <ISite>:
       - `[ConnectionString <String>]`: Nilai string koneksi.
       - `[Name <String>]`: Nama string koneksi.
       - `[Type <ConnectionStringType?>]`: Jenis database.
-    - `[CorAllowedOrigin <String[]>]`: Mendapatkan atau menetapkan daftar asal yang harus diizinkan untuk melakukan panggilan lintas asal (misalnya: http://example.com:12345). Gunakan "*" untuk mengizinkan semua.
-    - `[CorSupportCredentials <Boolean?>]`: Mendapatkan atau mengatur apakah permintaan CORS dengan kredensial diizinkan. Lihat         https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS#Requests_with_credentials         untuk detail selengkapnya.
+    - `[CorAllowedOrigin <String[]>]`: Mendapatkan atau mengatur daftar asal yang harus diizinkan untuk melakukan panggilan lintas asal (misalnya: http://example.com:12345). Gunakan "*" untuk mengizinkan semua.
+    - `[CorSupportCredentials <Boolean?>]`: Mendapatkan atau menetapkan apakah permintaan CORS dengan kredensial diizinkan. Lihat         https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS#Requests_with_credentials         untuk detail selengkapnya.
     - `[CustomActionExe <String>]`: Dapat dieksekusi untuk dijalankan.
     - `[CustomActionParameter <String>]`: Parameter untuk executable.
     - `[DefaultDocument <String[]>]`: Dokumen default.
     - `[DetailedErrorLoggingEnabled <Boolean?>]`: <code>true</code> jika pencatatan kesalahan terperinci diaktifkan; jika tidak, <code>false</code>.
     - `[DocumentRoot <String>]`: Akar dokumen.
-    - `[DynamicTagsJson <String>]`: Mendapatkan atau menetapkan string JSON yang berisi daftar tag dinamis yang akan dievaluasi dari klaim pengguna di titik akhir pendaftaran pendorongan.
+    - `[DynamicTagsJson <String>]`: Mendapatkan atau menetapkan string JSON yang berisi daftar tag dinamis yang akan dievaluasi dari klaim pengguna di titik akhir pendaftaran push.
     - `[ExperimentRampUpRule <IRampUpRule[]>]`: Daftar aturan ramp-up.
       - `[ActionHostName <String>]`: Nama host slot tempat lalu lintas akan dialihkan jika diputuskan. Mis. myapp-stage.azurewebsites.net.
       - `[ChangeDecisionCallbackUrl <String>]`: Algoritma keputusan kustom dapat disediakan di ekstensi situs TiPCallback url mana yang dapat ditentukan. Lihat Ekstensi situs TiPCallback untuk perancah dan kontrak.         https://www.siteextensions.net/packages/TiPCallback/

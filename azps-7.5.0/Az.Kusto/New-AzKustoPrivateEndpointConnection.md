@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.kusto/new-azkust
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/New-AzKustoPrivateEndpointConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/New-AzKustoPrivateEndpointConnection.md
-ms.openlocfilehash: 856d57bffc410d55f50dc6d1e60f2055915a21f3
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: 5ccf938353e43aa4609698781c4010800f2c511a
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145795274"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146609518"
 ---
 # New-AzKustoPrivateEndpointConnection
 
@@ -259,7 +259,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-PARAMETER <IPrivateEndpointConnection>: Koneksi titik akhir privat
+PARAMETER `<IPrivateEndpointConnection>`: Koneksi titik akhir privat
   - `[PrivateLinkServiceConnectionStateDescription <String>]`: Deskripsi koneksi layanan tautan privat.
   - `[PrivateLinkServiceConnectionStateStatus <String>]`: Status koneksi layanan tautan privat.
   - `[SystemDataCreatedAt <DateTime?>]`: Tanda waktu pembuatan sumber daya (UTC).

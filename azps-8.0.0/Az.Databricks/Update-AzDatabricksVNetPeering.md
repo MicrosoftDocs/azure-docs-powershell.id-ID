@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.databricks/updat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Databricks/help/Update-AzDatabricksVNetPeering.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Databricks/help/Update-AzDatabricksVNetPeering.md
-ms.openlocfilehash: 422e0f51776562c3781b0fb03f0cbb0ba438b94b
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 2533387a8a6603ed4e466a0004faf700f72ba9c6
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145528003"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146608312"
 ---
 # Update-AzDatabricksVNetPeering
 
@@ -303,7 +303,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IDatabricksIdentity>: Parameter identitas.
+INPUTOBJECT `<IDatabricksIdentity>`: Parameter identitas.
   - `[GroupId <String>]`: Nama sumber daya tautan privat
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[PeeringName <String>]`: Nama peering vNet ruang kerja.

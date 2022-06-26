@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.customproviders/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CustomProviders/help/Get-AzCustomProviderAssociation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CustomProviders/help/Get-AzCustomProviderAssociation.md
-ms.openlocfilehash: ea30838bd673ca2ac6416924ff13a5af5e7547b8
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 5f554fb161070bd9ec1a664f17b41662c9e9eab4
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145754884"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146610112"
 ---
 # Get-AzCustomProviderAssociation
 
@@ -55,7 +55,7 @@ Location  Name             Type
 East US 2 MyAssoc   Microsoft.CustomProviders/associations
 ```
 
-Cantumkan semua asosiasi penyedia kustom untuk cakupan tertentu.
+Mencantumkan semua asosiasi penyedia kustom untuk cakupan tertentu.
 
 ### Contoh 2: Mendapatkan asosiasi
 ```powershell
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.CustomProviders.Models.ICustomProvidersIdentity
@@ -152,13 +152,13 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ICustomProvidersIdentity>: Parameter Identitas
+INPUTOBJECT `<ICustomProvidersIdentity>`: Parameter Identitas
   - `[AssociationName <String>]`: Nama asosiasi.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ResourceGroupName <String>]`: Nama grup sumber daya.
   - `[ResourceProviderName <String>]`: Nama penyedia sumber daya.
   - `[Scope <String>]`: Ruang lingkup asosiasi.
-  - `[SubscriptionId <String>]`: ID langganan Azure. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-00000000000)
+  - `[SubscriptionId <String>]`: ID langganan Azure. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000)
 
 ## RELATED LINKS
 

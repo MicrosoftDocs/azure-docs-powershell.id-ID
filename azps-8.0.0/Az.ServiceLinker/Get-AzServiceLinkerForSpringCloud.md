@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.servicelinker/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceLinker/help/Get-AzServiceLinkerForSpringCloud.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceLinker/help/Get-AzServiceLinkerForSpringCloud.md
-ms.openlocfilehash: 56255605c9e21e58214894f3797292f6f047256a
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 6dc4044c94b443ecf4744e654f8c659f4e415e52
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145537486"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146610526"
 ---
 # Get-AzServiceLinkerForSpringCloud
 
@@ -286,7 +286,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IServiceLinkerIdentity>: Parameter Identitas
+INPUTOBJECT `<IServiceLinkerIdentity>`: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[LinkerName <String>]`: Nama sumber daya Linker.
   - `[ResourceUri <String>]`: Pengidentifikasi Azure Resource manager yang sepenuhnya memenuhi syarat dari sumber daya yang akan disambungkan.

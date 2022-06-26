@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.labservices/rese
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Reset-AzLabServicesVMPassword.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Reset-AzLabServicesVMPassword.md
-ms.openlocfilehash: 7901e41ff0c621049027d0b3df9b3a05756c4308
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 7e8938e1eacd880cc6a98d6ec59fc47c83ec8887
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145692676"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146609356"
 ---
 # Reset-AzLabServicesVMPassword
 
@@ -291,7 +291,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-VM <VirtualMachine>: 
+VM `<VirtualMachine>`: 
   - `[SystemDataCreatedAt <DateTime?>]`: Tanda waktu pembuatan sumber daya (UTC).
   - `[SystemDataCreatedBy <String>]`: Identitas yang membuat sumber daya.
   - `[SystemDataCreatedByType <CreatedByType?>]`: Jenis identitas yang membuat sumber daya.

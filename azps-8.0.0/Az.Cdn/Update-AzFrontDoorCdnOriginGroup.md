@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/update-azfro
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/help/Update-AzFrontDoorCdnOriginGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/help/Update-AzFrontDoorCdnOriginGroup.md
-ms.openlocfilehash: 318c7697701dca4ac106cacb8c5c005f4a8b34de
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 0d71301ca1b0749714ee94ccccdd751d080be568
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145618179"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146608654"
 ---
 # Update-AzFrontDoorCdnOriginGroup
 
 ## SYNOPSIS
-Memperbarui grup asal yang ada dalam profil.
+Updates grup asal yang ada dalam profil.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Update-AzFrontDoorCdnOriginGroup -InputObject <ICdnIdentity> [-HealthProbeSettin
 ```
 
 ## DESCRIPTION
-Memperbarui grup asal yang ada dalam profil.
+Updates grup asal yang ada dalam profil.
 
 ## EXAMPLES
 
@@ -300,13 +300,13 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-HEALTHPROBESETTING <IHealthProbeParameters>: Pengaturan pemeriksaan kesehatan ke asal yang digunakan untuk menentukan kesehatan asal.
+HEALTHPROBESETTING `<IHealthProbeParameters>`: Pengaturan pemeriksaan kesehatan ke asal yang digunakan untuk menentukan kesehatan asal.
   - `[ProbeIntervalInSecond <Int32?>]`: Jumlah detik antara pemeriksaan kesehatan. Defaultnya adalah 240 detik.
   - `[ProbePath <String>]`: Jalur relatif terhadap asal yang digunakan untuk menentukan kesehatan asal.
   - `[ProbeProtocol <ProbeProtocol?>]`: Protokol yang digunakan untuk pemeriksaan kesehatan.
   - `[ProbeRequestType <HealthProbeRequestType?>]`: Jenis permintaan pemeriksaan kesehatan yang dibuat.
 
-INPUTOBJECT <ICdnIdentity>: Parameter Identitas
+INPUTOBJECT `<ICdnIdentity>`: Parameter Identitas
   - `[CustomDomainName <String>]`: Nama domain di bawah profil yang unik secara global.
   - `[EndpointName <String>]`: Nama titik akhir di bawah profil yang unik secara global.
   - `[Id <String>]`: Jalur identitas sumber daya
@@ -321,7 +321,7 @@ INPUTOBJECT <ICdnIdentity>: Parameter Identitas
   - `[SecurityPolicyName <String>]`: Nama kebijakan keamanan di bawah profil.
   - `[SubscriptionId <String>]`: ID Langganan Azure.
 
-LOADBALANCINGSETTING <ILoadBalancingSettingsParameters>: Pengaturan penyeimbangan beban untuk kumpulan backend
+LOADBALANCINGSETTING `<ILoadBalancingSettingsParameters>`: Pengaturan penyeimbangan beban untuk kumpulan backend
   - `[AdditionalLatencyInMillisecond <Int32?>]`: Latensi tambahan dalam milidetik untuk pemeriksaan jatuh ke dalam wadah latensi terendah
   - `[SampleSize <Int32?>]`: Jumlah sampel yang perlu dipertimbangkan untuk keputusan penyeimbangan beban
   - `[SuccessfulSamplesRequired <Int32?>]`: Jumlah sampel dalam periode sampel yang harus berhasil

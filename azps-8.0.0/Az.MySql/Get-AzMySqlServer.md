@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.mysql/get-azmysq
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Get-AzMySqlServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Get-AzMySqlServer.md
-ms.openlocfilehash: 97ebc8bf819d10a390158f79b3d151212fd0c9d2
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 36253d5b013b7f50b4f9568c8a0035f9129381b9
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145516906"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146610796"
 ---
 # Get-AzMySqlServer
 
@@ -83,7 +83,7 @@ Name          Location AdministratorLogin Version StorageProfileStorageMb SkuNam
 mysql-test    eastus   mysql_test         5.7     5120                    GP_Gen5_4 GeneralPurpose Enabled
 ```
 
-Cmdlet ini mencantumkan semua server MySql dalam grup sumber daya yang ditentukan.
+Cmdlet ini mencantumkan semua server MySql dalam grup sumber daya tertentu.
 
 ### Contoh 4: Dapatkan server MySql menurut identitas
 ```powershell
@@ -97,7 +97,7 @@ Name          Location AdministratorLogin Version StorageProfileStorageMb SkuNam
 mysql-test    eastus   mysql_test         5.7     5120                    GP_Gen5_4 GeneralPurpose Enabled
 ```
 
-Cmdlet ini mencantumkan mendapatkan server MySql berdasarkan identitas.
+Daftar cmdlet ini mendapatkan server MySql berdasarkan identitas.
 
 ## PARAMETERS
 
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.MySql.Models.IMySqlIdentity
@@ -197,7 +197,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMySqlIdentity>: Parameter Identitas
+INPUTOBJECT `<IMySqlIdentity>`: Parameter Identitas
   - `[BackupName <String>]`: Nama cadangan.
   - `[ConfigurationName <String>]`: Nama konfigurasi server.
   - `[DatabaseName <String>]`: Nama database.

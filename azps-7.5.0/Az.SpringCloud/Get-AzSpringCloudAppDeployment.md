@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.springcloud/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SpringCloud/help/Get-AzSpringCloudAppDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SpringCloud/help/Get-AzSpringCloudAppDeployment.md
-ms.openlocfilehash: 2c2e4d60ac758ba92b6e6278e031874cc7be57a4
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: dce7a91fba0b22eb82a83bfe79224cb675207044
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145770726"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146608978"
 ---
 # Get-AzSpringCloudAppDeployment
 
@@ -81,7 +81,7 @@ Property                             : Microsoft.Azure.PowerShell.Cmdlets.Spring
 Source                               : Microsoft.Azure.PowerShell.Cmdlets.SpringCloud.Models.Api20190501Preview.UserSourceInfo
 ```
 
-Dapatkan Spring Cloud App Deploymeng berdasarkan nama.
+Dapatkan Deploymeng Aplikasi Spring Cloud berdasarkan nama.
 
 ### Contoh 2: Mencantumkan semua penyebaran di bawah aplikasi spring cloud tertentu.
 ```powershell
@@ -95,7 +95,7 @@ default Microsoft.AppPlatform/Spring/apps/deployments
 prod    Microsoft.AppPlatform/Spring/apps/deployments
 ```
 
-Cantumkan semua penyebaran di bawah aplikasi spring cloud tertentu.
+Mencantumkan semua penyebaran di bawah aplikasi spring cloud tertentu.
 
 ## PARAMETERS
 
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.SpringCloud.Models.ISpringCloudIdentity
@@ -241,7 +241,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ISpringCloudIdentity>: Parameter Identitas
+INPUTOBJECT `<ISpringCloudIdentity>`: Parameter Identitas
   - `[AppName <String>]`: Nama sumber daya Aplikasi.
   - `[BindingName <String>]`: Nama sumber daya Pengikatan.
   - `[CertificateName <String>]`: Nama sumber daya sertifikat.

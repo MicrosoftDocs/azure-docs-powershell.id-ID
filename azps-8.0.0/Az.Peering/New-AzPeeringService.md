@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.peering/new-azpe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/New-AzPeeringService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/New-AzPeeringService.md
-ms.openlocfilehash: 48274d243635bea50d85f5b80a4ea0b5a9a9716e
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: ae81bb87d2afe7dc070ce8c4d853408cf15770ec
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145620103"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146607520"
 ---
 # New-AzPeeringService
 
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -PeeringLocation
-Lokasi Fisik Berbeda dari Wilayah Azure. Gunakan Get-AzPeeringServiceLocation [-Country <country>]
+Lokasi Fisik Berbeda dari Wilayah Azure. Gunakan Get-AzPeeringServiceLocation `[-Country <country>]`
 
 ```yaml
 Type: System.String

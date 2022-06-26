@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/new-azmi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/New-AzMigrateServerReplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/New-AzMigrateServerReplication.md
-ms.openlocfilehash: f384eb6b02cf622d5102578bc0b4f29d49484e6d
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: a4dbd290678980a4dfa9c2b78573a4a37c42d395
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145776360"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146609231"
 ---
 # New-AzMigrateServerReplication
 
@@ -530,7 +530,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-DISKTAG <IVMwareCbtEnableMigrationInputTargetDiskTags>: Menentukan tag yang akan digunakan untuk pembuatan disk.
+DISKTAG `<IVMwareCbtEnableMigrationInputTargetDiskTags>`: Menentukan tag yang akan digunakan untuk pembuatan disk.
   - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
 
 DISKTOINCLUDE <IVMwareCbtDiskInput[]>: Menentukan disk pada server sumber yang akan disertakan untuk replikasi.
@@ -541,13 +541,13 @@ DISKTOINCLUDE <IVMwareCbtDiskInput[]>: Menentukan disk pada server sumber yang a
   - `[DiskEncryptionSetId <String>]`: Id ARM DiskEncryptionSet.
   - `[DiskType <DiskAccountType?>]`: Jenis disk.
 
-INPUTOBJECT <IVMwareMachine>: Menentukan server yang ditemukan yang akan dimigrasikan. Objek server dapat diambil menggunakan cmdlet Get-AzMigrateServer.
+INPUTOBJECT `<IVMwareMachine>`: Menentukan server yang ditemukan yang akan dimigrasikan. Objek server dapat diambil menggunakan cmdlet Get-AzMigrateServer.
   - `[GuestOSDetailOstype <String>]`: Jenis sistem operasi.
 
-NICTAG <IVMwareCbtEnableMigrationInputTargetNicTags>: Menentukan tag yang akan digunakan untuk pembuatan NIC.
+NICTAG `<IVMwareCbtEnableMigrationInputTargetNicTags>`: Menentukan tag yang akan digunakan untuk pembuatan NIC.
   - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
 
-VMTAG <IVMwareCbtEnableMigrationInputTargetVmtags>: Menentukan tag yang akan digunakan untuk pembuatan VM.
+VMTAG `<IVMwareCbtEnableMigrationInputTargetVmtags>`: Menentukan tag yang akan digunakan untuk pembuatan VM.
   - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
 
 ## RELATED LINKS

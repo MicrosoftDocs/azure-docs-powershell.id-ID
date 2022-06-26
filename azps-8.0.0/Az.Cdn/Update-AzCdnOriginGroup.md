@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/update-azcdn
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/help/Update-AzCdnOriginGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/help/Update-AzCdnOriginGroup.md
-ms.openlocfilehash: 21985e4b948358f928bd37076e5b5b251d22ec9b
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: c1b0daf6ed14635274bc70e0fbe67a49dead1bc8
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145512082"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146608690"
 ---
 # Update-AzCdnOriginGroup
 
 ## SYNOPSIS
-Memperbarui grup asal yang ada dalam titik akhir.
+Updates grup asal yang ada dalam titik akhir.
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ Update-AzCdnOriginGroup -InputObject <ICdnIdentity> [-HealthProbeSetting <IHealt
 ```
 
 ## DESCRIPTION
-Memperbarui grup asal yang ada dalam titik akhir.
+Updates grup asal yang ada dalam titik akhir.
 
 ## EXAMPLES
 
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Cdn.Models.ICdnIdentity
@@ -252,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### -TrafficRestorationTimeToHealedOrNewEndpointsInMinute
-Waktu dalam menit untuk mengalihkan lalu lintas ke titik akhir secara bertahap ketika titik akhir yang tidak sehat menjadi sehat atau titik akhir baru ditambahkan.
+Waktu dalam menit untuk mengalihkan lalu lintas ke titik akhir secara bertahap ketika titik akhir yang tidak sehat sehat atau titik akhir baru ditambahkan.
 Defaultnya adalah 10 menit.
 Properti ini saat ini tidak didukung.
 
@@ -319,13 +319,13 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-HEALTHPROBESETTING <IHealthProbeParameters>: Pengaturan pemeriksaan kesehatan ke asal yang digunakan untuk menentukan kesehatan asal.
+HEALTHPROBESETTING `<IHealthProbeParameters>`: Pengaturan pemeriksaan kesehatan ke asal yang digunakan untuk menentukan kesehatan asal.
   - `[ProbeIntervalInSecond <Int32?>]`: Jumlah detik antara pemeriksaan kesehatan. Defaultnya adalah 240 detik.
   - `[ProbePath <String>]`: Jalur relatif terhadap asal yang digunakan untuk menentukan kesehatan asal.
   - `[ProbeProtocol <ProbeProtocol?>]`: Protokol yang digunakan untuk pemeriksaan kesehatan.
   - `[ProbeRequestType <HealthProbeRequestType?>]`: Jenis permintaan pemeriksaan kesehatan yang dibuat.
 
-INPUTOBJECT <ICdnIdentity>: Parameter Identitas
+INPUTOBJECT `<ICdnIdentity>`: Parameter Identitas
   - `[CustomDomainName <String>]`: Nama domain di bawah profil yang unik secara global.
   - `[EndpointName <String>]`: Nama titik akhir di bawah profil yang unik secara global.
   - `[Id <String>]`: Jalur identitas sumber daya
@@ -343,7 +343,7 @@ INPUTOBJECT <ICdnIdentity>: Parameter Identitas
 ORIGIN <IResourceReference[]>: Sumber konten yang dikirimkan melalui CDN dalam grup asal tertentu.
   - `[Id <String>]`: ID Sumber Daya.
 
-RESPONSEBASEDORIGINERRORDETECTIONSETTING <IResponseBasedOriginErrorDetectionParameters>: Objek JSON yang berisi properti untuk menentukan kesehatan asal menggunakan permintaan/respons nyata. Properti ini saat ini tidak didukung.
+RESPONSEBASEDORIGINERRORDETECTIONSETTING `<IResponseBasedOriginErrorDetectionParameters>`: Objek JSON yang berisi properti untuk menentukan kesehatan asal menggunakan permintaan/respons nyata. Properti ini saat ini tidak didukung.
   - `[HttpErrorRange <IHttpErrorRangeParameters[]>]`: Daftar rentang kode status Http yang dianggap sebagai kesalahan server untuk asal dan ditandai sebagai tidak sehat.
     - `[Begin <Int32?>]`: Awal inklusif dari rentang kode status http.
     - `[End <Int32?>]`: Akhir inklusif dari rentang kode status http.

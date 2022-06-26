@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.windowsiotservic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/WindowsIotServices/help/Get-AzWindowsIotServicesDevice.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/WindowsIotServices/help/Get-AzWindowsIotServicesDevice.md
-ms.openlocfilehash: 2ba9457c272bb61a91fd60ce2dfd49a5d03b27a2
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 9f90a6e287456ef184b25f63938b636e04c81d27
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145697032"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146611479"
 ---
 # Get-AzWindowsIotServicesDevice
 
@@ -50,7 +50,7 @@ Dapatkan metadata terkait non-keamanan dari IoT Device Service Windows.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua layanan IoT Windows di bawah langganan
+### Contoh 1: Dapatkan semua layanan IoT Windows di bawah langganan
 ```powershell
 Get-AzWindowsIotServicesDevice
 ```
@@ -101,7 +101,7 @@ West US  wsi-t01 Microsoft.WindowsIoT/DeviceServices "5c006e63-0000-0700-0000-5f
 
 Perintah ini mendapatkan layanan IoT Windows berdasarkan objek.
 
-### Contoh 5: Mendapatkan layanan IoT Windows menurut alur
+### Contoh 5: Mendapatkan layanan IoT Windows berdasarkan alur
 ```powershell
 $wsi = New-AzWindowsIotServicesDevice -Name wsi-t01 -ResourceGroupName azure-rg-test -Location eastus -Quantity 10 -BillingDomainName 'microsoft.onmicrosoft.com' -AdminDomainName 'microsoft.onmicrosoft.com' | Get-AzWindowsIotServicesDevice
 ```
@@ -111,7 +111,7 @@ Location Name    Type                                Etag
 West US  wsi-t01 Microsoft.WindowsIoT/DeviceServices "5c006e63-0000-0700-0000-5faa37830000"
 ```
 
-Perintah ini mendapatkan layanan IoT Windows menurut alur.
+Perintah ini mendapatkan layanan IoT Windows berdasarkan alur.
 
 ## PARAMETERS
 
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.WindowsIotServices.Models.IWindowsIotServicesIdentity
@@ -210,8 +210,8 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IWindowsIotServicesIdentity>: Parameter Identitas
-  - `[DeviceName <String>]`: Nama IoT Device Service Windows.
+INPUTOBJECT `<IWindowsIotServicesIdentity>`: Parameter Identitas
+  - `[DeviceName <String>]`: Nama Windows IoT Device Service.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi Windows IoT Device Service.
   - `[SubscriptionId <String>]`: Pengidentifikasi langganan.

@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/get-aza
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzAppServiceEnvironment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzAppServiceEnvironment.md
-ms.openlocfilehash: 915628dca8482acefbb542fb6c3398e4894452f0
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: c4595f08b3a3aaf3bf51810b8c8f7ae584392bef
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145559841"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146610382"
 ---
 # Get-AzAppServiceEnvironment
 
@@ -34,7 +34,7 @@ Cmdlet **Get-AzAppServiceEnvironment** mengembalikan ASE yang cocok dengan kueri
 Get-AzAppServiceEnvironment -ResourceGroupName MyResourceGroup -Name MyAseName
 ```
 
-Mengembalikan Lingkungan App Service tertentu yang dinamai <MyAseName> dalam<MyResourceGroup>
+Mengembalikan lingkungan App Service tertentu yang dinamai `<MyAseName>` dalam`<MyResourceGroup>`
 
 ## PARAMETERS
 

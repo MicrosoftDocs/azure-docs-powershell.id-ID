@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.mariadb/restore-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/Restore-AzMariaDbServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/Restore-AzMariaDbServer.md
-ms.openlocfilehash: eacbf3fdb36844f4c3a84d43998b8f1af1592442
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 218dccbf8fc20d4c495da28b462f433a2a942cac
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145508218"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146607664"
 ---
 # Restore-AzMariaDbServer
 
@@ -278,7 +278,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IServer>: Objek server sumber untuk dipulihkan.
+INPUTOBJECT `<IServer>`: Objek server sumber untuk dipulihkan.
   - `Location <String>`: Lokasi tempat sumber daya berada.
   - `[Tag <ITrackedResourceTags>]`: Metadata khusus aplikasi dalam bentuk pasangan kunci-nilai.
     - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.

@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.confidentialledg
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConfidentialLedger/help/Update-AzConfidentialLedger.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConfidentialLedger/help/Update-AzConfidentialLedger.md
-ms.openlocfilehash: f735083dbbdc6b226f317ecbe0be9a16ea4d0481
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: 135dc1d32353214306956aab3d7d2f70d112e4ce
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145817082"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146610184"
 ---
 # Update-AzConfidentialLedger
 
 ## SYNOPSIS
-Memperbarui properti Confidential Ledger
+Updates properti Confidential Ledger
 
 > [!NOTE]
 >Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.confidentialledger/update-azconfidentialledger) untuk informasi terbaru.
@@ -39,7 +39,7 @@ Update-AzConfidentialLedger -InputObject <IConfidentialLedgerIdentity> -Location
 ```
 
 ## DESCRIPTION
-Memperbarui properti Confidential Ledger
+Updates properti Confidential Ledger
 
 ## EXAMPLES
 
@@ -72,7 +72,7 @@ Location Name
 eastus   test-ledger
 ```
 
-Memperbarui metadata untuk Confidential Ledger yang ada.
+Updates metadata untuk Confidential Ledger yang ada.
 
 ## PARAMETERS
 
@@ -319,7 +319,7 @@ CERTBASEDSECURITYPRINCIPAL <ICertBasedSecurityPrincipal[]>: Array semua Perwakil
   - `[Cert <String>]`: Kunci umum sertifikat pengguna (.pem atau .cer)
   - `[LedgerRoleName <LedgerRoleName?>]`: LedgerRole yang terkait dengan Perwakilan Keamanan Ledger
 
-INPUTOBJECT <IConfidentialLedgerIdentity>: Parameter Identitas
+INPUTOBJECT `<IConfidentialLedgerIdentity>`: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[LedgerName <String>]`: Nama Confidential Ledger
   - `[ResourceGroupName <String>]`: Nama grup sumber daya.
