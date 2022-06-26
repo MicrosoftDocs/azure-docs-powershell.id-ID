@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.resourcegraph/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceGraph/ResourceGraph/help/Get-AzResourceGraphQuery.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceGraph/ResourceGraph/help/Get-AzResourceGraphQuery.md
-ms.openlocfilehash: 08f1e40fc3e0f5efb927854fa2d790d35f2e2bcd
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 608fdfa28850b6ca0ae3152180ead849cdcd16ca
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145619983"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146602662"
 ---
 # Get-AzResourceGraphQuery
 
 ## SYNOPSIS
-Dapatkan kueri grafik tunggal dengan resourceName-nya.
+Dapatkan satu kueri grafik dengan resourceName-nya.
 
 ## SYNTAX
 
@@ -38,7 +38,7 @@ Get-AzResourceGraphQuery -InputObject <IResourceGraphIdentity> [-DefaultProfile 
 ```
 
 ## DESCRIPTION
-Dapatkan kueri grafik tunggal dengan resourceName-nya.
+Dapatkan satu kueri grafik dengan resourceName-nya.
 
 ## EXAMPLES
 
@@ -80,7 +80,7 @@ Location Name            Type
 global   SharedQuery-t01 microsoft.resourcegraph/queries
 ```
 
-Perintah ini mendapatkan kueri grafik sumber daya berdasarkan objek.
+Perintah ini mendapatkan kueri grafik sumber daya menurut objek.
 
 ## PARAMETERS
 
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Nama sumber daya Graph Query.
+Nama sumber daya kueri Graph.
 
 ```yaml
 Type: System.String
@@ -181,7 +181,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IResourceGraphIdentity>: Parameter Identitas
+INPUTOBJECT `<IResourceGraphIdentity>`: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ResourceGroupName <String>]`: Nama grup sumber daya.
   - `[ResourceName <String>]`: Nama sumber daya kueri Graph.

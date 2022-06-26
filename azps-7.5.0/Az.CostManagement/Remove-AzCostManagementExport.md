@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.costmanagement/r
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CostManagement/help/Remove-AzCostManagementExport.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CostManagement/help/Remove-AzCostManagementExport.md
-ms.openlocfilehash: 2df72b3bb7f988ffe045b0ccf7547e8477d99d41
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 557a7468bd0c1e369e24d894a97ede7156b12536
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145754956"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146607143"
 ---
 # Remove-AzCostManagementExport
 
@@ -182,7 +182,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ICostManagementIdentity>: Parameter Identitas
+INPUTOBJECT `<ICostManagementIdentity>`: Parameter Identitas
   - `[AlertId <String>]`: ID Pemberitahuan
   - `[ExportName <String>]`: Nama Ekspor.
   - `[ExternalCloudProviderId <String>]`: Ini bisa berupa '{externalSubscriptionId}' untuk akun tertaut atau '{externalBillingAccountId}' untuk akun konsolidasi yang digunakan dengan operasi dimensi/kueri.

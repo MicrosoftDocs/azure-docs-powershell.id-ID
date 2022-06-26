@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.connectedkuberne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedKubernetes/help/Get-AzConnectedKubernetesUserCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedKubernetes/help/Get-AzConnectedKubernetesUserCredential.md
-ms.openlocfilehash: 3eb15404ce4d997031e29f3a3ef1d6d26f1050db
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 2fe521f3d9a7c18d86513fda8764d69dd54f262e
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145529590"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146603202"
 ---
 # Get-AzConnectedKubernetesUserCredential
 
 ## SYNOPSIS
-Mendapatkan kredensial pengguna kluster yang terhubung dengan grup sumber daya dan nama tertentu.
+Mendapatkan kredensial pengguna kluster dari kluster yang terhubung dengan grup dan nama sumber daya tertentu.
 
 ## SYNTAX
 
@@ -34,11 +34,11 @@ Get-AzConnectedKubernetesUserCredential -ClusterName <String> -ResourceGroupName
 ```
 
 ## DESCRIPTION
-Mendapatkan kredensial pengguna kluster yang terhubung dengan grup sumber daya dan nama tertentu.
+Mendapatkan kredensial pengguna kluster dari kluster yang terhubung dengan grup dan nama sumber daya tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan kredensial pengguna kluster dari kluster yang terhubung dengan grup sumber daya dan nama tertentu.
+### Contoh 1: Mendapatkan kredensial pengguna kluster dari kluster yang terhubung dengan grup dan nama sumber daya tertentu.
 ```powershell
 Get-AzConnectedKubernetesUserCredential -ClusterName azps_test_cluster -ResourceGroupName azps_test_group -AuthenticationMethod AAD -ClientProxy
 ```
@@ -54,7 +54,7 @@ Kubeconfig                                 : {{
                                              }}
 ```
 
-Mendapatkan kredensial pengguna kluster yang terhubung dengan grup sumber daya dan nama tertentu.
+Mendapatkan kredensial pengguna kluster dari kluster yang terhubung dengan grup dan nama sumber daya tertentu.
 
 ### Contoh 2: Mendapatkan kredensial pengguna kluster dari kluster yang terhubung dengan grup sumber daya dan nama tertentu.
 ```powershell
@@ -72,7 +72,7 @@ Kubeconfig                                 : {{
                                              }}
 ```
 
-Mendapatkan kredensial pengguna kluster yang terhubung dengan grup sumber daya dan nama tertentu.
+Mendapatkan kredensial pengguna kluster dari kluster yang terhubung dengan grup dan nama sumber daya tertentu.
 
 ## PARAMETERS
 
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClusterName
-Nama kluster Kubernetes tempat dipanggil.
+Nama kluster Kubernetes tempat get dipanggil.
 
 ```yaml
 Type: System.String
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -234,9 +234,9 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-PROPERTI <IListClusterUserCredentialProperties>: .
+PROPERTI `<IListClusterUserCredentialProperties>`: .
   - `AuthenticationMethod <AuthenticationMethod>`: Mode autentikasi klien.
-  - `ClientProxy <Boolean>`: Nilai Boolean untuk menunjukkan apakah permintaan adalah untuk proksi sisi klien atau tidak
+  - `ClientProxy <Boolean>`: Nilai Boolean untuk menunjukkan apakah permintaan tersebut untuk proksi sisi klien atau tidak
 
 ## RELATED LINKS
 

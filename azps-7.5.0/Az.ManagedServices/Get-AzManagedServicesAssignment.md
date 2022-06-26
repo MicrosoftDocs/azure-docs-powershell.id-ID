@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.managedservices/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServices/help/Get-AzManagedServicesAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServices/help/Get-AzManagedServicesAssignment.md
-ms.openlocfilehash: bf90dadfdb17518f1e419fbb8468443155d69ab7
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: f8d002bb37d793924d7e5a5a9afe327d2466716b
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145691632"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146603976"
 ---
 # Get-AzManagedServicesAssignment
 
@@ -73,9 +73,9 @@ RegistrationDefinitionId : /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/p
 ProvisioningState        : Succeeded
 ```
 
-Mendapatkan penetapan pendaftaran Azure Lighthouse berdasarkan nama dengan properti yang dipilih.
+Mendapatkan penugasan pendaftaran Azure Lighthouse berdasarkan nama dengan properti yang dipilih.
 
-### Contoh 3: Mencantumkan semua penetapan pendaftaran Azure Lighthouse berdasarkan cakupan
+### Contoh 3: Mencantumkan semua penugasan pendaftaran Azure Lighthouse berdasarkan cakupan
 ```powershell
 Get-AzManagedServicesAssignment -Scope /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx | Format-List -Property Id, Name, Type, RegistrationDefinitionId, ProvisioningState
 ```
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ManagedServices.Models.IManagedServicesIdentity
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-GUID penetapan pendaftaran.
+GUID penugasan pendaftaran.
 
 ```yaml
 Type: System.String
@@ -199,10 +199,10 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IManagedServicesIdentity>: Parameter Identitas
+INPUTOBJECT `<IManagedServicesIdentity>`: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[MarketplaceIdentifier <String>]`: Pengidentifikasi Marketplace Azure. Format yang diharapkan: {publisher}. {product[-preview]}. {planName}. {version} atau {publisher}. {product[-preview]}. {planName} atau {publisher}. {product[-preview]} atau {publisher}).
-  - `[RegistrationAssignmentId <String>]`: GUID penetapan pendaftaran.
+  - `[RegistrationAssignmentId <String>]`: GUID penugasan pendaftaran.
   - `[RegistrationDefinitionId <String>]`: GUID definisi pendaftaran.
   - `[Scope <String>]`: Cakupan sumber daya.
 

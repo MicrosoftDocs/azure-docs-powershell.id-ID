@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.vmware/new-azvmw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/New-AzVMwareAddon.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/New-AzVMwareAddon.md
-ms.openlocfilehash: 3646465deebac3c9b7c008adc38b8c3985fd188e
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 8f890d72a0446a882fb04e7017c311421659ae0a
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145507642"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146604642"
 ---
 # New-AzVMwareAddon
 
@@ -200,7 +200,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-PROPERTI <IAddonProperties>: Properti sumber daya addon
+PROPERTI `<IAddonProperties>`: Properti sumber daya addon
   - `AddonType <AddonType>`: Jenis addon cloud privat
 
 ## RELATED LINKS

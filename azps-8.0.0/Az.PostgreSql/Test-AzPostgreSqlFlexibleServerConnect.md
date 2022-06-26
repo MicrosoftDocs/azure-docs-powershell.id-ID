@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.postgresql/test-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Test-AzPostgreSqlFlexibleServerConnect.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Test-AzPostgreSqlFlexibleServerConnect.md
-ms.openlocfilehash: f0354ca5b6a369364cf3ccab340c39777e4ef0e7
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 67ae839ddee8eb7998ff46d985467941da6208f9
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145557968"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146605344"
 ---
 # Test-AzPostgreSqlFlexibleServerConnect
 
@@ -74,7 +74,7 @@ Get-AzPostgreSqlFlexibleServer -ResourceGroupName PowershellPostgreSqlTest -Serv
 The connection testing to postgresql-test.database.azure.com was successful!
 ```
 
-Menguji koneksi oleh identitas
+Menguji koneksi berdasarkan identitas
 
 ### Contoh 3: Uji kueri menurut nama
 ```powershell
@@ -204,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -QueryText
-Kueri untuk database yang akan diuji
+Kueri untuk diuji database
 
 ```yaml
 Type: System.String
@@ -253,13 +253,13 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IPostgreSqlIdentity>: Server yang akan disambungkan.
+INPUTOBJECT `<IPostgreSqlIdentity>`: Server yang akan disambungkan.
   - `[ConfigurationName <String>]`: Nama konfigurasi server.
   - `[DatabaseName <String>]`: Nama database.
   - `[FirewallRuleName <String>]`: Nama aturan firewall server.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[LocationName <String>]`: Nama lokasi.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SecurityAlertPolicyName <SecurityAlertPolicyName?>]`: Nama kebijakan pemberitahuan keamanan.
   - `[ServerName <String>]`: Nama server.
   - `[SubscriptionId <String>]`: ID langganan target.

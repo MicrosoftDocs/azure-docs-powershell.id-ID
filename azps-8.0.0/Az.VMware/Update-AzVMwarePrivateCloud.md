@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.vmware/update-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/Update-AzVMwarePrivateCloud.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/Update-AzVMwarePrivateCloud.md
-ms.openlocfilehash: 954e9e7769f5d6bf23d46ef8f818574a0b9f9e2b
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: f390b1f5c25e94f24380176fc40b372e000bdc82
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145512223"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146604624"
 ---
 # Update-AzVMwarePrivateCloud
 
@@ -180,7 +180,7 @@ Accept wildcard characters: False
 ### -IdentityType
 Jenis identitas yang digunakan untuk cloud privat.
 Jenis 'SystemAssigned' mengacu pada identitas yang dibuat secara implisit.
-Jenis 'None' akan menghapus identitas apa pun dari Private Cloud.
+Jenis 'Tidak Ada' akan menghapus identitas apa pun dari Cloud Privat.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.VMware.Support.ResourceIdentityType
@@ -195,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.VMware.Models.IVMwareIdentity
@@ -331,7 +331,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -438,7 +438,7 @@ IDENTITYSOURCE <IIdentitySource[]>: Sumber Identitas Akses Menyeluruh vCenter Se
   - `[Ssl <SslEnum?>]`: Melindungi komunikasi LDAP menggunakan sertifikat SSL (LDAPS)
   - `[Username <String>]`: ID pengguna Direktori Aktif dengan minimal akses baca-saja ke Base DN untuk pengguna dan grup
 
-INPUTOBJECT <IVMwareIdentity>: Parameter Identitas
+INPUTOBJECT `<IVMwareIdentity>`: Parameter Identitas
   - `[AddonName <String>]`: Nama addon untuk cloud privat
   - `[AuthorizationName <String>]`: Nama Otorisasi Sirkuit ExpressRoute di cloud privat
   - `[CloudLinkName <String>]`: Nama sumber daya tautan cloud

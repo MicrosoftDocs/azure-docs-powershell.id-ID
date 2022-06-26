@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.purview/add-azpu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Add-AzPurviewAccountRootCollectionAdmin.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/Add-AzPurviewAccountRootCollectionAdmin.md
-ms.openlocfilehash: 4b05b4fea60f5b667633580751dca606a960a7cf
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: fa1d3ecaff6b99000f4710a052cbdfbcd848e098
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145656707"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146603508"
 ---
 # Add-AzPurviewAccountRootCollectionAdmin
 
@@ -213,7 +213,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IPurviewIdentity>: Parameter Identitas
+INPUTOBJECT `<IPurviewIdentity>`: Parameter Identitas
   - `[AccountName <String>]`: Nama akun.
   - `[GroupId <String>]`: Pengidentifikasi grup.
   - `[Id <String>]`: Jalur identitas sumber daya

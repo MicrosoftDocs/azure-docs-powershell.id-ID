@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.marketplace/copy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Copy-AzMarketplacePrivateStoreCollectionOffer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Copy-AzMarketplacePrivateStoreCollectionOffer.md
-ms.openlocfilehash: a57975c6b9ee804c97f5693bfe535389f9dec136
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 93fb0f6405b8d795101d60018becdd65700c74f7
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145690804"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146603724"
 ---
 # Copy-AzMarketplacePrivateStoreCollectionOffer
 
@@ -242,7 +242,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMarketplaceIdentity>: Parameter Identitas
+INPUTOBJECT `<IMarketplaceIdentity>`: Parameter Identitas
   - `[AdminRequestApprovalId <String>]`: ID persetujuan permintaan admin untuk membuat atau memperbarui
   - `[CollectionId <String>]`: ID koleksi
   - `[Id <String>]`: Jalur identitas sumber daya
@@ -250,7 +250,7 @@ INPUTOBJECT <IMarketplaceIdentity>: Parameter Identitas
   - `[PrivateStoreId <String>]`: ID penyimpanan - harus menggunakan ID penyewa
   - `[RequestApprovalId <String>]`: ID persetujuan permintaan untuk membuat atau memperbarui
 
-PAYLOAD <ITransferOffersProperties>: Mentransfer properti penawaran
+PAYLOAD `<ITransferOffersProperties>`: Mentransfer properti penawaran
   - `[OfferIdsList <String[]>]`: Menawarkan daftar id untuk ditransfer dari koleksi sumber ke koleksi target
   - `[Operation <String>]`: Operasi yang akan dilakukan (Misalnya: Salin atau Pindahkan)
   - `[TargetCollection <String[]>]`: Id koleksi target

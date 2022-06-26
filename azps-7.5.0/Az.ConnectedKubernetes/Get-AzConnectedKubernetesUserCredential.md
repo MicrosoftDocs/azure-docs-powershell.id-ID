@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.connectedkuberne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedKubernetes/help/Get-AzConnectedKubernetesUserCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedKubernetes/help/Get-AzConnectedKubernetesUserCredential.md
-ms.openlocfilehash: 8a60f29b3c99fd133b7967b733571e52dc469c71
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: 0463038bedcf987b85a11d48c5b2ed83f95eca72
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145764948"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146602391"
 ---
 # Get-AzConnectedKubernetesUserCredential
 
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -237,7 +237,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-PROPERTI <IListClusterUserCredentialProperties>: .
+PROPERTI `<IListClusterUserCredentialProperties>`: .
   - `AuthenticationMethod <AuthenticationMethod>`: Mode autentikasi klien.
   - `ClientProxy <Boolean>`: Nilai Boolean untuk menunjukkan apakah permintaan adalah untuk proksi sisi klien atau tidak
 

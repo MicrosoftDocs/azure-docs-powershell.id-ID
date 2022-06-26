@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.connectedmachine
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedMachine/help/Set-AzConnectedPrivateLinkScope.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedMachine/help/Set-AzConnectedPrivateLinkScope.md
-ms.openlocfilehash: 771784ead10c72460a6dfc0aacad03f5c87713af
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: 957fc66944c94b8700abc8e1a4a5c6cb0106d8c2
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145781272"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146601906"
 ---
 # Set-AzConnectedPrivateLinkScope
 
@@ -54,7 +54,7 @@ Name         Location    PublicNetworkAccess ProvisioningState Tag
 name         eastus2euap Disabled            Succeeded         Microsoft.Azure.PowerShell.Cmdlets.ConnectedMachine.Models.Api20210520.PrivateLinkScopesRes…
 ```
 
-Memperbarui PublicNetworkAccess ke "Nonaktifkan" dan tag ke $tags
+Updates PublicNetworkAccess ke "Nonaktifkan" dan tag untuk $tags
 
 ## PARAMETERS
 
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -231,7 +231,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-PARAMETER <IHybridComputePrivateLinkScope>: Definisi Azure Arc PrivateLinkScope.
+PARAMETER `<IHybridComputePrivateLinkScope>`: Definisi Azure Arc PrivateLinkScope.
   - `Location <String>`: Lokasi sumber daya
   - `[Tag <IPrivateLinkScopesResourceTags>]`: Tag sumber daya
     - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.

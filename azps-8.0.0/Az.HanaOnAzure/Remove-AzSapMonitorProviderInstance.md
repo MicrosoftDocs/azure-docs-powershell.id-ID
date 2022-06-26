@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.hanaonazure/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HanaOnAzure/help/Remove-AzSapMonitorProviderInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HanaOnAzure/help/Remove-AzSapMonitorProviderInstance.md
-ms.openlocfilehash: 4281071560a5a0dde7f338acdf7ccf05ce088e2f
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 7d68e4104f30efbcf3ebab90a72daa26e9d5f622
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145498620"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146605920"
 ---
 # Remove-AzSapMonitorProviderInstance
 
@@ -241,7 +241,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IHanaOnAzureIdentity>: Parameter Identitas
+INPUTOBJECT `<IHanaOnAzureIdentity>`: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Lokasi vault yang dihapus.
   - `[OperationKind <AccessPolicyUpdateKind?>]`: Nama operasi

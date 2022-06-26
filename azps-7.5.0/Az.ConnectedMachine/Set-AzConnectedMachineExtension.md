@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.connectedmachine
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedMachine/help/Set-AzConnectedMachineExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedMachine/help/Set-AzConnectedMachineExtension.md
-ms.openlocfilehash: 016c9540fe3c0849ae15aacc1b9b751bc2e414e8
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: 504242da00d8d0564ed5a4384f8a8c1ac03c4816
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145789858"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146601978"
 ---
 # Set-AzConnectedMachineExtension
 
@@ -71,7 +71,7 @@ Name   Location ProvisioningState
 custom eastus   Succeeded
 ```
 
-Ini menetapkan ekstensi dengan parameter ekstensi yang disediakan oleh objek yang diteruskan melalui alur.
+Ini mengatur ekstensi dengan parameter ekstensi yang disediakan oleh objek yang diteruskan melalui alur.
 Ini bagus jika Anda ingin mengambil parameter satu komputer dan menerapkannya ke komputer lain.
 
 ## PARAMETERS
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 
 ### -ExtensionParameter
 Menjelaskan Ekstensi Mesin.
-Untuk membuat, lihat bagian CATATAN untuk properti EXTENSIONPARAMETER dan buat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti EXTENSIONPARAMETER dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ConnectedMachine.Models.Api20210520.IMachineExtension
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -ForceRerun
-Bagaimana handler ekstensi harus dipaksa untuk memperbarui meskipun konfigurasi ekstensi tidak berubah.
+Bagaimana handler ekstensi harus diperbarui meskipun konfigurasi ekstensi tidak berubah.
 
 ```yaml
 Type: System.String
@@ -520,16 +520,16 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-EXTENSIONPARAMETER <IMachineExtension>: Menjelaskan Ekstensi Mesin.
+EXTENSIONPARAMETER `<IMachineExtension>`: Menjelaskan Ekstensi Mesin.
   - `Location <String>`: Lokasi geografis tempat sumber daya berada
   - `[Tag <ITrackedResourceTags>]`: Tag sumber daya.
     - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
   - `[AutoUpgradeMinorVersion <Boolean?>]`: Menunjukkan apakah ekstensi harus menggunakan versi minor yang lebih baru jika tersedia pada waktu penyebaran. Setelah disebarkan, bagaimanapun, ekstensi tidak akan meningkatkan versi kecil kecuali dipekerjakan kembali, bahkan jika properti ini diatur ke true.
   - `[EnableAutomaticUpgrade <Boolean?>]`: Menunjukkan apakah ekstensi harus ditingkatkan secara otomatis oleh platform jika ada versi yang lebih baru yang tersedia.
-  - `[ForceUpdateTag <String>]`: Bagaimana handler ekstensi harus diperbarui meskipun konfigurasi ekstensi belum berubah.
-  - `[InstanceViewName <String>]`: Nama ekstensi mesin.
+  - `[ForceUpdateTag <String>]`: Bagaimana handler ekstensi harus dipaksa untuk memperbarui meskipun konfigurasi ekstensi tidak berubah.
+  - `[InstanceViewName <String>]`: Nama ekstensi komputer.
   - `[InstanceViewType <String>]`: Menentukan jenis ekstensi; contohnya adalah "CustomScriptExtension".
-  - `[InstanceViewTypeHandlerVersion <String>]`: Menentukan versi handler skrip.
+  - `[InstanceViewTypeHandlerVersion <String>]`: Menentukan versi penangan skrip.
   - `[MachineExtensionType <String>]`: Menentukan jenis ekstensi; contohnya adalah "CustomScriptExtension".
   - `[ProtectedSetting <IAny>]`: Ekstensi dapat berisi protectedSettings atau protectedSettingsFromKeyVault atau tidak ada pengaturan yang dilindungi sama sekali.
   - `[Publisher <String>]`: Nama penerbit handler ekstensi.

@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.importexport/get
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImportExport/help/Get-AzImportExport.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImportExport/help/Get-AzImportExport.md
-ms.openlocfilehash: 0aa02ca6c30d402c1e690b84f38377295558b21e
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: c41f6f5cbb34403ff176f9bffa836d12edb39df6
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145695628"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146604030"
 ---
 # Get-AzImportExport
 
@@ -247,7 +247,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IImportExportIdentity>: Parameter Identitas
+INPUTOBJECT `<IImportExportIdentity>`: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[JobName <String>]`: Nama pekerjaan impor/ekspor.
   - `[LocationName <String>]`: Nama lokasi. Misalnya, US Barat atau westus.

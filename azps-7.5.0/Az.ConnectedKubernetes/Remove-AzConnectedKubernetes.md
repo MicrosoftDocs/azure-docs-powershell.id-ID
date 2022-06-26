@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.connectedkuberne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedKubernetes/help/Remove-AzConnectedKubernetes.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedKubernetes/help/Remove-AzConnectedKubernetes.md
-ms.openlocfilehash: 7ea3b73f96e41994fd3a720bf16d3f2df5d2c513
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: 2c71f2dd6740a2803082207e6b2066b6e14d5e8c
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145808070"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146602158"
 ---
 # Remove-AzConnectedKubernetes
 
@@ -259,7 +259,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IConnectedKubernetesIdentity>: Parameter Identitas
+INPUTOBJECT `<IConnectedKubernetesIdentity>`: Parameter Identitas
   - `[ClusterName <String>]`: Nama kluster Kubernetes yang dipanggil.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.

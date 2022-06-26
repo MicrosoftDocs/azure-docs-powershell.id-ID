@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.signalr/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Remove-AzWebPubSubHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Remove-AzWebPubSubHub.md
-ms.openlocfilehash: 9e55f69296fed79079e714b7ec23f0fe9a10d761
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 3b760397de852868166e9546808c539f45b37a66
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145530790"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146602464"
 ---
 # Remove-AzWebPubSubHub
 
@@ -53,8 +53,8 @@ SubscriptionId = $(Get-AzContext).Subscription.Id}
 $hubIdentity | Remove-AzWebPubSubHub
 ```
 
-Contoh pertama membangun tabel hash yang berdiri untuk identitas hub.
-Kemudian meneruskan identitas melalui alur ke `Remove-AzWebPubSubHub` cmdlet .
+Contoh pertama-tama membuat tabel hash yang berdiri untuk identitas hub.
+Kemudian meneruskan identitas melalui alur ke `Remove-AzWebPubSubHub` cmdlet.
 
 ## PARAMETERS
 
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.WebPubSub.Models.IWebPubSubIdentity
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -180,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Mendapatkan Id langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+Mendapatkan ID langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
@@ -246,7 +246,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IWebPubSubIdentity>: Parameter Identitas
+INPUTOBJECT `<IWebPubSubIdentity>`: Parameter Identitas
   - `[HubName <String>]`: Nama hub.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: wilayah

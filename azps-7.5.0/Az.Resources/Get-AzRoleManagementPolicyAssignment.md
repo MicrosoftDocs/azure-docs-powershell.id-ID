@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzRoleManagementPolicyAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzRoleManagementPolicyAssignment.md
-ms.openlocfilehash: 1a82ee1eb91cb41ce2a35806c8a1ca45cfe44bb7
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 0ef5d0fa6a5e3fefe9ed002c98e49a1c3e7b8a5f
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145642022"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146603328"
 ---
 # Get-AzRoleManagementPolicyAssignment
 
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Resources.Authorization.Models.IAuthorizationIdentity
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -Cakupan
-Ruang lingkup kebijakan manajemen peran.
+Cakupan kebijakan manajemen peran.
 
 ```yaml
 Type: System.String
@@ -154,7 +154,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IAuthorizationIdentity>: Parameter Identitas
+INPUTOBJECT `<IAuthorizationIdentity>`: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[RoleAssignmentScheduleInstanceName <String>]`: Nama (hash nama jadwal + waktu) dari jadwal penetapan peran yang akan didapatkan.
   - `[RoleAssignmentScheduleName <String>]`: Nama (guid) dari jadwal penetapan peran yang akan didapatkan.
@@ -164,6 +164,6 @@ INPUTOBJECT <IAuthorizationIdentity>: Parameter Identitas
   - `[RoleEligibilityScheduleRequestName <String>]`: Nama kelayakan peran untuk dibuat. Ini bisa menjadi GUID yang valid.
   - `[RoleManagementPolicyAssignmentName <String>]`: Nama format {guid_guid} penetapan kebijakan manajemen peran yang akan didapatkan.
   - `[RoleManagementPolicyName <String>]`: Nama (guid) dari kebijakan manajemen peran yang akan didapatkan.
-  - `[Scope <String>]`: Ruang lingkup kebijakan manajemen peran.
+  - `[Scope <String>]`: Cakupan kebijakan manajemen peran.
 
 ## RELATED LINKS

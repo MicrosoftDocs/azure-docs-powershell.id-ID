@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.Purview/new-AzPu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAzureResourceGroupCredentialScanObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewAzureResourceGroupCredentialScanObject.md
-ms.openlocfilehash: 6135e2cff5c381ce1f44b109e8125e542167b4d2
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 5ef683900c82e9b838f807e28780921b470eb75f
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145543181"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146605272"
 ---
 # New-AzPurviewAzureResourceGroupCredentialScanObject
 
@@ -129,7 +129,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Kind
+### -Jenis
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Purviewdata.Support.ScanAuthorizationType
@@ -218,7 +218,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-RESOURCETYPE <IExpandingResourceScanPropertiesResourceTypes>: 
+RESOURCETYPE `<IExpandingResourceScanPropertiesResourceTypes>`: 
   - `[AdlGen1ScanRulesetName <String>]`: 
   - `[AdlGen1ScanRulesetType <ScanRulesetType?>]`: 
   - `[AdlGen2ScanRulesetName <String>]`: 

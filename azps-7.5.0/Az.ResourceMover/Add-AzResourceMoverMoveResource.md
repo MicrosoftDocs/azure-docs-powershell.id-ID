@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.resourcemover/ad
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceMover/help/Add-AzResourceMoverMoveResource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceMover/help/Add-AzResourceMoverMoveResource.md
-ms.openlocfilehash: 200edd74bc6326ebd130683047efeb1ac020330f
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 504fde4a59c2bfa1fca81783bcf9a10e4bdc75fb
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145644394"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146606442"
 ---
 # Add-AzResourceMoverMoveResource
 
@@ -384,7 +384,7 @@ DEPENDSONOVERRIDE <IMoveResourceDependencyOverride[]>: Mendapatkan atau mengatur
   - `[Id <String>]`: Mendapatkan atau mengatur ID ARM dari sumber daya dependen.
   - `[TargetId <String>]`: Mendapatkan atau mengatur id ARM sumber daya dari MoveResource atau ID ARM sumber daya dari sumber daya dependen.
 
-RESOURCESETTING <IResourceSettings>: Mendapatkan atau mengatur pengaturan sumber daya.
+RESOURCESETTING `<IResourceSettings>`: Mendapatkan atau mengatur pengaturan sumber daya.
   - `ResourceType <String>`: Jenis sumber daya. Misalnya, nilainya bisa Microsoft.Compute/virtualMachines.
   - `TargetResourceName <String>`: Mendapatkan atau menetapkan nama Sumber Daya target.
 

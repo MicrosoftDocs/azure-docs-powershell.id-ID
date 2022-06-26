@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.connectedmachine
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedMachine/help/Update-AzConnectedExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedMachine/help/Update-AzConnectedExtension.md
-ms.openlocfilehash: c172364811ba855f1c3c524c35d191551a3ae3f3
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: b56dd5d831aefaa0e3abcd1ccbc80ba4405a5f2d
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145789785"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146601924"
 ---
 # Update-AzConnectedExtension
 
@@ -190,7 +190,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -272,11 +272,11 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-EXTENSIONUPGRADEPARAMETER <IMachineExtensionUpgrade>: Menjelaskan Properti Peningkatan Ekstensi Mesin
+EXTENSIONUPGRADEPARAMETER `<IMachineExtensionUpgrade>`: Menjelaskan Properti Peningkatan Ekstensi Mesin
   - `[ExtensionTarget <IExtensionTarget>]`: Menjelaskan Properti Target Ekstensi.
     - `[(Any) <IExtensionTargetProperties>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
 
-INPUTOBJECT <IConnectedMachineIdentity>: Parameter Identitas
+INPUTOBJECT `<IConnectedMachineIdentity>`: Parameter Identitas
   - `[ExtensionName <String>]`: Nama ekstensi komputer.
   - `[GroupName <String>]`: Nama sumber daya tautan privat.
   - `[Id <String>]`: Jalur identitas sumber daya
@@ -284,7 +284,7 @@ INPUTOBJECT <IConnectedMachineIdentity>: Parameter Identitas
   - `[MachineName <String>]`: Nama komputer hibrid.
   - `[PrivateEndpointConnectionName <String>]`: Nama koneksi titik akhir privat.
   - `[PrivateLinkScopeId <String>]`: Id (Guid) sumber daya Azure Arc PrivateLinkScope.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[ScopeName <String>]`: Nama sumber daya Azure Arc PrivateLinkScope.
   - `[SubscriptionId <String>]`: ID langganan target.
 

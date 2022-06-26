@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.edgeorder/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/Get-AzEdgeOrderConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/Get-AzEdgeOrderConfiguration.md
-ms.openlocfilehash: ac2403dd2895d00fe58d762a2b4cc541c6d65da5
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: 3cad2ef3ba755500c446c5f68ddb121ef0e2e67c
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145774488"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146606856"
 ---
 # Get-AzEdgeOrderConfiguration
 
@@ -171,13 +171,13 @@ CONFIGURATIONFILTER <IConfigurationFilters[]>: Menyimpan detail tentang informas
   - `HierarchyInformation <IHierarchyInformation>`: Informasi hierarki produk
     - `[ConfigurationName <String>]`: Mewakili nama konfigurasi yang secara unik mengidentifikasi konfigurasi
     - `[ProductFamilyName <String>]`: Mewakili nama keluarga produk yang secara unik mengidentifikasi keluarga produk
-    - `[ProductLineName <String>]`: Mewakili nama lini produk yang secara unik mengidentifikasi lini produk
+    - `[ProductLineName <String>]`: Mewakili nama baris produk yang secara unik mengidentifikasi lini produk
     - `[ProductName <String>]`: Mewakili nama produk yang secara unik mengidentifikasi produk
   - `[FilterableProperty <IFilterableProperty[]>]`: Filter khusus untuk produk
     - `SupportedValue <String[]>`: Nilai yang akan difilter.
     - `Type <SupportedFilterTypes>`: Jenis filter produk.
 
-CUSTOMERSUBSCRIPTIONDETAIL <ICustomerSubscriptionDetails>: Properti langganan pelanggan. Klien dapat menampilkan produk yang tersedia untuk pelanggan yang tidak terdaftar dengan secara eksplisit meneruskan detail langganan
+CUSTOMERSUBSCRIPTIONDETAIL `<ICustomerSubscriptionDetails>`: Properti langganan pelanggan. Klien dapat menampilkan produk yang tersedia untuk pelanggan yang tidak terdaftar dengan secara eksplisit meneruskan detail langganan
   - `QuotaId <String>`: ID Kuota langganan
   - `[LocationPlacementId <String>]`: Id penempatan lokasi langganan
   - `[RegisteredFeature <ICustomerSubscriptionRegisteredFeatures[]>]`: Daftar bendera fitur terdaftar untuk langganan

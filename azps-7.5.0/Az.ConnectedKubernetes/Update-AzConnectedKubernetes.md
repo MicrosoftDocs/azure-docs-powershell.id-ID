@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.connectedkuberne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedKubernetes/help/Update-AzConnectedKubernetes.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedKubernetes/help/Update-AzConnectedKubernetes.md
-ms.openlocfilehash: 3669226c3e937012224936020b45a54af2b3895d
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: a49e60c10191f18bdffb68084f1a6789e46bf6e7
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145801664"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146602176"
 ---
 # Update-AzConnectedKubernetes
 
@@ -209,7 +209,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IConnectedKubernetesIdentity>: Parameter Identitas
+INPUTOBJECT `<IConnectedKubernetesIdentity>`: Parameter Identitas
   - `[ClusterName <String>]`: Nama kluster Kubernetes yang dipanggil.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.

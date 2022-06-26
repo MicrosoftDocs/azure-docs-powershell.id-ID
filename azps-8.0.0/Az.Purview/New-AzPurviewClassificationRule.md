@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.purview/new-azpu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewClassificationRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewClassificationRule.md
-ms.openlocfilehash: cc4d9622a4e6622e059e08321fa346f7b0962d2f
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 9362236abf3c64fa15a0c627905fd1cf696b6a1f
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145500272"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146605182"
 ---
 # New-AzPurviewClassificationRule
 
 ## SYNOPSIS
-Membuat atau Memperbarui aturan klasifikasi
+Membuat atau Updates aturan klasifikasi
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ New-AzPurviewClassificationRule -Endpoint <String> -Name <String> -Body <IClassi
 ```
 
 ## DESCRIPTION
-Membuat atau Memperbarui aturan klasifikasi
+Membuat atau Updates aturan klasifikasi
 
 ## EXAMPLES
 
@@ -64,7 +64,7 @@ Buat objek klasifikasi kustom bernama 'ClassificationRule4'
 
 ### -Isi
 .
-Untuk membuat, lihat bagian CATATAN untuk properti BODY dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti BODY dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Purviewdata.Models.Api20211001Preview.IClassificationRule
@@ -175,7 +175,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-TUBUH <IClassificationRule>: .
+ISI `<IClassificationRule>`: .
   - `Kind <ClassificationRuleType>`: 
 
 ## RELATED LINKS

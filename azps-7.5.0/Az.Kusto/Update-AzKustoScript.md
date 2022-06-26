@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.kusto/update-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Update-AzKustoScript.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Update-AzKustoScript.md
-ms.openlocfilehash: 0bbb120b5d9e735ee42bb4d05655f914a2afeee1
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: 3acc84e05a2e888e6b77655f776b8c47d85615f6
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145777188"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146606712"
 ---
 # Update-AzKustoScript
 
 ## SYNOPSIS
-Memperbarui skrip database.
+Updates skrip database.
 
 > [!NOTE]
 >Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.kusto/update-azkustoscript) untuk informasi terbaru.
@@ -51,7 +51,7 @@ Update-AzKustoScript -InputObject <IKustoIdentity> [-ContinueOnError] [-ForceUpd
 ```
 
 ## DESCRIPTION
-Memperbarui skrip database.
+Updates skrip database.
 
 ## EXAMPLES
 
@@ -355,7 +355,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IKustoIdentity>: Parameter Identitas
+INPUTOBJECT `<IKustoIdentity>`: Parameter Identitas
   - `[AttachedDatabaseConfigurationName <String>]`: Nama konfigurasi database terlampir.
   - `[ClusterName <String>]`: Nama kluster Kusto.
   - `[DataConnectionName <String>]`: Nama koneksi data.
@@ -371,7 +371,7 @@ INPUTOBJECT <IKustoIdentity>: Parameter Identitas
   - `[ScriptName <String>]`: Nama skrip database Kusto.
   - `[SubscriptionId <String>]`: Mendapatkan kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
-PARAMETER <IScript>: Kelas yang mewakili skrip database.
+PARAMETER `<IScript>`: Kelas yang mewakili skrip database.
   - `[AzureAsyncOperation <String>]`: 
   - `[Content <String>]`: Konten skrip. Properti ini harus digunakan ketika skrip disediakan sebaris dan bukan melalui file di SA. Tidak boleh digunakan bersama dengan properti scriptUrl dan scriptUrlSasToken.
   - `[ContinueOnError <Boolean?>]`: Bendera yang menunjukkan apakah akan melanjutkan jika salah satu perintah gagal.

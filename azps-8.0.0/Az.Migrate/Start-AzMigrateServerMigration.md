@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/start-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Start-AzMigrateServerMigration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Start-AzMigrateServerMigration.md
-ms.openlocfilehash: 67f57c91a9b6a9f6dac0803b6b99b99e4d05f3be
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 268e7e842f7b15a1d7f77215fc5ed4ffca8d13c2
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145520410"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146605578"
 ---
 # Start-AzMigrateServerMigration
 
@@ -164,7 +164,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMigrationItem>: Menentukan server replikasi yang migrasinya perlu dimulai. Objek server dapat diambil menggunakan cmdlet Get-AzMigrateServerReplication.
+INPUTOBJECT `<IMigrationItem>`: Menentukan server replikasi yang migrasinya perlu dimulai. Objek server dapat diambil menggunakan cmdlet Get-AzMigrateServerReplication.
   - `[Location <String>]`: Lokasi Sumber Daya
   - `[ProviderSpecificDetail <IMigrationProviderSpecificSettings>]`: Pengaturan kustom penyedia migrasi.
 

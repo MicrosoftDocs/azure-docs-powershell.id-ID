@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.imagebuilder/sta
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImageBuilder/help/Start-AzImageBuilderTemplate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImageBuilder/help/Start-AzImageBuilderTemplate.md
-ms.openlocfilehash: 203ce844cfe520019c5f12ce4f31a0607585ff02
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: ad94f714ee366dc8e30f9744ddb04b9214ce3397
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145543618"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146605830"
 ---
 # Start-AzImageBuilderTemplate
 
@@ -232,7 +232,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IImageBuilderIdentity>: Parameter Identitas
+INPUTOBJECT `<IImageBuilderIdentity>`: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ImageTemplateName <String>]`: Nama Templat gambar
   - `[ResourceGroupName <String>]`: Nama grup sumber daya.

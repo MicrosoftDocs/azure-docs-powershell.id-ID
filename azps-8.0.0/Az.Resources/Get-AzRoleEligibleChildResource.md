@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzRoleEligibleChildResource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzRoleEligibleChildResource.md
-ms.openlocfilehash: 814129326ef2a3119378d0fab833ef05fc872974
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 36a4e66c201bd60e27949cf404324d333d3f75c8
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145555571"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146602536"
 ---
 # Get-AzRoleEligibleChildResource
 
@@ -49,7 +49,7 @@ AnujRG2                                            resourcegroup
 asghodke-rg                                        resourcegroup
 ```
 
-Dapatkan semua sumber daya anak dari sumber daya `scope` tempat pengguna panggilan memiliki penetapan yang memenuhi syarat.
+Dapatkan semua sumber daya anak dari sumber daya `scope` tempat pengguna panggilan memiliki tugas yang memenuhi syarat.
 
 ### Contoh 2: Mencantumkan semua sumber daya anak yang difilter menurut jenis sumber daya
 ```powershell
@@ -65,7 +65,7 @@ AnujRG2                                            resourcegroup
 asghodke-rg                                        resourcegroup
 ```
 
-Anda dapat memfilter berdasarkan langganan, resourceGroups, atau jenis sumber daya apa pun.
+Anda dapat memfilter menurut langganan, resourceGroups, atau jenis sumber daya apa pun.
 
 ## PARAMETERS
 
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Resources.Authorization.Models.IAuthorizationIdentity
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -Cakupan
-Cakupan kebijakan manajemen peran.
+Ruang lingkup kebijakan manajemen peran.
 
 ```yaml
 Type: System.String
@@ -151,7 +151,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IAuthorizationIdentity>: Parameter Identitas
+INPUTOBJECT `<IAuthorizationIdentity>`: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[RoleAssignmentScheduleInstanceName <String>]`: Nama (hash nama jadwal + waktu) dari jadwal penetapan peran yang akan didapatkan.
   - `[RoleAssignmentScheduleName <String>]`: Nama (guid) dari jadwal penetapan peran yang akan didapatkan.
@@ -161,6 +161,6 @@ INPUTOBJECT <IAuthorizationIdentity>: Parameter Identitas
   - `[RoleEligibilityScheduleRequestName <String>]`: Nama kelayakan peran untuk dibuat. Ini bisa menjadi GUID yang valid.
   - `[RoleManagementPolicyAssignmentName <String>]`: Nama format {guid_guid} penetapan kebijakan manajemen peran yang akan didapatkan.
   - `[RoleManagementPolicyName <String>]`: Nama (guid) dari kebijakan manajemen peran yang akan didapatkan.
-  - `[Scope <String>]`: Cakupan kebijakan manajemen peran.
+  - `[Scope <String>]`: Ruang lingkup kebijakan manajemen peran.
 
 ## RELATED LINKS

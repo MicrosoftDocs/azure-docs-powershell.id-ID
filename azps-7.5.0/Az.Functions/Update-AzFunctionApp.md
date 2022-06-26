@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.functions/update
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Update-AzFunctionApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Update-AzFunctionApp.md
-ms.openlocfilehash: acca36103dd7ac771238907e36d37790112ccbe7
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: ade14a07251250a07d363c288e952c2104007b2c
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145783970"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146606766"
 ---
 # Update-AzFunctionApp
 
 ## SYNOPSIS
-Memperbarui aplikasi fungsi.
+Updates aplikasi fungsi.
 
 > [!NOTE]
 >Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.functions/update-azfunctionapp) untuk informasi terbaru.
@@ -39,7 +39,7 @@ Update-AzFunctionApp -InputObject <ISite> [-ApplicationInsightsKey <String>]
 ```
 
 ## DESCRIPTION
-Memperbarui aplikasi fungsi.
+Updates aplikasi fungsi.
 
 ## EXAMPLES
 
@@ -50,7 +50,7 @@ Update-AzFunctionApp -Name MyUniqueFunctionAppName -ResourceGroupName MyResource
 
 Perintah ini memperbarui paket hosting aplikasi fungsi.
 
-### Contoh 2: Atur identitas terkelola SystemAssigned untuk aplikasi fungsi.
+### Contoh 2: Mengatur identitas terkelola SystemAssigned untuk aplikasi fungsi.
 ```powershell
 Update-AzFunctionApp -Name MyUniqueFunctionAppName -ResourceGroupName MyResourceGroupName -IdentityType SystemAssigned -Force
 ```
@@ -74,7 +74,7 @@ Perintah ini menghapus identitas terkelola dari aplikasi fungsi.
 ## PARAMETERS
 
 ### -ApplicationInsightsKey
-Kunci instrumentasi Insights Aplikasi yang akan ditambahkan.
+Kunci instrumentasi App Insights yang akan ditambahkan.
 
 ```yaml
 Type: System.String
@@ -338,15 +338,15 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ISite>: 
+INPUTOBJECT `<ISite>`: 
   - `Location <String>`: Lokasi Sumber Daya.
   - `[Kind <String>]`: Jenis sumber daya.
   - `[Tag <IResourceTags>]`: Tag sumber daya.
     - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
   - `[ClientAffinityEnabled <Boolean?>]`: <code>true</code> untuk mengaktifkan afinitas klien; <code>false</code> untuk berhenti mengirim cookie afinitas sesi, yang merutekan permintaan klien dalam sesi yang sama ke instans yang sama. Defaultnya adalah <code>true</code>.
-  - `[ClientCertEnabled <Boolean?>]`: <code>true</code> untuk mengaktifkan autentikasi sertifikat klien (autentikasi timbal balik TLS); jika tidak, <code>false</code>. Defaultnya adalah <code>false</code>.
+  - `[ClientCertEnabled <Boolean?>]`: <code>true</code> untuk mengaktifkan autentikasi sertifikat klien (autentikasi bersama TLS); jika tidak, <code>false</code>. Defaultnya adalah <code>false</code>.
   - `[ClientCertExclusionPath <String>]`: jalur pengecualian yang dipisahkan koma autentikasi sertifikat klien
-  - `[CloningInfoAppSettingsOverride <ICloningInfoAppSettingsOverrides>]`: Penimpaan pengaturan aplikasi untuk aplikasi kloning. Jika ditentukan, pengaturan ini mengambil alih pengaturan yang dikloning dari aplikasi sumber. Jika tidak, pengaturan aplikasi dari aplikasi sumber dipertahankan.
+  - `[CloningInfoAppSettingsOverride <ICloningInfoAppSettingsOverrides>]`: Penimpaan pengaturan aplikasi untuk aplikasi kloning. Jika ditentukan, pengaturan ini akan mengambil alih pengaturan yang dikloning dari aplikasi sumber. Jika tidak, pengaturan aplikasi dari aplikasi sumber dipertahankan.
     - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
   - `[CloningInfoCloneCustomHostName <Boolean?>]`: <code>true</code> untuk mengkloning nama host kustom dari aplikasi sumber; jika tidak, <code>false</code>.
   - `[CloningInfoCloneSourceControl <Boolean?>]`: <code>true</code> untuk mengkloning kontrol sumber dari aplikasi sumber; jika tidak, <code>false</code>.
@@ -356,8 +356,8 @@ INPUTOBJECT <ISite>:
   - `[CloningInfoOverwrite <Boolean?>]`: <code>true</code> untuk menimpa aplikasi tujuan; jika tidak, <code>false</code>.
   - `[CloningInfoSourceWebAppId <String>]`: ID sumber daya ARM dari aplikasi sumber. ID sumber daya aplikasi adalah formulir /subscriptions/{subId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Web/sites/{siteName} untuk slot produksi dan /subscriptions/{subId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Web/sites/{siteName}/slots/{slotName} untuk slot lain.
   - `[CloningInfoSourceWebAppLocation <String>]`: Lokasi aplikasi sumber misalnya: US Barat atau Eropa Utara
-  - `[CloningInfoTrafficManagerProfileId <String>]`: ID sumber daya ARM dari profil Traffic Manager yang akan digunakan, jika ada. Traffic Manager ID sumber daya adalah formulir /subscriptions/{subId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/trafficManagerProfiles/{profileName}.
-  - `[CloningInfoTrafficManagerProfileName <String>]`: Nama profil Traffic Manager yang akan dibuat. Ini hanya diperlukan jika profil Traffic Manager belum ada.
+  - `[CloningInfoTrafficManagerProfileId <String>]`: ID sumber daya ARM dari profil Traffic Manager untuk digunakan, jika ada. Traffic Manager ID sumber daya adalah formulir /subscriptions/{subId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/trafficManagerProfiles/{profileName}.
+  - `[CloningInfoTrafficManagerProfileName <String>]`: Nama profil Traffic Manager untuk dibuat. Ini hanya diperlukan jika profil Traffic Manager belum ada.
   - `[Config <ISiteConfig>]`: Konfigurasi aplikasi.
     - `[ActionMinProcessExecutionTime <String>]`: Waktu minimum proses harus dijalankan sebelum mengambil tindakan
     - `[ActionType <AutoHealActionType?>]`: Tindakan yang telah ditentukan sebelumnya yang akan diambil.

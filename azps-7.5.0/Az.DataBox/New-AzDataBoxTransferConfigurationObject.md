@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.DataBox/new-AzDa
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/New-AzDataBoxTransferConfigurationObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/New-AzDataBoxTransferConfigurationObject.md
-ms.openlocfilehash: 7e2dcb011e4ea0fbc91ba5fddf282351c913154f
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: a7e7441c0f230f93c4411a94ad491c511e7a8c06
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145754560"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146607089"
 ---
 # New-AzDataBoxTransferConfigurationObject
 
@@ -109,12 +109,12 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-TRANSFERALLDETAIL <ITransferConfigurationTransferAllDetails>: Peta jenis filter dan detail untuk mentransfer semua data. Bidang ini diperlukan hanya jika TransferConfigurationType diberikan sebagai TransferAll.
+TRANSFERALLDETAIL `<ITransferConfigurationTransferAllDetails>`: Peta jenis filter dan detail untuk mentransfer semua data. Bidang ini diperlukan hanya jika TransferConfigurationType diberikan sebagai TransferAll.
   - `[IncludeDataAccountType <DataAccountType?>]`: Jenis akun data
   - `[IncludeTransferAllBlob <Boolean?>]`: Untuk menunjukkan apakah semua blob Azure harus ditransfer
   - `[IncludeTransferAllFile <Boolean?>]`: Untuk menunjukkan apakah semua Azure Files harus ditransfer
 
-TRANSFERFILTERDETAIL <ITransferConfigurationTransferFilterDetails>: Peta jenis filter dan detail untuk difilter. Bidang ini diperlukan hanya jika TransferConfigurationType diberikan sebagai TransferUsingFilter.
+TRANSFERFILTERDETAIL `<ITransferConfigurationTransferFilterDetails>`: Peta jenis filter dan detail untuk difilter. Bidang ini diperlukan hanya jika TransferConfigurationType diberikan sebagai TransferUsingFilter.
   - `[AzureFileFilterDetailFilePathList <String[]>]`: Daftar jalur lengkap file yang akan ditransfer.
   - `[AzureFileFilterDetailFilePrefixList <String[]>]`: Daftar awalan file Azure yang akan ditransfer.
   - `[AzureFileFilterDetailFileShareList <String[]>]`: Daftar berbagi file yang akan ditransfer.

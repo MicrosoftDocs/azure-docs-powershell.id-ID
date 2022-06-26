@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.purview/new-azpu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewDataSource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewDataSource.md
-ms.openlocfilehash: dad9da7be6e88572055250b36df9596eb7ef9218
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 197d2aa44006ea71525d74291db7e0af5e952025
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145527715"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146605200"
 ---
 # New-AzPurviewDataSource
 
 ## SYNOPSIS
-Membuat atau Memperbarui sumber data
+Membuat atau Updates sumber data
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ New-AzPurviewDataSource -Endpoint <String> -Name <String> -Body <IDataSource> [-
 ```
 
 ## DESCRIPTION
-Membuat atau Memperbarui sumber data
+Membuat atau Updates sumber data
 
 ## EXAMPLES
 
@@ -56,7 +56,7 @@ Membuat sumber data bernama 'NewDataSource'
 
 ### -Isi
 .
-Untuk membuat, lihat bagian CATATAN untuk properti BODY dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti BODY dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Purviewdata.Models.Api20211001Preview.IDataSource
@@ -167,7 +167,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-TUBUH <IDataSource>: .
+ISI `<IDataSource>`: .
   - `Kind <DataSourceType>`: 
 
 ## RELATED LINKS

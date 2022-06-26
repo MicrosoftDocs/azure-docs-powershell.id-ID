@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.addomainservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ADDomainServices/help/Update-AzADDomainService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ADDomainServices/help/Update-AzADDomainService.md
-ms.openlocfilehash: c0e0d61dd0da60743535842b5a011890fed0724e
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 446ce66ac7a1385f95b2436274cedde60d3ccaf8
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145535551"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146606406"
 ---
 # Update-AzADDomainService
 
@@ -53,7 +53,7 @@ Panggilan pembaruan hanya mendukung properti yang tercantum dalam isi PATCH.
 
 ## EXAMPLES
 
-### Contoh 1: Perbarui AzADDomainService Menurut ResourceGroupName dan Nama
+### Contoh 1: Memperbarui AzADDomainService Menurut ResourceGroupName dan Nama
 ```powershell
 Update-AzADDomainService -Name youriADdomain -ResourceGroupName youriADdomain -DomainSecuritySettingTlsV1 Disabled
 ```
@@ -64,7 +64,7 @@ Name          Domain Name       Location Sku
 youriADdomain youriAddomain.com westus   Enterprise
 ```
 
-Perbarui AzADDomainService Berdasarkan ResourceGroupName dan Nama
+Memperbarui AzADDomainService Menurut ResourceGroupName dan Nama
 
 ### Contoh 2: Memperbarui AzADDomainService Dengan InputObject
 ```powershell
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -ForestTrust
-Daftar pengaturan untuk Resource Forest To construct, lihat bagian NOTES untuk properti FORESTTRUST dan buat tabel hash.
+Daftar pengaturan untuk Pembuatan Forest Sumber Daya, lihat bagian CATATAN untuk properti FORESTTRUST dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ADDomainServices.Models.Api202001.IForestTrust[]
@@ -233,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ADDomainServices.Models.IAdDomainServicesIdentity
@@ -278,7 +278,7 @@ Accept wildcard characters: False
 ```
 
 ### -LdapSettingPfxCertificate
-Sertifikat yang diperlukan untuk mengonfigurasi LDAP Aman.
+Sertifikat yang diperlukan untuk mengonfigurasi Secure LDAP.
 Parameter yang diteruskan di sini harus menjadi representasi base64encoded dari file pfx sertifikat.
 
 ```yaml
@@ -384,7 +384,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReplicaSet
-Daftar ReplicaSets To construct, lihat bagian NOTES untuk properti REPLICASET dan membuat tabel hash.
+Daftar ReplicaSets To construct, lihat bagian NOTES untuk properti REPLICASET dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ADDomainServices.Models.Api202001.IReplicaSet[]
@@ -399,7 +399,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceForest
-Forest Sumber Daya
+Hutan Sumber Daya
 
 ```yaml
 Type: System.String
@@ -533,7 +533,7 @@ FORESTTRUST <IForestTrust[]>: Daftar pengaturan untuk Resource Forest
   - `[TrustPassword <String>]`: Kata Sandi Kepercayaan
   - `[TrustedDomainFqdn <String>]`: FQDN Domain Tepercaya
 
-INPUTOBJECT <IAdDomainServicesIdentity>: Parameter Identitas
+INPUTOBJECT `<IAdDomainServicesIdentity>`: Parameter Identitas
   - `[DomainServiceName <String>]`: Nama layanan domain.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ResourceGroupName <String>]`: Nama grup sumber daya dalam langganan pengguna. Nama tidak peka huruf besar/kecil.

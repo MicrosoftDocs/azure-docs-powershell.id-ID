@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.streamanalytics/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Remove-AzStreamAnalyticsCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Remove-AzStreamAnalyticsCluster.md
-ms.openlocfilehash: 3ed79c725ead5fd33a8efdf7488d3c86541cf8fa
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 4de32bd89185473cd361915f63a7aea0873cfe06
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145542999"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146604876"
 ---
 # Remove-AzStreamAnalyticsCluster
 
@@ -43,7 +43,7 @@ Remove-AzStreamAnalyticsCluster -ResourceGroupName pwshaz-rg-test -Name sac-m-te
 ```
 
 Perintah ini menghapus analisis aliran berdasarkan nama.
-**Harap hentikan semua pekerjaan kluster analisis aliran brefore memanggil Remove-AzStreamAnalyticsCluster.**
+**Hentikan semua pekerjaan kluster analisis aliran sesaat memanggil Remove-AzStreamAnalyticsCluster.**
 
 ### Contoh 2: Menghapus analitik aliran menurut alur
 ```powershell
@@ -52,7 +52,7 @@ Get-AzStreamAnalyticsCluster -ResourceGroupName pwshaz-rg-test -Name sac-m-test0
 ```
 
 Perintah ini menghapus analitik aliran menurut alur.
-**Harap hentikan semua pekerjaan kluster analisis aliran brefore memanggil Remove-AzStreamAnalyticsCluster.**
+**Hentikan semua pekerjaan kluster analisis aliran sesaat memanggil Remove-AzStreamAnalyticsCluster.**
 
 ## PARAMETERS
 
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.StreamAnalytics.Models.IStreamAnalyticsIdentity
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -228,7 +228,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IStreamAnalyticsIdentity>: Parameter Identitas
+INPUTOBJECT `<IStreamAnalyticsIdentity>`: Parameter Identitas
   - `[ClusterName <String>]`: Nama kluster.
   - `[FunctionName <String>]`: Nama fungsi.
   - `[Id <String>]`: Jalur identitas sumber daya

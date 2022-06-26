@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseKustoPoolDataConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseKustoPoolDataConnection.md
-ms.openlocfilehash: 42494de4f0525819198c588d0d77ee40d4b8c866
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: ae38187434868d023922d5da2c4ebf98993d2e73
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145546628"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146604804"
 ---
 # Update-AzSynapseKustoPoolDataConnection
 
 ## SYNOPSIS
-Memperbarui koneksi data.
+Updates koneksi data.
 
 ## SYNTAX
 
@@ -77,7 +77,7 @@ Update-AzSynapseKustoPoolDataConnection -InputObject <ISynapseIdentity> -Consume
 ```
 
 ## DESCRIPTION
-Memperbarui koneksi data.
+Updates koneksi data.
 
 ## EXAMPLES
 
@@ -194,7 +194,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Kompresi
+### -Pemadatan
 Jenis kompresi pesan pusat aktivitas.
 
 ```yaml
@@ -256,7 +256,7 @@ Accept wildcard characters: False
 
 ### -DataFormat
 Format data pesan.
-Secara opsional, format data dapat ditambahkan ke setiap pesan.
+Secara opsional format data dapat ditambahkan ke setiap pesan.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Synapse.Support.EventGridDataFormat
@@ -301,7 +301,7 @@ Accept wildcard characters: False
 ```
 
 ### -EventSystemProperty
-Properti sistem dari hub peristiwa/iot.
+Properti sistem dari event/iot hub.
 
 ```yaml
 Type: System.String[]
@@ -316,7 +316,7 @@ Accept wildcard characters: False
 ```
 
 ### -IgnoreFirstRecord
-Jika diatur ke true, menunjukkan bahwa penyerapan harus mengabaikan catatan pertama setiap file.
+Jika diatur ke true, menunjukkan bahwa penyerapan harus mengabaikan rekaman pertama dari setiap file.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -331,7 +331,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Synapse.Models.ISynapseIdentity
@@ -360,7 +360,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Jenis
+### -Kind
 Jenis titik akhir untuk koneksi data
 
 ```yaml
@@ -407,7 +407,7 @@ Accept wildcard characters: False
 
 ### -MappingRuleName
 Aturan pemetaan yang akan digunakan untuk menyerap data.
-Secara opsional, informasi pemetaan dapat ditambahkan ke setiap pesan.
+Secara opsional informasi pemetaan dapat ditambahkan ke setiap pesan.
 
 ```yaml
 Type: System.String
@@ -579,7 +579,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ISynapseIdentity>: Parameter Identitas
+INPUTOBJECT `<ISynapseIdentity>`: Parameter Identitas
   - `[AttachedDatabaseConfigurationName <String>]`: Nama konfigurasi database terlampir.
   - `[DataConnectionName <String>]`: Nama koneksi data.
   - `[DatabaseName <String>]`: Nama database di kumpulan Kusto.

@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.resourcemover/ad
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceMover/help/Add-AzResourceMoverMoveResource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceMover/help/Add-AzResourceMoverMoveResource.md
-ms.openlocfilehash: 4d9f0dc904c642a71caabde1dbd02f3bad36d321
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: e9b20e6197fa87fc3eeb282e8f36aba173ef7fe6
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145512463"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146602644"
 ---
 # Add-AzResourceMoverMoveResource
 
 ## SYNOPSIS
-Membuat atau memperbarui Pindahkan Sumber Daya di kumpulan pemindahan.
+Membuat atau memperbarui Pindahkan Sumber Daya dalam kumpulan pemindahan.
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Add-AzResourceMoverMoveResource -MoveCollectionName <String> -Name <String> -Res
 ```
 
 ## DESCRIPTION
-Membuat atau memperbarui Pindahkan Sumber Daya di kumpulan pemindahan.
+Membuat atau memperbarui Pindahkan Sumber Daya dalam kumpulan pemindahan.
 
 ## EXAMPLES
 
@@ -111,9 +111,9 @@ TargetId                          :
 Type                              : 
 ```
 
-Tambahkan sumber daya ke Kumpulan Pemindahan yang memiliki sumber daya target yang ada.
+Tambahkan sumber daya ke Kumpulan Pemindahan yang memiliki sumber daya target yang sudah ada.
 
-### Contoh 3: Memperbarui pengaturan sumber daya target setelah Sumber Daya Pemindahan ditambahkan.
+### Contoh 3: Perbarui pengaturan sumber daya target setelah Pindahkan Sumber Daya ditambahkan.
 ```powershell
 $moveResourceObj = Get-AzResourceMoverMoveResource -MoveCollectionName "PS-centralus-westcentralus-demoRMS1" -ResourceGroupName "RG-MoveCollection-demoRMS" -Name "PSDemoVM"
 $TargetResourceSettingObj = $moveResourceObj.ResourceSetting
@@ -297,7 +297,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceId
-Mendapatkan atau mengatur Id ARM Sumber sumber daya.
+Mendapatkan atau mengatur Id ARM Sumber dari sumber daya.
 
 ```yaml
 Type: System.String
@@ -381,8 +381,8 @@ DEPENDSONOVERRIDE <IMoveResourceDependencyOverride[]>: Mendapatkan atau mengatur
   - `[Id <String>]`: Mendapatkan atau mengatur ID ARM dari sumber daya dependen.
   - `[TargetId <String>]`: Mendapatkan atau mengatur id ARM sumber daya dari MoveResource atau ID ARM sumber daya dari sumber daya dependen.
 
-RESOURCESETTING <IResourceSettings>: Mendapatkan atau mengatur pengaturan sumber daya.
-  - `ResourceType <String>`: Jenis sumber daya. Misalnya, nilainya dapat berupa Microsoft.Compute/virtualMachines.
+RESOURCESETTING `<IResourceSettings>`: Mendapatkan atau mengatur pengaturan sumber daya.
+  - `ResourceType <String>`: Jenis sumber daya. Misalnya, nilainya bisa Microsoft.Compute/virtualMachines.
   - `TargetResourceName <String>`: Mendapatkan atau menetapkan nama Sumber Daya target.
 
 ## RELATED LINKS

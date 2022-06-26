@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.healthcareapis/g
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HealthcareApis/help/Get-AzHealthcareDicomService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HealthcareApis/help/Get-AzHealthcareDicomService.md
-ms.openlocfilehash: ad917760914fff40ea30e9e9468e890112e40564
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 0453dea5dd5d96413432b91d8f557e2e22c1bb64
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145533370"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146605884"
 ---
 # Get-AzHealthcareDicomService
 
@@ -53,7 +53,7 @@ eastus2  azpshcws/azpsdicom azps_test_group
 
 Mencantumkan properti ruang kerja yang ditentukan.
 
-### Contoh 2: Mendapatkan properti Dari Layanan DICOM yang ditentukan.
+### Contoh 2: Mendapatkan properti dari Layanan DICOM yang ditentukan.
 ```powershell
 PS C:\> Get-AzHealthcareDicomService -Name azpsdicom -ResourceGroupName azps_test_group -WorkspaceName azpshcws
 
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.HealthcareApis.Models.IHealthcareApisIdentity
@@ -176,9 +176,9 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IHealthcareApisIdentity>: Parameter Identitas
+INPUTOBJECT `<IHealthcareApisIdentity>`: Parameter Identitas
   - `[DicomServiceName <String>]`: Nama sumber daya Layanan DICOM.
-  - `[FhirDestinationName <String>]`: Nama sumber daya tujuan IoT Connector FHIR.
+  - `[FhirDestinationName <String>]`: Nama sumber daya tujuan FHIR Konektor IoT.
   - `[FhirServiceName <String>]`: Nama sumber daya Layanan FHIR.
   - `[GroupName <String>]`: Nama grup sumber daya tautan privat.
   - `[Id <String>]`: Jalur identitas sumber daya

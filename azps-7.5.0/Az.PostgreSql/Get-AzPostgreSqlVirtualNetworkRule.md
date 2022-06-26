@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.postgresql/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Get-AzPostgreSqlVirtualNetworkRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Get-AzPostgreSqlVirtualNetworkRule.md
-ms.openlocfilehash: 1e65760c67e3f8507f9b2292e257885a685e87b9
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: d8370aa0a69dfa0a425d4402a3b84cab8f17f443
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145658398"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146603580"
 ---
 # Get-AzPostgreSqlVirtualNetworkRule
 
@@ -58,7 +58,7 @@ vnet Microsoft.DBforPostgreSQL/servers/virtualNetworkRules
 
 Cmdlet ini mencantumkan semua Aturan Virtual Network di server PostgreSql tertentu.
 
-### Contoh 2: Dapatkan Aturan Virtual Network menurut nama
+### Contoh 2: Dapatkan Aturan Virtual Network berdasarkan nama
 ```powershell
  Get-AzPostgreSqlVirtualNetworkRule -Name vnet -ResourceGroupName PostgreSqlTestRG -ServerName PostgreSqlTestServer
 ```
@@ -69,7 +69,7 @@ Name Type
 vnet Microsoft.DBforPostgreSQL/servers/virtualNetworkRules
 ```
 
-Cmdlet ini mendapatkan Aturan Virtual Network berdasarkan nama.
+Cmdlet ini mendapatkan Virtual Network Aturan berdasarkan nama.
 
 ### Contoh 3: Dapatkan Aturan Virtual Network menurut identitas
 ```powershell
@@ -83,7 +83,7 @@ Name Type
 vnet Microsoft.DBforPostgreSQL/servers/virtualNetworkRules
 ```
 
-Cmdlet ini mendapatkan aturan Virtual Network berdasarkan identitas.
+Cmdlet ini mendapatkan Aturan Virtual Network berdasarkan identitas.
 
 ## PARAMETERS
 
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.PostgreSql.Models.IPostgreSqlIdentity
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -213,7 +213,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IPostgreSqlIdentity>: Parameter Identitas
+INPUTOBJECT `<IPostgreSqlIdentity>`: Parameter Identitas
   - `[ConfigurationName <String>]`: Nama konfigurasi server.
   - `[DatabaseName <String>]`: Nama database.
   - `[FirewallRuleName <String>]`: Nama aturan firewall server.

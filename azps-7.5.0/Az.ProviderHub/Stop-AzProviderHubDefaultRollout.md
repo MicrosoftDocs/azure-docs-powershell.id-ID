@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.providerhub/stop
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/Stop-AzProviderHubDefaultRollout.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/Stop-AzProviderHubDefaultRollout.md
-ms.openlocfilehash: 9a59affe48d3b61d7d078dd990931c418f5a238b
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: ebb0b15f3e4f07a76863b0f95412628923b90d48
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145656687"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146603544"
 ---
 # Stop-AzProviderHubDefaultRollout
 
@@ -196,7 +196,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IProviderHubIdentity>: Parameter Identitas
+INPUTOBJECT `<IProviderHubIdentity>`: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[NestedResourceTypeFirst <String>]`: Jenis sumber daya anak pertama.
   - `[NestedResourceTypeSecond <String>]`: Jenis sumber daya anak kedua.

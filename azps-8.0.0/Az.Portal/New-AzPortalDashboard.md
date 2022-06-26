@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.portal/new-azpor
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Portal/help/New-AzPortalDashboard.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Portal/help/New-AzPortalDashboard.md
-ms.openlocfilehash: 90735a34fc7306d593a019cd6c23fe796eb79d4f
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: d012a071051238deb33171da8be7d29d9dd18b16
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145516819"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146605416"
 ---
 # New-AzPortalDashboard
 
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 
 ### -SubscriptionId
 Atur ID Langganan Azure.
-Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-00000000000)
+Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000)
 
 ```yaml
 Type: System.String
@@ -262,7 +262,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-DASBOR <IDashboard>: Definisi sumber daya dasbor bersama.
+DASBOR `<IDashboard>`: Definisi sumber daya dasbor bersama.
   - `Location <String>`: Lokasi sumber daya
   - `[Lens <IDashboardPropertiesLenses>]`: Lensa dasbor.
     - `[(Any) <IDashboardLens>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
