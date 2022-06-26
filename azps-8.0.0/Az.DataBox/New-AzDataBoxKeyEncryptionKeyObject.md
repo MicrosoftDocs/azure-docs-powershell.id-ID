@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.DataBox/new-AzDa
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/New-AzDataBoxKeyEncryptionKeyObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/New-AzDataBoxKeyEncryptionKeyObject.md
-ms.openlocfilehash: 928ed9953ecbd5eb7925e315dc6cc61877e96d2f
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 19813a5c2bb07d49554507cdc8799824dc79cef3
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145504889"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146616466"
 ---
 # New-AzDataBoxKeyEncryptionKeyObject
 
@@ -124,7 +124,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-IDENTITYPROPERTY <IIdentityProperties>: Properti identitas terkelola yang digunakan untuk enkripsi kunci.
+IDENTITYPROPERTY `<IIdentityProperties>`: Properti identitas terkelola yang digunakan untuk enkripsi kunci.
   - `[Type <String>]`: Jenis identitas layanan terkelola.
   - `[UserAssignedResourceId <String>]`: Id sumber daya arm untuk identitas yang ditetapkan pengguna yang akan digunakan untuk mengambil token MSI.
 

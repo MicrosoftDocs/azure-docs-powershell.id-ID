@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.dataprotection/n
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/New-AzDataProtectionBackupPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/New-AzDataProtectionBackupPolicy.md
-ms.openlocfilehash: c05edc16c9516f9ce4c19317ad953d6c1c790ad6
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 1f91ca5e79ac6dce322da23dadffb055b24196e5
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145748926"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146612863"
 ---
 # New-AzDataProtectionBackupPolicy
 
@@ -84,8 +84,8 @@ Perintah keempat memperbarui objek kebijakan dengan siklus hidup yang dibuat.
 Perintah kelima keenam membuat objek jadwal kustom untuk kebijakan pencadangan, dua kali setiap minggu mulai dari $schDates.
 Perintah ketujuh memperbarui objek kebijakan dengan jadwal kustom.
 Perintah kedelapan, kesembilan, kesepuluh memperbarui aturan retensi Bulanan dengan siklus hidup kustom.
-Perintah ke sebelas, kedua belas membuat kriteria tag untuk kebijakan Bulanan.
-Kriteria tag perlu ditambahkan untuk setiap aturan retensi kustom (secara otomatis ditambahkan untuk aturan retensi default).
+Perintah ke-112 membuat kriteria tag untuk kebijakan Bulanan.
+Kriteria tag perlu ditambahkan untuk setiap aturan retensi kustom (ditambahkan secara otomatis untuk aturan retensi default).
 Perintah terakhir membuat kebijakan.
 
 ## PARAMETERS
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kebijakan
-Objek Permintaan Kebijakan Untuk membangun, lihat bagian CATATAN untuk properti POLICY dan membuat tabel hash.
+Objek Permintaan Kebijakan Untuk dibuat, lihat bagian CATATAN untuk properti POLICY dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Models.Api20210701.IBackupPolicy
@@ -229,10 +229,10 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-KEBIJAKAN <IBackupPolicy>: Objek Permintaan Kebijakan
+KEBIJAKAN `<IBackupPolicy>`: Objek Permintaan Kebijakan
   - `DatasourceType <String[]>`: Jenis sumber data untuk manajemen cadangan
   - `ObjectType <String>`: 
-  - `PolicyRule <IBasePolicyRule[]>`: Kamus aturan kebijakan yang berisi aturan untuk setiap jenis cadangan yaitu Penuh/Inkremental/Logs dll
+  - `PolicyRule <IBasePolicyRule[]>`: Kamus aturan kebijakan yang berisi aturan untuk setiap jenis cadangan yaitu Penuh/Inkremental/Log dll
     - `Name <String>`: 
     - `ObjectType <String>`: 
     - `DataStoreObjectType <String>`: Jenis objek Datasource, digunakan untuk menginisialisasi jenis warisan yang tepat

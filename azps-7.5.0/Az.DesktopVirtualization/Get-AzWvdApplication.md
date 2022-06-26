@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.desktopvirtualiz
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Get-AzWvdApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Get-AzWvdApplication.md
-ms.openlocfilehash: 478b25a8a9443f228b78668ca26298ff666ce9c3
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 28c64f8060b308f240d71f0305e089b4ca2dc30c
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145744480"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146617964"
 ---
 # Get-AzWvdApplication
 
 ## SYNOPSIS
-Dapatkan aplikasi.
+Mendapatkan aplikasi.
 
 > [!NOTE]
 >Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.desktopvirtualization/get-azwvdapplication) untuk informasi terbaru.
@@ -41,11 +41,11 @@ Get-AzWvdApplication -InputObject <IDesktopVirtualizationIdentity> [-DefaultProf
 ```
 
 ## DESCRIPTION
-Dapatkan aplikasi.
+Mendapatkan aplikasi.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan Aplikasi Virtual Desktop Windows berdasarkan nama
+### Contoh 1: Dapatkan Windows Aplikasi Virtual Desktop berdasarkan nama
 ```powershell
 Get-AzWvdApplication -ResourceGroupName ResourceGroupName -ApplicationGroupName ApplicationGroupName -Name ApplicationName
 ```
@@ -58,7 +58,7 @@ ApplicationGroupName/ApplicationName Microsoft.DesktopVirtualization/application
 
 Perintah ini mendapatkan Aplikasi Virtual Desktop Windows dalam Grup aplikasi.
 
-### Contoh 2: Mencantumkan Aplikasi Virtual Desktop Windows
+### Contoh 2: Mencantumkan Windows Aplikasi Virtual Desktop
 ```powershell
 Get-AzWvdApplication -ResourceGroupName ResourceGroupName -ApplicationGroupName ApplicationGroupName
 ```
@@ -70,7 +70,7 @@ ApplicationGroupName/ApplicationName1 Microsoft.DesktopVirtualization/applicatio
 ApplicationGroupName/ApplicationName2 Microsoft.DesktopVirtualization/applicationgroups/applications
 ```
 
-Perintah ini Mencantumkan Windows Aplikasi Virtual Desktop dalam Grup aplikasi.
+Perintah ini Mencantumkan Windows Aplikasi Desktop Virtual dalam Grup aplikasi.
 
 ## PARAMETERS
 
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.IDesktopVirtualizationIdentity
@@ -185,13 +185,13 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IDesktopVirtualizationIdentity>: Parameter Identitas
+INPUTOBJECT `<IDesktopVirtualizationIdentity>`: Parameter Identitas
   - `[ApplicationGroupName <String>]`: Nama grup aplikasi
   - `[ApplicationName <String>]`: Nama aplikasi dalam grup aplikasi yang ditentukan
   - `[DesktopName <String>]`: Nama desktop dalam grup desktop yang ditentukan
   - `[HostPoolName <String>]`: Nama kumpulan host dalam grup sumber daya yang ditentukan
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[MsixPackageFullName <String>]`: Nama lengkap paket spesifik versi dari paket MSIX dalam hostpool yang ditentukan
+  - `[MsixPackageFullName <String>]`: Nama lengkap paket khusus versi dari paket MSIX dalam hostpool tertentu
   - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[ScalingPlanName <String>]`: Nama rencana penskalaan.
   - `[SessionHostName <String>]`: Nama host sesi dalam kumpulan host yang ditentukan

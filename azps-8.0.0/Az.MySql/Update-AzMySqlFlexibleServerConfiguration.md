@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.mysql/update-azm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Update-AzMySqlFlexibleServerConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Update-AzMySqlFlexibleServerConfiguration.md
-ms.openlocfilehash: 94d7348c69747107254dcb4cf453033419fdfa69
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 1eef5b3a89f610608b5bdb5e38b71f5a4859cab0
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145522198"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146613622"
 ---
 # Update-AzMySqlFlexibleServerConfiguration
 
 ## SYNOPSIS
-Memperbarui informasi tentang konfigurasi server fleksibel MySQL.
+Updates informasi tentang konfigurasi server fleksibel MySQL.
 
 ## SYNTAX
 
@@ -33,7 +33,7 @@ Update-AzMySqlFlexibleServerConfiguration -InputObject <IMySqlIdentity> [-Source
 ```
 
 ## DESCRIPTION
-Memperbarui informasi tentang konfigurasi server fleksibel MySQL.
+Updates informasi tentang konfigurasi server fleksibel MySQL.
 
 ## EXAMPLES
 
@@ -269,7 +269,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMySqlIdentity>: Parameter Identitas
+INPUTOBJECT `<IMySqlIdentity>`: Parameter Identitas
   - `[BackupName <String>]`: Nama cadangan.
   - `[ConfigurationName <String>]`: Nama konfigurasi server.
   - `[DatabaseName <String>]`: Nama database.

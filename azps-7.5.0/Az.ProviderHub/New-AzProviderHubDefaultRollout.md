@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.providerhub/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/New-AzProviderHubDefaultRollout.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/New-AzProviderHubDefaultRollout.md
-ms.openlocfilehash: c36bbf2d23c8c8a9af2aa31fa4bac8e32c8ead3e
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 8768a3f495e385f00dd5f4a7d5d23afb174b9610
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145656886"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146614738"
 ---
 # New-AzProviderHubDefaultRollout
 
@@ -297,7 +297,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -RestOfTheworldgroupTwoWaitDuration
+### -RestOfTheWorldgroupTwoWaitDuration
 .
 
 ```yaml
@@ -498,7 +498,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-SPECIFICATIONPROVIDERREGISTRATION <IProviderRegistration>: .
+SPECIFICATIONPROVIDERREGISTRATION `<IProviderRegistration>`: .
   - `[Capability <IResourceProviderCapabilities[]>]`: 
     - `Effect <ResourceProviderCapabilitiesEffect>`: 
     - `QuotaId <String>`: 

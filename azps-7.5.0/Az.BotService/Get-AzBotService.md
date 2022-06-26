@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.botservice/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/BotService/help/Get-AzBotService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/BotService/help/Get-AzBotService.md
-ms.openlocfilehash: cb7358477f8a6bdb5a8b08b507010afbaf24bf0d
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 4507c3482ca47e9e388352f5b8f3917c07995916
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145730332"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146612992"
 ---
 # Get-AzBotService
 
@@ -201,7 +201,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IBotServiceIdentity>: Parameter Identitas
+INPUTOBJECT `<IBotServiceIdentity>`: Parameter Identitas
   - `[ChannelName <ChannelName?>]`: Nama sumber daya Saluran.
   - `[ConnectionName <String>]`: Nama sumber daya Pengaturan Koneksi Bot Service
   - `[Id <String>]`: Jalur identitas sumber daya

@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.aks/stop-azakscl
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Stop-AzAksCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Stop-AzAksCluster.md
-ms.openlocfilehash: c61600d6e076ece0d5f56ceaeeae216ae5c4e948
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 36ad0c8d590944b217b186d061fb246ace2ceda7
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145513930"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146616898"
 ---
 # Stop-AzAksCluster
 
@@ -224,7 +224,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IAksIdentity>: Parameter Identitas
+INPUTOBJECT `<IAksIdentity>`: Parameter Identitas
   - `[AgentPoolName <String>]`: Nama kumpulan agen.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Nama wilayah Azure yang didukung.

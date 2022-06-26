@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.marketplace/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Get-AzMarketplaceCollectionToSubscriptionMapping.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Get-AzMarketplaceCollectionToSubscriptionMapping.md
-ms.openlocfilehash: 2f16c475faefc69249d518e9732684de2ffa416b
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 163a9c49aef86161ba188f93917c1e33aff1cc74
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145555812"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146615620"
 ---
 # Get-AzMarketplaceCollectionToSubscriptionMapping
 
@@ -61,7 +61,7 @@ e58535dc-1be3-4d2c-904c-1f97984ebe5d
 fdb889a1-cf3e-49f0-95b8-2bb012fa01f1
 ```
 
-Perintah Ini Untuk daftar langganan tertentu, akan mengembalikan peta koleksi dan langganan terkait dari daftar yang disediakan.
+Perintah ini Untuk daftar langganan tertentu, akan mengembalikan peta koleksi dan langganan terkait dari daftar yang disediakan.
 
 ## PARAMETERS
 
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Marketplace.Models.IMarketplaceIdentity
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -Payload
-Daftar langganan untuk mendapatkan koleksi terkait Untuk membangun, lihat bagian CATATAN untuk properti PAYLOAD dan membuat tabel hash.
+Daftar langganan untuk mendapatkan koleksi terkait Untuk dibangun, lihat bagian CATATAN untuk properti PAYLOAD dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Marketplace.Models.Api20210601.ICollectionsToSubscriptionsMappingPayload
@@ -193,15 +193,15 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMarketplaceIdentity>: Parameter Identitas
+INPUTOBJECT `<IMarketplaceIdentity>`: Parameter Identitas
   - `[AdminRequestApprovalId <String>]`: ID persetujuan permintaan admin untuk membuat atau memperbarui
   - `[CollectionId <String>]`: ID koleksi
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[OfferId <String>]`: ID penawaran yang akan diperbarui atau dihapus
+  - `[OfferId <String>]`: ID penawaran untuk memperbarui atau menghapus
   - `[PrivateStoreId <String>]`: ID penyimpanan - harus menggunakan ID penyewa
   - `[RequestApprovalId <String>]`: ID persetujuan permintaan untuk membuat atau memperbarui
 
-PAYLOAD <ICollectionsToSubscriptionsMappingPayload>: Daftar langganan untuk mendapatkan koleksi terkait
+PAYLOAD `<ICollectionsToSubscriptionsMappingPayload>`: Daftar langganan untuk mendapatkan koleksi terkait
   - `[SubscriptionId <String[]>]`: Daftar id langganan
 
 ## RELATED LINKS

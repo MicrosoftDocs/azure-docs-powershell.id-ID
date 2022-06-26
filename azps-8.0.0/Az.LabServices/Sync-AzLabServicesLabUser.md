@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.labservices/sync
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Sync-AzLabServicesLabUser.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Sync-AzLabServicesLabUser.md
-ms.openlocfilehash: ac6ea9fc0a182d88435d2c44c55888bd733f57b4
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: f2a5f7ee2093cf8924e344b2649cea99b7a081d0
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145617915"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146618428"
 ---
 # Sync-AzLabServicesLabUser
 
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -220,7 +220,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-LAB <Lab>: 
+LAB `<Lab>`: 
   - `Location <String>`: Lokasi geografis tempat sumber daya berada
   - `[AdditionalCapabilityInstallGpuDriver <EnableState?>]`: Benderai ke driver GPU khusus pra-instal.
   - `[AdminUserPassword <String>]`: Kata sandi untuk pengguna. Ini diperlukan untuk TemplateVM createOption.

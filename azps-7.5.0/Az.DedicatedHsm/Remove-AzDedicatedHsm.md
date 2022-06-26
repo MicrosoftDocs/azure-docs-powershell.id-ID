@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.dedicatedhsm/rem
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DedicatedHsm/help/Remove-AzDedicatedHsm.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DedicatedHsm/help/Remove-AzDedicatedHsm.md
-ms.openlocfilehash: 83e8790a4e55e2119759a7ddf16ab36375f5e33a
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: b3e435f3ed0d3c316b417aa5d99a5269a21549d2
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145746064"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146612830"
 ---
 # Remove-AzDedicatedHsm
 
@@ -39,14 +39,14 @@ Menghapus Azure Dedicated HSM yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus Dedicated HSM menurut nama
+### Contoh 1: Menghapus Dedicated HSM berdasarkan nama
 ```powershell
 Remove-AzDedicatedHsm -Name hsm-7t2xaf -ResourceGroupName lucas-manual-test
 ```
 
 Commnad ini menghapus modul keamanan perangkat keras (HSM) berdasarkan nama.
 
-### Contoh 2: Menghapus Azure Dedicated HSM menurut objek
+### Contoh 2: Menghapus Dedicated HSM menurut objek
 ```powershell
 $hsm = Get-AzDedicatedHsm -Name hsm-7t2xaf -ResourceGroupName dedicatedhsm-rg-n359cz
 Remove-AzDedicatedHsm -InputObject  $hsm
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DedicatedHsm.Models.IDedicatedHsmIdentity
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Info masuk langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+Kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
@@ -228,7 +228,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IDedicatedHsmIdentity>: Parameter Identitas
+INPUTOBJECT `<IDedicatedHsmIdentity>`: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Name <String>]`: Nama Hsm khusus
   - `[ResourceGroupName <String>]`: Nama Grup Sumber Daya tempat sumber daya berada.

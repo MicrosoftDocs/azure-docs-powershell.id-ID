@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.healthbot/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HealthBot/help/Remove-AzHealthBot.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HealthBot/help/Remove-AzHealthBot.md
-ms.openlocfilehash: 9f0c9b8c61bcaf44bc7ce821c97b4a2dcde148c9
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 5be9eca5363f269bc0118fa381cbd43804f7ecef
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145696186"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146617690"
 ---
 # Remove-AzHealthBot
 
@@ -39,14 +39,14 @@ Menghapus HealthBot.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus HealthBot dengan ResourceGroupName dan Nama
+### Contoh 1: Hapus HealthBot dengan ResourceGroupName dan Name
 ```powershell
 Remove-AzHealthBot -Name yourihealthbot -ResourceGroupName youriTest
 ```
 
 Hapus HealthBot menurut ResourceGroupName dan Nama
 
-### Contoh 2: Hapus HealthBot oleh InputObject
+### Contoh 2: Hapus HealthBot dengan InputObject
 ```powershell
 $gethealthbot = Get-AzHealthBot -Name yourihealthbot1 -ResourceGroupName youriTest
 Remove-AzHealthBot -InputObject $gethealthbot
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.HealthBot.Models.IHealthBotIdentity
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -227,7 +227,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IHealthBotIdentity>: Parameter Identitas
+INPUTOBJECT `<IHealthBotIdentity>`: Parameter Identitas
   - `[BotName <String>]`: Nama sumber daya Bot.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ResourceGroupName <String>]`: Nama grup sumber daya Bot dalam langganan pengguna.

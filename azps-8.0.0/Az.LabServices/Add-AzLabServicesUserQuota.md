@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.labservices/add-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Add-AzLabServicesUserQuota.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Add-AzLabServicesUserQuota.md
-ms.openlocfilehash: e865804562403a6e38f0b50af62aa54659e6fd40
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: c06e67b71a59f747d4a6bc34e4caab7f8de833de
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145526050"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146618536"
 ---
 # Add-AzLabServicesUserQuota
 
@@ -37,7 +37,7 @@ API untuk menambahkan kuota pengguna tambahan.
 
 ## EXAMPLES
 
-### Contoh 1: Meningkatkan kuota penggunaan siswa.
+### Contoh 1: Menambah kuota penggunaan siswa.
 ```powershell
 Add-AzLabUserQuota -ResourceGroupName "group name" -LabName "lab name" -Email 'student@contoso.com' -UsageQuotaToAddToExisting $(New-Timespan -Hours 4)
 ```
@@ -48,9 +48,9 @@ Name           Type
 testuser       Microsoft.LabServices/labs/users
 ```
 
-Perintah ini menambah kuota siswa sebesar 4 jam.
+Perintah ini menambah kuota siswa hingga 4 jam.
 
-### Contoh 2: Tingkatkan kuota penggunaan siswa dengan objek Pengguna.
+### Contoh 2: Meningkatkan kuota penggunaan siswa dengan objek Pengguna.
 ```powershell
 $user = Get-AzLabUser -ResourceGroupName "group name" -LabName "lab name" -UserName 'ContosoUser12345'
 $user | Add-AzLabUserQuota -UsageQuotaToAddToExisting $(New-Timespan -Hours 5)
@@ -62,7 +62,7 @@ Name                 Type
 ContosoUser12345     Microsoft.LabServices/labs/users
 ```
 
-Menambah kuota siswa sebesar 5 jam.
+Tambah kuota siswa 5 jam.
 
 ## PARAMETERS
 
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -User
-Untuk membuat, lihat bagian CATATAN untuk properti USER dan buat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti USER dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.LabServices.Models.Api20211001Preview.User
@@ -238,14 +238,14 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-USER <User>: 
+USER `<User>`: 
   - `Email <String>`: Alamat email pengguna.
   - `[AdditionalUsageQuota <TimeSpan?>]`: Jumlah waktu kuota penggunaan yang didapat pengguna selain kuota penggunaan lab.
   - `[SystemDataCreatedAt <DateTime?>]`: Tanda waktu pembuatan sumber daya (UTC).
   - `[SystemDataCreatedBy <String>]`: Identitas yang membuat sumber daya.
   - `[SystemDataCreatedByType <CreatedByType?>]`: Jenis identitas yang membuat sumber daya.
   - `[SystemDataLastModifiedAt <DateTime?>]`: Tanda waktu modifikasi terakhir sumber daya (UTC)
-  - `[SystemDataLastModifiedBy <String>]`: Identitas yang terakhir mengubah sumber daya.
+  - `[SystemDataLastModifiedBy <String>]`: Identitas yang terakhir memodifikasi sumber daya.
   - `[SystemDataLastModifiedByType <CreatedByType?>]`: Jenis identitas yang terakhir memodifikasi sumber daya.
 
 ## RELATED LINKS

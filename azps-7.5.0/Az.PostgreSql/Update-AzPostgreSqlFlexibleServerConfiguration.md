@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.postgresql/updat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Update-AzPostgreSqlFlexibleServerConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Update-AzPostgreSqlFlexibleServerConfiguration.md
-ms.openlocfilehash: 2d9b1a7c006db77abcda336b6f2b9b82d06468e0
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 380545057040011360622c5208320ab3a1cc597c
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145657786"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146617564"
 ---
 # Update-AzPostgreSqlFlexibleServerConfiguration
 
 ## SYNOPSIS
-Memperbarui konfigurasi server.
+Updates konfigurasi server.
 Gunakan Update-AzPostgreSqlFlexibleServer sebagai gantinya jika Anda ingin memperbarui AdministratorLoginPassword, sku, dll.
 
 > [!NOTE]
@@ -37,7 +37,7 @@ Update-AzPostgreSqlFlexibleServerConfiguration -InputObject <IPostgreSqlIdentity
 ```
 
 ## DESCRIPTION
-Memperbarui konfigurasi server.
+Updates konfigurasi server.
 Gunakan Update-AzPostgreSqlFlexibleServer sebagai gantinya jika Anda ingin memperbarui AdministratorLoginPassword, sku, dll.
 
 ## EXAMPLES
@@ -274,7 +274,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IPostgreSqlIdentity>: Parameter Identitas
+INPUTOBJECT `<IPostgreSqlIdentity>`: Parameter Identitas
   - `[ConfigurationName <String>]`: Nama konfigurasi server.
   - `[DatabaseName <String>]`: Nama database.
   - `[FirewallRuleName <String>]`: Nama aturan firewall server.

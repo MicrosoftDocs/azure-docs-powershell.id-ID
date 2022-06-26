@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.applicationinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/help/Update-AzApplicationInsightsWebTestTag.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/help/Update-AzApplicationInsightsWebTestTag.md
-ms.openlocfilehash: c33ed7e9ef98874e17193dc138a09975262c8723
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 903598d08d6595cd8e2d8ecc423673e74517defd
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145545466"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146616952"
 ---
 # Update-AzApplicationInsightsWebTestTag
 
@@ -36,7 +36,7 @@ Membuat atau memperbarui definisi pengujian web Application Insights.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui tautan Insights Aplikasi dari pengujian Web
+### Contoh 1: tautan Insights Aplikasi Updates dari pengujian Web
 ```powershell
 Update-AzApplicationInsightsWebTestTag -ResourceGroupName azpwsh-rg-test -Name webtest01-lucasappinsights -Tag @{"hidden-link:/subscriptions/xxxxxxxxxx-xxxxx-xxxx-xxxxxxxxxxxx/resourceGroups/azpwsh-rg-test/providers/microsoft.insights/components/lucasappinsights" = "Resource"}
 ```
@@ -49,7 +49,7 @@ westus2  webtest01-lucasappinsights standard      azpwsh-rg-test      True
 
 Perintah ini memperbarui tautan Insights Aplikasi dari pengujian Web.
 
-### Contoh 2: Memperbarui tautan Insights Aplikasi dari pengujian Web menurut alur
+### Contoh 2: Updates tautan Insights Aplikasi dari pengujian Web menurut alur
 ```powershell
 Get-AzApplicationInsightsWebTest -ResourceGroupName azpwsh-rg-test -WebTestName webtest01-lucasappinsights | Update-AzApplicationInsightsWebTestTag -Tag @{"hidden-link:/subscriptions/xxxxxxxxxx-xxxxx-xxxx-xxxxxxxxxxxx/resourceGroups/azpwsh-rg-test/providers/microsoft.insights/components/appinsightsportal01" = "Resource"}
 ```
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -206,14 +206,14 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IApplicationInsightsIdentity>: Parameter Identitas
+INPUTOBJECT `<IApplicationInsightsIdentity>`: Parameter Identitas
   - `[AnnotationId <String>]`: ID anotasi unik. Ini unik dalam komponen Insights Aplikasi.
   - `[ComponentName <String>]`: Nama sumber daya komponen Insights Aplikasi.
   - `[ExportId <String>]`: ID konfigurasi Ekspor Berkelanjutan. Ini unik dalam komponen Insights Aplikasi.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[KeyId <String>]`: ID Kunci API. Ini unik dalam komponen Insights Aplikasi.
   - `[PurgeId <String>]`: Dalam permintaan status penghapusan menyeluruh, ini adalah Id operasi yang statusnya dikembalikan.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[ResourceName <String>]`: Nama sumber daya komponen Insights Aplikasi.
   - `[StorageType <StorageType?>]`: Jenis sumber data komponen Application Insights untuk akun penyimpanan yang ditautkan.
   - `[SubscriptionId <String>]`: ID langganan target.

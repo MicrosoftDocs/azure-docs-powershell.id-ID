@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/get-azmi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateReplicationProtectionIntent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateReplicationProtectionIntent.md
-ms.openlocfilehash: 35320ce5e394624b6781bcf2774e043ddd66267d
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: c56224a3eb296fdda28ddeb95ba1b7a8e9de9dc4
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145540356"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146613730"
 ---
 # Get-AzMigrateReplicationProtectionIntent
 
@@ -203,7 +203,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMigrateIdentity>: Parameter Identitas
+INPUTOBJECT `<IMigrateIdentity>`: Parameter Identitas
   - `[AccountName <String>]`: Jalankan sebagai nama ARM akun.
   - `[AlertSettingName <String>]`: Nama konfigurasi pemberitahuan email.
   - `[ClusterName <String>]`: Nama ARM kluster.
@@ -232,7 +232,7 @@ INPUTOBJECT <IMigrateIdentity>: Parameter Identitas
   - `[RecoveryPointName <String>]`: Nama titik pemulihan.
   - `[ReplicatedProtectedItemName <String>]`: Nama item yang dilindungi replikasi.
   - `[ReplicationProtectedItemName <String>]`: Nama item yang dilindungi tempat agen akan diperbarui.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[ResourceName <String>]`: Nama vault layanan pemulihan.
   - `[SiteName <String>]`: Nama situs.
   - `[SolutionName <String>]`: Nama unik solusi migrasi dalam proyek migrasi.

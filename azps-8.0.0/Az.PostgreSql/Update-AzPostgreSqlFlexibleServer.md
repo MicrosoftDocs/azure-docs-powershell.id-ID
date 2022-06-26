@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.postgresql/updat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Update-AzPostgreSqlFlexibleServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Update-AzPostgreSqlFlexibleServer.md
-ms.openlocfilehash: ad3578db3b6a1f840162be8a42c2b4e085c0d1c9
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: d2fe07b55e9e6863e4ec0ac9a29468371c91bb4c
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145545099"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146618392"
 ---
 # Update-AzPostgreSqlFlexibleServer
 
@@ -57,7 +57,7 @@ postgresql-test     East US   Standard_D4s_v3 GeneralPurpose daeunyim           
 
 Cmdlet ini memperbarui server PostgreSql berdasarkan grup sumber daya dan nama server.
 
-### Contoh 2: Perbarui server PostgreSql menurut identitas.
+### Contoh 2: Memperbarui server PostgreSql menurut identitas.
 ```powershell
 Get-AzPostgreSqlFlexibleServer -ResourceGroupName PowershellPostgreSqlTest -ServerName postgresql-test | Update-AzPostgreSqlFlexibleServer -BackupRetentionDay 23 -StorageInMb 262144
 ```
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 ### -MaintenanceWindow
 Periode waktu (UTC) yang ditunjuk untuk pemeliharaan.
 Contoh: "Min:23:30" untuk menjadwalkan pada hari Minggu, 23:30 UTC.
-Untuk mengatur kembali ke pass default di "Disabled"
+Untuk mengatur kembali ke pass default di "Dinonaktifkan"
 
 ```yaml
 Type: System.String
@@ -261,7 +261,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageInMb
-Penyimpanan maksimum yang diizinkan untuk server.
+Penyimpanan maks yang diizinkan untuk server.
 
 ```yaml
 Type: System.Int32
@@ -356,7 +356,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IPostgreSqlIdentity>: Parameter Identitas.
+INPUTOBJECT `<IPostgreSqlIdentity>`: Parameter Identitas.
   - `[ConfigurationName <String>]`: Nama konfigurasi server.
   - `[DatabaseName <String>]`: Nama database.
   - `[FirewallRuleName <String>]`: Nama aturan firewall server.

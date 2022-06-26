@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/update-azcdn
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/help/Update-AzCdnOrigin.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/help/Update-AzCdnOrigin.md
-ms.openlocfilehash: 83a7f4ee5702ddd83bc67dc5e21faef9734d5c63
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 376a6fcd73035bd9833b4b6fb11cccdfd216dd76
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145546471"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146616844"
 ---
 # Update-AzCdnOrigin
 
 ## SYNOPSIS
-Memperbarui asal yang ada dalam titik akhir.
+Updates asal yang ada dalam titik akhir.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Update-AzCdnOrigin -InputObject <ICdnIdentity> [-Enabled] [-HostName <String>] [
 ```
 
 ## DESCRIPTION
-Memperbarui asal yang ada dalam titik akhir.
+Updates asal yang ada dalam titik akhir.
 
 ## EXAMPLES
 
@@ -427,7 +427,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ICdnIdentity>: Parameter Identitas
+INPUTOBJECT `<ICdnIdentity>`: Parameter Identitas
   - `[CustomDomainName <String>]`: Nama domain di bawah profil yang unik secara global.
   - `[EndpointName <String>]`: Nama titik akhir di bawah profil yang unik secara global.
   - `[Id <String>]`: Jalur identitas sumber daya

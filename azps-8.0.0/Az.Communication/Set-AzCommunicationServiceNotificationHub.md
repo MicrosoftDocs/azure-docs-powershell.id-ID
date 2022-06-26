@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.communication/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Communication/help/Set-AzCommunicationServiceNotificationHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Communication/help/Set-AzCommunicationServiceNotificationHub.md
-ms.openlocfilehash: b7294f02d5b95d4f91df442ba5927c35e01741a4
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: d8d2399d4c44557fa764a386332fe3214daaaeef
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145526455"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146616646"
 ---
 # Set-AzCommunicationServiceNotificationHub
 
@@ -26,7 +26,7 @@ Set-AzCommunicationServiceNotificationHub -CommunicationServiceName <String> -Re
  [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Link
+### Tautan
 ```
 Set-AzCommunicationServiceNotificationHub -CommunicationServiceName <String> -ResourceGroupName <String>
  -LinkNotificationHubParameter <ILinkNotificationHubParameters> [-SubscriptionId <String>]
@@ -204,7 +204,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-LINKNOTIFICATIONHUBPARAMETER <ILinkNotificationHubParameters>: Deskripsi Azure Notification Hub untuk ditautkan ke layanan komunikasi
+LINKNOTIFICATIONHUBPARAMETER `<ILinkNotificationHubParameters>`: Deskripsi Azure Notification Hub untuk ditautkan ke layanan komunikasi
   - `ConnectionString <String>`: String koneksi untuk hub pemberitahuan
   - `ResourceId <String>`: ID sumber daya hub pemberitahuan
 

@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.imagebuilder/New
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImageBuilder/help/New-AzImageBuilderTemplate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImageBuilder/help/New-AzImageBuilderTemplate.md
-ms.openlocfilehash: 39a28293a73b7f8e29d49eec982cf9c7b6102797
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: aea2218b2da6f787771746c96405b90db65bc290
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145619495"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146614108"
 ---
 # New-AzImageBuilderTemplate
 
@@ -383,7 +383,7 @@ DISTRIBUTE <IImageTemplateDistributor[]>: Distribusi menargetkan tempat output g
   - `[ArtifactTag <IImageTemplateDistributorArtifactTags>]`: Tag yang akan diterapkan ke artefak setelah dibuat/diperbarui oleh distributor.
     - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
 
-SUMBER <IImageTemplateSource>: Menjelaskan sumber gambar komputer virtual untuk membangun, menyesuaikan, dan mendistribusikan.
+SUMBER `<IImageTemplateSource>`: Menjelaskan sumber gambar komputer virtual untuk membangun, menyesuaikan, dan mendistribusikan.
   - `Type <String>`: Menentukan jenis gambar sumber yang ingin Anda mulai.
 
 ## RELATED LINKS

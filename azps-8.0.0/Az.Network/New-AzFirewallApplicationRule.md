@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azfi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallApplicationRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallApplicationRule.md
-ms.openlocfilehash: 590711237663ca2c316ab6bdf5336347bab7611e
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 85932f25d10dbf4b7aecc33cbf4c39250722b833
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145523863"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146613568"
 ---
 # New-AzFirewallApplicationRule
 
@@ -46,12 +46,12 @@ New-AzFirewallApplicationRule -Name "https-rule" -Protocol "https:443" -TargetFq
 
 Contoh ini membuat aturan yang akan memungkinkan semua lalu lintas HTTPS pada port 443 dari 10.0.0.0.
 
-### Contoh 2: Membuat aturan untuk mengizinkan WindowsUpdate untuk subnet 10.0.0.0/24
+### Contoh 2: Buat aturan untuk mengizinkan WindowsUpdate untuk subnet 10.0.0.0/24
 ```powershell
 New-AzFirewallApplicationRule -Name "windows-update-rule" -FqdnTag WindowsUpdate -SourceAddress "10.0.0.0/24"
 ```
 
-Contoh ini membuat aturan yang akan memungkinkan lalu lintas untuk pembaruan Windows untuk domain 10.0.0.0/24.
+Contoh ini membuat aturan yang akan memungkinkan lalu lintas untuk Windows Updates untuk domain 10.0.0.0/24.
 
 ## PARAMETERS
 
@@ -71,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -Deskripsi
-Menentukan deskripsi opsional aturan ini.
+Menentukan deskripsi opsional dari aturan ini.
 
 ```yaml
 Type: System.String
@@ -116,7 +116,8 @@ Accept wildcard characters: False
 ```
 
 ### -Protokol
-Menentukan jenis lalu lintas yang akan difilter oleh aturan ini. Formatnya adalah <protocol type>:<port>. Misalnya, "http:80" atau "https:443".
+Menentukan jenis lalu lintas yang akan difilter oleh aturan ini. Formatnya adalah `<protocol type>:<port>`.
+Misalnya, "http:80" atau "https:443".
 Protokol wajib ketika TargetFqdn digunakan, tetapi tidak dapat digunakan dengan FqdnTag. Protokol yang didukung adalah HTTP dan HTTPS.
 
 ```yaml
@@ -162,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetFqdn
-Menentukan daftar nama domain yang difilter oleh aturan ini.
+Menentukan daftar nama domain yang difilter menurut aturan ini.
 Karakter tanda bintang, '*', hanya diterima sebagai karakter pertama FQDN dalam daftar. Saat digunakan, tanda bintang cocok dengan sejumlah karakter. (misalnya '* msn.com' akan cocok dengan msn.com dan semua subdomainnya)
 
 ```yaml

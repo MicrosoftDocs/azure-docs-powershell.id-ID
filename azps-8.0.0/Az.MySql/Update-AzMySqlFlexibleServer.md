@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.mysql/update-azm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Update-AzMySqlFlexibleServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Update-AzMySqlFlexibleServer.md
-ms.openlocfilehash: 4cafba612db1f2053bda9cb634571c707518916b
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 064b233ab6ec8f7898c311867e125899f5e56494
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145509730"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146613676"
 ---
 # Update-AzMySqlFlexibleServer
 
 ## SYNOPSIS
-Memperbarui server fleksibel MySQL yang ada.
+Updates server fleksibel MySQL yang ada.
 Isi permintaan dapat berisi satu hingga banyak properti yang ada dalam definisi server normal.
 Gunakan Update-AzMySqlFlexibleServerConfiguration sebagai gantinya jika Anda ingin memperbarui parameter server seperti wait_timeout atau net_retry_count.
 
@@ -40,7 +40,7 @@ Update-AzMySqlFlexibleServer -InputObject <IMySqlIdentity> [-AdministratorLoginP
 ```
 
 ## DESCRIPTION
-Memperbarui server fleksibel MySQL yang ada.
+Updates server fleksibel MySQL yang ada.
 Isi permintaan dapat berisi satu hingga banyak properti yang ada dalam definisi server normal.
 Gunakan Update-AzMySqlFlexibleServerConfiguration sebagai gantinya jika Anda ingin memperbarui parameter server seperti wait_timeout atau net_retry_count.
 
@@ -390,7 +390,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMySqlIdentity>: Parameter Identitas.
+INPUTOBJECT `<IMySqlIdentity>`: Parameter Identitas.
   - `[BackupName <String>]`: Nama cadangan.
   - `[ConfigurationName <String>]`: Nama konfigurasi server.
   - `[DatabaseName <String>]`: Nama database.

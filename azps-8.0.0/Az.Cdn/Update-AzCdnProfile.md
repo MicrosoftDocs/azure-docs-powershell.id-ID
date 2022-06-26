@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/update-azcdn
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/help/Update-AzCdnProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/help/Update-AzCdnProfile.md
-ms.openlocfilehash: 883339feb95b0b1af6293d55801f7ee1b7ee902c
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 228fa279b785b3b4b769ddff4da94c296a5a6c2d
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145556117"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146616700"
 ---
 # Update-AzCdnProfile
 
 ## SYNOPSIS
-Memperbarui profil Azure Front Door Standard atau Azure Front Door Premium atau CDN yang sudah ada dengan nama profil yang ditentukan di bawah grup langganan dan sumber daya yang ditentukan.
+Updates profil Azure Front Door Standard atau Azure Front Door Premium atau CDN yang sudah ada dengan nama profil yang ditentukan di bawah langganan dan grup sumber daya yang ditentukan.
 
 ## SYNTAX
 
@@ -33,7 +33,7 @@ Update-AzCdnProfile -InputObject <ICdnIdentity> [-OriginResponseTimeoutSecond <I
 ```
 
 ## DESCRIPTION
-Memperbarui profil Azure Front Door Standard atau Azure Front Door Premium atau CDN yang sudah ada dengan nama profil yang ditentukan di bawah grup langganan dan sumber daya yang ditentukan.
+Updates profil Azure Front Door Standard atau Azure Front Door Premium atau CDN yang sudah ada dengan nama profil yang ditentukan di bawah langganan dan grup sumber daya yang ditentukan.
 
 ## EXAMPLES
 
@@ -248,7 +248,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ICdnIdentity>: Parameter Identitas
+INPUTOBJECT `<ICdnIdentity>`: Parameter Identitas
   - `[CustomDomainName <String>]`: Nama domain di bawah profil yang unik secara global.
   - `[EndpointName <String>]`: Nama titik akhir di bawah profil yang unik secara global.
   - `[Id <String>]`: Jalur identitas sumber daya

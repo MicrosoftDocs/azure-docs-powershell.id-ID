@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.servicelinker/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceLinker/help/New-AzServiceLinkerForWebApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceLinker/help/New-AzServiceLinkerForWebApp.md
-ms.openlocfilehash: 2b3b8e767075de5b6f4bc296ae892e358066071e
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 633fc1d62f95fd86ac7d215ae8003fa1843f8c82
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145538463"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146613514"
 ---
 # New-AzServiceLinkerForWebApp
 
 ## SYNOPSIS
-Membuat atau memperbarui sumber daya linker di aplikasi web.
+Membuat atau memperbarui sumber daya linker di webapp.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ New-AzServiceLinkerForWebApp -AuthInfo <IAuthInfoBase> -TargetService <ITargetSe
 ```
 
 ## DESCRIPTION
-Membuat atau memperbarui sumber daya linker di aplikasi web.
+Membuat atau memperbarui sumber daya linker di webapp.
 
 ## EXAMPLES
 
@@ -47,7 +47,7 @@ Name
 testLinker
 ```
 
-Membuat tautan layanan antara webapp dan postgresql
+Membuat linker layanan antara webapp dan postgresql
 
 ## PARAMETERS
 
@@ -68,7 +68,7 @@ Accept wildcard characters: False
 
 ### -AuthInfo
 Jenis Autentikasi.
-Untuk membuat, lihat bagian CATATAN untuk properti AUTHINFO dan buat tabel hash.
+Untuk membuat, lihat bagian NOTES untuk properti AUTHINFO dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ServiceLinker.Models.Api20220501.IAuthInfoBase
@@ -219,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetService
-Properti layanan target Untuk dibangun, lihat bagian CATATAN untuk properti TARGETSERVICE dan buat tabel hash.
+Properti layanan target Untuk membangun, lihat bagian CATATAN untuk properti TARGETSERVICE dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ServiceLinker.Models.Api20220501.ITargetServiceBase
@@ -312,10 +312,10 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-AUTHINFO <IAuthInfoBase>: Jenis autentikasi.
+AUTHINFO `<IAuthInfoBase>`: Jenis autentikasi.
   - `AuthType <AuthType>`: Jenis autentikasi.
 
-TARGETSERVICE <ITargetServiceBase>: Properti layanan target
+TARGETSERVICE `<ITargetServiceBase>`: Properti layanan target
   - `Type <TargetServiceType>`: Jenis layanan target.
 
 ## RELATED LINKS

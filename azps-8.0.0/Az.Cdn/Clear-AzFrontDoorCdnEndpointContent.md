@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/clear-azfron
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/help/Clear-AzFrontDoorCdnEndpointContent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/help/Clear-AzFrontDoorCdnEndpointContent.md
-ms.openlocfilehash: d4d5cb2e3d6e2bc66208d19e7995177b6fa5b7ed
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 5b9b7a2c728321069b934df1d236c69623ef5185
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145506754"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146614342"
 ---
 # Clear-AzFrontDoorCdnEndpointContent
 
@@ -309,11 +309,11 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-CONTENT <IAfdPurgeParameters>: Parameter yang diperlukan untuk penghapusan menyeluruh konten.
+CONTENT `<IAfdPurgeParameters>`: Parameter yang diperlukan untuk penghapusan menyeluruh konten.
   - `ContentPath <String[]>`: Jalur ke konten yang akan dibersihkan. Dapat menjelaskan jalur file atau direktori kartubebas.
   - `[Domain <String[]>]`: Daftar domain.
 
-INPUTOBJECT <ICdnIdentity>: Parameter Identitas
+INPUTOBJECT `<ICdnIdentity>`: Parameter Identitas
   - `[CustomDomainName <String>]`: Nama domain di bawah profil yang unik secara global.
   - `[EndpointName <String>]`: Nama titik akhir di bawah profil yang unik secara global.
   - `[Id <String>]`: Jalur identitas sumber daya

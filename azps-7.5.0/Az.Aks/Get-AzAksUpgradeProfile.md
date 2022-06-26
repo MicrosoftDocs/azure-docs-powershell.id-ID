@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.aks/get-azaksupg
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Get-AzAksUpgradeProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Get-AzAksUpgradeProfile.md
-ms.openlocfilehash: 91bec6e318774140e4d6f68cd24fb39b715bf0ec
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 97b5abcb26c9e9eda631c991cc3b866d9486eb52
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145689688"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146618086"
 ---
 # Get-AzAksUpgradeProfile
 
@@ -151,7 +151,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IAksIdentity>: Parameter Identitas
+INPUTOBJECT `<IAksIdentity>`: Parameter Identitas
   - `[AgentPoolName <String>]`: Nama kumpulan agen.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Nama wilayah Azure yang didukung.
