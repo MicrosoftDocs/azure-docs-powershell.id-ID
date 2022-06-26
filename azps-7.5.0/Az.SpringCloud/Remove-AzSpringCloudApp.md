@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.springcloud/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SpringCloud/help/Remove-AzSpringCloudApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SpringCloud/help/Remove-AzSpringCloudApp.md
-ms.openlocfilehash: 9902f39743549bd6386e3d589e12bfd5c10c8533
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 2d5027f5962341db094c53baa0aa1dce797d4e26
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145629080"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146631010"
 ---
 # Remove-AzSpringCloudApp
 
@@ -45,14 +45,14 @@ Operasi untuk menghapus Aplikasi.
 Remove-AzSpringCloudApp -ResourceGroupName spring-cloud-rg -ServiceName spring-cloud-service -AppName gateway
 ```
 
-Hapus Spring Cloud App berdasarkan nama.
+Hapus Aplikasi Spring Cloud berdasarkan nama.
 
 ### Contoh 2: Hapus Aplikasi Spring Cloud dari pipa.
 ```powershell
 Get-AzSpringCloudApp -ResourceGroupName spring-cloud-rg -ServiceName spring-cloud-service -AppName gateway | Remove-AzSpringCloudApp
 ```
 
-Hapus Spring Cloud App dari pipa.
+Hapus Aplikasi Spring Cloud dari pipa.
 
 ## PARAMETERS
 
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.SpringCloud.Models.ISpringCloudIdentity
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -244,7 +244,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ISpringCloudIdentity>: Parameter Identitas
+INPUTOBJECT `<ISpringCloudIdentity>`: Parameter Identitas
   - `[AppName <String>]`: Nama sumber daya Aplikasi.
   - `[BindingName <String>]`: Nama sumber daya Pengikatan.
   - `[CertificateName <String>]`: Nama sumber daya sertifikat.

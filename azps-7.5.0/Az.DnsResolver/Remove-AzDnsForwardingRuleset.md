@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.dnsresolver/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/Remove-AzDnsForwardingRuleset.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/Remove-AzDnsForwardingRuleset.md
-ms.openlocfilehash: 8f303bc0606437692ab9fa30154f6bdf40868764
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 20d59cc5207dd580001a74c955263c4d3af5d631
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145739692"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146632108"
 ---
 # Remove-AzDnsForwardingRuleset
 
 ## SYNOPSIS
-Menghapus aturan penerusan DNS.
+Menghapus kumpulan aturan penerusan DNS.
 PERINGATAN: Operasi ini tidak dapat dibatalkan.
 Semua aturan penerusan dalam set aturan akan dihapus.
 
@@ -38,18 +38,18 @@ Remove-AzDnsForwardingRuleset -InputObject <IDnsResolverIdentity> [-IfMatch <Str
 ```
 
 ## DESCRIPTION
-Menghapus aturan penerusan DNS.
+Menghapus kumpulan aturan penerusan DNS.
 PERINGATAN: Operasi ini tidak dapat dibatalkan.
 Semua aturan penerusan dalam set aturan akan dihapus.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus aturan penerusan DNS menurut nama.
+### Contoh 1: Hapus kumpulan aturan penerusan DNS menurut nama.
 ```powershell
 Remove-AzDnsForwardingRuleset -Name dnsForwardingRulset -ResourceGroupName sampleRG
 ```
 
-Perintah ini menghapus set aturan penerusan DNS menurut nama.
+Perintah ini menghapus kumpulan aturan penerusan DNS menurut nama.
 
 ### Contoh 2: Menghapus aturan penerusan DNS menurut identitas
 ```powershell
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DnsResolver.Models.IDnsResolverIdentity
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Nama set aturan penerusan DNS.
+Nama kumpulan aturan penerusan DNS.
 
 ```yaml
 Type: System.String
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -250,14 +250,14 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IDnsResolverIdentity>: Parameter Identitas
-  - `[DnsForwardingRulesetName <String>]`: Nama set aturan penerusan DNS.
+INPUTOBJECT `<IDnsResolverIdentity>`: Parameter Identitas
+  - `[DnsForwardingRulesetName <String>]`: Nama kumpulan aturan penerusan DNS.
   - `[DnsResolverName <String>]`: Nama pemecah masalah DNS.
   - `[ForwardingRuleName <String>]`: Nama aturan penerusan.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[InboundEndpointName <String>]`: Nama titik akhir masuk untuk pemecah masalah DNS.
   - `[OutboundEndpointName <String>]`: Nama titik akhir keluar untuk pemecah masalah DNS.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
   - `[VirtualNetworkLinkName <String>]`: Nama tautan jaringan virtual.
   - `[VirtualNetworkName <String>]`: Nama jaringan virtual.

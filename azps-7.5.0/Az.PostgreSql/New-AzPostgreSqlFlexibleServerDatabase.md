@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.postgresql/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/New-AzPostgreSqlFlexibleServerDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/New-AzPostgreSqlFlexibleServerDatabase.md
-ms.openlocfilehash: 268ddc12be0640360a8fb493a40b6b7e24456d61
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: f95c3e862f7eebc7a040d1f2b613f8eb43a60b6a
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145658272"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146631280"
 ---
 # New-AzPostgreSqlFlexibleServerDatabase
 
@@ -258,7 +258,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IPostgreSqlIdentity>: Parameter Identitas
+INPUTOBJECT `<IPostgreSqlIdentity>`: Parameter Identitas
   - `[ConfigurationName <String>]`: Nama konfigurasi server.
   - `[DatabaseName <String>]`: Nama database.
   - `[FirewallRuleName <String>]`: Nama aturan firewall server.

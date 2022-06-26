@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.communication/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Communication/help/Get-AzCommunicationService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Communication/help/Get-AzCommunicationService.md
-ms.openlocfilehash: 9a0cafbd524425cb60cb08a780dab91726534a3c
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: cd32efbef6f0029e17474f7c166b4a518588726b
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145736668"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146632414"
 ---
 # Get-AzCommunicationService
 
@@ -50,7 +50,7 @@ Dapatkan CommunicationService dan propertinya.
 
 ## EXAMPLES
 
-### Contoh 1: Mencantumkan CommunicationServices yang ada untuk Langganan
+### Contoh 1: Mencantumkan CommunicationServices yang sudah ada untuk Langganan
 ```powershell
 Get-AzCommunicationService -SubscriptionId 73fc3592-3cef-4300-5e19-8d18b65ce0e8
 ```
@@ -77,7 +77,7 @@ Location Name           Type                                          AzureAsync
 Global   ContosoAcsResource1 Microsoft.Communication/communicationServices
 ```
 
-Mengembalikan informasi tentang sumber daya ACS, jika satu parameter yang disediakan cocok ditemukan.
+Mengembalikan informasi pada sumber daya ACS, jika satu parameter yang disediakan cocok ditemukan.
 
 ## PARAMETERS
 
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Communication.Models.ICommunicationIdentity
@@ -177,7 +177,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ICommunicationIdentity>: Parameter Identitas
+INPUTOBJECT `<ICommunicationIdentity>`: Parameter Identitas
   - `[CommunicationServiceName <String>]`: Nama sumber daya CommunicationService.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.

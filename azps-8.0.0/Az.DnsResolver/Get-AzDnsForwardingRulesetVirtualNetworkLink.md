@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.dnsresolver/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/Get-AzDnsForwardingRulesetVirtualNetworkLink.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/Get-AzDnsForwardingRulesetVirtualNetworkLink.md
-ms.openlocfilehash: 0c89a2d50e9f7ae657ce123d320129d613175954
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 017f682af2f2313e7c3df21c0d21a6cea1a39d2c
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145500566"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146632918"
 ---
 # Get-AzDnsForwardingRulesetVirtualNetworkLink
 
 ## SYNOPSIS
-Mendapatkan properti tautan jaringan virtual ke set aturan penerusan DNS.
+Mendapatkan properti tautan jaringan virtual ke aturan penerusan DNS.
 
 ## SYNTAX
 
@@ -38,7 +38,7 @@ Get-AzDnsForwardingRulesetVirtualNetworkLink -InputObject <IDnsResolverIdentity>
 ```
 
 ## DESCRIPTION
-Mendapatkan properti tautan jaringan virtual ke set aturan penerusan DNS.
+Mendapatkan properti tautan jaringan virtual ke aturan penerusan DNS.
 
 ## EXAMPLES
 
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -DnsForwardingRulesetName
-Nama kumpulan aturan penerusan DNS.
+Nama set aturan penerusan DNS.
 
 ```yaml
 Type: System.String
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DnsResolver.Models.IDnsResolverIdentity
@@ -198,8 +198,8 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IDnsResolverIdentity>: Parameter Identitas
-  - `[DnsForwardingRulesetName <String>]`: Nama kumpulan aturan penerusan DNS.
+INPUTOBJECT `<IDnsResolverIdentity>`: Parameter Identitas
+  - `[DnsForwardingRulesetName <String>]`: Nama set aturan penerusan DNS.
   - `[DnsResolverName <String>]`: Nama pemecah masalah DNS.
   - `[ForwardingRuleName <String>]`: Nama aturan penerusan.
   - `[Id <String>]`: Jalur identitas sumber daya

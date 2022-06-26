@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.applicationinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/help/Get-AzApplicationInsightsApiKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/help/Get-AzApplicationInsightsApiKey.md
-ms.openlocfilehash: 02a6b71e1fa3e9a0e6c7428be80d10d8f9d21a6f
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 66cdd4a7f41b267e0ebd92b1f883f860a24bc53d
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145551707"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146633098"
 ---
 # Get-AzApplicationInsightsApiKey
 
@@ -47,7 +47,7 @@ Dapatkan Kunci API untuk id kunci ini.
 Get-AzApplicationInsightsApiKey -ResourceGroupName "testGroup" -Name "test"
 ```
 
-Mendapatkan Kunci Api untuk sumber daya wawasan aplikasi
+Mendapatkan Kunci Api untuk sumber daya application insights
 
 ### Contoh 2: Mendapatkan kunci API tertentu untuk sumber daya wawasan aplikasi
 ```powershell
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ApplicationInsights.Models.IApplicationInsightsIdentity
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -170,14 +170,14 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IApplicationInsightsIdentity>: Parameter Identitas
+INPUTOBJECT `<IApplicationInsightsIdentity>`: Parameter Identitas
   - `[AnnotationId <String>]`: ID anotasi unik. Ini unik dalam komponen Insights Aplikasi.
   - `[ComponentName <String>]`: Nama sumber daya komponen Insights Aplikasi.
   - `[ExportId <String>]`: ID konfigurasi Ekspor Berkelanjutan. Ini unik dalam komponen Insights Aplikasi.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[KeyId <String>]`: ID Kunci API. Ini unik dalam komponen Insights Aplikasi.
   - `[PurgeId <String>]`: Dalam permintaan status penghapusan menyeluruh, ini adalah Id operasi yang statusnya dikembalikan.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[ResourceName <String>]`: Nama sumber daya komponen Insights Aplikasi.
   - `[StorageType <StorageType?>]`: Jenis sumber data komponen Application Insights untuk akun penyimpanan yang ditautkan.
   - `[SubscriptionId <String>]`: ID langganan target.

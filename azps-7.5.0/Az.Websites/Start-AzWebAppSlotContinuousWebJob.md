@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/start-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Start-AzWebAppSlotContinuousWebJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Start-AzWebAppSlotContinuousWebJob.md
-ms.openlocfilehash: 20a6fefdd96ab030a20584980d19654cc4ae7999
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 8027e1fbeaacd30b5a2fe89521e4ca4100b18939
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145697644"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146633152"
 ---
 # Start-AzWebAppSlotContinuousWebJob
 
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Websites.Models.IWebsitesIdentity
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -164,7 +164,7 @@ Accept wildcard characters: False
 
 ### -SubscriptionId
 ID langganan Azure Anda.
-Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-00000000000).
+Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000).
 
 ```yaml
 Type: System.String
@@ -229,7 +229,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IWebsitesIdentity>: Parameter Identitas
+INPUTOBJECT `<IWebsitesIdentity>`: Parameter Identitas
   - `[Authprovider <String>]`: Penyedia autentikasi untuk pengguna.
   - `[DomainName <String>]`: Nama domain kustom.
   - `[EnvironmentName <String>]`: Pengidentifikasi situs tahapan.
@@ -241,7 +241,7 @@ INPUTOBJECT <IWebsitesIdentity>: Parameter Identitas
   - `[PrivateEndpointConnectionName <String>]`: Nama koneksi titik akhir privat.
   - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat sumber daya berada.
   - `[Slot <String>]`: Nama slot penyebaran. Jika slot tidak ditentukan, API akan menghapus penyebaran untuk slot produksi.
-  - `[SubscriptionId <String>]`: ID langganan Azure Anda. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-00000000000).
+  - `[SubscriptionId <String>]`: ID langganan Azure Anda. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000).
   - `[Userid <String>]`: Id pengguna pengguna.
   - `[WebJobName <String>]`: Nama Pekerjaan Web.
 

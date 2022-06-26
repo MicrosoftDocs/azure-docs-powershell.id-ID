@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.datadog/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/Update-AzDatadogMonitor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/Update-AzDatadogMonitor.md
-ms.openlocfilehash: 1e735aba6e979b161e5509ec9ff31c3fc3e66950
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 8072740e029770a0ddbcba903be9b2e871b5e509
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145746262"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146632198"
 ---
 # Update-AzDatadogMonitor
 
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.IDatadogIdentity
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -271,11 +271,11 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IDatadogIdentity>: Parameter Identitas
+INPUTOBJECT `<IDatadogIdentity>`: Parameter Identitas
   - `[ConfigurationName <String>]`: Nama konfigurasi
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[MonitorName <String>]`: Memantau nama sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[RuleSetName <String>]`: Nama seperangkat aturan
   - `[SubscriptionId <String>]`: ID langganan target.
 

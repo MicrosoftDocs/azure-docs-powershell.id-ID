@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.streamanalytics/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Remove-AzStreamAnalyticsCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Remove-AzStreamAnalyticsCluster.md
-ms.openlocfilehash: 38c5b45b6de7103eabde0782fe9b59d1ecb8ed50
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 7ef59bd37798f819e4ce2a03fca61ca573041235
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145711936"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146630848"
 ---
 # Remove-AzStreamAnalyticsCluster
 
@@ -231,7 +231,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IStreamAnalyticsIdentity>: Parameter Identitas
+INPUTOBJECT `<IStreamAnalyticsIdentity>`: Parameter Identitas
   - `[ClusterName <String>]`: Nama kluster.
   - `[FunctionName <String>]`: Nama fungsi.
   - `[Id <String>]`: Jalur identitas sumber daya

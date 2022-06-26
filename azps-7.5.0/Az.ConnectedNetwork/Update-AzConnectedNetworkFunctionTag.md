@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.connectednetwork
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/Update-AzConnectedNetworkFunctionTag.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/Update-AzConnectedNetworkFunctionTag.md
-ms.openlocfilehash: 6ed443487746be1fe3437bda3d0be81df24ebbb1
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: bd543c05fea082b062e01428964f0b7fcdeb1f4f
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145801682"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146632324"
 ---
 # Update-AzConnectedNetworkFunctionTag
 
 ## SYNOPSIS
-Memperbarui tag untuk sumber daya fungsi jaringan.
+Updates tag untuk sumber daya fungsi jaringan.
 
 > [!NOTE]
 >Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.connectednetwork/update-azconnectednetworkfunctiontag) untuk informasi terbaru.
@@ -36,7 +36,7 @@ Update-AzConnectedNetworkFunctionTag -InputObject <IConnectedNetworkIdentity> [-
 ```
 
 ## DESCRIPTION
-Memperbarui tag untuk sumber daya fungsi jaringan.
+Updates tag untuk sumber daya fungsi jaringan.
 
 ## EXAMPLES
 
@@ -51,7 +51,7 @@ eastus2euap myNewVnf1 "sampleEtagValue" myResources
 ```
 
 Membuat identitas dengan bidang NewTag dan nilai NewTagValue.
-Memperbarui tag NF dengan nama sumber daya myNewVnf1 dalam grup sumber daya myResources.
+Memperbarui tag NF dengan nama sumber daya myNewVnf1 di grup sumber daya myResources.
 
 ### Contoh 2: Update-AzConnectedNetworkFunctionTag
 ```powershell
@@ -65,7 +65,7 @@ eastus2euap myNewVnf1 "0000f211-0000-3300-0000-61a9edc70000" myResources
 ```
 
 Membuat identitas dengan bidang NewTag dan nilai NewTagValue.
-Membuat identitas dengan NetworkFunctionName myVnf1, ResourceGroupName myResources, dan langganan. Memperbarui tag NF yang ditentukan dalam identitas dengan tag.
+Membuat identitas dengan NetworkFunctionName myVnf1, ResourceGroupName myResources, dan langganan. Memperbarui tag NF yang ditentukan dalam identitas dengan tag .
 
 ## PARAMETERS
 
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ConnectedNetwork.Models.IConnectedNetworkIdentity
@@ -211,12 +211,12 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IConnectedNetworkIdentity>: Parameter Identitas
+INPUTOBJECT `<IConnectedNetworkIdentity>`: Parameter Identitas
   - `[DeviceName <String>]`: Nama sumber daya perangkat.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[LocationName <String>]`: Wilayah Azure tempat sumber daya fungsi jaringan dibuat oleh pelanggan.
   - `[NetworkFunctionName <String>]`: Nama fungsi jaringan.
-  - `[PreviewSubscription <String>]`: PRATINJAU ID langganan.
+  - `[PreviewSubscription <String>]`: ID langganan pratinjau.
   - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[RoleInstanceName <String>]`: Nama instans peran fungsi jaringan vendor.
   - `[ServiceKey <String>]`: GUID untuk fungsi jaringan vendor.

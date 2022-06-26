@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.maps/remove-azma
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/Remove-AzMapsCreator.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/Remove-AzMapsCreator.md
-ms.openlocfilehash: 13b1615474c6612e2a75d3c49c94680475ef4d26
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: caf66dc1d6acebca28f0bdb73bdad13faeef2314
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145776576"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146631478"
 ---
 # Remove-AzMapsCreator
 
@@ -212,7 +212,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMapsIdentity>: Parameter Identitas
+INPUTOBJECT `<IMapsIdentity>`: Parameter Identitas
   - `[AccountName <String>]`: Nama Akun Peta.
   - `[CreatorName <String>]`: Nama instans Peta Creator.
   - `[Id <String>]`: Jalur identitas sumber daya

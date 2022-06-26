@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.labservices/upda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Update-AzLabServicesSchedule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Update-AzLabServicesSchedule.md
-ms.openlocfilehash: b14cb5b9a2b67a5cf743cc9ff051603a87d6c76d
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 5aee0879a4a68c63ad9679e220ae4add05a7efc4
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145692316"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146631586"
 ---
 # Update-AzLabServicesSchedule
 
@@ -350,7 +350,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-LAB <Lab>: 
+LAB `<Lab>`: 
   - `Location <String>`: Lokasi geografis tempat sumber daya berada
   - `[AdditionalCapabilityInstallGpuDriver <EnableState?>]`: Benderai ke driver GPU khusus pra-instal.
   - `[AdminUserPassword <String>]`: Kata sandi untuk pengguna. Ini diperlukan untuk TemplateVM createOption.

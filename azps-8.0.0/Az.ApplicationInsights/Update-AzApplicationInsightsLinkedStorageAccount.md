@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.applicationinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/help/Update-AzApplicationInsightsLinkedStorageAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/help/Update-AzApplicationInsightsLinkedStorageAccount.md
-ms.openlocfilehash: 17f2698714ae2c58cf1f4f0b7e54ba0727e7d95e
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 5de78d0bec2b69dbf9123917c510ff83b184b9e2
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145527355"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146633044"
 ---
 # Update-AzApplicationInsightsLinkedStorageAccount
 
@@ -190,7 +190,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IApplicationInsightsIdentity>: Parameter Identitas
+INPUTOBJECT `<IApplicationInsightsIdentity>`: Parameter Identitas
   - `[AnnotationId <String>]`: ID anotasi unik. Ini unik dalam komponen Insights Aplikasi.
   - `[ComponentName <String>]`: Nama sumber daya komponen Insights Aplikasi.
   - `[ExportId <String>]`: ID konfigurasi Ekspor Berkelanjutan. Ini unik dalam komponen Insights Aplikasi.

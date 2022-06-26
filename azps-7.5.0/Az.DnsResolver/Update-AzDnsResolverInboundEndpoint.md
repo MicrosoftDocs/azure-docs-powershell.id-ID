@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.dnsresolver/upda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/Update-AzDnsResolverInboundEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/Update-AzDnsResolverInboundEndpoint.md
-ms.openlocfilehash: 311f0b97c3abe0e57449dbd1c27749f88217d545
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: 887a0428447475d59b0a501ab82293993605d00a
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145774506"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146632000"
 ---
 # Update-AzDnsResolverInboundEndpoint
 
 ## SYNOPSIS
-Memperbarui titik akhir masuk untuk pemecah masalah DNS.
+Updates titik akhir masuk untuk pemecah masalah DNS.
 
 > [!NOTE]
 >Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dnsresolver/update-azdnsresolverinboundendpoint) untuk informasi terbaru.
@@ -36,11 +36,11 @@ Update-AzDnsResolverInboundEndpoint -InputObject <IDnsResolverIdentity> [-IfMatc
 ```
 
 ## DESCRIPTION
-Memperbarui titik akhir masuk untuk pemecah masalah DNS.
+Updates titik akhir masuk untuk pemecah masalah DNS.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui Titik Akhir Masuk menurut nama (menambahkan metadata)
+### Contoh 1: Memperbarui Titik Akhir Masuk berdasarkan nama (menambahkan metadata)
 ```powershell
 Update-AzDnsResolverInboundEndpoint  -DnsResolverName pstestdnsresolvername -Name sampleInboundEndpoint -ResourceGroupName powershell-test-rg -Metadata @{"value0" = "value1"}
 ```
@@ -51,7 +51,7 @@ Name                  Type                                            Etag
 sampleInboundEndpoint Microsoft.Network/dnsResolvers/inboundEndpoints "0c000868-0000-0800-0000-604112230000"
 ```
 
-Perintah ini memperbarui Titik Akhir Masuk menurut nama (menambahkan metadata)
+Perintah ini memperbarui Titik Akhir Masuk berdasarkan nama (menambahkan metadata)
 
 ### Contoh 2: Memperbarui Titik Akhir Masuk melalui identitas (menambahkan metadata)
 ```powershell
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DnsResolver.Models.IDnsResolverIdentity
@@ -274,8 +274,8 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IDnsResolverIdentity>: Parameter Identitas
-  - `[DnsForwardingRulesetName <String>]`: Nama kumpulan aturan penerusan DNS.
+INPUTOBJECT `<IDnsResolverIdentity>`: Parameter Identitas
+  - `[DnsForwardingRulesetName <String>]`: Nama set aturan penerusan DNS.
   - `[DnsResolverName <String>]`: Nama pemecah masalah DNS.
   - `[ForwardingRuleName <String>]`: Nama aturan penerusan.
   - `[Id <String>]`: Jalur identitas sumber daya

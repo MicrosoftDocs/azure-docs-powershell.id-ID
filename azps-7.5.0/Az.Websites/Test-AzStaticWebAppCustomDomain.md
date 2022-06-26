@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/test-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Test-AzStaticWebAppCustomDomain.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Test-AzStaticWebAppCustomDomain.md
-ms.openlocfilehash: 43030cf3b9f55aaa060ba792624c044c36d275e7
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 1370b0cc96e060e372a2cc7c0a79be7553937dbf
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145697320"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146633134"
 ---
 # Test-AzStaticWebAppCustomDomain
 
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Websites.Models.IWebsitesIdentity
@@ -116,7 +116,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Jenis
+### -Kind
 Jenis sumber daya.
 
 ```yaml
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -193,7 +193,7 @@ Accept wildcard characters: False
 
 ### -SubscriptionId
 ID langganan Azure Anda.
-Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000).
+Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-00000000000).
 
 ```yaml
 Type: System.String
@@ -273,7 +273,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IWebsitesIdentity>: Parameter Identitas
+INPUTOBJECT `<IWebsitesIdentity>`: Parameter Identitas
   - `[Authprovider <String>]`: Penyedia autentikasi untuk pengguna.
   - `[DomainName <String>]`: Nama domain kustom.
   - `[EnvironmentName <String>]`: Pengidentifikasi situs tahapan.
@@ -285,7 +285,7 @@ INPUTOBJECT <IWebsitesIdentity>: Parameter Identitas
   - `[PrivateEndpointConnectionName <String>]`: Nama koneksi titik akhir privat.
   - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat sumber daya berada.
   - `[Slot <String>]`: Nama slot penyebaran. Jika slot tidak ditentukan, API akan menghapus penyebaran untuk slot produksi.
-  - `[SubscriptionId <String>]`: ID langganan Azure Anda. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000).
+  - `[SubscriptionId <String>]`: ID langganan Azure Anda. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-00000000000).
   - `[Userid <String>]`: Id pengguna pengguna.
   - `[WebJobName <String>]`: Nama Pekerjaan Web.
 

@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.desktopvirtualiz
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Disconnect-AzWvdUserSession.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Disconnect-AzWvdUserSession.md
-ms.openlocfilehash: e6ca8185a6535a7db82943e512aaf54cf21f1cfe
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 0716359737c0309fbc9160243b3cb0abbddf4da7
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145532555"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146630182"
 ---
 # Disconnect-AzWvdUserSession
 
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -218,14 +218,14 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IDesktopVirtualizationIdentity>: Parameter Identitas
+INPUTOBJECT `<IDesktopVirtualizationIdentity>`: Parameter Identitas
   - `[ApplicationGroupName <String>]`: Nama grup aplikasi
   - `[ApplicationName <String>]`: Nama aplikasi dalam grup aplikasi yang ditentukan
   - `[DesktopName <String>]`: Nama desktop dalam grup desktop yang ditentukan
   - `[HostPoolName <String>]`: Nama kumpulan host dalam grup sumber daya yang ditentukan
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[MsixPackageFullName <String>]`: Nama lengkap paket khusus versi dari paket MSIX dalam hostpool tertentu
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[ScalingPlanName <String>]`: Nama rencana penskalaan.
   - `[SessionHostName <String>]`: Nama host sesi dalam kumpulan host yang ditentukan
   - `[SubscriptionId <String>]`: ID langganan target.

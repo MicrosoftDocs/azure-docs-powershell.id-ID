@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.dnsresolver/upda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/Update-AzDnsForwardingRulesetForwardingRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/Update-AzDnsForwardingRulesetForwardingRule.md
-ms.openlocfilehash: 159c2818ba623cad28b42a37c9279866b3c9ade2
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: 2ef3318490a33188547fc62c381beb56faff12ac
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145784350"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146632054"
 ---
 # Update-AzDnsForwardingRulesetForwardingRule
 
 ## SYNOPSIS
-Memperbarui aturan penerusan dalam aturan penerusan DNS.
+Updates aturan penerusan dalam aturan penerusan DNS.
 
 > [!NOTE]
 >Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.dnsresolver/update-azdnsforwardingrulesetforwardingrule) untuk informasi terbaru.
@@ -38,7 +38,7 @@ Update-AzDnsForwardingRulesetForwardingRule -InputObject <IDnsResolverIdentity> 
 ```
 
 ## DESCRIPTION
-Memperbarui aturan penerusan dalam aturan penerusan DNS.
+Updates aturan penerusan dalam aturan penerusan DNS.
 
 ## EXAMPLES
 
@@ -55,7 +55,7 @@ westus2  forwardingRule Microsoft.Network/dnsForwardingRulesets/forwardingRule "
 
 Perintah ini memperbarui aturan penerusan berdasarkan nama (menambahkan metadata)
 
-### Contoh 2: Memperbarui aturan penerusan menurut identitas
+### Contoh 2: Updates aturan penerusan menurut identitas
 ```powershell
 $inputObject = Get-AzDnsForwardingRulesetForwardingRule -ResourceGroupName powershell-test-rg -DnsForwardingRulesetName dnsForwardingRuleset -Name sampleForwardingRule
 Update-AzDnsForwardingRulesetForwardingRule -InputObject $inputObject  -Metadata @{"value0" = "value1"}
@@ -180,7 +180,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -276,14 +276,14 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IDnsResolverIdentity>: Parameter Identitas
+INPUTOBJECT `<IDnsResolverIdentity>`: Parameter Identitas
   - `[DnsForwardingRulesetName <String>]`: Nama set aturan penerusan DNS.
   - `[DnsResolverName <String>]`: Nama pemecah masalah DNS.
   - `[ForwardingRuleName <String>]`: Nama aturan penerusan.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[InboundEndpointName <String>]`: Nama titik akhir masuk untuk pemecah masalah DNS.
   - `[OutboundEndpointName <String>]`: Nama titik akhir keluar untuk pemecah masalah DNS.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
   - `[VirtualNetworkLinkName <String>]`: Nama tautan jaringan virtual.
   - `[VirtualNetworkName <String>]`: Nama jaringan virtual.

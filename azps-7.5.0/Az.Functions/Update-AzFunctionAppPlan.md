@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.functions/update
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Update-AzFunctionAppPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Update-AzFunctionAppPlan.md
-ms.openlocfilehash: c902d9d87a0a9c8aead15dfee7a3c13baef7c354
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: 34744ec3fda88bae0666220b7ee6c68ddaa6e843
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145764228"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146631910"
 ---
 # Update-AzFunctionAppPlan
 
 ## SYNOPSIS
-Memperbarui paket layanan aplikasi fungsi.
+Updates paket layanan aplikasi fungsi.
 
 > [!NOTE]
 >Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.functions/update-azfunctionappplan) untuk informasi terbaru.
@@ -37,7 +37,7 @@ Update-AzFunctionAppPlan -InputObject <IAppServicePlan> [-Force] [-MaximumWorker
 ```
 
 ## DESCRIPTION
-Memperbarui paket layanan aplikasi fungsi.
+Updates paket layanan aplikasi fungsi.
 
 ## EXAMPLES
 
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -Force
-Memaksa cmdlet untuk memperbarui paket aplikasi fungsi tanpa meminta konfirmasi.
+Memaksa cmdlet untuk memperbarui rencana aplikasi fungsi tanpa meminta konfirmasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -286,7 +286,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IAppServicePlan>: 
+INPUTOBJECT `<IAppServicePlan>`: 
   - `Location <String>`: Lokasi Sumber Daya.
   - `[Kind <String>]`: Jenis sumber daya.
   - `[Tag <IResourceTags>]`: Tag sumber daya.
@@ -294,13 +294,13 @@ INPUTOBJECT <IAppServicePlan>:
   - `[Capacity <Int32?>]`: Jumlah instans saat ini yang ditetapkan ke sumber daya.
   - `[FreeOfferExpirationTime <DateTime?>]`: Waktu ketika penawaran gratis farm server kedaluwarsa.
   - `[HostingEnvironmentProfileId <String>]`: ID sumber daya lingkungan App Service.
-  - `[HyperV <Boolean?>]`: Jika hyper-V paket <code>true</code>layanan aplikasi kontainer , <code>false</code> jika tidak.
+  - `[HyperV <Boolean?>]`: Jika paket <code>true</code>layanan aplikasi kontainer Hyper-V , <code>false</code> jika tidak.
   - `[IsSpot <Boolean?>]`: Jika <code>true</code>, App Service Plan ini memiliki instans spot.
   - `[IsXenon <Boolean?>]`: Usang: Jika paket <code>true</code>layanan aplikasi kontainer Hyper-V , <code>false</code> jika tidak.
   - `[MaximumElasticWorkerCount <Int32?>]`: Jumlah maksimum total pekerja yang diizinkan untuk Paket App Service ElasticScaleEnabled ini
   - `[PerSiteScaling <Boolean?>]`: Jika <code>true</code>, aplikasi yang ditetapkan ke paket App Service ini dapat diskalakan secara independen.         Jika <code>false</code>, aplikasi yang ditetapkan ke paket App Service ini akan menskalakan ke semua instans paket.
-  - `[Reserved <Boolean?>]`: Jika paket <code>true</code>layanan aplikasi Linux, <code>false</code> jika tidak.
-  - `[SkuCapability <ICapability[]>]`: Kemampuan SKU, misalnya, apakah traffic manager diaktifkan?
+  - `[Reserved <Boolean?>]`: Jika paket <code>true</code>layanan aplikasi Linux , <code>false</code> jika tidak.
+  - `[SkuCapability <ICapability[]>]`: Kemampuan SKU, misalnya, apakah manajer lalu lintas diaktifkan?
     - `[Name <String>]`: Nama kemampuan SKU.
     - `[Reason <String>]`: Alasan kemampuan SKU.
     - `[Value <String>]`: Nilai kemampuan SKU.

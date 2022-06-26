@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/start-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Start-AzMigrateTestMigration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Start-AzMigrateTestMigration.md
-ms.openlocfilehash: ff87e731dad27eb5267c0de8a079e1c194c72ba0
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: cecbfb61c61e5342a152c066489cf0b4dbfc9804
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145791586"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146631362"
 ---
 # Start-AzMigrateTestMigration
 
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -TestNetworkID
-Memperbarui id Virtual Network dalam langganan Azure tujuan yang akan digunakan untuk migrasi pengujian.
+Updates id Virtual Network dalam langganan Azure tujuan yang akan digunakan untuk migrasi pengujian.
 
 ```yaml
 Type: System.String
@@ -200,7 +200,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMigrationItem>: Menentukan server replikasi yang migrasi pengujiannya perlu dimulai. Objek server dapat diambil menggunakan cmdlet Get-AzMigrateServerReplication.
+INPUTOBJECT `<IMigrationItem>`: Menentukan server replikasi yang migrasi pengujiannya perlu dimulai. Objek server dapat diambil menggunakan cmdlet Get-AzMigrateServerReplication.
   - `[Location <String>]`: Lokasi Sumber Daya
   - `[ProviderSpecificDetail <IMigrationProviderSpecificSettings>]`: Pengaturan kustom penyedia migrasi.
 

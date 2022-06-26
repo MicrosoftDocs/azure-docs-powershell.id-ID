@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.desktopvirtualiz
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Get-AzWvdScalingPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Get-AzWvdScalingPlan.md
-ms.openlocfilehash: 712c5821766f6570563d6fcc81fe1cd68a4b6a3d
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: bceaa7d1407d118286ec2f4b7059d4c3e976128c
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145744174"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146632126"
 ---
 # Get-AzWvdScalingPlan
 
@@ -196,7 +196,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IDesktopVirtualizationIdentity>: Parameter Identitas
+INPUTOBJECT `<IDesktopVirtualizationIdentity>`: Parameter Identitas
   - `[ApplicationGroupName <String>]`: Nama grup aplikasi
   - `[ApplicationName <String>]`: Nama aplikasi dalam grup aplikasi yang ditentukan
   - `[DesktopName <String>]`: Nama desktop dalam grup desktop yang ditentukan

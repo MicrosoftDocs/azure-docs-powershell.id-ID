@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.elastic/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Elastic/help/Update-AzElasticVMCollection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Elastic/help/Update-AzElasticVMCollection.md
-ms.openlocfilehash: 07e6dbd5a724d044f8e3834cb6f7c60a0607b942
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: 1f0082ed339d1b87abb993d92d42d61f84006ac3
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145764642"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146631946"
 ---
 # Update-AzElasticVMCollection
 
@@ -228,7 +228,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IElasticIdentity>: Parameter Identitas
+INPUTOBJECT `<IElasticIdentity>`: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[MonitorName <String>]`: Memantau nama sumber daya
   - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat sumber daya Elastic berada.

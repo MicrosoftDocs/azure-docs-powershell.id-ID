@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.dedicatedhsm/upd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DedicatedHsm/help/Update-AzDedicatedHsm.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DedicatedHsm/help/Update-AzDedicatedHsm.md
-ms.openlocfilehash: d3032d509d68fd57e6650553dfc72f1a7d2e356d
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 6d276b7fade00cd007244f1df8bf22633364a08c
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145746028"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146632180"
 ---
 # Update-AzDedicatedHsm
 
@@ -50,7 +50,7 @@ Name       Provisioning State SKU                           Location
 hsm-n7wfxi Succeeded          SafeNet Luna Network HSM A790 eastus
 ```
 
-Perintah ini memperbarui tag parameter Azure Dedicated HSM berdasarkan nama
+Perintah ini memperbarui tag parameter Dedicated HSM berdasarkan nama
 
 ### Contoh 2: Memperbarui tag parameter Azure Dedicated HSM menurut objek
 ```powershell
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DedicatedHsm.Models.IDedicatedHsmIdentity
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Info masuk langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+Kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
@@ -240,7 +240,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IDedicatedHsmIdentity>: Parameter Identitas
+INPUTOBJECT `<IDedicatedHsmIdentity>`: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Name <String>]`: Nama Hsm khusus
   - `[ResourceGroupName <String>]`: Nama Grup Sumber Daya tempat sumber daya berada.

@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.dnsresolver/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/Get-AzDnsResolverOutboundEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/Get-AzDnsResolverOutboundEndpoint.md
-ms.openlocfilehash: 0ba92ef7b19c3474a2ff6c6d512f9bc91e418fa9
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: cd698d4d33b3bc94e3409dd4d2b0a01f2cd6acc1
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145516318"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146632900"
 ---
 # Get-AzDnsResolverOutboundEndpoint
 
@@ -55,7 +55,7 @@ sampleOutbound2 Microsoft.Network/dnsResolvers/outboundEndpoints "0a001a27-0000-
 ```
 Perintah ini mendapatkan semua titik akhir keluar di bawah pemecah masalah DNS dalam grup sumber daya.
 
-### Contoh 2: Mendapatkan titik akhir keluar tunggal menurut nama 
+### Contoh 2: Mendapatkan titik akhir keluar tunggal berdasarkan nama 
 ```powershell
 Get-AzDnsResolverOutboundEndpoint -DnsResolverName sampleResolver -Name sampleOutbound -ResourceGroupName sampleResouceGroup
 ```
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DnsResolver.Models.IDnsResolverIdentity
@@ -197,8 +197,8 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IDnsResolverIdentity>: Parameter Identitas
-  - `[DnsForwardingRulesetName <String>]`: Nama kumpulan aturan penerusan DNS.
+INPUTOBJECT `<IDnsResolverIdentity>`: Parameter Identitas
+  - `[DnsForwardingRulesetName <String>]`: Nama set aturan penerusan DNS.
   - `[DnsResolverName <String>]`: Nama pemecah masalah DNS.
   - `[ForwardingRuleName <String>]`: Nama aturan penerusan.
   - `[Id <String>]`: Jalur identitas sumber daya

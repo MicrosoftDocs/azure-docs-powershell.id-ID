@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.managedserviceid
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServiceIdentity/help/Remove-AzUserAssignedIdentity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServiceIdentity/help/Remove-AzUserAssignedIdentity.md
-ms.openlocfilehash: 32503aa6b2e08cfa130946c852dcb64629d8aefe
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: a8597f92acc018b544eed13f0e07b74d3453208f
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145691650"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146631514"
 ---
 # Remove-AzUserAssignedIdentity
 
@@ -198,7 +198,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IManagedServiceIdentity>: Parameter Identitas
+INPUTOBJECT `<IManagedServiceIdentity>`: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ResourceGroupName <String>]`: Nama Grup Sumber Daya tempat identitas berada.
   - `[ResourceName <String>]`: Nama sumber daya identitas.

@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.labservices/upda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Update-AzLabServicesQuota.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Update-AzLabServicesQuota.md
-ms.openlocfilehash: c778aff2bf36285aa9d0943d8a3f12482f9796dc
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: c8c5abcecdb9f90bd94422a6d302ca511763d20f
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145811682"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146631604"
 ---
 # Update-AzLabServicesQuota
 
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -227,7 +227,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-LAB <Lab>: 
+LAB `<Lab>`: 
   - `Location <String>`: Lokasi geografis tempat sumber daya berada
   - `[AdditionalCapabilityInstallGpuDriver <EnableState?>]`: Benderai ke driver GPU khusus pra-instal.
   - `[AdminUserPassword <String>]`: Kata sandi untuk pengguna. Ini diperlukan untuk TemplateVM createOption.

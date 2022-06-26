@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.appconfiguration
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AppConfiguration/help/Get-AzAppConfigurationStore.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AppConfiguration/help/Get-AzAppConfigurationStore.md
-ms.openlocfilehash: e4ec53de3f86cb8446584d64e91d14c304eb8dde
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 404d8a68c9515391350df818c3a0bd3b103a39d5
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145524283"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146630614"
 ---
 # Get-AzAppConfigurationStore
 
@@ -198,7 +198,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IAppConfigurationIdentity>: Parameter Identitas
+INPUTOBJECT `<IAppConfigurationIdentity>`: Parameter Identitas
   - `[ConfigStoreName <String>]`: Nama penyimpanan konfigurasi.
   - `[GroupName <String>]`: Nama grup sumber daya tautan privat.
   - `[Id <String>]`: Jalur identitas sumber daya

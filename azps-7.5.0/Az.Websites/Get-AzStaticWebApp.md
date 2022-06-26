@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/get-azs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzStaticWebApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzStaticWebApp.md
-ms.openlocfilehash: 92920a500968426f81955a5f10e2097edc5f0d73
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 294843fc416b86e89f9ff9c0fb5b9553ff045909
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145700794"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146630776"
 ---
 # Get-AzStaticWebApp
 
@@ -77,7 +77,7 @@ Kind Location   Name               Type
 
 Perintah ini mencantumkan semua aplikasi web statis di bawah grup sumber daya.
 
-### Contoh 3: Dapatkan aplikasi web satic berdasarkan nama
+### Contoh 3: Mendapatkan aplikasi web satic berdasarkan nama
 ```powershell
 Get-AzStaticWebApp -ResourceGroupName azure-rg-test -Name staticweb-portal04
 ```
@@ -90,7 +90,7 @@ Kind Location   Name               Type
 
 Perintah ini mendapatkan aplikasi web satic berdasarkan nama.
 
-### Contoh 4: Dapatkan aplikasi web satic dengan pipline
+### Contoh 4: Mendapatkan aplikasi web satic dengan pipline
 ```powershell
 New-AzStaticWebApp -ResourceGroupName azure-rg-test -Name staticweb-pwsh01 -Location eastus2 -RepositoryUrl 'https://github.com/username/RepoName' -RepositoryToken 'repoToken123' -Branch 'master' -AppLocation 'Client' -ApiLocation 'Api' -OutputLocation 'wwwroot' -SkuName 'free' -SkuTier 'free'  | Get-AzStaticWebApp -InputObejct
 ```
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Websites.Models.IWebsitesIdentity
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 
 ### -SubscriptionId
 ID langganan Azure Anda.
-Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-00000000000).
+Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000).
 
 ```yaml
 Type: System.String[]
@@ -201,7 +201,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IWebsitesIdentity>: Parameter Identitas
+INPUTOBJECT `<IWebsitesIdentity>`: Parameter Identitas
   - `[Authprovider <String>]`: Penyedia autentikasi untuk pengguna.
   - `[DomainName <String>]`: Nama domain kustom.
   - `[EnvironmentName <String>]`: Pengidentifikasi situs tahapan.
@@ -213,7 +213,7 @@ INPUTOBJECT <IWebsitesIdentity>: Parameter Identitas
   - `[PrivateEndpointConnectionName <String>]`: Nama koneksi titik akhir privat.
   - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat sumber daya berada.
   - `[Slot <String>]`: Nama slot penyebaran. Jika slot tidak ditentukan, API akan menghapus penyebaran untuk slot produksi.
-  - `[SubscriptionId <String>]`: ID langganan Azure Anda. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-00000000000).
+  - `[SubscriptionId <String>]`: ID langganan Azure Anda. Ini adalah string berformat GUID (misalnya 000000000-0000-0000-0000-000000000000).
   - `[Userid <String>]`: Id pengguna pengguna.
   - `[WebJobName <String>]`: Nama Pekerjaan Web.
 

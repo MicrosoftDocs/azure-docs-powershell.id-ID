@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.logz/get-azlogzm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Get-AzLogzMonitorTagRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Get-AzLogzMonitorTagRule.md
-ms.openlocfilehash: e4a2ca0e952908c35859a8e865ffcbad3ad4a079
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: bd8efae239a05074df908ada5cdcb8c9cc63b0c0
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145561297"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146632810"
 ---
 # Get-AzLogzMonitorTagRule
 
@@ -35,7 +35,7 @@ Dapatkan seperangkat aturan tag untuk sumber daya monitor tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan seperangkat aturan tag default untuk sumber daya monitor tertentu
+### Contoh 1: Dapatkan seperangkat aturan tag default untuk sumber daya monitor tertentu
 ```powershell
 Get-AzLogzMonitorTagRule -ResourceGroupName logz-rg-test -MonitorName pwsh-logz04
 ```
@@ -48,7 +48,7 @@ default Succeeded         logz-rg-test
 
 Perintah ini mendapatkan seperangkat aturan tag default untuk sumber daya monitor tertentu.
 
-### Contoh 2: Mendapatkan seperangkat aturan tag default untuk sumber daya monitor tertentu menurut alur
+### Contoh 2: Dapatkan seperangkat aturan tag default untuk sumber daya monitor tertentu menurut alur
 ```powershell
 Get-AzLogzMonitorTagRule -ResourceGroupName logz-rg-test -MonitorName pwsh-logz04 | Get-AzLogzMonitorTagRule
 ```
@@ -59,7 +59,7 @@ Name    ProvisioningState ResourceGroupName
 default Succeeded         logz-rg-test
 ```
 
-Perintah ini mendapatkan seperangkat aturan tag default untuk sumber daya monitor tertentu berdasarkan alur.
+Perintah ini mendapatkan seperangkat aturan tag default untuk sumber daya monitor tertentu menurut alur.
 
 ## PARAMETERS
 
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Logz.Models.ILogzIdentity
@@ -159,7 +159,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ILogzIdentity>: Parameter Identitas
+INPUTOBJECT `<ILogzIdentity>`: Parameter Identitas
   - `[ConfigurationName <String>]`: 
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[MonitorName <String>]`: Memantau nama sumber daya

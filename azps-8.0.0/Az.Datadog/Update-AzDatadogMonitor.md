@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.datadog/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/Update-AzDatadogMonitor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/Update-AzDatadogMonitor.md
-ms.openlocfilehash: cdf6b651ef471611c404cd636bc58d6e8a2fa828
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: c11d74a06e6be524bb0d36e0178ecc48c12aaf95
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145537147"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146630218"
 ---
 # Update-AzDatadogMonitor
 
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -268,11 +268,11 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IDatadogIdentity>: Parameter Identitas
+INPUTOBJECT `<IDatadogIdentity>`: Parameter Identitas
   - `[ConfigurationName <String>]`: Nama konfigurasi
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[MonitorName <String>]`: Memantau nama sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[RuleSetName <String>]`: Nama seperangkat aturan
   - `[SubscriptionId <String>]`: ID langganan target.
 

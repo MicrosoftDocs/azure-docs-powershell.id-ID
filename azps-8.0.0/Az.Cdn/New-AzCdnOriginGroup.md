@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/new-azcdnori
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/help/New-AzCdnOriginGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/help/New-AzCdnOriginGroup.md
-ms.openlocfilehash: 3f4b7a772067156ecd3a3536eef3e3dddba7c1ff
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 7b53ddbb3a288cde4f754ec56cfa73279f7d7d66
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145536268"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146630506"
 ---
 # New-AzCdnOriginGroup
 
@@ -226,7 +226,7 @@ Accept wildcard characters: False
 ```
 
 ### -TrafficRestorationTimeToHealedOrNewEndpointsInMinute
-Waktu dalam menit untuk mengalihkan lalu lintas ke titik akhir secara bertahap ketika titik akhir yang tidak sehat sehat atau titik akhir baru ditambahkan.
+Waktu dalam menit untuk mengalihkan lalu lintas ke titik akhir secara bertahap ketika titik akhir yang tidak sehat menjadi sehat atau titik akhir baru ditambahkan.
 Defaultnya adalah 10 menit.
 Properti ini saat ini tidak didukung.
 
@@ -291,7 +291,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-HEALTHPROBESETTING <IHealthProbeParameters>: Pengaturan pemeriksaan kesehatan ke asal yang digunakan untuk menentukan kesehatan asal.
+HEALTHPROBESETTING `<IHealthProbeParameters>`: Pengaturan pemeriksaan kesehatan ke asal yang digunakan untuk menentukan kesehatan asal.
   - `[ProbeIntervalInSecond <Int32?>]`: Jumlah detik antara pemeriksaan kesehatan. Defaultnya adalah 240 detik.
   - `[ProbePath <String>]`: Jalur relatif terhadap asal yang digunakan untuk menentukan kesehatan asal.
   - `[ProbeProtocol <ProbeProtocol?>]`: Protokol yang digunakan untuk pemeriksaan kesehatan.
@@ -300,7 +300,7 @@ HEALTHPROBESETTING <IHealthProbeParameters>: Pengaturan pemeriksaan kesehatan ke
 ORIGIN <IResourceReference[]>: Sumber konten yang dikirimkan melalui CDN dalam grup asal tertentu.
   - `[Id <String>]`: ID Sumber Daya.
 
-RESPONSEBASEDORIGINERRORDETECTIONSETTING <IResponseBasedOriginErrorDetectionParameters>: Objek JSON yang berisi properti untuk menentukan kesehatan asal menggunakan permintaan/respons nyata. Properti ini saat ini tidak didukung.
+RESPONSEBASEDORIGINERRORDETECTIONSETTING `<IResponseBasedOriginErrorDetectionParameters>`: Objek JSON yang berisi properti untuk menentukan kesehatan asal menggunakan permintaan/respons nyata. Properti ini saat ini tidak didukung.
   - `[HttpErrorRange <IHttpErrorRangeParameters[]>]`: Daftar rentang kode status Http yang dianggap sebagai kesalahan server untuk asal dan ditandai sebagai tidak sehat.
     - `[Begin <Int32?>]`: Awal inklusif dari rentang kode status http.
     - `[End <Int32?>]`: Akhir inklusif dari rentang kode status http.

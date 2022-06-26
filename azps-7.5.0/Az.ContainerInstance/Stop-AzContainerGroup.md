@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.containerinstanc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/Stop-AzContainerGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/Stop-AzContainerGroup.md
-ms.openlocfilehash: aa61067867a05be92b4a36464a78ecfd4338ef75
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: a4d9bc50ddd0daf9dfbd88713c00fd5bf6561738
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145807817"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146632306"
 ---
 # Stop-AzContainerGroup
 
@@ -23,7 +23,7 @@ Sumber daya komputasi akan dibatalkan alokasinya dan penagihan akan dihentikan.
 
 ## SYNTAX
 
-### Berhenti (Default)
+### Hentikan (Default)
 ```
 Stop-AzContainerGroup -Name <String> -ResourceGroupName <String> [-SubscriptionId <String>]
  [-DefaultProfile <PSObject>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
@@ -49,12 +49,12 @@ Stop-AzContainerGroup -Name test-cg -ResourceGroupName test-rg
 Perintah ini menghentikan semua kontainer dalam grup kontainer.
 Sumber daya komputasi akan dibatalkan alokasinya dan penagihan akan dihentikan.
 
-### Contoh 2: Hentikan semua kontainer dalam grup kontainer dengan pipa
+### Contoh 2: Hentikan semua kontainer dalam grup kontainer dengan menyalurkan
 ```powershell
 Get-AzContainerGroup -Name test-cg -ResourceGroupName test-rg | Stop-AzContainerGroup
 ```
 
-Perintah ini menghentikan semua kontainer dalam grup kontainer dengan mempipa.
+Perintah ini menghentikan semua kontainer dalam grup kontainer dengan menyalurkan.
 
 ## PARAMETERS
 
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ContainerInstance.Models.IContainerInstanceIdentity
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true ketika perintah berhasil
+Mengembalikan true saat perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Info masuk langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+Kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
@@ -200,7 +200,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IContainerInstanceIdentity>: Parameter Identitas
+INPUTOBJECT `<IContainerInstanceIdentity>`: Parameter Identitas
   - `[ContainerGroupName <String>]`: Nama grup kontainer.
   - `[ContainerName <String>]`: Nama instans kontainer.
   - `[Id <String>]`: Jalur identitas sumber daya

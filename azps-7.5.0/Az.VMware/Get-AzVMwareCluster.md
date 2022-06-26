@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.vmware/get-azvmw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/Get-AzVMwareCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/Get-AzVMwareCluster.md
-ms.openlocfilehash: 711f12e40a133c8214d705be023e9dac5d8c24ac
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 032e38ac8826364b55ce835362d2a66404250a6a
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145702306"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146630866"
 ---
 # Get-AzVMwareCluster
 
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Nama ini tidak peka huruf besar/kecil.
+Nama tidak peka huruf besar/kecil.
 
 ```yaml
 Type: System.String
@@ -181,7 +181,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IVMwareIdentity>: Parameter Identitas
+INPUTOBJECT `<IVMwareIdentity>`: Parameter Identitas
   - `[AddonName <String>]`: Nama addon untuk cloud privat
   - `[AuthorizationName <String>]`: Nama Otorisasi Sirkuit ExpressRoute di cloud privat
   - `[CloudLinkName <String>]`: Nama sumber daya tautan cloud
@@ -199,7 +199,7 @@ INPUTOBJECT <IVMwareIdentity>: Parameter Identitas
   - `[PortMirroringId <String>]`: Pengidentifikasi Pencerminan Port NSX. Umumnya sama dengan nama tampilan Port Mirroring
   - `[PrivateCloudName <String>]`: Nama cloud privat
   - `[PublicIPId <String>]`: Pengidentifikasi Blok IP Publik NSX. Umumnya sama dengan nama tampilan Blok IP Publik
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar/kecil.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama tidak peka huruf besar/kecil.
   - `[ScriptCmdletName <String>]`: Nama sumber daya cmdlet skrip dalam paket skrip di cloud privat
   - `[ScriptExecutionName <String>]`: Nama sumber daya eksekusi skrip yang dipanggil pengguna
   - `[ScriptPackageName <String>]`: Nama paket skrip di cloud privat
