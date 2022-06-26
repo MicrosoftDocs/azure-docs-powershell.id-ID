@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayPathRuleConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayPathRuleConfig.md
-ms.openlocfilehash: 393b246f339731c403bb8bc79b9ade3f6e6fa73e
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 6b94c20be13a9400fbfa248a4e72356ff1994338
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145515115"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146623684"
 ---
 # New-AzApplicationGatewayPathRuleConfig
 
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ### -BackendHttpSettingsId
 Menentukan ID kumpulan pengaturan HTTP backend yang sudah ada yang dapat ditambahkan ke pengaturan konfigurasi aturan jalur gateway.
 ID pengaturan HTTP dapat dikembalikan dengan menggunakan cmdlet Get-AzApplicationGatewayBackendHttpSettings.
-Setelah Anda memiliki ID, Anda kemudian dapat menggunakan parameter *DefaultBackendHttpSettingsId alih-alih* parameter *DefaultBackendHttpSettings* .
+Setelah Anda memiliki ID, Anda kemudian bisa menggunakan parameter *DefaultBackendHttpSettingsId alih-alih* parameter *DefaultBackendHttpSettings* .
 Misalnya: -DefaultBackendSettings Id "/subscriptions/39c54063-01d3-4abf-8f4c-234777bc1f10/resourceGroups/appgw-rg/providers/Microsoft.Network/applicationGateways/appgwtest/backendHttpSettingsCollection/ContosoHttpSettings" Pengaturan HTTP backend mengonfigurasi properti seperti port, protokol, dan afinitas berbasis cookie untuk kumpulan backend.
 Jika Anda menggunakan parameter ini, Anda tidak dapat menggunakan parameter *DefaultBackendHttpSettings* dalam perintah yang sama.
 
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 ### -FirewallPolicyId
 Menentukan ID sumber daya firewall aplikasi web tingkat atas yang ada.
 ID kebijakan firewall dapat dikembalikan dengan menggunakan cmdlet Get-AzApplicationGatewayWebApplicationFirewallPolicy. Setelah kami memiliki ID, Anda dapat menggunakan parameter *FirewallPolicyId* alih-alih parameter *FirewallPolicy* .
-Misalnya: -FirewallPolicyId "/subscriptions/<subscription-id>/resourceGroups/<resource-group-id>/providers/Microsoft.Network/ApplicationGatewayWebApplicationFirewallPolicies/<firewallPolicyName>"
+Misalnya: -FirewallPolicyId  `/subscriptions/<subscription-id>/resourceGroups/<resource-group-id>/providers/Microsoft.Network/ApplicationGatewayWebApplicationFirewallPolicies/<firewallPolicyName>`
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayWebApplicationFirewallPolicy
@@ -240,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### -RedirectConfigurationId
-ID konfigurasi ulang gateway aplikasi
+ID redirectConfiguration gateway aplikasi
 
 ```yaml
 Type: System.String

@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationDscNodeConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationDscNodeConfiguration.md
-ms.openlocfilehash: a1c6abadd88adf9c5344142cbfa2d94002483de9
-ms.sourcegitcommit: 16496dee798f33b983ffdc113dd248d57f3ece4d
+ms.openlocfilehash: aae9595cb5b3f092461909fca4e3fdb864760d24
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "146420918"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146624008"
 ---
 # Get-AzAutomationDscNodeConfiguration
 
@@ -151,6 +151,8 @@ Nilai yang valid adalah:
 - Baik
 
 *Buruk: Tidak Patuh*, *Baik: Patuh*
+>[!NOTE]
+> Bahkan jika satu simpul tidak sesuai, status keseluruhan konfigurasi simpul menunjukkan sebagai buruk.
 
 ```yaml
 Type: System.String

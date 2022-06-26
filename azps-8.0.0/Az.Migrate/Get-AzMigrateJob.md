@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/get-azmi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateJob.md
-ms.openlocfilehash: 415cbcd764920cf243da076c5a8a94d2191ca2db
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 5c828168568505ddeba8ce831e94c3c477da0591
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145549145"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146623720"
 ---
 # Get-AzMigrateJob
 
@@ -314,7 +314,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IJob>: Menentukan objek pekerjaan server replikasi.
+INPUTOBJECT `<IJob>`: Menentukan objek pekerjaan server replikasi.
   - `[Location <String>]`: Lokasi Sumber Daya
   - `[ActivityId <String>]`: Id aktivitas.
   - `[AllowedAction <String[]>]`: Tindakan yang diizinkan untuk pekerjaan.

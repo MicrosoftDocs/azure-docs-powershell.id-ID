@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.purview/new-azpu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewFilter.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewFilter.md
-ms.openlocfilehash: 3c7ca6631fe3651680f7980e3c7fd450ebddcb1c
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: d68361dc9efff3264bc6b2c4493a96a5cde993db
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145620835"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146623648"
 ---
 # New-AzPurviewFilter
 
@@ -173,7 +173,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-TUBUH <IFilter>: .
+TUBUH `<IFilter>`: .
   - `[ExcludeUriPrefix <String[]>]`: 
   - `[IncludeUriPrefix <String[]>]`: 
 
