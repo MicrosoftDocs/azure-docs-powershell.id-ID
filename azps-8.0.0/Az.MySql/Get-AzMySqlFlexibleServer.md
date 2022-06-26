@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.mysql/get-azmysq
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Get-AzMySqlFlexibleServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Get-AzMySqlFlexibleServer.md
-ms.openlocfilehash: 546f57d22d82420818a14e88276d8487a8e6c891
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 66398d8f6d570953b2f5c56aad196fa4c733aa78
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145553600"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146592852"
 ---
 # Get-AzMySqlFlexibleServer
 
@@ -71,7 +71,7 @@ Name         Location  SkuName          SkuTier        AdministratorLogin Versio
 mysql-test   West US 2 Standard_D2ds_v4 GeneralPurpose admin              5.7     32
 ```
 
-Cmdlet ini mendapatkan server MySql menurut grup sumber daya dan nama server.
+Cmdlet ini mendapatkan server MySql berdasarkan grup sumber daya dan nama server.
 
 ### Contoh 3: Mencantumkan semua server MySql dalam grup sumber daya tertentu
 ```powershell
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.MySql.Models.IMySqlIdentity
@@ -199,7 +199,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMySqlIdentity>: Parameter Identitas
+INPUTOBJECT `<IMySqlIdentity>`: Parameter Identitas
   - `[BackupName <String>]`: Nama cadangan.
   - `[ConfigurationName <String>]`: Nama konfigurasi server.
   - `[DatabaseName <String>]`: Nama database.

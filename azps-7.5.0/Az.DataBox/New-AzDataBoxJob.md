@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.databox/new-azda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/New-AzDataBoxJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/New-AzDataBoxJob.md
-ms.openlocfilehash: 5c83c580d47ef8f25cf08a27f4b3787da3f64932
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 995214352336fc8ff213f039186d80ac9c49e437
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145754596"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146594241"
 ---
 # New-AzDataBoxJob
 
@@ -532,7 +532,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-DETAIL <IJobDetails>: Detail pekerjaan yang dijalankan. Bidang ini hanya akan dikirim untuk filter detail perluas.
+DETAIL `<IJobDetails>`: Detail pekerjaan yang dijalankan. Bidang ini hanya akan dikirim untuk filter detail perluas.
   - `ContactDetail <IContactDetails>`: Detail kontak untuk pemberitahuan dan pengiriman.
     - `ContactName <String>`: Nama kontak orang tersebut.
     - `EmailList <String[]>`: Daftar Email-id yang akan diberi tahu tentang kemajuan pekerjaan.

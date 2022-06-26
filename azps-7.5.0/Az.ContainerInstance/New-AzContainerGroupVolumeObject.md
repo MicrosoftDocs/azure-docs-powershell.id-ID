@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.ContainerInstanc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/New-AzContainerGroupVolumeObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/New-AzContainerGroupVolumeObject.md
-ms.openlocfilehash: dadf33c64b2eea8b84a7ed721acfa8c862ec0216
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: 6f86393eda994040396955d99b2c4f78f0761c94
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145808214"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146597226"
 ---
 # New-AzContainerGroupVolumeObject
 
@@ -244,10 +244,10 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-EMPTYDIR <IVolumeEmptyDir>: Volume direktori kosong.
+EMPTYDIR `<IVolumeEmptyDir>`: Volume direktori kosong.
   - `[(Any) <Object>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
 
-RAHASIA <ISecretVolume>: Volume rahasia.
+RAHASIA `<ISecretVolume>`: Volume rahasia.
   - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
 
 ## RELATED LINKS

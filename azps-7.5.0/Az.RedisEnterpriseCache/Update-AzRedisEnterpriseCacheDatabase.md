@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.redisenterprisec
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisEnterpriseCache/help/Update-AzRedisEnterpriseCacheDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisEnterpriseCache/help/Update-AzRedisEnterpriseCacheDatabase.md
-ms.openlocfilehash: c73eee02d66e51c6aba512813c911978a676adc5
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: f14f6ac1d7ca351a54bbf133e9a174cb6e0a61e6
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145645708"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146593824"
 ---
 # Update-AzRedisEnterpriseCacheDatabase
 
 ## SYNOPSIS
-Memperbarui database Redis Enterprise yang sudah ada
+Updates database Redis Enterprise yang sudah ada
 
 > [!NOTE]
 >Ini adalah versi sebelumnya dari dokumentasi kami. Silakan lihat [versi terbaru](/powershell/module/az.redisenterprisecache/update-azredisenterprisecachedatabase) untuk informasi terbaru.
@@ -40,7 +40,7 @@ Update-AzRedisEnterpriseCacheDatabase -InputObject <IRedisEnterpriseCacheIdentit
 ```
 
 ## DESCRIPTION
-Memperbarui database Redis Enterprise yang sudah ada
+Updates database Redis Enterprise yang sudah ada
 
 ## EXAMPLES
 
@@ -329,7 +329,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IRedisEnterpriseCacheIdentity>: Parameter Identitas
+INPUTOBJECT `<IRedisEnterpriseCacheIdentity>`: Parameter Identitas
   - `[ClusterName <String>]`: Nama kluster RedisEnterprise.
   - `[DatabaseName <String>]`: Nama database.
   - `[Id <String>]`: Jalur identitas sumber daya

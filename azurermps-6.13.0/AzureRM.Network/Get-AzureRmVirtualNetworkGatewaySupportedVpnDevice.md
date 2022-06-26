@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.netwo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmVirtualNetworkGatewaySupportedVpnDevice.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmVirtualNetworkGatewaySupportedVpnDevice.md
-ms.openlocfilehash: 97c832994e39707c0d45963eda856028589d4b70
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: a5ab9c422d0b27b526af25b259c6b107b930d6e2
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "142986511"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146593266"
 ---
 # Get-AzureRmVirtualNetworkGatewaySupportedVpnDevice
 
 ## SYNOPSIS
-Commandlet ini mengembalikan daftar merek, model, dan versi firmware perangkat VPN yang didukung.
+Commandlet ini mengembalikan daftar merek perangkat VPN, model, dan versi firmware yang didukung.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,24 +27,19 @@ Get-AzureRmVirtualNetworkGatewaySupportedVpnDevice -Name <String> -ResourceGroup
 ```
 
 ## DESCRIPTION
-Commandlet ini mengembalikan daftar merek, model, dan versi firmware perangkat VPN yang didukung.
+Commandlet ini mengembalikan daftar merek perangkat VPN, model, dan versi firmware yang didukung.
 
 ## EXAMPLES
 
 ### Contoh 1
-```
-PS C:\> Get-AzureRmVirtualNetworkGatewaySupportedVpnDevice -ResourceGroupName TestRG -Name TestGateway 
-<?xml version="1.0" encoding="utf-8"?>
-<RpVpnDeviceList version="1.0">
-  <Vendor name="Cisco-Test">
-    <DeviceFamily name="IOS-Test">
-       <FirmwareVersion name="20" />
-    </DeviceFamily>
-  </Vendor>
-</RpVpnDeviceList>
-```
 
 Mengembalikan daftar merek, model, dan versi firmware perangkat VPN yang didukung:
+
+```powershell
+Get-AzureRmVirtualNetworkGatewaySupportedVpnDevice -ResourceGroupName TestRG -Name TestGateway
+```
+
+```Output
 <?xml version="1.0" encoding="utf-8"?>
 <RpVpnDeviceList version="1.0">
   <Vendor name="Cisco-Test">
@@ -53,6 +48,7 @@ Mengembalikan daftar merek, model, dan versi firmware perangkat VPN yang didukun
     </DeviceFamily>
   </Vendor>
 </RpVpnDeviceList>
+```
 
 ## PARAMETERS
 
@@ -71,7 +67,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Nama gateway jaringan virtual.
 
 ```yaml
@@ -102,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

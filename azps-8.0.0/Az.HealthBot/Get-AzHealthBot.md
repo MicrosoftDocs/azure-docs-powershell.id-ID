@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.healthbot/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HealthBot/help/Get-AzHealthBot.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HealthBot/help/Get-AzHealthBot.md
-ms.openlocfilehash: 97cf68856110f68636a83594529b18f55e7df03f
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 18bcfff4ef9e797a087583f1f247557b39a791d2
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145558245"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146593212"
 ---
 # Get-AzHealthBot
 
@@ -72,7 +72,7 @@ eastus   yourihealthbot       2020/12/29 5:54:14  test@microsoft.com User       
 eastus   yourihealthbotmemory 2020/12/29 6:54:32  test@microsoft.com User                    2020/12/29 6:54:36       ********-****-****-****-********** Application                  Microsoft.HealthBot/healthBots
 ```
 
-Mendapatkan semua HealthBot oleh ResourceGroupName
+Mendapatkan semua HealthBot menurut ResourceGroupName
 
 ### Contoh 3: Dapatkan HealthBot dengan ResourceGroupName dan Nama
 ```powershell
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.HealthBot.Models.IHealthBotIdentity
@@ -198,7 +198,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IHealthBotIdentity>: Parameter Identitas
+INPUTOBJECT `<IHealthBotIdentity>`: Parameter Identitas
   - `[BotName <String>]`: Nama sumber daya Bot.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ResourceGroupName <String>]`: Nama grup sumber daya Bot dalam langganan pengguna.

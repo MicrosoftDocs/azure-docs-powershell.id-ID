@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.labservices/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Remove-AzLabServicesSchedule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Remove-AzLabServicesSchedule.md
-ms.openlocfilehash: af4668de8ea42c45720a53ad1937e5fb6562ac3b
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 83d69c2e56e4ddb95beea9b5f2b9a3cfbdd41ca4
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145692694"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146594166"
 ---
 # Remove-AzLabServicesSchedule
 
@@ -259,7 +259,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-JADWAL <Schedule>: 
+JADWAL `<Schedule>`: 
   - `[Note <String>]`: Catatan untuk jadwal ini.
   - `[RecurrencePatternExpirationDate <DateTime?>]`: Ketika pengulangan akan kedaluwarsa. Tanggal ini inklusif.
   - `[RecurrencePatternFrequency <RecurrenceFrequency?>]`: Frekuensi pengulangan.

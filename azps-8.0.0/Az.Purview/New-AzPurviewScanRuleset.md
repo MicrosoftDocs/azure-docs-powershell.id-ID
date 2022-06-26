@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.purview/new-azpu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewScanRuleset.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/Purview/help/New-AzPurviewScanRuleset.md
-ms.openlocfilehash: 9e441c891f5ee85b0558c30e51a2b1628ac8a9cc
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 6d2c4c356a72a65fd66a65ecea999e7b159d8c23
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145517887"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146592743"
 ---
 # New-AzPurviewScanRuleset
 
 ## SYNOPSIS
-Membuat atau Memperbarui set aturan pemindaian
+Membuat atau Updates set aturan pemindaian
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ New-AzPurviewScanRuleset -Endpoint <String> -Name <String> -Body <IScanRuleset> 
 ```
 
 ## DESCRIPTION
-Membuat atau Memperbarui set aturan pemindaian
+Membuat atau Updates set aturan pemindaian
 
 ## EXAMPLES
 
@@ -166,7 +166,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-ISI <IScanRuleset>: .
+ISI `<IScanRuleset>`: .
   - `Kind <DataSourceType>`: 
   - `[Type <ScanRulesetType?>]`: 
 

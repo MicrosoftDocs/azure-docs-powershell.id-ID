@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.confluent/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Confluent/help/Get-AzConfluentOrganization.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Confluent/help/Get-AzConfluentOrganization.md
-ms.openlocfilehash: 24a42378931b73918691209c91682dc771b80d4f
-ms.sourcegitcommit: 321c644cf2161807a71e1af318fc5c5311d22e25
+ms.openlocfilehash: a505de980adf1c8a52acdbc11880b024f5da18f3
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "145777620"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146597352"
 ---
 # Get-AzConfluentOrganization
 
@@ -209,7 +209,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IConfluentIdentity>: Parameter Identitas
+INPUTOBJECT `<IConfluentIdentity>`: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[OrganizationName <String>]`: Nama sumber daya organisasi
   - `[ResourceGroupName <String>]`: Nama grup sumber daya

@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.digitaltwins/new
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DigitalTwins/help/New-AzDigitalTwinsInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DigitalTwins/help/New-AzDigitalTwinsInstance.md
-ms.openlocfilehash: 5f868d38e1705a76d150c9902dc98618320349f3
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: ff120d94d7fac14d441520adbd32f6eb6ee32c27
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145546306"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146593500"
 ---
 # New-AzDigitalTwinsInstance
 
@@ -256,7 +256,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-DIGITALTWINSCREATE <IDigitalTwinsDescription>: Deskripsi layanan DigitalTwins.
+DIGITALTWINSCREATE `<IDigitalTwinsDescription>`: Deskripsi layanan DigitalTwins.
   - `Location <String>`: Lokasi sumber daya.
   - `[Tag <IDigitalTwinsResourceTags>]`: Tag sumber daya.
     - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.

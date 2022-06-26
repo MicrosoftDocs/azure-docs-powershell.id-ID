@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.digitaltwins/tes
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DigitalTwins/help/Test-AzDigitalTwinsInstanceNameAvailability.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DigitalTwins/help/Test-AzDigitalTwinsInstanceNameAvailability.md
-ms.openlocfilehash: e533c59b3a1a21e16e6399191e36249797d1799f
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 029f08e2f69f5eb7f3636ad4b31ead1c1806b6c5
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145559494"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146595948"
 ---
 # Test-AzDigitalTwinsInstanceNameAvailability
 
@@ -224,10 +224,10 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-DIGITALTWINSINSTANCECHECKNAME <ICheckNameRequest>: Hasil yang dikembalikan dari permintaan ketersediaan nama pemeriksaan database.
+DIGITALTWINSINSTANCECHECKNAME `<ICheckNameRequest>`: Hasil yang dikembalikan dari permintaan ketersediaan nama pemeriksaan database.
   - `Name <String>`: Nama sumber daya.
 
-INPUTOBJECT <IDigitalTwinsIdentity>: Parameter Identitas
+INPUTOBJECT `<IDigitalTwinsIdentity>`: Parameter Identitas
   - `[EndpointName <String>]`: Nama Sumber Daya Titik Akhir.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Lokasi DigitalTwinsInstance.

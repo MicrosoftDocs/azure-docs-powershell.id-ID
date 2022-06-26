@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.dnsresolver/upda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/Update-AzDnsForwardingRuleset.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/Update-AzDnsForwardingRuleset.md
-ms.openlocfilehash: 1fe2f54fc8012193011720785b5726d8a8536ef1
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: b5b3f40d85529775da4e4a01c99368e49bf8e8ae
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145516306"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146593464"
 ---
 # Update-AzDnsForwardingRuleset
 
 ## SYNOPSIS
-Memperbarui kumpulan aturan penerusan DNS.
+Updates set aturan penerusan DNS.
 
 ## SYNTAX
 
@@ -33,7 +33,7 @@ Update-AzDnsForwardingRuleset -InputObject <IDnsResolverIdentity> [-IfMatch <Str
 ```
 
 ## DESCRIPTION
-Memperbarui kumpulan aturan penerusan DNS.
+Updates set aturan penerusan DNS.
 
 ## EXAMPLES
 
@@ -50,7 +50,7 @@ westus2  dnsForwardingRuleset Microsoft.Network/dnsForwardingRulesets "04005592-
 
 Perintah ini memperbarui aturan Penerusan DNS berdasarkan nama (menambahkan metadata)
 
-### Contoh 2: Memperbarui aturan Penerusan DNS yang ada menurut identitas
+### Contoh 2: Updates aturan Penerusan DNS yang ada menurut identitas
 ```powershell
 $inputObject = Get-AzDnsForwardingRuleset -ResourceGroupName powershell-test-rg -Name  dnsForwardingRuleset
 Update-AzDnsForwardingRuleset -InputObject $inputObject  -Metadata @{"key0" = "value0"} 
@@ -62,7 +62,7 @@ Location Name                 Type                                    Etag
 westus2  dnsForwardingRuleset Microsoft.Network/dnsForwardingRulesets "04005592-0000-0800-0000-60e7ec170000"
 ```
 
-Perintah ini memperbarui kumpulan aturan Penerusan DNS melalui identitas (menambahkan metadata)
+Perintah ini memperbarui aturan Penerusan DNS melalui identitas (menambahkan metadata)
 
 ## PARAMETERS
 
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DnsResolver.Models.IDnsResolverIdentity
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Nama kumpulan aturan penerusan DNS.
+Nama set aturan penerusan DNS.
 
 ```yaml
 Type: System.String
@@ -255,8 +255,8 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IDnsResolverIdentity>: Parameter Identitas
-  - `[DnsForwardingRulesetName <String>]`: Nama kumpulan aturan penerusan DNS.
+INPUTOBJECT `<IDnsResolverIdentity>`: Parameter Identitas
+  - `[DnsForwardingRulesetName <String>]`: Nama set aturan penerusan DNS.
   - `[DnsResolverName <String>]`: Nama pemecah masalah DNS.
   - `[ForwardingRuleName <String>]`: Nama aturan penerusan.
   - `[Id <String>]`: Jalur identitas sumber daya

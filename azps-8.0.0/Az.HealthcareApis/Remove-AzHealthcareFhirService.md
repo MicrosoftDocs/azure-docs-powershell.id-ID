@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.healthcareapis/r
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HealthcareApis/help/Remove-AzHealthcareFhirService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HealthcareApis/help/Remove-AzHealthcareFhirService.md
-ms.openlocfilehash: 5188163193cc0ea8a6c3f43691f4f335d0b1b230
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: d51b5977b28635befffdbcc4a64b11571ed3815f
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145529278"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146593176"
 ---
 # Remove-AzHealthcareFhirService
 
@@ -241,7 +241,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IHealthcareApisIdentity>: Parameter Identitas
+INPUTOBJECT `<IHealthcareApisIdentity>`: Parameter Identitas
   - `[DicomServiceName <String>]`: Nama sumber daya Layanan DICOM.
   - `[FhirDestinationName <String>]`: Nama sumber daya tujuan FHIR Konektor IoT.
   - `[FhirServiceName <String>]`: Nama sumber daya Layanan FHIR.

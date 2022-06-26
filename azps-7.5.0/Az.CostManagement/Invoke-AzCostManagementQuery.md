@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.costmanagement/i
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CostManagement/help/Invoke-AzCostManagementQuery.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CostManagement/help/Invoke-AzCostManagementQuery.md
-ms.openlocfilehash: 791c94512937925d8babd8c7ebf61ef7f4e52784
-ms.sourcegitcommit: 82b4008b76d035e4aee733727371765b0d853bed
+ms.openlocfilehash: 8e9c9ff2964f453ace91a5e4c540bfdaaf279bcd
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145754992"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146597172"
 ---
 # Invoke-AzCostManagementQuery
 
@@ -55,7 +55,7 @@ Column                Row
 {UsageDate, Currency} {20201101 USD, 20201102 USD, 20201103 USD, 20201104 USD…}
 ```
 
-Memanggil AzCostManagementQuery berdasarkan Cakupan
+Panggil AzCostManagementQuery berdasarkan Cakupan
 
 ### Contoh 2: Memanggil AzCostManagementQuery berdasarkan Cakupan dengan Dimensi
 ```powershell
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExternalCloudProviderId
-Ini bisa berupa '{externalSubscriptionId}' untuk akun tertaut atau '{externalBillingAccountId}' untuk akun konsolidasi yang digunakan dengan operasi dimensi/kueri.
+Ini bisa menjadi '{externalSubscriptionId}' untuk akun tertaut atau '{externalBillingAccountId}' untuk akun terkonsolidasi yang digunakan dengan operasi dimensi/kueri.
 
 ```yaml
 Type: System.String
@@ -197,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### -Cakupan
-Ini termasuk 'subscriptions/{subscriptionId}/' untuk cakupan langganan, 'subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}' untuk cakupan resourceGroup, 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}' untuk cakupan Akun Penagihan dan 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}/departments/{departmentId}' untuk lingkup Departemen, 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}/enrollmentAccounts/{ enrollmentAccountId}' untuk cakupan EnrollmentAccount, 'providers/Microsoft.Management/managementGroups/{managementGroupId} untuk cakupan Grup Manajemen, 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}/billingProfiles/{billingProfileId}' untuk cakupan billingProfile, 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}/billingProfiles/{billingProfileId}/invoiceSections/{invoiceSectionId}' untuk cakupan invoiceSection, dan 'providers/Microsoft. Penagihan/tagihanAccounts/{billingAccountId}/customers/{customerId}' khusus untuk mitra.
+Ini termasuk 'subscriptions/{subscriptionId}/' untuk cakupan langganan, 'subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}' untuk cakupan resourceGroup, 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}' untuk cakupan Akun Penagihan dan 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}/departments/{departmentId}' untuk lingkup Departemen, 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}/enrollmentAccounts/{ enrollmentAccountId}' untuk cakupan EnrollmentAccount, 'providers/Microsoft.Management/managementGroups/{managementGroupId} untuk cakupan Grup Manajemen, 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}/billingProfiles/{billingProfileId}' untuk cakupan billingProfile, 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}/billingProfiles/{billingProfileId}/invoiceSections/{invoiceSectionId}' untuk cakupan invoiceSection, dan 'providers/Microsoft. Billing/billingAccounts/{billingAccountId}/customers/{customerId}' khusus untuk mitra.
 
 ```yaml
 Type: System.String
@@ -320,7 +320,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-DATASETFILTER <IQueryFilter>: Memiliki ekspresi filter untuk digunakan dalam kueri.
+DATASETFILTER `<IQueryFilter>`: Memiliki ekspresi filter untuk digunakan dalam kueri.
   - `[And <IQueryFilter[]>]`: Ekspresi "AND" logis. Harus memiliki setidaknya 2 item.
   - `[Dimensions <IQueryComparisonExpression>]`: Memiliki ekspresi perbandingan untuk dimensi
     - `Name <String>`: Nama kolom yang akan digunakan sebagai perbandingan.
@@ -330,7 +330,7 @@ DATASETFILTER <IQueryFilter>: Memiliki ekspresi filter untuk digunakan dalam kue
   - `[Tag <IQueryComparisonExpression>]`: Memiliki ekspresi perbandingan untuk tag
 
 DATASETGROUPING <IQueryGrouping[]>: Array grup menurut ekspresi untuk digunakan dalam kueri.
-  - `Name <String>`: Nama kolom yang akan dikelompokkan.
+  - `Name <String>`: Nama kolom untuk dikelompokkan.
   - `Type <QueryColumnType>`: Memiliki jenis kolom untuk dikelompokkan.
 
 ## RELATED LINKS

@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.healthbot/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HealthBot/help/Remove-AzHealthBot.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HealthBot/help/Remove-AzHealthBot.md
-ms.openlocfilehash: 64e15361def64b32aa55fbea76660d3d5da55863
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 9a57b45c88e0799252a9133afdd019c934d2eff3
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145533395"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146593194"
 ---
 # Remove-AzHealthBot
 
@@ -224,7 +224,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IHealthBotIdentity>: Parameter Identitas
+INPUTOBJECT `<IHealthBotIdentity>`: Parameter Identitas
   - `[BotName <String>]`: Nama sumber daya Bot.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ResourceGroupName <String>]`: Nama grup sumber daya Bot dalam langganan pengguna.

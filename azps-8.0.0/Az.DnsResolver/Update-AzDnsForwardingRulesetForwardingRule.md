@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.dnsresolver/upda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/Update-AzDnsForwardingRulesetForwardingRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/Update-AzDnsForwardingRulesetForwardingRule.md
-ms.openlocfilehash: 6779373727113667687750192dc5a59b7c27f4b1
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: 5fc4016092c28647792ec4a0d0ca7e997209d03e
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145534378"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146595876"
 ---
 # Update-AzDnsForwardingRulesetForwardingRule
 
 ## SYNOPSIS
-Memperbarui aturan penerusan dalam kumpulan aturan penerusan DNS.
+Updates aturan penerusan dalam aturan penerusan DNS.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Update-AzDnsForwardingRulesetForwardingRule -InputObject <IDnsResolverIdentity> 
 ```
 
 ## DESCRIPTION
-Memperbarui aturan penerusan dalam kumpulan aturan penerusan DNS.
+Updates aturan penerusan dalam aturan penerusan DNS.
 
 ## EXAMPLES
 
@@ -52,7 +52,7 @@ westus2  forwardingRule Microsoft.Network/dnsForwardingRulesets/forwardingRule "
 
 Perintah ini memperbarui aturan penerusan berdasarkan nama (menambahkan metadata)
 
-### Contoh 2: Memperbarui aturan penerusan menurut identitas
+### Contoh 2: Updates aturan penerusan menurut identitas
 ```powershell
 $inputObject = Get-AzDnsForwardingRulesetForwardingRule -ResourceGroupName powershell-test-rg -DnsForwardingRulesetName dnsForwardingRuleset -Name sampleForwardingRule
 Update-AzDnsForwardingRulesetForwardingRule -InputObject $inputObject  -Metadata @{"value0" = "value1"}
@@ -273,7 +273,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IDnsResolverIdentity>: Parameter Identitas
+INPUTOBJECT `<IDnsResolverIdentity>`: Parameter Identitas
   - `[DnsForwardingRulesetName <String>]`: Nama kumpulan aturan penerusan DNS.
   - `[DnsResolverName <String>]`: Nama pemecah masalah DNS.
   - `[ForwardingRuleName <String>]`: Nama aturan penerusan.

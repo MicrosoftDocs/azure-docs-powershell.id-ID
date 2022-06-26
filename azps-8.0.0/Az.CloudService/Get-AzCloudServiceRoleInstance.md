@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.cloudservice/get
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Get-AzCloudServiceRoleInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Get-AzCloudServiceRoleInstance.md
-ms.openlocfilehash: 6e3861caa79bc9e912e803d01a7eeae5a7164594
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: ad634dcf94d8fad6c957f8a27be0c311dbac8ab7
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145542708"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146596452"
 ---
 # Get-AzCloudServiceRoleInstance
 
 ## SYNOPSIS
-Mendapatkan instans peran dari layanan awan.
+Mendapatkan instans peran dari layanan cloud.
 
 ## SYNTAX
 
@@ -39,11 +39,11 @@ Get-AzCloudServiceRoleInstance -InputObject <ICloudServiceIdentity> [-Expand <In
 ```
 
 ## DESCRIPTION
-Mendapatkan instans peran dari layanan awan.
+Mendapatkan instans peran dari layanan cloud.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua instans peran
+### Contoh 1: Dapatkan semua instans peran
 ```powershell
 Get-AzCloudServiceRoleInstance -ResourceGroupName "ContosOrg" -CloudServiceName "ContosoCS"
 ```
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.CloudService.Models.ICloudServiceIdentity
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Info masuk langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
+Kredensial langganan yang secara unik mengidentifikasi langganan Microsoft Azure.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
@@ -201,7 +201,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ICloudServiceIdentity>: Parameter Identitas
+INPUTOBJECT `<ICloudServiceIdentity>`: Parameter Identitas
   - `[CloudServiceName <String>]`: 
   - `[IPConfigurationName <String>]`: Nama konfigurasi IP.
   - `[Id <String>]`: Jalur identitas sumber daya

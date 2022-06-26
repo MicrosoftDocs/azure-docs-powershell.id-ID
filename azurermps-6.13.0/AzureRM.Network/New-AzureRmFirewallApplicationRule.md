@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.netwo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/New-AzureRmFirewallApplicationRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/New-AzureRmFirewallApplicationRule.md
-ms.openlocfilehash: 8a59f09184c7042b12abbd549398ca4690ace235
-ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.openlocfilehash: 20246c39baf552fdc5d01f8dd06e185fea9570c8
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "143160803"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146593158"
 ---
 # New-AzureRmFirewallApplicationRule
 
@@ -49,14 +49,14 @@ Cmdlet **New-AzureRmFirewallApplicationRule** membuat aturan aplikasi untuk Azur
 New-AzureRmFirewallApplicationRule -Name "https-rule" -Protocol "https:443" -TargetFqdn "*" -SourceAddress "10.0.0.0"
 ```
 
-Contoh ini membuat aturan yang akan memungkinkan semua lalu lintas HTTPS di port 443 dari 10.0.0.0.
+Contoh ini membuat aturan yang akan memungkinkan semua lalu lintas HTTPS pada port 443 dari 10.0.0.0.
 
-### 2: Membuat aturan untuk memperbolehkan subnet WindowsUpdate untuk 10.0.0.0/24
+### 2: Buat aturan untuk mengizinkan WindowsUpdate untuk subnet 10.0.0.0/24
 ```
 New-AzureRmFirewallApplicationRule -Name "windows-update-rule" -FqdnTag WindowsUpdate -SourceAddress "10.0.0.0/24"
 ```
 
-Contoh ini membuat aturan yang akan memungkinkan lalu lintas untuk Windows Pembaruan untuk domain 10.0.0.0/24.
+Contoh ini membuat aturan yang akan memungkinkan lalu lintas untuk Windows Updates untuk domain 10.0.0.0/24.
 
 ## PARAMETERS
 
@@ -76,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -Deskripsi
-Menentukan deskripsi opsional aturan ini.
+Menentukan deskripsi opsional dari aturan ini.
 
 ```yaml
 Type: System.String
@@ -105,7 +105,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
+### -Name
 Menentukan nama aturan aplikasi ini. Nama harus unik di dalam kumpulan aturan.
 
 ```yaml
@@ -121,8 +121,9 @@ Accept wildcard characters: False
 ```
 
 ### -Protokol
-Menentukan tipe lalu lintas yang akan difilter menurut aturan ini. Formatnya adalah <protocol type>:<port>. Misalnya, "http:80" atau "https:443".
-Protokol adalah wajib ketika TargetFqdn digunakan, tetapi tidak dapat digunakan dengan FqdnTag. Protokol yang didukung adalah HTTP dan HTTPS.
+Menentukan jenis lalu lintas yang akan difilter oleh aturan ini. Formatnya adalah `<protocol type>:<port>`.
+Misalnya, "http:80" atau "https:443".
+Protokol wajib ketika TargetFqdn digunakan, tetapi tidak dapat digunakan dengan FqdnTag. Protokol yang didukung adalah HTTP dan HTTPS.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -153,7 +154,7 @@ Accept wildcard characters: False
 
 ### -TargetFqdn
 Menentukan daftar nama domain yang difilter menurut aturan ini.
-Karakter asterik, '*', hanya diterima sebagai karakter pertama FQDN dalam daftar. Ketika digunakan, asterik akan mencocokkan sejumlah karakter. (misalnya '* msn.com' akan cocok dengan msn.com dan semua subdomainnya)
+Karakter asterik, '*', hanya diterima sebagai karakter pertama FQDN dalam daftar. Saat digunakan, asterik cocok dengan sejumlah karakter. (misalnya '* msn.com' akan cocok dengan msn.com dan semua subdomainnya)
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -167,8 +168,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Konfirmasi
-Meminta konfirmasi sebelum menjalankan cmdlet.
+### -Confirm
+Meminta Anda mengonfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -183,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Menunjukkan yang akan terjadi jika cmdlet dijalankan.
 Cmdlet tidak dijalankan.
 
 ```yaml
@@ -199,11 +200,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak
+### Tidak ada
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS

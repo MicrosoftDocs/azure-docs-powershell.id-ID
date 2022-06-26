@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/update-azfro
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/help/Update-AzFrontDoorCdnEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/help/Update-AzFrontDoorCdnEndpoint.md
-ms.openlocfilehash: 359edcb562fac15ae9152ab5358c100a93606761
-ms.sourcegitcommit: cbc0e7ba6f2d138b46d0d72b6776e95cb040e6c8
+ms.openlocfilehash: aaee6d59f07513ad799ea9d3ca5fd36dd14bbe9e
+ms.sourcegitcommit: 5df8b100721844736630242c724da453a2168434
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "145540745"
+ms.lasthandoff: 06/26/2022
+ms.locfileid: "146596596"
 ---
 # Update-AzFrontDoorCdnEndpoint
 
 ## SYNOPSIS
-Memperbarui titik akhir AzureFrontDoor yang sudah ada dengan nama titik akhir yang ditentukan di bawah langganan, grup sumber daya, dan profil yang ditentukan.
+Updates titik akhir AzureFrontDoor yang sudah ada dengan nama titik akhir yang ditentukan di bawah langganan, grup sumber daya, dan profil yang ditentukan.
 Hanya tag yang dapat diperbarui setelah membuat titik akhir.
 Untuk memperbarui asal, gunakan operasi Perbarui Asal.
 Untuk memperbarui grup asal, gunakan operasi Perbarui grup Asal.
@@ -37,7 +37,7 @@ Update-AzFrontDoorCdnEndpoint -InputObject <ICdnIdentity> [-EnabledState <Enable
 ```
 
 ## DESCRIPTION
-Memperbarui titik akhir AzureFrontDoor yang sudah ada dengan nama titik akhir yang ditentukan di bawah langganan, grup sumber daya, dan profil yang ditentukan.
+Updates titik akhir AzureFrontDoor yang sudah ada dengan nama titik akhir yang ditentukan di bawah langganan, grup sumber daya, dan profil yang ditentukan.
 Hanya tag yang dapat diperbarui setelah membuat titik akhir.
 Untuk memperbarui asal, gunakan operasi Perbarui Asal.
 Untuk memperbarui grup asal, gunakan operasi Perbarui grup Asal.
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan buat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Cdn.Models.ICdnIdentity
@@ -271,7 +271,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ICdnIdentity>: Parameter Identitas
+INPUTOBJECT `<ICdnIdentity>`: Parameter Identitas
   - `[CustomDomainName <String>]`: Nama domain di bawah profil yang unik secara global.
   - `[EndpointName <String>]`: Nama titik akhir di bawah profil yang unik secara global.
   - `[Id <String>]`: Jalur identitas sumber daya
