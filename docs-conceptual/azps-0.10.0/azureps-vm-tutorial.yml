@@ -11,17 +11,17 @@ metadata:
   ms.author: mirobb
   author: mikefrobbins
   manager: barbkess
-  ms.devlang: azure-powershell
-  ms.prod: powershell
-  ms.technology: azure-powershell
+  ms.devlang: powershell
+  ms.custom: devx-track-azurepowershell
+  ms.service: azure-powershell
   ms.topic: tutorial
   clicktale: true
-  ms.openlocfilehash: 6fd65d88f7235e47acf2f45965f7d85b4e6162c0
-  ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
-  ms.translationtype: HT
+  ms.openlocfilehash: 3b921cc377bf5418990f3d0d165cc86aa42e857a
+  ms.sourcegitcommit: f8662d847e00dbcbf50c396b5ca5938ff63c149d
+  ms.translationtype: MT
   ms.contentlocale: id-ID
-  ms.lasthandoff: 09/13/2021
-  ms.locfileid: "132428008"
+  ms.lasthandoff: 06/30/2022
+  ms.locfileid: "146769266"
 items:
 - durationInMinutes: 1
   content: >-

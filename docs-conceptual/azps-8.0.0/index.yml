@@ -9,7 +9,9 @@ metadata:
   author: mikefrobbins
   ms.author: mirobb
   ms.date: 05/24/2022
-  ms.prod: azure-powershell
+  ms.devlang: powershell
+  ms.custom: devx-track-azurepowershell
+  ms.service: azure-powershell
 landingContent:
   - title: Tentang Azure PowerShell
     linkLists:
@@ -45,7 +47,7 @@ landingContent:
         links:
           - text: Catatan rilis
             url: release-notes-azureps.md
-          - text: Melanggar perubahan di Az 8.0.0
+          - text: Perubahan mencolok di Az 8.0.0
             url: migrate-az-8.0.0.md
           - text: Penyelesaian perintah cerdas
             url: az-predictor.md
@@ -59,7 +61,7 @@ landingContent:
     linkLists:
       - linkListType: whats-new
         links:
-          - text: Azure AD perubahan Microsoft Graph Migration
+          - text: Azure AD perubahan Migrasi Microsoft Graph
             url: azps-msgraph-migration-changes.md
       - linkListType: how-to-guide
         links:
@@ -85,7 +87,7 @@ landingContent:
             url: using-psjobs.md
       - linkListType: tutorial
         links:
-          - text: Membuat komputer virtual
+          - text: Buat komputer virtual
             url: azureps-vm-tutorial.yml
   - title: Konfigurasi
     linkLists:

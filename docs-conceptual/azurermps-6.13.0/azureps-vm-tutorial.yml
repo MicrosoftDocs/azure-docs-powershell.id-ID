@@ -11,18 +11,16 @@ metadata:
   ms.author: mirobb
   author: mikefrobbins
   manager: barbkess
-  ms.devlang: azure-powershell
-  ms.prod: powershell
-  ms.technology: azure-powershell
-  ms.topic: tutorial
+  ms.devlang: powershell
   ms.custom: devx-track-azurepowershell
+  ms.service: azure-powershell
   clicktale: true
-  ms.openlocfilehash: 87f39fd93ea55f23d0953e5e638a323945d8ab51
-  ms.sourcegitcommit: c489152c02cceaa5c8e284933af57f07c5350961
-  ms.translationtype: HT
+  ms.openlocfilehash: 86ebd7c99b16df97c5de239ee842acbe0356fc69
+  ms.sourcegitcommit: f8662d847e00dbcbf50c396b5ca5938ff63c149d
+  ms.translationtype: MT
   ms.contentlocale: id-ID
-  ms.lasthandoff: 10/07/2021
-  ms.locfileid: "132429374"
+  ms.lasthandoff: 06/30/2022
+  ms.locfileid: "146769249"
 items:
 - durationInMinutes: 1
   content: "\n[!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]\n\nDalam tutorial ini, Anda mempelajari semua langkah yang terlibat dalam menyiapkan mesin virtual dengan Azure PowerShell. Tutorial ini juga mencakup kueri output, penggunaan kembali sumber daya Azure, dan penghapusan sumber daya.\n\nTutorial ini dapat diselesaikan dengan pengalaman interaktif yang ditawarkan melalui Azure Cloud Shell, atau Anda dapat [menginstal CLI](install-azurerm-ps.md) secara lokal.\n\nGunakan __ctrl-shift-v__ (__cmd-shift-v__ di macOS) untuk menempelkan teks tutorial ke Azure Cloud Shell."
@@ -209,7 +207,7 @@ items:
     ```
 
 
-    Dalam contoh ini, kita menggunakan alur PowerShell untuk mengirim \$objek newVM1 ke cmdlet `Get-AzureRmNetworkInterface`. Dari objek antarmuka jaringan yang dihasilkan, kita memilih objek IpConfigurations bersarang. Dari objek IpConfigurations, kita memilih properti Name dan PrivateIpAddress.
+    Dalam contoh ini, kita menggunakan alur PowerShell untuk mengirim objek \$newVM1 ke cmdlet `Get-AzureRmNetworkInterface`. Dari objek antarmuka jaringan yang dihasilkan, kita memilih objek IpConfigurations bersarang. Dari objek IpConfigurations, kita memilih properti Name dan PrivateIpAddress.
 
 
     ```Output
